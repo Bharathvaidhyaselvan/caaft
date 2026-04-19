@@ -7,6 +7,7 @@
     <meta name="robots" content="all, index, follow">
     <title>Financial Statement Analysis Services | Accurate Financial Statements</title>
     <meta name="description" content="Get professional financial statement analysis and accurate financial statements for better business decisions. Understand financial performance with expert reporting support.">
+    <meta name="keywords" content="financial statement analysis, what is financial statement analysis, financial statement">
     <link rel="canonical" href="https://caaft.com/financial-statement-analysis/">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
@@ -32,13 +33,62 @@
           "@type": "FAQPage",
           "@id": "https://caaft.com/financial-statement-analysis/#faq",
           "mainEntity": [
-            {"@type": "Question","name": "How do financial statements help businesses prepare for audits?","acceptedAnswer": {"@type": "Answer","text": "Financial statements organize financial records in a structured format, making it easier for auditors to review transactions and verify financial accuracy."}},
-            {"@type": "Question","name": "Can financial statements help businesses apply for loans?","acceptedAnswer": {"@type": "Answer","text": "Yes, banks and financial institutions review financial statements to assess a company’s financial health before approving loans."}},
-            {"@type": "Question","name": "How often should businesses update their financial statements?","acceptedAnswer": {"@type": "Answer","text": "Businesses should update financial statements monthly or quarterly to track performance and address financial issues promptly."}},
-            {"@type": "Question","name": "What role do financial statements play in attracting investors?","acceptedAnswer": {"@type": "Answer","text": "Financial statements help investors evaluate profitability, financial stability, and growth potential, supporting informed investment decisions."}},
-            {"@type": "Question","name": "Can small businesses benefit from professional financial statement preparation?","acceptedAnswer": {"@type": "Answer","text": "Yes, professional preparation ensures accuracy, reduces errors, and provides better financial insights for small businesses."}},
-            {"@type": "Question","name": "How do financial statements support business budgeting?","acceptedAnswer": {"@type": "Answer","text": "Financial statements provide historical data that helps businesses create realistic budgets and control future expenses."}},
-            {"@type": "Question","name": "Why should businesses review financial statements regularly?","acceptedAnswer": {"@type": "Answer","text": "Regular review helps identify financial trends, monitor efficiency, and take corrective actions before issues become critical."}}
+            {
+              "@type": "Question",
+              "name": "How do financial statements help businesses prepare for audits?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Financial statements organize financial records in a structured format, making it easier for auditors to review transactions and verify financial accuracy."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can financial statements help businesses apply for loans?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, banks and financial institutions review financial statements to assess a company's financial health before approving loans."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How often should businesses update their financial statements?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Businesses should update financial statements monthly or quarterly to track performance and address financial issues promptly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What role do financial statements play in attracting investors?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Financial statements help investors evaluate profitability, financial stability, and growth potential, supporting informed investment decisions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can small businesses benefit from professional financial statement preparation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, professional preparation ensures accuracy, reduces errors, and provides better financial insights for small businesses."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do financial statements support business budgeting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Financial statements provide historical data that helps businesses create realistic budgets and control future expenses."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why should businesses review financial statements regularly?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Regular review helps identify financial trends, monitor efficiency, and take corrective actions before issues become critical."
+              }
+            }
           ]
         },
         {"@type": "BreadcrumbList","@id": "https://caaft.com/financial-statement-analysis/#breadcrumb","itemListElement": [{"@type": "ListItem","position": 1,"name": "Home","item": "https://caaft.com"},{"@type": "ListItem","position": 2,"name": "Financial Statement Analysis Services","item": "https://caaft.com/financial-statement-analysis/"}]}
@@ -51,41 +101,81 @@
     <div class="header-sections"><?php include "header.php"; ?></div>
     <main class="main">
         <section class="hero-section hs-3 caaft-ar-hero" aria-labelledby="fs-hero-h1">
-            <div class="hero-single singles_forms_frames caaft-ar-hero-single"><div class="container"><div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
-                <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
-                    <h1 id="fs-hero-h1" class="caaft-ar-hero-h1">Financial Statement Services</h1>
-                    <h2 class="caaft-ar-hero-h2">Accurate Statements. Full Compliance. Clear Financial Visibility — <em>Every Reporting Period.</em></h2>
-                    <p class="caaft-ar-hero-lead">Accurate financial statements are not just a compliance requirement — they are the foundation of every smart business decision. Whether a startup tracking early-stage finances, an SME evaluating growth, or an established company maintaining investor transparency — structured, professionally prepared financial statements provide the clarity, control, and credibility needed to manage performance and plan with confidence.</p>
-                    <div class="caaft-ar-hero-ctas">
-                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Boost Financial Performance - Get Expert Assistance Today! <i class="fas fa-arrow-right"></i></a>
+            <div class="hero-single singles_forms_frames caaft-ar-hero-single">
+                <div class="container">
+                    <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
+                        <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
+                            <h1 id="fs-hero-h1" class="caaft-ar-hero-h1">Financial Statement Services</h1>
+                            <h2 class="caaft-ar-hero-h2">Accurate Statements. Full Compliance. Clear Financial Visibility — <em>Every Reporting Period.</em></h2>
+                            <p class="caaft-ar-hero-lead">Accurate financial statements are not just a compliance requirement — they are the foundation of every smart business decision.</p>
+                            <p class="caaft-ar-hero-lead">Whether a startup tracking early-stage finances, an SME evaluating growth, or an established company maintaining investor transparency — structured, professionally prepared financial statements provide the clarity, control, and credibility needed to manage performance and plan with confidence.</p>
+                            <div class="caaft-ar-hero-ctas">
+                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Boost Financial Performance</a>
+                                <a href="/contact#contact_us" class="theme-btn theme-btn2 caaft-ar-hero-btn-secondary">Get Expert Assistance Today!</a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="hero-img-wrap caaft-ar-hero-img-wrap">
+                                <?php
+                                $caaft_enquiry_service = 'Financial Statement Analysis Services';
+                                $caaft_enquiry_form_id = 'caaft-fs-enquiry-form-inner';
+                                $caaft_enquiry_input_id_prefix = 'fs';
+                                include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
+                                ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php
-$caaft_enquiry_service = 'Financial Statement Analysis Services';
-include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
-?></div></div></div></div>
-            </div></div></div>
+            </div>
         </section>
 
-        <section class="caaft-ar-trust-indicators" aria-label="Trust indicators"><div class="container"><div class="caaft-ar-trust-grid">
-            <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-star"></i></span><div class="caaft-ar-trust-content"><h3>4.8/5</h3><p>Rated on Google</p></div></article>
-            <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-briefcase"></i></span><div class="caaft-ar-trust-content"><h3>500+</h3><p>Businesses Served</p></div></article>
-            <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-file-invoice"></i></span><div class="caaft-ar-trust-content"><h3>1000+</h3><p>Statements Prepared</p></div></article>
-            <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-shield-alt"></i></span><div class="caaft-ar-trust-content"><h3>100%</h3><p>Data Confidentiality</p></div></article>
-        </div></div></section>
+        <section class="caaft-ar-trust-indicators" aria-label="Trust indicators">
+            <div class="container">
+                <div class="caaft-ar-trust-grid caaft-ar-trust-grid--eq-4">
+                    <article class="caaft-ar-trust-item">
+                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="far fa-check-circle"></i></span>
+                        <div class="caaft-ar-trust-content">
+                            <h3>Rated 4.8/5 <span class="caaft-ar-trust-stars" aria-hidden="true">⭐</span></h3>
+                            <p>on Google</p>
+                        </div>
+                    </article>
+                    <article class="caaft-ar-trust-item">
+                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></span>
+                        <div class="caaft-ar-trust-content">
+                            <h3>500+</h3>
+                            <p>Businesses Served</p>
+                        </div>
+                    </article>
+                    <article class="caaft-ar-trust-item">
+                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
+                        <div class="caaft-ar-trust-content">
+                            <h3>1000+</h3>
+                            <p>Financial Statements Prepared</p>
+                        </div>
+                    </article>
+                    <article class="caaft-ar-trust-item">
+                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
+                        <div class="caaft-ar-trust-content">
+                            <h3>100%</h3>
+                            <p>Data Confidentiality</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <section class="caaft-ar-content-media py-90"><div class="container"><div class="row align-items-center g-4 g-xl-5"><div class="col-lg-6"><div class="caaft-ar-content-media-text"><header class="caaft-ar-offer-header"><h2 class="caaft-ar-offer-h2">What is Financial Statement Analysis?</h2><p class="caaft-ar-offer-intro">Financial statement analysis is the process of evaluating financial reports to understand a company's financial performance and position — identifying trends, measuring profitability, and assessing financial stability over time.</p><p class="caaft-ar-offer-intro">By examining financial statements regularly, businesses can determine whether operations are generating sustainable returns and whether resources are being used efficiently. Key questions financial statement analysis helps answer:</p><p class="caaft-ar-offer-intro">Is the business generating consistent profits?</p><p class="caaft-ar-offer-intro">Are operating expenses increasing faster than revenue?</p><p class="caaft-ar-offer-intro">Does the company have sufficient liquidity to support operations?</p><p class="caaft-ar-offer-intro">How efficiently is the company using its assets?</p><p class="caaft-ar-offer-intro">Addressing these questions enables management to make strategic adjustments that improve performance and strengthen financial management across the organisation.</p></header></div></div><div class="col-lg-6"><div class="caaft-ar-content-media-image"><img src="/assets/img/tax-planning-management.webp" alt="What is financial statement analysis?" loading="lazy"></div></div></div></div></section>
+        <section class="caaft-ar-content-media py-90"><div class="container"><div class="row align-items-center g-4 g-xl-5"><div class="col-lg-6"><div class="caaft-ar-content-media-text"><header class="caaft-ar-offer-header"><h2 class="caaft-ar-offer-h2">What is Financial Statement Analysis?</h2><p class="caaft-ar-offer-intro">Financial statement analysis is the process of evaluating financial reports to understand a company&rsquo;s financial performance and position — identifying trends, measuring profitability, and assessing financial stability over time.</p><p class="caaft-ar-offer-intro">By examining financial statements regularly, businesses can determine whether operations are generating sustainable returns and whether resources are being used efficiently. Key questions financial statement analysis helps answer:</p><ul class="caaft-ar-inline-list"><li>Is the business generating consistent profits?</li><li>Are operating expenses increasing faster than revenue?</li><li>Does the company have sufficient liquidity to support operations?</li><li>How efficiently is the company using its assets?</li></ul><p class="caaft-ar-offer-intro">Addressing these questions enables management to make strategic adjustments that improve performance and strengthen financial management across the organisation.</p></header></div></div><div class="col-lg-6"><div class="caaft-ar-content-media-image"><img src="/assets/img/tax-planning-management.webp" alt="What is financial statement analysis?" loading="lazy"></div></div></div></div></section>
         <section class="caaft-ar-content-media py-90"><div class="container"><div class="row align-items-center g-4 g-xl-5 flex-lg-row-reverse"><div class="col-lg-6"><div class="caaft-ar-content-media-text"><header class="caaft-ar-offer-header"><h2 class="caaft-ar-offer-h2">Key Financial Statements Every Business Needs</h2><h3 class="caaft-ar-offer-card-title">Profit and Loss Statement</h3><p class="caaft-ar-offer-intro">The profit and loss statement — also known as the income statement — summarises a company's revenue, expenses, and overall profitability over a specific period. Key elements include total revenue, operating expenses, cost of goods sold, and net profit or loss.</p><p class="caaft-ar-offer-intro">By analysing this report, businesses can monitor financial performance, identify where costs are rising, and adjust strategies to improve profitability.</p><h3 class="caaft-ar-offer-card-title">Balance Sheet</h3><p class="caaft-ar-offer-intro">A balance sheet provides a snapshot of a company's financial position at a specific point in time — outlining what the company owns (assets), what it owes (liabilities), and the owners' equity invested in the business.</p><p class="caaft-ar-offer-intro">A well-prepared balance sheet helps businesses evaluate financial stability and understand their overall financial structure clearly.</p><h3 class="caaft-ar-offer-card-title">Cash Flow Statement</h3><p class="caaft-ar-offer-intro">The cash flow statement tracks how cash moves in and out of a business — showing whether sufficient cash is being generated to support operations, pay obligations, and invest in growth. Cash activities are typically categorised into operating, investing, and financing activities.</p><p class="caaft-ar-offer-intro">Clear visibility over cash flow allows businesses to manage working capital effectively and avoid financial disruptions.</p></header></div></div><div class="col-lg-6"><div class="caaft-ar-content-media-image"><img src="/assets/img/tax-planning-management.webp" alt="Key financial statements every business needs" loading="lazy"></div></div></div></div></section>
 
         <section class="caaft-ar-what-we-offer py-90" aria-labelledby="fs-services-heading"><div class="container">
             <header class="caaft-ar-offer-header"><h2 id="fs-services-heading" class="caaft-ar-offer-h2">Financial Statement Services — What Gets Delivered</h2></header>
             <div class="row g-4 caaft-ar-offer-grid">
-                <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">01</span><h3 class="caaft-ar-offer-card-title">Preparation of Financial Statements</h3><p class="caaft-ar-offer-card-text">Compilation of financial data into standardised, professionally prepared reports — ensuring records are accurate, structured, and compliant with relevant accounting principles and regulatory guidelines.</p></article></div>
-                <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">02</span><h3 class="caaft-ar-offer-card-title">Profit and Loss Statement Preparation</h3><p class="caaft-ar-offer-card-text">Structured income statements prepared through careful tracking of all revenue sources and operational expenses — accurately reflecting financial performance and identifying opportunities to reduce costs or improve revenue streams.</p></article></div>
-                <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">03</span><h3 class="caaft-ar-offer-card-title">Balance Sheet Preparation</h3><p class="caaft-ar-offer-card-text">Detailed balance sheets prepared to provide a clear picture of assets, liabilities, and equity — giving stakeholders, lenders, and investors a reliable view of financial position at any point in time.</p></article></div>
-                <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">04</span><h3 class="caaft-ar-offer-card-title">Cash Flow Statement Preparation</h3><p class="caaft-ar-offer-card-text">Accurately prepared cash flow statements that track inflows and outflows across operating, investing, and financing activities — ensuring management always has clear visibility over liquidity and working capital.</p></article></div>
-                <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">05</span><h3 class="caaft-ar-offer-card-title">Financial Statement Analysis</h3><p class="caaft-ar-offer-card-text">In-depth review and interpretation of prepared financial statements — identifying trends, measuring profitability, evaluating financial stability, and translating numbers into actionable insights for management decision-making.</p></article></div>
-                <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">06</span><h3 class="caaft-ar-offer-card-title">Compliance &amp; Audit-Ready Reporting</h3><p class="caaft-ar-offer-card-text">Every financial statement is prepared in compliance with applicable accounting standards — structured, documented, and audit-ready at every stage to reduce reporting risk and simplify the audit process.</p></article></div>
+                <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><h3 class="caaft-ar-offer-card-title">1. Preparation of Financial Statements</h3><p class="caaft-ar-offer-card-text">Compilation of financial data into standardised, professionally prepared reports — ensuring records are accurate, structured, and compliant with relevant accounting principles and regulatory guidelines.</p></article></div>
+                <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><h3 class="caaft-ar-offer-card-title">2. Profit and Loss Statement Preparation</h3><p class="caaft-ar-offer-card-text">Structured income statements prepared through careful tracking of all revenue sources and operational expenses — accurately reflecting financial performance and identifying opportunities to reduce costs or improve revenue streams.</p></article></div>
+                <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><h3 class="caaft-ar-offer-card-title">3. Balance Sheet Preparation</h3><p class="caaft-ar-offer-card-text">Detailed balance sheets prepared to provide a clear picture of assets, liabilities, and equity — giving stakeholders, lenders, and investors a reliable view of financial position at any point in time.</p></article></div>
+                <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><h3 class="caaft-ar-offer-card-title">4. Cash Flow Statement Preparation</h3><p class="caaft-ar-offer-card-text">Accurately prepared cash flow statements that track inflows and outflows across operating, investing, and financing activities — ensuring management always has clear visibility over liquidity and working capital.</p></article></div>
+                <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><h3 class="caaft-ar-offer-card-title">5. Financial Statement Analysis</h3><p class="caaft-ar-offer-card-text">In-depth review and interpretation of prepared financial statements — identifying trends, measuring profitability, evaluating financial stability, and translating numbers into actionable insights for management decision-making.</p></article></div>
+                <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><h3 class="caaft-ar-offer-card-title">6. Compliance &amp; Audit-Ready Reporting</h3><p class="caaft-ar-offer-card-text">Every financial statement is prepared in compliance with applicable accounting standards — structured, documented, and audit-ready at every stage to reduce reporting risk and simplify the audit process.</p></article></div>
             </div>
         </div></section>
 
@@ -98,7 +188,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Business Owners and Directors</h3><p class="caaft-ar-why-text">Business leaders use financial statements to monitor performance, plan strategies, and ensure financial resources are allocated and used efficiently across the organisation.</p></article>
         </div></div></div></section>
 
-        <section class="caaft-ar-what-we-offer py-90"><div class="container"><header class="caaft-ar-offer-header"><h2 class="caaft-ar-offer-h2">Importance of Financial Statements for Businesses</h2><p class="caaft-ar-offer-intro">Well-prepared financial statements are fundamental tools for monitoring business health and supporting both operational and strategic decision-making. Key reasons every business needs them:</p><p class="caaft-ar-offer-intro">Track revenue and operational expenses consistently across reporting periods</p><p class="caaft-ar-offer-intro">Evaluate profitability and financial growth against targets and benchmarks</p><p class="caaft-ar-offer-intro">Maintain transparency for investors, lenders, and stakeholders</p><p class="caaft-ar-offer-intro">Support regulatory, compliance, and audit requirements</p><p class="caaft-ar-offer-intro">Plan budgets, manage risks, and guide future investment decisions</p><p class="caaft-ar-offer-intro">For startups and growing companies, accurate financial reporting provides the foundation for effective financial management and long-term business stability — while also maintaining credibility with banks, investors, and regulatory authorities.</p></header></div></section>
+        <section class="caaft-ar-what-we-offer py-90"><div class="container"><header class="caaft-ar-offer-header"><h2 class="caaft-ar-offer-h2">Importance of Financial Statements for Businesses</h2><p class="caaft-ar-offer-intro">Well-prepared financial statements are fundamental tools for monitoring business health and supporting both operational and strategic decision-making. Key reasons every business needs them:</p><ul class="caaft-ar-inline-list"><li>Track revenue and operational expenses consistently across reporting periods</li><li>Evaluate profitability and financial growth against targets and benchmarks</li><li>Maintain transparency for investors, lenders, and stakeholders</li><li>Support regulatory, compliance, and audit requirements</li><li>Plan budgets, manage risks, and guide future investment decisions</li></ul><p class="caaft-ar-offer-intro">For startups and growing companies, accurate financial reporting provides the foundation for effective financial management and long-term business stability — while also maintaining credibility with banks, investors, and regulatory authorities.</p></header></div></section>
 
         <section class="caaft-ar-how py-90"><div class="container"><header class="caaft-ar-how-header"><h2 class="caaft-ar-how-h2">Step-by-Step Process</h2></header><ol class="caaft-ar-how-timeline">
             <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">1. Initial Consultation &amp; Requirement Gathering</h3><p class="caaft-ar-how-step-text">The business structure, financial goals, and reporting requirements are understood upfront — identifying the right financial statements needed and designing the appropriate reporting framework.</p></div></li>
@@ -109,8 +199,8 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             <li class="caaft-ar-how-step"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">6. Delivery &amp; Ongoing Support</h3><p class="caaft-ar-how-step-text">Completed financial statements are delivered on time — with ongoing support for future reporting needs to ensure finances remain accurate, current, and audit-ready throughout the year.</p></div></li>
         </ol></div></section>
 
-        <section class="caaft-ar-what-we-offer py-90"><div class="container"><header class="caaft-ar-offer-header"><h2 class="caaft-ar-offer-h2">Common Challenges Financial Statement Services Solve</h2><p class="caaft-ar-offer-intro">Most businesses seek professional financial statement support when facing one or more of these:</p><p class="caaft-ar-offer-intro">Financial records that are disorganised, incomplete, or not structured to accounting standards</p><p class="caaft-ar-offer-intro">Profit and loss statements that do not accurately reflect actual business performance</p><p class="caaft-ar-offer-intro">Balance sheets with unreconciled entries, misclassified assets, or undisclosed liabilities</p><p class="caaft-ar-offer-intro">Cash flow statements that are absent or prepared inconsistently across periods</p><p class="caaft-ar-offer-intro">Audit findings arising from inaccurate or non-compliant financial reporting</p><p class="caaft-ar-offer-intro">Investor or lender requests for structured financial statements that are not readily available</p><p class="caaft-ar-offer-intro">CAAFT's structured approach addresses each of these — moving businesses from unreliable, reactive financial reporting to accurate, compliant, and decision-ready statements every period.</p></header></div></section>
-        <section class="caaft-ar-why py-90"><div class="container"><header class="caaft-ar-why-header"><h2 class="caaft-ar-why-h2">Why choose CAAFT</h2></header><div class="caaft-ar-why-panel"><div class="caaft-ar-why-grid caaft-ar-why-grid--five">
+        <section class="caaft-ar-what-we-offer py-90"><div class="container"><header class="caaft-ar-offer-header"><h2 class="caaft-ar-offer-h2">Common Challenges Financial Statement Services Solve</h2><p class="caaft-ar-offer-intro">Most businesses seek professional financial statement support when facing one or more of these:</p><ul class="caaft-ar-inline-list"><li>Financial records that are disorganised, incomplete, or not structured to accounting standards</li><li>Profit and loss statements that do not accurately reflect actual business performance</li><li>Balance sheets with unreconciled entries, misclassified assets, or undisclosed liabilities</li><li>Cash flow statements that are absent or prepared inconsistently across periods</li><li>Audit findings arising from inaccurate or non-compliant financial reporting</li><li>Investor or lender requests for structured financial statements that are not readily available</li></ul><p class="caaft-ar-offer-intro">CAAFT's structured approach addresses each of these — moving businesses from unreliable, reactive financial reporting to accurate, compliant, and decision-ready statements every period.</p></header></div></section>
+        <section class="caaft-ar-why py-90"><div class="container"><header class="caaft-ar-why-header"><h2 class="caaft-ar-why-h2">Why Choose CAAFT</h2></header><div class="caaft-ar-why-panel"><div class="caaft-ar-why-grid caaft-ar-why-grid--five">
             <div class="caaft-ar-why-row caaft-ar-why-row--top">
             <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Accurate and compliant reporting</h3><p class="caaft-ar-why-text">Every financial statement is prepared with precision — fully compliant with applicable accounting standards, reducing errors, minimising audit risk, and ensuring regulatory requirements are consistently met.</p></article>
             <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Expert statement preparation</h3><p class="caaft-ar-why-text">Profit &amp; Loss Statements, Balance Sheets, and Cash Flow Statements are prepared by experienced accounting professionals — delivering reliable, structured financial reports every reporting period.</p></article>
@@ -144,7 +234,9 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
                 <div class="accordion-item"><p class="accordion-header" id="fsFaqHeading2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsFaqCollapse2">2. Can financial statements help businesses apply for loans?</button></p><div id="fsFaqCollapse2" class="accordion-collapse collapse" aria-labelledby="fsFaqHeading2" data-bs-parent="#accordionFsFaq"><div class="accordion-body">Yes. Banks and financial institutions review financial statements to assess a company's financial health before approving loans. Clear, professionally prepared reports demonstrate stability, repayment capacity, and responsible financial management — improving approval prospects.</div></div></div>
                 <div class="accordion-item"><p class="accordion-header" id="fsFaqHeading3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsFaqCollapse3">3. How often should businesses update their financial statements?</button></p><div id="fsFaqCollapse3" class="accordion-collapse collapse" aria-labelledby="fsFaqHeading3" data-bs-parent="#accordionFsFaq"><div class="accordion-body">Financial statements should be updated regularly — typically on a monthly or quarterly basis. Frequent updates allow management to track performance, identify issues early, and address financial challenges before they escalate.</div></div></div>
                 <div class="accordion-item"><p class="accordion-header" id="fsFaqHeading4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsFaqCollapse4">4. What role do financial statements play in attracting investors?</button></p><div id="fsFaqCollapse4" class="accordion-collapse collapse" aria-labelledby="fsFaqHeading4" data-bs-parent="#accordionFsFaq"><div class="accordion-body">Investors rely on financial statements to evaluate profitability, financial structure, and growth potential before committing capital. Transparent, well-prepared financial reports build investor confidence and support faster, more informed funding decisions.</div></div></div>
-                <div class="accordion-item"><p class="accordion-header" id="fsFaqHeading5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsFaqCollapse5">5. Can small businesses benefit from professional financial statement preparation?</button></p><div id="fsFaqCollapse5" class="accordion-collapse collapse" aria-labelledby="fsFaqHeading5" data-bs-parent="#accordionFsFaq"><div class="accordion-body">Yes. Professional preparation ensures accuracy, reduces accounting errors, and provides better financial insights — helping small businesses manage finances more efficiently, maintain compliance, and plan for future growth with greater confidence.</div></div></div>
+                <div class="accordion-item"><p class="accordion-header" id="fsFaqHeading5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsFaqCollapse5" aria-expanded="false" aria-controls="fsFaqCollapse5">5. Can small businesses benefit from professional financial statement preparation?</button></p><div id="fsFaqCollapse5" class="accordion-collapse collapse" aria-labelledby="fsFaqHeading5" data-bs-parent="#accordionFsFaq"><div class="accordion-body">Yes. Professional preparation ensures accuracy, reduces accounting errors, and provides better financial insights — helping small businesses manage finances more efficiently, maintain compliance, and plan for future growth with greater confidence.</div></div></div>
+                <div class="accordion-item"><p class="accordion-header" id="fsFaqHeading6"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsFaqCollapse6" aria-expanded="false" aria-controls="fsFaqCollapse6">6. How do financial statements support business budgeting?</button></p><div id="fsFaqCollapse6" class="accordion-collapse collapse" aria-labelledby="fsFaqHeading6" data-bs-parent="#accordionFsFaq"><div class="accordion-body">Financial statements provide historical data that helps businesses create realistic budgets and control future expenses.</div></div></div>
+                <div class="accordion-item"><p class="accordion-header" id="fsFaqHeading7"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fsFaqCollapse7" aria-expanded="false" aria-controls="fsFaqCollapse7">7. Why should businesses review financial statements regularly?</button></p><div id="fsFaqCollapse7" class="accordion-collapse collapse" aria-labelledby="fsFaqHeading7" data-bs-parent="#accordionFsFaq"><div class="accordion-body">Regular review helps identify financial trends, monitor efficiency, and take corrective actions before issues become critical.</div></div></div>
             </div></div>
         </div></div>
     </main>

@@ -452,7 +452,8 @@
                             <h2 class="caaft-ar-hero-h2">Clear Numbers. Structured Reports. Smarter Business Decisions — <em>Every Month.</em></h2>
                             <p class="caaft-ar-hero-lead">Financial analysis and MIS reporting give startups, SMEs, and growing businesses the financial discipline, trend visibility, and decision-ready data needed to control expenses, track profitability, and identify growth opportunities — turning raw financial data into a genuine strategic advantage.</p>
                             <div class="caaft-ar-hero-ctas">
-                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Boost Financial Performance - Expert MIS Insights, On Demand</a>
+                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Boost Financial Performance</a>
+                                <a href="/contact#contact_us" class="theme-btn theme-btn2 caaft-ar-hero-btn-secondary">Expert MIS Insights, On Demand</a>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6">
