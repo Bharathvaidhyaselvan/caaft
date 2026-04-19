@@ -8759,6 +8759,18 @@ align-items: baseline;}
     scroll-margin-top: 100px;
 }
 
+/* AR/AP — “What Gets Delivered”: title sentence case, full-width header */
+.page-accounting-reporting.page-ar-ap-services .caaft-ar-what-we-offer .caaft-ar-offer-header {
+    max-width: none;
+    width: 100%;
+}
+
+.page-accounting-reporting.page-ar-ap-services #arap-services-heading.caaft-ar-offer-h2 {
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 700;
+}
+
 .page-accounting-reporting .caaft-ar-offer-intro {
     font-family: var(--body-font);
     font-size: 1.05rem;
@@ -9670,6 +9682,11 @@ align-items: baseline;}
     color: #434343;
 }
 
+.page-bookkeeping-accounting .bk-who-closing {
+    margin-top: clamp(1.25rem, 3vw, 2rem);
+    margin-bottom: 0;
+}
+
 .page-bookkeeping-accounting .bk-challenges-box {
     background: #fff;
     border: 1px solid #d8dde3;
@@ -9756,14 +9773,16 @@ align-items: baseline;}
     border-top: 1px solid rgba(51, 182, 255, 0.14);
 }
 
-/* Financial Analysis & MIS — Key Facts stat cards (same layout on Financial Statement Analysis) */
+/* Financial Analysis & MIS — Key Facts stat cards (same layout on Financial Statement Analysis + AR/AP) */
 .page-bookkeeping-accounting.page-financial-analysis-mis .bk-facts-grid--mis-keyfacts,
-.page-bookkeeping-accounting.page-financial-statement-analysis .bk-facts-grid--mis-keyfacts {
+.page-bookkeeping-accounting.page-financial-statement-analysis .bk-facts-grid--mis-keyfacts,
+.page-bookkeeping-accounting.page-ar-ap-services .bk-facts-grid--mis-keyfacts {
     gap: clamp(18px, 2.8vw, 32px);
 }
 
 .page-bookkeeping-accounting.page-financial-analysis-mis .bk-facts-card--mis-keyfact,
-.page-bookkeeping-accounting.page-financial-statement-analysis .bk-facts-card--mis-keyfact {
+.page-bookkeeping-accounting.page-financial-statement-analysis .bk-facts-card--mis-keyfact,
+.page-bookkeeping-accounting.page-ar-ap-services .bk-facts-card--mis-keyfact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9777,7 +9796,8 @@ align-items: baseline;}
 }
 
 .page-bookkeeping-accounting.page-financial-analysis-mis .bk-facts-card--mis-keyfact h3.bk-facts-stat,
-.page-bookkeeping-accounting.page-financial-statement-analysis .bk-facts-card--mis-keyfact h3.bk-facts-stat {
+.page-bookkeeping-accounting.page-financial-statement-analysis .bk-facts-card--mis-keyfact h3.bk-facts-stat,
+.page-bookkeeping-accounting.page-ar-ap-services .bk-facts-card--mis-keyfact h3.bk-facts-stat {
     margin: 0 0 clamp(14px, 2vw, 22px);
     font-family: var(--heading-font);
     font-size: clamp(2rem, 4vw, 3rem);
@@ -9788,7 +9808,8 @@ align-items: baseline;}
 }
 
 .page-bookkeeping-accounting.page-financial-analysis-mis .bk-facts-card--mis-keyfact p.bk-facts-stat-text,
-.page-bookkeeping-accounting.page-financial-statement-analysis .bk-facts-card--mis-keyfact p.bk-facts-stat-text {
+.page-bookkeeping-accounting.page-financial-statement-analysis .bk-facts-card--mis-keyfact p.bk-facts-stat-text,
+.page-bookkeeping-accounting.page-ar-ap-services .bk-facts-card--mis-keyfact p.bk-facts-stat-text {
     margin: 0;
     max-width: 38ch;
     font-family: var(--body-font);
@@ -9797,12 +9818,14 @@ align-items: baseline;}
     color: var(--body-text-color);
 }
 
-/* Third Key Facts card: doc is body-only (no stat headline) */
-.page-bookkeeping-accounting.page-financial-statement-analysis .bk-facts-card--fs-facts-text-only {
+/* Key Facts cards: body-only (no stat headline) — FS third card; AR/AP all three */
+.page-bookkeeping-accounting.page-financial-statement-analysis .bk-facts-card--fs-facts-text-only,
+.page-bookkeeping-accounting.page-ar-ap-services .bk-facts-card--fs-facts-text-only {
     justify-content: center;
 }
 
-.page-bookkeeping-accounting.page-financial-statement-analysis .bk-facts-card--fs-facts-text-only p.bk-facts-stat-text {
+.page-bookkeeping-accounting.page-financial-statement-analysis .bk-facts-card--fs-facts-text-only p.bk-facts-stat-text,
+.page-bookkeeping-accounting.page-ar-ap-services .bk-facts-card--fs-facts-text-only p.bk-facts-stat-text {
     max-width: 42ch;
 }
 
@@ -9813,8 +9836,9 @@ align-items: baseline;}
     text-align: center;
 }
 
-/* Financial Statement Analysis — extra breathing room in bottom CTA */
-.page-bookkeeping-accounting.page-financial-statement-analysis .bk-cta-panel {
+/* Financial Statement Analysis + AR/AP — extra breathing room in bottom CTA */
+.page-bookkeeping-accounting.page-financial-statement-analysis .bk-cta-panel,
+.page-bookkeeping-accounting.page-ar-ap-services .bk-cta-panel {
     padding: clamp(48px, 8vw, 88px) clamp(22px, 4.5vw, 48px);
 }
 
@@ -9861,6 +9885,18 @@ align-items: baseline;}
 
 .page-bookkeeping-accounting .bk-cta-button:hover {
     text-decoration: none;
+}
+
+.page-bookkeeping-accounting .bk-cta-panel .bk-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-bookkeeping-accounting .bk-cta-panel .bk-cta-actions .bk-cta-button {
+    margin-bottom: 0;
 }
 
 @media (max-width: 991.98px) {
@@ -10046,6 +10082,155 @@ align-items: baseline;}
 }
 
 .page-accounting-reporting.page-financial-statement-analysis .caaft-ar-content-media-image img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* Accounts Receivable & Payable — trust + mis-why cards (same layout as Financial Statement Analysis) */
+.page-accounting-reporting.page-ar-ap-services .caaft-ar-trust-indicators {
+    background: #ffffff !important;
+    padding: clamp(22px, 3.5vw, 36px) 0 !important;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core {
+    background: var(--theme-bg-light);
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-inner {
+    max-width: none;
+    margin: 0;
+    text-align: left !important;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-title {
+    margin: 0 0 16px;
+    max-width: none;
+    font-family: var(--heading-font);
+    font-size: clamp(1.75rem, 3.5vw, 2.45rem);
+    font-weight: 800;
+    line-height: 1.2;
+    color: #111;
+    text-align: left !important;
+    text-justify: auto !important;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-sub,
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-lead,
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-outro {
+    margin: 0 0 14px;
+    max-width: none;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #444;
+    text-align: left !important;
+    text-justify: auto !important;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-lead {
+    margin: 0 0 18px;
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-outro {
+    margin: 0;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: clamp(20px, 4vw, 32px);
+}
+
+@media (max-width: 767.98px) {
+    .page-accounting-reporting.page-ar-ap-services .mis-why-core-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    border: 1px solid #e2e6ea;
+    border-radius: 14px;
+    padding: 22px 20px 24px;
+    background: #fff;
+    box-shadow: 0 10px 36px rgba(15, 23, 42, 0.07);
+    text-align: left !important;
+    text-justify: auto !important;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-icon--a {
+    background: rgba(52, 211, 153, 0.22);
+    color: #059669;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-icon--b {
+    background: rgba(167, 139, 250, 0.28);
+    color: #6d28d9;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-icon--c {
+    background: rgba(251, 191, 36, 0.32);
+    color: #b45309;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-icon--d {
+    background: rgba(56, 189, 248, 0.28);
+    color: #0369a1;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-icon--e {
+    background: rgba(244, 114, 182, 0.28);
+    color: #9d174d;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-icon--f {
+    background: rgba(99, 102, 241, 0.22);
+    color: #4338ca;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-card h3 {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: clamp(0.98rem, 1.15vw, 1.12rem);
+    font-weight: 700;
+    line-height: 1.4;
+    color: #111;
+    text-align: left !important;
+    text-justify: auto !important;
+}
+
+.page-accounting-reporting.page-ar-ap-services .mis-why-core-card p.mis-why-core-card-text {
+    margin: 0;
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.65;
+    color: #555;
+    text-align: left !important;
+    text-justify: auto !important;
+}
+
+.page-accounting-reporting.page-ar-ap-services .caaft-ar-content-media-image img {
     width: 100%;
     height: auto;
     max-height: 420px;
