@@ -710,7 +710,7 @@
                 <div class="bk-cta-panel">
                     <h2 id="mis-cta-heading" class="bk-cta-title">Ready to Strengthen Your Financial Decisions?</h2>
                     <p class="bk-cta-text">Clear financial insights are the foundation of smart business decisions. Without structured reporting, businesses risk missing trends, overlooking risks, and losing control of growth. Professional financial analysis and MIS reporting keep data accurate, organised, and ready for action — so performance, profitability, and cash flow can be managed with confidence every month.</p>
-                    <a href="/contact#contact_us" class="theme-btn bk-cta-button">Analyze Smarter. Grow Faster</a>
+                    <a href="/contact#contact_us" class="theme-btn bk-cta-button">Analyze Smarter. Grow Faster <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
