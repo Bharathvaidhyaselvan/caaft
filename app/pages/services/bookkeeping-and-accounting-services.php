@@ -108,6 +108,13 @@
             text-justify: inter-word;
         }
 
+        /* Trust bar: must stay centred (justify on .main * would stretch one line across the viewport). */
+        .page-bookkeeping-accounting .bk-trust-strip-wrap,
+        .page-bookkeeping-accounting .bk-trust-strip-wrap * {
+            text-align: center !important;
+            text-justify: auto !important;
+        }
+
         .page-bookkeeping-accounting .bk-overview-content h2 {
             text-align: left !important;
             text-justify: auto;
