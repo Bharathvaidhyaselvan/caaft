@@ -95,7 +95,7 @@
           "name": "Income Tax Services",
           "alternateName": "Income Tax Filing Services Chennai",
           "url": "https://caaft.com/taxation-services/",
-          "description": "Comprehensive income tax support — from routine return filing to complex audits and strategic planning — ensuring full compliance while identifying every legitimate saving.",
+          "description": "Comprehensive income tax support - from routine return filing to complex audits and strategic planning - ensuring full compliance while identifying every legitimate saving available to you.",
           "provider": {"@id": "https://caaft.com/#organization"},
           "areaServed": {"@type": "Country", "name": "India"},
           "serviceType": "Income Tax Services",
@@ -138,7 +138,7 @@
           "@type": "FAQPage",
           "@id": "https://caaft.com/taxation-services/#faq",
           "mainEntity": [
-            {"@type": "Question", "name": "How do I get started with CAAFT — what does onboarding look like?", "acceptedAnswer": {"@type": "Answer", "text": "Simply book a free consultation. We assess your current compliance status, explain what's needed, and send you a tailored document checklist. Most clients are fully onboarded within 2–3 working days — no paperwork overload, no long waiting periods."}},
+            {"@type": "Question", "name": "How do I get started with CAAFT - what does onboarding look like?", "acceptedAnswer": {"@type": "Answer", "text": "Simply book a free consultation. We assess your current compliance status, explain what's needed, and send you a tailored document checklist. Most clients are fully onboarded within 2–3 working days — no paperwork overload, no long waiting periods."}},
             {"@type": "Question", "name": "Can CAAFT take over from my existing CA mid-year?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we handle transitions at any point in the financial year. We collect your prior filings, reconcile all records, and pick up seamlessly — without disrupting your compliance calendar or creating gaps in your filing history."}},
             {"@type": "Question", "name": "What documents do I typically need to share for tax filing?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on your profile, but typically: PAN, Aadhaar, Form 16 or bank statements, investment proofs, and last year's filed return. We send you a precise, personalised checklist after the initial consultation — so you never have to guess what to gather."}},
             {"@type": "Question", "name": "How are your fees structured — one-time or annual?", "acceptedAnswer": {"@type": "Answer", "text": "We offer both. One-time filing engagements are available for individuals with straightforward needs, while annual retainer packages cover businesses with ongoing monthly or quarterly compliance. All fees are agreed and confirmed upfront — no surprise bills."}},
@@ -225,8 +225,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <article class="caaft-ar-trust-item">
                         <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></span>
                         <div class="caaft-ar-trust-content">
-                            <h3>100+ Businesses</h3>
-                            <p>Served</p>
+                            <h3>100+</h3>
+                            <p>Businesses Served</p>
                         </div>
                     </article>
                     <article class="caaft-ar-trust-item">
@@ -250,13 +250,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>for Every Client</p>
                         </div>
                     </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Trusted Across</h3>
-                            <p>Chennai</p>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
@@ -267,7 +260,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p class="caaft-ar-offer-eyebrow">Income tax</p>
                     <h2 id="tax-offer-income-heading" class="caaft-ar-offer-h2">Income Tax Services</h2>
                     <p class="caaft-ar-offer-intro">
-                        Comprehensive income tax support — from routine return filing to complex audits and strategic planning — ensuring full compliance while identifying every legitimate saving available to you.
+                        Comprehensive income tax support - from routine return filing to complex audits and strategic planning - ensuring full compliance while identifying every legitimate saving available to you.
                     </p>
                 </header>
                 <div class="row g-4 caaft-ar-offer-grid">
@@ -551,7 +544,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="accordion-item">
                                 <p class="accordion-header" id="taxFaqHeading1">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#taxFaqCollapse1" aria-expanded="true" aria-controls="taxFaqCollapse1">
-                                        01. How do I get started with CAAFT — what does onboarding look like?
+                                        01. How do I get started with CAAFT - what does onboarding look like?
                                     </button>
                                 </p>
                                 <div id="taxFaqCollapse1" class="accordion-collapse collapse show" aria-labelledby="taxFaqHeading1" data-bs-parent="#accordionTaxationFaq">

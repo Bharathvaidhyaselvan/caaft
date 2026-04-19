@@ -9482,9 +9482,9 @@ align-items: baseline;}
     }
 }
 
-/* Taxation services hub: six trust-indicator columns on large screens */
+/* Taxation services hub: five equal trust-indicator columns */
 .page-accounting-reporting.page-taxation-services .caaft-ar-trust-grid {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 @media (max-width: 1199px) {
