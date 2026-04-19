@@ -72,46 +72,16 @@
             border-color: #0b2f6b !important;
         }
 
-        .page-bookkeeping-accounting .bk-trust-strip-wrap {
-            padding: 1rem 0;
-        }
-
-        .page-bookkeeping-accounting .bk-trust-strip {
-            margin: 0;
-            font-family: var(--body-font);
-            font-size: clamp(0.9rem, 2vw, 1.05rem);
-            font-weight: 600;
-            line-height: 1.45;
-            color: var(--color-dark);
-            text-align: center;
-            letter-spacing: 0.02em;
-        }
-
-        .page-bookkeeping-accounting .bk-trust-sep {
-            margin: 0 0.35rem;
-            opacity: 0.55;
-            font-weight: 400;
-        }
-
-        @media (max-width: 767.98px) {
-            .page-bookkeeping-accounting .bk-trust-strip .bk-trust-sep {
-                display: block;
-                height: 0;
-                margin: 0.35rem 0;
-                visibility: hidden;
-            }
-        }
-
         .page-bookkeeping-accounting .main,
         .page-bookkeeping-accounting .main * {
             text-align: justify !important;
             text-justify: inter-word;
         }
 
-        /* Trust bar: must stay centred (justify on .main * would stretch one line across the viewport). */
-        .page-bookkeeping-accounting .bk-trust-strip-wrap,
-        .page-bookkeeping-accounting .bk-trust-strip-wrap * {
-            text-align: center !important;
+        /* Trust grid cards: match other service pages (left-aligned labels; not full-justify). */
+        .page-bookkeeping-accounting .caaft-ar-trust-indicators .caaft-ar-trust-item,
+        .page-bookkeeping-accounting .caaft-ar-trust-indicators .caaft-ar-trust-item * {
+            text-align: left !important;
             text-justify: auto !important;
         }
 
@@ -368,9 +338,38 @@
             </div>
         </section>
 
-        <section class="caaft-ar-trust-indicators bk-trust-strip-wrap" aria-label="Trust indicators">
+        <section class="caaft-ar-trust-indicators" aria-label="Trust indicators">
             <div class="container">
-                <p class="bk-trust-strip">Rated 4.8/5 <span aria-hidden="true">⭐</span> on Google<span class="bk-trust-sep" aria-hidden="true">|</span>500+ Businesses Served<span class="bk-trust-sep" aria-hidden="true">|</span>99% Accuracy Rate<span class="bk-trust-sep" aria-hidden="true">|</span>100% Data Confidentiality</p>
+                <div class="caaft-ar-trust-grid caaft-ar-trust-grid--eq-4">
+                    <article class="caaft-ar-trust-item">
+                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="far fa-check-circle"></i></span>
+                        <div class="caaft-ar-trust-content">
+                            <h3>Rated 4.8/5 <span class="caaft-ar-trust-stars" aria-hidden="true">⭐</span></h3>
+                            <p>on Google</p>
+                        </div>
+                    </article>
+                    <article class="caaft-ar-trust-item">
+                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></span>
+                        <div class="caaft-ar-trust-content">
+                            <h3>500+</h3>
+                            <p>Businesses Served</p>
+                        </div>
+                    </article>
+                    <article class="caaft-ar-trust-item">
+                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-bullseye"></i></span>
+                        <div class="caaft-ar-trust-content">
+                            <h3>99%</h3>
+                            <p>Accuracy Rate</p>
+                        </div>
+                    </article>
+                    <article class="caaft-ar-trust-item">
+                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
+                        <div class="caaft-ar-trust-content">
+                            <h3>100%</h3>
+                            <p>Data Confidentiality</p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
