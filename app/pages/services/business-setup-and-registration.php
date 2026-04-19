@@ -87,6 +87,7 @@
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "MSME / Udyam Registration"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "FSSAI Registration"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Professional Tax Registration"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "EPF & ESI Registration & Compliance"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Import Export Code (IEC)"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digital Signature Certificate (DSC)"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "12A & 80G Registration"}}
@@ -107,12 +108,12 @@
             "@type": "OfferCatalog",
             "name": "Company Registration Services",
             "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Private Limited Company Registration", "description": "Preferred structure for funded startups — limited liability and separate legal identity under the Companies Act."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Public Limited Company Registration", "description": "For businesses raising capital from the public, with governance frameworks for larger-scale operations."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "One Person Company (OPC) Registration", "description": "Ideal for solo entrepreneurs wanting limited liability without co-founders or partners."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LLP Registration", "description": "Flexible structure combining partnership benefits with limited liability — suited for professionals and consultants."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Partnership Firm Registration", "description": "For two or more individuals running a business together under the Indian Partnership Act."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sole Proprietorship Registration", "description": "Simplest structure for individual operators — quick to set up and ideal for freelancers."}}
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Private Limited Company Registration", "description": "The most preferred structure for funded startups and growing businesses — incorporated under the Companies Act with limited liability and separate legal identity."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Public Limited Company Registration", "description": "For businesses planning to raise capital from the public — incorporated with the governance and compliance framework required for larger-scale operations."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "One Person Company (OPC) Registration", "description": "The ideal structure for solo entrepreneurs who want the credibility and limited liability of a company without the need for co-founders or partners."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LLP Registration", "description": "A flexible structure that combines the benefits of a partnership with limited liability protection — suited for professionals, consultants, and service businesses."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Partnership Firm Registration", "description": "A straightforward structure for two or more individuals running a business together — registered under the Indian Partnership Act with a defined partnership deed."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sole Proprietorship Registration", "description": "The simplest business structure for individual operators — quick to set up, easy to manage, and ideal for freelancers and small business owners starting out."}}
             ]
           }
         },
@@ -130,13 +131,13 @@
             "@type": "OfferCatalog",
             "name": "Other Registrations and Licences",
             "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "MSME / Udyam Registration", "description": "Register as a Micro, Small, or Medium Enterprise to access government schemes and priority lending."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "FSSAI Registration", "description": "Mandatory food business licence for manufacture, storage, distribution, or sale of food products."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Professional Tax Registration", "description": "State-level registration for employers and self-employed professionals for PT compliance."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "EPF & ESI Registration & Compliance", "description": "Registration, monthly filings, and ongoing labour law compliance for EPF and ESI."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Import Export Code (IEC)", "description": "Mandatory 10-digit DGFT code for any business importing or exporting goods and services."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digital Signature Certificate (DSC)", "description": "Electronically issued certificate for secure online filings with MCA, Income Tax, GST, and other portals."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "12A & 80G Registration", "description": "12A grants income tax exemption to NGOs/trusts; 80G enables donors to claim deductions."}}
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "MSME / Udyam Registration", "description": "Register your business as a Micro, Small, or Medium Enterprise to access government schemes, priority lending, and statutory protections available to MSMEs."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "FSSAI Registration", "description": "Mandatory food business licence for anyone involved in the manufacture, storage, distribution, or sale of food products — issued by the Food Safety and Standards Authority of India."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Professional Tax Registration", "description": "State-level registration required for employers and self-employed professionals to comply with professional tax deduction and payment obligations."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "EPF & ESI Registration & Compliance", "description": "End-to-end support for Provident Fund and Employee State Insurance registration, monthly contribution filings, and ongoing compliance — ensuring statutory employer obligations under labour law."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Import Export Code (IEC)", "description": "The 10-digit code issued by DGFT that is mandatory for any business engaged in importing or exporting goods and services from India."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digital Signature Certificate (DSC)", "description": "An electronically issued certificate used for secure online filings with MCA, Income Tax, GST, and other government portals — required for authorised signatories."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "12A & 80G Registration", "description": "For non-profit organisations and NGOs — 12A grants income tax exemption to the trust or society, while 80G enables donors to claim deductions on their contributions."}}
             ]
           }
         },
@@ -144,7 +145,7 @@
           "@type": "FAQPage",
           "@id": "https://caaft.com/business-setup-and-registration/#faq",
           "mainEntity": [
-            {"@type": "Question", "name": "How do I decide which business structure is right for me?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on factors like the number of founders, your funding plans, the nature of the business, and how much compliance you are comfortable with. A sole proprietorship offers simplicity; a Pvt Ltd offers credibility and limited liability; an LLP offers flexibility. During your free consultation, we assess your situation and give you a clear, unbiased recommendation — not a generic answer."}},
+            {"@type": "Question", "name": "How do I decide which business structure is right for me?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on factors like the number of founders, your funding plans, the nature of the business, and how much compliance you are comfortable with. A sole proprietorship offers simplicity; a Pvt Ltd offers credibility and limited liability; an LLP offers flexibility. During your free consultation, we assess your situation and give you a clear, unbiased recommendation - not a generic answer."}},
             {"@type": "Question", "name": "How long does company registration typically take?", "acceptedAnswer": {"@type": "Answer", "text": "A Private Limited Company or LLP is typically registered within 7–15 working days, depending on the availability of your chosen name and the speed of document submission. FSSAI and IEC registrations usually take 5–10 working days. We give you a realistic timeline upfront for your specific registration."}},
             {"@type": "Question", "name": "Can I register a company if I am the only founder?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A One Person Company (OPC) is designed for solo founders who want the legal and liability benefits of a registered company without requiring a co-founder or partner. You will need to nominate one person as a nominee director, but operational control remains entirely with you."}},
             {"@type": "Question", "name": "What documents are generally required for company registration?", "acceptedAnswer": {"@type": "Answer", "text": "The core documents include PAN and Aadhaar of all directors/partners, address proof, passport-size photographs, and proof of the registered office address. Additional documents vary by structure. We send you a complete, tailored checklist as soon as we understand your requirements."}},
@@ -192,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
                         <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
                             <h1 id="bsr-hero-h1" class="caaft-ar-hero-h1">Business Setup &amp; Registration Services</h1>
-                            <h2 class="caaft-ar-hero-h2">Start Right. Register Smart. Build on <em>Solid Ground.</em></h2>
+                            <h2 class="caaft-ar-hero-h2">Start Right. Register Smart. Build on Solid Ground.</h2>
                             <p class="caaft-ar-hero-lead">
                                 From company incorporation to essential business licences, CAAFT handles every registration your business needs — accurately, efficiently, and without the back-and-forth. Every business deserves a strong legal foundation from day one. We handle the paperwork, portal filings, and follow-ups so you can focus on building.
                             </p>
@@ -220,7 +221,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <section class="caaft-ar-trust-indicators" aria-label="Trust indicators">
             <div class="container">
-                <div class="caaft-ar-trust-grid">
+                <div class="caaft-ar-trust-grid caaft-ar-trust-grid--eq-4">
                     <article class="caaft-ar-trust-item">
                         <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="far fa-check-circle"></i></span>
                         <div class="caaft-ar-trust-content">
@@ -249,13 +250,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>&amp; More</p>
                         </div>
                     </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-user-friends"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Dedicated Expert</h3>
-                            <p>for Every Registration</p>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
@@ -266,7 +260,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p class="caaft-ar-offer-eyebrow">Company registration</p>
                     <h2 id="bsr-company-heading" class="caaft-ar-offer-h2">Company Registration Services</h2>
                     <p class="caaft-ar-offer-intro">
-                        Choosing the right business structure is one of the most important decisions you will make. CAAFT advises on the best fit for your goals — and handles the complete incorporation process from document preparation to certificate of registration.
+                        Choosing the right business structure is one of the most important decisions you will make. CAAFT advises on the best fit for your goals - and handles the complete incorporation process from document preparation to certificate of registration.
                     </p>
                 </header>
                 <div class="row g-4 caaft-ar-offer-grid">
@@ -293,7 +287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-user"></i></span>
                             <h3 class="caaft-ar-offer-card-title">One Person Company (OPC)</h3>
-                            <p class="caaft-ar-offer-card-text">Ideal for solo entrepreneurs who want the credibility and limited liability of a company without the need for co-founders or partners.</p>
+                            <p class="caaft-ar-offer-card-text">The ideal structure for solo entrepreneurs who want the credibility and limited liability of a company without the need for co-founders or partners.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -343,7 +337,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-certificate"></i></span>
                             <h3 class="caaft-ar-offer-card-title">MSME / Udyam Registration</h3>
-                            <p class="caaft-ar-offer-card-text">Register as an MSME to access government schemes, priority lending, and statutory protections available to MSMEs.</p>
+                            <p class="caaft-ar-offer-card-text">Register your business as a Micro, Small, or Medium Enterprise to access government schemes, priority lending, and statutory protections available to MSMEs.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -352,7 +346,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-utensils"></i></span>
                             <h3 class="caaft-ar-offer-card-title">FSSAI Registration</h3>
-                            <p class="caaft-ar-offer-card-text">Mandatory food business licence for manufacture, storage, distribution, or sale of food products — issued by FSSAI.</p>
+                            <p class="caaft-ar-offer-card-text">Mandatory food business licence for anyone involved in the manufacture, storage, distribution, or sale of food products - issued by the Food Safety and Standards Authority of India.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -361,7 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-file-signature"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Professional Tax Registration</h3>
-                            <p class="caaft-ar-offer-card-text">State-level registration for employers and self-employed professionals to comply with professional tax obligations.</p>
+                            <p class="caaft-ar-offer-card-text">State-level registration required for employers and self-employed professionals to comply with professional tax deduction and payment obligations.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -370,7 +364,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">04</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-user-shield"></i></span>
                             <h3 class="caaft-ar-offer-card-title">EPF &amp; ESI Registration &amp; Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">End-to-end support for EPF and ESI registration, monthly contribution filings, and ongoing compliance under labour law.</p>
+                            <p class="caaft-ar-offer-card-text">End-to-end support for Provident Fund and Employee State Insurance registration, monthly contribution filings, and ongoing compliance - ensuring your business meets all statutory employer obligations under labour law.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -388,7 +382,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">06</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-key"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Digital Signature Certificate (DSC)</h3>
-                            <p class="caaft-ar-offer-card-text">Electronically issued certificate used for secure online filings with MCA, Income Tax, GST, and other portals — required for authorised signatories.</p>
+                            <p class="caaft-ar-offer-card-text">An electronically issued certificate used for secure online filings with MCA, Income Tax, GST, and other government portals - required for authorised signatories.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -397,7 +391,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">07</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-hand-holding-heart"></i></span>
                             <h3 class="caaft-ar-offer-card-title">12A &amp; 80G Registration</h3>
-                            <p class="caaft-ar-offer-card-text">For non-profits — 12A grants income tax exemption, while 80G enables donors to claim deductions on contributions.</p>
+                            <p class="caaft-ar-offer-card-text">For non-profit organisations and NGOs - 12A grants income tax exemption to the trust or society, while 80G enables donors to claim deductions on their contributions.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -421,7 +415,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <article class="caaft-ar-why-cell">
                             <span class="caaft-ar-why-num" aria-hidden="true">02</span>
                             <h3 class="caaft-ar-why-title">No Guesswork on Structure</h3>
-                            <p class="caaft-ar-why-text">A clear, unbiased recommendation between Pvt Ltd, LLP, OPC, or Partnership — based on your business model and compliance appetite.</p>
+                            <p class="caaft-ar-why-text">A clear, unbiased recommendation is provided between Pvt Ltd, LLP, OPC, or Partnership — based on the client's business model, funding plans, and compliance appetite.</p>
                         </article>
                         <article class="caaft-ar-why-cell">
                             <span class="caaft-ar-why-num" aria-hidden="true">03</span>
@@ -436,12 +430,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <article class="caaft-ar-why-cell">
                             <span class="caaft-ar-why-num" aria-hidden="true">05</span>
                             <h3 class="caaft-ar-why-title">Post-Registration Guidance</h3>
-                            <p class="caaft-ar-why-text">You’re briefed on immediate compliance obligations — so the business starts right and avoids first-year penalties.</p>
+                            <p class="caaft-ar-why-text">Clients are briefed on immediate compliance obligations post-registration — so the business starts right and avoids first-year penalties.</p>
                         </article>
                         <article class="caaft-ar-why-cell">
                             <span class="caaft-ar-why-num" aria-hidden="true">06</span>
                             <h3 class="caaft-ar-why-title">Transparent Fixed Fees</h3>
-                            <p class="caaft-ar-why-text">Government and professional fees are laid out upfront — no hidden costs, no surprises.</p>
+                            <p class="caaft-ar-why-text">All government, professional, and additional fees are laid out upfront — no hidden costs, no surprises.</p>
                         </article>
                     </div>
                 </div>
@@ -459,7 +453,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
                         <div class="caaft-ar-how-body">
                             <h3 class="caaft-ar-how-step-title">Step 1 – Free Consultation</h3>
-                            <p class="caaft-ar-how-step-text">Your business goals and ownership structure are assessed — and the most suitable registration type is recommended.</p>
+                            <p class="caaft-ar-how-step-text">The client's business, goals, and ownership structure are assessed — and the most suitable registration type is recommended.</p>
                         </div>
                     </li>
                     <li class="caaft-ar-how-step caaft-ar-how-step--line">
@@ -473,28 +467,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
                         <div class="caaft-ar-how-body">
                             <h3 class="caaft-ar-how-step-title">Step 3 – Application Preparation</h3>
-                            <p class="caaft-ar-how-step-text">The application is prepared, agreements drafted, and documents verified before submission.</p>
+                            <p class="caaft-ar-how-step-text">The complete application is prepared, agreements drafted, and all documents verified before submission.</p>
                         </div>
                     </li>
                     <li class="caaft-ar-how-step caaft-ar-how-step--line">
                         <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
                         <div class="caaft-ar-how-body">
                             <h3 class="caaft-ar-how-step-title">Step 4 – Filing &amp; Submission</h3>
-                            <p class="caaft-ar-how-step-text">Filed on the relevant portal — MCA, DGFT, FSSAI, or others — and tracked at every stage.</p>
+                            <p class="caaft-ar-how-step-text">The application is filed on the relevant portal — MCA, DGFT, FSSAI, or others — and tracked at every stage.</p>
                         </div>
                     </li>
                     <li class="caaft-ar-how-step caaft-ar-how-step--line">
                         <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
                         <div class="caaft-ar-how-body">
                             <h3 class="caaft-ar-how-step-title">Step 5 – Query Handling</h3>
-                            <p class="caaft-ar-how-step-text">Any authority queries are responded to promptly on your behalf.</p>
+                            <p class="caaft-ar-how-step-text">Any queries raised by the authority are responded to promptly on the client's behalf.</p>
                         </div>
                     </li>
                     <li class="caaft-ar-how-step">
                         <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
                         <div class="caaft-ar-how-body">
                             <h3 class="caaft-ar-how-step-title">Step 6 – Certificate Delivery</h3>
-                            <p class="caaft-ar-how-step-text">The certificate is delivered along with a briefing on compliance obligations and next steps.</p>
+                            <p class="caaft-ar-how-step-text">The registration certificate is delivered along with a briefing on compliance obligations and next steps.</p>
                         </div>
                     </li>
                 </ol>
@@ -507,10 +501,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-lg-6 caaft-ar-git-col-main">
                         <p class="caaft-ar-git-eyebrow">Get in touch</p>
                         <h2 id="bsr-git-heading" class="caaft-ar-git-h2">
-                            Your Business, Officially and Correctly <em>Registered.</em>
+                            Your Business, Officially and Correctly Registered.
                         </h2>
                         <p class="caaft-ar-git-lead">
-                            Whether you are starting fresh, formalising an existing setup, or adding a licence your business needs — CAAFT handles the entire process from consultation to certificate. We respond within one business day.
+                            Whether you are starting fresh, formalising an existing setup, or adding a licence your business needs - CAAFT handles the entire process from consultation to certificate. We respond within one business day.
                         </p>
                         <div class="caaft-ar-git-ctas">
                             <a href="/contact#contact_us" class="theme-btn caaft-ar-git-btn-call">Start Your Registration</a>
@@ -572,7 +566,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </button>
                                 </p>
                                 <div id="bsrFaqCollapse1" class="accordion-collapse collapse show" aria-labelledby="bsrFaqHeading1" data-bs-parent="#accordionBusinessSetupFaq">
-                                    <div class="accordion-body">It depends on factors like the number of founders, your funding plans, the nature of the business, and how much compliance you are comfortable with. A sole proprietorship offers simplicity; a Pvt Ltd offers credibility and limited liability; an LLP offers flexibility. During your free consultation, we assess your situation and give you a clear, unbiased recommendation — not a generic answer.</div>
+                                    <div class="accordion-body">It depends on factors like the number of founders, your funding plans, the nature of the business, and how much compliance you are comfortable with. A sole proprietorship offers simplicity; a Pvt Ltd offers credibility and limited liability; an LLP offers flexibility. During your free consultation, we assess your situation and give you a clear, unbiased recommendation - not a generic answer.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
