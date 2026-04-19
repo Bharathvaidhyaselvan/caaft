@@ -8,12 +8,12 @@
     <title>Bookkeeping and Accounting Services for Businesses | Expert Financial Management</title>
     <meta name="description" content="Get professional bookkeeping and accounting services to manage your finances, improve cash flow, and ensure compliance. Simplify financial management for your business today.">
     <meta name="keywords" content="bookkeeping and accounting, difference between bookkeeping and accounting, book keeping and accounting means">
-    <link rel="canonical" href="https://caaft.com/bookkeeping-and-accounting-services/">
+    <link rel="canonical" href="https://caaft.com/bookkeeping-and-accounting-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Bookkeeping and Accounting Services for Businesses | Expert Financial Management">
     <meta property="og:description" content="Get professional bookkeeping and accounting services to manage your finances, improve cash flow, and ensure compliance. Simplify financial management for your business today.">
-    <meta property="og:url" content="https://caaft.com/bookkeeping-and-accounting-services/">
+    <meta property="og:url" content="https://caaft.com/bookkeeping-and-accounting-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/book-keeping.jpeg">
     <meta name="twitter:card" content="summary_large_image">
@@ -170,7 +170,7 @@
             text-align: center !important;
         }
 
-        /* FAQ: match schema copy verbatim (avoid global justify on accordion bodies) */
+        /* FAQ accordion: avoid global justify on buttons/bodies */
         .page-bookkeeping-accounting .faq-area .accordion-button,
         .page-bookkeeping-accounting .faq-area .accordion-body {
             text-align: left !important;
@@ -205,9 +205,9 @@
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/bookkeeping-and-accounting-services/#service",
+          "@id": "https://caaft.com/bookkeeping-and-accounting-services#service",
           "name": "Bookkeeping and Accounting Services",
-          "url": "https://caaft.com/bookkeeping-and-accounting-services/",
+          "url": "https://caaft.com/bookkeeping-and-accounting-services",
           "description": "Professional bookkeeping and accounting services to manage your finances, improve cash flow, and ensure compliance. Simplify financial management for your business today.",
           "provider": {
             "@type": "Organization",
@@ -256,7 +256,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/bookkeeping-and-accounting-services/#faq",
+          "@id": "https://caaft.com/bookkeeping-and-accounting-services#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -302,10 +302,10 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/bookkeeping-and-accounting-services/#breadcrumb",
+          "@id": "https://caaft.com/bookkeeping-and-accounting-services#breadcrumb",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com"},
-            {"@type": "ListItem", "position": 2, "name": "Bookkeeping and Accounting Services", "item": "https://caaft.com/bookkeeping-and-accounting-services/"}
+            {"@type": "ListItem", "position": 2, "name": "Bookkeeping and Accounting Services", "item": "https://caaft.com/bookkeeping-and-accounting-services"}
           ]
         }
       ]
