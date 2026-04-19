@@ -8767,6 +8767,23 @@ align-items: baseline;}
     margin: 0;
 }
 
+.page-accounting-reporting .caaft-ar-inline-list {
+    font-family: var(--body-font);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--body-text-color);
+    margin: 0 0 1rem 1.25rem;
+    padding: 0;
+}
+
+.page-accounting-reporting .caaft-ar-inline-list li {
+    margin-bottom: 0.35rem;
+}
+
+.page-accounting-reporting .caaft-ar-inline-list li:last-child {
+    margin-bottom: 0;
+}
+
 .page-accounting-reporting .caaft-ar-offer-card {
     position: relative;
     height: 100%;
@@ -9601,6 +9618,26 @@ align-items: baseline;}
     color: #4a4a4a;
 }
 
+.page-bookkeeping-accounting .bk-delivered-body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.page-bookkeeping-accounting .bk-delivered-body .bk-delivered-text {
+    margin: 0;
+}
+
+.page-bookkeeping-accounting .bk-who-card-title {
+    margin: 0 0 10px;
+    font-family: var(--heading-font);
+    font-size: 1.05rem;
+    line-height: 1.35;
+    font-weight: 700;
+    color: #232323;
+}
+
 .page-bookkeeping-accounting .bk-who-header,
 .page-bookkeeping-accounting .bk-challenges-header,
 .page-bookkeeping-accounting .bk-facts-header {
@@ -9611,6 +9648,10 @@ align-items: baseline;}
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
+}
+
+.page-bookkeeping-accounting.page-financial-analysis-mis .bk-who-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .page-bookkeeping-accounting .bk-who-card {
@@ -9709,6 +9750,49 @@ align-items: baseline;}
     color: #444;
 }
 
+/* Financial Analysis & MIS — Step-by-Step on theme light blue */
+.page-accounting-reporting.page-financial-analysis-mis .caaft-ar-how {
+    background: var(--theme-bg-light);
+    border-top: 1px solid rgba(51, 182, 255, 0.14);
+}
+
+/* Financial Analysis & MIS — Key Facts stat cards (reference layout) */
+.page-bookkeeping-accounting.page-financial-analysis-mis .bk-facts-grid--mis-keyfacts {
+    gap: clamp(18px, 2.8vw, 32px);
+}
+
+.page-bookkeeping-accounting.page-financial-analysis-mis .bk-facts-card--mis-keyfact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #d8dde3;
+    border-radius: 10px;
+    padding: clamp(28px, 4.5vw, 42px) clamp(22px, 3.5vw, 40px);
+    min-height: 0;
+    background: #fff;
+    box-shadow: none;
+}
+
+.page-bookkeeping-accounting.page-financial-analysis-mis .bk-facts-card--mis-keyfact h3.bk-facts-stat {
+    margin: 0 0 clamp(14px, 2vw, 22px);
+    font-family: var(--heading-font);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--color-dark);
+}
+
+.page-bookkeeping-accounting.page-financial-analysis-mis .bk-facts-card--mis-keyfact p.bk-facts-stat-text {
+    margin: 0;
+    max-width: 38ch;
+    font-family: var(--body-font);
+    font-size: 0.96rem;
+    line-height: 1.65;
+    color: var(--body-text-color);
+}
+
 .page-bookkeeping-accounting .bk-cta-panel {
     background: linear-gradient(155deg, #07132e 0%, #0f2a56 35%, #1b4f9e 62%, #0A1D43 100%);
     border-radius: 14px;
@@ -9766,7 +9850,8 @@ align-items: baseline;}
         grid-template-columns: 40px minmax(0, 1fr);
     }
 
-    .page-bookkeeping-accounting .bk-delivered-text {
+    .page-bookkeeping-accounting .bk-delivered-text,
+    .page-bookkeeping-accounting .bk-delivered-body {
         grid-column: 2;
     }
 
