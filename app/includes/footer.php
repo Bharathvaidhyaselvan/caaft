@@ -93,9 +93,6 @@
                             © Copyright 2024. <a href="#">
                                 CAAFT Consultancy Services Private Limited.</a>
                             All Rights Reserved.
-                            Developed By <a href="https://www.kpwebtech.com/seo-company-seo-services-in-chennai.php"
-                                target="_blank" title="Seo Company in Chennai">KP Webtech.</a>
-
 
                         </p>
                     </div>
