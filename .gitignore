@@ -16,3 +16,6 @@ Thumbs.db
 # Logs
 *.log
 npm-debug.log*
+
+# SSL CA domain validation (temporary files; do not commit)
+.well-known/pki-validation/
