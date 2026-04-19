@@ -107,10 +107,10 @@
             "@type": "OfferCatalog",
             "name": "Company Compliance Services",
             "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Private Limited Company Compliance", "description": "Board meetings, annual returns, financial statements, and all MCA obligations managed without gaps."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Public Limited Company Compliance", "description": "AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "One Person Company Compliance", "description": "Board resolutions, financial statements, and ROC filings kept lean for single-director structures."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LLP Compliance", "description": "Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end."}}
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Private Limited Company Compliance", "description": "Complete annual compliance for Pvt Ltd companies — board meetings, annual returns, financial statements, and all MCA obligations managed without gaps."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Public Limited Company Compliance", "description": "End-to-end statutory compliance for Public Limited Companies — including AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "One Person Company Compliance", "description": "Annual compliance for OPCs — board resolutions, financial statements, and ROC filings, kept lean for single-director structures."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LLP Compliance", "description": "Annual filing and compliance for LLPs — Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end."}}
             ]
           }
         },
@@ -128,8 +128,8 @@
             "@type": "OfferCatalog",
             "name": "Firm Compliance Services",
             "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Partnership Firm Compliance", "description": "Books maintenance, registration renewals, and regulatory filings under the Partnership Act."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sole Proprietorship Compliance", "description": "Licence renewals, professional tax filings, and regulatory compliance to keep the business in good standing."}}
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Partnership Firm Compliance", "description": "Ongoing compliance for registered partnerships — books maintenance, registration renewals, and regulatory filings under the Partnership Act."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sole Proprietorship Compliance", "description": "Licence renewals, professional tax filings, and regulatory compliance for sole proprietorships — keeping the business active and in good standing."}}
             ]
           }
         },
@@ -148,11 +148,11 @@
             "name": "ROC Compliance Services",
             "itemListElement": [
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Director KYC (DIR-3 KYC)", "description": "Annual KYC filing for every DIN holder — mandatory to keep the DIN active and avoid filing blockages."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Add / Remove Director", "description": "Director appointment or resignation filed with the ROC — resolution drafting, Form DIR-12, and MCA submission."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Authorised Capital Increase", "description": "Board and shareholder resolutions, Form SH-7, and Form MGT-14 filed within prescribed timelines."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Registered Office Change", "description": "Address change filed with the ROC — same city, state, or across states — with all resolutions and Form INC-22 or INC-23."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ROC Filings", "description": "Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — submitted before due dates."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Company Closure / Winding Up", "description": "Strike-off or voluntary winding up — resolutions, indemnity bonds, compliance clearances, and STK-2 filing handled completely."}}
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Add / Remove Director", "description": "Formal director appointment or resignation filed with the ROC — including resolution drafting, Form DIR-12, and MCA submission."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Authorised Capital Increase", "description": "Filing for increased authorised share capital — board and shareholder resolutions, Form SH-7, and Form MGT-14 within prescribed timelines."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Registered Office Change", "description": "Address change filed correctly with the ROC — within the same city, state, or across states — with all resolutions and Form INC-22 or INC-23."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ROC Filings", "description": "Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — prepared accurately and submitted before due dates."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Company Closure / Winding Up", "description": "Managed strike-off or voluntary winding up — resolutions, indemnity bonds, compliance clearances, and STK-2 filing handled completely."}}
             ]
           }
         },
@@ -160,14 +160,14 @@
           "@type": "FAQPage",
           "@id": "https://caaft.com/compliance-and-regulatory-services/#faq",
           "mainEntity": [
-            {"@type": "Question", "name": "Can CAAFT manage compliance for multiple companies under the same group?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We manage compliance across multiple entities for the same business group — with a consolidated calendar, unified communication, and a single point of contact for all filings."}},
-            {"@type": "Question", "name": "Will I be reminded before every deadline — or do I need to track it myself?", "acceptedAnswer": {"@type": "Answer", "text": "You don't track anything. We maintain your compliance calendar and send you advance reminders before every due date — along with a clear list of what we need from you."}},
-            {"@type": "Question", "name": "What if I'm not sure which filings my company has missed?", "acceptedAnswer": {"@type": "Answer", "text": "Our free compliance review checks MCA records, identifies what is filed, what is overdue, and what penalties have accumulated — then gives you a clear action plan."}},
-            {"@type": "Question", "name": "Do I need to be physically present for any of the filings?", "acceptedAnswer": {"@type": "Answer", "text": "No. All ROC and MCA filings are done digitally. Where physical signatures are required, documents are couriered, signed, and handled remotely."}},
-            {"@type": "Question", "name": "How quickly can CAAFT start managing our compliance?", "acceptedAnswer": {"@type": "Answer", "text": "We can onboard your entity within 2–3 working days. After the initial review, we set up your calendar and begin handling upcoming obligations immediately."}},
-            {"@type": "Question", "name": "We recently changed our CA. Will CAAFT need access to our past filings?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Access to past MCA filings and company records helps build an accurate compliance picture. We guide you through transition smoothly without interrupting obligations."}},
-            {"@type": "Question", "name": "Is there a minimum company size or turnover to engage CAAFT for compliance?", "acceptedAnswer": {"@type": "Answer", "text": "No. We work with entities of all sizes. Engagement is scoped to your entity type and filing volume, not business size."}},
-            {"@type": "Question", "name": "What happens if the ROC rejects or returns a filing we submitted?", "acceptedAnswer": {"@type": "Answer", "text": "We handle returned or queried filings as part of the engagement, at no additional charge for standard corrections."}}
+            {"@type": "Question", "name": "Can CAAFT manage compliance for multiple companies under the same group?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We manage compliance across multiple entities for the same business group - with a consolidated calendar, unified communication, and a single point of contact for all filings. Many of our clients run 2–4 entities and prefer to consolidate their compliance under one firm."}},
+            {"@type": "Question", "name": "Will I be reminded before every deadline - or do I need to track it myself?", "acceptedAnswer": {"@type": "Answer", "text": "You don't track anything. We maintain your compliance calendar and send you advance reminders before every due date - along with a clear list of what we need from you. Your only job is to respond to our checklist."}},
+            {"@type": "Question", "name": "What if I'm not sure which filings my company has missed?", "acceptedAnswer": {"@type": "Answer", "text": "That's exactly what our free compliance review is for. We check your MCA records, identify what has been filed, what is overdue, and what penalties have accumulated - and give you a clear action plan before any commitment is made."}},
+            {"@type": "Question", "name": "Do I need to be physically present for any of the filings?", "acceptedAnswer": {"@type": "Answer", "text": "No. All ROC and MCA filings are done digitally. Where physical signatures are required - such as on resolutions or indemnity bonds - we courier the documents to you, get them signed, and handle everything else remotely."}},
+            {"@type": "Question", "name": "How quickly can CAAFT start managing our compliance?", "acceptedAnswer": {"@type": "Answer", "text": "We can onboard your entity within 2–3 working days. After the initial compliance review, we set up your calendar, assign a dedicated manager, and begin handling upcoming obligations immediately."}},
+            {"@type": "Question", "name": "We recently changed our CA. Will CAAFT need access to our past filings?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - we will need access to your past MCA filings and company records to build an accurate compliance picture. We guide you through exactly what to share and handle the transition smoothly, without interrupting any ongoing obligations."}},
+            {"@type": "Question", "name": "Is there a minimum company size or turnover to engage CAAFT for compliance?", "acceptedAnswer": {"@type": "Answer", "text": "No. We work with companies of all sizes - from newly incorporated entities with no turnover to established businesses with complex compliance requirements. Our engagement is scoped to your entity type and volume of filings, not your size."}},
+            {"@type": "Question", "name": "What happens if the ROC rejects or returns a filing we submitted?", "acceptedAnswer": {"@type": "Answer", "text": "We handle it. If any filing is returned, queried, or requires resubmission, we address it as part of the engagement - at no additional charge for standard corrections. You will not receive a rejection notice and be left to figure it out yourself."}}
           ]
         },
         {
@@ -208,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
                         <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
                             <h1 id="cr-hero-h1" class="caaft-ar-hero-h1">Compliance and Regulatory Services</h1>
-                            <h2 class="caaft-ar-hero-h2">Stay Compliant. Stay Protected. Stay in <em>Business.</em></h2>
+                            <h2 class="caaft-ar-hero-h2">Stay Compliant. Stay Protected. Stay in Business.</h2>
                             <p class="caaft-ar-hero-lead">
                                 From annual filings to ROC changes, CAAFT manages every compliance obligation your company carries — so nothing lapses, penalties don't build up, and your business always stands on solid legal ground. Missing a deadline can mean late fees or director disqualification. We track every obligation, file on time, and handle every change so compliance is never a problem.
                             </p>
@@ -236,7 +236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <section class="caaft-ar-trust-indicators" aria-label="Trust indicators">
             <div class="container">
-                <div class="caaft-ar-trust-grid">
+                <div class="caaft-ar-trust-grid caaft-ar-trust-grid--eq-4">
                     <article class="caaft-ar-trust-item">
                         <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="far fa-check-circle"></i></span>
                         <div class="caaft-ar-trust-content">
@@ -259,16 +259,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </article>
                     <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>All Entity</h3>
-                            <p>Types Covered</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
                         <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-user-cog"></i></span>
                         <div class="caaft-ar-trust-content">
-                            <h3>Dedicated Manager</h3>
+                            <h3>Dedicated Compliance Manager</h3>
                             <p>for Every Client</p>
                         </div>
                     </article>
@@ -291,7 +284,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-building"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Private Limited Company Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">Board meetings, annual returns, financial statements, and all MCA obligations managed without gaps.</p>
+                            <p class="caaft-ar-offer-card-text">Complete annual compliance for Pvt Ltd companies — board meetings, annual returns, financial statements, and all MCA obligations managed without gaps.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -300,7 +293,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-city"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Public Limited Company Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act.</p>
+                            <p class="caaft-ar-offer-card-text">End-to-end statutory compliance for Public Limited Companies — including AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -309,7 +302,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-user-tie"></i></span>
                             <h3 class="caaft-ar-offer-card-title">One Person Company Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">Board resolutions, financial statements, and ROC filings kept lean for single-director structures.</p>
+                            <p class="caaft-ar-offer-card-text">Annual compliance for OPCs — board resolutions, financial statements, and ROC filings, kept lean for single-director structures.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -318,7 +311,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">04</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-handshake"></i></span>
                             <h3 class="caaft-ar-offer-card-title">LLP Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end.</p>
+                            <p class="caaft-ar-offer-card-text">Annual filing and compliance for LLPs — Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -341,7 +334,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-users"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Partnership Firm Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">Books maintenance, registration renewals, and regulatory filings under the Partnership Act.</p>
+                            <p class="caaft-ar-offer-card-text">Ongoing compliance for registered partnerships — books maintenance, registration renewals, and regulatory filings under the Partnership Act.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -350,7 +343,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-store"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Sole Proprietorship Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">Licence renewals, professional tax filings, and regulatory compliance for sole proprietorships to stay active and in good standing.</p>
+                            <p class="caaft-ar-offer-card-text">Licence renewals, professional tax filings, and regulatory compliance for sole proprietorships — keeping the business active and in good standing.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -373,7 +366,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-id-card-alt"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Director KYC (DIR-3 KYC)</h3>
-                            <p class="caaft-ar-offer-card-text">Annual KYC filing for every DIN holder — mandatory to keep DIN active and avoid filing blockages.</p>
+                            <p class="caaft-ar-offer-card-text">Annual KYC filing for every DIN holder — mandatory to keep the DIN active and avoid filing blockages.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -382,7 +375,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-user-plus"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Add / Remove Director</h3>
-                            <p class="caaft-ar-offer-card-text">Director appointment or resignation filing with resolution drafting, Form DIR-12, and MCA submission.</p>
+                            <p class="caaft-ar-offer-card-text">Formal director appointment or resignation filed with the ROC — including resolution drafting, Form DIR-12, and MCA submission.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -391,7 +384,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-chart-line"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Authorised Capital Increase</h3>
-                            <p class="caaft-ar-offer-card-text">Board and shareholder resolutions, Form SH-7, and Form MGT-14 filed within prescribed timelines.</p>
+                            <p class="caaft-ar-offer-card-text">Filing for increased authorised share capital — board and shareholder resolutions, Form SH-7, and Form MGT-14 within prescribed timelines.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -400,7 +393,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">04</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Registered Office Change</h3>
-                            <p class="caaft-ar-offer-card-text">Address change filing for same city, state, or inter-state moves with INC-22/INC-23 and required resolutions.</p>
+                            <p class="caaft-ar-offer-card-text">Address change filed correctly with the ROC — within the same city, state, or across states — with all resolutions and Form INC-22 or INC-23.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -409,7 +402,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">05</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
                             <h3 class="caaft-ar-offer-card-title">ROC Filings</h3>
-                            <p class="caaft-ar-offer-card-text">Routine and event-based MCA filings including AOC-4, MGT-7, ADT-1, and related forms before due dates.</p>
+                            <p class="caaft-ar-offer-card-text">Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — prepared accurately and submitted before due dates.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -418,7 +411,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="caaft-ar-offer-num" aria-hidden="true">06</span>
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-times-circle"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Company Closure / Winding Up</h3>
-                            <p class="caaft-ar-offer-card-text">Strike-off or voluntary winding up with resolutions, indemnity bonds, compliance clearances, and STK-2 filing.</p>
+                            <p class="caaft-ar-offer-card-text">Managed strike-off or voluntary winding up — resolutions, indemnity bonds, compliance clearances, and STK-2 filing handled completely.</p>
                             <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
@@ -437,32 +430,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <article class="caaft-ar-why-cell">
                             <span class="caaft-ar-why-num" aria-hidden="true">01</span>
                             <h3 class="caaft-ar-why-title">Never Miss a Deadline</h3>
-                            <p class="caaft-ar-why-text">A compliance calendar is maintained for every entity, with proactive preparation before each due date.</p>
+                            <p class="caaft-ar-why-text">A compliance calendar is maintained for every client entity — with proactive preparation well before due dates.</p>
                         </article>
                         <article class="caaft-ar-why-cell">
                             <span class="caaft-ar-why-num" aria-hidden="true">02</span>
                             <h3 class="caaft-ar-why-title">All Entity Types, One Firm</h3>
-                            <p class="caaft-ar-why-text">Compliance across Private Limited, LLP, OPC, Partnership, and Sole Proprietorship under one roof.</p>
+                            <p class="caaft-ar-why-text">Compliance across every structure — Private Limited, LLP, OPC, Partnership, and Sole Proprietorship — is managed under one roof.</p>
                         </article>
                         <article class="caaft-ar-why-cell">
                             <span class="caaft-ar-why-num" aria-hidden="true">03</span>
                             <h3 class="caaft-ar-why-title">Experts Who Know the ROC</h3>
-                            <p class="caaft-ar-why-text">Hands-on MCA and ROC filing experience ensures submissions are done right the first time.</p>
+                            <p class="caaft-ar-why-text">Hands-on experience with MCA filings and ROC procedures ensures every filing is done right the first time.</p>
                         </article>
                         <article class="caaft-ar-why-cell">
                             <span class="caaft-ar-why-num" aria-hidden="true">04</span>
                             <h3 class="caaft-ar-why-title">Penalties Avoided, Not Just Managed</h3>
-                            <p class="caaft-ar-why-text">A preventive approach helps avoid late fees and director liability before they arise.</p>
+                            <p class="caaft-ar-why-text">A proactive approach prevents late fees and director liability — not just helps clients pay them after the fact.</p>
                         </article>
                         <article class="caaft-ar-why-cell">
                             <span class="caaft-ar-why-num" aria-hidden="true">05</span>
                             <h3 class="caaft-ar-why-title">Complete Documentation Trail</h3>
-                            <p class="caaft-ar-why-text">Resolutions, filings, and compliance records are maintained and ready for audits or due diligence.</p>
+                            <p class="caaft-ar-why-text">Every resolution, filing, and compliance record is maintained and accessible — always ready for audits or due diligence.</p>
                         </article>
                         <article class="caaft-ar-why-cell">
                             <span class="caaft-ar-why-num" aria-hidden="true">06</span>
                             <h3 class="caaft-ar-why-title">Post-Filing Support</h3>
-                            <p class="caaft-ar-why-text">ROC queries, returned filings, and clarifications are handled as part of the engagement.</p>
+                            <p class="caaft-ar-why-text">ROC queries, returned filings, and clarifications are handled as part of the engagement — not treated as extras.</p>
                         </article>
                     </div>
                 </div>
@@ -480,42 +473,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
                         <div class="caaft-ar-how-body">
                             <h3 class="caaft-ar-how-step-title">Step 1 – Compliance Audit</h3>
-                            <p class="caaft-ar-how-step-text">Filed returns, pending obligations, lapsed deadlines, and notices are reviewed to establish a clear baseline.</p>
+                            <p class="caaft-ar-how-step-text">The entity's filed returns, pending obligations, lapsed deadlines, and existing notices are reviewed to establish a clear baseline.</p>
                         </div>
                     </li>
                     <li class="caaft-ar-how-step caaft-ar-how-step--line">
                         <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
                         <div class="caaft-ar-how-body">
                             <h3 class="caaft-ar-how-step-title">Step 2 – Calendar Setup</h3>
-                            <p class="caaft-ar-how-step-text">A dedicated calendar maps annual returns, board meetings, KYC filings, and event-based requirements.</p>
+                            <p class="caaft-ar-how-step-text">A dedicated compliance calendar is built, mapping every due date — annual returns, board meetings, KYC filings, and event-based requirements.</p>
                         </div>
                     </li>
                     <li class="caaft-ar-how-step caaft-ar-how-step--line">
                         <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
                         <div class="caaft-ar-how-body">
                             <h3 class="caaft-ar-how-step-title">Step 3 – Document Collection</h3>
-                            <p class="caaft-ar-how-step-text">A focused checklist is shared ahead of deadlines for financials, resolutions, and updated details.</p>
+                            <p class="caaft-ar-how-step-text">A focused checklist of required documents — financials, resolutions, or updated details — is sent well ahead of each deadline.</p>
                         </div>
                     </li>
                     <li class="caaft-ar-how-step caaft-ar-how-step--line">
                         <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
                         <div class="caaft-ar-how-body">
                             <h3 class="caaft-ar-how-step-title">Step 4 – Preparation &amp; Review</h3>
-                            <p class="caaft-ar-how-step-text">The filing is prepared, resolutions are drafted, and internal review is completed before submission.</p>
+                            <p class="caaft-ar-how-step-text">The filing is prepared, resolutions drafted, and an internal review completed before anything is submitted.</p>
                         </div>
                     </li>
                     <li class="caaft-ar-how-step caaft-ar-how-step--line">
                         <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
                         <div class="caaft-ar-how-body">
                             <h3 class="caaft-ar-how-step-title">Step 5 – Filing &amp; Acknowledgement</h3>
-                            <p class="caaft-ar-how-step-text">Filed on MCA/ROC portal and acknowledgement or SRN is shared immediately.</p>
+                            <p class="caaft-ar-how-step-text">The filing is submitted on the MCA or ROC portal, and the acknowledgement or SRN is shared with the client immediately.</p>
                         </div>
                     </li>
                     <li class="caaft-ar-how-step">
                         <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
                         <div class="caaft-ar-how-body">
                             <h3 class="caaft-ar-how-step-title">Step 6 – Ongoing Monitoring</h3>
-                            <p class="caaft-ar-how-step-text">The calendar is monitored year-round with proactive alerts and handling of ROC correspondence.</p>
+                            <p class="caaft-ar-how-step-text">The compliance calendar is monitored year-round — with proactive alerts and handling of any ROC correspondence as it arises.</p>
                         </div>
                     </li>
                 </ol>
@@ -528,10 +521,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-lg-6 caaft-ar-git-col-main">
                         <p class="caaft-ar-git-eyebrow">Get in touch</p>
                         <h2 id="cr-git-heading" class="caaft-ar-git-h2">
-                            Compliance Off Your Plate. Penalties Off Your <em>Record.</em>
+                            Compliance Off Your Plate. Penalties Off Your Record.
                         </h2>
                         <p class="caaft-ar-git-lead">
-                            Whether you need to clear a backlog, stay on top of annual filings, or handle a specific ROC change — CAAFT manages it all with precision and accountability. We respond within one business day.
+                            Whether you need to clear a backlog, stay on top of your annual filings, or handle a specific ROC change - CAAFT manages it all with precision and accountability. We respond within one business day.
                         </p>
                         <div class="caaft-ar-git-ctas">
                             <a href="/contact#contact_us" class="theme-btn caaft-ar-git-btn-call">Start Your Compliance Filing</a>
@@ -593,7 +586,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </button>
                                 </p>
                                 <div id="crFaqCollapse1" class="accordion-collapse collapse show" aria-labelledby="crFaqHeading1" data-bs-parent="#accordionComplianceFaq">
-                                    <div class="accordion-body">Yes. We manage compliance across multiple entities for the same business group — with a consolidated calendar, unified communication, and a single point of contact for all filings.</div>
+                                    <div class="accordion-body">Yes. We manage compliance across multiple entities for the same business group - with a consolidated calendar, unified communication, and a single point of contact for all filings. Many of our clients run 2–4 entities and prefer to consolidate their compliance under one firm.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
