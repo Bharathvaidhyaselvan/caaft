@@ -1,0 +1,54 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^.*/index.php
+RewriteRule ^(.*)index.php$ https://caaft.com/$1 [R=301,L]
+
+
+RedirectMatch 301 /taxtion.php https://caaft.com/gst-filing-itr-filing-in-chennai.php
+RedirectMatch 301 /management-consultancy-services.php https://caaft.com/management-consultancy-services-in-chennai.php
+RedirectMatch 301 /business-consultancy-services.php https://caaft.com/business-consultancy-company-registration-in-chennai.php
+
+php_value upload_max_filesize 256M
+php_value post_max_size 256M
+php_value max_execution_time 300
+php_value max_input_time 300
+Redirect 301 /roc-filing-compliance-services-chennai.php https://caaft.com/roc-compliance-filing.php
+Redirect 301 /gst-consultants-services.php https://caaft.com/gst-return-filing-services.php
+Redirect 301 /business-management-consultancy-services.php https://caaft.com/business-advisory-services.php
+
+# Services-first clean URLs (old -> new)
+Redirect 301 /gst-registration-services.php /taxation/gst-registration
+Redirect 301 /gst-return-filing-services.php /taxation/gst-return-filing
+Redirect 301 /gst-filing-itr-filing-in-chennai.php /taxation/gst-income-tax-services
+Redirect 301 /income-tax-filing-service.php /taxation/income-tax
+Redirect 301 /income-tax-filling-services-in-chennai.php /taxation/income-tax-filing-services
+Redirect 301 /income-tax-return-filing.php /taxation/income-tax-return-filing
+
+Redirect 301 /accounting-company-in-chennai.php /accounting-reporting/accounting-company
+Redirect 301 /accounting-firms-in-chennai.php /accounting-reporting/accounting-firms
+Redirect 301 /bookkeeping-services.php /accounting-reporting/bookkeeping-services
+
+RedirectMatch 301 ^/accounting-reporting/?$ /accounting-and-reporting-services
+
+Redirect 301 /new-business-registration-in-chennai.php /business-setup-registration/new-business-registration
+Redirect 301 /business-consultancy-company-registration-in-chennai.php /business-setup-registration/company-registration
+Redirect 301 /private-limited-registration-experts.php /company-incorporation/private-limited-company
+Redirect 301 /company-incorporation/private-limited-registration /company-incorporation/private-limited-company
+Redirect 301 /private-limited-registration /company-incorporation/private-limited-company
+Redirect 301 /msme-udyam-registration.php /business-setup-registration/msme-udyam-registration
+
+Redirect 301 /roc-compliance-services.php /compliance-regulatory/roc-compliance-services
+Redirect 301 /roc-compliance-filing.php /compliance-regulatory/roc-compliance-filing
+
+Redirect 301 /management-consultancy-services-in-chennai.php /management-consultancy/services
+Redirect 301 /management-consult-services-in-chennai.php /management-consultancy/consult-services
+
+Redirect 301 /business-advisory-services.php /advisory-cfo/business-advisory-services
+Redirect 301 /cfo-services.php /advisory-cfo/cfo-services
+
+Redirect 301 /consultancy-services-offers-end-to-end-filing-support-for-busy-entrepreneurs.php /business-consultancy/end-to-end-filing-support
+
+# Rewrite clean URLs to front controller
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z0-9-]+(?:/[a-z0-9-]+)*)/?$ index.php?__route=$1 [L,QSA,NC]
