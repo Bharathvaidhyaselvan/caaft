@@ -90,7 +90,7 @@
                     <div class="col-md-9 align-self-center">
                         <p class="copyright-text">
 
-                            © Copyright 2024. <a href="#">
+                            © Copyright 2026 - <a href="#">
                                 CAAFT Consultancy Services Private Limited.</a>
                             All Rights Reserved.
 
