@@ -78,6 +78,11 @@
             text-justify: inter-word;
         }
 
+        /* Trust section: white band on this page only (hub uses light blue #eaf8ff). */
+        .page-bookkeeping-accounting .caaft-ar-trust-indicators {
+            background: #ffffff !important;
+        }
+
         /* Trust grid cards: match other service pages (left-aligned labels; not full-justify). */
         .page-bookkeeping-accounting .caaft-ar-trust-indicators .caaft-ar-trust-item,
         .page-bookkeeping-accounting .caaft-ar-trust-indicators .caaft-ar-trust-item * {
