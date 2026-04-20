@@ -24,6 +24,10 @@
     <meta name="twitter:image" content="https://caaft.com/assets/img/tax-planning-management.webp">
     <?php include "header-top.php"; ?>
     <style>
+        .page-tax-audit .caaft-ar-trust-indicators {
+            background: #ffffff !important;
+        }
+
         .page-tax-audit .bk-overview-layout {
             display: grid;
             grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -487,13 +491,6 @@
         .page-tax-audit .audit-due-arrow {
             color: #586171;
             font-weight: 600;
-        }
-
-        .page-tax-audit .audit-due-line {
-            margin: 0;
-            color: #1f2c40;
-            font-weight: 600;
-            line-height: 1.5;
         }
 
         .page-tax-audit .audit-due-outro {
@@ -1018,9 +1015,171 @@
                 <p class="bk-who-closing">A timely, professionally conducted tax audit keeps businesses compliant, reduces risk, and builds trust with financial institutions and regulatory authorities.</p>
             </div>
         </section>
-        <section class="caaft-ar-content-media py-90" aria-labelledby="audit-types-heading"><div class="container"><header class="caaft-ar-offer-header"><h2 id="audit-types-heading" class="caaft-ar-offer-h2">Types of Tax Audit</h2><ul class="caaft-ar-list"><li>Statutory Tax Audit (Section 44AB) — Mandatory for businesses and professionals whose turnover or gross receipts exceed the prescribed limit. Conducted by a Chartered Accountant and reported via Form 3CA or 3CB along with the detailed Form 3CD</li><li>Scrutiny / Departmental Audit — Initiated by the Income Tax Department when discrepancies are identified in a filed return. A properly conducted Section 44AB audit significantly reduces the risk of this being triggered</li><li>Special Audit (Section 142(2A)) — Ordered by the Assessing Officer when accounts are complex or incomplete. Conducted by a CA specifically nominated by the principal commissioner</li><li>Concurrent / Internal Audit — Not mandated by the Income Tax Act but followed by larger organisations as a best practice to review accounts in real time and stay ahead of compliance obligations</li></ul></header></div></section>
-        <section class="caaft-ar-content-media py-90 audit-required-section" aria-labelledby="audit-required-heading"><div class="container"><header class="caaft-ar-offer-header"><h2 id="audit-required-heading" class="caaft-ar-offer-h2">Who Is Required to Conduct a Tax Audit?</h2><p class="caaft-ar-offer-intro">Tax audit applicability under Section 44AB depends on business category and turnover for the preceding financial year:</p><ul class="caaft-ar-list"><li>Business (General) — Mandatory under Section 44AB(a) if turnover or gross receipts exceed ₹1 crore</li><li>Business (Digital/Cashless) — Audit required only if turnover exceeds ₹10 crore, provided 95% or more of receipts and payments are through digital or banking channels</li><li>Professionals (Doctors, CAs, Lawyers, Consultants) — Mandatory under Section 44AB(b) if gross receipts exceed ₹50 lakh</li><li>Presumptive Tax — Business (Section 44AD) — Audit triggered if turnover is up to ₹2 crore but declared income is lower than the prescribed presumptive rate</li><li>Presumptive Tax — Professionals (Section 44ADA) — Audit required if gross receipts exceed ₹50 lakh and declared income is below 50% of gross receipts</li><li>Partnership Firms / LLPs — Subject to the same threshold as the applicable category based on combined turnover</li><li>Private Limited / Limited Companies — Follow the standard business threshold and are also independently subject to ROC audit, separate from the tax audit requirement</li></ul></header></div></section>
-        <section class="caaft-ar-content-media py-90" aria-labelledby="audit-forms-heading"><div class="container"><header class="caaft-ar-offer-header"><h2 id="audit-forms-heading" class="caaft-ar-offer-h2">Tax Audit Forms</h2><p class="caaft-ar-offer-intro">The Income Tax Department prescribes specific forms based on the entity type and audit context:</p><ul class="caaft-ar-list"><li>Form 3CA - Used when accounts are already audited under another law (e.g., Companies Act). The Chartered Accountant certifies the audit and confirms the correctness of details in Form 3CD.</li><li>Form 3CB - Used when the audit is conducted only for income tax purposes. Applicable to partnership firms, sole proprietors, LLPs, and professionals not covered under other audit laws.</li><li>Form 3CD - A detailed 44-clause statement covering key financial particulars such as depreciation, loans, related-party transactions, cash payments, and TDS compliance. Filed along with Form 3CA or 3CB, requiring accurate and careful disclosure.</li></ul></header></div></section>
+        <section class="caaft-ar-content-media py-90" aria-labelledby="audit-types-heading">
+            <div class="container">
+                <header class="caaft-ar-offer-header">
+                    <h2 id="audit-types-heading" class="caaft-ar-offer-h2">Types of Tax Audit</h2>
+                </header>
+                <div class="audit-types-wrap">
+                    <article class="audit-types-row">
+                        <div class="audit-types-num">01</div>
+                        <div class="audit-types-main">
+                            <h3>Statutory Tax Audit <span class="audit-types-tag">Section 44AB</span></h3>
+                            <p>Mandatory for businesses and professionals whose turnover or gross receipts exceed the prescribed limit. Conducted by a Chartered Accountant and reported via Form 3CA or 3CB alongside the detailed Form 3CD.</p>
+                        </div>
+                        <div class="audit-types-side">
+                            <div class="audit-types-meta">
+                                <span class="audit-types-meta-label">Conducted by</span>
+                                <p class="audit-types-meta-value">Chartered Accountant</p>
+                            </div>
+                            <div class="audit-types-meta">
+                                <span class="audit-types-meta-label">Forms used</span>
+                                <p class="audit-types-meta-value">3CA / 3CB + 3CD</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="audit-types-row">
+                        <div class="audit-types-num">02</div>
+                        <div class="audit-types-main">
+                            <h3>Scrutiny / Departmental Audit <span class="audit-types-tag audit-types-tag--amber">Departmental</span></h3>
+                            <p>Initiated by the Income Tax Department when discrepancies are identified in a filed return. A properly conducted Section 44AB audit significantly reduces the risk of this being triggered.</p>
+                        </div>
+                        <div class="audit-types-side">
+                            <div class="audit-types-meta">
+                                <span class="audit-types-meta-label">Initiated by</span>
+                                <p class="audit-types-meta-value">Income Tax Dept.</p>
+                            </div>
+                            <div class="audit-types-meta">
+                                <span class="audit-types-meta-label">Trigger</span>
+                                <p class="audit-types-meta-value">Return discrepancies</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="audit-types-row">
+                        <div class="audit-types-num">03</div>
+                        <div class="audit-types-main">
+                            <h3>Special Audit <span class="audit-types-tag audit-types-tag--blue">Section 142(2A)</span></h3>
+                            <p>Ordered by the Assessing Officer when accounts are complex or incomplete. The CA conducting the audit is specifically nominated by the Principal Commissioner.</p>
+                        </div>
+                        <div class="audit-types-side">
+                            <div class="audit-types-meta">
+                                <span class="audit-types-meta-label">Ordered by</span>
+                                <p class="audit-types-meta-value">Assessing Officer</p>
+                            </div>
+                            <div class="audit-types-meta">
+                                <span class="audit-types-meta-label">CA nominated by</span>
+                                <p class="audit-types-meta-value">Principal Commissioner</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="audit-types-row">
+                        <div class="audit-types-num">04</div>
+                        <div class="audit-types-main">
+                            <h3>Concurrent / Internal Audit <span class="audit-types-tag audit-types-tag--gray">Best practice</span></h3>
+                            <p>Not mandated by the Income Tax Act, but followed by larger organisations to review accounts in real time and stay ahead of compliance obligations.</p>
+                        </div>
+                        <div class="audit-types-side">
+                            <div class="audit-types-meta">
+                                <span class="audit-types-meta-label">Mandated</span>
+                                <p class="audit-types-meta-value">No — voluntary</p>
+                            </div>
+                            <div class="audit-types-meta">
+                                <span class="audit-types-meta-label">Used by</span>
+                                <p class="audit-types-meta-value">Larger organisations</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="caaft-ar-content-media py-90 audit-required-section" aria-labelledby="audit-required-heading">
+            <div class="container">
+                <header class="caaft-ar-offer-header">
+                    <p class="audit-required-label">Applicability</p>
+                    <h2 id="audit-required-heading" class="caaft-ar-offer-h2">Who Is Required to Conduct a Tax Audit?</h2>
+                </header>
+                <div class="audit-required-wrap">
+                    <div class="audit-required-head">
+                        <div>Category</div>
+                        <div>Threshold</div>
+                        <div>Note</div>
+                    </div>
+
+                    <article class="audit-required-row">
+                        <div class="audit-required-cat">Business (general) <span class="audit-required-sub">Sec 44AB(a)</span></div>
+                        <div class="audit-required-threshold"><strong>₹1 crore</strong> turnover</div>
+                        <div class="audit-required-note">Standard threshold for most businesses</div>
+                    </article>
+
+                    <article class="audit-required-row">
+                        <div class="audit-required-cat">Business (digital/cashless)</div>
+                        <div class="audit-required-threshold"><strong>₹10 crore</strong> turnover</div>
+                        <div class="audit-required-note">Requires 95%+ receipts &amp; payments via digital or banking channels</div>
+                    </article>
+
+                    <article class="audit-required-row">
+                        <div class="audit-required-cat">Professionals <span class="audit-required-sub">Sec 44AB(b)</span></div>
+                        <div class="audit-required-threshold"><strong>₹50 lakh</strong> gross receipts</div>
+                        <div class="audit-required-note">Doctors, CAs, lawyers, consultants</div>
+                    </article>
+
+                    <article class="audit-required-row">
+                        <div class="audit-required-cat">Presumptive — business <span class="audit-required-sub">Sec 44AD</span></div>
+                        <div class="audit-required-threshold">Turnover up to <strong>₹2 crore</strong></div>
+                        <div class="audit-required-note">Audit triggered if declared income is below the prescribed presumptive rate</div>
+                    </article>
+
+                    <article class="audit-required-row">
+                        <div class="audit-required-cat">Presumptive — professionals <span class="audit-required-sub">Sec 44ADA</span></div>
+                        <div class="audit-required-threshold"><strong>₹50 lakh</strong> gross receipts</div>
+                        <div class="audit-required-note">Audit required if declared income is below 50% of gross receipts</div>
+                    </article>
+
+                    <article class="audit-required-row">
+                        <div class="audit-required-cat">Partnership firms / LLPs</div>
+                        <div class="audit-required-threshold">Per applicable category</div>
+                        <div class="audit-required-note">Based on combined turnover</div>
+                    </article>
+
+                    <article class="audit-required-row">
+                        <div class="audit-required-cat">Private limited / limited companies</div>
+                        <div class="audit-required-threshold">Standard business threshold</div>
+                        <div class="audit-required-note">Also subject to separate ROC audit under the Companies Act</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="caaft-ar-content-media py-90" aria-labelledby="audit-forms-heading">
+            <div class="container">
+                <header class="caaft-ar-offer-header">
+                    <p class="audit-forms-label">Documentation</p>
+                    <h2 id="audit-forms-heading" class="caaft-ar-offer-h2">Tax Audit Forms</h2>
+                </header>
+                <div class="audit-forms-grid">
+                    <article class="audit-form-card">
+                        <h3 class="audit-form-title">Form 3CA</h3>
+                        <p class="audit-form-main">Used when accounts are already audited under another law (e.g., Companies Act). The Chartered Accountant certifies and confirms correctness of Form 3CD details.</p>
+                        <div class="audit-form-divider"></div>
+                        <p class="audit-form-note">Filed by: Companies and entities audited under other statutes</p>
+                    </article>
+                    <article class="audit-form-card">
+                        <h3 class="audit-form-title">Form 3CB</h3>
+                        <p class="audit-form-main">Used when the audit is conducted solely for income tax purposes — applicable to partnerships, sole proprietors, LLPs, and professionals.</p>
+                        <div class="audit-form-divider"></div>
+                        <p class="audit-form-note">Filed by: Firms, proprietors, and professionals</p>
+                    </article>
+                    <article class="audit-form-card">
+                        <h3 class="audit-form-title">Form 3CD</h3>
+                        <p class="audit-form-main">A detailed 44-clause statement covering depreciation, loans, related-party transactions, cash payments, and TDS compliance. Filed alongside 3CA or 3CB.</p>
+                        <div class="audit-form-divider"></div>
+                        <p class="audit-form-note">Accompanies: Form 3CA or Form 3CB</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
         <section class="caaft-ar-what-we-offer py-90" aria-labelledby="audit-services-heading"><div class="container"><header class="caaft-ar-offer-header"><h2 id="audit-services-heading" class="caaft-ar-offer-h2">Tax Audit Services — What Gets Delivered</h2></header><div class="row g-4 caaft-ar-offer-grid">
             <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">01</span><h3 class="caaft-ar-offer-card-title">Tax Audit Under Section 44AB</h3><p class="caaft-ar-offer-card-text">End-to-end statutory audit conducted by a qualified CA — covering all 44 clauses of Form 3CD with full accuracy, complete disclosure, and regulatory compliance.</p></article></div>
@@ -1073,15 +1232,37 @@
                 </header>
                 <div class="audit-due-wrap">
                     <article class="audit-due-item">
-                        <p class="audit-due-line">30 September — Standard due date for all businesses and professionals mandatorily covered under Section 44AB (applicable for AY 2024-25 onwards)</p>
+                        <div class="audit-due-left">
+                            <span class="audit-due-label">Audit</span>
+                            <span class="audit-due-period">Standard due date under Section 44AB (AY 2024-25 onwards)</span>
+                        </div>
+                        <div class="audit-due-right">
+                            <span class="audit-due-arrow">— Due by</span>
+                            <span>30 September</span>
+                        </div>
                     </article>
                     <article class="audit-due-item">
-                        <p class="audit-due-line">31 October — Extended deadline for entities with international or specified domestic transactions requiring a separate transfer pricing report under Section 92E</p>
+                        <div class="audit-due-left">
+                            <span class="audit-due-label">92E</span>
+                            <span class="audit-due-period">Entities requiring transfer pricing report</span>
+                        </div>
+                        <div class="audit-due-right">
+                            <span class="audit-due-arrow">— Due by</span>
+                            <span>31 October</span>
+                        </div>
                     </article>
                     <article class="audit-due-item">
-                        <p class="audit-due-line">31 October (ITR Filing) — The income tax return for audited entities must be filed after the audit report is uploaded — making timely audit completion a prerequisite for ITR compliance</p>
+                        <div class="audit-due-left">
+                            <span class="audit-due-label">ITR</span>
+                            <span class="audit-due-period">ITR filing for audited entities after audit report upload</span>
+                        </div>
+                        <div class="audit-due-right">
+                            <span class="audit-due-arrow">— Due by</span>
+                            <span>31 October</span>
+                        </div>
                     </article>
                 </div>
+                <p class="audit-due-outro">Timely audit completion is a prerequisite for ITR compliance.</p>
             </div>
         </section>
         <section class="caaft-ar-content-media py-90 audit-penalty-section" aria-labelledby="audit-penalty-heading">
@@ -1123,7 +1304,10 @@
         </section>
         <section class="caaft-ar-content-media py-90 audit-benefits-section" aria-labelledby="audit-benefits-heading">
             <div class="container">
-                <header class="caaft-ar-offer-header audit-benefits-header"><h2 id="audit-benefits-heading" class="caaft-ar-offer-h2">Benefits of Professional Tax Audit Services</h2></header>
+                <header class="caaft-ar-offer-header audit-benefits-header">
+                    <h2 id="audit-benefits-heading" class="caaft-ar-offer-h2">Benefits of Professional Tax Audit Services</h2>
+                    <p class="audit-benefits-label">Key benefits of professional tax audit services include:</p>
+                </header>
                 <div class="audit-benefits-grid">
                     <article class="audit-benefit-card">
                         <span class="audit-benefit-icon audit-benefit-icon--green"><i class="far fa-shield-check"></i></span>
@@ -1192,7 +1376,7 @@
                 <div class="bk-cta-panel">
                     <h2 id="audit-cta-heading" class="bk-cta-title">Ready to File Your Tax Audit With Complete Confidence?</h2>
                     <p class="bk-cta-text">Businesses that plan ahead do not just avoid penalties — they build credibility, strengthen their financials, and walk into every assessment with nothing to worry about. Expert CA-led audits, timely filing, and zero compliance gaps — delivered every financial year without exception.</p>
-                    <a href="/contact#contact_us" class="theme-btn bk-cta-button">Hassle-Free TDS Filing <i class="fas fa-arrow-right"></i></a>
+                    <a href="/contact#contact_us" class="theme-btn bk-cta-button">Hassle-Free Tax Audit Filing <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
