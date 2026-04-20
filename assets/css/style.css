@@ -6388,6 +6388,14 @@ nav.navbar.navbar-expand-lg a.hides img.img-fluid {
     display: none;
 }
 
+.navbar a#submenu {
+    display: none;
+}
+
+.navbar:not(.fixed-top) a.navbar-brand.static-logo img.img-fluid {
+    width: 200px;
+}
+
 @media (min-width: 992px) {
     .header-sections .navbar .nav-item .nav-link {
         color: #000;
