@@ -834,15 +834,15 @@
         }
     </style>
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
     {
-      "@type": "Service",
-      "@id": "https://caaft.com/tax-audit/#service",
-      "name": "Tax Audit Under Section 44AB",
-      "alternateName": "Tax Audit Services India",
-      "url": "https://caaft.com/tax-audit/",
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          "@id": "https://caaft.com/tax-audit/#service",
+          "name": "Tax Audit Under Section 44AB",
+          "alternateName": "Tax Audit Services India",
+          "url": "https://caaft.com/tax-audit/",
       "description": "Expert tax audit services under Section 44AB for businesses, professionals, startups, and LLPs — covering Form 3CA, 3CB, and 3CD preparation, audit report filing, compliance advisory, and post-audit assessment support across India.",
       "provider": {
         "@type": "Organization",
@@ -853,12 +853,12 @@
         "@type": "Country",
         "name": "India"
       },
-      "serviceType": "Tax Audit and Statutory Compliance"
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://caaft.com/tax-audit/#faq",
-      "mainEntity": [
+          "serviceType": "Tax Audit and Statutory Compliance"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://caaft.com/tax-audit/#faq",
+          "mainEntity": [
         {
           "@type": "Question",
           "name": "What is the turnover limit for tax audit under Section 44AB for FY 2024-25?",
@@ -899,12 +899,12 @@
             "text": "Yes — if your gross professional receipts exceed ₹50 lakh in a financial year, a tax audit under Section 44AB(b) is mandatory, regardless of your business structure. This applies equally to freelancers, independent consultants, doctors in private practice, architects, and other notified professionals. If you have opted for Section 44ADA and declare income below 50% of gross receipts, an audit may be triggered even before you cross the ₹50 lakh threshold."
           }
         }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://caaft.com/tax-audit/#breadcrumb",
-      "itemListElement": [
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://caaft.com/tax-audit/#breadcrumb",
+          "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
@@ -917,10 +917,10 @@
           "name": "Tax Audit Under Section 44AB",
           "item": "https://caaft.com/tax-audit/"
         }
+          ]
+        }
       ]
     }
-  ]
-}
     </script>
 </head>
 <body class="home-3 page-accounting-reporting page-tax-audit">
@@ -931,24 +931,24 @@
             <div class="hero-single singles_forms_frames caaft-ar-hero-single">
                 <div class="container">
                     <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
-                        <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
-                            <h1 id="audit-hero-h1" class="caaft-ar-hero-h1">Tax Audit Services</h1>
+                <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
+                    <h1 id="audit-hero-h1" class="caaft-ar-hero-h1">Tax Audit Services</h1>
                             <h2 class="caaft-ar-hero-h2">CA-Led Tax Audits. Timely Filing. Zero Compliance Gaps — Every Financial Year.</h2>
                             <p class="caaft-ar-hero-lead">For growing businesses, startups, and professionals, maintaining accurate financial records and complying with tax regulations is not optional — it is the foundation of financial credibility. CAAFT delivers structured tax audit services under Section 44AB, helping businesses review financial records, ensure timely report filing, and stay fully compliant without the last-minute scramble.</p>
-                            <div class="caaft-ar-hero-ctas">
-                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Start Your Audit <i class="fas fa-arrow-right"></i></a>
-                                <a href="#audit-services-heading" class="theme-btn theme-btn2 caaft-ar-hero-btn-secondary">Contact Us Today <i class="fas fa-arrow-down"></i></a>
-                            </div>
-                        </div>
+                    <div class="caaft-ar-hero-ctas">
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Start Your Audit <i class="fas fa-arrow-right"></i></a>
+                        <a href="#audit-services-heading" class="theme-btn theme-btn2 caaft-ar-hero-btn-secondary">Contact Us Today <i class="fas fa-arrow-down"></i></a>
+                    </div>
+                </div>
                         <div class="col-md-12 col-lg-6">
                             <div class="hero-img-wrap caaft-ar-hero-img-wrap">
                                 <?php
-                                $caaft_enquiry_service = 'Tax Audit Services';
-                                $caaft_enquiry_action = '/incometax-services-mail.php';
+$caaft_enquiry_service = 'Tax Audit Services';
+$caaft_enquiry_action = '/incometax-services-mail.php';
                                 $caaft_enquiry_title = 'Start Your Audit';
                                 $caaft_enquiry_form_id = 'caaft-tax-audit-enquiry-form-inner';
                                 $caaft_enquiry_input_id_prefix = 'taxaudit';
-                                include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
+include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
                                 ?>
                             </div>
                         </div>
