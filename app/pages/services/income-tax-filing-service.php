@@ -225,6 +225,10 @@
             margin: 0 0 0.8rem;
         }
 
+        .page-income-tax-filing-service .itr-kf-metric--small {
+            font-size: clamp(1.45rem, 2.4vw, 2.15rem);
+        }
+
         .page-income-tax-filing-service .itr-kf-text {
             margin: 0;
             font-size: 1.02rem;
@@ -757,12 +761,15 @@
                 </header>
                 <div class="bk-facts-grid bk-facts-grid--itr-kf">
                     <article class="bk-facts-card">
+                        <h3 class="itr-kf-metric">8.56 crore</h3>
                         <p class="itr-kf-text">India's ITR filers reached 8.56 crore in FY 2024–25 — up 8% year-on-year — driven by digital pre-filled returns and expanding compliance awareness</p>
                     </article>
                     <article class="bk-facts-card">
+                        <h3 class="itr-kf-metric">474%</h3>
                         <p class="itr-kf-text">Refunds surged 474% to ₹4.8 lakh crore in FY25 — processed in an average of 17 days — making accurate, timely filing more valuable than ever</p>
                     </article>
                     <article class="bk-facts-card">
+                        <h3 class="itr-kf-metric itr-kf-metric--small">₹5,000 penalty</h3>
                         <p class="itr-kf-text">Late filing attracts a ₹5,000 penalty plus 1% monthly interest — with the belated return deadline set at 31 December of the assessment year</p>
                     </article>
                 </div>
