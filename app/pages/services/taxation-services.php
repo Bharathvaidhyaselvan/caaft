@@ -23,6 +23,30 @@
     <meta name="twitter:site" content="@CaaftServices">
     <meta name="twitter:image" content="https://caaft.com/assets/img/tax-planning-management.webp">
     <?php include "header-top.php"; ?>
+    <style>
+        .tax-service-tabs.nav {
+            gap: 10px;
+        }
+
+        .tax-service-tabs .nav-link {
+            border: 1px solid #e3e8ef;
+            background: #ffffff;
+            color: #0a1d37;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1;
+            padding: 11px 16px;
+        }
+
+        .tax-service-tabs .nav-link.active,
+        .tax-service-tabs .nav-link:focus,
+        .tax-service-tabs .nav-link:hover {
+            background: #0a1d37;
+            border-color: #0a1d37;
+            color: #ffffff;
+        }
+    </style>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -95,7 +119,7 @@
           "name": "Income Tax Services",
           "alternateName": "Income Tax Filing Services Chennai",
           "url": "https://caaft.com/taxation-services/",
-          "description": "Comprehensive income tax support - from routine return filing to complex audits and strategic planning - ensuring full compliance while identifying every legitimate saving available to you.",
+          "description": "Comprehensive income tax support — from routine return filing to complex audits and strategic planning — ensuring full compliance while identifying every legitimate saving.",
           "provider": {"@id": "https://caaft.com/#organization"},
           "areaServed": {"@type": "Country", "name": "India"},
           "serviceType": "Income Tax Services",
@@ -106,8 +130,7 @@
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Income Tax Filing", "description": "Accurate, timely ITR filing for individuals, firms, and companies — with maximum deductions and zero errors."}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "TDS Return Filing", "description": "Quarterly TDS compliance — challan payment, Form 24Q/26Q filing, and TDS certificate issuance."}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tax Audit", "description": "Section 44AB audits by experienced CAs, with complete Form 3CA/3CB and 3CD preparation."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tax Planning", "description": "Legally sound tax planning that reduces annual liability through smart structuring and timely investments."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tax Assessment & Appeal Support", "description": "End-to-end support for income tax assessments, scrutiny notices, and appeals — with expert representation before CIT(A) and ITAT."}}
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tax Planning", "description": "Legally sound tax planning that reduces annual liability through smart structuring and timely investments."}}
             ]
           }
         },
@@ -128,9 +151,7 @@
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GST Registration", "description": "Fast GSTIN registration with the right category, HSN/SAC codes, and no portal back-and-forth."}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GST Returns Filing", "description": "On-time GSTR-1, GSTR-3B, and GSTR-9 filing with ITC reconciliation — no late fees or lost credits."}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GST LUT Filing", "description": "Annual Letter of Undertaking filed before the financial year so exports remain IGST-free."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GST Cancellation", "description": "Clean GST deregistration — pending returns cleared, ITC reversed, and GSTR-10 filed."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GST Advisory & Compliance", "description": "Practical GST guidance on ITC, reverse charge, e-invoicing, and sector-specific compliance — audit-ready at all times."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GST Assessment & Appeal Support", "description": "End-to-end support for GST scrutiny, demand notices, and appeals — representation before GST authorities and Appellate Authority."}}
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GST Cancellation", "description": "Clean GST deregistration — pending returns cleared, ITC reversed, and GSTR-10 filed."}}
             ]
           }
         },
@@ -138,14 +159,21 @@
           "@type": "FAQPage",
           "@id": "https://caaft.com/taxation-services/#faq",
           "mainEntity": [
-            {"@type": "Question", "name": "How do I get started with CAAFT - what does onboarding look like?", "acceptedAnswer": {"@type": "Answer", "text": "Simply book a free consultation. We assess your current compliance status, explain what's needed, and send you a tailored document checklist. Most clients are fully onboarded within 2–3 working days — no paperwork overload, no long waiting periods."}},
-            {"@type": "Question", "name": "Can CAAFT take over from my existing CA mid-year?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we handle transitions at any point in the financial year. We collect your prior filings, reconcile all records, and pick up seamlessly — without disrupting your compliance calendar or creating gaps in your filing history."}},
-            {"@type": "Question", "name": "What documents do I typically need to share for tax filing?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on your profile, but typically: PAN, Aadhaar, Form 16 or bank statements, investment proofs, and last year's filed return. We send you a precise, personalised checklist after the initial consultation — so you never have to guess what to gather."}},
-            {"@type": "Question", "name": "How are your fees structured — one-time or annual?", "acceptedAnswer": {"@type": "Answer", "text": "We offer both. One-time filing engagements are available for individuals with straightforward needs, while annual retainer packages cover businesses with ongoing monthly or quarterly compliance. All fees are agreed and confirmed upfront — no surprise bills."}},
-            {"@type": "Question", "name": "How quickly can you file my return if I have a tight deadline?", "acceptedAnswer": {"@type": "Answer", "text": "For most standard returns, we can file within 2–4 working days of receiving complete documents. For urgent cases, we offer priority filing — simply mention your deadline during the initial consultation and we will work around it."}},
-            {"@type": "Question", "name": "Do I need to visit your office, or can everything be handled remotely?", "acceptedAnswer": {"@type": "Answer", "text": "Everything can be handled fully online. We work with clients across India — documents are shared digitally, consultations happen over call or video, and all acknowledgements and confirmations are delivered to your inbox. No office visit is required unless you prefer one."}},
-            {"@type": "Question", "name": "Is my financial data safe with CAAFT?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. All client data is handled with strict confidentiality. We do not share your information with any third party. Documents shared digitally are stored securely and accessible only to your assigned CA and their direct team."}},
-            {"@type": "Question", "name": "What if I receive a tax notice after CAAFT files my return?", "acceptedAnswer": {"@type": "Answer", "text": "We stand behind every return we file. If you receive a notice related to a return prepared and filed by us, we review it, advise you on the appropriate response, and handle the reply to the department on your behalf — at no additional charge for routine notices."}}
+            {
+              "@type": "Question",
+              "name": "Can CAAFT take over from my existing CA mid-year?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Yes, CAAFT handles transitions at any point in the financial year — prior filings collected, records reconciled, and compliance picked up seamlessly without gaps in your filing history."}
+            },
+            {
+              "@type": "Question",
+              "name": "How quickly can CAAFT file my return if I have a tight deadline?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Most standard returns are filed within 2–4 working days of receiving complete documents. Priority filing is available for urgent cases — mention your deadline at the initial consultation."}
+            },
+            {
+              "@type": "Question",
+              "name": "What if I receive a tax notice after CAAFT files my return?",
+              "acceptedAnswer": {"@type": "Answer", "text": "CAAFT stands behind every return it files. If a notice relates to a return CAAFT prepared, the team reviews it and handles the reply to the department — at no additional charge for routine notices."}
+            }
           ]
         },
         {
@@ -185,7 +213,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="container">
                     <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
                         <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
-                            <h1 id="tax-hero-h1" class="caaft-ar-hero-h1">Taxation Services</h1>
+                            <h1 id="tax-hero-h1" class="caaft-ar-hero-h1">TAXATION SERVICES</h1>
                             <h2 class="caaft-ar-hero-h2">Expert Taxation Services That Keep You <em>Compliant, Strategic &amp; Penalty-Free</em></h2>
                             <p class="caaft-ar-hero-lead">
                                 From Income Tax Returns to GST compliance, CAAFT's Chartered Accountants handle every obligation with precision — so you never miss a deadline or face unnecessary tax exposure. Taxation isn't just about filing returns; it's about minimising liability within the law while staying fully compliant. CAAFT delivers reliable, audit-ready tax services for businesses and individuals across Chennai.
@@ -254,128 +282,144 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
 
-        <section class="caaft-ar-what-we-offer py-90" aria-labelledby="tax-offer-income-heading">
+        <section class="caaft-ar-what-we-offer py-90" aria-labelledby="tax-offer-tabs-heading">
             <div class="container">
                 <header class="caaft-ar-offer-header">
-                    <p class="caaft-ar-offer-eyebrow">Income tax</p>
-                    <h2 id="tax-offer-income-heading" class="caaft-ar-offer-h2">Income Tax Services</h2>
-                    <p class="caaft-ar-offer-intro">
-                        Comprehensive income tax support - from routine return filing to complex audits and strategic planning - ensuring full compliance while identifying every legitimate saving available to you.
-                    </p>
+                    <p class="caaft-ar-offer-eyebrow">Our services</p>
+                    <h2 id="tax-offer-tabs-heading" class="caaft-ar-offer-h2">Taxation Service Categories</h2>
                 </header>
-                <div class="row g-4 caaft-ar-offer-grid">
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-file-invoice-dollar"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Income Tax Filing</h3>
-                            <p class="caaft-ar-offer-card-text">Accurate, timely ITR filing for individuals, firms, and companies — with maximum deductions claimed and zero errors.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-receipt"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">TDS Return Filing</h3>
-                            <p class="caaft-ar-offer-card-text">End-to-end quarterly TDS compliance — from challan payment to Form 24Q/26Q filing and TDS certificate issuance.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-search-dollar"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Tax Audit</h3>
-                            <p class="caaft-ar-offer-card-text">Thorough Section 44AB tax audits conducted by experienced CAs, with complete Form 3CA/3CB and 3CD preparation.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">04</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-chart-pie"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Tax Planning</h3>
-                            <p class="caaft-ar-offer-card-text">Forward-looking, legally sound tax planning that reduces your annual liability through smart structuring and timely investments.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">05</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-balance-scale"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Tax Assessment &amp; Appeal Support</h3>
-                            <p class="caaft-ar-offer-card-text">End-to-end support for income tax assessments, scrutiny notices, and appeals — with expert representation before CIT(A) and ITAT.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="caaft-ar-what-we-offer py-90" aria-labelledby="tax-offer-gst-heading">
-            <div class="container">
-                <header class="caaft-ar-offer-header">
-                    <p class="caaft-ar-offer-eyebrow">GST</p>
-                    <h2 id="tax-offer-gst-heading" class="caaft-ar-offer-h2">GST Services</h2>
-                    <p class="caaft-ar-offer-intro">
-                        End-to-end GST management — from registration and monthly filings to LUT submissions and clean cancellation — keeping your GST standing compliant at every stage.
-                    </p>
-                </header>
-                <div class="row g-4 caaft-ar-offer-grid">
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-id-card"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">GST Registration</h3>
-                            <p class="caaft-ar-offer-card-text">Fast, accurate GSTIN registration for new businesses — with the right category, HSN/SAC codes, and zero back-and-forth with the portal.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
+                <ul class="nav nav-pills mb-4 tax-service-tabs" id="taxServiceTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="income-tax-tab" data-bs-toggle="tab" data-bs-target="#income-tax-pane" type="button" role="tab" aria-controls="income-tax-pane" aria-selected="true">Income Tax</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="gst-tab" data-bs-toggle="tab" data-bs-target="#gst-pane" type="button" role="tab" aria-controls="gst-pane" aria-selected="false">GST</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="taxServiceTabsContent">
+                    <div class="tab-pane fade show active" id="income-tax-pane" role="tabpanel" aria-labelledby="income-tax-tab" tabindex="0">
+                        <header class="caaft-ar-offer-header">
+                            <p class="caaft-ar-offer-eyebrow">Income tax</p>
+                            <h2 id="tax-offer-income-heading" class="caaft-ar-offer-h2">Income Tax Services</h2>
+                            <p class="caaft-ar-offer-intro">
+                                Comprehensive income tax support - from routine return filing to complex audits and strategic planning - ensuring full compliance while identifying every legitimate saving available to you.
+                            </p>
+                        </header>
+                        <div class="row g-4 caaft-ar-offer-grid">
+                            <div class="col-md-6 col-lg-4">
+                                <article class="caaft-ar-offer-card">
+                                    <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
+                                    <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-file-invoice-dollar"></i></span>
+                                    <h3 class="caaft-ar-offer-card-title">Income Tax Filing</h3>
+                                    <p class="caaft-ar-offer-card-text">Accurate, timely ITR filing for individuals, firms, and companies — with maximum deductions claimed and zero errors.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="caaft-ar-offer-card">
+                                    <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
+                                    <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-receipt"></i></span>
+                                    <h3 class="caaft-ar-offer-card-title">TDS Return Filing</h3>
+                                    <p class="caaft-ar-offer-card-text">End-to-end quarterly TDS compliance — from challan payment to Form 24Q/26Q filing and TDS certificate issuance.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="caaft-ar-offer-card">
+                                    <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
+                                    <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-search-dollar"></i></span>
+                                    <h3 class="caaft-ar-offer-card-title">Tax Audit</h3>
+                                    <p class="caaft-ar-offer-card-text">Thorough Section 44AB tax audits conducted by experienced CAs, with complete Form 3CA/3CB and 3CD preparation.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="caaft-ar-offer-card">
+                                    <span class="caaft-ar-offer-num" aria-hidden="true">04</span>
+                                    <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-chart-pie"></i></span>
+                                    <h3 class="caaft-ar-offer-card-title">Tax Planning</h3>
+                                    <p class="caaft-ar-offer-card-text">Forward-looking, legally sound tax planning that reduces your annual liability through smart structuring and timely investments.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="caaft-ar-offer-card">
+                                    <span class="caaft-ar-offer-num" aria-hidden="true">05</span>
+                                    <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-balance-scale"></i></span>
+                                    <h3 class="caaft-ar-offer-card-title">Tax Assessment &amp; Appeal Support</h3>
+                                    <p class="caaft-ar-offer-card-text">End-to-end support for income tax assessments, scrutiny notices, and appeals — with expert representation before CIT(A) and ITAT.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                </article>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-file-invoice"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">GST Returns</h3>
-                            <p class="caaft-ar-offer-card-text">On-time GSTR-1, GSTR-3B, and GSTR-9 filing with ITC reconciliation — so you never attract late fees or lose eligible credits.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-plane-departure"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">GST LUT Filing</h3>
-                            <p class="caaft-ar-offer-card-text">Annual Letter of Undertaking filed before the financial year begins, so your exports stay IGST-free and cash-flow efficient.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">04</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-ban"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">GST Cancellation</h3>
-                            <p class="caaft-ar-offer-card-text">Clean, complete GST deregistration — pending returns cleared, ITC reversed, and GSTR-10 filed, with no loose ends left behind.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">05</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-lightbulb"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">GST Advisory &amp; Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">Practical, up-to-date GST guidance on input tax credit, reverse charge, e-invoicing, and sector-specific compliance — so your business stays audit-ready at all times.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">06</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-gavel"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">GST Assessment &amp; Appeal Support</h3>
-                            <p class="caaft-ar-offer-card-text">End-to-end support for GST scrutiny, demand notices, and appeals — with expert representation before the GST authorities and Appellate Authority.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
+
+                    <div class="tab-pane fade" id="gst-pane" role="tabpanel" aria-labelledby="gst-tab" tabindex="0">
+                        <header class="caaft-ar-offer-header">
+                            <p class="caaft-ar-offer-eyebrow">GST</p>
+                            <h2 id="tax-offer-gst-heading" class="caaft-ar-offer-h2">GST Services</h2>
+                            <p class="caaft-ar-offer-intro">
+                                End-to-end GST management — from registration and monthly filings to LUT submissions and clean cancellation — keeping your GST standing compliant at every stage.
+                            </p>
+                        </header>
+                        <div class="row g-4 caaft-ar-offer-grid">
+                            <div class="col-md-6 col-lg-4">
+                                <article class="caaft-ar-offer-card">
+                                    <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
+                                    <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-id-card"></i></span>
+                                    <h3 class="caaft-ar-offer-card-title">GST Registration</h3>
+                                    <p class="caaft-ar-offer-card-text">Fast, accurate GSTIN registration for new businesses — with the right category, HSN/SAC codes, and zero back-and-forth with the portal.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="caaft-ar-offer-card">
+                                    <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
+                                    <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-file-invoice"></i></span>
+                                    <h3 class="caaft-ar-offer-card-title">GST Returns</h3>
+                                    <p class="caaft-ar-offer-card-text">On-time GSTR-1, GSTR-3B, and GSTR-9 filing with ITC reconciliation — so you never attract late fees or lose eligible credits.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="caaft-ar-offer-card">
+                                    <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
+                                    <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-plane-departure"></i></span>
+                                    <h3 class="caaft-ar-offer-card-title">GST LUT Filing</h3>
+                                    <p class="caaft-ar-offer-card-text">Annual Letter of Undertaking filed before the financial year begins, so your exports stay IGST-free and cash-flow efficient.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="caaft-ar-offer-card">
+                                    <span class="caaft-ar-offer-num" aria-hidden="true">04</span>
+                                    <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-ban"></i></span>
+                                    <h3 class="caaft-ar-offer-card-title">GST Cancellation</h3>
+                                    <p class="caaft-ar-offer-card-text">Clean, complete GST deregistration — pending returns cleared, ITC reversed, and GSTR-10 filed, with no loose ends left behind.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="caaft-ar-offer-card">
+                                    <span class="caaft-ar-offer-num" aria-hidden="true">05</span>
+                                    <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-lightbulb"></i></span>
+                                    <h3 class="caaft-ar-offer-card-title">GST Advisory &amp; Compliance</h3>
+                                    <p class="caaft-ar-offer-card-text">Practical, up-to-date GST guidance on input tax credit, reverse charge, e-invoicing, and sector-specific compliance — so your business stays audit-ready at all times.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="caaft-ar-offer-card">
+                                    <span class="caaft-ar-offer-num" aria-hidden="true">06</span>
+                                    <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-gavel"></i></span>
+                                    <h3 class="caaft-ar-offer-card-title">GST Assessment &amp; Appeal Support</h3>
+                                    <p class="caaft-ar-offer-card-text">End-to-end support for GST scrutiny, demand notices, and appeals — with expert representation before the GST authorities and Appellate Authority.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                </article>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
