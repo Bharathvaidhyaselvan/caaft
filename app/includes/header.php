@@ -40,11 +40,11 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
         <nav class="navbar navbar-expand-lg">
             <div class="container position-relative">
                 <a class="navbar-brand static-logo" id="manimaenu" href="https://caaft.builtbybrevia.com/">
-                    <img src="assets/img/static-logos.webp" alt="CAAFT Consultancy Services"
+                    <img src="assets/img/caaft-logo-header.webp" alt="CAAFT Consultancy Services"
                         title="CAAFT Consultancy Services" class="img-fluid">
                 </a>
                 <a class="navbar-brand reaming-logo" id="submenu" href="https://caaft.builtbybrevia.com/">
-                    <img src="assets/img/static-logos.webp" alt="CAAFT Consultancy Services"
+                    <img src="assets/img/caaft-static-logo.webp" alt="CAAFT Consultancy Services"
                         title="CAAFT Consultancy Services" class="img-fluid">
                 </a>
                 <a class="navbar-brand fixed_logo" href="https://caaft.builtbybrevia.com/">

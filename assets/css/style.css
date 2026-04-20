@@ -6384,6 +6384,10 @@ nav.navbar.navbar-expand-lg a.hides img.img-fluid {
     display: none;
 }
 
+.navbar a#manimaenu.show img.img-fluid {
+    display: block !important;
+}
+
 .navbar.fixed-top a#submenu {
     display: none;
 }
@@ -6392,8 +6396,36 @@ nav.navbar.navbar-expand-lg a.hides img.img-fluid {
     display: none;
 }
 
+.navbar a#manimaenu.hides {
+    display: none !important;
+}
+
+.navbar a#manimaenu.hides + a#submenu {
+    display: block;
+}
+
+.navbar.fixed-top a#manimaenu.hides + a#submenu {
+    display: none !important;
+}
+
+.page-accounting-reporting .navbar a#manimaenu {
+    display: none;
+}
+
+.page-accounting-reporting .navbar a#submenu {
+    display: block;
+}
+
+.page-accounting-reporting .navbar.fixed-top a#submenu {
+    display: none;
+}
+
 .navbar:not(.fixed-top) a.navbar-brand.static-logo img.img-fluid {
     width: 200px;
+}
+
+.home-3 .navbar:not(.fixed-top) a.navbar-brand.static-logo img.img-fluid {
+    width: 150px;
 }
 
 @media (min-width: 992px) {
