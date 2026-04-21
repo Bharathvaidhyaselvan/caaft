@@ -20,6 +20,53 @@
         .page-gst-advisory .caaft-ar-trust-indicators {
             background: #ffffff !important;
         }
+        .page-gst-advisory .caaft-ar-hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .page-gst-advisory .caaft-ar-hero-ctas .theme-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+        .page-gst-advisory .caaft-ar-hero-btn-secondary {
+            background: #ffffff !important;
+            color: #1f4f99 !important;
+            border: 1px solid #d6e4f7;
+            box-shadow: 0 10px 24px rgba(18, 58, 143, 0.12);
+        }
+        .page-gst-advisory .caaft-ar-hero-btn-secondary:hover {
+            background: #f3f8ff !important;
+            color: #163f83 !important;
+        }
+        .page-gst-advisory .caaft-ar-trust-grid {
+            width: 100%;
+            max-width: none;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 0;
+            align-items: stretch;
+        }
+        .page-gst-advisory .caaft-ar-trust-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-right: 1px solid #eef2f6;
+        }
+        .page-gst-advisory .caaft-ar-trust-item:last-child { border-right: 0; }
+        .page-gst-advisory .caaft-ar-trust-content h3 {
+            margin: 0 0 4px;
+            line-height: 1.25;
+        }
+        .page-gst-advisory .caaft-ar-trust-content p {
+            margin: 0;
+            line-height: 1.3;
+        }
 
         .page-gst-advisory .gst-adv-overview-wrap,
         .page-gst-advisory .gst-adv-needs-wrap,
@@ -265,6 +312,13 @@
         }
 
         @media (max-width: 991.98px) {
+            .page-gst-advisory .caaft-ar-trust-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+            }
+            .page-gst-advisory .caaft-ar-trust-item {
+                border-right: 0;
+            }
             .page-gst-advisory .gst-adv-needs-list,
             .page-gst-advisory .gst-adv-matters-list,
             .page-gst-advisory .gst-adv-delivered-grid,
@@ -272,6 +326,9 @@
             .page-gst-advisory .gst-adv-facts-grid {
                 columns: 1;
                 grid-template-columns: 1fr;
+            }
+            .page-gst-advisory .caaft-ar-hero-ctas .theme-btn {
+                white-space: normal;
             }
         }
     </style>
@@ -389,7 +446,10 @@
                     <h2 class="caaft-ar-hero-h2">Strategic GST Advisory. Full Compliance. Maximum ITC — Every Month, Without Gaps.</h2>
                     <p class="caaft-ar-hero-lead">GST compliance requires a structured, methodical approach that goes far beyond routine return filing.</p>
                     <p class="caaft-ar-hero-lead">Businesses must understand applicable regulations, maintain accurate records, and implement proper reporting systems — all while keeping pace with evolving tax rules and increasing regulatory scrutiny. CAAFT delivers expert GST advisory and compliance services that help businesses navigate the full complexity of India's GST framework, minimise risks, and maintain complete tax efficiency.</p>
-                    <div class="caaft-ar-hero-ctas"><a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Simplify GST Compliance - Accurate. Fast. Compliant <i class="fas fa-arrow-right"></i></a></div>
+                    <div class="caaft-ar-hero-ctas">
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Simplify GST Compliance <i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-secondary">Accurate. Fast. Compliant <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
                 <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php
 $caaft_enquiry_service = 'GST Advisory and Compliance Services';

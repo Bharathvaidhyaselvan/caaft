@@ -86,14 +86,24 @@
         }
         .page-gst-cancellation-services .gst-cancel-overview-list {
             margin: 0 0 10px;
-            padding-left: 20px;
-            list-style: disc;
+            padding: 0;
+            list-style: none;
         }
         .page-gst-cancellation-services .gst-cancel-overview-list li {
+            position: relative;
+            padding-left: 16px;
             margin: 0 0 6px;
             color: #37465d;
             line-height: 1.55;
             font-weight: 400;
+        }
+        .page-gst-cancellation-services .gst-cancel-overview-list li::before {
+            content: "\2022";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #2f78cb;
+            font-weight: 700;
         }
         .page-gst-cancellation-services .gst-cancel-overview-media {
             width: 100%;

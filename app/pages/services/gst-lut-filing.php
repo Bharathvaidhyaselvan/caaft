@@ -20,6 +20,53 @@
         .page-gst-lut-filing .caaft-ar-trust-indicators {
             background: #ffffff !important;
         }
+        .page-gst-lut-filing .caaft-ar-hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .page-gst-lut-filing .caaft-ar-hero-ctas .theme-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+        .page-gst-lut-filing .caaft-ar-hero-btn-secondary {
+            background: #ffffff !important;
+            color: #1f4f99 !important;
+            border: 1px solid #d6e4f7;
+            box-shadow: 0 10px 24px rgba(18, 58, 143, 0.12);
+        }
+        .page-gst-lut-filing .caaft-ar-hero-btn-secondary:hover {
+            background: #f3f8ff !important;
+            color: #163f83 !important;
+        }
+        .page-gst-lut-filing .caaft-ar-trust-grid {
+            width: 100%;
+            max-width: none;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 0;
+            align-items: stretch;
+        }
+        .page-gst-lut-filing .caaft-ar-trust-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-right: 1px solid #eef2f6;
+        }
+        .page-gst-lut-filing .caaft-ar-trust-item:last-child { border-right: 0; }
+        .page-gst-lut-filing .caaft-ar-trust-content h3 {
+            margin: 0 0 4px;
+            line-height: 1.25;
+        }
+        .page-gst-lut-filing .caaft-ar-trust-content p {
+            margin: 0;
+            line-height: 1.3;
+        }
 
         .page-gst-lut-filing .lut-overview-wrap {
             padding-top: 44px;
@@ -516,6 +563,18 @@
             align-items: center;
             gap: 8px;
         }
+        @media (max-width: 991.98px) {
+            .page-gst-lut-filing .caaft-ar-trust-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+            }
+            .page-gst-lut-filing .caaft-ar-trust-item {
+                border-right: 0;
+            }
+            .page-gst-lut-filing .caaft-ar-hero-ctas .theme-btn {
+                white-space: normal;
+            }
+        }
     </style>
     <script type="application/ld+json">
     {
@@ -621,7 +680,10 @@
                     <h1 id="gst-lut-h1" class="caaft-ar-hero-h1">GST LUT Filing Services for Exporters</h1>
                     <h2 class="caaft-ar-hero-h2">One Filing. Twelve Months of Compliant, GST-Free Exports.</h2>
                     <p class="caaft-ar-hero-lead">Indian exporters — goods, services, or e-commerce — need a compliance partner who gets it done right the first time. CAAFT handles GST LUT filing end-to-end, from eligibility checks and document preparation to submission and annual renewal — so internal teams can focus entirely on growing the export business.</p>
-                    <div class="caaft-ar-hero-ctas"><a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">File Your LUT Now - Talk to an Export Expert <i class="fas fa-arrow-right"></i></a></div>
+                    <div class="caaft-ar-hero-ctas">
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">File Your LUT Now <i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-secondary">Talk to an Export Expert <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
                 <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php
 $caaft_enquiry_service = 'GST LUT Filing Services';

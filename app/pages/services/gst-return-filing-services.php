@@ -20,6 +20,53 @@
         .page-gst-return-filing-services .caaft-ar-trust-indicators {
             background: #ffffff !important;
         }
+        .page-gst-return-filing-services .caaft-ar-hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .page-gst-return-filing-services .caaft-ar-hero-ctas .theme-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+        .page-gst-return-filing-services .caaft-ar-hero-btn-secondary {
+            background: #ffffff !important;
+            color: #1f4f99 !important;
+            border: 1px solid #d6e4f7;
+            box-shadow: 0 10px 24px rgba(18, 58, 143, 0.12);
+        }
+        .page-gst-return-filing-services .caaft-ar-hero-btn-secondary:hover {
+            background: #f3f8ff !important;
+            color: #163f83 !important;
+        }
+        .page-gst-return-filing-services .caaft-ar-trust-grid {
+            width: 100%;
+            max-width: none;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 0;
+            align-items: stretch;
+        }
+        .page-gst-return-filing-services .caaft-ar-trust-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-right: 1px solid #eef2f6;
+        }
+        .page-gst-return-filing-services .caaft-ar-trust-item:last-child { border-right: 0; }
+        .page-gst-return-filing-services .caaft-ar-trust-content h3 {
+            margin: 0 0 4px;
+            line-height: 1.25;
+        }
+        .page-gst-return-filing-services .caaft-ar-trust-content p {
+            margin: 0;
+            line-height: 1.3;
+        }
 
         .gst-return-overview-wrap {
             padding-top: 48px;
@@ -630,6 +677,18 @@
             border-radius: 2px;
             background: #f9f9f9;
         }
+        @media (max-width: 991.98px) {
+            .page-gst-return-filing-services .caaft-ar-trust-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+            }
+            .page-gst-return-filing-services .caaft-ar-trust-item {
+                border-right: 0;
+            }
+            .page-gst-return-filing-services .caaft-ar-hero-ctas .theme-btn {
+                white-space: normal;
+            }
+        }
     </style>
     <script type="application/ld+json">
     {
@@ -683,7 +742,10 @@
                     <h1 id="gst-return-h1" class="caaft-ar-hero-h1">GST Return Filing Services</h1>
                     <h2 class="caaft-ar-hero-h2">Accurate Returns. Zero Late Filings. Full ITC Protection — Every Filing Cycle.</h2>
                     <p class="caaft-ar-hero-lead">GST return filing is not a routine administrative task — it is a legal obligation with direct consequences for Input Tax Credit, business credibility, and GSTIN status. For growing businesses dealing with multiple return types, strict deadlines, and evolving compliance requirements, even small errors affect tax records and ITC claims. CAAFT delivers professional GST return filing services — structured, accurate, and on time — for startups, SMEs, and professionals across India.</p>
-                    <div class="caaft-ar-hero-ctas"><a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Schedule a Free Consultation – Get Started Today! <i class="fas fa-arrow-right"></i></a></div>
+                    <div class="caaft-ar-hero-ctas">
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Schedule a Free Consultation <i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-secondary">Get Started Today! <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
                 <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php
 $caaft_enquiry_service = 'GST Return Filing Services';

@@ -50,6 +50,31 @@
             background: #f3f8ff !important;
             color: #163f83 !important;
         }
+        .page-gst-assessment-appeal .caaft-ar-trust-grid {
+            width: 100%;
+            max-width: none;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 0;
+            align-items: stretch;
+        }
+        .page-gst-assessment-appeal .caaft-ar-trust-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-right: 1px solid #eef2f6;
+        }
+        .page-gst-assessment-appeal .caaft-ar-trust-item:last-child { border-right: 0; }
+        .page-gst-assessment-appeal .caaft-ar-trust-content h3 {
+            margin: 0 0 4px;
+            line-height: 1.25;
+        }
+        .page-gst-assessment-appeal .caaft-ar-trust-content p {
+            margin: 0;
+            line-height: 1.3;
+        }
         .page-gst-assessment-appeal .gst-assess-title { margin: 0 0 10px; color: #1f2c40; font-size: clamp(1.5rem, 2.2vw, 2.1rem); line-height: 1.2; font-weight: 700; }
         .page-gst-assessment-appeal .gst-assess-lead { margin: 0 0 10px; color: #4d5868; line-height: 1.72; }
         .page-gst-assessment-appeal .gst-assess-overview-card { background: #fff; border: 1px solid #dfe5ee; border-radius: 10px; padding: 18px; }
@@ -231,6 +256,13 @@
         .page-gst-assessment-appeal .gst-assess-cta-text { margin: 0 auto 24px; max-width: 760px; color: rgba(255,255,255,.9); line-height: 1.68; font-size: 1.02rem; }
         .page-gst-assessment-appeal .gst-assess-cta-box .theme-btn { min-width: 230px; padding: 12px 22px; font-size: .95rem; }
         @media (max-width: 991.98px) {
+            .page-gst-assessment-appeal .caaft-ar-trust-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+            }
+            .page-gst-assessment-appeal .caaft-ar-trust-item {
+                border-right: 0;
+            }
             .page-gst-assessment-appeal .gst-assess-needs-list, .page-gst-assessment-appeal .gst-assess-matters-list, .page-gst-assessment-appeal .gst-assess-delivered-grid, .page-gst-assessment-appeal .gst-assess-docs-grid, .page-gst-assessment-appeal .gst-assess-facts-grid, .page-gst-assessment-appeal .gst-assess-deadline-head, .page-gst-assessment-appeal .gst-assess-deadline-row { columns: 1; grid-template-columns: 1fr; }
             .page-gst-assessment-appeal .gst-assess-deadline-head { display: none; }
             .page-gst-assessment-appeal .gst-assess-docs-item:nth-child(odd) { border-right: 0; }
