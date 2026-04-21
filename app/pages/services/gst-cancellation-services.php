@@ -24,8 +24,21 @@
             gap: 8px;
             white-space: nowrap;
         }
-        .page-gst-cancellation-services .caaft-ar-hero-ctas .theme-btn:not(:first-child) {
-            display: none !important;
+        .page-gst-cancellation-services .caaft-ar-hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .page-gst-cancellation-services .caaft-ar-hero-btn-secondary {
+            background: #ffffff !important;
+            color: #1f4f99 !important;
+            border: 1px solid #d6e4f7;
+            box-shadow: 0 10px 24px rgba(18, 58, 143, 0.12);
+        }
+        .page-gst-cancellation-services .caaft-ar-hero-btn-secondary:hover {
+            background: #f3f8ff !important;
+            color: #163f83 !important;
         }
         .page-gst-cancellation-services .caaft-ar-trust-grid {
             width: 100%;
@@ -587,7 +600,10 @@
                     <h2 class="caaft-ar-hero-h2">Clean GST Exit. Zero Residual Liability. No Defaults, No Loose Ends.</h2>
                     <p class="caaft-ar-hero-lead">When a business closes, restructures, or falls below the GST threshold, the registration does not deactivate automatically.</p>
                     <p class="caaft-ar-hero-lead">Without formal GST cancellation, the obligation to file returns, respond to notices, and maintain compliance continues — regardless of whether the business is operational. CAAFT manages the complete GST registration cancellation process for businesses across India — handling documentation, portal filing, authority queries, and final approval from start to finish.</p>
-                    <div class="caaft-ar-hero-ctas"><a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Start GST Cancellation – Book a Free Consultation Today! <i class="fas fa-arrow-right"></i></a></div>
+                    <div class="caaft-ar-hero-ctas">
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Start GST Cancellation <i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-secondary">Book a Free Consultation Today! <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
                 <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php
 $caaft_enquiry_service = 'GST Cancellation Services';
