@@ -167,19 +167,22 @@
         }
 
         .page-income-tax-filing-service .itr-challenge-item {
-            background: #fff7ea;
-            border-left: 3px solid #efb25e;
+            background: #f5f9ff;
+            border: 1px solid #dbe8f7;
+            border-left: 3px solid #37b8ff;
             padding: 14px 16px;
         }
 
         .page-income-tax-filing-service .itr-challenge-item h3 {
             margin: 0 0 5px;
             font-size: 1rem;
+            color: #1f2c40;
         }
 
         .page-income-tax-filing-service .itr-challenge-item p {
             margin: 0;
             font-size: 0.95rem;
+            color: #4d5868;
         }
 
         .page-income-tax-filing-service .bk-facts-header,

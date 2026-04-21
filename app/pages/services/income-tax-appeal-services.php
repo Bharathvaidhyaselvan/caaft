@@ -25,6 +25,45 @@
     <?php include "header-top.php"; ?>
     <style>
         .page-income-tax-appeal-services .caaft-ar-trust-indicators { background: #ffffff !important; }
+        .page-income-tax-appeal-services .caaft-ar-trust-grid {
+            width: 100%;
+            max-width: none;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 0;
+            align-items: stretch;
+        }
+        .page-income-tax-appeal-services .caaft-ar-trust-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-right: 1px solid #eef2f6;
+        }
+        .page-income-tax-appeal-services .caaft-ar-trust-item:last-child { border-right: 0; }
+        .page-income-tax-appeal-services .caaft-ar-trust-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .page-income-tax-appeal-services .caaft-ar-trust-content h3 {
+            margin: 0 0 4px;
+            line-height: 1.25;
+        }
+        .page-income-tax-appeal-services .caaft-ar-trust-content p {
+            margin: 0;
+            line-height: 1.3;
+        }
+        @media (max-width: 991.98px) {
+            .page-income-tax-appeal-services .caaft-ar-trust-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+            }
+            .page-income-tax-appeal-services .caaft-ar-trust-item {
+                border-right: 0;
+            }
+        }
         .page-income-tax-appeal-services .appeal-overview-card,
         .page-income-tax-appeal-services .appeal-list-card,
         .page-income-tax-appeal-services .appeal-row-card {
@@ -285,9 +324,9 @@
             padding-right: 8px;
         }
         .page-income-tax-appeal-services .appeal-challenge-item {
-            background: #fffdf8;
-            border: 1px solid #f1eee5;
-            border-left: 3px solid #f7b14a;
+            background: #f5f9ff;
+            border: 1px solid #dbe8f7;
+            border-left: 3px solid #37b8ff;
             border-radius: 0;
             padding: 14px 16px;
             margin-bottom: 12px;
@@ -302,7 +341,7 @@
         }
         .page-income-tax-appeal-services .appeal-challenge-text {
             margin: 0;
-            color: #2a3548;
+            color: #4d5868;
             line-height: 1.5;
             font-weight: 500;
         }
@@ -344,25 +383,55 @@
             font-weight: 500;
         }
         .page-income-tax-appeal-services .appeal-cta-panel {
-            background: linear-gradient(135deg, #082c63 0%, #0b3f8f 100%);
-            border-radius: 12px;
-            padding: clamp(2rem, 4vw, 3rem) clamp(1.2rem, 3vw, 2.6rem);
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(140deg, #0d2b63 0%, #123a8f 52%, #1f4eb5 100%);
+            border-radius: 14px;
+            padding: clamp(34px, 5vw, 58px) 24px;
             text-align: center;
-            box-shadow: 0 14px 34px rgba(8, 36, 78, 0.24);
+            box-shadow: 0 18px 42px rgba(10, 30, 75, 0.32);
+        }
+        .page-income-tax-appeal-services .appeal-cta-panel::before {
+            content: "";
+            position: absolute;
+            top: -120px;
+            right: -90px;
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.08) 36%, rgba(255, 255, 255, 0) 68%);
+            pointer-events: none;
+        }
+        .page-income-tax-appeal-services .appeal-cta-panel::after {
+            content: "";
+            position: absolute;
+            top: -64px;
+            right: 26%;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(74, 146, 255, 0.2) 0%, rgba(74, 146, 255, 0) 70%);
+            pointer-events: none;
+        }
+        .page-income-tax-appeal-services .appeal-cta-panel > * {
+            position: relative;
+            z-index: 1;
         }
         .page-income-tax-appeal-services .appeal-cta-title {
             color: #ffffff;
-            font-size: clamp(1.8rem, 3.4vw, 3.2rem);
-            line-height: 1.15;
-            margin: 0 0 14px;
-            letter-spacing: -0.01em;
+            font-size: clamp(2rem, 3.55vw, 3.6rem);
+            line-height: 1.1;
+            margin: 0 auto 14px;
+            max-width: 690px;
+            letter-spacing: 0.01em;
+            font-weight: 800;
         }
         .page-income-tax-appeal-services .appeal-cta-text {
-            margin: 0 auto 20px;
-            max-width: 850px;
-            color: rgba(255, 255, 255, 0.92);
-            font-size: clamp(1rem, 1.5vw, 1.3rem);
-            line-height: 1.55;
+            margin: 0 auto 24px;
+            max-width: 760px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.02rem;
+            line-height: 1.68;
             font-weight: 500;
         }
         .page-income-tax-appeal-services .appeal-cta-btn {
@@ -370,15 +439,15 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            min-width: 210px;
+            min-width: 230px;
             border-radius: 10px;
             border: 0;
             background: linear-gradient(90deg, #14b4ff 0%, #35c7ff 100%);
             color: #ffffff !important;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 0.95rem;
             line-height: 1;
-            padding: 14px 20px;
+            padding: 12px 22px;
             box-shadow: 0 10px 22px rgba(20, 180, 255, 0.34);
             text-decoration: none;
         }
@@ -467,9 +536,9 @@
             padding-right: 8px;
         }
         .page-income-tax-appeal-services .appeal-risk-item {
-            background: #ffffff;
-            border: 1px solid #eceff4;
-            border-left: 3px solid #ff6b6b;
+            background: #f5f9ff;
+            border: 1px solid #dbe8f7;
+            border-left: 3px solid #37b8ff;
             border-radius: 0;
             padding: 14px 16px;
             margin-bottom: 12px;
@@ -479,7 +548,7 @@
             margin: 0;
             line-height: 1.55;
             font-weight: 600;
-            color: #2a3548;
+            color: #4d5868;
         }
         @media (max-width: 991.98px) {
             .page-income-tax-appeal-services .appeal-overview-grid,

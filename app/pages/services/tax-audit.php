@@ -27,6 +27,31 @@
         .page-tax-audit .caaft-ar-trust-indicators {
             background: #ffffff !important;
         }
+        .page-tax-audit .caaft-ar-trust-grid {
+            width: 100%;
+            max-width: none;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 0;
+            align-items: stretch;
+        }
+        .page-tax-audit .caaft-ar-trust-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-right: 1px solid #eef2f6;
+        }
+        .page-tax-audit .caaft-ar-trust-item:last-child { border-right: 0; }
+        .page-tax-audit .caaft-ar-trust-content h3 {
+            margin: 0 0 4px;
+            line-height: 1.25;
+        }
+        .page-tax-audit .caaft-ar-trust-content p {
+            margin: 0;
+            line-height: 1.3;
+        }
 
         .page-tax-audit .bk-overview-layout {
             display: grid;
@@ -38,7 +63,7 @@
         .page-tax-audit .bk-overview-card {
             background: #ffffff;
             border: 1px solid #e5e8ed;
-            border-left: 3px solid #37b8ff;
+            border-left: 0;
             border-radius: 12px;
             padding: clamp(1rem, 2vw, 1.5rem);
             box-shadow: 0 6px 20px rgba(10, 29, 55, 0.04);
@@ -569,8 +594,9 @@
         }
 
         .page-tax-audit .audit-challenge-item {
-            background: #fdf9ee;
-            border-left: 2px solid #efb25e;
+            background: #f5f9ff;
+            border: 1px solid #dbe8f7;
+            border-left: 3px solid #37b8ff;
             padding: 11px 14px;
             border-radius: 2px;
         }
@@ -586,7 +612,7 @@
         .page-tax-audit .audit-challenges-outro {
             margin-top: 8px;
             margin-bottom: 0;
-            color: #4f5b6b;
+            color: #4d5868;
             font-weight: 500;
             text-align: left !important;
         }
@@ -780,6 +806,11 @@
         }
 
         @media (max-width: 991.98px) {
+            .page-tax-audit .caaft-ar-trust-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+            }
+            .page-tax-audit .caaft-ar-trust-item { border-right: 0; }
             .page-tax-audit .bk-overview-layout {
                 grid-template-columns: 1fr;
             }
