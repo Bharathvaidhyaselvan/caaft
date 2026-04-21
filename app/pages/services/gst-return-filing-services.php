@@ -352,9 +352,9 @@
         .gst-return-due-note {
             margin-top: 10px;
             padding: 10px 12px;
-            border-left: 2px solid #d2d7dd;
-            background: #f9f9f9;
-            color: #515861;
+            border-left: 3px solid #37b8ff;
+            background: #f5f9ff;
+            color: #4d5868;
             line-height: 1.55;
             font-weight: 600;
             font-size: 0.92rem;
@@ -440,9 +440,9 @@
         .gst-return-penalty-note {
             margin-top: 10px;
             padding: 10px 12px;
-            border-left: 2px solid #e37c7c;
-            background: #f9f9f9;
-            color: #515861;
+            border-left: 3px solid #37b8ff;
+            background: #f5f9ff;
+            color: #4d5868;
             line-height: 1.55;
             font-weight: 600;
             font-size: 0.92rem;
