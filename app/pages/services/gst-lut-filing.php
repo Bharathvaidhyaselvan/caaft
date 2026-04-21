@@ -28,7 +28,7 @@
 
         .page-gst-lut-filing .lut-overview-card {
             background: #ffffff;
-            border: 0;
+            border: 1px solid #dfe5ee;
             border-radius: 10px;
             padding: 18px;
         }
@@ -38,6 +38,7 @@
             color: #1f2c40;
             font-size: clamp(1.5rem, 2.2vw, 2.1rem);
             line-height: 1.2;
+            font-weight: 700;
         }
 
         .page-gst-lut-filing .lut-overview-text {

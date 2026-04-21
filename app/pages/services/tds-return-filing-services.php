@@ -433,8 +433,9 @@
         }
 
         .page-tds-return-filing .tds-challenge-item {
-            background: #fdf9ee;
-            border-left: 2px solid #efb25e;
+            background: #f5f9ff;
+            border: 1px solid #dbe8f7;
+            border-left: 3px solid #37b8ff;
             padding: 11px 14px;
             border-radius: 2px;
         }

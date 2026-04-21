@@ -36,6 +36,20 @@
         }
         .page-income-tax-appeal-services .appeal-overview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
         .page-income-tax-appeal-services .appeal-overview-image img { width: 100%; height: 100%; min-height: 280px; max-height: 380px; object-fit: cover; border-radius: 10px; }
+        .page-income-tax-appeal-services .appeal-overview-title {
+            margin: 0 0 10px;
+            color: #1f2c40;
+            font-size: clamp(1.5rem, 2.2vw, 2.1rem);
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        .page-income-tax-appeal-services .appeal-overview-card p {
+            color: #5a6678;
+            line-height: 1.62;
+        }
+        .page-income-tax-appeal-services .appeal-overview-card {
+            border-left: 1px solid #e3e7ee;
+        }
         .page-income-tax-appeal-services .appeal-list-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
         .page-income-tax-appeal-services .appeal-list-card p { margin: 0; line-height: 1.6; }
         .page-income-tax-appeal-services .appeal-row-wrap { margin-top: 14px; border-top: 1px solid #dfe3e9; border-bottom: 1px solid #dfe3e9; }
@@ -615,7 +629,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         <div class="container">
             <div class="appeal-overview-grid">
                 <article class="appeal-overview-card">
-                    <h2 id="appeal-what-heading" class="caaft-ar-offer-h2">What is Income Tax Appeal & Tax Assessment Support?</h2>
+                    <h2 id="appeal-what-heading" class="appeal-overview-title">What is Income Tax Appeal & Tax Assessment Support?</h2>
                     <p>An income tax appeal is the formal mechanism available to every Indian taxpayer to challenge an assessment order or demand raised by the Income Tax Department — contesting disallowances, additions, or demands that are incorrect, excessive, or unsupported by evidence.</p>
                     <p>Tax assessment support covers a broader range of services — reviewing notices before response, correcting discrepancies in past filings, representing clients at scrutiny hearings, and ensuring the tax position is correctly presented to the department at every stage of proceedings.</p>
                     <p>Together, these two pillars form the foundation of what CAAFT delivers: protecting taxpayers from incorrect demands and ensuring every tax matter is handled with the precision, documentation, and legal grounding it requires.</p>

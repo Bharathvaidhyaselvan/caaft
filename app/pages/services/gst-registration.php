@@ -243,7 +243,7 @@
 
         .gst-reg-challenges-title {
             margin: 0 0 8px;
-            color: #2f2f2f;
+            color: #132946;
             font-size: clamp(1.35rem, 2vw, 2rem);
             line-height: 1.2;
             font-weight: 700;
@@ -251,7 +251,7 @@
 
         .gst-reg-challenges-intro {
             margin: 0 0 14px;
-            color: #4c4c4c;
+            color: #4d5868;
             line-height: 1.6;
             max-width: 920px;
         }
@@ -262,15 +262,15 @@
         }
 
         .gst-reg-challenge-item {
-            background: #f6f6f4;
-            border: 1px solid #ecece7;
-            border-left: 2px solid #f1b15b;
+            background: #f5f9ff;
+            border: 1px solid #dbe8f7;
+            border-left: 3px solid #37b8ff;
             padding: 10px 12px;
         }
 
         .gst-reg-challenge-item h3 {
             margin: 0 0 4px;
-            color: #303030;
+            color: #1f2c40;
             font-size: 1rem;
             line-height: 1.35;
             font-weight: 700;
@@ -278,7 +278,7 @@
 
         .gst-reg-challenge-item p {
             margin: 0;
-            color: #535353;
+            color: #4d5868;
             line-height: 1.55;
         }
 
