@@ -28,6 +28,28 @@
         .page-gst-assessment-appeal .gst-assess-challenges-wrap,
         .page-gst-assessment-appeal .gst-assess-benefits-wrap,
         .page-gst-assessment-appeal .gst-assess-facts-wrap { padding-top: 44px; padding-bottom: 44px; }
+        .page-gst-assessment-appeal .caaft-ar-hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .page-gst-assessment-appeal .caaft-ar-hero-ctas .theme-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+        .page-gst-assessment-appeal .caaft-ar-hero-btn-secondary {
+            background: #ffffff !important;
+            color: #1f4f99 !important;
+            border: 1px solid #d6e4f7;
+            box-shadow: 0 10px 24px rgba(18, 58, 143, 0.12);
+        }
+        .page-gst-assessment-appeal .caaft-ar-hero-btn-secondary:hover {
+            background: #f3f8ff !important;
+            color: #163f83 !important;
+        }
         .page-gst-assessment-appeal .gst-assess-title { margin: 0 0 10px; color: #1f2c40; font-size: clamp(1.5rem, 2.2vw, 2.1rem); line-height: 1.2; font-weight: 700; }
         .page-gst-assessment-appeal .gst-assess-lead { margin: 0 0 10px; color: #4d5868; line-height: 1.72; }
         .page-gst-assessment-appeal .gst-assess-overview-card { background: #fff; border: 1px solid #dfe5ee; border-radius: 10px; padding: 18px; }
@@ -265,7 +287,10 @@
                     <h2 class="caaft-ar-hero-h2">From the First Notice to Final Resolution — Expert GST Dispute Support at Every Stage.</h2>
                     <p class="caaft-ar-hero-lead">When a GST notice lands, the clock is already ticking — and every wrong move costs more than the original demand.</p>
                     <p class="caaft-ar-hero-lead">CAAFT's GST Assessment & Appeal Support services are built for businesses, SMEs, exporters, and companies that cannot afford to leave a GST dispute to chance. From reviewing assessment notices to representing clients before the GST Appellate Tribunal — expert support is available at every stage, with legal precision, strategic clarity, and zero confusion.</p>
-                    <div class="caaft-ar-hero-ctas"><a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Get a Free Case Review – Talk to a GST Expert Now! <i class="fas fa-arrow-right"></i></a></div>
+                    <div class="caaft-ar-hero-ctas">
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Get a Free Case Review <i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-secondary">Talk to a GST Expert Now! <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
                 <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php
 $caaft_enquiry_service = 'GST Assessment and Appeal Support Services';
