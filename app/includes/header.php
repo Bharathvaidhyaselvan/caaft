@@ -102,7 +102,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab1">Company Incorporation</a></li>
                                             <li><a href="/company-incorporation/private-limited-company">Private Limited Company</a></li>
                                             <li><a href="/company-incorporation/public-limited-company">Public Limited Company</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab3">One Person Company (OPC)</a></li>
+                                            <li><a href="/company-incorporation/one-person-company-registration">One Person Company (OPC)</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab4">Limited Liability Partnership (LLP)</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab5">Partnership Firm</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab6">Sole Proprietorship</a></li>

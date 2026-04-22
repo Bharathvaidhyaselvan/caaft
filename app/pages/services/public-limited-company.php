@@ -257,6 +257,8 @@ $plcJsonLd = [
         }
 
         .page-public-limited-company .pub-who-needs-list li {
+            display: list-item !important;
+            list-style: disc !important;
             break-inside: avoid;
             margin: 0 0 12px;
             color: #23384f;
