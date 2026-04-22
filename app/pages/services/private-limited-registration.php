@@ -23,6 +23,111 @@ if ($plcPath === 'company-incorporation/private-limited-registration' || $plcPat
     <meta property="og:description" content="Launch your Private Limited Company with expert guidance, complete filing support, and hassle-free registration.">
     <meta property="og:url" content="https://caaft.com/company-incorporation/private-limited-company/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
+    <style>
+        .page-private-limited-registration .plc-chennai-card-section {
+            background: #f5f6f9;
+        }
+
+        .page-private-limited-registration .plc-chennai-card {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            padding: clamp(34px, 5vw, 52px) clamp(22px, 4vw, 56px);
+            border-radius: 14px;
+            background: linear-gradient(140deg, #0b2359 0%, #123a8f 55%, #1a4fb8 100%);
+            box-shadow: 0 16px 34px rgba(10, 29, 67, 0.3);
+        }
+
+        .page-private-limited-registration .plc-chennai-title {
+            font-family: var(--heading-font);
+            font-size: clamp(1.55rem, 3vw, 2.35rem);
+            font-weight: 700;
+            line-height: 1.2;
+            color: #fff;
+            margin: 0 0 16px;
+        }
+
+        .page-private-limited-registration .plc-chennai-copy {
+            margin: 0 auto 22px;
+            max-width: 680px;
+            font-size: 1.03rem;
+            line-height: 1.75;
+            color: rgba(255, 255, 255, 0.92);
+        }
+
+        .page-private-limited-registration .plc-chennai-btn.theme-btn {
+            border: 0;
+            border-radius: 10px;
+            padding: 12px 22px;
+            background: linear-gradient(90deg, #2eb4ff 0%, #27a6ff 100%);
+            box-shadow: 0 8px 20px rgba(46, 180, 255, 0.35);
+        }
+
+        .page-private-limited-registration .plc-why-section {
+            background: #ecf8ff;
+        }
+
+        .page-private-limited-registration .plc-why-title {
+            font-family: var(--heading-font);
+            font-size: clamp(1.8rem, 3.2vw, 2.7rem);
+            font-weight: 800;
+            line-height: 1.16;
+            color: #0a1d43;
+            text-transform: uppercase;
+            letter-spacing: 0.01em;
+            margin: 0 0 12px;
+        }
+
+        .page-private-limited-registration .plc-why-intro {
+            font-size: 1rem;
+            color: #2f3f52;
+            margin: 0 0 26px;
+            max-width: 760px;
+        }
+
+        .page-private-limited-registration .plc-why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .page-private-limited-registration .plc-why-card {
+            background: #fff;
+            border: 1px solid #d7e8f6;
+            border-radius: 12px;
+            padding: 18px 16px;
+            min-height: 142px;
+            box-shadow: 0 8px 20px rgba(17, 24, 39, 0.05);
+        }
+
+        .page-private-limited-registration .plc-why-card-title {
+            font-family: var(--heading-font);
+            font-size: 1.08rem;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #1f2f46;
+            margin: 0 0 6px;
+        }
+
+        .page-private-limited-registration .plc-why-card-text {
+            margin: 0;
+            font-size: 0.97rem;
+            line-height: 1.7;
+            color: #43556d;
+        }
+
+        @media (max-width: 991.98px) {
+            .page-private-limited-registration .plc-why-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .page-private-limited-registration .plc-why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
     <?php include "header-top.php"; ?>
 </head>
 <body class="home-3 page-accounting-reporting page-private-limited-registration">
@@ -48,7 +153,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             </div></div></div>
         </section>
 
-        <section class="caaft-ar-trust-indicators" aria-label="Trust indicators"><div class="container"><div class="caaft-ar-trust-grid">
+        <section class="caaft-ar-trust-indicators" aria-label="Trust indicators"><div class="container"><div class="caaft-ar-trust-grid caaft-ar-trust-grid--eq-4">
             <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-building"></i></span><div class="caaft-ar-trust-content"><h3>500+</h3><p>Companies Registered</p></div></article>
             <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-shield-alt"></i></span><div class="caaft-ar-trust-content"><h3>End-to-End</h3><p>Compliance Support</p></div></article>
             <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-calendar-check"></i></span><div class="caaft-ar-trust-content"><h3>7-Day</h3><p>Registration Process</p></div></article>
@@ -81,28 +186,48 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             <p class="caaft-ar-offer-intro mt-4">After registration, we also assist with PAN, TAN, and GST applications, ensuring your company is fully operational and compliant.</p>
         </div></section>
 
-        <section class="caaft-ar-what-we-offer py-90"><div class="container"><header class="caaft-ar-offer-header">
-            <h2 class="caaft-ar-offer-h2">Why Register with Us</h2>
-            <p class="caaft-ar-offer-intro">Our Private Limited registration services are designed for efficiency, transparency, and compliance. We assist entrepreneurs, startups, and established businesses through every step-from planning to post-incorporation compliance.</p>
-            <p class="caaft-ar-offer-intro">Here's how we help:</p>
-        </header>
-        <ul class="list-unstyled caaft-ar-offer-intro">
-            <li>- End-to-end company registration support</li>
-            <li>- Assistance with documentation and government filings</li>
-            <li>- Compliance with MCA and ROC regulations</li>
-            <li>- Affordable pricing and quick processing</li>
-            <li>- Dedicated support for queries and follow-ups</li>
-        </ul>
-        <p class="caaft-ar-offer-intro">Whether you are a startup founder or expanding your business, our expert team ensures your Private Limited Company is registered seamlessly and in full compliance with legal standards.</p>
-        </div></section>
+        <section class="plc-why-section py-90" aria-labelledby="plc-why-title">
+            <div class="container">
+                <h2 id="plc-why-title" class="plc-why-title">Why Register with Us</h2>
+                <p class="plc-why-intro">Our Private Limited registration services are designed for efficiency, transparency, and compliance. We assist entrepreneurs, startups, and established businesses through every step-from planning to post-incorporation compliance.</p>
+                <div class="plc-why-grid">
+                    <article class="plc-why-card">
+                        <h3 class="plc-why-card-title">End-to-End Support</h3>
+                        <p class="plc-why-card-text">Complete guidance across all stages of company incorporation, from planning to final approval.</p>
+                    </article>
+                    <article class="plc-why-card">
+                        <h3 class="plc-why-card-title">Documentation Assistance</h3>
+                        <p class="plc-why-card-text">Accurate preparation of required documents and streamlined filing with concerned authorities.</p>
+                    </article>
+                    <article class="plc-why-card">
+                        <h3 class="plc-why-card-title">MCA and ROC Compliance</h3>
+                        <p class="plc-why-card-text">Strict adherence to MCA and ROC rules to reduce errors and avoid delays in registration.</p>
+                    </article>
+                    <article class="plc-why-card">
+                        <h3 class="plc-why-card-title">Affordable and Fast Processing</h3>
+                        <p class="plc-why-card-text">Cost-effective packages with quick turnaround, tailored for startups and growing businesses.</p>
+                    </article>
+                    <article class="plc-why-card">
+                        <h3 class="plc-why-card-title">Dedicated Follow-Up Support</h3>
+                        <p class="plc-why-card-text">Prompt responses for queries, updates, and coordination until your incorporation is complete.</p>
+                    </article>
+                    <article class="plc-why-card">
+                        <h3 class="plc-why-card-title">Post-Incorporation Guidance</h3>
+                        <p class="plc-why-card-text">Support for PAN, TAN, GST, and related compliances so your company stays operational and compliant.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <section class="caaft-ar-content-media py-90"><div class="container"><div class="row align-items-center g-4 g-xl-5">
-            <div class="col-lg-6"><div class="caaft-ar-content-media-text"><header class="caaft-ar-offer-header">
-                <h2 class="caaft-ar-offer-h2">Private Limited Companies in Chennai</h2>
-                <p class="caaft-ar-offer-intro">If you're planning to set up Pvt Ltd companies in Chennai, we provide complete incorporation assistance-from document preparation to final approval. Our Chennai-based experts understand regional regulations, ensuring faster approval and error-free documentation for businesses across industries.</p>
-            </header></div></div>
-            <div class="col-lg-6"><div class="caaft-ar-content-media-image"><img src="/assets/img/tax-planning-management.webp" alt="Private Limited Companies in Chennai" loading="lazy"></div></div>
-        </div></div></section>
+        <section class="plc-chennai-card-section py-90" aria-labelledby="plc-chennai-title">
+            <div class="container">
+                <div class="plc-chennai-card">
+                    <h2 id="plc-chennai-title" class="plc-chennai-title">Private Limited Companies in Chennai</h2>
+                    <p class="plc-chennai-copy">If you're planning to set up Pvt Ltd companies in Chennai, we provide complete incorporation assistance-from document preparation to final approval. Our Chennai-based experts understand regional regulations, ensuring faster approval and error-free documentation for businesses across industries.</p>
+                    <a href="/contact#contact_us" class="theme-btn plc-chennai-btn">Hassle-Free Company Registration <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
 
         <div id="faq" class="faq-area are_sections_faq py-120 caaft-ar-faq-wrap" aria-labelledby="plc-faq-heading"><div class="container"><div class="site-heading text-center mb-3"><h2 id="plc-faq-heading" class="site-title my-3">Frequently Asked Questions (FAQ)</h2></div>
             <div class="frequent-question col-lg-10"><div class="accordion" id="accordionPlcFaq">
@@ -119,7 +244,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         <section id="get-in-touch" class="caaft-ar-get-in-touch py-90" aria-labelledby="plc-cta">
             <div class="container"><div class="row align-items-stretch g-4 g-xl-5"><div class="col-lg-6 caaft-ar-git-col-main">
                 <h2 id="plc-cta" class="caaft-ar-git-h2">Start Your Private Limited Company Today</h2>
-                <p class="caaft-ar-git-lead">Launch your business confidently with expert guidance. Our Private Limited registration services make the process fast, transparent, and hassle-free.</p>
+                <p class="caaft-ar-git-lead">Launch your business confidently with expert guidance. Our Private Limited registration services make the process fast, transparent, and hassle-free. Whether you're starting fresh or expanding to Pvt Ltd companies in Chennai, we're here to help every step of the way.</p>
                 <div class="caaft-ar-git-ctas"><a href="/contact#contact_us" class="theme-btn caaft-ar-git-btn-call">Let's Talk</a></div>
             </div><div class="col-lg-6"><div class="caaft-ar-git-cards d-flex flex-column">
                 <div class="caaft-ar-git-card"><span class="caaft-ar-git-card-icon"><i class="fas fa-phone"></i></span><div class="caaft-ar-git-card-body"><span class="caaft-ar-git-card-label">Call us</span><a href="tel:+918870078870" class="caaft-ar-git-card-value">+91 88700 78870</a><a href="tel:+919944617891" class="caaft-ar-git-card-value caaft-ar-git-card-value--second">+91 99446 17891</a></div></div>
