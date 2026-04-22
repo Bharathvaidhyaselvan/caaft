@@ -24,6 +24,10 @@ if ($plcPath === 'company-incorporation/private-limited-registration' || $plcPat
     <meta property="og:url" content="https://caaft.com/company-incorporation/private-limited-company/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <style>
+        .page-private-limited-registration .caaft-ar-trust-indicators {
+            background: #ffffff !important;
+        }
+
         .page-private-limited-registration .plc-chennai-card-section {
             background: #f5f6f9;
         }

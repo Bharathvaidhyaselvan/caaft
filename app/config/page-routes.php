@@ -6,6 +6,7 @@ return [
     'private-limited-company' => 'pages/services/private-limited-registration.php',
     'company-incorporation/private-limited-registration' => 'pages/services/private-limited-registration.php',
     'private-limited-registration' => 'pages/services/private-limited-registration.php',
+    'company-incorporation/public-limited-company' => 'pages/services/public-limited-company.php',
     'public-limited-company' => 'pages/services/public-limited-company.php',
     'gst/gst-cancellation-services' => 'pages/services/gst-cancellation-services.php',
     'gst-cancellation-services' => 'pages/services/gst-cancellation-services.php',
