@@ -125,13 +125,13 @@ $opcJsonLd = [
         }
 
         .page-opc-registration .caaft-ar-hero-ctas .opc-hero-btn-secondary {
-            background: #ffffff !important;
-            color: #0a1d43 !important;
-            border: 1px solid #dbe3ef !important;
+            background: transparent !important;
+            color: #ffffff !important;
+            border: 1px solid #ffffff !important;
         }
 
         .page-opc-registration .caaft-ar-hero-ctas .opc-hero-btn-secondary i {
-            color: #0a1d43 !important;
+            color: #ffffff !important;
         }
 
         .page-opc-registration .caaft-ar-trust-indicators {
