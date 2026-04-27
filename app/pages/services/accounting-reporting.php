@@ -154,70 +154,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <main class="main">
-        <section class="hero-section hs-3 caaft-ar-hero" aria-labelledby="ar-hero-h1">
-            <div class="hero-single singles_forms_frames caaft-ar-hero-single">
-                <div class="container">
-                    <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
-                        <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
-                            <h1 id="ar-hero-h1" class="caaft-ar-hero-h1">Accounting &amp; Reporting Services</h1>
-                            <h2 class="caaft-ar-hero-h2">The Financial Backbone <em>Your Business</em> Runs On</h2>
-                            <p class="caaft-ar-hero-lead">
-                                From bookkeeping to boardroom-ready MIS reports, CAAFT gives your business the financial clarity to operate efficiently, stay audit-ready, and grow with confidence. Accurate financials aren't optional — they're the foundation every sound business decision is built on. Our qualified professionals handle every detail with precision, so you always know where your business stands and what it takes to move forward.
-                            </p>
-                            <div class="caaft-ar-hero-ctas">
-                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Get a Free Accounting Consultation <i class="fas fa-arrow-right"></i></a>
-                                <a href="#ar-offer-heading" class="theme-btn theme-btn2 caaft-ar-hero-btn-secondary">Explore Our Services <i class="fas fa-arrow-down"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="hero-img-wrap caaft-ar-hero-img-wrap">
-                                <?php
-                                $caaft_enquiry_service = 'Accounting & Reporting Services';
-                                $caaft_enquiry_form_id = 'caaft-ar-enquiry-form';
-                                $caaft_enquiry_input_id_prefix = 'ar';
-                                include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_hero_id = 'ar-hero-h1';
+        $caaft_hero_h1 = 'Accounting & Reporting Services';
+        $caaft_hero_h2_before = 'The Financial Backbone ';
+        $caaft_hero_h2_highlight = 'Your Business';
+        $caaft_hero_h2_after = ' Runs On';
+        $caaft_hero_lead_paragraphs = [
+            "From bookkeeping to boardroom-ready MIS reports, CAAFT gives your business the financial clarity to operate efficiently, stay audit-ready, and grow with confidence. Accurate financials aren't optional — they're the foundation every sound business decision is built on. Our qualified professionals handle every detail with precision, so you always know where your business stands and what it takes to move forward.",
+        ];
+        $caaft_hero_primary_cta_label = 'Get a Free Accounting Consultation';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_secondary_cta_label = 'Explore Our Services';
+        $caaft_hero_secondary_cta_href = '#ar-offer-heading';
 
-        <section class="caaft-ar-trust-indicators" aria-label="Trust indicators">
-            <div class="container">
-                <div class="caaft-ar-trust-grid caaft-ar-trust-grid--eq-4">
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="far fa-check-circle"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Rated 4.8/5 <span class="caaft-ar-trust-stars" aria-hidden="true">⭐</span></h3>
-                            <p>on Google</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>100+</h3>
-                            <p>Businesses Served Across Industries</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-calendar-check"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Month-End Books</h3>
-                            <p>Delivered On Time, Every Time</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-chart-line"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>MIS Reports</h3>
-                            <p>Tailored to Your Business</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+        $caaft_enquiry_service = 'Accounting & Reporting Services';
+        $caaft_enquiry_form_id = 'caaft-ar-enquiry-form';
+        $caaft_enquiry_input_id_prefix = 'ar';
+
+        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+        ?>
+
+        <?php
+        $caaft_trust_items = [
+            [
+                'icon_class' => 'far fa-check-circle',
+                'title' => 'Rated 4.8/5 ⭐',
+                'description' => 'on Google',
+            ],
+            [
+                'icon_class' => 'fas fa-briefcase',
+                'title' => '100+',
+                'description' => 'Businesses Served Across Industries',
+            ],
+            [
+                'icon_class' => 'fas fa-calendar-check',
+                'title' => 'Month-End Books',
+                'description' => 'Delivered On Time, Every Time',
+            ],
+            [
+                'icon_class' => 'fas fa-chart-line',
+                'title' => 'MIS Reports',
+                'description' => 'Tailored to Your Business',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/service-trust-indicators.php';
+        ?>
 
         <section class="caaft-ar-what-we-offer py-90" aria-labelledby="ar-offer-heading">
             <div class="container">
