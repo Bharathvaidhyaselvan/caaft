@@ -29,7 +29,7 @@ $caaft_cta_button_icon_class = isset($caaft_cta_button_icon_class) && $caaft_cta
 ?>
 <section<?php echo $caaft_cta_section_id !== '' ? ' id="' . htmlspecialchars($caaft_cta_section_id, ENT_QUOTES, 'UTF-8') . '"' : ''; ?> class="<?php echo htmlspecialchars($caaft_cta_section_class, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars((string) $caaft_cta_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
-        <div class="bk-cta-panel">
+        <div class="bk-cta-panel caaft-cta-panel">
             <h2 id="<?php echo htmlspecialchars((string) $caaft_cta_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="bk-cta-title"><?php echo htmlspecialchars((string) $caaft_cta_title, ENT_QUOTES, 'UTF-8'); ?></h2>
             <?php if ($caaft_cta_text !== '') : ?>
                 <p class="bk-cta-text"><?php echo htmlspecialchars($caaft_cta_text, ENT_QUOTES, 'UTF-8'); ?></p>

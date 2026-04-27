@@ -154,7 +154,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <main class="main">
-        <?php
+                                <?php
         $caaft_hero_id = 'ar-hero-h1';
         $caaft_hero_h1 = 'Accounting & Reporting Services';
         $caaft_hero_h2_before = 'The Financial Backbone ';
@@ -168,9 +168,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
         $caaft_hero_secondary_cta_href = '#ar-offer-heading';
 
-        $caaft_enquiry_service = 'Accounting & Reporting Services';
-        $caaft_enquiry_form_id = 'caaft-ar-enquiry-form';
-        $caaft_enquiry_input_id_prefix = 'ar';
+                                $caaft_enquiry_service = 'Accounting & Reporting Services';
+                                $caaft_enquiry_form_id = 'caaft-ar-enquiry-form';
+                                $caaft_enquiry_input_id_prefix = 'ar';
 
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>

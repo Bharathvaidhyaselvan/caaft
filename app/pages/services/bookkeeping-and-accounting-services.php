@@ -579,7 +579,7 @@
         <?php
         $why_choose_caaft_heading_id = 'bk-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
-        $why_choose_caaft_intro = '';
+        $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate books, timely reporting, and dependable accounting support that scales with growth.';
         $why_choose_caaft_items = [
             [
                 'icon_class' => 'fas fa-user-tie',

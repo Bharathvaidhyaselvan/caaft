@@ -13,6 +13,7 @@
  * Optional:
  *   $why_choose_caaft_intro (string)
  *   $why_choose_caaft_section_class (string)
+ *   $why_choose_caaft_sticky_main (bool) default true
  */
 if (!isset($why_choose_caaft_heading_id, $why_choose_caaft_title, $why_choose_caaft_items) || !is_array($why_choose_caaft_items) || $why_choose_caaft_items === []) {
     trigger_error('why-choose-caaft.php: set required variables before including', E_USER_WARNING);
@@ -29,11 +30,12 @@ if (trim($why_choose_caaft_intro) === '') {
 $why_choose_caaft_section_class = isset($why_choose_caaft_section_class) && $why_choose_caaft_section_class !== ''
     ? (string) $why_choose_caaft_section_class
     : 'why-choose-caaft py-90';
+$why_choose_caaft_sticky_main = isset($why_choose_caaft_sticky_main) ? (bool) $why_choose_caaft_sticky_main : true;
 ?>
 <section class="<?php echo htmlspecialchars($why_choose_caaft_section_class, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars($why_choose_caaft_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
         <div class="why-choose-caaft-layout">
-            <div class="why-choose-caaft-main">
+            <div class="why-choose-caaft-main<?php echo $why_choose_caaft_sticky_main ? '' : ' why-choose-caaft-main--static'; ?>">
                 <h2 id="<?php echo htmlspecialchars($why_choose_caaft_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="why-choose-caaft-title"><?php echo htmlspecialchars($why_choose_caaft_title, ENT_QUOTES, 'UTF-8'); ?></h2>
                 <?php if ($why_choose_caaft_intro !== '') : ?>
                     <p class="why-choose-caaft-intro"><?php echo htmlspecialchars($why_choose_caaft_intro, ENT_QUOTES, 'UTF-8'); ?></p>
