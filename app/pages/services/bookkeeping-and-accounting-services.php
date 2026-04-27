@@ -288,7 +288,7 @@
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/bookkeeping-and-accounting-services#service",
+          "@id": "https://caaft.com/bookkeeping-and-accounting-services/#service",
           "name": "Bookkeeping and Accounting Services",
           "url": "https://caaft.com/bookkeeping-and-accounting-services",
           "description": "Professional bookkeeping and accounting services to manage your finances, improve cash flow, and ensure compliance. Simplify financial management for your business today.",
@@ -339,30 +339,30 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/bookkeeping-and-accounting-services#faq",
+          "@id": "https://caaft.com/bookkeeping-and-accounting-services/#faq",
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "How often should bookkeeping records be updated?",
+              "name": "How often should I update my bookkeeping records?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Bookkeeping records should be updated regularly — ideally daily or weekly. Frequent updates ensure accurate cash flow tracking and avoid last-minute errors during tax filing, audits, or investor reviews."
+                "text": "You should update your bookkeeping records regularly—ideally daily or weekly. Frequent updates help you track cash flow accurately and avoid last-minute errors during tax filing or audits."
               }
             },
             {
               "@type": "Question",
-              "name": "Can bookkeeping be outsourced while still maintaining financial control?",
+              "name": "Can I outsource bookkeeping and still keep control over my finances?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Outsourcing bookkeeping does not mean losing visibility. Regular reports and real-time access to financial data ensure business owners and finance teams can monitor performance and make decisions confidently at all times."
+                "text": "Yes, you can outsource bookkeeping while maintaining full control. You receive regular reports and real-time access to your financial data, allowing you to monitor performance and make decisions confidently."
               }
             },
             {
               "@type": "Question",
-              "name": "What documents are needed to get started with bookkeeping services?",
+              "name": "What documents do I need to provide for bookkeeping services?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Typically required documents include bank statements, invoices, bills, receipts, payroll details, and tax-related records. Keeping these organised ensures smooth, accurate, and timely bookkeeping."
+                "text": "You need to provide bank statements, invoices, bills, receipts, payroll details, and tax-related documents. Keeping these records organized ensures smooth and accurate bookkeeping."
               }
             },
             {
@@ -370,7 +370,7 @@
               "name": "How do bookkeeping services help during tax season?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Accurate, up-to-date books maintained throughout the year make tax filing faster, easier, and error-free — reducing the risk of penalties, mismatches, and last-minute scrambles before filing deadlines."
+                "text": "Bookkeeping services keep your financial records accurate and updated throughout the year, making tax filing faster, easier, and error-free while reducing the risk of penalties."
               }
             },
             {
@@ -378,14 +378,14 @@
               "name": "Can bookkeeping services help identify unnecessary expenses?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Professional bookkeeping tracks and categorises all expenses clearly — making it straightforward to identify overspending, reduce unnecessary costs, and improve overall financial efficiency."
+                "text": "Yes, professional bookkeeping helps track and categorize expenses clearly, making it easier to identify overspending and reduce unnecessary costs."
               }
             }
           ]
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/bookkeeping-and-accounting-services#breadcrumb",
+          "@id": "https://caaft.com/bookkeeping-and-accounting-services/#breadcrumb",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com"},
             {"@type": "ListItem", "position": 2, "name": "Bookkeeping and Accounting Services", "item": "https://caaft.com/bookkeeping-and-accounting-services"}
@@ -579,7 +579,7 @@
         <?php
         $why_choose_caaft_heading_id = 'bk-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
-        $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate books, timely reporting, and dependable accounting support that scales with growth.';
+        $why_choose_caaft_intro = '';
         $why_choose_caaft_items = [
             [
                 'icon_class' => 'fas fa-user-tie',

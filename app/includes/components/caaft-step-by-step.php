@@ -12,6 +12,7 @@
  * Optional:
  *   $caaft_steps_section_class (string) default "caaft-ar-how py-90 caaft-step-by-step"
  *   $caaft_steps_numbered (bool) default false
+ *   $caaft_steps_eyebrow (string)
  */
 if (!isset($caaft_steps_heading_id, $caaft_steps_title, $caaft_steps_items) || !is_array($caaft_steps_items) || $caaft_steps_items === []) {
     trigger_error('caaft-step-by-step.php: set required step-by-step variables before including', E_USER_WARNING);
@@ -23,6 +24,7 @@ $caaft_steps_section_class = isset($caaft_steps_section_class) && $caaft_steps_s
     ? (string) $caaft_steps_section_class
     : 'caaft-ar-how py-90 caaft-step-by-step';
 $caaft_steps_numbered = isset($caaft_steps_numbered) ? (bool) $caaft_steps_numbered : false;
+$caaft_steps_eyebrow = isset($caaft_steps_eyebrow) ? (string) $caaft_steps_eyebrow : '';
 if ($caaft_steps_numbered) {
     $caaft_steps_section_class .= ' caaft-step-by-step--numbered';
 }
@@ -30,6 +32,9 @@ if ($caaft_steps_numbered) {
 <section class="<?php echo htmlspecialchars($caaft_steps_section_class, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars($caaft_steps_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
         <header class="caaft-ar-how-header">
+            <?php if ($caaft_steps_eyebrow !== '') : ?>
+                <p class="caaft-ar-how-eyebrow"><?php echo htmlspecialchars($caaft_steps_eyebrow, ENT_QUOTES, 'UTF-8'); ?></p>
+            <?php endif; ?>
             <h2 id="<?php echo htmlspecialchars($caaft_steps_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="caaft-ar-how-h2"><?php echo htmlspecialchars($caaft_steps_title, ENT_QUOTES, 'UTF-8'); ?></h2>
         </header>
         <ol class="caaft-ar-how-timeline">

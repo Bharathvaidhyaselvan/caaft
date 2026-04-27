@@ -251,250 +251,171 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
 
-        <section class="caaft-ar-why py-90" aria-labelledby="ar-why-heading">
-            <div class="container">
-                <header class="caaft-ar-why-header">
-                    <p class="caaft-ar-why-eyebrow">Why choose us</p>
-                    <h2 id="ar-why-heading" class="caaft-ar-why-h2">Why choose CAAFT</h2>
-                </header>
-                <div class="caaft-ar-why-panel">
-                    <div class="caaft-ar-why-grid">
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">01</span>
-                            <h3 class="caaft-ar-why-title">Qualified Professionals</h3>
-                            <p class="caaft-ar-why-text">Managed by trained accountants, supervised by Chartered Accountants.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">02</span>
-                            <h3 class="caaft-ar-why-title">Industry-Agnostic Expertise</h3>
-                            <p class="caaft-ar-why-text">We adapt to your sector, whether trading, manufacturing, services, or retail.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">03</span>
-                            <h3 class="caaft-ar-why-title">Consistent Monthly Deliverables</h3>
-                            <p class="caaft-ar-why-text">Your books and reports, delivered on time, every time.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">04</span>
-                            <h3 class="caaft-ar-why-title">Beyond Bookkeeping</h3>
-                            <p class="caaft-ar-why-text">We flag anomalies, highlight trends, and advise when your numbers need attention.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">05</span>
-                            <h3 class="caaft-ar-why-title">Seamless Software Integration</h3>
-                            <p class="caaft-ar-why-text">We work with Tally, Zoho Books, QuickBooks, or set up the right system for you.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">06</span>
-                            <h3 class="caaft-ar-why-title">Fully Confidential</h3>
-                            <p class="caaft-ar-why-text">Your financial data stays strictly within our team, always.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_why_heading_id = 'ar-why-heading';
+        $caaft_why_eyebrow = 'Why choose us';
+        $caaft_why_title = 'Why choose CAAFT';
+        $caaft_why_items = [
+            [
+                'title' => 'Qualified Professionals',
+                'text' => 'Managed by trained accountants, supervised by Chartered Accountants.',
+            ],
+            [
+                'title' => 'Industry-Agnostic Expertise',
+                'text' => 'We adapt to your sector, whether trading, manufacturing, services, or retail.',
+            ],
+            [
+                'title' => 'Consistent Monthly Deliverables',
+                'text' => 'Your books and reports, delivered on time, every time.',
+            ],
+            [
+                'title' => 'Beyond Bookkeeping',
+                'text' => 'We flag anomalies, highlight trends, and advise when your numbers need attention.',
+            ],
+            [
+                'title' => 'Seamless Software Integration',
+                'text' => 'We work with Tally, Zoho Books, QuickBooks, or set up the right system for you.',
+            ],
+            [
+                'title' => 'Fully Confidential',
+                'text' => 'Your financial data stays strictly within our team, always.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-why-grid.php';
+        ?>
 
-        <section class="caaft-ar-how py-90" aria-labelledby="ar-how-heading">
-            <div class="container">
-                <header class="caaft-ar-how-header">
-                    <p class="caaft-ar-how-eyebrow">How it works</p>
-                    <h2 id="ar-how-heading" class="caaft-ar-how-h2">How CAAFT works</h2>
-                </header>
-                <ol class="caaft-ar-how-timeline">
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 1 — Initial Setup</h3>
-                            <p class="caaft-ar-how-step-text">The business structure, existing records, and reporting needs are reviewed first. A chart of accounts is then set up or reorganised accordingly.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 2 — Data Collection</h3>
-                            <p class="caaft-ar-how-step-text">Invoices, bank statements, and expense records are shared each month via WhatsApp, email, or a shared drive. The process is structured around the client's workflow.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 3 — Recording &amp; Reconciliation</h3>
-                            <p class="caaft-ar-how-step-text">All transactions are recorded, bank accounts are reconciled, and every entry is accurately classified. No shortcuts are taken at this stage.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 4 — Review &amp; Quality Check</h3>
-                            <p class="caaft-ar-how-step-text">A senior accountant reviews the books before any report is prepared. Errors are caught and financials are confirmed to reflect reality.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 5 — Reports Delivered</h3>
-                            <p class="caaft-ar-how-step-text">MIS reports, financial statements, and management accounts are delivered on the agreed date. All reports are formatted for clarity and ready to act on.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 6 — Ongoing Query Support</h3>
-                            <p class="caaft-ar-how-step-text">The CAAFT team remains available throughout the month to answer questions. Any audit, compliance, or board-level requirement is supported as needed.</p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-        </section>
+        <?php
+        $caaft_steps_heading_id = 'ar-how-heading';
+        $caaft_steps_eyebrow = 'How it works';
+        $caaft_steps_title = 'How CAAFT works';
+        $caaft_steps_items = [
+            [
+                'title' => 'Step 1 — Initial Setup',
+                'text' => 'The business structure, existing records, and reporting needs are reviewed first. A chart of accounts is then set up or reorganised accordingly.',
+            ],
+            [
+                'title' => 'Step 2 — Data Collection',
+                'text' => "Invoices, bank statements, and expense records are shared each month via WhatsApp, email, or a shared drive. The process is structured around the client's workflow.",
+            ],
+            [
+                'title' => 'Step 3 — Recording & Reconciliation',
+                'text' => 'All transactions are recorded, bank accounts are reconciled, and every entry is accurately classified. No shortcuts are taken at this stage.',
+            ],
+            [
+                'title' => 'Step 4 — Review & Quality Check',
+                'text' => 'A senior accountant reviews the books before any report is prepared. Errors are caught and financials are confirmed to reflect reality.',
+            ],
+            [
+                'title' => 'Step 5 — Reports Delivered',
+                'text' => 'MIS reports, financial statements, and management accounts are delivered on the agreed date. All reports are formatted for clarity and ready to act on.',
+            ],
+            [
+                'title' => 'Step 6 — Ongoing Query Support',
+                'text' => 'The CAAFT team remains available throughout the month to answer questions. Any audit, compliance, or board-level requirement is supported as needed.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+        ?>
 
-        <section id="get-in-touch" class="caaft-ar-get-in-touch py-90" aria-labelledby="ar-git-heading">
-            <div class="container">
-                <div class="row align-items-stretch g-4 g-xl-5">
-                    <div class="col-lg-6 caaft-ar-git-col-main">
-                        <p class="caaft-ar-git-eyebrow">Get in touch</p>
-                        <h2 id="ar-git-heading" class="caaft-ar-git-h2">
-                            Your Accounts, Handled. Your Business, <em>Uninterrupted.</em>
-                        </h2>
-                        <p class="caaft-ar-git-lead">
-                            Whether you need a clean set of monthly books, sharper financial reports, or a complete accounting function — CAAFT is ready to take it off your plate. We respond within one business day.
-                        </p>
-                        <div class="caaft-ar-git-ctas">
-                            <a href="tel:+918870078870" class="theme-btn caaft-ar-git-btn-call">Call Us: +91 88700 78870</a>
-                            <a href="https://api.whatsapp.com/send?phone=918870078870" class="caaft-ar-git-btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us</a>
-                            <a href="/contact#contact_us" class="theme-btn theme-btn2 caaft-ar-git-btn-simplify">Let's Simplify Your Accounting</a>
-                        </div>
-                        <p class="caaft-ar-git-note">No commitment required. Just a conversation with a qualified CA who understands your business.</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="caaft-ar-git-cards d-flex flex-column">
-                            <div class="caaft-ar-git-card">
-                                <span class="caaft-ar-git-card-icon" aria-hidden="true"><i class="fas fa-phone"></i></span>
-                                <div class="caaft-ar-git-card-body">
-                                    <span class="caaft-ar-git-card-label">Call us</span>
-                                    <a href="tel:+918870078870" class="caaft-ar-git-card-value">+91 88700 78870</a>
-                                    <a href="tel:+919944617891" class="caaft-ar-git-card-value caaft-ar-git-card-value--second">+91 99446 17891</a>
-                                </div>
-                            </div>
-                            <div class="caaft-ar-git-card">
-                                <span class="caaft-ar-git-card-icon" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
-                                <div class="caaft-ar-git-card-body">
-                                    <span class="caaft-ar-git-card-label">WhatsApp us</span>
-                                    <a href="https://api.whatsapp.com/send?phone=918870078870" class="caaft-ar-git-card-value" target="_blank" rel="noopener noreferrer">+91 88700 78870</a>
-                                    <span class="caaft-ar-git-card-hint">Usually responds within the hour</span>
-                                </div>
-                            </div>
-                            <div class="caaft-ar-git-card">
-                                <span class="caaft-ar-git-card-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
-                                <div class="caaft-ar-git-card-body">
-                                    <span class="caaft-ar-git-card-label">Email us</span>
-                                    <a href="mailto:info@caaft.com" class="caaft-ar-git-card-value">info@caaft.com</a>
-                                    <a href="mailto:services@caaft.com" class="caaft-ar-git-card-value caaft-ar-git-card-value--second">services@caaft.com</a>
-                                    <span class="caaft-ar-git-card-hint">We respond within 1 business day</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_git_section_id = 'get-in-touch';
+        $caaft_git_heading_id = 'ar-git-heading';
+        $caaft_git_eyebrow = 'Get in touch';
+        $caaft_git_title = 'Your Accounts, Handled. Your Business, <em>Uninterrupted.</em>';
+        $caaft_git_lead = 'Whether you need a clean set of monthly books, sharper financial reports, or a complete accounting function — CAAFT is ready to take it off your plate. We respond within one business day.';
+        $caaft_git_actions = [
+            [
+                'href' => 'tel:+918870078870',
+                'class' => 'theme-btn caaft-ar-git-btn-call',
+                'label' => 'Call Us: +91 88700 78870',
+            ],
+            [
+                'href' => 'https://api.whatsapp.com/send?phone=918870078870',
+                'class' => 'caaft-ar-git-btn-outline',
+                'label' => '<i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us',
+                'target' => '_blank',
+                'rel' => 'noopener noreferrer',
+            ],
+            [
+                'href' => '/contact#contact_us',
+                'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify',
+                'label' => "Let's Simplify Your Accounting",
+            ],
+        ];
+        $caaft_git_note = 'No commitment required. Just a conversation with a qualified CA who understands your business.';
+        $caaft_git_cards = [
+            [
+                'icon_class' => 'fas fa-phone',
+                'label' => 'Call us',
+                'values' => [
+                    ['href' => 'tel:+918870078870', 'text' => '+91 88700 78870'],
+                    ['href' => 'tel:+919944617891', 'text' => '+91 99446 17891'],
+                ],
+            ],
+            [
+                'icon_class' => 'fab fa-whatsapp',
+                'label' => 'WhatsApp us',
+                'values' => [
+                    ['href' => 'https://api.whatsapp.com/send?phone=918870078870', 'text' => '+91 88700 78870', 'target' => '_blank', 'rel' => 'noopener noreferrer'],
+                ],
+                'hint' => 'Usually responds within the hour',
+            ],
+            [
+                'icon_class' => 'fas fa-envelope',
+                'label' => 'Email us',
+                'values' => [
+                    ['href' => 'mailto:info@caaft.com', 'text' => 'info@caaft.com'],
+                    ['href' => 'mailto:services@caaft.com', 'text' => 'services@caaft.com'],
+                ],
+                'hint' => 'We respond within 1 business day',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-get-in-touch.php';
+        ?>
 
-        <div id="faq" class="faq-area are_sections_faq py-120 caaft-ar-faq-wrap" aria-labelledby="ar-faq-heading">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="faq-right wow fadeInUp" data-wow-delay=".25s">
-                            <div class="site-heading text-center mb-3">
-                                <h2 id="ar-faq-heading" class="site-title my-3">Frequently Asked Questions:</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="frequent-question col-lg-10">
-                        <div class="accordion wow fadeInRight" data-wow-delay=".25s" id="accordionAccountingFaq">
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="arFaqHeading1">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#arFaqCollapse1" aria-expanded="true" aria-controls="arFaqCollapse1">
-                                        01. Can CAAFT handle accounting for businesses outside Chennai?
-                                    </button>
-                                </p>
-                                <div id="arFaqCollapse1" class="accordion-collapse collapse show" aria-labelledby="arFaqHeading1" data-bs-parent="#accordionAccountingFaq">
-                                    <div class="accordion-body">Yes. We work with clients across India on a fully remote basis. All data is shared digitally, reports are delivered online, and communication happens over call or video - with no compromise on quality or turnaround time.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="arFaqHeading2">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arFaqCollapse2" aria-expanded="false" aria-controls="arFaqCollapse2">
-                                        02. We already have an in-house accounts person. Can CAAFT still help?
-                                    </button>
-                                </p>
-                                <div id="arFaqCollapse2" class="accordion-collapse collapse" aria-labelledby="arFaqHeading2" data-bs-parent="#accordionAccountingFaq">
-                                    <div class="accordion-body">Absolutely. Many of our clients have an internal accounts executive for day-to-day data entry, with CAAFT handling the review, reconciliation, financial statements, and reporting layer. We integrate smoothly with your existing team without duplication.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="arFaqHeading3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arFaqCollapse3" aria-expanded="false" aria-controls="arFaqCollapse3">
-                                        03. How do I share my financial data with CAAFT each month?
-                                    </button>
-                                </p>
-                                <div id="arFaqCollapse3" class="accordion-collapse collapse" aria-labelledby="arFaqHeading3" data-bs-parent="#accordionAccountingFaq">
-                                    <div class="accordion-body">We keep it simple. You share invoices, bank statements, and expense records via WhatsApp, email, or a shared drive - whichever is most convenient. We structure the process around your workflow, not the other way around.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="arFaqHeading4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arFaqCollapse4" aria-expanded="false" aria-controls="arFaqCollapse4">
-                                        04. What accounting software do you work with?
-                                    </button>
-                                </p>
-                                <div id="arFaqCollapse4" class="accordion-collapse collapse" aria-labelledby="arFaqHeading4" data-bs-parent="#accordionAccountingFaq">
-                                    <div class="accordion-body">We work with Tally (Prime and ERP 9), Zoho Books, QuickBooks, and Microsoft Excel-based systems. If you don't currently use accounting software, we can recommend and set up the right platform for your business size and industry.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="arFaqHeading5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arFaqCollapse5" aria-expanded="false" aria-controls="arFaqCollapse5">
-                                        05. How long does it take to get my books in order if they haven't been maintained properly?
-                                    </button>
-                                </p>
-                                <div id="arFaqCollapse5" class="accordion-collapse collapse" aria-labelledby="arFaqHeading5" data-bs-parent="#accordionAccountingFaq">
-                                    <div class="accordion-body">It depends on the volume of transactions and how far back the backlog goes. For most businesses, a backlog of up to 12 months can be cleared within 2–4 weeks. We assess this during the initial consultation and give you a clear timeline upfront.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="arFaqHeading6">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arFaqCollapse6" aria-expanded="false" aria-controls="arFaqCollapse6">
-                                        06. Will I receive the same person managing my account each month?
-                                    </button>
-                                </p>
-                                <div id="arFaqCollapse6" class="accordion-collapse collapse" aria-labelledby="arFaqHeading6" data-bs-parent="#accordionAccountingFaq">
-                                    <div class="accordion-body">Yes. We assign a dedicated accountant to your business from day one. You will always deal with someone who knows your accounts, understands your business, and doesn't need to be briefed from scratch each time.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="arFaqHeading7">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arFaqCollapse7" aria-expanded="false" aria-controls="arFaqCollapse7">
-                                        07. Can you prepare accounts for my business if I'm a freelancer or sole proprietor?
-                                    </button>
-                                </p>
-                                <div id="arFaqCollapse7" class="accordion-collapse collapse" aria-labelledby="arFaqHeading7" data-bs-parent="#accordionAccountingFaq">
-                                    <div class="accordion-body">Yes. We work with businesses of all sizes - from individual freelancers and sole proprietors to multi-entity companies. Our services are scoped and priced to suit the complexity of your accounting needs, not a one-size-fits-all package.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="arFaqHeading8">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arFaqCollapse8" aria-expanded="false" aria-controls="arFaqCollapse8">
-                                        08. What is the difference between bookkeeping and financial statements?
-                                    </button>
-                                </p>
-                                <div id="arFaqCollapse8" class="accordion-collapse collapse" aria-labelledby="arFaqHeading8" data-bs-parent="#accordionAccountingFaq">
-                                    <div class="accordion-body">Bookkeeping is the ongoing recording of day-to-day transactions - sales, purchases, payments, and receipts. Financial statements are formal reports - the Balance Sheet, Profit &amp; Loss Account, and Cash Flow Statement - prepared from those records, usually monthly, quarterly, or annually. CAAFT handles both.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        $caaft_faq_section_id = 'faq';
+        $caaft_faq_heading_id = 'ar-faq-heading';
+        $caaft_faq_title = 'Frequently Asked Questions:';
+        $caaft_faq_accordion_id = 'accordionAccountingFaq';
+        $caaft_faq_prefix = 'arFaq';
+        $caaft_faq_pad_numbers = true;
+        $caaft_faq_items = [
+            [
+                'question' => 'Can CAAFT handle accounting for businesses outside Chennai?',
+                'answer' => 'Yes. We work with clients across India on a fully remote basis. All data is shared digitally, reports are delivered online, and communication happens over call or video - with no compromise on quality or turnaround time.',
+            ],
+            [
+                'question' => 'We already have an in-house accounts person. Can CAAFT still help?',
+                'answer' => 'Absolutely. Many of our clients have an internal accounts executive for day-to-day data entry, with CAAFT handling the review, reconciliation, financial statements, and reporting layer. We integrate smoothly with your existing team without duplication.',
+            ],
+            [
+                'question' => 'How do I share my financial data with CAAFT each month?',
+                'answer' => "We keep it simple. You share invoices, bank statements, and expense records via WhatsApp, email, or a shared drive - whichever is most convenient. We structure the process around your workflow, not the other way around.",
+            ],
+            [
+                'question' => 'What accounting software do you work with?',
+                'answer' => "We work with Tally (Prime and ERP 9), Zoho Books, QuickBooks, and Microsoft Excel-based systems. If you don't currently use accounting software, we can recommend and set up the right platform for your business size and industry.",
+            ],
+            [
+                'question' => "How long does it take to get my books in order if they haven't been maintained properly?",
+                'answer' => 'It depends on the volume of transactions and how far back the backlog goes. For most businesses, a backlog of up to 12 months can be cleared within 2–4 weeks. We assess this during the initial consultation and give you a clear timeline upfront.',
+            ],
+            [
+                'question' => 'Will I receive the same person managing my account each month?',
+                'answer' => "Yes. We assign a dedicated accountant to your business from day one. You will always deal with someone who knows your accounts, understands your business, and doesn't need to be briefed from scratch each time.",
+            ],
+            [
+                'question' => "Can you prepare accounts for my business if I'm a freelancer or sole proprietor?",
+                'answer' => 'Yes. We work with businesses of all sizes - from individual freelancers and sole proprietors to multi-entity companies. Our services are scoped and priced to suit the complexity of your accounting needs, not a one-size-fits-all package.',
+            ],
+            [
+                'question' => 'What is the difference between bookkeeping and financial statements?',
+                'answer' => 'Bookkeeping is the ongoing recording of day-to-day transactions - sales, purchases, payments, and receipts. Financial statements are formal reports - the Balance Sheet, Profit & Loss Account, and Cash Flow Statement - prepared from those records, usually monthly, quarterly, or annually. CAAFT handles both.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-faq.php';
+        ?>
     </main>
 
     <?php include "footer.php"; ?>
