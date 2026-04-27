@@ -23,6 +23,9 @@ $why_choose_caaft_title = (string) $why_choose_caaft_title;
 $why_choose_caaft_intro = isset($why_choose_caaft_intro)
     ? (string) $why_choose_caaft_intro
     : 'Businesses trust CAAFT for accurate books, timely reporting, and dependable accounting support that scales with growth.';
+if (trim($why_choose_caaft_intro) === '') {
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate books, timely reporting, and dependable accounting support that scales with growth.';
+}
 $why_choose_caaft_section_class = isset($why_choose_caaft_section_class) && $why_choose_caaft_section_class !== ''
     ? (string) $why_choose_caaft_section_class
     : 'why-choose-caaft py-90';
