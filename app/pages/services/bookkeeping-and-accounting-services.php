@@ -173,6 +173,22 @@
             text-justify: auto !important;
         }
 
+        /* Strong page fallback to ensure reusable why section styling survives deploy/cache/order issues */
+        .page-bookkeeping-accounting .why-choose-caaft {
+            background-color: #10294a !important;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/1%20.jpg") !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+        }
+
+        .page-bookkeeping-accounting .why-choose-caaft-title,
+        .page-bookkeeping-accounting .why-choose-caaft-intro,
+        .page-bookkeeping-accounting .why-choose-caaft-card h3,
+        .page-bookkeeping-accounting .why-choose-caaft-card p {
+            color: #ffffff !important;
+        }
+
         .page-bookkeeping-accounting .caaft-ar-hero-h1 {
             font-size: 16px !important;
             line-height: 1.2;
@@ -580,6 +596,7 @@
         $why_choose_caaft_heading_id = 'bk-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate books, timely reporting, and dependable accounting support that scales with growth.';
+        $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             [
                 'icon_class' => 'fas fa-user-tie',
