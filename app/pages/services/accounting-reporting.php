@@ -112,14 +112,21 @@
           "@type": "FAQPage",
           "@id": "https://caaft.com/accounting-and-reporting-services/#faq",
           "mainEntity": [
-            {"@type": "Question", "name": "Can CAAFT handle accounting for businesses outside Chennai?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We work with clients across India on a fully remote basis. All data is shared digitally, reports are delivered online, and communication happens over call or video - with no compromise on quality or turnaround time."}},
-            {"@type": "Question", "name": "We already have an in-house accounts person. Can CAAFT still help?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. Many of our clients have an internal accounts executive for day-to-day data entry, with CAAFT handling the review, reconciliation, financial statements, and reporting layer. We integrate smoothly with your existing team without duplication."}},
-            {"@type": "Question", "name": "How do I share my financial data with CAAFT each month?", "acceptedAnswer": {"@type": "Answer", "text": "We keep it simple. You share invoices, bank statements, and expense records via WhatsApp, email, or a shared drive - whichever is most convenient. We structure the process around your workflow, not the other way around."}},
-            {"@type": "Question", "name": "What accounting software do you work with?", "acceptedAnswer": {"@type": "Answer", "text": "We work with Tally (Prime and ERP 9), Zoho Books, QuickBooks, and Microsoft Excel-based systems. If you don't currently use accounting software, we can recommend and set up the right platform for your business size and industry."}},
-            {"@type": "Question", "name": "How long does it take to get my books in order if they haven't been maintained properly?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the volume of transactions and how far back the backlog goes. For most businesses, a backlog of up to 12 months can be cleared within 2–4 weeks. We assess this during the initial consultation and give you a clear timeline upfront."}},
-            {"@type": "Question", "name": "Will I receive the same person managing my account each month?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We assign a dedicated accountant to your business from day one. You will always deal with someone who knows your accounts, understands your business, and doesn't need to be briefed from scratch each time."}},
-            {"@type": "Question", "name": "Can you prepare accounts for my business if I'm a freelancer or sole proprietor?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We work with businesses of all sizes - from individual freelancers and sole proprietors to multi-entity companies. Our services are scoped and priced to suit the complexity of your accounting needs, not a one-size-fits-all package."}},
-            {"@type": "Question", "name": "What is the difference between bookkeeping and financial statements?", "acceptedAnswer": {"@type": "Answer", "text": "Bookkeeping is the ongoing recording of day-to-day transactions - sales, purchases, payments, and receipts. Financial statements are formal reports - the Balance Sheet, Profit & Loss Account, and Cash Flow Statement - prepared from those records, usually monthly, quarterly, or annually. CAAFT handles both."}}
+            {
+              "@type": "Question",
+              "name": "Can CAAFT handle accounting for businesses outside Chennai?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Yes. CAAFT works with clients across India fully remotely — data shared digitally, reports delivered online, communication over call or video."}
+            },
+            {
+              "@type": "Question",
+              "name": "Will I receive the same person managing my account each month?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Yes. A dedicated accountant is assigned from day one — someone who knows your accounts and doesn't need briefing from scratch each time."}
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between bookkeeping and financial statements?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Bookkeeping is the ongoing recording of daily transactions. Financial statements — Balance Sheet, P&L, and Cash Flow — are formal reports prepared from those records. CAAFT handles both."}
+            }
           ]
         },
         {
@@ -156,7 +163,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <main class="main">
                                 <?php
         $caaft_hero_id = 'ar-hero-h1';
-        $caaft_hero_h1 = 'Accounting & Reporting Services';
+        $caaft_hero_h1 = 'ACCOUNTING & REPORTING SERVICES';
         $caaft_hero_h2_before = 'The Financial Backbone ';
         $caaft_hero_h2_highlight = 'Your Business';
         $caaft_hero_h2_after = ' Runs On';
@@ -205,7 +212,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="container">
                 <header class="caaft-ar-offer-header">
                     <p class="caaft-ar-offer-eyebrow">What we offer</p>
-                    <h2 id="ar-offer-heading" class="caaft-ar-offer-h2">Our accounting and reporting services</h2>
+                    <h2 id="ar-offer-heading" class="caaft-ar-offer-h2">OUR ACCOUNTING AND REPORTING SERVICES</h2>
                     <p class="caaft-ar-offer-intro">
                         Whether you need a reliable bookkeeper, a sharp financial analyst, or a complete accounting function — CAAFT delivers it with consistency, accuracy, and professional accountability.
                     </p>
