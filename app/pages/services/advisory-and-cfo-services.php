@@ -174,8 +174,8 @@
         <?php
         $caaft_hero_id = 'ac-hero-h1';
         $caaft_hero_h1 = 'ADVISORY AND CFO SERVICES';
-        $caaft_hero_h2_before = 'Strategic Financial Leadership - Without the Full-Time Cost';
-        $caaft_hero_h2_highlight = '';
+        $caaft_hero_h2_before = 'Strategic Financial Leadership -';
+        $caaft_hero_h2_highlight = 'Without the Full-Time Cost';
         $caaft_hero_h2_after = '';
         $caaft_hero_lead_paragraphs = [
             "From virtual CFO support to investment-grade valuations, CAAFT gives your business the financial expertise to make better decisions, plan ahead, and grow with confidence. Every business reaches a point where bookkeeping isn't enough — you need senior financial thinking, not just numbers. CAAFT delivers CFO-level expertise on a flexible, engagement-based model that fits your business and your budget.",

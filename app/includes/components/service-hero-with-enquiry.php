@@ -39,6 +39,28 @@ $caaft_hero_secondary_cta_href = isset($caaft_hero_secondary_cta_href) ? (string
 $caaft_hero_primary_cta_icon = isset($caaft_hero_primary_cta_icon) ? (string) $caaft_hero_primary_cta_icon : 'fas fa-arrow-right';
 $caaft_hero_secondary_cta_icon = isset($caaft_hero_secondary_cta_icon) ? (string) $caaft_hero_secondary_cta_icon : 'fas fa-arrow-down';
 $caaft_hero_secondary_extra_class = isset($caaft_hero_secondary_extra_class) ? (string) $caaft_hero_secondary_extra_class : '';
+
+// Auto-highlight the trailing clause when the page provides a single H2 string.
+if (trim($caaft_hero_h2_highlight) === '' && trim($caaft_hero_h2_after) === '' && trim($caaft_hero_h2_before) !== '') {
+    $caaft_h2_source = trim($caaft_hero_h2_before);
+    $caaft_h2_split_pos = strrpos($caaft_h2_source, '. ');
+    $caaft_h2_separator_len = 2;
+
+    if ($caaft_h2_split_pos === false) {
+        $caaft_h2_split_pos = strrpos($caaft_h2_source, ' — ');
+        $caaft_h2_separator_len = 3;
+    }
+
+    if ($caaft_h2_split_pos === false) {
+        $caaft_h2_split_pos = strrpos($caaft_h2_source, ' - ');
+        $caaft_h2_separator_len = 3;
+    }
+
+    if ($caaft_h2_split_pos !== false) {
+        $caaft_hero_h2_before = trim(substr($caaft_h2_source, 0, $caaft_h2_split_pos + $caaft_h2_separator_len));
+        $caaft_hero_h2_highlight = trim(substr($caaft_h2_source, $caaft_h2_split_pos + $caaft_h2_separator_len));
+    }
+}
 ?>
 <section class="hero-section hs-3 caaft-ar-hero" aria-labelledby="<?php echo htmlspecialchars($caaft_hero_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="hero-single singles_forms_frames caaft-ar-hero-single">
@@ -48,7 +70,9 @@ $caaft_hero_secondary_extra_class = isset($caaft_hero_secondary_extra_class) ? (
                     <h1 id="<?php echo htmlspecialchars($caaft_hero_id, ENT_QUOTES, 'UTF-8'); ?>" class="caaft-ar-hero-h1"><?php echo htmlspecialchars($caaft_hero_h1, ENT_QUOTES, 'UTF-8'); ?></h1>
                     <h2 class="caaft-ar-hero-h2">
                         <?php echo htmlspecialchars($caaft_hero_h2_before, ENT_QUOTES, 'UTF-8'); ?>
-                        <em><?php echo htmlspecialchars($caaft_hero_h2_highlight, ENT_QUOTES, 'UTF-8'); ?></em>
+                        <?php if ($caaft_hero_h2_highlight !== '') : ?>
+                            <em><?php echo htmlspecialchars($caaft_hero_h2_highlight, ENT_QUOTES, 'UTF-8'); ?></em>
+                        <?php endif; ?>
                         <?php echo htmlspecialchars($caaft_hero_h2_after, ENT_QUOTES, 'UTF-8'); ?>
                     </h2>
                     <?php foreach ($caaft_hero_lead_paragraphs as $caaft_hero_lead_paragraph) : ?>
