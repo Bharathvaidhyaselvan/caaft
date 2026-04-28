@@ -27,8 +27,28 @@
     {
       "@context": "https://schema.org",
       "@graph": [
-        {"@type": "Organization","@id": "https://caaft.com/#org","name": "CAAFT Consultancy Services Private Limited","url": "https://caaft.com","logo": "https://caaft.com/assets/img/caaft-logo-header.webp"},
-        {"@type": "Service","@id": "https://caaft.com/accounts-receivable-payable-service/#service","name": "Accounts Receivable and Accounts Payable Services","url": "https://caaft.com/accounts-receivable-payable-service/","description": "Professional accounts receivable and accounts payable services to manage invoices, outstanding payments, billing processes, and improve cash flow for businesses.","provider": {"@id": "https://caaft.com/#org"},"serviceType": "Accounts Receivable and Payable Management","areaServed": {"@type": "Country","name": "India"}},
+        {
+          "@type": "Organization",
+          "@id": "https://caaft.com/#org",
+          "name": "CAAFT Consultancy Services Private Limited",
+          "url": "https://caaft.com",
+          "logo": "https://caaft.com/assets/img/caaft-logo-header.webp"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://caaft.com/accounts-receivable-payable-service/#service",
+          "name": "Accounts Receivable & Accounts Payable Services",
+          "url": "https://caaft.com/accounts-receivable-payable-service/",
+          "description": "Professional accounts receivable and accounts payable services to manage invoices, outstanding payments, billing processes, and improve cash flow for businesses.",
+          "provider": {
+            "@id": "https://caaft.com/#org"
+          },
+          "serviceType": "Accounts Receivable and Payable Management",
+          "areaServed": {
+            "@type": "Country",
+            "name": "India"
+          }
+        },
         {
           "@type": "FAQPage",
           "@id": "https://caaft.com/accounts-receivable-payable-service/#faq",
@@ -38,7 +58,7 @@
               "name": "How can receivable and payable management improve business decision-making?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Proper tracking of receivables and payables gives management clear financial visibility — knowing exactly how much money is expected and how much must be paid allows for better budget planning, expense management, and more confident financial decisions."
+                "text": "Proper tracking of receivables and payables gives clear financial insights, helping businesses plan budgets, manage expenses, and make informed financial decisions."
               }
             },
             {
@@ -46,7 +66,7 @@
               "name": "How often should a business review receivables and payables?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Receivables and payables should be reviewed regularly — ideally on a weekly or monthly basis. Frequent monitoring helps identify payment delays early, manage vendor obligations, and maintain a consistently balanced cash flow."
+                "text": "Businesses should review receivables and payables regularly, ideally weekly or monthly, to identify delays and maintain balanced cash flow."
               }
             },
             {
@@ -54,7 +74,7 @@
               "name": "Can receivable and payable management help reduce financial disputes?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Proper documentation of invoices, payment schedules, and transaction records prevents misunderstandings with customers and vendors — and makes it significantly easier to resolve any payment disputes quickly and fairly."
+                "text": "Yes, proper documentation of invoices and transactions helps prevent misunderstandings and resolve disputes quickly."
               }
             },
             {
@@ -62,7 +82,7 @@
               "name": "How does receivable management support customer payment discipline?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Structured receivable management ensures invoices are issued clearly, tracked consistently, and followed up on time — encouraging customers to adhere to agreed payment timelines and reducing the buildup of overdue balances."
+                "text": "Receivable management ensures timely invoicing and consistent follow-ups, encouraging customers to adhere to payment timelines."
               }
             },
             {
@@ -70,12 +90,53 @@
               "name": "What challenges do businesses face without proper receivable and payable tracking?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Without structured tracking, businesses risk delayed payments, missed vendor deadlines, inaccurate financial records, unexpected cash flow shortfalls, and strained relationships with both customers and suppliers."
+                "text": "Businesses may face delayed payments, missed vendor deadlines, inaccurate financial records, and cash flow shortages."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can professional receivable and payable services integrate with accounting systems?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, these services can integrate with existing accounting software to ensure accurate financial tracking and reporting."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do receivable and payable services support business scalability?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "They help manage increased transaction volumes efficiently while maintaining accuracy and financial transparency as the business grows."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why should growing businesses outsource receivable and payable management?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Outsourcing allows businesses to focus on core operations while experts handle billing, collections, and vendor payments efficiently."
               }
             }
           ]
         },
-        {"@type": "BreadcrumbList","@id": "https://caaft.com/accounts-receivable-payable-service/#breadcrumb","itemListElement": [{"@type": "ListItem","position": 1,"name": "Home","item": "https://caaft.com"},{"@type": "ListItem","position": 2,"name": "Accounts Receivable and Payable Services","item": "https://caaft.com/accounts-receivable-payable-service/"}]}
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://caaft.com/accounts-receivable-payable-service/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://caaft.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Accounts Receivable & Payable Services",
+              "item": "https://caaft.com/accounts-receivable-payable-service/"
+            }
+          ]
+        }
       ]
     }
     </script>
@@ -84,359 +145,196 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-sections"><?php include "header.php"; ?></div>
     <main class="main">
-        <section class="hero-section hs-3 caaft-ar-hero" aria-labelledby="arap-hero-h1">
-            <div class="hero-single singles_forms_frames caaft-ar-hero-single">
-                <div class="container">
-                    <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
-                        <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
-                            <h1 id="arap-hero-h1" class="caaft-ar-hero-h1">Receivable &amp; Payable Management Services</h1>
-                            <h2 class="caaft-ar-hero-h2">Structured AR &amp; AP Management — So Every Invoice is Tracked, Every Payment is <em>On Time.</em></h2>
-                            <p class="caaft-ar-hero-lead">Cash flow problems rarely appear without warning — they build up through untracked invoices, missed follow-ups, and delayed vendor payments.</p>
-                            <p class="caaft-ar-hero-lead">Whether an SME managing multiple vendors, a startup building financial discipline, or an established business dealing with high transaction volumes — structured receivable and payable management provides the financial control, payment visibility, and working capital efficiency needed to operate and grow with confidence.</p>
-                            <div class="caaft-ar-hero-ctas">
-                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Simplify Payables &amp; Receivables</a>
-                                <a href="/contact#contact_us" class="theme-btn theme-btn2 caaft-ar-hero-btn-secondary">Expert Cash Flow Control</a>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="hero-img-wrap caaft-ar-hero-img-wrap">
-                                <?php
-                                $caaft_enquiry_service = 'Receivable & Payable Management Services';
-                                $caaft_enquiry_form_id = 'caaft-arap-enquiry-form-inner';
-                                $caaft_enquiry_input_id_prefix = 'arap';
-                                include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_hero_id = 'arap-hero-h1';
+        $caaft_hero_h1 = 'Receivable & Payable Management Services';
+        $caaft_hero_h2_before = 'Structured AR & AP Management — So Every Invoice is Tracked, Every Payment is';
+        $caaft_hero_h2_highlight = 'On Time.';
+        $caaft_hero_h2_after = '';
+        $caaft_hero_lead_paragraphs = [
+            'Cash flow problems rarely appear without warning — they build up through untracked invoices, missed follow-ups, and delayed vendor payments.',
+            'Whether an SME managing multiple vendors, a startup building financial discipline, or an established business dealing with high transaction volumes — structured receivable and payable management provides the financial control, payment visibility, and working capital efficiency needed to operate and grow with confidence.',
+        ];
+        $caaft_hero_primary_cta_label = 'Simplify Payables & Receivables';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_secondary_cta_label = 'Expert Cash Flow Control';
+        $caaft_hero_secondary_cta_href = '/contact#contact_us';
+        $caaft_enquiry_service = 'Receivable & Payable Management Services';
+        $caaft_enquiry_form_id = 'caaft-arap-enquiry-form-inner';
+        $caaft_enquiry_input_id_prefix = 'arap';
+        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+        ?>
 
-        <section class="caaft-ar-trust-indicators" aria-label="Trust indicators">
-            <div class="container">
-                <div class="caaft-ar-trust-grid caaft-ar-trust-grid--eq-4">
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="far fa-check-circle"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Rated 4.8/5 <span class="caaft-ar-trust-stars" aria-hidden="true">⭐</span></h3>
-                            <p>on Google</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>500+</h3>
-                            <p>Businesses Served</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-file-invoice"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>10,000+</h3>
-                            <p>Invoices Managed</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>100%</h3>
-                            <p>Data Confidentiality</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_trust_items = [
+            ['icon_class' => 'far fa-check-circle', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
+            ['icon_class' => 'fas fa-briefcase', 'title' => '500+', 'description' => 'Businesses Served'],
+            ['icon_class' => 'fas fa-file-invoice', 'title' => '10,000+', 'description' => 'Invoices Managed'],
+            ['icon_class' => 'fas fa-shield-alt', 'title' => '100%', 'description' => 'Data Confidentiality'],
+        ];
+        include __DIR__ . '/../../includes/components/service-trust-indicators.php';
+        ?>
 
-        <section class="caaft-ar-content-media py-90">
-            <div class="container">
-                <div class="row align-items-center g-4 g-xl-5">
-                    <div class="col-lg-6">
-                        <div class="caaft-ar-content-media-text">
-                            <header class="caaft-ar-offer-header">
-                                <h2 class="caaft-ar-offer-h2">What is Receivable &amp; Payable Management?</h2>
-                                <p class="caaft-ar-offer-intro">Receivable and payable management is the structured process of overseeing the money flowing into and out of a business — tracking payments owed by customers and ensuring timely settlement of obligations to vendors and suppliers.</p>
-                                <p class="caaft-ar-offer-intro">Accounts Receivable (AR) covers outstanding invoices and amounts customers owe for goods or services already delivered.</p>
-                                <p class="caaft-ar-offer-intro">Accounts Payable (AP) encompasses a business&rsquo;s financial commitments to its suppliers, vendors, and service providers.</p>
-                                <p class="caaft-ar-offer-intro">When managed effectively, these two functions work in harmony to strengthen cash flow, reduce payment delays, and ensure complete financial transparency — giving businesses the clarity and control needed to grow with confidence.</p>
-                            </header>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="caaft-ar-content-media-image">
-                            <img src="/assets/img/recivable-payable-services.webp" alt="Accounts receivable and accounts payable management, invoices, and payment tracking" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_overview_heading_id = 'arap-overview-heading';
+        $caaft_overview_title = 'What is Receivable & Payable Management?';
+        $caaft_overview_paragraphs = [
+            'Receivable and payable management is the structured process of overseeing the money flowing into and out of a business — tracking payments owed by customers and ensuring timely settlement of obligations to vendors and suppliers.',
+            'Accounts Receivable (AR) covers outstanding invoices and amounts customers owe for goods or services already delivered.',
+            "Accounts Payable (AP) encompasses a business's financial commitments to its suppliers, vendors, and service providers.",
+        ];
+        $caaft_overview_bullets = [];
+        $caaft_overview_closing = 'When managed effectively, these two functions work in harmony to strengthen cash flow, reduce payment delays, and ensure complete financial transparency — giving businesses the clarity and control needed to grow with confidence.';
+        $caaft_overview_image_src = '/assets/img/recivable-payable-services.webp';
+        $caaft_overview_image_alt = 'Accounts receivable and accounts payable management, invoices, and payment tracking';
+        include __DIR__ . '/../../includes/components/caaft-overview-card.php';
+        ?>
 
-        <section class="mis-why-core py-90" aria-labelledby="arap-why-heading">
-            <div class="container">
-                <div class="mis-why-core-inner">
-                    <h2 id="arap-why-heading" class="mis-why-core-title">Why Receivable &amp; Payable Management Matters</h2>
-                    <p class="mis-why-core-sub">Many businesses underestimate the importance of structured financial monitoring until cash flow issues surface. Key operational and financial advantages of efficient AR and AP management:</p>
-                    <div class="mis-why-core-grid">
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--a" aria-hidden="true"><i class="fas fa-coins"></i></span>
-                            <h3>Improved Cash Flow Stability</h3>
-                            <p class="mis-why-core-card-text">Timely collection of receivables ensures consistent liquidity — allowing businesses to meet operational expenses without delays or disruptions.</p>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--b" aria-hidden="true"><i class="fas fa-file-invoice-dollar"></i></span>
-                            <h3>Reduced Outstanding Payments</h3>
-                            <p class="mis-why-core-card-text">Professional accounts receivable tracking helps monitor overdue invoices and ensures faster collection from customers before balances accumulate.</p>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--c" aria-hidden="true"><i class="fas fa-handshake"></i></span>
-                            <h3>Strong Vendor Relationships</h3>
-                            <p class="mis-why-core-card-text">Structured accounts payable management ensures suppliers receive timely payments — strengthening business partnerships and improving negotiation capabilities.</p>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--d" aria-hidden="true"><i class="fas fa-chart-line"></i></span>
-                            <h3>Financial Accuracy and Transparency</h3>
-                            <p class="mis-why-core-card-text">Organised tracking of invoices and payments improves financial reporting accuracy and enables better, more informed decision-making at every level.</p>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--e" aria-hidden="true"><i class="fas fa-tasks"></i></span>
-                            <h3>Reduced Administrative Burden</h3>
-                            <p class="mis-why-core-card-text">Outsourcing receivable and payable management allows internal teams to focus on core operations while financial tracking is handled with precision and consistency.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_card_section_heading_id = 'arap-why-matters-heading';
+        $caaft_card_section_title = 'Why Receivable & Payable Management Matters';
+        $caaft_card_section_intro = 'Many businesses underestimate the importance of structured financial monitoring until cash flow issues surface. Key operational and financial advantages of efficient AR and AP management:';
+        $caaft_card_grid_col_class = 'col-md-6 col-lg-4';
+        $caaft_card_section_cards = [
+            ['icon_class' => 'fas fa-coins', 'title' => 'Improved Cash Flow Stability', 'text' => 'Timely collection of receivables ensures consistent liquidity — allowing businesses to meet operational expenses without delays or disruptions.'],
+            ['icon_class' => 'fas fa-file-invoice-dollar', 'title' => 'Reduced Outstanding Payments', 'text' => 'Professional accounts receivable tracking helps monitor overdue invoices and ensures faster collection from customers before balances accumulate.'],
+            ['icon_class' => 'fas fa-handshake', 'title' => 'Strong Vendor Relationships', 'text' => 'Structured accounts payable management ensures suppliers receive timely payments — strengthening business partnerships and improving negotiation capabilities.'],
+            ['icon_class' => 'fas fa-chart-line', 'title' => 'Financial Accuracy and Transparency', 'text' => 'Organised tracking of invoices and payments improves financial reporting accuracy and enables better, more informed decision-making at every level.'],
+            ['icon_class' => 'fas fa-tasks', 'title' => 'Reduced Administrative Burden', 'text' => 'Outsourcing receivable and payable management allows internal teams to focus on core operations while financial tracking is handled with precision and consistency.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-card-section.php';
+        ?>
 
-        <section class="caaft-ar-what-we-offer py-90" aria-labelledby="arap-services-heading">
-            <div class="container">
-                <header class="caaft-ar-offer-header">
-                    <h2 id="arap-services-heading" class="caaft-ar-offer-h2">Receivable &amp; Payable Management Services — What Gets Delivered</h2>
-                </header>
-                <div class="row g-4 caaft-ar-offer-grid">
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <h3 class="caaft-ar-offer-card-title">1. Accounts Receivable Tracking and Management</h3>
-                            <p class="caaft-ar-offer-card-text">Every invoice issued is properly tracked, monitored, and followed up within agreed payment timelines — ensuring receivables are collected efficiently and outstanding balances are minimised.</p>
-                            <p class="caaft-ar-offer-card-text">Services include tracking customer invoices and payment schedules, monitoring outstanding receivables, maintaining organised financial records, generating receivable aging reports, supporting collection processes, identifying overdue payments, and improving customer payment cycles.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <h3 class="caaft-ar-offer-card-title">2. Accounts Payable Tracking and Management</h3>
-                            <p class="caaft-ar-offer-card-text">All vendor and supplier obligations are monitored and settled on time — ensuring payment commitments are met, penalties are avoided, and vendor relationships remain strong.</p>
-                            <p class="caaft-ar-offer-card-text">Services include tracking vendor invoices and due dates, monitoring payment obligations, maintaining payable aging reports, reconciling vendor statements, and ensuring timely settlement of all outstanding payables.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <h3 class="caaft-ar-offer-card-title">3. Invoice Generation and Billing Management</h3>
-                            <p class="caaft-ar-offer-card-text">Accurate, timely invoicing is critical to maintaining consistent revenue flow. Errors in billing or delayed invoices lead to revenue loss and payment delays — both of which are eliminated through structured billing management.</p>
-                            <p class="caaft-ar-offer-card-text">Services include professional invoice preparation, billing system management, customer invoice tracking, payment status monitoring, invoice reconciliation, and financial documentation maintenance.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <h3 class="caaft-ar-offer-card-title">4. Receivable Aging Analysis</h3>
-                            <p class="caaft-ar-offer-card-text">Detailed aging reports are prepared to categorise outstanding receivables by overdue period — giving management clear visibility over which balances require immediate follow-up and which are on track.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <h3 class="caaft-ar-offer-card-title">5. Payable Aging and Vendor Reconciliation</h3>
-                            <p class="caaft-ar-offer-card-text">Payable aging reports and vendor statement reconciliations are maintained regularly — ensuring all obligations are accurately recorded, disputes are resolved quickly, and vendor accounts remain clean.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <h3 class="caaft-ar-offer-card-title">6. Working Capital Reporting</h3>
-                            <p class="caaft-ar-offer-card-text">Structured reports on the movement of receivables and payables are delivered regularly — providing management with the financial data needed to manage working capital efficiently and make informed operational decisions.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_delivered_heading_id = 'arap-services-heading';
+        $caaft_delivered_title = 'Receivable & Payable Management Services — What Gets Delivered';
+        $caaft_delivered_items = [
+            ['name' => 'Accounts Receivable Tracking and Management', 'text' => 'Every invoice issued is properly tracked, monitored, and followed up within agreed payment timelines — ensuring receivables are collected efficiently and outstanding balances are minimised. Services include tracking customer invoices and payment schedules, monitoring outstanding receivables, maintaining organised financial records, generating receivable aging reports, supporting collection processes, identifying overdue payments, and improving customer payment cycles.'],
+            ['name' => 'Accounts Payable Tracking and Management', 'text' => 'All vendor and supplier obligations are monitored and settled on time — ensuring payment commitments are met, penalties are avoided, and vendor relationships remain strong. Services include tracking vendor invoices and due dates, monitoring payment obligations, maintaining payable aging reports, reconciling vendor statements, and ensuring timely settlement of all outstanding payables.'],
+            ['name' => 'Invoice Generation and Billing Management', 'text' => 'Accurate, timely invoicing is critical to maintaining consistent revenue flow. Errors in billing or delayed invoices lead to revenue loss and payment delays — both of which are eliminated through structured billing management. Services include professional invoice preparation, billing system management, customer invoice tracking, payment status monitoring, invoice reconciliation, and financial documentation maintenance.'],
+            ['name' => 'Receivable Aging Analysis', 'text' => 'Detailed aging reports are prepared to categorise outstanding receivables by overdue period — giving management clear visibility over which balances require immediate follow-up and which are on track.'],
+            ['name' => 'Payable Aging and Vendor Reconciliation', 'text' => 'Payable aging reports and vendor statement reconciliations are maintained regularly — ensuring all obligations are accurately recorded, disputes are resolved quickly, and vendor accounts remain clean.'],
+            ['name' => 'Working Capital Reporting', 'text' => 'Structured reports on the movement of receivables and payables are delivered regularly — providing management with the financial data needed to manage working capital efficiently and make informed operational decisions.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
+        ?>
 
-        <section class="bk-who py-90" aria-labelledby="arap-who-heading">
-            <div class="container">
-                <header class="bk-who-header">
-                    <h2 id="arap-who-heading" class="bk-section-title">Who Needs Receivable &amp; Payable Management Services?</h2>
-                    <p class="bk-who-intro">CAAFT's receivable and payable management services are built for businesses that handle frequent transactions, multiple vendors, and diverse customer bases:</p>
-                </header>
-                <div class="bk-who-grid">
-                    <article class="bk-who-card"><p>Small and Medium Enterprises (SMEs) managing receivables and vendor payments while keeping cash flow consistent across the business</p></article>
-                    <article class="bk-who-card"><p>Startups and growing businesses establishing structured AR and AP from the beginning for scalability and investor-ready financial discipline</p></article>
-                    <article class="bk-who-card"><p>E-commerce companies handling high volumes of daily transactions and needing accurate tracking and settlement across channels</p></article>
-                    <article class="bk-who-card"><p>Manufacturing and trading businesses coordinating multiple vendors and clients where timely payables and receivables are essential</p></article>
-                    <article class="bk-who-card"><p>Service-based companies — consulting, IT, and agencies — needing structured billing, receivable tracking, and predictable revenue cycles</p></article>
-                    <article class="bk-who-card"><p>Exporters and importers requiring precise invoice tracking, payment monitoring, and compliance across international transactions</p></article>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_who_needs_heading_id = 'arap-who-heading';
+        $caaft_who_needs_title = 'Who Needs Receivable & Payable Management Services?';
+        $caaft_who_needs_intro = "CAAFT's receivable and payable management services are built for businesses that handle frequent transactions, multiple vendors, and diverse customer bases:";
+        $caaft_who_needs_items = [
+            'Small and Medium Enterprises (SMEs) — SMEs often face challenges managing receivables and vendor payments efficiently. Professional services help maintain financial discipline, reduce payment delays, and ensure cash flow consistency across the business.',
+            'Startups and Growing Businesses — Startups require structured financial systems from the beginning to ensure scalability, investor confidence, and a strong financial foundation as the business grows.',
+            'E-commerce Companies — Online businesses handle large volumes of daily transactions. Structured receivable and payable management ensures accurate financial tracking and timely settlement across all channels.',
+            'Manufacturing and Trading Businesses — Manufacturers and trading companies work with multiple vendors and clients simultaneously — making efficient payable and receivable management essential for operational continuity.',
+            'Service-Based Companies — Consulting firms, IT companies, and agencies require structured billing and receivable tracking to maintain steady, predictable revenue cycles and accurate client billing records.',
+            'Exporters and Importers — International transactions require precise invoice tracking and payment monitoring to avoid financial disruptions, currency mismatches, and compliance issues.',
+        ];
+        $caaft_who_needs_closing = '';
+        $caaft_who_needs_section_class = 'bk-who py-90';
+        include __DIR__ . '/../../includes/components/caaft-who-needs.php';
+        ?>
 
-        <section class="caaft-ar-how py-90">
-            <div class="container">
-                <header class="caaft-ar-how-header"><h2 class="caaft-ar-how-h2">Step-by-Step Process</h2></header>
-                <ol class="caaft-ar-how-timeline">
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">1. Financial Assessment</h3><p class="caaft-ar-how-step-text">The current invoicing, receivable, and payable systems are analysed to identify gaps, inefficiencies, and improvement opportunities before any setup begins.</p></div></li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">2. System Setup</h3><p class="caaft-ar-how-step-text">Structured systems are established for invoice generation, receivable tracking, and vendor payment monitoring — tailored to the specific needs of the business.</p></div></li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">3. Invoice and Payment Monitoring</h3><p class="caaft-ar-how-step-text">All invoices and payments are tracked regularly to ensure timely collection from customers and timely settlement of vendor obligations.</p></div></li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">4. Outstanding Payment Management</h3><p class="caaft-ar-how-step-text">Overdue receivables and pending payables are actively monitored — with follow-ups initiated and escalations managed to minimise outstanding balances.</p></div></li>
-                    <li class="caaft-ar-how-step"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">5. Financial Reporting</h3><p class="caaft-ar-how-step-text">Detailed receivable and payable reports are delivered regularly — giving management the financial clarity and visibility needed for confident decision-making.</p></div></li>
-                </ol>
-            </div>
-        </section>
+        <?php
+        $caaft_steps_heading_id = 'arap-process-heading';
+        $caaft_steps_title = 'Step-by-Step Process';
+        $caaft_steps_numbered = true;
+        $caaft_steps_items = [
+            ['title' => 'Financial Assessment', 'text' => 'The current invoicing, receivable, and payable systems are analysed to identify gaps, inefficiencies, and improvement opportunities before any setup begins.'],
+            ['title' => 'System Setup', 'text' => 'Structured systems are established for invoice generation, receivable tracking, and vendor payment monitoring — tailored to the specific needs of the business.'],
+            ['title' => 'Invoice and Payment Monitoring', 'text' => 'All invoices and payments are tracked regularly to ensure timely collection from customers and timely settlement of vendor obligations.'],
+            ['title' => 'Outstanding Payment Management', 'text' => 'Overdue receivables and pending payables are actively monitored — with follow-ups initiated and escalations managed to minimise outstanding balances.'],
+            ['title' => 'Financial Reporting', 'text' => 'Detailed receivable and payable reports are delivered regularly — giving management the financial clarity and visibility needed for confident decision-making.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+        ?>
 
-        <section class="mis-why-core py-90" aria-labelledby="arap-challenges-heading">
-            <div class="container">
-                <div class="mis-why-core-inner">
-                    <h2 id="arap-challenges-heading" class="mis-why-core-title">Common Challenges Receivable &amp; Payable Management Solves</h2>
-                    <p class="mis-why-core-sub">Most businesses seek professional AR and AP support when facing one or more of these:</p>
-                    <div class="mis-why-core-grid">
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--a" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
-                            <h3>Invoices issued but not consistently tracked — leading to delayed or missed collections</h3>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--b" aria-hidden="true"><i class="fas fa-copy"></i></span>
-                            <h3>Vendor payments missed or duplicated due to disorganised payable records</h3>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--c" aria-hidden="true"><i class="fas fa-hourglass-half"></i></span>
-                            <h3>No visibility into aging receivables or which balances are critically overdue</h3>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--d" aria-hidden="true"><i class="fas fa-balance-scale"></i></span>
-                            <h3>Cash flow shortfalls caused by poor alignment between incoming and outgoing payments</h3>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--e" aria-hidden="true"><i class="fas fa-comments-dollar"></i></span>
-                            <h3>Financial disputes with customers or vendors arising from incomplete documentation</h3>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--f" aria-hidden="true"><i class="fas fa-chart-pie"></i></span>
-                            <h3>Management making decisions without accurate, current working capital data</h3>
-                        </article>
-                    </div>
-                    <p class="mis-why-core-outro">CAAFT's structured approach addresses each of these — moving businesses from reactive payment chasing to proactive, organised financial management.</p>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_challenges_heading_id = 'arap-challenges-heading';
+        $caaft_challenges_title = 'Common Challenges Receivable & Payable Management Solves';
+        $caaft_challenges_intro = 'Most businesses seek professional AR and AP support when facing one or more of these:';
+        $caaft_challenges_items = [
+            'Invoices issued but not consistently tracked — leading to delayed or missed collections',
+            'Vendor payments missed or duplicated due to disorganised payable records',
+            'No visibility into aging receivables or which balances are critically overdue',
+            'Cash flow shortfalls caused by poor alignment between incoming and outgoing payments',
+            'Financial disputes with customers or vendors arising from incomplete documentation',
+            'Management making decisions without accurate, current working capital data',
+        ];
+        $caaft_challenges_outro = "CAAFT's structured approach addresses each of these — moving businesses from reactive payment chasing to proactive, organised financial management.";
+        include __DIR__ . '/../../includes/components/caaft-challenges.php';
+        ?>
 
-        <section class="mis-why-core py-90" aria-labelledby="arap-benefits-heading">
-            <div class="container">
-                <div class="mis-why-core-inner">
-                    <h2 id="arap-benefits-heading" class="mis-why-core-title">Benefits of Professional Receivable &amp; Payable Management</h2>
-                    <div class="mis-why-core-grid">
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--a" aria-hidden="true"><i class="fas fa-wallet"></i></span>
-                            <h3>Better Working Capital Management</h3>
-                            <p class="mis-why-core-card-text">Efficient monitoring of AR and AP ensures businesses maintain the right balance between incoming and outgoing funds at all times</p>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--b" aria-hidden="true"><i class="fas fa-bolt"></i></span>
-                            <h3>Faster Payment Cycles</h3>
-                            <p class="mis-why-core-card-text">Timely invoicing and consistent follow-up reduce payment delays and improve revenue realisation by 30–40%</p>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--c" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
-                            <h3>Reduced Financial Risks</h3>
-                            <p class="mis-why-core-card-text">Monitoring outstanding payments minimises bad debts and enables early identification of payment issues before they escalate</p>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--d" aria-hidden="true"><i class="fas fa-truck"></i></span>
-                            <h3>Improved Vendor Coordination</h3>
-                            <p class="mis-why-core-card-text">Timely vendor payments improve supply chain reliability and strengthen negotiating positions over time</p>
-                        </article>
-                        <article class="mis-why-core-card">
-                            <span class="mis-why-core-icon mis-why-core-icon--e" aria-hidden="true"><i class="fas fa-file-contract"></i></span>
-                            <h3>Enhanced Financial Reporting</h3>
-                            <p class="mis-why-core-card-text">Detailed, accurate records of receivables and payables support clean financial statements and audit-ready books</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_card_section_heading_id = 'arap-benefits-heading';
+        $caaft_card_section_title = 'Benefits of Professional Receivable & Payable Management';
+        $caaft_card_section_intro = '';
+        $caaft_card_grid_col_class = 'col-md-6 col-lg-4';
+        $caaft_card_section_cards = [
+            ['icon_class' => 'fas fa-wallet', 'title' => 'Better Working Capital Management', 'text' => 'Efficient monitoring of AR and AP ensures businesses maintain the right balance between incoming and outgoing funds at all times'],
+            ['icon_class' => 'fas fa-bolt', 'title' => 'Faster Payment Cycles', 'text' => 'Timely invoicing and consistent follow-up reduce payment delays and improve revenue realisation by 30–40%'],
+            ['icon_class' => 'fas fa-shield-alt', 'title' => 'Reduced Financial Risks', 'text' => 'Monitoring outstanding payments minimises bad debts and enables early identification of payment issues before they escalate'],
+            ['icon_class' => 'fas fa-truck', 'title' => 'Improved Vendor Coordination', 'text' => 'Timely vendor payments improve supply chain reliability and strengthen negotiating positions over time'],
+            ['icon_class' => 'fas fa-file-contract', 'title' => 'Enhanced Financial Reporting', 'text' => 'Detailed, accurate records of receivables and payables support clean financial statements and audit-ready books'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-card-section.php';
+        ?>
 
-        <section class="caaft-ar-why py-90">
-            <div class="container">
-                <header class="caaft-ar-why-header"><h2 class="caaft-ar-why-h2">Why Choose CAAFT</h2></header>
-                <div class="caaft-ar-why-panel">
-                    <div class="caaft-ar-why-grid caaft-ar-why-grid--five">
-                        <div class="caaft-ar-why-row caaft-ar-why-row--top">
-                            <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Structured receivable and payable monitoring</h3><p class="caaft-ar-why-text">Organised tracking of all incoming and outgoing payments is maintained consistently — ensuring nothing is missed, delayed, or lost between reporting cycles.</p></article>
-                            <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Accurate financial record management</h3><p class="caaft-ar-why-text">Every transaction is recorded correctly and reconciled regularly — reducing errors, maintaining clean financial records, and ensuring books are always audit-ready.</p></article>
-                            <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Reduced payment delays</h3><p class="caaft-ar-why-text">Due dates are monitored proactively and outstanding payments are followed up systematically — minimising delays, improving cash flow, and reducing the risk of bad debt.</p></article>
-                        </div>
-                        <div class="caaft-ar-why-row caaft-ar-why-row--bottom">
-                            <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Improved vendor and customer relationships</h3><p class="caaft-ar-why-text">Timely payments and accurate invoicing build stronger, more trustworthy relationships with both vendors and customers — supporting better terms and smoother operations over time.</p></article>
-                            <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Scalable financial systems for growing businesses</h3><p class="caaft-ar-why-text">Services are designed to scale with the business — ensuring financial operations remain efficient, organised, and under control at every stage of growth.</p></article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $why_choose_caaft_heading_id = 'arap-why-caaft-heading';
+        $why_choose_caaft_title = 'Why Choose CAAFT';
+        $why_choose_caaft_show_intro = true;
+        $why_choose_caaft_intro = '';
+        $why_choose_caaft_section_class = 'why-choose-caaft py-90';
+        $why_choose_caaft_items = [
+            ['icon_class' => 'fas fa-stream', 'title' => 'Structured receivable and payable monitoring', 'text' => 'Organised tracking of all incoming and outgoing payments is maintained consistently — ensuring nothing is missed, delayed, or lost between reporting cycles.'],
+            ['icon_class' => 'fas fa-database', 'title' => 'Accurate financial record management', 'text' => 'Every transaction is recorded correctly and reconciled regularly — reducing errors, maintaining clean financial records, and ensuring books are always audit-ready.'],
+            ['icon_class' => 'fas fa-clock', 'title' => 'Reduced payment delays', 'text' => 'Due dates are monitored proactively and outstanding payments are followed up systematically — minimising delays, improving cash flow, and reducing the risk of bad debt.'],
+            ['icon_class' => 'fas fa-users', 'title' => 'Improved vendor and customer relationships', 'text' => 'Timely payments and accurate invoicing build stronger, more trustworthy relationships with both vendors and customers — supporting better terms and smoother operations over time.'],
+            ['icon_class' => 'fas fa-expand-arrows-alt', 'title' => 'Scalable financial systems for growing businesses', 'text' => 'Services are designed to scale with the business — ensuring financial operations remain efficient, organised, and under control at every stage of growth.'],
+        ];
+        include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+        ?>
 
-        <section class="bk-facts py-90" aria-labelledby="arap-facts-heading">
-            <div class="container">
-                <header class="bk-facts-header">
-                    <h2 id="arap-facts-heading" class="bk-section-title">Key Facts &amp; Figures</h2>
-                </header>
-                <div class="bk-facts-grid bk-facts-grid--mis-keyfacts">
-                    <article class="bk-facts-card bk-facts-card--mis-keyfact bk-facts-card--fs-facts-text-only">
-                        <p class="bk-facts-stat-text">Businesses with structured accounts receivable management reduce payment delays by 30–40% — directly improving overall cash flow stability and working capital efficiency</p>
-                    </article>
-                    <article class="bk-facts-card bk-facts-card--mis-keyfact bk-facts-card--fs-facts-text-only">
-                        <p class="bk-facts-stat-text">Nearly 60% of SMEs in India face cash flow challenges due to delayed customer payments and poor receivable tracking — a gap that professional AR management directly addresses</p>
-                    </article>
-                    <article class="bk-facts-card bk-facts-card--mis-keyfact bk-facts-card--fs-facts-text-only">
-                        <p class="bk-facts-stat-text">Effective accounts payable management helps businesses maintain strong vendor relationships and avoid late payment penalties — protecting both supplier trust and the bottom line</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_key_facts_heading_id = 'arap-facts-heading';
+        $caaft_key_facts_title = 'Key Facts & Figures';
+        $caaft_key_facts_items = [
+            'Businesses with structured accounts receivable management reduce payment delays by 30–40% — directly improving overall cash flow stability and working capital efficiency',
+            'Nearly 60% of SMEs in India face cash flow challenges due to delayed customer payments and poor receivable tracking — a gap that professional AR management directly addresses',
+            'Effective accounts payable management helps businesses maintain strong vendor relationships and avoid late payment penalties — protecting both supplier trust and the bottom line',
+        ];
+        include __DIR__ . '/../../includes/components/caaft-key-facts.php';
+        ?>
 
-        <section id="get-in-touch" class="bk-cta py-90" aria-labelledby="arap-cta-heading">
-            <div class="container">
-                <div class="bk-cta-panel">
-                    <h2 id="arap-cta-heading" class="bk-cta-title" style="padding-left: clamp(20px, 6vw, 72px); padding-right: clamp(20px, 6vw, 72px); box-sizing: border-box;">Ready to Manage Your Receivables &amp; Payables the Right Way?</h2>
-                    <p class="bk-cta-text">Accurate invoice tracking, timely collections, and structured vendor payments — delivered consistently so businesses can maintain healthy cash flow and organised financial records at every stage of growth. Whether the need is receivable monitoring, payable management, or complete AR and AP outsourcing — CAAFT delivers the structure, precision, and financial discipline to make it happen.</p>
-                    <div class="bk-cta-actions">
-                        <a href="/contact#contact_us" class="theme-btn bk-cta-button">Manage Your Receivables &amp; Payables Today <i class="fas fa-arrow-right"></i></a>
-                        <a href="/contact#contact_us" class="theme-btn theme-btn2 bk-cta-button">Get Expert Assistance! <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_cta_section_id = 'get-in-touch';
+        $caaft_cta_heading_id = 'arap-cta-heading';
+        $caaft_cta_title = 'Ready to Manage Your Receivables & Payables the Right Way?';
+        $caaft_cta_text = 'Accurate invoice tracking, timely collections, and structured vendor payments — delivered consistently so businesses can maintain healthy cash flow and organised financial records at every stage of growth. Whether the need is receivable monitoring, payable management, or complete AR and AP outsourcing — CAAFT delivers the structure, precision, and financial discipline to make it happen.';
+        $caaft_cta_button_label = 'Manage Your Receivables & Payables Today – Get Expert Assistance!';
+        $caaft_cta_button_href = '/contact#contact_us';
+        include __DIR__ . '/../../includes/components/caaft-cta.php';
+        ?>
 
-        <div id="faq" class="faq-area are_sections_faq py-120 caaft-ar-faq-wrap" aria-labelledby="arap-faq-heading">
-            <div class="container">
-                <div class="site-heading text-center mb-3"><h2 id="arap-faq-heading" class="site-title my-3">Frequently Asked Questions</h2></div>
-                <div class="frequent-question col-lg-10">
-                    <div class="accordion" id="accordionArapFaq">
-                        <div class="accordion-item">
-                            <p class="accordion-header" id="arapFaqHeading1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#arapFaqCollapse1" aria-expanded="true" aria-controls="arapFaqCollapse1">1. How can receivable and payable management improve business decision-making?</button></p>
-                            <div id="arapFaqCollapse1" class="accordion-collapse collapse show" aria-labelledby="arapFaqHeading1" data-bs-parent="#accordionArapFaq"><div class="accordion-body">Proper tracking of receivables and payables gives management clear financial visibility — knowing exactly how much money is expected and how much must be paid allows for better budget planning, expense management, and more confident financial decisions.</div></div>
-                        </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header" id="arapFaqHeading2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arapFaqCollapse2" aria-expanded="false" aria-controls="arapFaqCollapse2">2. How often should a business review receivables and payables?</button></p>
-                            <div id="arapFaqCollapse2" class="accordion-collapse collapse" aria-labelledby="arapFaqHeading2" data-bs-parent="#accordionArapFaq"><div class="accordion-body">Receivables and payables should be reviewed regularly — ideally on a weekly or monthly basis. Frequent monitoring helps identify payment delays early, manage vendor obligations, and maintain a consistently balanced cash flow.</div></div>
-                        </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header" id="arapFaqHeading3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arapFaqCollapse3" aria-expanded="false" aria-controls="arapFaqCollapse3">3. Can receivable and payable management help reduce financial disputes?</button></p>
-                            <div id="arapFaqCollapse3" class="accordion-collapse collapse" aria-labelledby="arapFaqHeading3" data-bs-parent="#accordionArapFaq"><div class="accordion-body">Yes. Proper documentation of invoices, payment schedules, and transaction records prevents misunderstandings with customers and vendors — and makes it significantly easier to resolve any payment disputes quickly and fairly.</div></div>
-                        </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header" id="arapFaqHeading4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arapFaqCollapse4" aria-expanded="false" aria-controls="arapFaqCollapse4">4. How does receivable management support customer payment discipline?</button></p>
-                            <div id="arapFaqCollapse4" class="accordion-collapse collapse" aria-labelledby="arapFaqHeading4" data-bs-parent="#accordionArapFaq"><div class="accordion-body">Structured receivable management ensures invoices are issued clearly, tracked consistently, and followed up on time — encouraging customers to adhere to agreed payment timelines and reducing the buildup of overdue balances.</div></div>
-                        </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header" id="arapFaqHeading5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arapFaqCollapse5" aria-expanded="false" aria-controls="arapFaqCollapse5">5. What challenges do businesses face without proper receivable and payable tracking?</button></p>
-                            <div id="arapFaqCollapse5" class="accordion-collapse collapse" aria-labelledby="arapFaqHeading5" data-bs-parent="#accordionArapFaq"><div class="accordion-body">Without structured tracking, businesses risk delayed payments, missed vendor deadlines, inaccurate financial records, unexpected cash flow shortfalls, and strained relationships with both customers and suppliers.</div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        $caaft_faq_section_id = 'faq';
+        $caaft_faq_heading_id = 'arap-faq-heading';
+        $caaft_faq_title = 'Frequently Asked Questions';
+        $caaft_faq_accordion_id = 'accordionArapFaq';
+        $caaft_faq_prefix = 'arapFaq';
+        $caaft_faq_open_first = true;
+        $caaft_faq_pad_numbers = false;
+        $caaft_faq_items = [
+            ['question' => 'How can receivable and payable management improve business decision-making?', 'answer' => 'Proper tracking of receivables and payables gives management clear financial visibility — knowing exactly how much money is expected and how much must be paid allows for better budget planning, expense management, and more confident financial decisions.'],
+            ['question' => 'How often should a business review receivables and payables?', 'answer' => 'Receivables and payables should be reviewed regularly — ideally on a weekly or monthly basis. Frequent monitoring helps identify payment delays early, manage vendor obligations, and maintain a consistently balanced cash flow.'],
+            ['question' => 'Can receivable and payable management help reduce financial disputes?', 'answer' => 'Yes. Proper documentation of invoices, payment schedules, and transaction records prevents misunderstandings with customers and vendors — and makes it significantly easier to resolve any payment disputes quickly and fairly.'],
+            ['question' => 'How does receivable management support customer payment discipline?', 'answer' => 'Structured receivable management ensures invoices are issued clearly, tracked consistently, and followed up on time — encouraging customers to adhere to agreed payment timelines and reducing the buildup of overdue balances.'],
+            ['question' => 'What challenges do businesses face without proper receivable and payable tracking?', 'answer' => 'Without structured tracking, businesses risk delayed payments, missed vendor deadlines, inaccurate financial records, unexpected cash flow shortfalls, and strained relationships with both customers and suppliers.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-faq.php';
+        ?>
     </main>
     <?php include "footer.php"; ?>
     <a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a>

@@ -78,11 +78,11 @@
             "@type": "OfferCatalog",
             "name": "CAAFT Advisory & CFO Services",
             "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CFO Services"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Budgeting & Forecasting"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Business Valuation"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Financial Assessment"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Feasibility Study"}}
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CFO Services"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Budgeting & Forecasting"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Business Valuation"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Financial Assessment"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Feasibility Study"}}
             ]
           }
         },
@@ -185,11 +185,11 @@
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
         $caaft_hero_secondary_cta_href = '#ac-services-heading';
 
-        $caaft_enquiry_service = 'Advisory and CFO Services';
-        $caaft_enquiry_action = '/management-consult-services-mail.php';
-        $caaft_enquiry_title = 'Share Your Business Goals';
-        $caaft_enquiry_form_id = 'caaft-ac-enquiry-form-inner';
-        $caaft_enquiry_input_id_prefix = 'ac';
+$caaft_enquiry_service = 'Advisory and CFO Services';
+$caaft_enquiry_action = '/management-consult-services-mail.php';
+$caaft_enquiry_title = 'Share Your Business Goals';
+$caaft_enquiry_form_id = 'caaft-ac-enquiry-form-inner';
+$caaft_enquiry_input_id_prefix = 'ac';
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
