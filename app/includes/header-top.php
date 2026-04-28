@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/nice-select.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <?php $caaft_style_version = @filemtime(__DIR__ . '/../../assets/css/style.css') ?: time(); ?>
+    <link rel="stylesheet" href="assets/css/style.css?v=<?php echo htmlspecialchars((string) $caaft_style_version, ENT_QUOTES, 'UTF-8'); ?>">
      <link rel="stylesheet" href="assets/css/easy-responsive-tabs.css">
 
      <!-- Google tag (gtag.js) -->
