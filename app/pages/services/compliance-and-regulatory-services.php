@@ -183,487 +183,157 @@
     </script>
 </head>
 
-<body class="home-3 page-accounting-reporting page-compliance-regulatory-services">
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body class="home-3 page-accounting-reporting page-bookkeeping-accounting page-compliance-regulatory-services">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <div class="header-sections">
-        <?php include "header.php"; ?>
-    </div>
-
-    <div class="search-popup">
-        <button class="close-search"><span class="far fa-times"></span></button>
-        <form action="#">
-            <div class="form-group">
-                <input type="search" name="search-field" class="form-control" placeholder="Search Here..." required>
-                <button type="submit"><i class="far fa-search"></i></button>
-            </div>
-        </form>
-    </div>
+    <div class="header-sections"><?php include "header.php"; ?></div>
 
     <main class="main">
-        <section class="hero-section hs-3 caaft-ar-hero" aria-labelledby="cr-hero-h1" id="caaft-cr-hero">
-            <div class="hero-single singles_forms_frames caaft-ar-hero-single">
-                <div class="container">
-                    <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
-                        <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
-                            <h1 id="cr-hero-h1" class="caaft-ar-hero-h1">Compliance and Regulatory Services</h1>
-                            <h2 class="caaft-ar-hero-h2">Stay Compliant. Stay Protected. Stay in Business.</h2>
-                            <p class="caaft-ar-hero-lead">
-                                From annual filings to ROC changes, CAAFT manages every compliance obligation your company carries — so nothing lapses, penalties don't build up, and your business always stands on solid legal ground. Missing a deadline can mean late fees or director disqualification. We track every obligation, file on time, and handle every change so compliance is never a problem.
-                            </p>
-                            <div class="caaft-ar-hero-ctas">
-                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Get a Free Compliance Review <i class="fas fa-arrow-right"></i></a>
-                                <a href="#cr-company-heading" class="theme-btn theme-btn2 caaft-ar-hero-btn-secondary">Explore Our Services <i class="fas fa-arrow-down"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="hero-img-wrap caaft-ar-hero-img-wrap" id="caaft-cr-enquiry-form">
-                                <?php
-                                $caaft_enquiry_service = 'Compliance and Regulatory Services';
-                                $caaft_enquiry_action = '/roc-compliance-filing-mail.php';
-                                $caaft_enquiry_title = 'Clear Your Pending Filings';
-                                $caaft_enquiry_form_id = 'caaft-cr-enquiry-form-inner';
-                                $caaft_enquiry_input_id_prefix = 'cr';
-                                include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_hero_id = 'cr-hero-h1';
+        $caaft_hero_h1 = 'COMPLIANCE AND REGULATORY SERVICES';
+        $caaft_hero_h2_before = 'Stay Compliant. Stay Protected. Stay in Business.';
+        $caaft_hero_h2_highlight = '';
+        $caaft_hero_h2_after = '';
+        $caaft_hero_lead_paragraphs = [
+            "From annual filings to ROC changes, CAAFT manages every compliance obligation your company carries — so nothing lapses, penalties don't build up, and your business always stands on solid legal ground. Missing a deadline can mean late fees or director disqualification. We track every obligation, file on time, and handle every change so compliance is never a problem.",
+        ];
+        $caaft_hero_primary_cta_label = 'Get a Free Compliance Review';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_secondary_cta_label = 'Explore Our Services';
+        $caaft_hero_secondary_cta_href = '#cr-company-heading';
 
-        <section class="caaft-ar-trust-indicators" aria-label="Trust indicators">
-            <div class="container">
-                <div class="caaft-ar-trust-grid caaft-ar-trust-grid--eq-4">
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="far fa-check-circle"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Rated 4.8/5 <span class="caaft-ar-trust-stars" aria-hidden="true">⭐</span></h3>
-                            <p>on Google</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-calendar-check"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Zero Missed</h3>
-                            <p>Deadlines</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-landmark"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>MCA, ROC &amp;</h3>
-                            <p>Registrar Filings</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-user-cog"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Dedicated Compliance Manager</h3>
-                            <p>for Every Client</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+        $caaft_enquiry_service = 'Compliance and Regulatory Services';
+        $caaft_enquiry_action = '/roc-compliance-filing-mail.php';
+        $caaft_enquiry_title = 'Clear Your Pending Filings';
+        $caaft_enquiry_form_id = 'caaft-cr-enquiry-form-inner';
+        $caaft_enquiry_input_id_prefix = 'cr';
+        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+        ?>
 
-        <section class="caaft-ar-what-we-offer py-90" aria-labelledby="cr-company-heading">
-            <div class="container">
-                <header class="caaft-ar-offer-header">
-                    <p class="caaft-ar-offer-eyebrow">Annual calendar</p>
-                    <h2 id="cr-company-heading" class="caaft-ar-offer-h2">Company compliance services</h2>
-                    <p class="caaft-ar-offer-intro">
-                        Every registered company carries a mandatory annual compliance calendar. CAAFT manages the entire calendar — ensuring every filing is accurate and on time.
-                    </p>
-                </header>
-                <div class="row g-4 caaft-ar-offer-grid">
-                    <div class="col-md-6 col-lg-3">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-building"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Private Limited Company Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">Complete annual compliance for Pvt Ltd companies — board meetings, annual returns, financial statements, and all MCA obligations managed without gaps.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-city"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Public Limited Company Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">End-to-end statutory compliance for Public Limited Companies — including AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-user-tie"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">One Person Company Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">Annual compliance for OPCs — board resolutions, financial statements, and ROC filings, kept lean for single-director structures.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">04</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-handshake"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">LLP Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">Annual filing and compliance for LLPs — Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_trust_items = [
+            ['icon_class' => 'far fa-check-circle', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
+            ['icon_class' => 'fas fa-calendar-check', 'title' => 'Zero Missed', 'description' => 'Deadlines'],
+            ['icon_class' => 'fas fa-landmark', 'title' => 'MCA, ROC &', 'description' => 'Registrar Filings'],
+            ['icon_class' => 'fas fa-user-cog', 'title' => 'Dedicated Compliance Manager', 'description' => 'for Every Client'],
+        ];
+        include __DIR__ . '/../../includes/components/service-trust-indicators.php';
+        ?>
 
-        <section class="caaft-ar-what-we-offer py-90" aria-labelledby="cr-firm-heading">
-            <div class="container">
-                <header class="caaft-ar-offer-header">
-                    <p class="caaft-ar-offer-eyebrow">Firm obligations</p>
-                    <h2 id="cr-firm-heading" class="caaft-ar-offer-h2">Firm compliance services</h2>
-                    <p class="caaft-ar-offer-intro">
-                        Registered firms carry their own compliance obligations — often overlooked, but no less important. CAAFT ensures records, filings, and statutory requirements are consistently maintained.
-                    </p>
-                </header>
-                <div class="row g-4 caaft-ar-offer-grid">
-                    <div class="col-md-6 col-lg-6">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-users"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Partnership Firm Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">Ongoing compliance for registered partnerships — books maintenance, registration renewals, and regulatory filings under the Partnership Act.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-store"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Sole Proprietorship Compliance</h3>
-                            <p class="caaft-ar-offer-card-text">Licence renewals, professional tax filings, and regulatory compliance for sole proprietorships — keeping the business active and in good standing.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_card_section_heading_id = 'cr-company-heading';
+        $caaft_card_section_title = 'COMPANY COMPLIANCE SERVICES';
+        $caaft_card_section_intro = 'Every registered company carries a mandatory annual compliance calendar. CAAFT manages the entire calendar — ensuring every filing is accurate and on time.';
+        $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
+        $caaft_card_section_cards = [
+            ['icon_class' => 'fas fa-building', 'title' => 'Private Limited Company Compliance', 'text' => 'Complete annual compliance for Pvt Ltd companies — board meetings, annual returns, financial statements, and all MCA obligations managed without gaps.'],
+            ['icon_class' => 'fas fa-city', 'title' => 'Public Limited Company Compliance', 'text' => 'End-to-end statutory compliance for Public Limited Companies — including AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act.'],
+            ['icon_class' => 'fas fa-user-tie', 'title' => 'One Person Company Compliance', 'text' => 'Annual compliance for OPCs — board resolutions, financial statements, and ROC filings, kept lean for single-director structures.'],
+            ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Compliance', 'text' => 'Annual filing and compliance for LLPs — Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-card-section.php';
+        ?>
 
-        <section class="caaft-ar-what-we-offer py-90" aria-labelledby="cr-roc-heading">
-            <div class="container">
-                <header class="caaft-ar-offer-header">
-                    <p class="caaft-ar-offer-eyebrow">Registrar filings</p>
-                    <h2 id="cr-roc-heading" class="caaft-ar-offer-h2">ROC compliance services</h2>
-                    <p class="caaft-ar-offer-intro">
-                        Changes within a company require formal filings with the Registrar of Companies. CAAFT handles every ROC transaction accurately and within prescribed timelines.
-                    </p>
-                </header>
-                <div class="row g-4 caaft-ar-offer-grid">
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-id-card-alt"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Director KYC (DIR-3 KYC)</h3>
-                            <p class="caaft-ar-offer-card-text">Annual KYC filing for every DIN holder — mandatory to keep the DIN active and avoid filing blockages.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-user-plus"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Add / Remove Director</h3>
-                            <p class="caaft-ar-offer-card-text">Formal director appointment or resignation filed with the ROC — including resolution drafting, Form DIR-12, and MCA submission.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-chart-line"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Authorised Capital Increase</h3>
-                            <p class="caaft-ar-offer-card-text">Filing for increased authorised share capital — board and shareholder resolutions, Form SH-7, and Form MGT-14 within prescribed timelines.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">04</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Registered Office Change</h3>
-                            <p class="caaft-ar-offer-card-text">Address change filed correctly with the ROC — within the same city, state, or across states — with all resolutions and Form INC-22 or INC-23.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">05</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">ROC Filings</h3>
-                            <p class="caaft-ar-offer-card-text">Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — prepared accurately and submitted before due dates.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">06</span>
-                            <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-times-circle"></i></span>
-                            <h3 class="caaft-ar-offer-card-title">Company Closure / Winding Up</h3>
-                            <p class="caaft-ar-offer-card-text">Managed strike-off or voluntary winding up — resolutions, indemnity bonds, compliance clearances, and STK-2 filing handled completely.</p>
-                            <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_card_section_heading_id = 'cr-firm-heading';
+        $caaft_card_section_title = 'FIRM COMPLIANCE SERVICES';
+        $caaft_card_section_intro = 'Registered firms carry their own compliance obligations — often overlooked, but no less important. CAAFT ensures records, filings, and statutory requirements are consistently maintained.';
+        $caaft_card_grid_col_class = 'col-md-6 col-lg-6';
+        $caaft_card_section_cards = [
+            ['icon_class' => 'fas fa-users', 'title' => 'Partnership Firm Compliance', 'text' => 'Ongoing compliance for registered partnerships — books maintenance, registration renewals, and regulatory filings under the Partnership Act.'],
+            ['icon_class' => 'fas fa-store', 'title' => 'Sole Proprietorship Compliance', 'text' => 'Licence renewals, professional tax filings, and regulatory compliance for sole proprietorships — keeping the business active and in good standing.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-card-section.php';
+        ?>
 
-        <section class="caaft-ar-why py-90" aria-labelledby="cr-why-heading">
-            <div class="container">
-                <header class="caaft-ar-why-header">
-                    <p class="caaft-ar-why-eyebrow">Why choose us</p>
-                    <h2 id="cr-why-heading" class="caaft-ar-why-h2">Why choose CAAFT</h2>
-                </header>
-                <div class="caaft-ar-why-panel">
-                    <div class="caaft-ar-why-grid">
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">01</span>
-                            <h3 class="caaft-ar-why-title">Never Miss a Deadline</h3>
-                            <p class="caaft-ar-why-text">A compliance calendar is maintained for every client entity — with proactive preparation well before due dates.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">02</span>
-                            <h3 class="caaft-ar-why-title">All Entity Types, One Firm</h3>
-                            <p class="caaft-ar-why-text">Compliance across every structure — Private Limited, LLP, OPC, Partnership, and Sole Proprietorship — is managed under one roof.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">03</span>
-                            <h3 class="caaft-ar-why-title">Experts Who Know the ROC</h3>
-                            <p class="caaft-ar-why-text">Hands-on experience with MCA filings and ROC procedures ensures every filing is done right the first time.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">04</span>
-                            <h3 class="caaft-ar-why-title">Penalties Avoided, Not Just Managed</h3>
-                            <p class="caaft-ar-why-text">A proactive approach prevents late fees and director liability — not just helps clients pay them after the fact.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">05</span>
-                            <h3 class="caaft-ar-why-title">Complete Documentation Trail</h3>
-                            <p class="caaft-ar-why-text">Every resolution, filing, and compliance record is maintained and accessible — always ready for audits or due diligence.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">06</span>
-                            <h3 class="caaft-ar-why-title">Post-Filing Support</h3>
-                            <p class="caaft-ar-why-text">ROC queries, returned filings, and clarifications are handled as part of the engagement — not treated as extras.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_card_section_heading_id = 'cr-roc-heading';
+        $caaft_card_section_title = 'ROC COMPLIANCE SERVICES';
+        $caaft_card_section_intro = 'Changes within a company require formal filings with the Registrar of Companies. CAAFT handles every ROC transaction accurately and within prescribed timelines.';
+        $caaft_card_grid_col_class = 'col-md-6 col-lg-4';
+        $caaft_card_section_cards = [
+            ['icon_class' => 'fas fa-id-card-alt', 'title' => 'Director KYC (DIR-3 KYC)', 'text' => 'Annual KYC filing for every DIN holder — mandatory to keep the DIN active and avoid filing blockages.'],
+            ['icon_class' => 'fas fa-user-plus', 'title' => 'Add / Remove Director', 'text' => 'Formal director appointment or resignation filed with the ROC — including resolution drafting, Form DIR-12, and MCA submission.'],
+            ['icon_class' => 'fas fa-chart-line', 'title' => 'Authorised Capital Increase', 'text' => 'Filing for increased authorised share capital — board and shareholder resolutions, Form SH-7, and Form MGT-14 within prescribed timelines.'],
+            ['icon_class' => 'fas fa-map-marker-alt', 'title' => 'Registered Office Change', 'text' => 'Address change filed correctly with the ROC — within the same city, state, or across states — with all resolutions and Form INC-22 or INC-23.'],
+            ['icon_class' => 'fas fa-file-alt', 'title' => 'ROC Filings', 'text' => 'Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — prepared accurately and submitted before due dates.'],
+            ['icon_class' => 'fas fa-times-circle', 'title' => 'Company Closure / Winding Up', 'text' => 'Managed strike-off or voluntary winding up — resolutions, indemnity bonds, compliance clearances, and STK-2 filing handled completely.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-card-section.php';
+        ?>
 
-        <section class="caaft-ar-how py-90" aria-labelledby="cr-how-heading">
-            <div class="container">
-                <header class="caaft-ar-how-header">
-                    <p class="caaft-ar-how-eyebrow">How it works</p>
-                    <h2 id="cr-how-heading" class="caaft-ar-how-h2">How CAAFT works</h2>
-                </header>
-                <ol class="caaft-ar-how-timeline">
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 1 – Compliance Audit</h3>
-                            <p class="caaft-ar-how-step-text">The entity's filed returns, pending obligations, lapsed deadlines, and existing notices are reviewed to establish a clear baseline.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 2 – Calendar Setup</h3>
-                            <p class="caaft-ar-how-step-text">A dedicated compliance calendar is built, mapping every due date — annual returns, board meetings, KYC filings, and event-based requirements.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 3 – Document Collection</h3>
-                            <p class="caaft-ar-how-step-text">A focused checklist of required documents — financials, resolutions, or updated details — is sent well ahead of each deadline.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 4 – Preparation &amp; Review</h3>
-                            <p class="caaft-ar-how-step-text">The filing is prepared, resolutions drafted, and an internal review completed before anything is submitted.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 5 – Filing &amp; Acknowledgement</h3>
-                            <p class="caaft-ar-how-step-text">The filing is submitted on the MCA or ROC portal, and the acknowledgement or SRN is shared with the client immediately.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 6 – Ongoing Monitoring</h3>
-                            <p class="caaft-ar-how-step-text">The compliance calendar is monitored year-round — with proactive alerts and handling of any ROC correspondence as it arises.</p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-        </section>
+        <?php
+        $why_choose_caaft_heading_id = 'cr-why-heading';
+        $why_choose_caaft_title = 'WHY CHOOSE CAAFT';
+        $why_choose_caaft_intro = '';
+        $why_choose_caaft_section_class = 'why-choose-caaft py-90';
+        $why_choose_caaft_items = [
+            ['icon_class' => 'fas fa-clock', 'title' => 'Never Miss a Deadline', 'text' => 'A compliance calendar is maintained for every client entity — with proactive preparation well before due dates.'],
+            ['icon_class' => 'fas fa-layer-group', 'title' => 'All Entity Types, One Firm', 'text' => 'Compliance across every structure — Private Limited, LLP, OPC, Partnership, and Sole Proprietorship — is managed under one roof.'],
+            ['icon_class' => 'fas fa-landmark', 'title' => 'Experts Who Know the ROC', 'text' => 'Hands-on experience with MCA filings and ROC procedures ensures every filing is done right the first time.'],
+            ['icon_class' => 'fas fa-shield-alt', 'title' => 'Penalties Avoided, Not Just Managed', 'text' => 'A proactive approach prevents late fees and director liability — not just helps clients pay them after the fact.'],
+            ['icon_class' => 'fas fa-folder-open', 'title' => 'Complete Documentation Trail', 'text' => 'Every resolution, filing, and compliance record is maintained and accessible — always ready for audits or due diligence.'],
+            ['icon_class' => 'fas fa-life-ring', 'title' => 'Post-Filing Support', 'text' => 'ROC queries, returned filings, and clarifications are handled as part of the engagement — not treated as extras.'],
+        ];
+        include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+        ?>
 
-        <section id="get-in-touch" class="caaft-ar-get-in-touch py-90" aria-labelledby="cr-git-heading">
-            <div class="container">
-                <div class="row align-items-stretch g-4 g-xl-5">
-                    <div class="col-lg-6 caaft-ar-git-col-main">
-                        <p class="caaft-ar-git-eyebrow">Get in touch</p>
-                        <h2 id="cr-git-heading" class="caaft-ar-git-h2">
-                            Compliance Off Your Plate. Penalties Off Your Record.
-                        </h2>
-                        <p class="caaft-ar-git-lead">
-                            Whether you need to clear a backlog, stay on top of your annual filings, or handle a specific ROC change - CAAFT manages it all with precision and accountability. We respond within one business day.
-                        </p>
-                        <div class="caaft-ar-git-ctas">
-                            <a href="/contact#contact_us" class="theme-btn caaft-ar-git-btn-call">Start Your Compliance Filing</a>
-                            <a href="tel:+918870078870" class="theme-btn">Call Us: +91 88700 78870</a>
-                            <a href="https://api.whatsapp.com/send?phone=918870078870" class="caaft-ar-git-btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us</a>
-                            <a href="#caaft-cr-enquiry-form" class="theme-btn theme-btn2 caaft-ar-git-btn-simplify">Clear Your Pending Filings</a>
-                        </div>
-                        <p class="caaft-ar-git-note">No commitment required. Just a focused compliance review with an experienced CA team.</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="caaft-ar-git-cards d-flex flex-column">
-                            <div class="caaft-ar-git-card">
-                                <span class="caaft-ar-git-card-icon" aria-hidden="true"><i class="fas fa-phone"></i></span>
-                                <div class="caaft-ar-git-card-body">
-                                    <span class="caaft-ar-git-card-label">Call us</span>
-                                    <a href="tel:+918870078870" class="caaft-ar-git-card-value">+91 88700 78870</a>
-                                    <a href="tel:+919944617891" class="caaft-ar-git-card-value caaft-ar-git-card-value--second">+91 99446 17891</a>
-                                </div>
-                            </div>
-                            <div class="caaft-ar-git-card">
-                                <span class="caaft-ar-git-card-icon" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
-                                <div class="caaft-ar-git-card-body">
-                                    <span class="caaft-ar-git-card-label">WhatsApp us</span>
-                                    <a href="https://api.whatsapp.com/send?phone=918870078870" class="caaft-ar-git-card-value" target="_blank" rel="noopener noreferrer">+91 88700 78870</a>
-                                    <span class="caaft-ar-git-card-hint">Usually responds within the hour</span>
-                                </div>
-                            </div>
-                            <div class="caaft-ar-git-card">
-                                <span class="caaft-ar-git-card-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
-                                <div class="caaft-ar-git-card-body">
-                                    <span class="caaft-ar-git-card-label">Email us</span>
-                                    <a href="mailto:info@caaft.com" class="caaft-ar-git-card-value">info@caaft.com</a>
-                                    <a href="mailto:services@caaft.com" class="caaft-ar-git-card-value caaft-ar-git-card-value--second">services@caaft.com</a>
-                                    <span class="caaft-ar-git-card-hint">We respond within 1 business day</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_steps_heading_id = 'cr-how-heading';
+        $caaft_steps_title = 'HOW CAAFT WORKS';
+        $caaft_steps_numbered = true;
+        $caaft_steps_items = [
+            ['title' => 'Compliance Audit', 'text' => "The entity's filed returns, pending obligations, lapsed deadlines, and existing notices are reviewed to establish a clear baseline."],
+            ['title' => 'Calendar Setup', 'text' => 'A dedicated compliance calendar is built, mapping every due date — annual returns, board meetings, KYC filings, and event-based requirements.'],
+            ['title' => 'Document Collection', 'text' => 'A focused checklist of required documents — financials, resolutions, or updated details — is sent well ahead of each deadline.'],
+            ['title' => 'Preparation & Review', 'text' => 'The filing is prepared, resolutions drafted, and an internal review completed before anything is submitted.'],
+            ['title' => 'Filing & Acknowledgement', 'text' => 'The filing is submitted on the MCA or ROC portal and the acknowledgement or SRN is shared with the client immediately.'],
+            ['title' => 'Ongoing Monitoring', 'text' => 'The compliance calendar is monitored year-round — with proactive alerts and handling of any ROC correspondence as it arises.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+        ?>
 
-        <div id="faq" class="faq-area are_sections_faq py-120 caaft-ar-faq-wrap" aria-labelledby="cr-faq-heading">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="faq-right wow fadeInUp" data-wow-delay=".25s">
-                            <div class="site-heading text-center mb-3">
-                                <h2 id="cr-faq-heading" class="site-title my-3">Frequently Asked Questions:</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="frequent-question col-lg-10">
-                        <div class="accordion wow fadeInRight" data-wow-delay=".25s" id="accordionComplianceFaq">
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="crFaqHeading1">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#crFaqCollapse1" aria-expanded="true" aria-controls="crFaqCollapse1">
-                                        01. Can CAAFT manage compliance for multiple companies under the same group?
-                                    </button>
-                                </p>
-                                <div id="crFaqCollapse1" class="accordion-collapse collapse show" aria-labelledby="crFaqHeading1" data-bs-parent="#accordionComplianceFaq">
-                                    <div class="accordion-body">Yes. We manage compliance across multiple entities for the same business group - with a consolidated calendar, unified communication, and a single point of contact for all filings. Many of our clients run 2–4 entities and prefer to consolidate their compliance under one firm.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="crFaqHeading2">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#crFaqCollapse2" aria-expanded="false" aria-controls="crFaqCollapse2">
-                                        02. Will I be reminded before every deadline - or do I need to track it myself?
-                                    </button>
-                                </p>
-                                <div id="crFaqCollapse2" class="accordion-collapse collapse" aria-labelledby="crFaqHeading2" data-bs-parent="#accordionComplianceFaq">
-                                    <div class="accordion-body">You don't track anything. We maintain your compliance calendar and send you advance reminders before every due date - along with a clear list of what we need from you. Your only job is to respond to our checklist.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="crFaqHeading3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#crFaqCollapse3" aria-expanded="false" aria-controls="crFaqCollapse3">
-                                        03. What if I'm not sure which filings my company has missed?
-                                    </button>
-                                </p>
-                                <div id="crFaqCollapse3" class="accordion-collapse collapse" aria-labelledby="crFaqHeading3" data-bs-parent="#accordionComplianceFaq">
-                                    <div class="accordion-body">That's exactly what our free compliance review is for. We check your MCA records, identify what has been filed, what is overdue, and what penalties have accumulated - and give you a clear action plan before any commitment is made.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="crFaqHeading4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#crFaqCollapse4" aria-expanded="false" aria-controls="crFaqCollapse4">
-                                        04. Do I need to be physically present for any of the filings?
-                                    </button>
-                                </p>
-                                <div id="crFaqCollapse4" class="accordion-collapse collapse" aria-labelledby="crFaqHeading4" data-bs-parent="#accordionComplianceFaq">
-                                    <div class="accordion-body">No. All ROC and MCA filings are done digitally. Where physical signatures are required - such as on resolutions or indemnity bonds - we courier the documents to you, get them signed, and handle everything else remotely.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="crFaqHeading5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#crFaqCollapse5" aria-expanded="false" aria-controls="crFaqCollapse5">
-                                        05. How quickly can CAAFT start managing our compliance?
-                                    </button>
-                                </p>
-                                <div id="crFaqCollapse5" class="accordion-collapse collapse" aria-labelledby="crFaqHeading5" data-bs-parent="#accordionComplianceFaq">
-                                    <div class="accordion-body">We can onboard your entity within 2–3 working days. After the initial compliance review, we set up your calendar, assign a dedicated manager, and begin handling upcoming obligations immediately.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="crFaqHeading6">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#crFaqCollapse6" aria-expanded="false" aria-controls="crFaqCollapse6">
-                                        06. We recently changed our CA. Will CAAFT need access to our past filings?
-                                    </button>
-                                </p>
-                                <div id="crFaqCollapse6" class="accordion-collapse collapse" aria-labelledby="crFaqHeading6" data-bs-parent="#accordionComplianceFaq">
-                                    <div class="accordion-body">Yes - we will need access to your past MCA filings and company records to build an accurate compliance picture. We guide you through exactly what to share and handle the transition smoothly, without interrupting any ongoing obligations.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="crFaqHeading7">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#crFaqCollapse7" aria-expanded="false" aria-controls="crFaqCollapse7">
-                                        07. Is there a minimum company size or turnover to engage CAAFT for compliance?
-                                    </button>
-                                </p>
-                                <div id="crFaqCollapse7" class="accordion-collapse collapse" aria-labelledby="crFaqHeading7" data-bs-parent="#accordionComplianceFaq">
-                                    <div class="accordion-body">No. We work with companies of all sizes - from newly incorporated entities with no turnover to established businesses with complex compliance requirements. Our engagement is scoped to your entity type and volume of filings, not your size.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="crFaqHeading8">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#crFaqCollapse8" aria-expanded="false" aria-controls="crFaqCollapse8">
-                                        08. What happens if the ROC rejects or returns a filing we submitted?
-                                    </button>
-                                </p>
-                                <div id="crFaqCollapse8" class="accordion-collapse collapse" aria-labelledby="crFaqHeading8" data-bs-parent="#accordionComplianceFaq">
-                                    <div class="accordion-body">We handle it. If any filing is returned, queried, or requires resubmission, we address it as part of the engagement - at no additional charge for standard corrections. You will not receive a rejection notice and be left to figure it out yourself.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        $caaft_git_section_id = 'get-in-touch';
+        $caaft_git_heading_id = 'cr-git-heading';
+        $caaft_git_title = 'Compliance Off Your Plate. Penalties Off Your Record.';
+        $caaft_git_lead = 'Whether you need to clear a backlog, stay on top of your annual filings, or handle a specific ROC change - CAAFT manages it all with precision and accountability. We respond within one business day.';
+        $caaft_git_eyebrow = 'Get in touch';
+        $caaft_git_note = 'No commitment required. Just a focused compliance review with an experienced CA team.';
+        $caaft_git_actions = [
+            ['href' => '/contact#contact_us', 'class' => 'theme-btn caaft-ar-git-btn-call', 'label' => 'Start Your Compliance Filing'],
+            ['href' => 'tel:+918870078870', 'class' => 'theme-btn', 'label' => 'Call Us: +91 88700 78870'],
+            ['href' => 'https://api.whatsapp.com/send?phone=918870078870', 'class' => 'caaft-ar-git-btn-outline', 'label' => '<i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us', 'target' => '_blank', 'rel' => 'noopener noreferrer'],
+            ['href' => '#caaft-cr-enquiry-form-inner', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Clear Your Pending Filings'],
+        ];
+        $caaft_git_cards = [
+            ['icon_class' => 'fas fa-phone', 'label' => 'Call us', 'values' => [['href' => 'tel:+918870078870', 'text' => '+91 88700 78870'], ['href' => 'tel:+919944617891', 'text' => '+91 99446 17891']]],
+            ['icon_class' => 'fab fa-whatsapp', 'label' => 'WhatsApp us', 'values' => [['href' => 'https://api.whatsapp.com/send?phone=918870078870', 'text' => '+91 88700 78870', 'target' => '_blank', 'rel' => 'noopener noreferrer']], 'hint' => 'Usually responds within the hour'],
+            ['icon_class' => 'fas fa-envelope', 'label' => 'Email us', 'values' => [['href' => 'mailto:info@caaft.com', 'text' => 'info@caaft.com'], ['href' => 'mailto:services@caaft.com', 'text' => 'services@caaft.com']], 'hint' => 'We respond within 1 business day'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-get-in-touch.php';
+        ?>
+
+        <?php
+        $caaft_faq_section_id = 'faq';
+        $caaft_faq_heading_id = 'cr-faq-heading';
+        $caaft_faq_title = 'Frequently Asked Questions:';
+        $caaft_faq_accordion_id = 'accordionComplianceFaq';
+        $caaft_faq_prefix = 'crFaq';
+        $caaft_faq_pad_numbers = true;
+        $caaft_faq_items = [
+            ['question' => 'Can CAAFT manage compliance for multiple companies under the same group?', 'answer' => 'Yes. We manage compliance across multiple entities for the same business group - with a consolidated calendar, unified communication, and a single point of contact for all filings. Many of our clients run 2–4 entities and prefer to consolidate their compliance under one firm.'],
+            ['question' => "Will I be reminded before every deadline - or do I need to track it myself?", 'answer' => "You don't track anything. We maintain your compliance calendar and send you advance reminders before every due date - along with a clear list of what we need from you. Your only job is to respond to our checklist."],
+            ['question' => "What if I'm not sure which filings my company has missed?", 'answer' => "That's exactly what our free compliance review is for. We check your MCA records, identify what has been filed, what is overdue, and what penalties have accumulated - and give you a clear action plan before any commitment is made."],
+            ['question' => 'Do I need to be physically present for any of the filings?', 'answer' => 'No. All ROC and MCA filings are done digitally. Where physical signatures are required - such as on resolutions or indemnity bonds - we courier the documents to you, get them signed, and handle everything else remotely.'],
+            ['question' => 'How quickly can CAAFT start managing our compliance?', 'answer' => 'We can onboard your entity within 2–3 working days. After the initial compliance review, we set up your calendar, assign a dedicated manager, and begin handling upcoming obligations immediately.'],
+            ['question' => 'We recently changed our CA. Will CAAFT need access to our past filings?', 'answer' => 'Yes - we will need access to your past MCA filings and company records to build an accurate compliance picture. We guide you through exactly what to share and handle the transition smoothly, without interrupting any ongoing obligations.'],
+            ['question' => 'Is there a minimum company size or turnover to engage CAAFT for compliance?', 'answer' => 'No. We work with companies of all sizes - from newly incorporated entities with no turnover to established businesses with complex compliance requirements. Our engagement is scoped to your entity type and volume of filings, not your size.'],
+            ['question' => 'What happens if the ROC rejects or returns a filing we submitted?', 'answer' => 'We handle it. If any filing is returned, queried, or requires resubmission, we address it as part of the engagement - at no additional charge for standard corrections. You will not receive a rejection notice and be left to figure it out yourself.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-faq.php';
+        ?>
     </main>
 
     <?php include "footer.php"; ?>
