@@ -11,6 +11,7 @@
  *
  * Optional:
  *   $caaft_delivered_section_class (string) default "bk-delivered py-90 caaft-get-delivered"
+ *   $caaft_delivered_intro (string)
  */
 if (!isset($caaft_delivered_heading_id, $caaft_delivered_title, $caaft_delivered_items) || !is_array($caaft_delivered_items) || $caaft_delivered_items === []) {
     trigger_error('caaft-get-delivered.php: set required delivered variables before including', E_USER_WARNING);
@@ -21,10 +22,14 @@ $caaft_delivered_title = (string) $caaft_delivered_title;
 $caaft_delivered_section_class = isset($caaft_delivered_section_class) && $caaft_delivered_section_class !== ''
     ? (string) $caaft_delivered_section_class
     : 'bk-delivered py-90 caaft-get-delivered';
+$caaft_delivered_intro = isset($caaft_delivered_intro) ? (string) $caaft_delivered_intro : '';
 ?>
 <section class="<?php echo htmlspecialchars($caaft_delivered_section_class, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars($caaft_delivered_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
         <h2 id="<?php echo htmlspecialchars($caaft_delivered_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="bk-section-title"><?php echo htmlspecialchars($caaft_delivered_title, ENT_QUOTES, 'UTF-8'); ?></h2>
+        <?php if ($caaft_delivered_intro !== '') : ?>
+            <p class="bk-overview-text"><?php echo htmlspecialchars($caaft_delivered_intro, ENT_QUOTES, 'UTF-8'); ?></p>
+        <?php endif; ?>
         <div class="bk-delivered-table" role="list">
             <?php foreach ($caaft_delivered_items as $caaft_delivered_index => $caaft_delivered_item) : ?>
                 <article class="bk-delivered-row" role="listitem">

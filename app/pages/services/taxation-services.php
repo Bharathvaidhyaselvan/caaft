@@ -24,24 +24,25 @@
     <meta name="twitter:image" content="https://caaft.com/assets/img/tax-planning-management.webp">
     <?php include "header-top.php"; ?>
     <style>
-        .tax-service-tabs.nav {
+        .page-taxation-services .tax-service-tabs.nav {
             gap: 10px;
+            margin-bottom: 1.5rem;
         }
 
-        .tax-service-tabs .nav-link {
+        .page-taxation-services .tax-service-tabs .nav-link {
             border: 1px solid #e3e8ef;
             background: #ffffff;
             color: #0a1d37;
-            border-radius: 8px;
+            border-radius: 4px;
             font-weight: 600;
             font-size: 14px;
             line-height: 1;
             padding: 11px 16px;
         }
 
-        .tax-service-tabs .nav-link.active,
-        .tax-service-tabs .nav-link:focus,
-        .tax-service-tabs .nav-link:hover {
+        .page-taxation-services .tax-service-tabs .nav-link.active,
+        .page-taxation-services .tax-service-tabs .nav-link:focus,
+        .page-taxation-services .tax-service-tabs .nav-link:hover {
             background: #0a1d37;
             border-color: #0a1d37;
             color: #ffffff;
@@ -189,168 +190,124 @@
     </script>
 </head>
 
-<body class="home-3 page-accounting-reporting page-taxation-services">
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-    <div class="header-sections">
-        <?php include "header.php"; ?>
-    </div>
-
-    <div class="search-popup">
-        <button class="close-search"><span class="far fa-times"></span></button>
-        <form action="#">
-            <div class="form-group">
-                <input type="search" name="search-field" class="form-control" placeholder="Search Here..." required>
-                <button type="submit"><i class="far fa-search"></i></button>
-            </div>
-        </form>
-    </div>
-
+<body class="home-3 page-accounting-reporting page-bookkeeping-accounting page-taxation-services">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class="header-sections"><?php include "header.php"; ?></div>
     <main class="main">
-        <section class="hero-section hs-3 caaft-ar-hero" aria-labelledby="tax-hero-h1" id="caaft-tax-hero">
-            <div class="hero-single singles_forms_frames caaft-ar-hero-single">
-                <div class="container">
-                    <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
-                        <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
-                            <h1 id="tax-hero-h1" class="caaft-ar-hero-h1">TAXATION SERVICES</h1>
-                            <h2 class="caaft-ar-hero-h2">Expert Taxation Services That Keep You <em>Compliant, Strategic &amp; Penalty-Free</em></h2>
-                            <p class="caaft-ar-hero-lead">
-                                From Income Tax Returns to GST compliance, CAAFT's Chartered Accountants handle every obligation with precision — so you never miss a deadline or face unnecessary tax exposure. Taxation isn't just about filing returns; it's about minimising liability within the law while staying fully compliant. CAAFT delivers reliable, audit-ready tax services for businesses and individuals across Chennai.
-                            </p>
-                            <div class="caaft-ar-hero-ctas">
-                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Get a Free Tax Consultation <i class="fas fa-arrow-right"></i></a>
-                                <a href="#tax-offer-income-heading" class="theme-btn theme-btn2 caaft-ar-hero-btn-secondary">Explore Our Services <i class="fas fa-arrow-down"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="hero-img-wrap caaft-ar-hero-img-wrap" id="caaft-tax-enquiry-form">
-                                <?php
-                                $caaft_enquiry_service = 'Taxation Services';
-                                $caaft_enquiry_action = '/incometax-services-mail.php';
-                                $caaft_enquiry_title = 'Tell Us Your Tax Needs';
-                                $caaft_enquiry_form_id = 'caaft-tax-enquiry-form-inner';
-                                $caaft_enquiry_input_id_prefix = 'tax';
-                                include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_hero_id = 'tax-hero-h1';
+        $caaft_hero_h1 = 'TAXATION SERVICES';
+        $caaft_hero_h2_before = 'Expert Taxation Services That Keep You ';
+        $caaft_hero_h2_highlight = 'Compliant, Strategic & Penalty-Free';
+        $caaft_hero_h2_after = '';
+        $caaft_hero_lead_paragraphs = [
+            "From Income Tax Returns to GST compliance, CAAFT's Chartered Accountants handle every obligation with precision — so you never miss a deadline or face unnecessary tax exposure. Taxation isn't just about filing returns; it's about minimising liability within the law while staying fully compliant. CAAFT delivers reliable, audit-ready tax services for businesses and individuals across Chennai.",
+        ];
+        $caaft_hero_primary_cta_label = 'Get a Free Tax Consultation';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_secondary_cta_label = 'Explore Our Services';
+        $caaft_hero_secondary_cta_href = '#tax-income-services-heading';
 
-        <section class="caaft-ar-trust-indicators" aria-label="Trust indicators">
-            <div class="container">
-                <div class="caaft-ar-trust-grid">
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="far fa-check-circle"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Rated 4.8/5 <span class="caaft-ar-trust-stars" aria-hidden="true">⭐</span></h3>
-                            <p>on Google</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>100+</h3>
-                            <p>Businesses Served</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-calendar-check"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Zero Missed</h3>
-                            <p>Deadlines</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Audit-Ready Filings</h3>
-                            <p>Always</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-user-tie"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Dedicated CA</h3>
-                            <p>for Every Client</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+        $caaft_enquiry_service = 'Taxation Services';
+        $caaft_enquiry_action = '/incometax-services-mail.php';
+        $caaft_enquiry_title = 'Tell Us Your Tax Needs';
+        $caaft_enquiry_form_id = 'caaft-tax-enquiry-form-inner';
+        $caaft_enquiry_input_id_prefix = 'tax';
+        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+        ?>
+
+        <?php
+        $caaft_trust_items = [
+            [
+                'icon_class' => 'far fa-check-circle',
+                'title' => 'Rated 4.8/5 ⭐',
+                'description' => 'on Google',
+            ],
+            [
+                'icon_class' => 'fas fa-briefcase',
+                'title' => '100+',
+                'description' => 'Businesses Served',
+            ],
+            [
+                'icon_class' => 'fas fa-calendar-check',
+                'title' => 'Zero Missed',
+                'description' => 'Deadlines',
+            ],
+            [
+                'icon_class' => 'fas fa-file-alt',
+                'title' => 'Audit-Ready Filings',
+                'description' => 'Always',
+            ],
+            [
+                'icon_class' => 'fas fa-user-tie',
+                'title' => 'Dedicated CA',
+                'description' => 'for Every Client',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/service-trust-indicators.php';
+        ?>
 
         <section class="caaft-ar-what-we-offer py-90" aria-labelledby="tax-offer-tabs-heading">
             <div class="container">
-                <header class="caaft-ar-offer-header">
-                    <p class="caaft-ar-offer-eyebrow">Our services</p>
-                    <h2 id="tax-offer-tabs-heading" class="caaft-ar-offer-h2">Taxation Service Categories</h2>
-                </header>
-
-                <ul class="nav nav-pills mb-4 tax-service-tabs" id="taxServiceTabs" role="tablist">
+                <ul class="nav nav-pills tax-service-tabs" id="taxServiceTabs" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="income-tax-tab" data-bs-toggle="tab" data-bs-target="#income-tax-pane" type="button" role="tab" aria-controls="income-tax-pane" aria-selected="true">Income Tax</button>
+                        <button class="nav-link active" id="income-tax-tab" data-bs-toggle="tab" data-bs-target="#income-tax-pane" type="button" role="tab" aria-controls="income-tax-pane" aria-selected="true"><i class="fas fa-receipt me-2" aria-hidden="true"></i>Income Tax</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="gst-tab" data-bs-toggle="tab" data-bs-target="#gst-pane" type="button" role="tab" aria-controls="gst-pane" aria-selected="false">GST</button>
+                        <button class="nav-link" id="gst-tab" data-bs-toggle="tab" data-bs-target="#gst-pane" type="button" role="tab" aria-controls="gst-pane" aria-selected="false"><i class="fas fa-building-columns me-2" aria-hidden="true"></i>GST</button>
                     </li>
                 </ul>
 
                 <div class="tab-content" id="taxServiceTabsContent">
                     <div class="tab-pane fade show active" id="income-tax-pane" role="tabpanel" aria-labelledby="income-tax-tab" tabindex="0">
                         <header class="caaft-ar-offer-header">
-                            <p class="caaft-ar-offer-eyebrow">Income tax</p>
-                            <h2 id="tax-offer-income-heading" class="caaft-ar-offer-h2">Income Tax Services</h2>
-                            <p class="caaft-ar-offer-intro">
-                                Comprehensive income tax support - from routine return filing to complex audits and strategic planning - ensuring full compliance while identifying every legitimate saving available to you.
-                            </p>
+                            <h2 id="tax-income-services-heading" class="caaft-ar-offer-h2">INCOME TAX SERVICES</h2>
+                            <p class="caaft-ar-offer-intro">Comprehensive income tax support - from routine return filing to complex audits and strategic planning - ensuring full compliance while identifying every legitimate saving available to you.</p>
                         </header>
                         <div class="row g-4 caaft-ar-offer-grid">
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-3">
                                 <article class="caaft-ar-offer-card">
                                     <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
                                     <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-file-invoice-dollar"></i></span>
                                     <h3 class="caaft-ar-offer-card-title">Income Tax Filing</h3>
-                                    <p class="caaft-ar-offer-card-text">Accurate, timely ITR filing for individuals, firms, and companies — with maximum deductions claimed and zero errors.</p>
-                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                    <p class="caaft-ar-offer-card-text">Accurate, timely ITR filing for individuals, firms, and companies - with maximum deductions claimed and zero errors.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                                 </article>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-3">
                                 <article class="caaft-ar-offer-card">
                                     <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
                                     <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-receipt"></i></span>
                                     <h3 class="caaft-ar-offer-card-title">TDS Return Filing</h3>
-                                    <p class="caaft-ar-offer-card-text">End-to-end quarterly TDS compliance — from challan payment to Form 24Q/26Q filing and TDS certificate issuance.</p>
-                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                    <p class="caaft-ar-offer-card-text">End-to-end quarterly TDS compliance - from challan payment to Form 24Q/26Q filing and TDS certificate issuance.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                                 </article>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-3">
                                 <article class="caaft-ar-offer-card">
                                     <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
                                     <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-search-dollar"></i></span>
                                     <h3 class="caaft-ar-offer-card-title">Tax Audit</h3>
                                     <p class="caaft-ar-offer-card-text">Thorough Section 44AB tax audits conducted by experienced CAs, with complete Form 3CA/3CB and 3CD preparation.</p>
-                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                                 </article>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-3">
                                 <article class="caaft-ar-offer-card">
                                     <span class="caaft-ar-offer-num" aria-hidden="true">04</span>
                                     <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-chart-pie"></i></span>
                                     <h3 class="caaft-ar-offer-card-title">Tax Planning</h3>
                                     <p class="caaft-ar-offer-card-text">Forward-looking, legally sound tax planning that reduces your annual liability through smart structuring and timely investments.</p>
-                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                                 </article>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-3">
                                 <article class="caaft-ar-offer-card">
                                     <span class="caaft-ar-offer-num" aria-hidden="true">05</span>
                                     <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-balance-scale"></i></span>
                                     <h3 class="caaft-ar-offer-card-title">Tax Assessment &amp; Appeal Support</h3>
-                                    <p class="caaft-ar-offer-card-text">End-to-end support for income tax assessments, scrutiny notices, and appeals — with expert representation before CIT(A) and ITAT.</p>
-                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                    <p class="caaft-ar-offer-card-text">End-to-end support for income tax assessments, scrutiny notices, and appeals - with expert representation before CIT(A) and ITAT.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                                 </article>
                             </div>
                         </div>
@@ -358,65 +315,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <div class="tab-pane fade" id="gst-pane" role="tabpanel" aria-labelledby="gst-tab" tabindex="0">
                         <header class="caaft-ar-offer-header">
-                            <p class="caaft-ar-offer-eyebrow">GST</p>
-                            <h2 id="tax-offer-gst-heading" class="caaft-ar-offer-h2">GST Services</h2>
-                            <p class="caaft-ar-offer-intro">
-                                End-to-end GST management — from registration and monthly filings to LUT submissions and clean cancellation — keeping your GST standing compliant at every stage.
-                            </p>
+                            <h2 id="tax-gst-services-heading" class="caaft-ar-offer-h2">GST SERVICES</h2>
+                            <p class="caaft-ar-offer-intro">End-to-end GST management - from registration and monthly filings to LUT submissions and clean cancellation - keeping your GST standing compliant at every stage.</p>
                         </header>
                         <div class="row g-4 caaft-ar-offer-grid">
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-3">
                                 <article class="caaft-ar-offer-card">
                                     <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
                                     <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-id-card"></i></span>
                                     <h3 class="caaft-ar-offer-card-title">GST Registration</h3>
-                                    <p class="caaft-ar-offer-card-text">Fast, accurate GSTIN registration for new businesses — with the right category, HSN/SAC codes, and zero back-and-forth with the portal.</p>
-                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                    <p class="caaft-ar-offer-card-text">Fast, accurate GSTIN registration for new businesses - with the right category, HSN/SAC codes, and zero back-and-forth with the portal.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                                 </article>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-3">
                                 <article class="caaft-ar-offer-card">
                                     <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
                                     <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-file-invoice"></i></span>
                                     <h3 class="caaft-ar-offer-card-title">GST Returns</h3>
-                                    <p class="caaft-ar-offer-card-text">On-time GSTR-1, GSTR-3B, and GSTR-9 filing with ITC reconciliation — so you never attract late fees or lose eligible credits.</p>
-                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                    <p class="caaft-ar-offer-card-text">On-time GSTR-1, GSTR-3B, and GSTR-9 filing with ITC reconciliation - so you never attract late fees or lose eligible credits.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                                 </article>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-3">
                                 <article class="caaft-ar-offer-card">
                                     <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
                                     <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-plane-departure"></i></span>
                                     <h3 class="caaft-ar-offer-card-title">GST LUT Filing</h3>
                                     <p class="caaft-ar-offer-card-text">Annual Letter of Undertaking filed before the financial year begins, so your exports stay IGST-free and cash-flow efficient.</p>
-                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                                 </article>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-3">
                                 <article class="caaft-ar-offer-card">
                                     <span class="caaft-ar-offer-num" aria-hidden="true">04</span>
                                     <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-ban"></i></span>
                                     <h3 class="caaft-ar-offer-card-title">GST Cancellation</h3>
-                                    <p class="caaft-ar-offer-card-text">Clean, complete GST deregistration — pending returns cleared, ITC reversed, and GSTR-10 filed, with no loose ends left behind.</p>
-                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                    <p class="caaft-ar-offer-card-text">Clean, complete GST deregistration - pending returns cleared, ITC reversed, and GSTR-10 filed, with no loose ends left behind.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                                 </article>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-3">
                                 <article class="caaft-ar-offer-card">
                                     <span class="caaft-ar-offer-num" aria-hidden="true">05</span>
                                     <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-lightbulb"></i></span>
                                     <h3 class="caaft-ar-offer-card-title">GST Advisory &amp; Compliance</h3>
-                                    <p class="caaft-ar-offer-card-text">Practical, up-to-date GST guidance on input tax credit, reverse charge, e-invoicing, and sector-specific compliance — so your business stays audit-ready at all times.</p>
-                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                    <p class="caaft-ar-offer-card-text">Practical, up-to-date GST guidance on input tax credit, reverse charge, e-invoicing, and sector-specific compliance - so your business stays audit-ready at all times.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                                 </article>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-3">
                                 <article class="caaft-ar-offer-card">
                                     <span class="caaft-ar-offer-num" aria-hidden="true">06</span>
                                     <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-gavel"></i></span>
                                     <h3 class="caaft-ar-offer-card-title">GST Assessment &amp; Appeal Support</h3>
-                                    <p class="caaft-ar-offer-card-text">End-to-end support for GST scrutiny, demand notices, and appeals — with expert representation before the GST authorities and Appellate Authority.</p>
-                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Enquire now <i class="fas fa-arrow-right"></i></a>
+                                    <p class="caaft-ar-offer-card-text">End-to-end support for GST scrutiny, demand notices, and appeals - with expert representation before the GST authorities and Appellate Authority.</p>
+                                    <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                                 </article>
                             </div>
                         </div>
@@ -425,253 +379,184 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
 
-        <section class="caaft-ar-why py-90" aria-labelledby="tax-why-heading">
-            <div class="container">
-                <header class="caaft-ar-why-header">
-                    <p class="caaft-ar-why-eyebrow">Why choose us</p>
-                    <h2 id="tax-why-heading" class="caaft-ar-why-h2">Why choose CAAFT</h2>
-                </header>
-                <div class="caaft-ar-why-panel">
-                    <div class="caaft-ar-why-grid">
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">01</span>
-                            <h3 class="caaft-ar-why-title">Qualified Chartered Accountants</h3>
-                            <p class="caaft-ar-why-text">Every engagement is handled directly by experienced CAs — not juniors or assistants.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">02</span>
-                            <h3 class="caaft-ar-why-title">One Firm for All Tax Obligations</h3>
-                            <p class="caaft-ar-why-text">Income tax, TDS, and GST managed together — no coordination gaps, no conflicting advice.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">03</span>
-                            <h3 class="caaft-ar-why-title">Deadline-Driven Practice</h3>
-                            <p class="caaft-ar-why-text">Structured internal timelines ensure your filings are always submitted ahead of due dates.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">04</span>
-                            <h3 class="caaft-ar-why-title">Audit-Ready Documentation</h3>
-                            <p class="caaft-ar-why-text">Every return we file is backed by a complete working paper trail — ready if the department calls.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">05</span>
-                            <h3 class="caaft-ar-why-title">Transparent Fixed Pricing</h3>
-                            <p class="caaft-ar-why-text">Scope and fee agreed upfront — no surprise bills at year end.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <span class="caaft-ar-why-num" aria-hidden="true">06</span>
-                            <h3 class="caaft-ar-why-title">Proactive Communication</h3>
-                            <p class="caaft-ar-why-text">We alert you to deadlines, regulatory changes, and required actions before they become problems.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $why_choose_caaft_heading_id = 'tax-why-heading';
+        $why_choose_caaft_title = 'WHY CHOOSE CAAFT';
+        $why_choose_caaft_intro = '';
+        $why_choose_caaft_section_class = 'why-choose-caaft py-90';
+        $why_choose_caaft_items = [
+            [
+                'icon_class' => 'fas fa-user-tie',
+                'title' => 'Qualified Chartered Accountants',
+                'text' => 'Every engagement is handled directly by experienced CAs - not juniors or assistants.',
+            ],
+            [
+                'icon_class' => 'fas fa-briefcase',
+                'title' => 'One Firm for All Tax Obligations',
+                'text' => 'Income tax, TDS, and GST managed together - no coordination gaps, no conflicting advice.',
+            ],
+            [
+                'icon_class' => 'fas fa-calendar-check',
+                'title' => 'Deadline-Driven Practice',
+                'text' => 'Structured internal timelines ensure your filings are always submitted ahead of due dates.',
+            ],
+            [
+                'icon_class' => 'fas fa-file-alt',
+                'title' => 'Audit-Ready Documentation',
+                'text' => 'Every return we file is backed by a complete working paper trail - ready if the department calls.',
+            ],
+            [
+                'icon_class' => 'fas fa-tag',
+                'title' => 'Transparent Fixed Pricing',
+                'text' => 'Scope and fee agreed upfront - no surprise bills at year end.',
+            ],
+            [
+                'icon_class' => 'fas fa-bell',
+                'title' => 'Proactive Communication',
+                'text' => 'We alert you to deadlines, regulatory changes, and required actions before they become problems.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+        ?>
 
-        <section class="caaft-ar-how py-90" aria-labelledby="tax-how-heading">
-            <div class="container">
-                <header class="caaft-ar-how-header">
-                    <p class="caaft-ar-how-eyebrow">How it works</p>
-                    <h2 id="tax-how-heading" class="caaft-ar-how-h2">How CAAFT works</h2>
-                </header>
-                <ol class="caaft-ar-how-timeline">
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 1 – Initial Consultation</h3>
-                            <p class="caaft-ar-how-step-text">The client's business, obligations, and goals are understood upfront — with any immediate compliance concerns flagged from the outset.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 2 – Document Collection</h3>
-                            <p class="caaft-ar-how-step-text">Financial data is collected through a structured checklist — physically or via a secure digital link.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 3 – Computation &amp; Review</h3>
-                            <p class="caaft-ar-how-step-text">The CA team prepares all calculations and returns, with a mandatory internal review before submission.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 4 – Client Sign-Off</h3>
-                            <p class="caaft-ar-how-step-text">A clear summary is shared for the client's review and approval before anything is filed.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 5 – Filing &amp; Confirmation</h3>
-                            <p class="caaft-ar-how-step-text">Submissions are made on the relevant portal, and the acknowledgement or ARN is sent to the client immediately.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">Step 6 – Ongoing Advisory</h3>
-                            <p class="caaft-ar-how-step-text">Post-filing notices are managed on the client's behalf, with timely updates on upcoming obligations.</p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-        </section>
+        <?php
+        $caaft_steps_heading_id = 'tax-how-heading';
+        $caaft_steps_title = 'HOW CAAFT WORKS';
+        $caaft_steps_numbered = true;
+        $caaft_steps_items = [
+            [
+                'title' => 'Initial Consultation',
+                'text' => "The client's business, obligations, and goals are understood upfront — with any immediate compliance concerns flagged from the outset.",
+            ],
+            [
+                'title' => 'Document Collection',
+                'text' => 'Financial data is collected through a structured checklist — physically or via a secure digital link.',
+            ],
+            [
+                'title' => 'Computation & Review',
+                'text' => 'The CA team prepares all calculations and returns, with a mandatory internal review before submission.',
+            ],
+            [
+                'title' => 'Client Sign-Off',
+                'text' => "A clear summary is shared for the client's review and approval before anything is filed.",
+            ],
+            [
+                'title' => 'Filing & Confirmation',
+                'text' => 'Submissions are made on the relevant portal, and the acknowledgement or ARN is sent to the client immediately.',
+            ],
+            [
+                'title' => 'Ongoing Advisory',
+                'text' => "Post-filing notices are managed on the client's behalf, with timely updates on upcoming obligations.",
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+        ?>
 
-        <section id="get-in-touch" class="caaft-ar-get-in-touch py-90" aria-labelledby="tax-git-heading">
-            <div class="container">
-                <div class="row align-items-stretch g-4 g-xl-5">
-                    <div class="col-lg-6 caaft-ar-git-col-main">
-                        <p class="caaft-ar-git-eyebrow">Get in touch</p>
-                        <h2 id="tax-git-heading" class="caaft-ar-git-h2">
-                            Let's Handle Your Taxes — So You Can Focus on <em>Your Business.</em>
-                        </h2>
-                        <p class="caaft-ar-git-lead">
-                            Whether you are filing your first return, managing a growing GST portfolio, or restructuring your tax position — CAAFT is ready to take ownership of your compliance. We respond within one business day.
-                        </p>
-                        <div class="caaft-ar-git-ctas">
-                            <a href="/contact#contact_us" class="theme-btn caaft-ar-git-btn-call">Start Your Tax Filing</a>
-                            <a href="tel:+918870078870" class="theme-btn">Call Us: +91 88700 78870</a>
-                            <a href="https://api.whatsapp.com/send?phone=918870078870" class="caaft-ar-git-btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us</a>
-                            <a href="#caaft-tax-enquiry-form" class="theme-btn theme-btn2 caaft-ar-git-btn-simplify">Tell Us Your Tax Needs</a>
-                        </div>
-                        <p class="caaft-ar-git-note">No commitment required. Just a conversation with a qualified CA who understands your business.</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="caaft-ar-git-cards d-flex flex-column">
-                            <div class="caaft-ar-git-card">
-                                <span class="caaft-ar-git-card-icon" aria-hidden="true"><i class="fas fa-phone"></i></span>
-                                <div class="caaft-ar-git-card-body">
-                                    <span class="caaft-ar-git-card-label">Call us</span>
-                                    <a href="tel:+918870078870" class="caaft-ar-git-card-value">+91 88700 78870</a>
-                                    <a href="tel:+919944617891" class="caaft-ar-git-card-value caaft-ar-git-card-value--second">+91 99446 17891</a>
-                                </div>
-                            </div>
-                            <div class="caaft-ar-git-card">
-                                <span class="caaft-ar-git-card-icon" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
-                                <div class="caaft-ar-git-card-body">
-                                    <span class="caaft-ar-git-card-label">WhatsApp us</span>
-                                    <a href="https://api.whatsapp.com/send?phone=918870078870" class="caaft-ar-git-card-value" target="_blank" rel="noopener noreferrer">+91 88700 78870</a>
-                                    <span class="caaft-ar-git-card-hint">Usually responds within the hour</span>
-                                </div>
-                            </div>
-                            <div class="caaft-ar-git-card">
-                                <span class="caaft-ar-git-card-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
-                                <div class="caaft-ar-git-card-body">
-                                    <span class="caaft-ar-git-card-label">Email us</span>
-                                    <a href="mailto:info@caaft.com" class="caaft-ar-git-card-value">info@caaft.com</a>
-                                    <a href="mailto:services@caaft.com" class="caaft-ar-git-card-value caaft-ar-git-card-value--second">services@caaft.com</a>
-                                    <span class="caaft-ar-git-card-hint">We respond within 1 business day</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_git_section_id = 'get-in-touch';
+        $caaft_git_heading_id = 'tax-git-heading';
+        $caaft_git_title = "Let's Handle Your Taxes - So You Can Focus on <em>Your Business.</em>";
+        $caaft_git_lead = "Whether you are filing your first return, managing a growing GST portfolio, or restructuring your tax position - CAAFT is ready to take ownership of your compliance. We respond within one business day.";
+        $caaft_git_eyebrow = 'Get in touch';
+        $caaft_git_note = 'No commitment required. Just a conversation with a qualified CA who understands your business.';
+        $caaft_git_actions = [
+            [
+                'href' => '/contact#contact_us',
+                'class' => 'theme-btn caaft-ar-git-btn-call',
+                'label' => 'Start Your Tax Filing',
+            ],
+            [
+                'href' => 'tel:+918870078870',
+                'class' => 'theme-btn',
+                'label' => 'Call Us: +91 88700 78870',
+            ],
+            [
+                'href' => 'https://api.whatsapp.com/send?phone=918870078870',
+                'class' => 'caaft-ar-git-btn-outline',
+                'label' => '<i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us',
+                'target' => '_blank',
+                'rel' => 'noopener noreferrer',
+            ],
+            [
+                'href' => '#caaft-tax-enquiry-form-inner',
+                'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify',
+                'label' => 'Tell Us Your Tax Needs',
+            ],
+        ];
+        $caaft_git_cards = [
+            [
+                'icon_class' => 'fas fa-phone',
+                'label' => 'Call us',
+                'values' => [
+                    ['href' => 'tel:+918870078870', 'text' => '+91 88700 78870'],
+                    ['href' => 'tel:+919944617891', 'text' => '+91 99446 17891'],
+                ],
+            ],
+            [
+                'icon_class' => 'fab fa-whatsapp',
+                'label' => 'WhatsApp us',
+                'values' => [
+                    ['href' => 'https://api.whatsapp.com/send?phone=918870078870', 'text' => '+91 88700 78870', 'target' => '_blank', 'rel' => 'noopener noreferrer'],
+                ],
+                'hint' => 'Usually responds within the hour',
+            ],
+            [
+                'icon_class' => 'fas fa-envelope',
+                'label' => 'Email us',
+                'values' => [
+                    ['href' => 'mailto:info@caaft.com', 'text' => 'info@caaft.com'],
+                    ['href' => 'mailto:services@caaft.com', 'text' => 'services@caaft.com'],
+                ],
+                'hint' => 'We respond within 1 business day',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-get-in-touch.php';
+        ?>
 
-        <div id="faq" class="faq-area are_sections_faq py-120 caaft-ar-faq-wrap" aria-labelledby="tax-faq-heading">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="faq-right wow fadeInUp" data-wow-delay=".25s">
-                            <div class="site-heading text-center mb-3">
-                                <h2 id="tax-faq-heading" class="site-title my-3">Frequently Asked Questions:</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="frequent-question col-lg-10">
-                        <div class="accordion wow fadeInRight" data-wow-delay=".25s" id="accordionTaxationFaq">
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="taxFaqHeading1">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#taxFaqCollapse1" aria-expanded="true" aria-controls="taxFaqCollapse1">
-                                        01. How do I get started with CAAFT - what does onboarding look like?
-                                    </button>
-                                </p>
-                                <div id="taxFaqCollapse1" class="accordion-collapse collapse show" aria-labelledby="taxFaqHeading1" data-bs-parent="#accordionTaxationFaq">
-                                    <div class="accordion-body">Simply book a free consultation. We assess your current compliance status, explain what's needed, and send you a tailored document checklist. Most clients are fully onboarded within 2–3 working days — no paperwork overload, no long waiting periods.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="taxFaqHeading2">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#taxFaqCollapse2" aria-expanded="false" aria-controls="taxFaqCollapse2">
-                                        02. Can CAAFT take over from my existing CA mid-year?
-                                    </button>
-                                </p>
-                                <div id="taxFaqCollapse2" class="accordion-collapse collapse" aria-labelledby="taxFaqHeading2" data-bs-parent="#accordionTaxationFaq">
-                                    <div class="accordion-body">Yes, we handle transitions at any point in the financial year. We collect your prior filings, reconcile all records, and pick up seamlessly — without disrupting your compliance calendar or creating gaps in your filing history.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="taxFaqHeading3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#taxFaqCollapse3" aria-expanded="false" aria-controls="taxFaqCollapse3">
-                                        03. What documents do I typically need to share for tax filing?
-                                    </button>
-                                </p>
-                                <div id="taxFaqCollapse3" class="accordion-collapse collapse" aria-labelledby="taxFaqHeading3" data-bs-parent="#accordionTaxationFaq">
-                                    <div class="accordion-body">It depends on your profile, but typically: PAN, Aadhaar, Form 16 or bank statements, investment proofs, and last year's filed return. We send you a precise, personalised checklist after the initial consultation — so you never have to guess what to gather.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="taxFaqHeading4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#taxFaqCollapse4" aria-expanded="false" aria-controls="taxFaqCollapse4">
-                                        04. How are your fees structured — one-time or annual?
-                                    </button>
-                                </p>
-                                <div id="taxFaqCollapse4" class="accordion-collapse collapse" aria-labelledby="taxFaqHeading4" data-bs-parent="#accordionTaxationFaq">
-                                    <div class="accordion-body">We offer both. One-time filing engagements are available for individuals with straightforward needs, while annual retainer packages cover businesses with ongoing monthly or quarterly compliance. All fees are agreed and confirmed upfront — no surprise bills.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="taxFaqHeading5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#taxFaqCollapse5" aria-expanded="false" aria-controls="taxFaqCollapse5">
-                                        05. How quickly can you file my return if I have a tight deadline?
-                                    </button>
-                                </p>
-                                <div id="taxFaqCollapse5" class="accordion-collapse collapse" aria-labelledby="taxFaqHeading5" data-bs-parent="#accordionTaxationFaq">
-                                    <div class="accordion-body">For most standard returns, we can file within 2–4 working days of receiving complete documents. For urgent cases, we offer priority filing — simply mention your deadline during the initial consultation and we will work around it.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="taxFaqHeading6">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#taxFaqCollapse6" aria-expanded="false" aria-controls="taxFaqCollapse6">
-                                        06. Do I need to visit your office, or can everything be handled remotely?
-                                    </button>
-                                </p>
-                                <div id="taxFaqCollapse6" class="accordion-collapse collapse" aria-labelledby="taxFaqHeading6" data-bs-parent="#accordionTaxationFaq">
-                                    <div class="accordion-body">Everything can be handled fully online. We work with clients across India — documents are shared digitally, consultations happen over call or video, and all acknowledgements and confirmations are delivered to your inbox. No office visit is required unless you prefer one.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="taxFaqHeading7">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#taxFaqCollapse7" aria-expanded="false" aria-controls="taxFaqCollapse7">
-                                        07. Is my financial data safe with CAAFT?
-                                    </button>
-                                </p>
-                                <div id="taxFaqCollapse7" class="accordion-collapse collapse" aria-labelledby="taxFaqHeading7" data-bs-parent="#accordionTaxationFaq">
-                                    <div class="accordion-body">Absolutely. All client data is handled with strict confidentiality. We do not share your information with any third party. Documents shared digitally are stored securely and accessible only to your assigned CA and their direct team.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <p class="accordion-header" id="taxFaqHeading8">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#taxFaqCollapse8" aria-expanded="false" aria-controls="taxFaqCollapse8">
-                                        08. What if I receive a tax notice after CAAFT files my return?
-                                    </button>
-                                </p>
-                                <div id="taxFaqCollapse8" class="accordion-collapse collapse" aria-labelledby="taxFaqHeading8" data-bs-parent="#accordionTaxationFaq">
-                                    <div class="accordion-body">We stand behind every return we file. If you receive a notice related to a return prepared and filed by us, we review it, advise you on the appropriate response, and handle the reply to the department on your behalf — at no additional charge for routine notices.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        $caaft_faq_section_id = 'faq';
+        $caaft_faq_heading_id = 'tax-faq-heading';
+        $caaft_faq_title = 'Frequently Asked Questions:';
+        $caaft_faq_accordion_id = 'accordionTaxationFaq';
+        $caaft_faq_prefix = 'taxFaq';
+        $caaft_faq_pad_numbers = true;
+        $caaft_faq_items = [
+            [
+                'question' => 'How do I get started with CAAFT - what does onboarding look like?',
+                'answer' => "Simply book a free consultation. We assess your current compliance status, explain what's needed, and send you a tailored document checklist. Most clients are fully onboarded within 2–3 working days - no paperwork overload, no long waiting periods.",
+            ],
+            [
+                'question' => 'Can CAAFT take over from my existing CA mid-year?',
+                'answer' => 'Yes, we handle transitions at any point in the financial year. We collect your prior filings, reconcile all records, and pick up seamlessly - without disrupting your compliance calendar or creating gaps in your filing history.',
+            ],
+            [
+                'question' => 'What documents do I typically need to share for tax filing?',
+                'answer' => "It depends on your profile, but typically: PAN, Aadhaar, Form 16 or bank statements, investment proofs, and last year's filed return. We send you a precise, personalised checklist after the initial consultation - so you never have to guess what to gather.",
+            ],
+            [
+                'question' => 'How are your fees structured - one-time or annual?',
+                'answer' => 'We offer both. One-time filing engagements are available for individuals with straightforward needs, while annual retainer packages cover businesses with ongoing monthly or quarterly compliance. All fees are agreed and confirmed upfront - no surprise bills.',
+            ],
+            [
+                'question' => 'How quickly can you file my return if I have a tight deadline?',
+                'answer' => 'For most standard returns, we can file within 2-4 working days of receiving complete documents. For urgent cases, we offer priority filing - simply mention your deadline during the initial consultation and we will work around it.',
+            ],
+            [
+                'question' => 'Do I need to visit your office, or can everything be handled remotely?',
+                'answer' => 'Everything can be handled fully online. We work with clients across India - documents are shared digitally, consultations happen over call or video, and all acknowledgements and confirmations are delivered to your inbox. No office visit is required unless you prefer one.',
+            ],
+            [
+                'question' => 'Is my financial data safe with CAAFT?',
+                'answer' => 'Absolutely. All client data is handled with strict confidentiality. We do not share your information with any third party. Documents shared digitally are stored securely and accessible only to your assigned CA and their direct team.',
+            ],
+            [
+                'question' => 'What if I receive a tax notice after CAAFT files my return?',
+                'answer' => 'We stand behind every return we file. If you receive a notice related to a return prepared and filed by us, we review it, advise you on the appropriate response, and handle the reply to the department on your behalf - at no additional charge for routine notices.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-faq.php';
+        ?>
     </main>
-
     <?php include "footer.php"; ?>
     <a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
