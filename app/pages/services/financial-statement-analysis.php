@@ -213,19 +213,20 @@
         ?>
 
         <?php
-        $why_choose_caaft_heading_id = 'fs-who-needs-heading';
-        $why_choose_caaft_title = 'Who Needs Financial Statement Services?';
-        $why_choose_caaft_intro = "CAAFT's financial statement services are built for organisations that require reliable financial insights for management, compliance, and stakeholder reporting:";
-        $why_choose_caaft_section_class = 'why-choose-caaft py-90';
-        $why_choose_caaft_items = [
-            ['icon_class' => 'fas fa-rocket', 'title' => 'Startups and Entrepreneurs', 'text' => 'Startups need clear financial records to track expenses, manage cash flow, and monitor revenue growth. Financial statements help founders maintain financial discipline during the critical early stages of business development.'],
-            ['icon_class' => 'fas fa-building', 'title' => 'Small and Medium Enterprises (SMEs)', 'text' => 'SMEs require structured financial reporting to evaluate performance and improve financial management. Financial statement analysis helps identify growth opportunities and control operational costs effectively.'],
-            ['icon_class' => 'fas fa-landmark', 'title' => 'Private Limited Companies and LLPs', 'text' => 'Companies under formal business structures must maintain accurate financial statements for compliance and regulatory filings. Professional preparation ensures reports meet required accounting standards consistently.'],
-            ['icon_class' => 'fas fa-calculator', 'title' => 'Accountants and Finance Teams', 'text' => 'Finance professionals rely on well-structured financial statements to monitor financial activities, maintain records, and support internal and external reporting processes.'],
-            ['icon_class' => 'fas fa-handshake', 'title' => 'Investors and Financial Stakeholders', 'text' => 'Investors evaluate financial statements to understand profitability, financial stability, and growth potential before making investment or funding decisions.'],
-            ['icon_class' => 'fas fa-user-tie', 'title' => 'Business Owners and Directors', 'text' => 'Business leaders use financial statements to monitor performance, plan strategies, and ensure financial resources are allocated and used efficiently across the organisation.'],
+        $caaft_who_needs_heading_id = 'fs-who-needs-heading';
+        $caaft_who_needs_title = 'Who Needs Financial Statement Services?';
+        $caaft_who_needs_intro = "CAAFT's financial statement services are built for organisations that require reliable financial insights for management, compliance, and stakeholder reporting:";
+        $caaft_who_needs_items = [
+            'Startups and Entrepreneurs — Startups need clear financial records to track expenses, manage cash flow, and monitor revenue growth. Financial statements help founders maintain financial discipline during the critical early stages of business development.',
+            'Small and Medium Enterprises (SMEs) — SMEs require structured financial reporting to evaluate performance and improve financial management. Financial statement analysis helps identify growth opportunities and control operational costs effectively.',
+            'Private Limited Companies and LLPs — Companies under formal business structures must maintain accurate financial statements for compliance and regulatory filings. Professional preparation ensures reports meet required accounting standards consistently.',
+            'Accountants and Finance Teams — Finance professionals rely on well-structured financial statements to monitor financial activities, maintain records, and support internal and external reporting processes.',
+            'Investors and Financial Stakeholders — Investors evaluate financial statements to understand profitability, financial stability, and growth potential before making investment or funding decisions.',
+            'Business Owners and Directors — Business leaders use financial statements to monitor performance, plan strategies, and ensure financial resources are allocated and used efficiently across the organisation.',
         ];
-        include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+        $caaft_who_needs_closing = '';
+        $caaft_who_needs_section_class = 'bk-who py-90';
+        include __DIR__ . '/../../includes/components/caaft-who-needs.php';
         ?>
 
         <?php
