@@ -10006,6 +10006,12 @@ align-items: baseline;}
     color: #fff;
 }
 
+.page-bookkeeping-accounting.page-ar-ap-services .bk-cta-title {
+    padding-left: clamp(20px, 6vw, 72px);
+    padding-right: clamp(20px, 6vw, 72px);
+    box-sizing: border-box;
+}
+
 .page-bookkeeping-accounting .bk-cta-text {
     max-width: 760px;
     margin: 0 auto 28px;

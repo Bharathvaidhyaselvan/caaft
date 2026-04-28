@@ -180,8 +180,8 @@
         $caaft_overview_title = 'What is Receivable & Payable Management?';
         $caaft_overview_paragraphs = [
             'Receivable and payable management is the structured process of overseeing the money flowing into and out of a business — tracking payments owed by customers and ensuring timely settlement of obligations to vendors and suppliers.',
-            'Accounts Receivable (AR) covers outstanding invoices and amounts customers owe for goods or services already delivered.',
-            "Accounts Payable (AP) encompasses a business's financial commitments to its suppliers, vendors, and service providers.",
+            '<strong>Accounts Receivable (AR)</strong> covers outstanding invoices and amounts customers owe for goods or services already delivered.',
+            "<strong>Accounts Payable (AP)</strong> encompasses a business's financial commitments to its suppliers, vendors, and service providers.",
         ];
         $caaft_overview_bullets = [];
         $caaft_overview_closing = 'When managed effectively, these two functions work in harmony to strengthen cash flow, reduce payment delays, and ensure complete financial transparency — giving businesses the clarity and control needed to grow with confidence.';
@@ -313,8 +313,10 @@
         $caaft_cta_heading_id = 'arap-cta-heading';
         $caaft_cta_title = 'Ready to Manage Your Receivables & Payables the Right Way?';
         $caaft_cta_text = 'Accurate invoice tracking, timely collections, and structured vendor payments — delivered consistently so businesses can maintain healthy cash flow and organised financial records at every stage of growth. Whether the need is receivable monitoring, payable management, or complete AR and AP outsourcing — CAAFT delivers the structure, precision, and financial discipline to make it happen.';
-        $caaft_cta_button_label = 'Manage Your Receivables & Payables Today – Get Expert Assistance!';
+        $caaft_cta_button_label = 'Manage Your Receivables & Payables Today';
         $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_secondary_button_label = 'Get Expert Assistance!';
+        $caaft_cta_secondary_button_href = '/contact#contact_us';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 
