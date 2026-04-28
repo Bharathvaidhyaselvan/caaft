@@ -23,6 +23,10 @@ $caaft_git_section_id = isset($caaft_git_section_id) && $caaft_git_section_id !=
 $caaft_git_section_class = isset($caaft_git_section_class) && $caaft_git_section_class !== ''
     ? (string) $caaft_git_section_class
     : 'caaft-ar-get-in-touch py-90';
+$caaft_git_scope_class = 'caaft-get-in-touch-v1';
+if (strpos(' ' . $caaft_git_section_class . ' ', ' ' . $caaft_git_scope_class . ' ') === false) {
+    $caaft_git_section_class .= ' ' . $caaft_git_scope_class;
+}
 $caaft_git_eyebrow = isset($caaft_git_eyebrow) ? (string) $caaft_git_eyebrow : '';
 $caaft_git_note = isset($caaft_git_note) ? (string) $caaft_git_note : '';
 ?>

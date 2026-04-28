@@ -11,6 +11,7 @@
  * Optional:
  *   $caaft_overview_paragraphs (string[])  // supports <strong>, <em>, <br>
  *   $caaft_overview_bullets (string[])     // supports <strong>, <em>, <br>
+ *   $caaft_overview_closing (string)       // supports <strong>, <em>, <br>, shown after bullets
  */
 if (!isset($caaft_overview_heading_id, $caaft_overview_title, $caaft_overview_image_src, $caaft_overview_image_alt)) {
     trigger_error('caaft-overview-card.php: set required $caaft_overview_* variables before including', E_USER_WARNING);
@@ -22,6 +23,7 @@ $caaft_overview_image_src = isset($caaft_overview_image_src) ? (string) $caaft_o
 $caaft_overview_image_alt = isset($caaft_overview_image_alt) ? (string) $caaft_overview_image_alt : '';
 $caaft_overview_paragraphs = isset($caaft_overview_paragraphs) && is_array($caaft_overview_paragraphs) ? $caaft_overview_paragraphs : [];
 $caaft_overview_bullets = isset($caaft_overview_bullets) && is_array($caaft_overview_bullets) ? $caaft_overview_bullets : [];
+$caaft_overview_closing = isset($caaft_overview_closing) ? (string) $caaft_overview_closing : '';
 ?>
 <section class="bk-overview py-90" aria-labelledby="<?php echo htmlspecialchars($caaft_overview_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
@@ -38,6 +40,9 @@ $caaft_overview_bullets = isset($caaft_overview_bullets) && is_array($caaft_over
                                 <li><?php echo strip_tags((string) $caaft_overview_bullet, '<strong><em><br>'); ?></li>
                             <?php endforeach; ?>
                         </ul>
+                    <?php endif; ?>
+                    <?php if ($caaft_overview_closing !== '') : ?>
+                        <p class="bk-overview-text"><?php echo strip_tags($caaft_overview_closing, '<strong><em><br>'); ?></p>
                     <?php endif; ?>
                 </div>
                 <div class="bk-overview-image-wrap caaft-overview-image-wrap">
