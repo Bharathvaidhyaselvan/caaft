@@ -278,8 +278,8 @@
         <?php
         $why_choose_caaft_heading_id = 'fs-why-caaft-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
-        $why_choose_caaft_show_intro = false;
-        $why_choose_caaft_intro = '';
+        $why_choose_caaft_show_intro = true;
+        $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate, compliant, and timely financial statement preparation that strengthens reporting quality and decision-making.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             ['icon_class' => 'fas fa-check-circle', 'title' => 'Accurate and compliant reporting', 'text' => 'Every financial statement is prepared with precision — fully compliant with applicable accounting standards, reducing errors, minimising audit risk, and ensuring regulatory requirements are consistently met.'],
