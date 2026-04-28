@@ -137,7 +137,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-sections"><?php include "header.php"; ?></div>
     <main class="main">
-        <?php
+                                <?php
         $caaft_hero_id = 'fs-hero-h1';
         $caaft_hero_h1 = 'Financial Statement Services';
         $caaft_hero_h2_before = 'Accurate Statements. Full Compliance. Clear Financial Visibility —';
@@ -151,9 +151,9 @@
         $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_label = 'Get Expert Assistance Today!';
         $caaft_hero_secondary_cta_href = '/contact#contact_us';
-        $caaft_enquiry_service = 'Financial Statement Analysis Services';
-        $caaft_enquiry_form_id = 'caaft-fs-enquiry-form-inner';
-        $caaft_enquiry_input_id_prefix = 'fs';
+                                $caaft_enquiry_service = 'Financial Statement Analysis Services';
+                                $caaft_enquiry_form_id = 'caaft-fs-enquiry-form-inner';
+                                $caaft_enquiry_input_id_prefix = 'fs';
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -199,18 +199,17 @@
         ?>
 
         <?php
-        $caaft_card_section_heading_id = 'fs-services-heading';
-        $caaft_card_section_title = 'Financial Statement Services — What Gets Delivered';
-        $caaft_card_grid_col_class = 'col-md-6 col-lg-4';
-        $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-file-alt', 'title' => '1. Preparation of Financial Statements', 'text' => 'Compilation of financial data into standardised, professionally prepared reports — ensuring records are accurate, structured, and compliant with relevant accounting principles and regulatory guidelines.'],
-            ['icon_class' => 'fas fa-chart-area', 'title' => '2. Profit and Loss Statement Preparation', 'text' => 'Structured income statements prepared through careful tracking of all revenue sources and operational expenses — accurately reflecting financial performance and identifying opportunities to reduce costs or improve revenue streams.'],
-            ['icon_class' => 'fas fa-balance-scale', 'title' => '3. Balance Sheet Preparation', 'text' => 'Detailed balance sheets prepared to provide a clear picture of assets, liabilities, and equity — giving stakeholders, lenders, and investors a reliable view of financial position at any point in time.'],
-            ['icon_class' => 'fas fa-exchange-alt', 'title' => '4. Cash Flow Statement Preparation', 'text' => 'Accurately prepared cash flow statements that track inflows and outflows across operating, investing, and financing activities — ensuring management always has clear visibility over liquidity and working capital.'],
-            ['icon_class' => 'fas fa-search-dollar', 'title' => '5. Financial Statement Analysis', 'text' => 'In-depth review and interpretation of prepared financial statements — identifying trends, measuring profitability, evaluating financial stability, and translating numbers into actionable insights for management decision-making.'],
-            ['icon_class' => 'fas fa-clipboard-check', 'title' => '6. Compliance & Audit-Ready Reporting', 'text' => 'Every financial statement is prepared in compliance with applicable accounting standards — structured, documented, and audit-ready at every stage to reduce reporting risk and simplify the audit process.'],
+        $caaft_delivered_heading_id = 'fs-services-heading';
+        $caaft_delivered_title = 'Financial Statement Services — What Gets Delivered';
+        $caaft_delivered_items = [
+            ['name' => 'Preparation of Financial Statements', 'text' => 'Compilation of financial data into standardised, professionally prepared reports — ensuring records are accurate, structured, and compliant with relevant accounting principles and regulatory guidelines.'],
+            ['name' => 'Profit and Loss Statement Preparation', 'text' => 'Structured income statements prepared through careful tracking of all revenue sources and operational expenses — accurately reflecting financial performance and identifying opportunities to reduce costs or improve revenue streams.'],
+            ['name' => 'Balance Sheet Preparation', 'text' => 'Detailed balance sheets prepared to provide a clear picture of assets, liabilities, and equity — giving stakeholders, lenders, and investors a reliable view of financial position at any point in time.'],
+            ['name' => 'Cash Flow Statement Preparation', 'text' => 'Accurately prepared cash flow statements that track inflows and outflows across operating, investing, and financing activities — ensuring management always has clear visibility over liquidity and working capital.'],
+            ['name' => 'Financial Statement Analysis', 'text' => 'In-depth review and interpretation of prepared financial statements — identifying trends, measuring profitability, evaluating financial stability, and translating numbers into actionable insights for management decision-making.'],
+            ['name' => 'Compliance & Audit-Ready Reporting', 'text' => 'Every financial statement is prepared in compliance with applicable accounting standards — structured, documented, and audit-ready at every stage to reduce reporting risk and simplify the audit process.'],
         ];
-        include __DIR__ . '/../../includes/components/caaft-card-section.php';
+        include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
         ?>
 
         <?php

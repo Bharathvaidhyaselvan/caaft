@@ -8819,6 +8819,17 @@ align-items: baseline;}
     scroll-margin-top: 100px;
 }
 
+/* Reusable section heading standard across Accounting & Reporting service pages */
+.page-accounting-reporting .bk-section-title,
+.page-accounting-reporting .caaft-ar-offer-h2,
+.page-accounting-reporting .caaft-ar-how-h2,
+.page-accounting-reporting .why-choose-caaft-title,
+.page-accounting-reporting .bk-cta-title,
+.page-accounting-reporting .caaft-ar-faq-wrap .site-heading .site-title {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
 /* AR/AP — “What Gets Delivered”: title sentence case, full-width header */
 .page-accounting-reporting.page-ar-ap-services .caaft-ar-what-we-offer .caaft-ar-offer-header {
     max-width: none;
@@ -9602,7 +9613,7 @@ align-items: baseline;}
 
 .page-bookkeeping-accounting .bk-section-title {
     font-family: var(--heading-font);
-    font-size: clamp(1.8rem, 3vw, 2.45rem);
+    font-size: 32px;
     font-weight: 800;
     line-height: 1.2;
     color: #222;
@@ -9628,6 +9639,69 @@ align-items: baseline;}
     background: #fff;
 }
 
+.page-bookkeeping-accounting .bk-overview-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.page-bookkeeping-accounting .bk-overview-content {
+    min-width: 0;
+}
+
+.page-bookkeeping-accounting .bk-overview-bullets {
+    margin: 0 0 10px;
+    padding-left: 18px;
+    list-style: disc;
+    display: grid;
+    gap: 6px;
+    color: #3d3d3d;
+}
+
+.page-bookkeeping-accounting .bk-overview-bullets li {
+    list-style: disc;
+}
+
+.page-bookkeeping-accounting .bk-overview-bullets li::marker {
+    color: #1f2937;
+}
+
+.page-bookkeeping-accounting .bk-overview .bk-section-title {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.page-bookkeeping-accounting .bk-overview-image-wrap {
+    min-width: 0;
+}
+
+.page-bookkeeping-accounting .bk-overview-image-wrap img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+    .page-bookkeeping-accounting .bk-overview-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .page-bookkeeping-accounting .bk-overview .bk-section-title {
+        font-size: 28px;
+    }
+
+    .page-accounting-reporting .bk-section-title,
+    .page-accounting-reporting .caaft-ar-offer-h2,
+    .page-accounting-reporting .caaft-ar-how-h2,
+    .page-accounting-reporting .why-choose-caaft-title,
+    .page-accounting-reporting .bk-cta-title,
+    .page-accounting-reporting .caaft-ar-faq-wrap .site-heading .site-title {
+        font-size: 28px;
+    }
+}
+
 .page-bookkeeping-accounting .bk-overview-eyebrow {
     margin: 0 0 8px;
     font-size: 12px;
@@ -9639,6 +9713,7 @@ align-items: baseline;}
 
 .page-bookkeeping-accounting .bk-overview-text,
 .page-bookkeeping-accounting .bk-who-intro,
+.page-bookkeeping-accounting .caaft-who-needs-intro,
 .page-bookkeeping-accounting .bk-challenges-intro {
     margin: 0 0 10px;
     font-size: 1.02rem;
@@ -9648,6 +9723,7 @@ align-items: baseline;}
 
 .page-bookkeeping-accounting .bk-overview-text:last-child,
 .page-bookkeeping-accounting .bk-who-intro:last-child,
+.page-bookkeeping-accounting .caaft-who-needs-intro:last-child,
 .page-bookkeeping-accounting .bk-challenges-intro:last-child {
     margin-bottom: 0;
 }
@@ -9711,22 +9787,26 @@ align-items: baseline;}
 }
 
 .page-bookkeeping-accounting .bk-who-header,
+.page-bookkeeping-accounting .caaft-who-needs-header,
 .page-bookkeeping-accounting .bk-challenges-header,
 .page-bookkeeping-accounting .bk-facts-header {
     margin-bottom: 20px;
 }
 
-.page-bookkeeping-accounting .bk-who-grid {
+.page-bookkeeping-accounting .bk-who-grid,
+.page-bookkeeping-accounting .caaft-who-needs-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
 }
 
-.page-bookkeeping-accounting.page-financial-analysis-mis .bk-who-grid {
+.page-bookkeeping-accounting.page-financial-analysis-mis .bk-who-grid,
+.page-bookkeeping-accounting.page-financial-analysis-mis .caaft-who-needs-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.page-bookkeeping-accounting .bk-who-card {
+.page-bookkeeping-accounting .bk-who-card,
+.page-bookkeeping-accounting .caaft-who-needs-card {
     background: #fff;
     border: 1px solid #d8dde3;
     border-left: 3px solid #33B6FF;
@@ -9735,14 +9815,16 @@ align-items: baseline;}
     min-height: 108px;
 }
 
-.page-bookkeeping-accounting .bk-who-card p {
+.page-bookkeeping-accounting .bk-who-card p,
+.page-bookkeeping-accounting .caaft-who-needs-card p {
     margin: 0;
     font-size: 1rem;
     line-height: 1.6;
     color: #434343;
 }
 
-.page-bookkeeping-accounting .bk-who-closing {
+.page-bookkeeping-accounting .bk-who-closing,
+.page-bookkeeping-accounting .caaft-who-needs-closing {
     margin-top: clamp(1.25rem, 3vw, 2rem);
     margin-bottom: 0;
 }
