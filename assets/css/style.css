@@ -8641,6 +8641,10 @@ align-items: baseline;}
     z-index: 1;
 }
 
+.page-accounting-reporting.page-business-setup-registration .caaft-ar-trust-indicators {
+    background: #ffffff;
+}
+
 .page-accounting-reporting .caaft-ar-trust-grid {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
