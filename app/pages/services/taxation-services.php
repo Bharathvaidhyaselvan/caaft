@@ -194,7 +194,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-sections"><?php include "header.php"; ?></div>
     <main class="main">
-        <?php
+                                <?php
         $caaft_hero_id = 'tax-hero-h1';
         $caaft_hero_h1 = 'TAXATION SERVICES';
         $caaft_hero_h2_before = 'Expert Taxation Services That Keep You ';
@@ -208,11 +208,11 @@
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
         $caaft_hero_secondary_cta_href = '#tax-income-services-heading';
 
-        $caaft_enquiry_service = 'Taxation Services';
-        $caaft_enquiry_action = '/incometax-services-mail.php';
-        $caaft_enquiry_title = 'Tell Us Your Tax Needs';
-        $caaft_enquiry_form_id = 'caaft-tax-enquiry-form-inner';
-        $caaft_enquiry_input_id_prefix = 'tax';
+                                $caaft_enquiry_service = 'Taxation Services';
+                                $caaft_enquiry_action = '/incometax-services-mail.php';
+                                $caaft_enquiry_title = 'Tell Us Your Tax Needs';
+                                $caaft_enquiry_form_id = 'caaft-tax-enquiry-form-inner';
+                                $caaft_enquiry_input_id_prefix = 'tax';
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 

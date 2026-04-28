@@ -189,7 +189,7 @@
     <div class="header-sections"><?php include "header.php"; ?></div>
 
     <main class="main">
-        <?php
+                                <?php
         $caaft_hero_id = 'cr-hero-h1';
         $caaft_hero_h1 = 'COMPLIANCE AND REGULATORY SERVICES';
         $caaft_hero_h2_before = 'Stay Compliant. Stay Protected. Stay in Business.';
@@ -203,11 +203,11 @@
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
         $caaft_hero_secondary_cta_href = '#cr-company-heading';
 
-        $caaft_enquiry_service = 'Compliance and Regulatory Services';
-        $caaft_enquiry_action = '/roc-compliance-filing-mail.php';
-        $caaft_enquiry_title = 'Clear Your Pending Filings';
-        $caaft_enquiry_form_id = 'caaft-cr-enquiry-form-inner';
-        $caaft_enquiry_input_id_prefix = 'cr';
+                                $caaft_enquiry_service = 'Compliance and Regulatory Services';
+                                $caaft_enquiry_action = '/roc-compliance-filing-mail.php';
+                                $caaft_enquiry_title = 'Clear Your Pending Filings';
+                                $caaft_enquiry_form_id = 'caaft-cr-enquiry-form-inner';
+                                $caaft_enquiry_input_id_prefix = 'cr';
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 

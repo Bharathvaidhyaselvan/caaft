@@ -177,7 +177,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-sections"><?php include "header.php"; ?></div>
     <main class="main">
-        <?php
+                                <?php
         $caaft_hero_id = 'bsr-hero-h1';
         $caaft_hero_h1 = 'BUSINESS SETUP & REGISTRATION SERVICES';
         $caaft_hero_h2_before = 'Start Right. Register Smart. Build on Solid Ground.';
@@ -191,11 +191,11 @@
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
         $caaft_hero_secondary_cta_href = '#bsr-company-heading';
 
-        $caaft_enquiry_service = 'Business Setup & Registration Services';
-        $caaft_enquiry_action = '/business-registration-mail.php';
-        $caaft_enquiry_title = 'Tell Us Your Business Plan';
-        $caaft_enquiry_form_id = 'caaft-bsr-enquiry-form-inner';
-        $caaft_enquiry_input_id_prefix = 'bsr';
+                                $caaft_enquiry_service = 'Business Setup & Registration Services';
+                                $caaft_enquiry_action = '/business-registration-mail.php';
+                                $caaft_enquiry_title = 'Tell Us Your Business Plan';
+                                $caaft_enquiry_form_id = 'caaft-bsr-enquiry-form-inner';
+                                $caaft_enquiry_input_id_prefix = 'bsr';
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
