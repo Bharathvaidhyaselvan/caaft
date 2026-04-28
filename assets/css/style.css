@@ -8645,6 +8645,14 @@ align-items: baseline;}
     background: #ffffff;
 }
 
+.page-accounting-reporting.page-business-setup-registration .caaft-ar-offer-card-title {
+    min-height: calc(1.35em * 2);
+}
+
+.page-accounting-reporting.page-taxation-services .caaft-ar-offer-card-title {
+    min-height: calc(1.35em * 2);
+}
+
 .page-accounting-reporting .caaft-ar-trust-grid {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));

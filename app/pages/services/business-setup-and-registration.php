@@ -210,69 +210,37 @@
         ?>
 
         <?php
-        $bsr_company_cards = [
-            ['icon_class' => 'fas fa-rocket', 'name' => 'Private Limited Company', 'text' => 'The most preferred structure for funded startups and growing businesses - incorporated under the Companies Act with limited liability and separate legal identity.'],
-            ['icon_class' => 'fas fa-landmark', 'name' => 'Public Limited Company', 'text' => 'For businesses planning to raise capital from the public - incorporated with the governance and compliance framework required for larger-scale operations.'],
-            ['icon_class' => 'fas fa-user', 'name' => 'One Person Company (OPC)', 'text' => 'The ideal structure for solo entrepreneurs who want the credibility and limited liability of a company without the need for co-founders or partners.'],
-            ['icon_class' => 'fas fa-handshake', 'name' => 'LLP Registration', 'text' => 'A flexible structure that combines the benefits of a partnership with limited liability protection - suited for professionals, consultants, and service businesses.'],
-            ['icon_class' => 'fas fa-users', 'name' => 'Partnership Firm Registration', 'text' => 'A straightforward structure for two or more individuals running a business together - registered under the Indian Partnership Act with a defined partnership deed.'],
-            ['icon_class' => 'fas fa-store', 'name' => 'Sole Proprietorship Registration', 'text' => 'The simplest business structure for individual operators - quick to set up, easy to manage, and ideal for freelancers and small business owners starting out.'],
+        $caaft_card_section_heading_id = 'bsr-company-heading';
+        $caaft_card_section_title = 'COMPANY REGISTRATION SERVICES';
+        $caaft_card_section_intro = 'Choosing the right business structure is one of the most important decisions you will make. CAAFT advises on the best fit for your goals - and handles the complete incorporation process from document preparation to certificate of registration.';
+        $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
+        $caaft_card_section_cards = [
+            ['icon_class' => 'fas fa-rocket', 'title' => 'Private Limited Company', 'text' => 'The most preferred structure for funded startups and growing businesses - incorporated under the Companies Act with limited liability and separate legal identity.'],
+            ['icon_class' => 'fas fa-landmark', 'title' => 'Public Limited Company', 'text' => 'For businesses planning to raise capital from the public - incorporated with the governance and compliance framework required for larger-scale operations.'],
+            ['icon_class' => 'fas fa-user', 'title' => 'One Person Company (OPC)', 'text' => 'The ideal structure for solo entrepreneurs who want the credibility and limited liability of a company without the need for co-founders or partners.'],
+            ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Registration', 'text' => 'A flexible structure that combines the benefits of a partnership with limited liability protection - suited for professionals, consultants, and service businesses.'],
+            ['icon_class' => 'fas fa-users', 'title' => 'Partnership Firm Registration', 'text' => 'A straightforward structure for two or more individuals running a business together - registered under the Indian Partnership Act with a defined partnership deed.'],
+            ['icon_class' => 'fas fa-store', 'title' => 'Sole Proprietorship Registration', 'text' => 'The simplest business structure for individual operators - quick to set up, easy to manage, and ideal for freelancers and small business owners starting out.'],
         ];
+        include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
-        <section class="caaft-ar-what-we-offer py-90" aria-labelledby="bsr-company-heading">
-            <div class="container">
-                <header class="caaft-ar-offer-header">
-                    <h2 id="bsr-company-heading" class="caaft-ar-offer-h2">COMPANY REGISTRATION SERVICES</h2>
-                    <p class="caaft-ar-offer-intro">Choosing the right business structure is one of the most important decisions you will make. CAAFT advises on the best fit for your goals - and handles the complete incorporation process from document preparation to certificate of registration.</p>
-                </header>
-                <div class="row g-4 caaft-ar-offer-grid">
-                    <?php foreach ($bsr_company_cards as $bsr_company_index => $bsr_company_card) : ?>
-                        <div class="col-md-6 col-lg-3">
-                            <article class="caaft-ar-offer-card">
-                                <span class="caaft-ar-offer-num" aria-hidden="true"><?php echo str_pad((string) ($bsr_company_index + 1), 2, '0', STR_PAD_LEFT); ?></span>
-                                <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="<?php echo htmlspecialchars((string) $bsr_company_card['icon_class'], ENT_QUOTES, 'UTF-8'); ?>"></i></span>
-                                <h3 class="caaft-ar-offer-card-title"><?php echo htmlspecialchars((string) $bsr_company_card['name'], ENT_QUOTES, 'UTF-8'); ?></h3>
-                                <p class="caaft-ar-offer-card-text"><?php echo htmlspecialchars((string) $bsr_company_card['text'], ENT_QUOTES, 'UTF-8'); ?></p>
-                                <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
-                            </article>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </section>
 
         <?php
-        $bsr_other_cards = [
-            ['icon_class' => 'fas fa-certificate', 'name' => 'MSME / Udyam Registration', 'text' => 'Register your business as a Micro, Small, or Medium Enterprise to access government schemes, priority lending, and statutory protections available to MSMEs.'],
-            ['icon_class' => 'fas fa-utensils', 'name' => 'FSSAI Registration', 'text' => 'Mandatory food business licence for anyone involved in the manufacture, storage, distribution, or sale of food products - issued by the Food Safety and Standards Authority of India.'],
-            ['icon_class' => 'fas fa-file-signature', 'name' => 'Professional Tax Registration', 'text' => 'State-level registration required for employers and self-employed professionals to comply with professional tax deduction and payment obligations.'],
-            ['icon_class' => 'fas fa-user-shield', 'name' => 'EPF & ESI Registration & Compliance', 'text' => 'End-to-end support for Provident Fund and Employee State Insurance registration, monthly contribution filings, and ongoing compliance - ensuring your business meets all statutory employer obligations under labour law.'],
-            ['icon_class' => 'fas fa-globe', 'name' => 'Import Export Code (IEC)', 'text' => 'The 10-digit code issued by DGFT that is mandatory for any business engaged in importing or exporting goods and services from India.'],
-            ['icon_class' => 'fas fa-key', 'name' => 'Digital Signature Certificate (DSC)', 'text' => 'An electronically issued certificate used for secure online filings with MCA, Income Tax, GST, and other government portals - required for authorised signatories.'],
-            ['icon_class' => 'fas fa-hand-holding-heart', 'name' => '12A & 80G Registration', 'text' => 'For non-profit organisations and NGOs - 12A grants income tax exemption to the trust or society, while 80G enables donors to claim deductions on their contributions.'],
+        $caaft_card_section_heading_id = 'bsr-other-heading';
+        $caaft_card_section_title = 'OTHER REGISTRATIONS';
+        $caaft_card_section_intro = 'Beyond incorporation, every business needs the right licences and registrations to operate legally, access government benefits, and build credibility with customers and partners.';
+        $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
+        $caaft_card_section_cards = [
+            ['icon_class' => 'fas fa-certificate', 'title' => 'MSME / Udyam Registration', 'text' => 'Register your business as a Micro, Small, or Medium Enterprise to access government schemes, priority lending, and statutory protections available to MSMEs.'],
+            ['icon_class' => 'fas fa-utensils', 'title' => 'FSSAI Registration', 'text' => 'Mandatory food business licence for anyone involved in the manufacture, storage, distribution, or sale of food products - issued by the Food Safety and Standards Authority of India.'],
+            ['icon_class' => 'fas fa-file-signature', 'title' => 'Professional Tax Registration', 'text' => 'State-level registration required for employers and self-employed professionals to comply with professional tax deduction and payment obligations.'],
+            ['icon_class' => 'fas fa-user-shield', 'title' => 'EPF & ESI Registration & Compliance', 'text' => 'End-to-end support for Provident Fund and Employee State Insurance registration, monthly contribution filings, and ongoing compliance - ensuring your business meets all statutory employer obligations under labour law.'],
+            ['icon_class' => 'fas fa-globe', 'title' => 'Import Export Code (IEC)', 'text' => 'The 10-digit code issued by DGFT that is mandatory for any business engaged in importing or exporting goods and services from India.'],
+            ['icon_class' => 'fas fa-key', 'title' => 'Digital Signature Certificate (DSC)', 'text' => 'An electronically issued certificate used for secure online filings with MCA, Income Tax, GST, and other government portals - required for authorised signatories.'],
+            ['icon_class' => 'fas fa-hand-holding-heart', 'title' => '12A & 80G Registration', 'text' => 'For non-profit organisations and NGOs - 12A grants income tax exemption to the trust or society, while 80G enables donors to claim deductions on their contributions.'],
         ];
+        include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
-        <section class="caaft-ar-what-we-offer py-90" aria-labelledby="bsr-other-heading">
-            <div class="container">
-                <header class="caaft-ar-offer-header">
-                    <h2 id="bsr-other-heading" class="caaft-ar-offer-h2">OTHER REGISTRATIONS</h2>
-                    <p class="caaft-ar-offer-intro">Beyond incorporation, every business needs the right licences and registrations to operate legally, access government benefits, and build credibility with customers and partners.</p>
-                </header>
-                <div class="row g-4 caaft-ar-offer-grid">
-                    <?php foreach ($bsr_other_cards as $bsr_other_index => $bsr_other_card) : ?>
-                        <div class="col-md-6 col-lg-3">
-                            <article class="caaft-ar-offer-card">
-                                <span class="caaft-ar-offer-num" aria-hidden="true"><?php echo str_pad((string) ($bsr_other_index + 1), 2, '0', STR_PAD_LEFT); ?></span>
-                                <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="<?php echo htmlspecialchars((string) $bsr_other_card['icon_class'], ENT_QUOTES, 'UTF-8'); ?>"></i></span>
-                                <h3 class="caaft-ar-offer-card-title"><?php echo htmlspecialchars((string) $bsr_other_card['name'], ENT_QUOTES, 'UTF-8'); ?></h3>
-                                <p class="caaft-ar-offer-card-text"><?php echo htmlspecialchars((string) $bsr_other_card['text'], ENT_QUOTES, 'UTF-8'); ?></p>
-                                <a href="/contact#contact_us" class="caaft-ar-offer-cta">Get Started <i class="fas fa-arrow-right"></i></a>
-                            </article>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </section>
 
         <?php
         $why_choose_caaft_heading_id = 'bsr-why-heading';
