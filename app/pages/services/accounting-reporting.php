@@ -261,7 +261,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <?php
         $caaft_why_heading_id = 'ar-why-heading';
         $caaft_why_eyebrow = 'Why choose us';
-        $caaft_why_title = 'Why choose CAAFT';
+        $caaft_why_title = 'WHY CHOOSE CAAFT';
         $caaft_why_items = [
             [
                 'title' => 'Qualified Professionals',
@@ -294,7 +294,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <?php
         $caaft_steps_heading_id = 'ar-how-heading';
         $caaft_steps_eyebrow = 'How it works';
-        $caaft_steps_title = 'How CAAFT works';
+        $caaft_steps_title = 'HOW CAAFT WORKS';
         $caaft_steps_items = [
             [
                 'title' => 'Step 1 — Initial Setup',

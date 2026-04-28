@@ -415,67 +415,51 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-sections"><?php include "header.php"; ?></div>
     <main class="main">
-        <section class="hero-section hs-3 caaft-ar-hero" aria-labelledby="bk-hero-h1">
-            <div class="hero-single singles_forms_frames caaft-ar-hero-single">
-                <div class="container">
-                    <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
-                        <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
-                            <h1 id="bk-hero-h1" class="caaft-ar-hero-h1">Bookkeeping and Accounting Services</h1>
-                            <h2 class="caaft-ar-hero-h2">Accurate Books. Timely Compliance. Clear Financial Visibility — Every Month.</h2>
-                            <p class="caaft-ar-hero-lead">Whether a startup finding its footing, a growing SME, or an established enterprise — structured, reliable bookkeeping and accounting services provide the financial clarity, compliance confidence, and decision-ready data needed to grow sustainably.</p>
-                            <div class="caaft-ar-hero-ctas">
-                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Take Control of Your Finances - Expert Bookkeeping Made Simple <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="hero-img-wrap caaft-ar-hero-img-wrap">
-                                <?php
-                                $caaft_enquiry_service = 'Bookkeeping and Accounting Services';
-                                $caaft_enquiry_form_id = 'caaft-bk-enquiry-form-inner';
-                                $caaft_enquiry_input_id_prefix = 'bk';
-                                include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_hero_id = 'bk-hero-h1';
+        $caaft_hero_h1 = 'Bookkeeping and Accounting Services';
+        $caaft_hero_h2_before = 'Accurate Books. Timely Compliance. ';
+        $caaft_hero_h2_highlight = 'Clear Financial Visibility';
+        $caaft_hero_h2_after = ' — Every Month.';
+        $caaft_hero_lead_paragraphs = [
+            'Whether a startup finding its footing, a growing SME, or an established enterprise — structured, reliable bookkeeping and accounting services provide the financial clarity, compliance confidence, and decision-ready data needed to grow sustainably.',
+        ];
+        $caaft_hero_primary_cta_label = 'Take Control of Your Finances -';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_secondary_cta_label = 'Expert Bookkeeping Made Simple';
+        $caaft_hero_secondary_cta_href = '/contact#contact_us';
 
-        <section class="caaft-ar-trust-indicators" aria-label="Trust indicators">
-            <div class="container">
-                <div class="caaft-ar-trust-grid caaft-ar-trust-grid--eq-4">
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="far fa-check-circle"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>Rated 4.8/5 <span class="caaft-ar-trust-stars" aria-hidden="true">⭐</span></h3>
-                            <p>on Google</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>500+</h3>
-                            <p>Businesses Served</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-bullseye"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>99%</h3>
-                            <p>Accuracy Rate</p>
-                        </div>
-                    </article>
-                    <article class="caaft-ar-trust-item">
-                        <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
-                        <div class="caaft-ar-trust-content">
-                            <h3>100%</h3>
-                            <p>Data Confidentiality</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+        $caaft_enquiry_service = 'Bookkeeping and Accounting Services';
+        $caaft_enquiry_form_id = 'caaft-bk-enquiry-form-inner';
+        $caaft_enquiry_input_id_prefix = 'bk';
+        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+        ?>
+
+        <?php
+        $caaft_trust_items = [
+            [
+                'icon_class' => 'far fa-check-circle',
+                'title' => 'Rated 4.8/5 ⭐',
+                'description' => 'on Google',
+            ],
+            [
+                'icon_class' => 'fas fa-briefcase',
+                'title' => '500+',
+                'description' => 'Businesses Served',
+            ],
+            [
+                'icon_class' => 'fas fa-bullseye',
+                'title' => '99%',
+                'description' => 'Accuracy Rate',
+            ],
+            [
+                'icon_class' => 'fas fa-shield-alt',
+                'title' => '100%',
+                'description' => 'Data Confidentiality',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/service-trust-indicators.php';
+        ?>
 
         <?php
         $caaft_overview_heading_id = 'bk-what-heading';
@@ -573,24 +557,20 @@
         include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
         ?>
 
-        <section class="bk-challenges py-90" aria-labelledby="bk-challenges-heading">
-            <div class="container">
-                <header class="bk-challenges-header">
-                    <h2 id="bk-challenges-heading" class="bk-section-title">Common Financial Challenges Bookkeeping Services Solve</h2>
-                    <p class="bk-challenges-intro">Most businesses seek professional bookkeeping support when facing one or more of these:</p>
-                </header>
-                <div class="bk-challenges-box">
-                    <ul class="bk-challenges-list">
-                        <li>Disorganised or incomplete financial records making compliance and reporting difficult</li>
-                        <li>Delayed invoicing and poor cash flow management creating operational pressure</li>
-                        <li>GST and TDS mismatches leading to notices, penalties, and compliance risk</li>
-                        <li>Lack of financial visibility making business decisions reactive rather than informed</li>
-                        <li>Errors in bookkeeping and reporting that surface during audits or tax filings</li>
-                    </ul>
-                    <p class="bk-challenges-outro">CAAFT's structured bookkeeping and accounting approach addresses each of these — moving businesses from financial disorder to clarity, accuracy, and compliance.</p>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_challenges_heading_id = 'bk-challenges-heading';
+        $caaft_challenges_title = 'Common Financial Challenges Bookkeeping Services Solve';
+        $caaft_challenges_intro = 'Most businesses seek professional bookkeeping support when facing one or more of these:';
+        $caaft_challenges_items = [
+            'Disorganised or incomplete financial records making compliance and reporting difficult',
+            'Delayed invoicing and poor cash flow management creating operational pressure',
+            'GST and TDS mismatches leading to notices, penalties, and compliance risk',
+            'Lack of financial visibility making business decisions reactive rather than informed',
+            'Errors in bookkeeping and reporting that surface during audits or tax filings',
+        ];
+        $caaft_challenges_outro = "CAAFT's structured bookkeeping and accounting approach addresses each of these — moving businesses from financial disorder to clarity, accuracy, and compliance.";
+        include __DIR__ . '/../../includes/components/caaft-challenges.php';
+        ?>
 
         <?php
         $why_choose_caaft_heading_id = 'bk-why-heading';
