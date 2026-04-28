@@ -259,42 +259,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
 
         <?php
-        $caaft_why_heading_id = 'ar-why-heading';
-        $caaft_why_eyebrow = 'Why choose us';
-        $caaft_why_title = 'WHY CHOOSE CAAFT';
-        $caaft_why_items = [
+        $why_choose_caaft_heading_id = 'ar-why-heading';
+        $why_choose_caaft_title = 'WHY CHOOSE CAAFT';
+        $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate books, timely reporting, and dependable accounting support that scales with growth.';
+        $why_choose_caaft_section_class = 'why-choose-caaft py-90';
+        $why_choose_caaft_items = [
             [
+                'icon_class' => 'fas fa-user-check',
                 'title' => 'Qualified Professionals',
                 'text' => 'Managed by trained accountants, supervised by Chartered Accountants.',
             ],
             [
+                'icon_class' => 'fas fa-industry',
                 'title' => 'Industry-Agnostic Expertise',
                 'text' => 'We adapt to your sector, whether trading, manufacturing, services, or retail.',
             ],
             [
+                'icon_class' => 'fas fa-calendar-check',
                 'title' => 'Consistent Monthly Deliverables',
                 'text' => 'Your books and reports, delivered on time, every time.',
             ],
             [
+                'icon_class' => 'fas fa-lightbulb',
                 'title' => 'Beyond Bookkeeping',
                 'text' => 'We flag anomalies, highlight trends, and advise when your numbers need attention.',
             ],
             [
+                'icon_class' => 'fas fa-plug',
                 'title' => 'Seamless Software Integration',
                 'text' => 'We work with Tally, Zoho Books, QuickBooks, or set up the right system for you.',
             ],
             [
+                'icon_class' => 'fas fa-lock',
                 'title' => 'Fully Confidential',
                 'text' => 'Your financial data stays strictly within our team, always.',
             ],
         ];
-        include __DIR__ . '/../../includes/components/caaft-why-grid.php';
+        include __DIR__ . '/../../includes/components/why-choose-caaft.php';
         ?>
 
         <?php
         $caaft_steps_heading_id = 'ar-how-heading';
         $caaft_steps_eyebrow = 'How it works';
         $caaft_steps_title = 'HOW CAAFT WORKS';
+        $caaft_steps_numbered = true;
         $caaft_steps_items = [
             [
                 'title' => 'Step 1 — Initial Setup',
