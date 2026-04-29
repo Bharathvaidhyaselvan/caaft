@@ -557,57 +557,38 @@
             </div>
         </section>
 
-        <section class="caaft-ar-how py-90" aria-labelledby="itr-process-heading">
-            <div class="container">
-                <header class="caaft-ar-how-header">
-                    <h2 id="itr-process-heading" class="caaft-ar-how-h2">Step-by-Step Process</h2>
-                </header>
-                <ol class="caaft-ar-how-timeline">
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">1. Initial Consultation</h3>
-                            <p class="caaft-ar-how-step-text">Income sources, business structure, prior filings, and compliance requirements are assessed upfront — forming the basis for an accurate, complete filing plan.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">2. Document Collection &amp; Verification</h3>
-                            <p class="caaft-ar-how-step-text">Financial statements, Form 16/26AS, AIS, capital gains records, and eligible deduction proofs are collected and reviewed for completeness and accuracy.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">3. Tax Computation &amp; Optimisation</h3>
-                            <p class="caaft-ar-how-step-text">Tax liability is calculated accurately with strategic identification of all applicable deductions, exemptions, and loss adjustments — minimising liability within legal limits.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">4. Draft Return Review</h3>
-                            <p class="caaft-ar-how-step-text">A detailed computation summary is prepared and shared for client review and approval before any submission is made to the Income Tax Department.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">5. Filing &amp; Acknowledgement</h3>
-                            <p class="caaft-ar-how-step-text">The return is filed with the Income Tax Department and acknowledgement (ITR-V) is promptly shared — confirming successful, on-time submission.</p>
-                        </div>
-                    </li>
-                    <li class="caaft-ar-how-step">
-                        <span class="caaft-ar-how-marker caaft-ar-how-marker--dot" aria-hidden="true"></span>
-                        <div class="caaft-ar-how-body">
-                            <h3 class="caaft-ar-how-step-title">6. Post-Filing Assistance</h3>
-                            <p class="caaft-ar-how-step-text">Ongoing support is provided for notices, clarifications, rectifications, and future compliance queries — ensuring complete coverage well beyond the filing date.</p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-        </section>
+        <?php
+        $caaft_steps_heading_id = 'itr-process-heading';
+        $caaft_steps_title = 'Step-by-Step Process';
+        $caaft_steps_numbered = true;
+        $caaft_steps_items = [
+            [
+                'title' => 'Initial Consultation',
+                'text' => 'Income sources, business structure, prior filings, and compliance requirements are assessed upfront — forming the basis for an accurate, complete filing plan.',
+            ],
+            [
+                'title' => 'Document Collection & Verification',
+                'text' => 'Financial statements, Form 16/26AS, AIS, capital gains records, and eligible deduction proofs are collected and reviewed for completeness and accuracy.',
+            ],
+            [
+                'title' => 'Tax Computation & Optimisation',
+                'text' => 'Tax liability is calculated accurately with strategic identification of all applicable deductions, exemptions, and loss adjustments — minimising liability within legal limits.',
+            ],
+            [
+                'title' => 'Draft Return Review',
+                'text' => 'A detailed computation summary is prepared and shared for client review and approval before any submission is made to the Income Tax Department.',
+            ],
+            [
+                'title' => 'Filing & Acknowledgement',
+                'text' => 'The return is filed with the Income Tax Department and acknowledgement (ITR-V) is promptly shared — confirming successful, on-time submission.',
+            ],
+            [
+                'title' => 'Post-Filing Assistance',
+                'text' => 'Ongoing support is provided for notices, clarifications, rectifications, and future compliance queries — ensuring complete coverage well beyond the filing date.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+        ?>
 
         <section class="bk-challenges py-90" aria-labelledby="itr-checklist-heading">
             <div class="container">

@@ -9642,6 +9642,54 @@ align-items: baseline;}
     background: #fff;
 }
 
+/* Reusable overview card defaults across all hubs/pages */
+.bk-overview-card {
+    border: 1px solid #d8dde3;
+    border-left: 3px solid #33B6FF;
+    border-radius: 10px;
+    padding: 18px 18px 20px;
+    background: #fff;
+}
+
+.bk-overview-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.bk-overview-content {
+    min-width: 0;
+}
+
+.bk-overview-bullets {
+    margin: 0 0 10px;
+    padding-left: 18px;
+    list-style: disc;
+    display: grid;
+    gap: 6px;
+    color: #3d3d3d;
+}
+
+.bk-overview-bullets li {
+    list-style: disc;
+}
+
+.bk-overview-bullets li::marker {
+    color: #1f2937;
+}
+
+.bk-overview-image-wrap {
+    min-width: 0;
+}
+
+.bk-overview-image-wrap img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 .page-bookkeeping-accounting .bk-overview-card {
     border: 1px solid #d8dde3;
     border-left: 3px solid #33B6FF;
@@ -9695,6 +9743,10 @@ align-items: baseline;}
 }
 
 @media (max-width: 991.98px) {
+    .bk-overview-layout {
+        grid-template-columns: 1fr;
+    }
+
     .page-bookkeeping-accounting .bk-overview-layout {
         grid-template-columns: 1fr;
     }
@@ -9950,6 +10002,50 @@ align-items: baseline;}
 .bk-cta-title {
     font-size: 32px;
     line-height: 1.2;
+}
+
+/* Reusable CTA visual defaults across all hubs/pages */
+.bk-cta-panel {
+    border-radius: 14px;
+    padding: clamp(36px, 6vw, 56px) 20px;
+    text-align: center;
+}
+
+.bk-cta-title {
+    margin: 0 0 14px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .bk-cta-title {
+        max-width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.bk-cta-text {
+    max-width: 760px;
+    margin: 0 auto 28px;
+    font-size: 1.08rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.88);
+    text-align: center;
+}
+
+.bk-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bk-cta-actions .bk-cta-button {
+    margin-bottom: 0;
 }
 
 .page-bookkeeping-accounting.page-financial-statement-analysis .bk-challenges-list li {

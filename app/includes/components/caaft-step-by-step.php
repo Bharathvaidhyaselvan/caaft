@@ -11,7 +11,7 @@
  *
  * Optional:
  *   $caaft_steps_section_class (string) default "caaft-ar-how py-90 caaft-step-by-step"
- *   $caaft_steps_numbered (bool) default false
+ *   $caaft_steps_numbered (bool) default true
  *   $caaft_steps_eyebrow (string)
  */
 if (!isset($caaft_steps_heading_id, $caaft_steps_title, $caaft_steps_items) || !is_array($caaft_steps_items) || $caaft_steps_items === []) {
@@ -23,7 +23,7 @@ $caaft_steps_title = (string) $caaft_steps_title;
 $caaft_steps_section_class = isset($caaft_steps_section_class) && $caaft_steps_section_class !== ''
     ? (string) $caaft_steps_section_class
     : 'caaft-ar-how py-90 caaft-step-by-step';
-$caaft_steps_numbered = isset($caaft_steps_numbered) ? (bool) $caaft_steps_numbered : false;
+$caaft_steps_numbered = isset($caaft_steps_numbered) ? (bool) $caaft_steps_numbered : true;
 $caaft_steps_eyebrow = isset($caaft_steps_eyebrow) ? (string) $caaft_steps_eyebrow : '';
 if ($caaft_steps_numbered) {
     $caaft_steps_section_class .= ' caaft-step-by-step--numbered';

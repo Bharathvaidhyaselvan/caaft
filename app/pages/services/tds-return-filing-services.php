@@ -53,54 +53,6 @@
             line-height: 1.3;
         }
 
-        .page-tds-return-filing .bk-overview-layout {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-            gap: 2rem;
-            align-items: start;
-        }
-
-        .page-tds-return-filing .bk-overview-card {
-            background: #ffffff;
-            border: 1px solid #e5e8ed;
-            border-left: 0;
-            border-radius: 12px;
-            padding: clamp(1rem, 2vw, 1.5rem);
-            box-shadow: 0 6px 20px rgba(10, 29, 55, 0.04);
-        }
-
-        .page-tds-return-filing .bk-overview-content h2,
-        .page-tds-return-filing .bk-overview-content p {
-            text-align: left !important;
-            text-justify: auto !important;
-        }
-
-        .page-tds-return-filing .bk-overview-bullets {
-            list-style-type: disc !important;
-            list-style-position: outside !important;
-            padding-left: 1.4rem !important;
-            margin: 0 0 1rem;
-        }
-
-        .page-tds-return-filing .bk-overview-bullets li {
-            display: list-item !important;
-            position: relative;
-            margin: 0.15rem 0;
-            padding-left: 0.15rem;
-            line-height: 1.55;
-        }
-
-        .page-tds-return-filing .bk-overview-bullets li::marker {
-            color: #0b2f6b;
-        }
-
-        .page-tds-return-filing .bk-overview-image-wrap img {
-            width: 100%;
-            height: auto;
-            max-height: 380px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
 
         .page-tds-return-filing .bk-who-header,
         .page-tds-return-filing .bk-who-header h2,
@@ -327,7 +279,7 @@
 
         .page-tds-return-filing .tds-risk-item {
             display: grid;
-            grid-template-columns: 18px minmax(0, 1fr);
+            grid-template-columns: 30px minmax(0, 1fr);
             gap: 12px;
             align-items: start;
             padding: 10px 0;
@@ -339,17 +291,19 @@
         }
 
         .page-tds-return-filing .tds-risk-icon {
-            width: 14px;
-            height: 14px;
+            width: 28px;
+            height: 28px;
+            padding: 0.4em;
             border-radius: 50%;
             background: #fdecec;
             color: #d84848;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.62rem;
-            margin-top: 5px;
+            font-size: 0.8rem;
+            margin-top: 2px;
             border: 1px solid #f4caca;
+            box-sizing: border-box;
         }
 
         .page-tds-return-filing .tds-risk-title {
@@ -473,10 +427,6 @@
             .page-tds-return-filing .caaft-ar-trust-item {
                 border-right: 0;
             }
-            .page-tds-return-filing .bk-overview-layout {
-                grid-template-columns: 1fr;
-            }
-
             .page-tds-return-filing .bk-who-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
@@ -812,19 +762,38 @@
             </div>
         </section>
 
-        <section class="caaft-ar-how py-90" aria-labelledby="tds-process-heading">
-            <div class="container">
-                <header class="caaft-ar-how-header"><h2 id="tds-process-heading" class="caaft-ar-how-h2">Step-by-Step Process</h2></header>
-                <ol class="caaft-ar-how-timeline">
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">1. Data Collection &amp; Review</h3><p class="caaft-ar-how-step-text">Payment details, challan data, and deductee information are collected and verified for completeness before processing begins.</p></div></li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">2. Section &amp; Rate Verification</h3><p class="caaft-ar-how-step-text">The applicable TDS section and correct deduction rate are verified for every payment type — ensuring accurate classification and no rate errors.</p></div></li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">3. Challan Reconciliation</h3><p class="caaft-ar-how-step-text">Deducted amounts are matched with challan payments to identify and resolve any mismatches before return preparation.</p></div></li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">4. Return Preparation &amp; Validation</h3><p class="caaft-ar-how-step-text">TDS returns are prepared and validated using authorised filing systems — ensuring every entry is accurate and compliant before submission.</p></div></li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">5. Secure Online Submission</h3><p class="caaft-ar-how-step-text">Returns are filed accurately and securely through the authorised online portal — with acknowledgement generated and maintained for records.</p></div></li>
-                    <li class="caaft-ar-how-step"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">6. Post-Filing Support</h3><p class="caaft-ar-how-step-text">Acknowledgements are issued and Form 16 / Form 16A is generated and shared with deductees after successful filing.</p></div></li>
-                </ol>
-            </div>
-        </section>
+        <?php
+        $caaft_steps_heading_id = 'tds-process-heading';
+        $caaft_steps_title = 'Step-by-Step Process';
+        $caaft_steps_numbered = true;
+        $caaft_steps_items = [
+            [
+                'title' => 'Data Collection & Review',
+                'text' => 'Payment details, challan data, and deductee information are collected and verified for completeness before processing begins.',
+            ],
+            [
+                'title' => 'Section & Rate Verification',
+                'text' => 'The applicable TDS section and correct deduction rate are verified for every payment type — ensuring accurate classification and no rate errors.',
+            ],
+            [
+                'title' => 'Challan Reconciliation',
+                'text' => 'Deducted amounts are matched with challan payments to identify and resolve any mismatches before return preparation.',
+            ],
+            [
+                'title' => 'Return Preparation & Validation',
+                'text' => 'TDS returns are prepared and validated using authorised filing systems — ensuring every entry is accurate and compliant before submission.',
+            ],
+            [
+                'title' => 'Secure Online Submission',
+                'text' => 'Returns are filed accurately and securely through the authorised online portal — with acknowledgement generated and maintained for records.',
+            ],
+            [
+                'title' => 'Post-Filing Support',
+                'text' => 'Acknowledgements are issued and Form 16 / Form 16A is generated and shared with deductees after successful filing.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+        ?>
 
         <section class="bk-challenges py-90 tds-docs-section" aria-labelledby="tds-documents-heading">
             <div class="container">
