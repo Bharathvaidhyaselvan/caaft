@@ -7420,6 +7420,14 @@ li.sections_wights.resp-tab-item.hor_1.resp-tab-active h4.widget-title.title_sec
     color: #33b5fd !important;
 }
 
+.link-extend.main_mesnus_colors.menu-title-center {
+    border-bottom: 1px solid #ffffff !important;
+}
+
+.link-extend.main_mesnus_colors.menu-title-left {
+    border-bottom: 1px solid #ffffff !important;
+}
+
 @media(min-width:991px) {
     .about_bottom_sections {
         padding-bottom: 80px;
@@ -10388,7 +10396,7 @@ align-items: baseline;}
 
 /* Reusable Why Choose CAAFT component */
 .why-choose-caaft {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/1%20.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/caaft-why-choose-us.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
