@@ -9946,6 +9946,12 @@ align-items: baseline;}
     color: #4d5f76;
 }
 
+/* Reusable CTA heading default across pages */
+.bk-cta-title {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
 .page-bookkeeping-accounting.page-financial-statement-analysis .bk-challenges-list li {
     color: #0b2f6b;
 }

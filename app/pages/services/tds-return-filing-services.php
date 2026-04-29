@@ -82,6 +82,13 @@
             margin: 0 0 1rem;
         }
 
+        .page-tds-return-filing .bk-overview-bullets {
+            list-style-type: disc !important;
+            list-style-position: outside !important;
+            padding-left: 1.4rem !important;
+            margin: 0 0 1rem;
+        }
+
         .page-tds-return-filing .tds-what-list li {
             display: list-item !important;
             position: relative;
@@ -90,7 +97,19 @@
             line-height: 1.55;
         }
 
+        .page-tds-return-filing .bk-overview-bullets li {
+            display: list-item !important;
+            position: relative;
+            margin: 0.15rem 0;
+            padding-left: 0.15rem;
+            line-height: 1.55;
+        }
+
         .page-tds-return-filing .tds-what-list li::marker {
+            color: #0b2f6b;
+        }
+
+        .page-tds-return-filing .bk-overview-bullets li::marker {
             color: #0b2f6b;
         }
 
@@ -687,36 +706,29 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-sections"><?php include "header.php"; ?></div>
     <main class="main">
-        <section class="hero-section hs-3 caaft-ar-hero" aria-labelledby="tds-hero-h1">
-            <div class="hero-single singles_forms_frames caaft-ar-hero-single">
-                <div class="container">
-                    <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
-                        <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
-                            <h1 id="tds-hero-h1" class="caaft-ar-hero-h1">TDS Return Filing Services</h1>
-                            <h2 class="caaft-ar-hero-h2">Professional &amp; Reliable TDS Return Filing — Every Quarter, <em>Without Exception</em></h2>
-                            <p class="caaft-ar-hero-lead">Delays, incorrect filings, or compliance gaps in TDS can trigger penalties, interest, and notices from the Income Tax Department.</p>
-                            <p class="caaft-ar-hero-lead">CAAFT offers expert TDS return filing for Private Limited Companies, LLPs, Partnership Firms, Proprietorships, Startups, and Employers — handled by experienced tax professionals to keep every business fully compliant, penalty-free, and audit-ready.</p>
-                            <div class="caaft-ar-hero-ctas">
-                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Start Your TDS Filing <i class="fas fa-arrow-right"></i></a>
-                                <a href="#tds-services-heading" class="theme-btn theme-btn2 caaft-ar-hero-btn-secondary">Contact Us Today <i class="fas fa-arrow-down"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="hero-img-wrap caaft-ar-hero-img-wrap">
-                                <?php
-                                $caaft_enquiry_service = 'TDS Return Filing Services';
-                                $caaft_enquiry_action = '/incometax-services-mail.php';
-                                $caaft_enquiry_title = 'Start Your TDS Filing';
-                                $caaft_enquiry_form_id = 'caaft-tds-enquiry-form-inner';
-                                $caaft_enquiry_input_id_prefix = 'tds';
-                                include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_hero_id = 'tds-hero-h1';
+        $caaft_hero_h1 = 'TDS Return Filing Services';
+        $caaft_hero_h2_before = 'Professional & Reliable TDS Return Filing — Every Quarter,';
+        $caaft_hero_h2_highlight = 'Without Exception';
+        $caaft_hero_h2_after = '';
+        $caaft_hero_lead_paragraphs = [
+            'Delays, incorrect filings, or compliance gaps in TDS can trigger penalties, interest, and notices from the Income Tax Department.',
+            'CAAFT offers expert TDS return filing for Private Limited Companies, LLPs, Partnership Firms, Proprietorships, Startups, and Employers — handled by experienced tax professionals to keep every business fully compliant, penalty-free, and audit-ready.',
+        ];
+        $caaft_hero_primary_cta_label = 'Start Your TDS Filing';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_secondary_cta_label = 'Contact Us Today';
+        $caaft_hero_secondary_cta_href = '#tds-services-heading';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-down';
+
+        $caaft_enquiry_service = 'TDS Return Filing Services';
+        $caaft_enquiry_action = '/incometax-services-mail.php';
+        $caaft_enquiry_title = 'Start Your TDS Filing';
+        $caaft_enquiry_form_id = 'caaft-tds-enquiry-form-inner';
+        $caaft_enquiry_input_id_prefix = 'tds';
+        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+        ?>
 
         <section class="caaft-ar-trust-indicators" aria-label="Trust indicators">
             <div class="container">
@@ -741,29 +753,24 @@
             </div>
         </section>
 
-        <section class="bk-overview py-90" aria-labelledby="tds-what-heading">
-            <div class="container">
-                <div class="bk-overview-card">
-                    <div class="bk-overview-layout">
-                        <div class="bk-overview-content">
-                            <h2 id="tds-what-heading" class="bk-section-title">What is TDS Return Filing?</h2>
-                            <p class="bk-overview-text">TDS (Tax Deducted at Source) is a system where tax is deducted at the time of making specified payments — including salary, contractor payments, professional fees, rent, commission, and interest.</p>
-                            <p class="bk-overview-text">Every deductor must deposit the deducted tax and file a quarterly TDS return with complete details including:</p>
-                            <ul class="tds-what-list">
-                                <li>Amount paid</li>
-                                <li>Tax deducted</li>
-                                <li>Challan details</li>
-                                <li>PAN details of deductees</li>
-                            </ul>
-                            <p class="bk-overview-text">Proper TDS return filing ensures that the deducted tax is reflected in Form 26AS — allowing employees, vendors, and professionals to claim their rightful tax credit without delays or disputes.</p>
-                        </div>
-                        <div class="bk-overview-image-wrap">
-                            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80" alt="TDS return filing documents and tax compliance review" loading="lazy" referrerpolicy="no-referrer">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_overview_heading_id = 'tds-what-heading';
+        $caaft_overview_title = 'What is TDS Return Filing?';
+        $caaft_overview_paragraphs = [
+            'TDS (Tax Deducted at Source) is a system where tax is deducted at the time of making specified payments — including salary, contractor payments, professional fees, rent, commission, and interest.',
+            'Every deductor must deposit the deducted tax and file a quarterly TDS return with complete details including:',
+        ];
+        $caaft_overview_bullets = [
+            'Amount paid',
+            'Tax deducted',
+            'Challan details',
+            'PAN details of deductees',
+        ];
+        $caaft_overview_closing = 'Proper TDS return filing ensures that the deducted tax is reflected in Form 26AS — allowing employees, vendors, and professionals to claim their rightful tax credit without delays or disputes.';
+        $caaft_overview_image_src = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80';
+        $caaft_overview_image_alt = 'TDS return filing documents and tax compliance review';
+        include __DIR__ . '/../../includes/components/caaft-overview-card.php';
+        ?>
 
         <section class="bk-who py-90" aria-labelledby="tds-why-needed-heading">
             <div class="container">
@@ -988,54 +995,70 @@
             </div>
         </section>
 
-        <section class="caaft-ar-why py-90" aria-labelledby="tds-why-heading">
-            <div class="container">
-                <header class="caaft-ar-why-header"><h2 id="tds-why-heading" class="caaft-ar-why-h2">Why Choose CAAFT</h2></header>
-                <div class="caaft-ar-why-panel"><div class="caaft-ar-why-grid caaft-ar-why-grid--five">
-                    <div class="caaft-ar-why-row caaft-ar-why-row--top">
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Expert professionals, accurate filing</h3><p class="caaft-ar-why-text">Experienced tax professionals ensure every TDS return is error-free, timely, and fully compliant — no missed deadlines, no incorrect rates, no costly mistakes.</p></article>
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Proactive compliance management</h3><p class="caaft-ar-why-text">The compliance calendar is actively monitored throughout the year — ensuring every due date is tracked, every challan is reconciled, and nothing slips through the cracks.</p></article>
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Transparent pricing, complete confidentiality</h3><p class="caaft-ar-why-text">Affordable, clearly structured fees with strict data privacy standards — ensuring financial data is always protected and handled with complete confidentiality.</p></article>
-                    </div>
-                    <div class="caaft-ar-why-row caaft-ar-why-row--bottom">
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Dedicated client support</h3><p class="caaft-ar-why-text">A responsive team is available to address queries, provide updates, and handle notices at every step — from initial filing to post-submission support.</p></article>
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Serving diverse industries across India</h3><p class="caaft-ar-why-text">From manufacturing, IT, construction, and healthcare to startups, MSMEs, educational institutions, and professional consultants — sector-specific compliance knowledge is applied to every engagement.</p></article>
-                    </div>
-                </div></div>
-            </div>
-        </section>
+        <?php
+        $why_choose_caaft_heading_id = 'tds-why-heading';
+        $why_choose_caaft_title = 'Why Choose CAAFT';
+        $why_choose_caaft_show_intro = false;
+        $why_choose_caaft_section_class = 'why-choose-caaft py-90';
+        $why_choose_caaft_items = [
+            [
+                'icon_class' => 'fas fa-user-tie',
+                'title' => 'Expert professionals, accurate filing',
+                'text' => 'Experienced tax professionals ensure every TDS return is error-free, timely, and fully compliant — no missed deadlines, no incorrect rates, no costly mistakes.',
+            ],
+            [
+                'icon_class' => 'fas fa-calendar-check',
+                'title' => 'Proactive compliance management',
+                'text' => 'The compliance calendar is actively monitored throughout the year — ensuring every due date is tracked, every challan is reconciled, and nothing slips through the cracks.',
+            ],
+            [
+                'icon_class' => 'fas fa-shield-alt',
+                'title' => 'Transparent pricing, complete confidentiality',
+                'text' => 'Affordable, clearly structured fees with strict data privacy standards — ensuring financial data is always protected and handled with complete confidentiality.',
+            ],
+            [
+                'icon_class' => 'fas fa-headset',
+                'title' => 'Dedicated client support',
+                'text' => 'A responsive team is available to address queries, provide updates, and handle notices at every step — from initial filing to post-submission support.',
+            ],
+            [
+                'icon_class' => 'fas fa-globe',
+                'title' => 'Serving diverse industries across India',
+                'text' => 'From manufacturing, IT, construction, and healthcare to startups, MSMEs, educational institutions, and professional consultants — sector-specific compliance knowledge is applied to every engagement.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+        ?>
 
-        <section class="bk-facts py-90" aria-labelledby="tds-facts-heading">
-            <div class="container">
-                <header class="bk-facts-header">
-                    <h2 id="tds-facts-heading" class="bk-section-title">Key Facts &amp; Figures</h2>
-                </header>
-                <div class="bk-facts-grid bk-facts-grid--tds-kf">
-                    <article class="bk-facts-card">
-                        <h3 class="tds-kf-metric">₹1.83 lakh crore</h3>
-                        <p class="tds-kf-text">India's GST collections reached ₹1.83 lakh crore in February 2026 — up 8.1% year-on-year — reflecting strong economic growth and accelerating compliance momentum across businesses</p>
-                    </article>
-                    <article class="bk-facts-card">
-                        <h3 class="tds-kf-metric">95%</h3>
-                        <p class="tds-kf-text">Over 1.4 crore active taxpayers are filing monthly returns, with 95% timely GSTR-3B compliance — driven by digital platforms that help businesses avoid late-fee penalties</p>
-                    </article>
-                    <article class="bk-facts-card">
-                        <h3 class="tds-kf-metric">1.5 crore+</h3>
-                        <p class="tds-kf-text">GST now covers 1.5 crore+ businesses nationwide — underscoring the scale of India's tax compliance landscape and the importance of structured, professional filing support</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_key_facts_heading_id = 'tds-facts-heading';
+        $caaft_key_facts_title = 'Key Facts & Figures';
+        $caaft_key_facts_items = [
+            [
+                'stat' => '₹1.83 lakh crore',
+                'text' => 'India\'s GST collections reached ₹1.83 lakh crore in February 2026 — up 8.1% year-on-year — reflecting strong economic growth and accelerating compliance momentum across businesses',
+            ],
+            [
+                'stat' => '95%',
+                'text' => 'Over 1.4 crore active taxpayers are filing monthly returns, with 95% timely GSTR-3B compliance — driven by digital platforms that help businesses avoid late-fee penalties',
+            ],
+            [
+                'stat' => '1.5 crore+',
+                'text' => 'GST now covers 1.5 crore+ businesses nationwide — underscoring the scale of India\'s tax compliance landscape and the importance of structured, professional filing support',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-key-facts.php';
+        ?>
 
-        <section id="get-in-touch" class="bk-cta py-90" aria-labelledby="tds-cta-heading">
-            <div class="container">
-                <div class="bk-cta-panel">
-                    <h2 id="tds-cta-heading" class="bk-cta-title">Ready to File Your TDS Returns on Time?</h2>
-                    <p class="bk-cta-text">Non-compliance in TDS is one of the most common — and most avoidable — sources of penalties, notices, and audit risk for Indian businesses. Professional TDS return filing ensures every quarter is filed accurately, every challan is reconciled, and every deductee receives their rightful tax credit — without exception.</p>
-                    <a href="/contact#contact_us" class="theme-btn bk-cta-button">Hassle-Free TDS Filing <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_cta_section_id = 'get-in-touch';
+        $caaft_cta_heading_id = 'tds-cta-heading';
+        $caaft_cta_title = 'Ready to File Your TDS Returns on Time?';
+        $caaft_cta_text = 'Non-compliance in TDS is one of the most common — and most avoidable — sources of penalties, notices, and audit risk for Indian businesses. Professional TDS return filing ensures every quarter is filed accurately, every challan is reconciled, and every deductee receives their rightful tax credit — without exception.';
+        $caaft_cta_button_label = 'Hassle-Free TDS Filing';
+        $caaft_cta_button_href = '/contact#contact_us';
+        include __DIR__ . '/../../includes/components/caaft-cta.php';
+        ?>
 
         <div id="faq" class="faq-area are_sections_faq py-120 caaft-ar-faq-wrap" aria-labelledby="tds-faq-heading">
             <div class="container">

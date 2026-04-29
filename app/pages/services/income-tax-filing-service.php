@@ -23,9 +23,20 @@
     <meta name="twitter:image" content="https://caaft.com/assets/img/tax-planning-management.webp">
     <?php include "header-top.php"; ?>
     <style>
-        .page-income-tax-filing-service h2 {
-            font-size: 32px !important;
+        .page-income-tax-filing-service.page-accounting-reporting .caaft-ar-hero-h2 {
+            font-size: 42px !important;
             line-height: 1.2 !important;
+        }
+
+        .page-income-tax-filing-service .bk-section-title {
+            font-family: var(--heading-font);
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.2;
+            color: #222;
+            margin: 0 0 16px;
+            text-transform: none;
+            letter-spacing: 0;
         }
 
         .page-income-tax-filing-service .caaft-ar-trust-indicators {
@@ -225,7 +236,7 @@
             text-align: center !important;
             text-wrap: balance;
             color: #ffffff !important;
-            font-size: clamp(2rem, 4.5vw, 3.2rem);
+            font-size: 32px;
             line-height: 1.15;
             font-weight: 800;
         }
