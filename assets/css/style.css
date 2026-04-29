@@ -8559,7 +8559,7 @@ align-items: baseline;}
 
 .page-accounting-reporting .caaft-ar-hero-h1 {
     font-family: var(--heading-font);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.35;
     color: var(--color-white);
@@ -9878,43 +9878,54 @@ align-items: baseline;}
 .page-bookkeeping-accounting .bk-facts-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
+    gap: clamp(14px, 2vw, 24px);
 }
 
 .page-bookkeeping-accounting .bk-facts-card {
     background: #fff;
-    border: 1px solid #d8dde3;
-    border-radius: 8px;
-    padding: 20px 18px;
+    border: 1px solid rgba(10, 29, 67, 0.14);
+    border-radius: 10px;
+    padding: clamp(22px, 3vw, 30px) clamp(16px, 2.2vw, 24px);
     text-align: center;
-    min-height: 172px;
+    min-height: 0;
+    box-shadow: 0 8px 22px rgba(10, 29, 67, 0.05);
+    transition: var(--transition2);
 }
 
-.page-bookkeeping-accounting .bk-facts-card h3 {
+.page-bookkeeping-accounting .bk-facts-card:hover {
+    border-color: rgba(51, 182, 255, 0.55);
+    transform: translateY(-2px);
+}
+
+.page-bookkeeping-accounting .bk-facts-card h3,
+.page-bookkeeping-accounting .bk-facts-card .bk-facts-stat {
     margin: 0 0 10px;
     font-family: var(--heading-font);
-    font-size: clamp(2rem, 4vw, 3rem);
-    line-height: 1;
-    color: #0A1D43;
-    font-weight: 700;
+    font-size: clamp(1.8rem, 3.8vw, 2.6rem);
+    line-height: 1.1;
+    color: var(--theme-color);
+    font-weight: 800;
+    letter-spacing: -0.02em;
 }
 
-.page-bookkeeping-accounting .bk-facts-card p {
+.page-bookkeeping-accounting .bk-facts-card p,
+.page-bookkeeping-accounting .bk-facts-card .bk-facts-stat-text {
     margin: 0;
     font-size: 0.96rem;
     line-height: 1.65;
-    color: #666;
+    color: #4d5f76;
 }
 
 .page-bookkeeping-accounting .bk-facts-card--plain {
     min-height: 0;
-    text-align: left;
+    text-align: center;
 }
 
-.page-bookkeeping-accounting .bk-facts-card--plain p {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #444;
+.page-bookkeeping-accounting .bk-facts-card--plain p,
+.page-bookkeeping-accounting .bk-facts-card--plain .bk-facts-stat-text {
+    font-size: 0.96rem;
+    line-height: 1.65;
+    color: #4d5f76;
 }
 
 /* Financial Analysis & MIS — Step-by-Step on theme light blue */
@@ -10012,12 +10023,21 @@ align-items: baseline;}
     line-height: 1.2;
     font-weight: 700;
     color: #fff;
+    text-align: center;
 }
 
 .page-bookkeeping-accounting.page-ar-ap-services .bk-cta-title {
     padding-left: clamp(20px, 6vw, 72px);
     padding-right: clamp(20px, 6vw, 72px);
     box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+    .page-bookkeeping-accounting .bk-cta-title {
+        max-width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .page-bookkeeping-accounting .bk-cta-text {
