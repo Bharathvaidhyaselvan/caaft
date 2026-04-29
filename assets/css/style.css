@@ -9906,6 +9906,8 @@ align-items: baseline;}
     color: var(--theme-color);
     font-weight: 800;
     letter-spacing: -0.02em;
+    width: 100%;
+    text-align: center !important;
 }
 
 .page-bookkeeping-accounting .bk-facts-card p,

@@ -611,9 +611,18 @@
         $caaft_key_facts_heading_id = 'bk-facts-heading';
         $caaft_key_facts_title = 'Key Facts & Figures';
         $caaft_key_facts_items = [
-            '500+ businesses have trusted CAAFT with their books — across startups, SMEs, and established enterprises',
-            '₹100 Cr+ in books managed with a 99% accuracy rate — delivering reliable, audit-ready financial records consistently',
-            'Businesses that outsource bookkeeping to qualified professionals reduce the risk of compliance errors by a significant margin — avoiding costly penalties, mismatches, and audit findings',
+            [
+                'stat' => '500+',
+                'text' => '500+ businesses have trusted CAAFT with their books — across startups, SMEs, and established enterprises',
+            ],
+            [
+                'stat' => '₹100 Cr+',
+                'text' => '₹100 Cr+ in books managed with a 99% accuracy rate — delivering reliable, audit-ready financial records consistently',
+            ],
+            [
+                'stat' => '↓ Risk',
+                'text' => 'Businesses that outsource bookkeeping to qualified professionals reduce the risk of compliance errors by a significant margin — avoiding costly penalties, mismatches, and audit findings',
+            ],
         ];
         include __DIR__ . '/../../includes/components/caaft-key-facts.php';
         ?>
