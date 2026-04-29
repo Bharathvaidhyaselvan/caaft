@@ -301,9 +301,18 @@
         $caaft_key_facts_heading_id = 'arap-facts-heading';
         $caaft_key_facts_title = 'Key Facts & Figures';
         $caaft_key_facts_items = [
-            'Businesses with structured accounts receivable management reduce payment delays by 30–40% — directly improving overall cash flow stability and working capital efficiency',
-            'Nearly 60% of SMEs in India face cash flow challenges due to delayed customer payments and poor receivable tracking — a gap that professional AR management directly addresses',
-            'Effective accounts payable management helps businesses maintain strong vendor relationships and avoid late payment penalties — protecting both supplier trust and the bottom line',
+            [
+                'stat' => '30-40%',
+                'text' => 'Businesses with structured accounts receivable management reduce payment delays by 30–40% — directly improving overall cash flow stability and working capital efficiency',
+            ],
+            [
+                'stat' => '60%',
+                'text' => 'Nearly 60% of SMEs in India face cash flow challenges due to delayed customer payments and poor receivable tracking — a gap that professional AR management directly addresses',
+            ],
+            [
+                'stat' => 'Trustline',
+                'text' => 'Effective accounts payable management helps businesses maintain strong vendor relationships and avoid late payment penalties — protecting both supplier trust and the bottom line',
+            ],
         ];
         include __DIR__ . '/../../includes/components/caaft-key-facts.php';
         ?>

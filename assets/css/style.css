@@ -9878,6 +9878,14 @@ align-items: baseline;}
     background: #f0a020;
 }
 
+.page-bookkeeping-accounting.page-financial-statement-analysis .bk-challenges-list li {
+    color: #0b2f6b;
+}
+
+.page-bookkeeping-accounting.page-financial-statement-analysis .bk-challenges-list li::before {
+    background: #0b2f6b;
+}
+
 .page-bookkeeping-accounting .bk-facts-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));

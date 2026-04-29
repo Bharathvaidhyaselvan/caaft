@@ -295,9 +295,18 @@
         $caaft_key_facts_heading_id = 'fs-facts-heading';
         $caaft_key_facts_title = 'Key Facts & Figures';
         $caaft_key_facts_items = [
-            '500+ businesses have relied on CAAFT for financial statement preparation — across startups, SMEs, private limited companies, and established enterprises',
-            '1,000+ financial statements prepared with 100% compliance accuracy — ensuring every report meets applicable accounting standards and regulatory requirements',
-            'Businesses with professionally prepared financial statements are significantly better positioned to secure loans, attract investors, and pass audits — with organised, credible records available at every stage',
+            [
+                'stat' => '500+',
+                'text' => '500+ businesses have relied on CAAFT for financial statement preparation — across startups, SMEs, private limited companies, and established enterprises',
+            ],
+            [
+                'stat' => '1000+',
+                'text' => '1,000+ financial statements prepared with 100% compliance accuracy — ensuring every report meets applicable accounting standards and regulatory requirements',
+            ],
+            [
+                'stat' => 'Secure Loans',
+                'text' => 'Businesses with professionally prepared financial statements are significantly better positioned to secure loans, attract investors, and pass audits — with organised, credible records available at every stage',
+            ],
         ];
         include __DIR__ . '/../../includes/components/caaft-key-facts.php';
         ?>
