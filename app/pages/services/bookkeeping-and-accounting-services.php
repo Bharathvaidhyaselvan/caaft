@@ -176,7 +176,7 @@
         /* Strong page fallback to ensure reusable why section styling survives deploy/cache/order issues */
         .page-bookkeeping-accounting .why-choose-caaft {
             background-color: #10294a !important;
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/1%20.jpg") !important;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/caaft-why-choose-us.png") !important;
             background-size: cover !important;
             background-position: center !important;
             background-repeat: no-repeat !important;

@@ -13,6 +13,7 @@
  * Optional:
  *   $why_choose_caaft_intro (string)
  *   $why_choose_caaft_section_class (string)
+ *   $why_choose_caaft_section_style (string)
  *   $why_choose_caaft_sticky_main (bool) default true
  *   $why_choose_caaft_show_intro (bool) default true
  */
@@ -32,9 +33,12 @@ if ($why_choose_caaft_show_intro && trim($why_choose_caaft_intro) === '') {
 $why_choose_caaft_section_class = isset($why_choose_caaft_section_class) && $why_choose_caaft_section_class !== ''
     ? (string) $why_choose_caaft_section_class
     : 'why-choose-caaft py-90';
+$why_choose_caaft_section_style = isset($why_choose_caaft_section_style) && $why_choose_caaft_section_style !== ''
+    ? (string) $why_choose_caaft_section_style
+    : 'background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/caaft-why-choose-us.png") !important;';
 $why_choose_caaft_sticky_main = isset($why_choose_caaft_sticky_main) ? (bool) $why_choose_caaft_sticky_main : true;
 ?>
-<section class="<?php echo htmlspecialchars($why_choose_caaft_section_class, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars($why_choose_caaft_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
+<section class="<?php echo htmlspecialchars($why_choose_caaft_section_class, ENT_QUOTES, 'UTF-8'); ?>" style="<?php echo htmlspecialchars($why_choose_caaft_section_style, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars($why_choose_caaft_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
         <div class="why-choose-caaft-layout">
             <div class="why-choose-caaft-main<?php echo $why_choose_caaft_sticky_main ? '' : ' why-choose-caaft-main--static'; ?>">

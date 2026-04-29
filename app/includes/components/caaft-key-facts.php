@@ -5,7 +5,7 @@
  * Required:
  *   $caaft_key_facts_heading_id (string)
  *   $caaft_key_facts_title (string)
- *   $caaft_key_facts_items (string[])
+ *   $caaft_key_facts_items (array)
  *
  * Optional:
  *   $caaft_key_facts_section_class (string) default "bk-facts py-90"
@@ -26,19 +26,6 @@ $caaft_key_facts_card_class = isset($caaft_key_facts_card_class) && $caaft_key_f
     ? (string) $caaft_key_facts_card_class
     : 'bk-facts-card bk-facts-card--plain';
 
-$caaft_key_facts_make_short_headline = static function (string $value): string {
-    $value = trim($value);
-    if ($value === '') {
-        return '';
-    }
-
-    $words = preg_split('/\s+/u', $value, -1, PREG_SPLIT_NO_EMPTY);
-    if (!is_array($words) || $words === []) {
-        return '';
-    }
-
-    return trim(implode(' ', array_slice($words, 0, 2)));
-};
 ?>
 <section class="<?php echo htmlspecialchars($caaft_key_facts_section_class, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars((string) $caaft_key_facts_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
@@ -55,25 +42,8 @@ $caaft_key_facts_make_short_headline = static function (string $value): string {
                     $caaft_key_facts_stat = trim((string) ($caaft_key_facts_item['stat'] ?? ''));
                     $caaft_key_facts_text = trim((string) ($caaft_key_facts_item['text'] ?? ''));
                 } else {
-                    $caaft_key_facts_item_text = trim((string) $caaft_key_facts_item);
-
-                    if ($caaft_key_facts_item_text !== '') {
-                        $caaft_key_facts_split = preg_split('/\s(?:—|-)\s/u', $caaft_key_facts_item_text, 2);
-
-                        if (is_array($caaft_key_facts_split) && count($caaft_key_facts_split) === 2) {
-                            $caaft_key_facts_stat = trim((string) $caaft_key_facts_split[0]);
-                            $caaft_key_facts_text = trim((string) $caaft_key_facts_split[1]);
-                        } else {
-                            $caaft_key_facts_text = $caaft_key_facts_item_text;
-                        }
-                    }
+                    $caaft_key_facts_text = trim((string) $caaft_key_facts_item);
                 }
-
-                if ($caaft_key_facts_stat === '' && $caaft_key_facts_text !== '') {
-                    $caaft_key_facts_stat = $caaft_key_facts_text;
-                }
-
-                $caaft_key_facts_stat = $caaft_key_facts_make_short_headline($caaft_key_facts_stat);
                 ?>
                 <article class="<?php echo htmlspecialchars($caaft_key_facts_card_class, ENT_QUOTES, 'UTF-8'); ?>">
                     <?php if ($caaft_key_facts_stat !== '') : ?>
