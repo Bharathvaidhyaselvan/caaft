@@ -75,26 +75,11 @@
             text-justify: auto !important;
         }
 
-        .page-tds-return-filing .tds-what-list {
-            list-style-type: disc !important;
-            list-style-position: outside !important;
-            padding-left: 1.4rem !important;
-            margin: 0 0 1rem;
-        }
-
         .page-tds-return-filing .bk-overview-bullets {
             list-style-type: disc !important;
             list-style-position: outside !important;
             padding-left: 1.4rem !important;
             margin: 0 0 1rem;
-        }
-
-        .page-tds-return-filing .tds-what-list li {
-            display: list-item !important;
-            position: relative;
-            margin: 0.15rem 0;
-            padding-left: 0.15rem;
-            line-height: 1.55;
         }
 
         .page-tds-return-filing .bk-overview-bullets li {
@@ -105,21 +90,8 @@
             line-height: 1.55;
         }
 
-        .page-tds-return-filing .tds-what-list li::marker {
-            color: #0b2f6b;
-        }
-
         .page-tds-return-filing .bk-overview-bullets li::marker {
             color: #0b2f6b;
-        }
-
-        .page-tds-return-filing .tds-what-list li::before {
-            content: "•";
-            color: #0b2f6b;
-            font-weight: 700;
-            position: absolute;
-            left: -0.9rem;
-            top: 0;
         }
 
         .page-tds-return-filing .bk-overview-image-wrap img {
@@ -492,104 +464,6 @@
             font-weight: 600;
         }
 
-        .page-tds-return-filing .bk-facts-grid--tds-kf {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 1.4rem;
-        }
-
-        .page-tds-return-filing .bk-facts-grid--tds-kf .bk-facts-card {
-            border: 1px solid #e3e7ee;
-            border-radius: 12px;
-            background: #ffffff;
-            min-height: 230px;
-            padding: 1.75rem 1.4rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center !important;
-        }
-
-        .page-tds-return-filing .tds-kf-metric {
-            font-size: clamp(2rem, 4vw, 3rem);
-            line-height: 1.05;
-            font-weight: 800;
-            color: #0a1d4d;
-            margin: 0 0 0.8rem;
-        }
-
-        .page-tds-return-filing .tds-kf-text {
-            margin: 0;
-            font-size: 1.02rem;
-            line-height: 1.7;
-            color: #6a768a;
-            text-align: center !important;
-        }
-
-        .page-tds-return-filing .bk-cta,
-        .page-tds-return-filing .bk-cta * {
-            text-align: center !important;
-            text-justify: auto !important;
-        }
-
-        .page-tds-return-filing .bk-cta-panel {
-            text-align: center !important;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            background: linear-gradient(135deg, #0a2458 0%, #0c2f74 55%, #133f93 100%);
-            border-radius: 14px;
-            padding: clamp(2rem, 6vw, 4rem) clamp(1.2rem, 4vw, 3rem);
-            box-shadow: 0 14px 36px rgba(10, 36, 88, 0.28);
-        }
-
-        .page-tds-return-filing .bk-cta-title,
-        .page-tds-return-filing .bk-cta-text,
-        .page-tds-return-filing .bk-cta-button {
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-
-        .page-tds-return-filing .bk-cta-title {
-            max-width: 760px;
-            margin-bottom: 0 !important;
-            text-align: center !important;
-            text-wrap: balance;
-            color: #ffffff !important;
-            font-size: clamp(2rem, 4.5vw, 3.2rem);
-            line-height: 1.15;
-            font-weight: 800;
-        }
-
-        .page-tds-return-filing .bk-cta-text {
-            max-width: 760px;
-            line-height: 1.6;
-            margin-bottom: 0 !important;
-            text-wrap: balance;
-            color: rgba(255, 255, 255, 0.92) !important;
-            font-size: clamp(1rem, 1.7vw, 1.18rem);
-        }
-
-        .page-tds-return-filing .bk-cta-button {
-            background: linear-gradient(90deg, #2eb4ff 0%, #27a6ff 100%) !important;
-            color: #ffffff !important;
-            border: 0 !important;
-            border-radius: 10px !important;
-            padding: 13px 24px !important;
-            min-width: 230px;
-            font-weight: 700;
-            box-shadow: 0 10px 24px rgba(46, 180, 255, 0.34);
-        }
-
-        .page-tds-return-filing .bk-cta-button:hover,
-        .page-tds-return-filing .bk-cta-button:focus {
-            transform: translateY(-1px);
-            box-shadow: 0 12px 28px rgba(46, 180, 255, 0.44);
-            color: #ffffff !important;
-        }
 
         @media (max-width: 991.98px) {
             .page-tds-return-filing .caaft-ar-trust-grid {
@@ -611,9 +485,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .page-tds-return-filing .bk-facts-grid--tds-kf {
-                grid-template-columns: 1fr;
-            }
         }
 
         @media (max-width: 767.98px) {
@@ -998,7 +869,7 @@
         <?php
         $why_choose_caaft_heading_id = 'tds-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
-        $why_choose_caaft_show_intro = false;
+        $why_choose_caaft_show_intro = true;
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             [
