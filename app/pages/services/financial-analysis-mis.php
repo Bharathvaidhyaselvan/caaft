@@ -380,9 +380,9 @@
         }
 
         .page-bookkeeping-accounting.page-financial-analysis-mis .mis-why-analysis .caaft-who-needs-card::before {
-            content: '\f0da';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
+            content: '\2713';
+            font-family: var(--body-font);
+            font-weight: 700;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -753,9 +753,18 @@
         $caaft_key_facts_heading_id = 'mis-facts-heading';
         $caaft_key_facts_title = 'Key Facts & Figures';
         $caaft_key_facts_items = [
-            '500+ businesses have relied on CAAFT for financial analysis and MIS reporting — across startups, SMEs, and established enterprises',
-            '1,000+ MIS reports delivered with ₹500 Cr+ in financial data analysed — consistently turning complex numbers into clear, decision-ready insights',
-            'India has over 63 million MSMEs — the vast majority of which lack structured financial reporting, leaving performance gaps, profitability leaks, and compliance risks undetected',
+            [
+                'stat' => '500+',
+                'text' => '500+ businesses have relied on CAAFT for financial analysis and MIS reporting — across startups, SMEs, and established enterprises',
+            ],
+            [
+                'stat' => '1000+',
+                'text' => '1,000+ MIS reports delivered with ₹500 Cr+ in financial data analysed — consistently turning complex numbers into clear, decision-ready insights',
+            ],
+            [
+                'stat' => '63M+',
+                'text' => 'India has over 63 million MSMEs — the vast majority of which lack structured financial reporting, leaving performance gaps, profitability leaks, and compliance risks undetected',
+            ],
         ];
         include __DIR__ . '/../../includes/components/caaft-key-facts.php';
         ?>
