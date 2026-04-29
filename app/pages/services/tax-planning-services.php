@@ -614,35 +614,28 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-sections"><?php include "header.php"; ?></div>
     <main class="main">
-        <section class="hero-section hs-3 caaft-ar-hero" aria-labelledby="tax-plan-h1">
-            <div class="hero-single singles_forms_frames caaft-ar-hero-single">
-                <div class="container">
-                    <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
-                        <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
-                            <h1 id="tax-plan-h1" class="caaft-ar-hero-h1">Tax Planning Services</h1>
-                            <h2 class="caaft-ar-hero-h2">Proactive. Personalised. Fully Compliant Tax Planning — Built Around Every Financial Goal.</h2>
-                            <p class="caaft-ar-hero-lead">CAAFT specialises in advanced, personalised tax strategies for high-income earners, business owners, startups, and professionals — helping preserve wealth, reduce tax exposure legally, and build a financial structure that works across every stage of growth.</p>
-                            <div class="caaft-ar-hero-ctas">
-                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Free 15-Min Tax Strategy Call <i class="fas fa-arrow-right"></i></a>
-                                <a href="#tax-plan-what" class="theme-btn theme-btn2 caaft-ar-hero-btn-secondary">Schedule Now <i class="fas fa-arrow-down"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="hero-img-wrap caaft-ar-hero-img-wrap">
-                                <?php
-                                $caaft_enquiry_service = 'Tax Planning Services';
-                                $caaft_enquiry_action = '/incometax-services-mail.php';
-                                $caaft_enquiry_title = 'Free 15-Min Tax Strategy Call';
-                                $caaft_enquiry_form_id = 'caaft-tax-planning-enquiry-form-inner';
-                                $caaft_enquiry_input_id_prefix = 'taxplanning';
-                                include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_hero_id = 'tax-plan-h1';
+        $caaft_hero_h1 = 'Tax Planning Services';
+        $caaft_hero_h2_before = 'Proactive. Personalised. Fully Compliant Tax Planning —';
+        $caaft_hero_h2_highlight = 'Built Around Every Financial Goal.';
+        $caaft_hero_h2_after = '';
+        $caaft_hero_lead_paragraphs = [
+            'CAAFT specialises in advanced, personalised tax strategies for high-income earners, business owners, startups, and professionals — helping preserve wealth, reduce tax exposure legally, and build a financial structure that works across every stage of growth.',
+        ];
+        $caaft_hero_primary_cta_label = 'Free 15-Min Tax Strategy Call';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_secondary_cta_label = 'Schedule Now';
+        $caaft_hero_secondary_cta_href = '#tax-plan-what';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-down';
+
+        $caaft_enquiry_service = 'Tax Planning Services';
+        $caaft_enquiry_action = '/incometax-services-mail.php';
+        $caaft_enquiry_title = 'Free 15-Min Tax Strategy Call';
+        $caaft_enquiry_form_id = 'caaft-tax-planning-enquiry-form-inner';
+        $caaft_enquiry_input_id_prefix = 'taxplanning';
+        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+        ?>
 
         <section class="caaft-ar-trust-indicators" aria-label="Trust indicators">
             <div class="container">
@@ -655,22 +648,19 @@
             </div>
         </section>
 
-        <section class="bk-overview py-90" aria-labelledby="tax-plan-what">
-            <div class="container">
-                <div class="bk-overview-card">
-                    <div class="bk-overview-layout">
-                        <div class="bk-overview-content">
-                            <h2 id="tax-plan-what" class="bk-section-title">What is Tax Planning?</h2>
-                            <p class="bk-overview-text">Tax planning is the process of analysing a financial situation and structuring income, expenses, investments, and transactions to legally minimise tax liability — while remaining fully compliant with the Income Tax Act and applicable regulations.</p>
-                            <p class="bk-overview-text">Effective tax planning is not a year-end exercise. It is an ongoing, strategic process that connects financial decisions with tax-efficient outcomes — ensuring every rupee earned is protected as far as the law allows, and every opportunity for deduction, exemption, and savings is identified and claimed.</p>
-                        </div>
-                        <div class="bk-overview-image-wrap">
-                            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80" alt="Tax planning strategy discussion and financial analysis" loading="lazy" referrerpolicy="no-referrer">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_overview_heading_id = 'tax-plan-what';
+        $caaft_overview_title = 'What is Tax Planning?';
+        $caaft_overview_paragraphs = [
+            'Tax planning is the process of analysing a financial situation and structuring income, expenses, investments, and transactions to legally minimise tax liability — while remaining fully compliant with the Income Tax Act and applicable regulations.',
+            'Effective tax planning is not a year-end exercise. It is an ongoing, strategic process that connects financial decisions with tax-efficient outcomes — ensuring every rupee earned is protected as far as the law allows, and every opportunity for deduction, exemption, and savings is identified and claimed.',
+        ];
+        $caaft_overview_bullets = [];
+        $caaft_overview_closing = '';
+        $caaft_overview_image_src = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80';
+        $caaft_overview_image_alt = 'Tax planning strategy discussion and financial analysis';
+        include __DIR__ . '/../../includes/components/caaft-overview-card.php';
+        ?>
 
         <section class="caaft-ar-what-we-offer py-90" aria-labelledby="tax-plan-importance">
             <div class="container">

@@ -23,6 +23,11 @@
     <meta name="twitter:image" content="https://caaft.com/assets/img/tax-planning-management.webp">
     <?php include "header-top.php"; ?>
     <style>
+        .page-income-tax-filing-service h2 {
+            font-size: 32px !important;
+            line-height: 1.2 !important;
+        }
+
         .page-income-tax-filing-service .caaft-ar-trust-indicators {
             background: #ffffff !important;
         }
@@ -185,61 +190,6 @@
             color: #4d5868;
         }
 
-        .page-income-tax-filing-service .bk-facts-header,
-        .page-income-tax-filing-service .bk-facts-header h2,
-        .page-income-tax-filing-service .bk-facts-card,
-        .page-income-tax-filing-service .bk-facts-card p {
-            text-align: left !important;
-            text-justify: auto !important;
-        }
-
-        .page-income-tax-filing-service .bk-facts {
-            padding-bottom: clamp(3.25rem, 7vw, 6rem) !important;
-        }
-
-        .page-income-tax-filing-service .bk-facts-header {
-            margin-bottom: clamp(1rem, 2.5vw, 1.75rem) !important;
-        }
-
-        .page-income-tax-filing-service .bk-facts-grid--itr-kf {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 1.4rem;
-        }
-
-        .page-income-tax-filing-service .bk-facts-grid--itr-kf .bk-facts-card {
-            border: 1px solid #e3e7ee;
-            border-radius: 12px;
-            background: #ffffff;
-            min-height: 230px;
-            padding: 1.75rem 1.4rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center !important;
-        }
-
-        .page-income-tax-filing-service .itr-kf-metric {
-            font-size: clamp(2rem, 4vw, 3rem);
-            line-height: 1.05;
-            font-weight: 800;
-            color: #0a1d4d;
-            margin: 0 0 0.8rem;
-        }
-
-        .page-income-tax-filing-service .itr-kf-metric--small {
-            font-size: clamp(1.45rem, 2.4vw, 2.15rem);
-        }
-
-        .page-income-tax-filing-service .itr-kf-text {
-            margin: 0;
-            font-size: 1.02rem;
-            line-height: 1.7;
-            color: #6a768a;
-            text-align: center !important;
-        }
-
         .page-income-tax-filing-service .bk-cta,
         .page-income-tax-filing-service .bk-cta * {
             text-align: center !important;
@@ -253,7 +203,10 @@
             align-items: center;
             justify-content: center;
             gap: 1rem;
-            background: linear-gradient(135deg, #0a2458 0%, #0c2f74 55%, #133f93 100%);
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/3.jpg") !important;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             border-radius: 14px;
             padding: clamp(2rem, 6vw, 4rem) clamp(1.2rem, 4vw, 3rem);
             box-shadow: 0 14px 36px rgba(10, 36, 88, 0.28);
@@ -317,9 +270,6 @@
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
 
-            .page-income-tax-filing-service .bk-facts-grid--itr-kf {
-                grid-template-columns: 1fr;
-            }
         }
 
         @media (max-width: 767.98px) {
@@ -721,73 +671,70 @@
             </div>
         </section>
 
-        <section class="caaft-ar-why py-90" aria-labelledby="itr-why-heading">
-            <div class="container">
-                <header class="caaft-ar-why-header">
-                    <h2 id="itr-why-heading" class="caaft-ar-why-h2">Why Choose CAAFT</h2>
-                </header>
-                <div class="caaft-ar-why-panel">
-                    <div class="caaft-ar-why-grid caaft-ar-why-grid--five">
-                        <div class="caaft-ar-why-row caaft-ar-why-row--top">
-                            <article class="caaft-ar-why-cell">
-                                <h3 class="caaft-ar-why-title">Growth-first advisory — not just filing</h3>
-                                <p class="caaft-ar-why-text">Beyond submitting returns, structured tax planning is designed to actively support business growth and long-term financial health — treating every filing as a strategic exercise, not just a compliance checkbox.</p>
-                            </article>
-                            <article class="caaft-ar-why-cell">
-                                <h3 class="caaft-ar-why-title">A dedicated professional for every case</h3>
-                                <p class="caaft-ar-why-text">Every client gets one expert who knows the business inside out — not a rotating team — ensuring consistent, personalised attention and continuity across every filing cycle.</p>
-                            </article>
-                            <article class="caaft-ar-why-cell">
-                                <h3 class="caaft-ar-why-title">Specialists across startups, SMEs, and NGOs</h3>
-                                <p class="caaft-ar-why-text">Whether an early-stage venture, a growing business, or a non-profit — sector-specific expertise is applied to every engagement, tailored to the compliance needs of each client profile.</p>
-                            </article>
-                        </div>
-                        <div class="caaft-ar-why-row caaft-ar-why-row--bottom">
-                            <article class="caaft-ar-why-cell">
-                                <h3 class="caaft-ar-why-title">Audit-ready and high-value case support</h3>
-                                <p class="caaft-ar-why-text">From complex filings to scrutiny-sensitive situations, high-stakes cases are handled with the rigour and documentation needed to protect business credibility and withstand regulatory scrutiny.</p>
-                            </article>
-                            <article class="caaft-ar-why-cell">
-                                <h3 class="caaft-ar-why-title">Pan-India assistance, fully online</h3>
-                                <p class="caaft-ar-why-text">Expert compliance support is accessible regardless of location — an online-first approach means geography is never a barrier to professional, reliable income tax filing.</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $why_choose_caaft_heading_id = 'itr-why-heading';
+        $why_choose_caaft_title = 'Why Choose CAAFT';
+        $why_choose_caaft_show_intro = true;
+        $why_choose_caaft_section_class = 'why-choose-caaft py-90';
+        $why_choose_caaft_items = [
+            [
+                'icon_class' => 'fas fa-chart-line',
+                'title' => 'Growth-first advisory — not just filing',
+                'text' => 'Beyond submitting returns, structured tax planning is designed to actively support business growth and long-term financial health — treating every filing as a strategic exercise, not just a compliance checkbox.',
+            ],
+            [
+                'icon_class' => 'fas fa-user-tie',
+                'title' => 'A dedicated professional for every case',
+                'text' => 'Every client gets one expert who knows the business inside out — not a rotating team — ensuring consistent, personalised attention and continuity across every filing cycle.',
+            ],
+            [
+                'icon_class' => 'fas fa-building',
+                'title' => 'Specialists across startups, SMEs, and NGOs',
+                'text' => 'Whether an early-stage venture, a growing business, or a non-profit — sector-specific expertise is applied to every engagement, tailored to the compliance needs of each client profile.',
+            ],
+            [
+                'icon_class' => 'fas fa-shield-alt',
+                'title' => 'Audit-ready and high-value case support',
+                'text' => 'From complex filings to scrutiny-sensitive situations, high-stakes cases are handled with the rigour and documentation needed to protect business credibility and withstand regulatory scrutiny.',
+            ],
+            [
+                'icon_class' => 'fas fa-globe',
+                'title' => 'Pan-India assistance, fully online',
+                'text' => 'Expert compliance support is accessible regardless of location — an online-first approach means geography is never a barrier to professional, reliable income tax filing.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+        ?>
 
-        <section class="bk-facts py-90" aria-labelledby="itr-facts-heading">
-            <div class="container">
-                <header class="bk-facts-header">
-                    <h2 id="itr-facts-heading" class="bk-section-title">Key Facts &amp; Figures</h2>
-                </header>
-                <div class="bk-facts-grid bk-facts-grid--itr-kf">
-                    <article class="bk-facts-card">
-                        <h3 class="itr-kf-metric">8.56 crore</h3>
-                        <p class="itr-kf-text">India's ITR filers reached 8.56 crore in FY 2024–25 — up 8% year-on-year — driven by digital pre-filled returns and expanding compliance awareness</p>
-                    </article>
-                    <article class="bk-facts-card">
-                        <h3 class="itr-kf-metric">474%</h3>
-                        <p class="itr-kf-text">Refunds surged 474% to ₹4.8 lakh crore in FY25 — processed in an average of 17 days — making accurate, timely filing more valuable than ever</p>
-                    </article>
-                    <article class="bk-facts-card">
-                        <h3 class="itr-kf-metric itr-kf-metric--small">₹5,000 penalty</h3>
-                        <p class="itr-kf-text">Late filing attracts a ₹5,000 penalty plus 1% monthly interest — with the belated return deadline set at 31 December of the assessment year</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_key_facts_heading_id = 'itr-facts-heading';
+        $caaft_key_facts_title = 'Key Facts & Figures';
+        $caaft_key_facts_items = [
+            [
+                'stat' => '8.56 crore',
+                'text' => 'India\'s ITR filers reached 8.56 crore in FY 2024–25 — up 8% year-on-year — driven by digital pre-filled returns and expanding compliance awareness',
+            ],
+            [
+                'stat' => '474%',
+                'text' => 'Refunds surged 474% to ₹4.8 lakh crore in FY25 — processed in an average of 17 days — making accurate, timely filing more valuable than ever',
+            ],
+            [
+                'stat' => '₹5,000 penalty',
+                'text' => 'Late filing attracts a ₹5,000 penalty plus 1% monthly interest — with the belated return deadline set at 31 December of the assessment year',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-key-facts.php';
+        ?>
 
-        <section id="get-in-touch" class="bk-cta py-90" aria-labelledby="itr-cta-heading">
-            <div class="container">
-                <div class="bk-cta-panel">
-                    <h2 id="itr-cta-heading" class="bk-cta-title">Ready to File Smart — Not Just On Time?</h2>
-                    <p class="bk-cta-text">Tax filing is not just compliance — it is protecting what has been built. Every missed deduction, misreported income, or delayed filing has a cost. Professional income tax filing ensures every return is accurate, every deduction is claimed, and every deadline is met — with expert support available at every step.</p>
-                    <a href="/contact#contact_us" class="theme-btn bk-cta-button">File Smart. Save More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_cta_section_id = 'get-in-touch';
+        $caaft_cta_heading_id = 'itr-cta-heading';
+        $caaft_cta_title = 'Ready to File Smart — Not Just On Time?';
+        $caaft_cta_text = 'Tax filing is not just compliance — it is protecting what has been built. Every missed deduction, misreported income, or delayed filing has a cost. Professional income tax filing ensures every return is accurate, every deduction is claimed, and every deadline is met — with expert support available at every step.';
+        $caaft_cta_button_label = 'File Smart. Save More';
+        $caaft_cta_button_href = '/contact#contact_us';
+        include __DIR__ . '/../../includes/components/caaft-cta.php';
+        ?>
 
         <div id="faq" class="faq-area are_sections_faq py-120 caaft-ar-faq-wrap" aria-labelledby="itr-faq-heading">
             <div class="container">
