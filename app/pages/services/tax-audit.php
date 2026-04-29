@@ -53,58 +53,6 @@
             line-height: 1.3;
         }
 
-        .page-tax-audit .bk-overview-layout {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-            gap: 2rem;
-            align-items: stretch;
-        }
-
-        .page-tax-audit .bk-overview-card {
-            background: #ffffff;
-            border: 1px solid #e5e8ed;
-            border-left: 0;
-            border-radius: 12px;
-            padding: clamp(1rem, 2vw, 1.5rem);
-            box-shadow: 0 6px 20px rgba(10, 29, 55, 0.04);
-        }
-
-        .page-tax-audit .bk-overview-content h2,
-        .page-tax-audit .bk-overview-content p {
-            text-align: left !important;
-            text-justify: auto !important;
-        }
-
-        .page-tax-audit .bk-overview-content .bk-section-title {
-            margin-top: 0 !important;
-            margin-bottom: 0.9rem;
-        }
-
-        .page-tax-audit .bk-overview-content .bk-overview-text {
-            margin-bottom: 0.85rem;
-        }
-
-        .page-tax-audit .bk-overview-content .bk-overview-text:last-child {
-            margin-bottom: 0;
-        }
-
-        .page-tax-audit .bk-overview-image-wrap {
-            margin: 0 !important;
-            padding: 0 !important;
-            display: flex;
-            align-items: stretch;
-            align-self: stretch;
-        }
-
-        .page-tax-audit .bk-overview-image-wrap img {
-            width: 100%;
-            height: 100%;
-            min-height: 280px;
-            max-height: 380px;
-            object-fit: cover;
-            border-radius: 10px;
-            display: block;
-        }
 
         .page-tax-audit .audit-need-header,
         .page-tax-audit .audit-need-header h2,
@@ -811,10 +759,6 @@
                 gap: 10px;
             }
             .page-tax-audit .caaft-ar-trust-item { border-right: 0; }
-            .page-tax-audit .bk-overview-layout {
-                grid-template-columns: 1fr;
-            }
-
             .page-tax-audit .audit-need-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
@@ -1011,22 +955,17 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             </div>
         </section>
 
-        <section class="bk-overview py-90" aria-labelledby="audit-what-heading">
-            <div class="container">
-                <div class="bk-overview-card">
-                    <div class="bk-overview-layout">
-                        <div class="bk-overview-content">
-                            <h2 id="audit-what-heading" class="bk-section-title">What Is a Tax Audit?</h2>
-                            <p class="bk-overview-text">A tax audit is an examination of financial records by a Chartered Accountant to verify income, deductions, and tax compliance. In India, it is governed under Section 44AB of the Income Tax Act — which mandates audits for businesses and professionals whose turnover exceeds specified limits.</p>
-                            <p class="bk-overview-text">Beyond regulatory compliance, tax audits help identify financial inconsistencies, ensure accurate tax calculations, and reduce penalty risks — making them essential for SMEs, partnerships, LLPs, and startups to maintain transparency, financial credibility, and regulatory standing.</p>
-                        </div>
-                        <div class="bk-overview-image-wrap">
-                            <img src="/assets/img/tax-planning-management.webp" alt="Tax audit planning and financial document review" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_overview_heading_id = 'audit-what-heading';
+        $caaft_overview_title = 'What Is a Tax Audit?';
+        $caaft_overview_paragraphs = [
+            'A tax audit is an examination of financial records by a Chartered Accountant to verify income, deductions, and tax compliance. In India, it is governed under Section 44AB of the Income Tax Act — which mandates audits for businesses and professionals whose turnover exceeds specified limits.',
+            'Beyond regulatory compliance, tax audits help identify financial inconsistencies, ensure accurate tax calculations, and reduce penalty risks — making them essential for SMEs, partnerships, LLPs, and startups to maintain transparency, financial credibility, and regulatory standing.',
+        ];
+        $caaft_overview_image_src = '/assets/img/tax-planning-management.webp';
+        $caaft_overview_image_alt = 'Tax audit planning and financial document review';
+        include __DIR__ . '/../../includes/components/caaft-overview-card.php';
+        ?>
         <section class="bk-who py-90" aria-labelledby="audit-need-heading">
             <div class="container">
                 <header class="audit-need-header">
@@ -1221,14 +1160,37 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">06</span><h3 class="caaft-ar-offer-card-title">Post-Audit Support and Assessment Assistance</h3><p class="caaft-ar-offer-card-text">If a return is selected for scrutiny after filing, complete documentation support and professional representation are provided throughout the assessment process.</p></article></div>
         </div></div></section>
 
-        <section class="caaft-ar-how py-90" aria-labelledby="audit-process-heading"><div class="container"><header class="caaft-ar-how-header"><h2 id="audit-process-heading" class="caaft-ar-how-h2">Step-by-Step Process</h2></header><ol class="caaft-ar-how-timeline">
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">1. Initial Consultation and Scope Assessment</h3><p class="caaft-ar-how-step-text">Business type, applicable turnover category, and whether the entity falls under presumptive taxation, special provisions, or standard applicability are assessed upfront.</p></div></li>
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">2. Document Collection and Books Review</h3><p class="caaft-ar-how-step-text">All required financial records are collected, books of accounts are reconciled, and ledgers and bank statements are verified — resolving discrepancies before the formal audit begins.</p></div></li>
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">3. Audit Execution</h3><p class="caaft-ar-how-step-text">Financial statements are examined thoroughly against Income Tax Act provisions — and the detailed Form 3CD covering all mandatory clauses is prepared with full accuracy.</p></div></li>
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">4. Report Preparation and Client Review</h3><p class="caaft-ar-how-step-text">Form 3CA or 3CB is prepared as applicable and the complete draft is shared for client review and approval — nothing is submitted without confirmation.</p></div></li>
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">5. E-Filing on the Income Tax Portal</h3><p class="caaft-ar-how-step-text">All audit forms are uploaded and submitted electronically with proper UDIN generation — ensuring timely compliance well ahead of the due date.</p></div></li>
-            <li class="caaft-ar-how-step"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">6. Post-Filing Advisory</h3><p class="caaft-ar-how-step-text">A compliance summary is provided after filing along with recommendations for improvement in the next financial year — so every client is better prepared than the year before.</p></div></li>
-        </ol></div></section>
+        <?php
+        $caaft_steps_heading_id = 'audit-process-heading';
+        $caaft_steps_title = 'Step-by-Step Process';
+        $caaft_steps_items = [
+            [
+                'title' => 'Initial Consultation and Scope Assessment',
+                'text' => 'Business type, applicable turnover category, and whether the entity falls under presumptive taxation, special provisions, or standard applicability are assessed upfront.',
+            ],
+            [
+                'title' => 'Document Collection and Books Review',
+                'text' => 'All required financial records are collected, books of accounts are reconciled, and ledgers and bank statements are verified — resolving discrepancies before the formal audit begins.',
+            ],
+            [
+                'title' => 'Audit Execution',
+                'text' => 'Financial statements are examined thoroughly against Income Tax Act provisions — and the detailed Form 3CD covering all mandatory clauses is prepared with full accuracy.',
+            ],
+            [
+                'title' => 'Report Preparation and Client Review',
+                'text' => 'Form 3CA or 3CB is prepared as applicable and the complete draft is shared for client review and approval — nothing is submitted without confirmation.',
+            ],
+            [
+                'title' => 'E-Filing on the Income Tax Portal',
+                'text' => 'All audit forms are uploaded and submitted electronically with proper UDIN generation — ensuring timely compliance well ahead of the due date.',
+            ],
+            [
+                'title' => 'Post-Filing Advisory',
+                'text' => 'A compliance summary is provided after filing along with recommendations for improvement in the next financial year — so every client is better prepared than the year before.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+        ?>
 
         <section class="caaft-ar-content-media py-90 audit-docs-section" aria-labelledby="audit-documents-heading">
             <div class="container">
@@ -1368,49 +1330,70 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             </div>
         </section>
 
-        <section class="caaft-ar-why py-90" aria-labelledby="audit-why-heading"><div class="container"><header class="caaft-ar-why-header"><h2 id="audit-why-heading" class="caaft-ar-why-h2">Why Choose CAAFT</h2></header><div class="caaft-ar-why-panel"><div class="caaft-ar-why-grid caaft-ar-why-grid--five">
-            <div class="caaft-ar-why-row caaft-ar-why-row--top">
-                <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">CA-led execution</h3><p class="caaft-ar-why-text">Every tax audit is handled directly by a qualified Chartered Accountant — not outsourced or delegated to junior staff unfamiliar with the client's accounts or financial history.</p></article>
-                <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Deadline-focused approach</h3><p class="caaft-ar-why-text">Audit preparation begins months in advance — ensuring clients are never under pressure as 30 September approaches and every deadline is met without exception.</p></article>
-                <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Integrated compliance</h3><p class="caaft-ar-why-text">Tax audit, ITR filing, and GST reconciliation are managed under one roof — ensuring consistency across all filings and eliminating the risk of conflicting disclosures across compliance obligations.</p></article>
-            </div>
-            <div class="caaft-ar-why-row caaft-ar-why-row--bottom">
-                <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Direct communication</h3><p class="caaft-ar-why-text">Clients speak directly to the professional handling their file — no call centres, no ticket systems, no unexplained delays. Real advisors giving real answers at every step.</p></article>
-                <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Sector versatility</h3><p class="caaft-ar-why-text">CAAFT works with manufacturers, traders, service businesses, startups, freelancers, and professionals across industries and business sizes — bringing sector-specific knowledge to every audit engagement.</p></article>
-            </div>
-        </div></div></div></section>
+        <?php
+        $why_choose_caaft_heading_id = 'audit-why-heading';
+        $why_choose_caaft_title = 'Why Choose CAAFT';
+        $why_choose_caaft_show_intro = true;
+        $why_choose_caaft_section_class = 'why-choose-caaft py-90';
+        $why_choose_caaft_items = [
+            [
+                'icon_class' => 'fas fa-user-tie',
+                'title' => 'CA-led execution',
+                'text' => 'Every tax audit is handled directly by a qualified Chartered Accountant — not outsourced or delegated to junior staff unfamiliar with the client\'s accounts or financial history.',
+            ],
+            [
+                'icon_class' => 'fas fa-calendar-check',
+                'title' => 'Deadline-focused approach',
+                'text' => 'Audit preparation begins months in advance — ensuring clients are never under pressure as 30 September approaches and every deadline is met without exception.',
+            ],
+            [
+                'icon_class' => 'fas fa-layer-group',
+                'title' => 'Integrated compliance',
+                'text' => 'Tax audit, ITR filing, and GST reconciliation are managed under one roof — ensuring consistency across all filings and eliminating the risk of conflicting disclosures across compliance obligations.',
+            ],
+            [
+                'icon_class' => 'fas fa-comments',
+                'title' => 'Direct communication',
+                'text' => 'Clients speak directly to the professional handling their file — no call centres, no ticket systems, no unexplained delays. Real advisors giving real answers at every step.',
+            ],
+            [
+                'icon_class' => 'fas fa-industry',
+                'title' => 'Sector versatility',
+                'text' => 'CAAFT works with manufacturers, traders, service businesses, startups, freelancers, and professionals across industries and business sizes — bringing sector-specific knowledge to every audit engagement.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+        ?>
 
-        <section class="caaft-ar-content-media py-90" aria-labelledby="audit-facts-heading">
-            <div class="container">
-                <header class="caaft-ar-offer-header audit-facts-header">
-                    <h2 id="audit-facts-heading" class="caaft-ar-offer-h2">Key Facts &amp; Figures</h2>
-                </header>
-                <div class="audit-facts-grid">
-                    <article class="audit-facts-card">
-                        <h3 class="audit-facts-metric">93 million+</h3>
-                        <p class="audit-facts-text">ITRs were filed for AY 2023-24 — a record high reflecting the scale of India's compliance landscape and the growing demand for professional audit support</p>
-                    </article>
-                    <article class="audit-facts-card">
-                        <h3 class="audit-facts-metric">₹1,50,000</h3>
-                        <p class="audit-facts-text">The Section 271B penalty for non-compliance can reach ₹1,50,000 — making professional audit engagement a cost-effective safeguard against avoidable financial exposure</p>
-                    </article>
-                    <article class="audit-facts-card">
-                        <h3 class="audit-facts-metric">₹10 crore</h3>
-                        <p class="audit-facts-text">The digital-payment threshold, revised upward via Finance Act 2023, eases the burden for MSMEs, but tax audit obligations remain in force for businesses that do not meet the 95% digital transaction condition</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_key_facts_heading_id = 'audit-facts-heading';
+        $caaft_key_facts_title = 'Key Facts & Figures';
+        $caaft_key_facts_items = [
+            [
+                'stat' => '93 million+',
+                'text' => 'ITRs were filed for AY 2023-24 — a record high reflecting the scale of India\'s compliance landscape and the growing demand for professional audit support',
+            ],
+            [
+                'stat' => '₹1,50,000',
+                'text' => 'The Section 271B penalty for non-compliance can reach ₹1,50,000 — making professional audit engagement a cost-effective safeguard against avoidable financial exposure',
+            ],
+            [
+                'stat' => '₹10 crore',
+                'text' => 'The ₹10 crore digital-payment threshold — revised upward via Finance Act 2023 — eases the burden for MSMEs, but tax audit obligations remain in force for businesses that do not meet the 95% digital transaction condition',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-key-facts.php';
+        ?>
 
-        <section id="get-in-touch" class="bk-cta py-90" aria-labelledby="audit-cta-heading">
-            <div class="container">
-                <div class="bk-cta-panel">
-                    <h2 id="audit-cta-heading" class="bk-cta-title">Ready to File Your Tax Audit With Complete Confidence?</h2>
-                    <p class="bk-cta-text">Businesses that plan ahead do not just avoid penalties — they build credibility, strengthen their financials, and walk into every assessment with nothing to worry about. Expert CA-led audits, timely filing, and zero compliance gaps — delivered every financial year without exception.</p>
-                    <a href="/contact#contact_us" class="theme-btn bk-cta-button">Hassle-Free Tax Audit Filing <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_cta_section_id = 'get-in-touch';
+        $caaft_cta_heading_id = 'audit-cta-heading';
+        $caaft_cta_title = 'Ready to File Your Tax Audit With Complete Confidence?';
+        $caaft_cta_text = 'Businesses that plan ahead do not just avoid penalties — they build credibility, strengthen their financials, and walk into every assessment with nothing to worry about. Expert CA-led audits, timely filing, and zero compliance gaps — delivered every financial year without exception.';
+        $caaft_cta_button_label = 'Hassle-Free TDS Filing';
+        $caaft_cta_button_href = '/contact#contact_us';
+        include __DIR__ . '/../../includes/components/caaft-cta.php';
+        ?>
 
         <div id="faq" class="faq-area are_sections_faq py-120 caaft-ar-faq-wrap" aria-labelledby="audit-faq-heading">
             <div class="container">
