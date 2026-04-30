@@ -67,44 +67,20 @@
             margin: 0;
             line-height: 1.3;
         }
-
-        .gst-reg-info-card-wrap {
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-
-        .gst-reg-info-card {
-            background: #ffffff;
-            border: 1px solid #dfe5ee;
-            border-left: 1px solid #dfe5ee;
-            border-radius: 10px;
-            padding: 18px;
-        }
-
-        .gst-reg-info-title {
-            margin: 0 0 10px;
-            font-size: clamp(1.5rem, 2.2vw, 2.1rem);
-            line-height: 1.2;
-            color: #1f2c40;
-        }
-
-        .gst-reg-info-text {
-            margin: 0 0 10px;
-            color: #4d5868;
-            line-height: 1.75;
-            text-align: left;
-        }
-
-        .gst-reg-info-text:last-child {
-            margin-bottom: 0;
-        }
-
-        .gst-reg-info-media img {
-            width: 100%;
-            max-height: 310px;
-            object-fit: cover;
-            border-radius: 10px;
-            display: block;
+        .page-gst-registration .gst-reg-info-title,
+        .page-gst-registration .gst-reg-needs-title,
+        .page-gst-registration .gst-reg-delivered-title,
+        .page-gst-registration .caaft-ar-how-h2,
+        .page-gst-registration .gst-reg-docs-title,
+        .page-gst-registration .gst-reg-challenges-title,
+        .page-gst-registration .gst-reg-why-title,
+        .page-gst-registration .gst-reg-facts-title,
+        .page-gst-registration .gst-reg-cta-title,
+        .page-gst-registration .caaft-ar-faq-wrap .site-heading .site-title {
+            font-size: 32px !important;
+            line-height: 1.2 !important;
+            text-transform: none !important;
+            letter-spacing: normal !important;
         }
 
         .gst-reg-needs-wrap {
@@ -173,7 +149,6 @@
             color: #132946;
             font-size: clamp(1.6rem, 2.4vw, 2.5rem);
             line-height: 1.2;
-            text-transform: uppercase;
             letter-spacing: 0.01em;
         }
 
@@ -352,7 +327,6 @@
             font-size: clamp(2rem, 3vw, 3rem);
             line-height: 1.12;
             font-weight: 800;
-            text-transform: uppercase;
             letter-spacing: 0.01em;
             text-align: center;
         }
@@ -647,10 +621,9 @@
                 <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
                     <h1 id="gst-reg-h1" class="caaft-ar-hero-h1">GST Registration Services</h1>
                     <h2 class="caaft-ar-hero-h2">Accurate GST Registration. Zero Rejections. GSTIN Delivered Without Delays.</h2>
-                    <p class="caaft-ar-hero-lead">GST registration is not just a compliance requirement - it is the legal foundation every Indian business needs to operate, collect tax, and claim input tax credit with confidence. Whether a startup, an SME, or an e-commerce seller, CAAFT delivers accurate, fast, and hassle-free GST registration services that get businesses compliant from day one.</p>
+                    <p class="caaft-ar-hero-lead">GST registration is not just a compliance requirement — it is the legal foundation every Indian business needs to operate, collect tax, and claim input tax credit with confidence. Whether a startup completing its first registration, an SME expanding into new states, or an e-commerce seller navigating platform-specific requirements — CAAFT delivers accurate, fast, and hassle-free GST registration services that get businesses compliant from day one.</p>
                     <div class="caaft-ar-hero-ctas">
-                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Start Your GST Registration <i class="fas fa-arrow-right"></i></a>
-                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-secondary">Quick &amp; Hassle-Free Setup <i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Start Your GST Registration – Quick &amp; Hassle-Free Setup <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php
@@ -662,13 +635,23 @@
         </section>
 
         <section class="caaft-ar-trust-indicators" aria-label="Trust indicators"><div class="container"><div class="caaft-ar-trust-grid">
-            <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-star"></i></span><div class="caaft-ar-trust-content"><h3>4.8/5</h3><p>Rated on Google</p></div></article>
+            <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-star"></i></span><div class="caaft-ar-trust-content"><h3>Rated 4.8/5 ⭐</h3><p>on Google</p></div></article>
             <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-bolt"></i></span><div class="caaft-ar-trust-content"><h3>Fast</h3><p>GSTIN Approval</p></div></article>
             <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-check-circle"></i></span><div class="caaft-ar-trust-content"><h3>Zero Rejection</h3><p>Track Record</p></div></article>
             <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-shield-alt"></i></span><div class="caaft-ar-trust-content"><h3>100%</h3><p>Data Confidentiality</p></div></article>
         </div></div></section>
 
-        <section class="gst-reg-info-card-wrap"><div class="container"><div class="gst-reg-info-card"><div class="row align-items-center g-4"><div class="col-lg-6"><h2 class="gst-reg-info-title">What is GST Registration?</h2><p class="gst-reg-info-text">GST registration is the process of enrolling a business under the Goods and Services Tax system introduced by the Government of India. Once registered, the business receives a unique GST Identification Number (GSTIN), allowing it to legally collect tax from customers and claim input tax credit on purchases.</p><p class="gst-reg-info-text">GST registration is mandatory for businesses exceeding the prescribed turnover limit and for specific categories such as e-commerce sellers and interstate suppliers. It ensures transparency in taxation and enables businesses to operate within a structured, compliant tax framework.</p></div><div class="col-lg-6"><div class="gst-reg-info-media"><img src="/assets/img/gst-registration-overview.jpg" alt="Business documents and GST registration paperwork" loading="lazy"></div></div></div></div></div></section>
+        <?php
+        $caaft_overview_heading_id = 'gst-reg-what';
+        $caaft_overview_title = 'What is GST Registration?';
+        $caaft_overview_paragraphs = [
+            'GST registration is the process of enrolling a business under the Goods and Services Tax system introduced by the Government of India. Once registered, the business receives a unique GST Identification Number (GSTIN) — allowing it to legally collect tax from customers and claim input tax credit on purchases.',
+            'GST registration is mandatory for businesses exceeding the prescribed turnover limit and for specific categories such as e-commerce sellers and interstate suppliers. It ensures transparency in taxation and enables businesses to operate within a structured, compliant tax framework.',
+        ];
+        $caaft_overview_image_src = '/assets/img/gst-registration-overview.jpg';
+        $caaft_overview_image_alt = 'Business documents and GST registration paperwork';
+        include __DIR__ . '/../../includes/components/caaft-overview-card.php';
+        ?>
         <section class="gst-reg-needs-wrap"><div class="container"><div class="gst-reg-needs-card"><h2 class="gst-reg-needs-title">Who Needs GST Registration Services?</h2><p class="gst-reg-needs-intro">CAAFT's GST registration services are built for businesses at every stage and across every transaction type:</p><ul class="gst-reg-needs-list">
             <li>Startups and new businesses completing their first GST registration</li>
             <li>SMEs expanding operations into new states requiring additional registrations</li>
@@ -693,14 +676,37 @@
             <article class="gst-reg-delivered-card"><span class="gst-reg-delivered-num">10</span><h3>GST Revocation of Cancellation</h3><p>If GST registration has been cancelled, swift action is taken to restore it through the revocation process - getting the business back on track without unnecessary disruption or compliance gaps.</p></article>
         </div></div></section>
 
-        <section class="caaft-ar-how py-90"><div class="container"><header class="caaft-ar-how-header"><h2 class="caaft-ar-how-h2">Step-by-Step Process</h2></header><ol class="caaft-ar-how-timeline">
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">1. Consultation &amp; Eligibility Check</h3><p class="caaft-ar-how-step-text">The business model, turnover, and transaction types are evaluated to determine GST applicability - mandatory or voluntary - before any application is initiated.</p></div></li>
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">2. Document Collection</h3><p class="caaft-ar-how-step-text">PAN, Aadhaar, business proof, bank details, and all other required documents are collected and verified for accuracy and completeness before submission.</p></div></li>
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">3. Application Filing</h3><p class="caaft-ar-how-step-text">The GST application is filed accurately and completely on the official government portal - with all details cross-checked to eliminate errors that could cause rejection or delays.</p></div></li>
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">4. Verification Process</h3><p class="caaft-ar-how-step-text">Authorities review the application and documents. Any queries or clarifications raised by the GST officer are responded to promptly and accurately.</p></div></li>
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">5. GSTIN Allotment</h3><p class="caaft-ar-how-step-text">GSTIN is issued after successful verification - confirming the business is officially registered under the Goods and Services Tax system.</p></div></li>
-            <li class="caaft-ar-how-step"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">6. Certificate Download</h3><p class="caaft-ar-how-step-text">The GST registration certificate is downloaded and delivered - along with guidance on next steps for GST filing and compliance going forward.</p></div></li>
-        </ol></div></section>
+        <?php
+        $caaft_steps_heading_id = 'gst-reg-process-heading';
+        $caaft_steps_title = 'Step-by-Step Process';
+        $caaft_steps_items = [
+            [
+                'title' => 'Consultation & Eligibility Check',
+                'text' => 'The business model, turnover, and transaction types are evaluated to determine GST applicability - mandatory or voluntary - before any application is initiated.',
+            ],
+            [
+                'title' => 'Document Collection',
+                'text' => 'PAN, Aadhaar, business proof, bank details, and all other required documents are collected and verified for accuracy and completeness before submission.',
+            ],
+            [
+                'title' => 'Application Filing',
+                'text' => 'The GST application is filed accurately and completely on the official government portal - with all details cross-checked to eliminate errors that could cause rejection or delays.',
+            ],
+            [
+                'title' => 'Verification Process',
+                'text' => 'Authorities review the application and documents. Any queries or clarifications raised by the GST officer are responded to promptly and accurately.',
+            ],
+            [
+                'title' => 'GSTIN Allotment',
+                'text' => 'GSTIN is issued after successful verification - confirming the business is officially registered under the Goods and Services Tax system.',
+            ],
+            [
+                'title' => 'Certificate Download',
+                'text' => 'The GST registration certificate is downloaded and delivered - along with guidance on next steps for GST filing and compliance going forward.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+        ?>
 
         <section class="gst-reg-docs-wrap"><div class="container"><div class="gst-reg-docs-card"><h2 class="gst-reg-docs-title">Documents Required for GST Registration</h2><p class="gst-reg-docs-intro">Accurate documentation ensures faster approval and zero rejection risk:</p><div class="gst-reg-docs-grid">
             <div class="gst-reg-docs-item"><span class="gst-reg-docs-checkbox" aria-hidden="true"></span><span>PAN Card</span></div>
@@ -713,30 +719,77 @@
             <div class="gst-reg-docs-item"><span class="gst-reg-docs-checkbox" aria-hidden="true"></span><span>Additional documents may be required based on business type.</span></div>
         </div></div></div></section>
         <section class="gst-reg-challenges-wrap"><div class="container"><h2 class="gst-reg-challenges-title">Common GST Registration Challenges CAAFT Solves</h2><p class="gst-reg-challenges-intro">Most businesses face one or more of these issues during the GST registration process:</p><div class="gst-reg-challenges-list">
-            <article class="gst-reg-challenge-item"><h3>Incorrect or mismatched details in the application</h3><p>Incorrect or mismatched details in the application can cause rejection or delays.</p></article>
-            <article class="gst-reg-challenge-item"><h3>Document upload errors on the GST portal</h3><p>Document upload errors on the GST portal can lead to incomplete submissions.</p></article>
-            <article class="gst-reg-challenge-item"><h3>Aadhaar authentication failures</h3><p>Aadhaar authentication failures can slow down the verification process.</p></article>
-            <article class="gst-reg-challenge-item"><h3>Delays in government verification</h3><p>Delays in government verification can leave businesses with no clarity on status or next steps.</p></article>
-            <article class="gst-reg-challenge-item"><h3>GST portal technical issues</h3><p>GST portal technical issues can cause application errors or lost submissions.</p></article>
-            <article class="gst-reg-challenge-item"><h3>Uncertainty about registration category</h3><p>Uncertainty about which registration category applies - mandatory, voluntary, composition, or e-commerce - can delay correct filing.</p></article>
-            <article class="gst-reg-challenge-item"><h3>Lack of awareness about mandatory triggers</h3><p>Businesses may be unaware that interstate supply or e-commerce transactions trigger mandatory registration regardless of turnover.</p></article>
-            <article class="gst-reg-challenge-item"><h3>CAAFT's structured resolution approach</h3><p>CAAFT's structured approach addresses each of these - moving businesses from confusion and rejection risk to accurate, approved GST registration without unnecessary delays.</p></article>
+            <article class="gst-reg-challenge-item"><h3>Incorrect or mismatched details in the application causing rejection or delays</h3></article>
+            <article class="gst-reg-challenge-item"><h3>Document upload errors on the GST portal leading to incomplete submissions</h3></article>
+            <article class="gst-reg-challenge-item"><h3>Aadhaar authentication failures slowing down the verification process</h3></article>
+            <article class="gst-reg-challenge-item"><h3>Delays in government verification with no clarity on status or next steps</h3></article>
+            <article class="gst-reg-challenge-item"><h3>GST portal technical issues causing application errors or lost submissions</h3></article>
+            <article class="gst-reg-challenge-item"><h3>Uncertainty about which registration category applies — mandatory, voluntary, composition, or e-commerce</h3></article>
+            <article class="gst-reg-challenge-item"><h3>Businesses unaware that interstate supply or e-commerce transactions trigger mandatory registration regardless of turnover</h3></article>
         </div></div></section>
-        <section class="gst-reg-why-wrap"><div class="container"><h2 class="gst-reg-why-title">Why Choose CAAFT</h2><div class="gst-reg-why-grid">
-            <article class="gst-reg-why-item"><h3>Experienced tax professionals</h3><p>Every GST registration engagement is handled by specialists with in-depth GST law and portal knowledge, ensuring accurate submissions from the start.</p></article>
-            <article class="gst-reg-why-item"><h3>Zero rejection track record</h3><p>Applications are carefully reviewed and documents are verified before filing, eliminating common mismatches that lead to rejection and rework.</p></article>
-            <article class="gst-reg-why-item"><h3>Transparent process</h3><p>Each step is clearly communicated with no hidden requirements, no unexplained delays, and complete visibility until GSTIN is approved.</p></article>
-        </div><div class="gst-reg-why-grid-bottom">
-            <article class="gst-reg-why-item"><h3>End-to-end support</h3><p>From eligibility consultation to GSTIN allotment and certificate delivery, complete support is provided with guidance for post-registration compliance.</p></article>
-            <article class="gst-reg-why-item"><h3>Affordable and scalable</h3><p>Services are built for startups, SMEs, and expanding enterprises, with cost-effective support for first-time, multi-state, and evolving compliance needs.</p></article>
-        </div></div></section>
+        <?php
+        $why_choose_caaft_heading_id = 'gst-reg-why-heading';
+        $why_choose_caaft_title = 'Why Choose CAAFT';
+        $why_choose_caaft_show_intro = true;
+        $why_choose_caaft_section_class = 'why-choose-caaft py-90';
+        $why_choose_caaft_items = [
+            [
+                'icon_class' => 'fas fa-user-tie',
+                'title' => 'Experienced tax professionals',
+                'text' => 'Every GST registration engagement is handled by professionals with in-depth knowledge of GST laws, portal requirements, and compliance standards — ensuring every application is accurate and complete before submission.',
+            ],
+            [
+                'icon_class' => 'fas fa-check-circle',
+                'title' => 'Zero rejection track record',
+                'text' => 'Documents are thoroughly verified and applications are carefully reviewed before filing — eliminating the errors and mismatches that cause most GST registration rejections.',
+            ],
+            [
+                'icon_class' => 'fas fa-eye',
+                'title' => 'Transparent process',
+                'text' => 'The registration process is clear and straightforward at every step — with no hidden requirements, no unexplained delays, and no surprises between application and GSTIN approval.',
+            ],
+            [
+                'icon_class' => 'fas fa-hands-helping',
+                'title' => 'End-to-end support',
+                'text' => 'Complete assistance is provided from the initial eligibility consultation through to GSTIN approval and certificate delivery — with ongoing support for amendments, cancellations, and revocations as the business evolves.',
+            ],
+            [
+                'icon_class' => 'fas fa-chart-line',
+                'title' => 'Affordable and scalable',
+                'text' => 'Services are designed to suit businesses of all sizes — from first-time registrations for startups to multi-state registrations for expanding enterprises — with cost-effective pricing at every stage.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+        ?>
 
-        <section class="gst-reg-facts-wrap"><div class="container"><h2 class="gst-reg-facts-title">Key Facts &amp; Figures</h2><div class="gst-reg-facts-grid">
-            <article class="gst-reg-fact-card"><h3 class="gst-reg-fact-stat">500+</h3><p>500+ businesses have completed GST registration through CAAFT - with a zero rejection track record across new registrations, amendments, and revocations.</p></article>
-            <article class="gst-reg-fact-card"><h3 class="gst-reg-fact-stat">ITC</h3><p>Businesses with a valid GSTIN can claim Input Tax Credit (ITC) on purchases - directly reducing overall tax liability and improving cash flow across the supply chain.</p></article>
-            <article class="gst-reg-fact-card"><h3 class="gst-reg-fact-stat">Mandatory</h3><p>GST registration is mandatory for e-commerce sellers regardless of turnover - and for any business making interstate supplies - making timely, accurate registration a non-negotiable compliance requirement.</p></article>
-        </div></div></section>
-        <section class="gst-reg-cta-wrap"><div class="container"><div class="gst-reg-cta-box"><h2 class="gst-reg-cta-title">Ready to Register for GST?</h2><p class="gst-reg-cta-text">A valid GSTIN is the starting point for legal tax collection, input tax credit claims, and structured business operations across India. Whether the need is first-time registration, multi-state expansion, or restoration of a cancelled GSTIN, CAAFT delivers accurate, fast, and fully compliant GST registration support every time.</p><a href="/contact#contact_us" class="gst-reg-cta-btn">Go GST Live Today <i class="fas fa-arrow-right"></i></a></div></div></section>
+        <?php
+        $caaft_key_facts_heading_id = 'gst-reg-facts-heading';
+        $caaft_key_facts_title = 'Key Facts & Figures';
+        $caaft_key_facts_items = [
+            [
+                'stat' => '500+',
+                'text' => '500+ businesses have completed GST registration through CAAFT - with a zero rejection track record across new registrations, amendments, and revocations.',
+            ],
+            [
+                'stat' => 'ITC',
+                'text' => 'Businesses with a valid GSTIN can claim Input Tax Credit (ITC) on purchases - directly reducing overall tax liability and improving cash flow across the supply chain.',
+            ],
+            [
+                'stat' => 'Mandatory',
+                'text' => 'GST registration is mandatory for e-commerce sellers regardless of turnover - and for any business making interstate supplies - making timely, accurate registration a non-negotiable compliance requirement.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-key-facts.php';
+        ?>
+        <?php
+        $caaft_cta_section_id = 'get-in-touch';
+        $caaft_cta_heading_id = 'gst-reg-cta-heading';
+        $caaft_cta_title = 'Ready to Register for GST?';
+        $caaft_cta_text = 'A valid GSTIN is the starting point for legal tax collection, input tax credit claims, and structured business operations across India. Whether the need is a first-time registration, a multi-state expansion, or restoration of a cancelled GSTIN — CAAFT delivers accurate, fast, and fully compliant GST registration support every time.';
+        $caaft_cta_button_label = 'Go GST Live Today';
+        $caaft_cta_button_href = '/contact#contact_us';
+        include __DIR__ . '/../../includes/components/caaft-cta.php';
+        ?>
 
         <div id="faq" class="faq-area are_sections_faq py-120 caaft-ar-faq-wrap" aria-labelledby="gst-reg-faq"><div class="container"><div class="site-heading text-center mb-3"><h2 id="gst-reg-faq" class="site-title my-3">Frequently Asked Questions</h2></div>
             <div class="frequent-question col-lg-10"><div class="accordion" id="accordionGstRegFaq">
