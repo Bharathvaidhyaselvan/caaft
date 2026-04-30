@@ -673,31 +673,26 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-sections"><?php include "header.php"; ?></div>
     <main class="main">
-        <section class="hero-section hs-3 caaft-ar-hero" aria-labelledby="appeal-hero-h1">
-        <div class="hero-single singles_forms_frames caaft-ar-hero-single">
-            <div class="container">
-                <div class="row align-items-center g-4 g-xl-5 caaft-ar-hero-row">
-                <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
-                    <h1 id="appeal-hero-h1" class="caaft-ar-hero-h1">Income Tax Appeal & Assessment Support Services</h1>
-                        <h2 class="caaft-ar-hero-h2">Expert Tax Assessment & Appeal Support — From the First Notice to the Final Order</h2>
-                        <p class="caaft-ar-hero-lead">Whether a tax notice has been received, an assessment is disputed, or an appeal needs to be filed — navigating income tax authorities is complex, time-sensitive, and high-stakes. CAAFT delivers end-to-end income tax appeal, tax assessment, and dispute resolution services for individuals, businesses, and property owners — ensuring what is actually owed is exactly what gets paid. Nothing more.</p>
-                        <div class="caaft-ar-hero-ctas">
-                            <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Resolve Your Tax Notice – Get Expert Help Now <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                </div>
-                    <div class="col-md-12 col-lg-6">
-                        <div class="hero-img-wrap caaft-ar-hero-img-wrap">
-                            <?php
-$caaft_enquiry_service = 'Income Tax Appeal Services';
-$caaft_enquiry_action = '/incometax-services-mail.php';
-include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
-                            ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
+        <?php
+        $caaft_hero_id = 'appeal-hero-h1';
+        $caaft_hero_h1 = 'Income Tax Appeal & Assessment Support Services';
+        $caaft_hero_h2_before = 'Expert Tax Assessment & Appeal Support —';
+        $caaft_hero_h2_highlight = 'From the First Notice to the Final Order';
+        $caaft_hero_h2_after = '';
+        $caaft_hero_lead_paragraphs = [
+            'Whether a tax notice has been received, an assessment is disputed, or an appeal needs to be filed — navigating income tax authorities is complex, time-sensitive, and high-stakes. CAAFT delivers end-to-end income tax appeal, tax assessment, and dispute resolution services for individuals, businesses, and property owners — ensuring what is actually owed is exactly what gets paid. Nothing more.',
+        ];
+        $caaft_hero_primary_cta_label = 'Resolve Your Tax Notice –';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_secondary_cta_label = 'Get Expert Help Now';
+        $caaft_hero_secondary_cta_href = '/contact#contact_us';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_extra_class = '';
+
+        $caaft_enquiry_service = 'Income Tax Appeal Services';
+        $caaft_enquiry_action = '/incometax-services-mail.php';
+        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+        ?>
 
     <section class="caaft-ar-trust-indicators" aria-label="Trust indicators">
         <div class="container">
