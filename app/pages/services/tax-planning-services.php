@@ -57,6 +57,17 @@
             margin: 0;
             line-height: 1.3;
         }
+        .page-tax-planning-services .bk-section-title,
+        .page-tax-planning-services .caaft-ar-offer-h2,
+        .page-tax-planning-services .caaft-ar-how-h2,
+        .page-tax-planning-services .why-choose-caaft-title,
+        .page-tax-planning-services .bk-cta-title,
+        .page-tax-planning-services .caaft-ar-faq-wrap .site-heading .site-title {
+            font-size: 32px !important;
+            line-height: 1.2 !important;
+            text-transform: none !important;
+            letter-spacing: normal !important;
+        }
         @media (max-width: 991.98px) {
             .page-tax-planning-services .caaft-ar-trust-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -64,65 +75,6 @@
             }
             .page-tax-planning-services .caaft-ar-trust-item {
                 border-right: 0;
-            }
-        }
-
-        .page-tax-planning-services .bk-overview-layout {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-            gap: 2rem;
-            align-items: stretch;
-        }
-
-        .page-tax-planning-services .bk-overview-card {
-            background: #ffffff;
-            border: 1px solid #e5e8ed;
-            border-left: 0;
-            border-radius: 12px;
-            padding: clamp(1rem, 2vw, 1.5rem);
-            box-shadow: 0 6px 20px rgba(10, 29, 55, 0.04);
-        }
-
-        .page-tax-planning-services .bk-overview-content h2,
-        .page-tax-planning-services .bk-overview-content p {
-            text-align: left !important;
-            text-justify: auto !important;
-        }
-
-        .page-tax-planning-services .bk-overview-content .bk-section-title {
-            margin-top: 0 !important;
-            margin-bottom: 0.9rem;
-        }
-
-        .page-tax-planning-services .bk-overview-content .bk-overview-text {
-            margin-bottom: 0.85rem;
-        }
-
-        .page-tax-planning-services .bk-overview-content .bk-overview-text:last-child {
-            margin-bottom: 0;
-        }
-
-        .page-tax-planning-services .bk-overview-image-wrap {
-            margin: 0 !important;
-            padding: 0 !important;
-            display: flex;
-            align-items: stretch;
-            align-self: stretch;
-        }
-
-        .page-tax-planning-services .bk-overview-image-wrap img {
-            width: 100%;
-            height: 100%;
-            min-height: 280px;
-            max-height: 380px;
-            object-fit: cover;
-            border-radius: 10px;
-            display: block;
-        }
-
-        @media (max-width: 991.98px) {
-            .page-tax-planning-services .bk-overview-layout {
-                grid-template-columns: 1fr;
             }
         }
 
@@ -779,19 +731,37 @@
             </div>
         </section>
 
-        <section class="caaft-ar-how py-90" aria-labelledby="tax-plan-process">
-            <div class="container">
-                <header class="caaft-ar-how-header"><h2 id="tax-plan-process" class="caaft-ar-how-h2">Step-by-Step Process</h2></header>
-                <ol class="caaft-ar-how-timeline">
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">1. Financial Assessment</h3><p class="caaft-ar-how-step-text">The complete financial situation is reviewed — including income sources, expenses, investments, and existing tax structure — to establish a clear baseline for planning.</p></div></li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">2. Tax Liability Analysis</h3><p class="caaft-ar-how-step-text">Current tax obligations are assessed to identify opportunities for deductions, exemptions, regime optimisation, and legal tax savings specific to the client's profile.</p></div></li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">3. Strategy Development</h3><p class="caaft-ar-how-step-text">A customised tax planning strategy is developed based on the analysis — aligned with specific financial goals, income structure, and long-term wealth management objectives.</p></div></li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">4. Implementation</h3><p class="caaft-ar-how-step-text">Tax-saving strategies are implemented — optimising investments, structuring transactions tax-efficiently, and ensuring every legal opportunity for saving is acted upon.</p></div></li>
-                    <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">5. Compliance &amp; Documentation</h3><p class="caaft-ar-how-step-text">Accurate documentation is maintained and full compliance with tax laws is ensured — eliminating the risk of penalties and facilitating smooth, timely filing.</p></div></li>
-                    <li class="caaft-ar-how-step"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">6. Ongoing Monitoring &amp; Optimisation</h3><p class="caaft-ar-how-step-text">Financial activities are continuously reviewed and strategies are updated in response to changes in tax regulations — keeping the tax plan current, relevant, and optimised throughout the year.</p></div></li>
-                </ol>
-            </div>
-        </section>
+        <?php
+        $caaft_steps_heading_id = 'tax-plan-process';
+        $caaft_steps_title = 'Step-by-Step Process';
+        $caaft_steps_items = [
+            [
+                'title' => 'Financial Assessment',
+                'text' => 'The complete financial situation is reviewed — including income sources, expenses, investments, and existing tax structure — to establish a clear baseline for planning.',
+            ],
+            [
+                'title' => 'Tax Liability Analysis',
+                'text' => 'Current tax obligations are assessed to identify opportunities for deductions, exemptions, regime optimisation, and legal tax savings specific to the client\'s profile.',
+            ],
+            [
+                'title' => 'Strategy Development',
+                'text' => 'A customised tax planning strategy is developed based on the analysis — aligned with specific financial goals, income structure, and long-term wealth management objectives.',
+            ],
+            [
+                'title' => 'Implementation',
+                'text' => 'Tax-saving strategies are implemented — optimising investments, structuring transactions tax-efficiently, and ensuring every legal opportunity for saving is acted upon.',
+            ],
+            [
+                'title' => 'Compliance & Documentation',
+                'text' => 'Accurate documentation is maintained and full compliance with tax laws is ensured — eliminating the risk of penalties and facilitating smooth, timely filing.',
+            ],
+            [
+                'title' => 'Ongoing Monitoring & Optimisation',
+                'text' => 'Financial activities are continuously reviewed and strategies are updated in response to changes in tax regulations — keeping the tax plan current, relevant, and optimised throughout the year.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+        ?>
 
         <section class="caaft-ar-content-media py-90" aria-labelledby="tax-plan-docs">
             <div class="container">
@@ -880,54 +850,70 @@
             </div>
         </section>
 
-        <section class="caaft-ar-why py-90" aria-labelledby="tax-plan-why">
-            <div class="container">
-                <header class="caaft-ar-why-header"><h2 id="tax-plan-why" class="caaft-ar-why-h2">Why Choose CAAFT</h2></header>
-                <div class="caaft-ar-why-panel"><div class="caaft-ar-why-grid caaft-ar-why-grid--five">
-                    <div class="caaft-ar-why-row caaft-ar-why-row--top">
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Qualified and experienced tax professionals</h3><p class="caaft-ar-why-text">Every tax planning engagement is led by seasoned CAs and tax experts with deep knowledge of Income Tax laws — ensuring every strategy is accurate, compliant, and built on sound professional expertise.</p></article>
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Personalised strategies — not generic advice</h3><p class="caaft-ar-why-text">Every client's financial picture is understood in full before any recommendation is made. Tax plans are specific to the individual's business, income structure, and future goals — never a one-size-fits-all solution.</p></article>
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Proactive planning throughout the year</h3><p class="caaft-ar-why-text">Tax planning at CAAFT does not wait for the filing season. Regulatory changes and client financials are continuously monitored — keeping every strategy optimised, current, and ahead of the curve.</p></article>
-                    </div>
-                    <div class="caaft-ar-why-row caaft-ar-why-row--bottom">
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Transparent process and honest guidance</h3><p class="caaft-ar-why-text">No hidden charges, no jargon, no shortcuts. Every recommendation is explained clearly — ensuring clients stay fully informed and in complete control of their financial decisions.</p></article>
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Trusted partner across industries</h3><p class="caaft-ar-why-text">From startups and MSMEs to professionals, corporates, and NGOs — CAAFT has a proven track record of delivering reliable, results-driven tax planning across diverse sectors and income profiles.</p></article>
-                    </div>
-                </div></div>
-            </div>
-        </section>
+        <?php
+        $why_choose_caaft_heading_id = 'tax-plan-why';
+        $why_choose_caaft_title = 'Why Choose CAAFT';
+        $why_choose_caaft_show_intro = true;
+        $why_choose_caaft_section_class = 'why-choose-caaft py-90';
+        $why_choose_caaft_items = [
+            [
+                'icon_class' => 'fas fa-user-tie',
+                'title' => 'Qualified and experienced tax professionals',
+                'text' => 'Every tax planning engagement is led by seasoned CAs and tax experts with deep knowledge of Income Tax laws — ensuring every strategy is accurate, compliant, and built on sound professional expertise.',
+            ],
+            [
+                'icon_class' => 'fas fa-fingerprint',
+                'title' => 'Personalised strategies — not generic advice',
+                'text' => 'Every client\'s financial picture is understood in full before any recommendation is made. Tax plans are specific to the individual\'s business, income structure, and future goals — never a one-size-fits-all solution.',
+            ],
+            [
+                'icon_class' => 'fas fa-calendar-check',
+                'title' => 'Proactive planning throughout the year',
+                'text' => 'Tax planning at CAAFT does not wait for the filing season. Regulatory changes and client financials are continuously monitored — keeping every strategy optimised, current, and ahead of the curve.',
+            ],
+            [
+                'icon_class' => 'fas fa-comments',
+                'title' => 'Transparent process and honest guidance',
+                'text' => 'No hidden charges, no jargon, no shortcuts. Every recommendation is explained clearly — ensuring clients stay fully informed and in complete control of their financial decisions.',
+            ],
+            [
+                'icon_class' => 'fas fa-globe',
+                'title' => 'Trusted partner across industries',
+                'text' => 'From startups and MSMEs to professionals, corporates, and NGOs — CAAFT has a proven track record of delivering reliable, results-driven tax planning across diverse sectors and income profiles.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+        ?>
 
-        <section class="caaft-ar-content-media py-90" aria-labelledby="tax-plan-facts">
-            <div class="container">
-                <header class="caaft-ar-offer-header tax-facts-header">
-                    <h2 id="tax-plan-facts" class="caaft-ar-offer-h2">Key Facts &amp; Figures</h2>
-                </header>
-                <div class="tax-facts-grid">
-                    <article class="tax-facts-card">
-                        <h3 class="tax-facts-metric">₹1.83 lakh crore</h3>
-                        <p class="tax-facts-text">India's GST collections reached ₹1.83 lakh crore in February 2026 — up 8.1% year-on-year — with FY26 total collections at ₹20.27 lakh crore, reflecting the scale and growing complexity of India's tax compliance environment</p>
-                    </article>
-                    <article class="tax-facts-card">
-                        <h3 class="tax-facts-metric">95%</h3>
-                        <p class="tax-facts-text">Over 1.4 crore active taxpayers maintain 95% timely GSTR-3B compliance — helped by digital platforms that enable businesses to avoid ₹200/day late penalties through structured, proactive filing</p>
-                    </article>
-                    <article class="tax-facts-card">
-                        <h3 class="tax-facts-metric">30%</h3>
-                        <p class="tax-facts-text">Digital GSTN portals have reduced compliance errors by 30% — simplifying filings for SMEs across India and underscoring the value of technology-enabled, professionally managed tax planning</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_key_facts_heading_id = 'tax-plan-facts';
+        $caaft_key_facts_title = 'Key Facts & Figures';
+        $caaft_key_facts_items = [
+            [
+                'stat' => '₹1.83 lakh crore',
+                'text' => 'India\'s GST collections reached ₹1.83 lakh crore in February 2026 — up 8.1% year-on-year — with FY26 total collections at ₹20.27 lakh crore, reflecting the scale and growing complexity of India\'s tax compliance environment',
+            ],
+            [
+                'stat' => '95%',
+                'text' => 'Over 1.4 crore active taxpayers maintain 95% timely GSTR-3B compliance — helped by digital platforms that enable businesses to avoid ₹200/day late penalties through structured, proactive filing',
+            ],
+            [
+                'stat' => '30%',
+                'text' => 'Digital GSTN portals have reduced compliance errors by 30% — simplifying filings for SMEs across India and underscoring the value of technology-enabled, professionally managed tax planning',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-key-facts.php';
+        ?>
 
-        <section id="get-in-touch" class="bk-cta py-90" aria-labelledby="tax-plan-cta">
-            <div class="container">
-                <div class="bk-cta-panel">
-                    <h2 id="tax-plan-cta" class="bk-cta-title">Take Control of Your Taxes —<br><span class="line-two">Before This Financial Year Ends</span></h2>
-                    <p class="bk-cta-text">Every month without proper planning has a cost. A well-structured tax strategy — built around specific income, business, and financial goals — reduces liability legally, improves cash flow, and compounds in value over time. Whether the need is individual tax saving, business tax structuring, or long-term wealth planning — CAAFT delivers the expertise to make every rupee work harder.</p>
-                    <a href="/contact#contact_us" class="theme-btn bk-cta-button">Talk to a Tax Expert <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_cta_section_id = 'get-in-touch';
+        $caaft_cta_heading_id = 'tax-plan-cta';
+        $caaft_cta_title = 'Take Control of Your Taxes — Before This Financial Year Ends';
+        $caaft_cta_text = 'Every month without proper planning has a cost. A well-structured tax strategy — built around specific income, business, and financial goals — reduces liability legally, improves cash flow, and compounds in value over time. Whether the need is individual tax saving, business tax structuring, or long-term wealth planning — CAAFT delivers the expertise to make every rupee work harder.';
+        $caaft_cta_button_label = 'Talk to a Tax Expert';
+        $caaft_cta_button_href = '/contact#contact_us';
+        include __DIR__ . '/../../includes/components/caaft-cta.php';
+        ?>
 
         <div id="faq" class="faq-area are_sections_faq py-120 caaft-ar-faq-wrap" aria-labelledby="tax-plan-faq">
             <div class="container">
