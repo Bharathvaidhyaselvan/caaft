@@ -55,6 +55,17 @@
             margin: 0;
             line-height: 1.3;
         }
+        .page-income-tax-appeal-services .bk-section-title,
+        .page-income-tax-appeal-services .caaft-ar-offer-h2,
+        .page-income-tax-appeal-services .caaft-ar-how-h2,
+        .page-income-tax-appeal-services .why-choose-caaft-title,
+        .page-income-tax-appeal-services .bk-cta-title,
+        .page-income-tax-appeal-services .caaft-ar-faq-wrap .site-heading .site-title {
+            font-size: 32px !important;
+            line-height: 1.2 !important;
+            text-transform: none !important;
+            letter-spacing: normal !important;
+        }
         @media (max-width: 991.98px) {
             .page-income-tax-appeal-services .caaft-ar-trust-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -275,7 +286,7 @@
         .page-income-tax-appeal-services .appeal-level-step::after {
             content: "";
             position: absolute;
-            left: 14px;
+            left: 10px;
             top: 24px;
             bottom: -2px;
             width: 1px;
@@ -290,8 +301,10 @@
             background: #083b73;
             color: #ffffff;
             font-size: 0.74rem;
-            line-height: 20px;
-            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
             font-weight: 700;
             z-index: 1;
         }
@@ -367,7 +380,7 @@
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: #0ea371;
+            background: var(--theme-color);
         }
         .page-income-tax-appeal-services .appeal-benefit-title {
             margin: 0 0 3px;
@@ -479,7 +492,10 @@
             width: 5px;
             height: 5px;
             border-radius: 50%;
-            background: #10b981;
+            background: var(--theme-color);
+        }
+        .page-income-tax-appeal-services section[aria-labelledby="appeal-who-heading"] {
+            background: #ffffff !important;
         }
         .page-income-tax-appeal-services .appeal-need-wrap {
             margin-top: 18px;
@@ -666,7 +682,7 @@
                         <h2 class="caaft-ar-hero-h2">Expert Tax Assessment & Appeal Support — From the First Notice to the Final Order</h2>
                         <p class="caaft-ar-hero-lead">Whether a tax notice has been received, an assessment is disputed, or an appeal needs to be filed — navigating income tax authorities is complex, time-sensitive, and high-stakes. CAAFT delivers end-to-end income tax appeal, tax assessment, and dispute resolution services for individuals, businesses, and property owners — ensuring what is actually owed is exactly what gets paid. Nothing more.</p>
                         <div class="caaft-ar-hero-ctas">
-                            <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Resolve Your Tax Notice - Get Expert Help Now <i class="fas fa-arrow-right"></i></a>
+                            <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Resolve Your Tax Notice – Get Expert Help Now <i class="fas fa-arrow-right"></i></a>
                         </div>
                 </div>
                     <div class="col-md-12 col-lg-6">
@@ -694,21 +710,18 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         </div>
     </section>
 
-    <section class="caaft-ar-content-media py-90" aria-labelledby="appeal-what-heading">
-        <div class="container">
-            <div class="appeal-overview-grid">
-                <article class="appeal-overview-card">
-                    <h2 id="appeal-what-heading" class="appeal-overview-title">What is Income Tax Appeal & Tax Assessment Support?</h2>
-                    <p>An income tax appeal is the formal mechanism available to every Indian taxpayer to challenge an assessment order or demand raised by the Income Tax Department — contesting disallowances, additions, or demands that are incorrect, excessive, or unsupported by evidence.</p>
-                    <p>Tax assessment support covers a broader range of services — reviewing notices before response, correcting discrepancies in past filings, representing clients at scrutiny hearings, and ensuring the tax position is correctly presented to the department at every stage of proceedings.</p>
-                    <p>Together, these two pillars form the foundation of what CAAFT delivers: protecting taxpayers from incorrect demands and ensuring every tax matter is handled with the precision, documentation, and legal grounding it requires.</p>
-                </article>
-                <div class="appeal-overview-image">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80" alt="Income tax appeal and assessment support" loading="lazy" referrerpolicy="no-referrer">
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php
+    $caaft_overview_heading_id = 'appeal-what-heading';
+    $caaft_overview_title = 'What is Income Tax Appeal & Tax Assessment Support?';
+    $caaft_overview_paragraphs = [
+        'An income tax appeal is the formal mechanism available to every Indian taxpayer to challenge an assessment order or demand raised by the Income Tax Department — contesting disallowances, additions, or demands that are incorrect, excessive, or unsupported by evidence.',
+        'Tax assessment support covers a broader range of services — reviewing notices before response, correcting discrepancies in past filings, representing clients at scrutiny hearings, and ensuring the tax position is correctly presented to the department at every stage of proceedings.',
+        'Together, these two pillars form the foundation of what CAAFT delivers: protecting taxpayers from incorrect demands and ensuring every tax matter is handled with the precision, documentation, and legal grounding it requires.',
+    ];
+    $caaft_overview_image_src = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80';
+    $caaft_overview_image_alt = 'Income tax appeal and assessment support';
+    include __DIR__ . '/../../includes/components/caaft-overview-card.php';
+    ?>
 
     <section class="caaft-ar-what-we-offer py-90" aria-labelledby="appeal-why-heading">
         <div class="container">
@@ -826,22 +839,41 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         </div>
     </section>
 
-    <section class="caaft-ar-how py-90" aria-labelledby="appeal-process-heading">
-        <div class="container">
-            <header class="caaft-ar-how-header">
-                <h2 id="appeal-process-heading" class="caaft-ar-how-h2">Step-by-Step Process</h2>
-            </header>
-            <ol class="caaft-ar-how-timeline">
-                <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">1. Receive & Review the Assessment Order</h3><p class="caaft-ar-how-step-text">The full assessment record is obtained immediately — identifying every point of dispute and assessing the strength of the position before the 30-day response window begins to close.</p></div></li>
-                <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">2. Evaluate Grounds of Appeal</h3><p class="caaft-ar-how-step-text">Not every issue in an assessment is worth contesting. Each disallowance and addition is evaluated on merit, legal precedent, and quantum — with a clear assessment of realistic prospects before any appeal investment is made.</p></div></li>
-                <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">3. Draft the Appeal Memorandum</h3><p class="caaft-ar-how-step-text">Grounds of appeal are framed precisely — with reference to the applicable section of the Income Tax Act, supporting case law, and factual evidence. Vague or overly broad grounds weaken the case and are avoided.</p></div></li>
-                <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">4. File with the Appropriate Forum</h3><p class="caaft-ar-how-step-text">For assessment orders, the first appeal is filed before the Commissioner of Income Tax (Appeals) — CIT(A) — electronically through the Income Tax portal within the prescribed timeline.</p></div></li>
-                <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">5. Prepare Supporting Documentation</h3><p class="caaft-ar-how-step-text">All supporting documents are compiled and organised — account statements, contracts, valuation reports, balance sheets, and any other records relevant to the disputed items.</p></div></li>
-                <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">6. Represent at Hearings</h3><p class="caaft-ar-how-step-text">All hearings before the CIT(A) are attended — responding to queries, submitting additional information, and presenting written submissions where required.</p></div></li>
-                <li class="caaft-ar-how-step"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">7. Receive Appellate Order & Advise Next Steps</h3><p class="caaft-ar-how-step-text">Once the CIT(A) passes its order, the outcome is reviewed and advice is provided on whether escalation to the ITAT is strategically appropriate — with full representation handled at that level as well if required.</p></div></li>
-            </ol>
-        </div>
-    </section>
+    <?php
+    $caaft_steps_heading_id = 'appeal-process-heading';
+    $caaft_steps_title = 'Step-by-Step Process';
+    $caaft_steps_items = [
+        [
+            'title' => 'Receive & Review the Assessment Order',
+            'text' => 'The full assessment record is obtained immediately — identifying every point of dispute and assessing the strength of the position before the 30-day response window begins to close.',
+        ],
+        [
+            'title' => 'Evaluate Grounds of Appeal',
+            'text' => 'Not every issue in an assessment is worth contesting. Each disallowance and addition is evaluated on merit, legal precedent, and quantum — with a clear assessment of realistic prospects before any appeal investment is made.',
+        ],
+        [
+            'title' => 'Draft the Appeal Memorandum',
+            'text' => 'Grounds of appeal are framed precisely — with reference to the applicable section of the Income Tax Act, supporting case law, and factual evidence. Vague or overly broad grounds weaken the case and are avoided.',
+        ],
+        [
+            'title' => 'File with the Appropriate Forum',
+            'text' => 'For assessment orders, the first appeal is filed before the Commissioner of Income Tax (Appeals) — CIT(A) — electronically through the Income Tax portal within the prescribed timeline.',
+        ],
+        [
+            'title' => 'Prepare Supporting Documentation',
+            'text' => 'All supporting documents are compiled and organised — account statements, contracts, valuation reports, balance sheets, and any other records relevant to the disputed items.',
+        ],
+        [
+            'title' => 'Represent at Hearings',
+            'text' => 'All hearings before the CIT(A) are attended — responding to queries, submitting additional information, and presenting written submissions where required.',
+        ],
+        [
+            'title' => 'Receive Appellate Order & Advise Next Steps',
+            'text' => 'Once the CIT(A) passes its order, the outcome is reviewed and advice is provided on whether escalation to the ITAT is strategically appropriate — with full representation handled at that level as well if required.',
+        ],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+    ?>
 
     <section class="caaft-ar-what-we-offer py-90" aria-labelledby="appeal-docs-heading">
         <div class="container">
@@ -953,73 +985,70 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         </div>
     </section>
 
-    <section class="caaft-ar-why py-90" aria-labelledby="appeal-choose-heading">
-        <div class="container">
-            <header class="caaft-ar-why-header">
-                <h2 id="appeal-choose-heading" class="caaft-ar-why-h2">Why Choose CAAFT</h2>
-            </header>
-            <div class="caaft-ar-why-panel">
-                <div class="caaft-ar-why-grid caaft-ar-why-grid--five">
-                    <div class="caaft-ar-why-row caaft-ar-why-row--top">
-                        <article class="caaft-ar-why-cell">
-                            <h3 class="caaft-ar-why-title">Specialists — not generalists</h3>
-                            <p class="caaft-ar-why-text">Tax assessment, appeals, and dispute resolution is a core practice area — not a side service. Every case is handled by qualified Chartered Accountants with active representation experience before CIT(A) and ITAT.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <h3 class="caaft-ar-why-title">Full-cycle representation</h3>
-                            <p class="caaft-ar-why-text">From the first notice to the final order, every stage is managed — no handoffs, no coordination gaps, no loose ends between professionals at different stages of the proceedings.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <h3 class="caaft-ar-why-title">Transparent at every step</h3>
-                            <p class="caaft-ar-why-text">Every action taken is explained clearly — including when appeal prospects are limited. Clients are always informed, never kept in the dark about the status or strategy of their case.</p>
-                        </article>
-                    </div>
-                    <div class="caaft-ar-why-row caaft-ar-why-row--bottom">
-                        <article class="caaft-ar-why-cell">
-                            <h3 class="caaft-ar-why-title">Pan-India coverage</h3>
-                            <p class="caaft-ar-why-text">Through digital representation and the Faceless Assessment framework, CAAFT serves clients seamlessly across all states and union territories — without geographic limitations.</p>
-                        </article>
-                        <article class="caaft-ar-why-cell">
-                            <h3 class="caaft-ar-why-title">Integrated compliance and appeal support</h3>
-                            <p class="caaft-ar-why-text">Tax audit, ITR filing, TDS compliance, and appeal representation are managed under one roof — ensuring consistency across all filings and preventing conflicting disclosures that can trigger further disputes.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php
+    $why_choose_caaft_heading_id = 'appeal-choose-heading';
+    $why_choose_caaft_title = 'Why Choose CAAFT';
+    $why_choose_caaft_show_intro = true;
+    $why_choose_caaft_section_class = 'why-choose-caaft py-90';
+    $why_choose_caaft_items = [
+        [
+            'icon_class' => 'fas fa-user-shield',
+            'title' => 'Specialists — not generalists',
+            'text' => 'Tax assessment, appeals, and dispute resolution is a core practice area — not a side service. Every case is handled by qualified Chartered Accountants with active representation experience before CIT(A) and ITAT.',
+        ],
+        [
+            'icon_class' => 'fas fa-sitemap',
+            'title' => 'Full-cycle representation',
+            'text' => 'From the first notice to the final order, every stage is managed — no handoffs, no coordination gaps, no loose ends between professionals at different stages of the proceedings.',
+        ],
+        [
+            'icon_class' => 'fas fa-comments',
+            'title' => 'Transparent at every step',
+            'text' => 'Every action taken is explained clearly — including when appeal prospects are limited. Clients are always informed, never kept in the dark about the status or strategy of their case.',
+        ],
+        [
+            'icon_class' => 'fas fa-globe',
+            'title' => 'Pan-India coverage',
+            'text' => 'Through digital representation and the Faceless Assessment framework, CAAFT serves clients seamlessly across all states and union territories — without geographic limitations.',
+        ],
+        [
+            'icon_class' => 'fas fa-layer-group',
+            'title' => 'Integrated compliance and appeal support',
+            'text' => 'Tax audit, ITR filing, TDS compliance, and appeal representation are managed under one roof — ensuring consistency across all filings and preventing conflicting disclosures that can trigger further disputes.',
+        ],
+    ];
+    include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+    ?>
 
-    <section class="caaft-ar-what-we-offer py-90" aria-labelledby="appeal-facts-heading">
-        <div class="container">
-            <header class="caaft-ar-offer-header">
-                <h2 id="appeal-facts-heading" class="caaft-ar-offer-h2">Key Facts & Figures</h2>
-            </header>
-            <div class="appeal-facts-grid">
-                <article class="appeal-facts-card">
-                    <h3 class="appeal-facts-metric">₹11.5 lakh crore+</h3>
-                    <p class="appeal-facts-text">in income tax disputes are pending before various forums — overwhelming tribunals and impacting individuals and small businesses without professional representation (Economic Survey)</p>
-                </article>
-                <article class="appeal-facts-card">
-                    <h3 class="appeal-facts-metric">5.4 lakh+</h3>
-                    <p class="appeal-facts-text">The ITAT backlog exceeds 5.4 lakh cases — making early filing with strong grounds and complete documentation the difference between an 18-month resolution and a multi-year wait</p>
-                </article>
-                <article class="appeal-facts-card">
-                    <h3 class="appeal-facts-metric">30 days</h3>
-                    <p class="appeal-facts-text">The CIT(A) appeal window is just 30 days from the date of the adverse order — missing this deadline requires a condonation application, adding cost, delay, and uncertainty to an already high-stakes situation</p>
-                </article>
-            </div>
-        </div>
-    </section>
+    <?php
+    $caaft_key_facts_heading_id = 'appeal-facts-heading';
+    $caaft_key_facts_title = 'Key Facts & Figures';
+    $caaft_key_facts_items = [
+        [
+            'stat' => '₹11.5 lakh crore+',
+            'text' => 'in income tax disputes are pending before various forums — overwhelming tribunals and impacting individuals and small businesses without professional representation (Economic Survey)',
+        ],
+        [
+            'stat' => '5.4 lakh+',
+            'text' => 'The ITAT backlog exceeds 5.4 lakh cases — making early filing with strong grounds and complete documentation the difference between an 18-month resolution and a multi-year wait',
+        ],
+        [
+            'stat' => '30 days',
+            'text' => 'The CIT(A) appeal window is just 30 days from the date of the adverse order — missing this deadline requires a condonation application, adding cost, delay, and uncertainty to an already high-stakes situation',
+        ],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
+    ?>
 
-    <section id="get-in-touch" class="py-90" aria-labelledby="appeal-cta-heading">
-        <div class="container">
-            <div class="appeal-cta-panel">
-                <h2 id="appeal-cta-heading" class="appeal-cta-title">Take the Next Step — Tax Rights Are Worth Defending</h2>
-                <p class="appeal-cta-text">Incorrect tax demands, disallowed deductions, and unfair assessments have real financial consequences — and the window to contest them is narrow. Expert income tax appeal support ensures every case is handled with the right legal grounding, complete documentation, and professional representation at every stage — from the first notice to the final order.</p>
-                <a href="/contact#contact_us" class="appeal-cta-btn">Appeal Smarter. Win Faster <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
+    <?php
+    $caaft_cta_section_id = 'get-in-touch';
+    $caaft_cta_heading_id = 'appeal-cta-heading';
+    $caaft_cta_title = 'Take the Next Step — Tax Rights Are Worth Defending';
+    $caaft_cta_text = 'Incorrect tax demands, disallowed deductions, and unfair assessments have real financial consequences — and the window to contest them is narrow. Expert income tax appeal support ensures every case is handled with the right legal grounding, complete documentation, and professional representation at every stage — from the first notice to the final order.';
+    $caaft_cta_button_label = 'Appeal Smarter. Win Faster';
+    $caaft_cta_button_href = '/contact#contact_us';
+    include __DIR__ . '/../../includes/components/caaft-cta.php';
+    ?>
 
     <div id="faq" class="faq-area are_sections_faq py-120 caaft-ar-faq-wrap" aria-labelledby="appeal-faq-heading">
         <div class="container">
