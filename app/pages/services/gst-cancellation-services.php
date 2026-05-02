@@ -136,7 +136,11 @@
             line-height: 1.62;
             font-weight: 500;
         }
-        .page-gst-cancellation-services .gst-cancel-status-wrap { padding-top: 44px; padding-bottom: 44px; }
+        .page-gst-cancellation-services .gst-cancel-status-wrap {
+            padding-top: 44px;
+            padding-bottom: 44px;
+            background: #f6f8fb;
+        }
         .page-gst-cancellation-services .gst-cancel-status-title {
             margin: 0 0 8px;
             color: #1f2c40;
@@ -145,23 +149,68 @@
             font-weight: 700;
         }
         .page-gst-cancellation-services .gst-cancel-status-intro {
-            margin: 0 0 16px;
+            margin: 0 0 20px;
             color: #4d5868;
             line-height: 1.66;
         }
-        .page-gst-cancellation-services .gst-cancel-status-ol {
+        .page-gst-cancellation-services .gst-cancel-status-steps {
             margin: 0;
-            padding: 0 0 0 1.25rem;
-            color: #4d5868;
-            line-height: 1.65;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            gap: 0;
+        }
+        .page-gst-cancellation-services .gst-cancel-status-step {
+            position: relative;
+            display: grid;
+            grid-template-columns: 34px minmax(0, 1fr);
+            gap: 12px;
+            align-items: start;
+            padding-bottom: 4px;
+        }
+        .page-gst-cancellation-services .gst-cancel-status-step::after {
+            content: "";
+            position: absolute;
+            left: 16px;
+            top: 34px;
+            bottom: 4px;
+            width: 2px;
+            background: #cfe2fb;
+        }
+        .page-gst-cancellation-services .gst-cancel-status-step:last-child::after {
+            display: none;
+        }
+        .page-gst-cancellation-services .gst-cancel-status-dot {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: #eaf3ff;
+            border: 1px solid #c5daf7;
+            color: #1f4f99;
+            font-size: 0.88rem;
+            line-height: 1;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+        .page-gst-cancellation-services .gst-cancel-status-body {
+            padding-bottom: 18px;
+        }
+        .page-gst-cancellation-services .gst-cancel-status-body h3 {
+            margin: 0 0 6px;
+            color: #1f2c40;
+            font-size: 1.05rem;
+            line-height: 1.4;
+            font-weight: 700;
+        }
+        .page-gst-cancellation-services .gst-cancel-status-body p {
+            margin: 0;
+            color: #5a6575;
+            line-height: 1.58;
             font-weight: 500;
-        }
-        .page-gst-cancellation-services .gst-cancel-status-ol li {
-            margin: 0 0 10px;
-            padding-left: 4px;
-        }
-        .page-gst-cancellation-services .gst-cancel-status-ol li:last-child {
-            margin-bottom: 0;
+            font-size: 0.98rem;
         }
         .page-gst-cancellation-services .gst-cancel-status-note {
             margin: 18px 0 0;
@@ -178,6 +227,94 @@
             color: #2f78cb;
             margin-right: 8px;
         }
+        .page-gst-cancellation-services .gst-cancel-mistakes-wrap {
+            padding-top: 44px;
+            padding-bottom: 44px;
+        }
+        .page-gst-cancellation-services .gst-cancel-mistakes-title {
+            margin: 0 0 8px;
+            color: #1f2c40;
+            font-size: clamp(1.5rem, 2.2vw, 2.1rem);
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        .page-gst-cancellation-services .gst-cancel-mistakes-intro {
+            margin: 0 0 16px;
+            color: #6b7280;
+            line-height: 1.65;
+            font-size: 1.02rem;
+            font-weight: 500;
+        }
+        .page-gst-cancellation-services .gst-cancel-mistakes-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border-top: 1px solid #e5e7eb;
+        }
+        .page-gst-cancellation-services .gst-cancel-mistakes-list li {
+            position: relative;
+            margin: 0;
+            padding: 14px 0 14px 40px;
+            border-bottom: 1px solid #e5e7eb;
+            color: #2f3948;
+            line-height: 1.55;
+            font-size: 1.02rem;
+            font-weight: 600;
+        }
+        .page-gst-cancellation-services .gst-cancel-mistakes-list li::before {
+            content: "\00d7";
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #fff1f1;
+            border: 1px solid #ffd7d7;
+            color: #e53935;
+            font-size: 0.9rem;
+            line-height: 1;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .page-gst-cancellation-services .gst-cancel-mistakes-success {
+            margin: 18px 0 0;
+            padding: 14px 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #50af63;
+            border-radius: 8px;
+            background: #f3f6f9;
+        }
+        .page-gst-cancellation-services .gst-cancel-mistakes-success-icon {
+            flex: 0 0 28px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            color: #2e7d32;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            margin-top: 2px;
+        }
+        .page-gst-cancellation-services .gst-cancel-mistakes-success p {
+            margin: 0;
+            color: #2f3948;
+            line-height: 1.58;
+            font-size: 1.02rem;
+            font-weight: 500;
+        }
+        .page-gst-cancellation-services .gst-cancel-mistakes-success strong {
+            color: #1f2c40;
+            font-weight: 700;
+        }
         @media (max-width: 991.98px) {
             .page-gst-cancellation-services .caaft-ar-trust-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -191,6 +328,29 @@
             }
             .page-gst-cancellation-services .gst-cancel-needs-grid {
                 grid-template-columns: 1fr;
+            }
+            .page-gst-cancellation-services .gst-cancel-status-step {
+                grid-template-columns: 30px minmax(0, 1fr);
+                gap: 10px;
+            }
+            .page-gst-cancellation-services .gst-cancel-status-dot {
+                width: 30px;
+                height: 30px;
+                font-size: 0.8rem;
+            }
+            .page-gst-cancellation-services .gst-cancel-status-step::after {
+                left: 14px;
+                top: 32px;
+            }
+            .page-gst-cancellation-services .gst-cancel-mistakes-list li {
+                padding-left: 36px;
+                font-size: 0.98rem;
+            }
+            .page-gst-cancellation-services .gst-cancel-mistakes-list li::before {
+                top: 12px;
+                width: 22px;
+                height: 22px;
+                font-size: 0.85rem;
             }
         }
     </style>
@@ -410,32 +570,59 @@
         <section class="gst-cancel-status-wrap" aria-labelledby="gst-cancel-status-heading">
             <div class="container">
                 <h2 id="gst-cancel-status-heading" class="gst-cancel-status-title">How to Track GST Cancellation Status</h2>
-                <p class="gst-cancel-status-intro">After submission, taxpayers can monitor their GST cancellation status directly through the GST portal:</p>
-                <ol class="gst-cancel-status-ol">
-                    <li>Log in to the GST portal with registered credentials</li>
-                    <li>Navigate to the Services section and select Application Status</li>
-                    <li>Enter the acknowledgement reference number from the submission</li>
-                    <li>View the current approval or pending status of the application</li>
-                </ol>
+                <p class="gst-cancel-status-intro">After submission, taxpayers can monitor their cancellation status directly through the GST portal.</p>
+                <ul class="gst-cancel-status-steps" role="list">
+                    <li class="gst-cancel-status-step">
+                        <span class="gst-cancel-status-dot" aria-hidden="true">1</span>
+                        <div class="gst-cancel-status-body">
+                            <h3>Log in to the GST portal</h3>
+                            <p>Use your registered credentials at gstin.gov.in to access your taxpayer dashboard.</p>
+                        </div>
+                    </li>
+                    <li class="gst-cancel-status-step">
+                        <span class="gst-cancel-status-dot" aria-hidden="true">2</span>
+                        <div class="gst-cancel-status-body">
+                            <h3>Go to Services → Application Status</h3>
+                            <p>Navigate to the Services section from the top menu and select Application Status from the dropdown.</p>
+                        </div>
+                    </li>
+                    <li class="gst-cancel-status-step">
+                        <span class="gst-cancel-status-dot" aria-hidden="true">3</span>
+                        <div class="gst-cancel-status-body">
+                            <h3>Enter your acknowledgement reference number</h3>
+                            <p>Input the ARN issued at the time of submission. This uniquely identifies your cancellation application.</p>
+                        </div>
+                    </li>
+                    <li class="gst-cancel-status-step">
+                        <span class="gst-cancel-status-dot" aria-hidden="true">4</span>
+                        <div class="gst-cancel-status-body">
+                            <h3>View current application status</h3>
+                            <p>The portal displays whether your application is pending, under review, approved, or requires a response to a query.</p>
+                        </div>
+                    </li>
+                </ul>
                 <p class="gst-cancel-status-note"><i class="far fa-info-circle" aria-hidden="true"></i>CAAFT tracks GST cancellation status throughout the process on behalf of every client — providing updates at each stage so there is never a period of uncertainty about where the application stands.</p>
             </div>
         </section>
 
-        <?php
-        $caaft_challenges_heading_id = 'gst-cancel-mistakes-heading';
-        $caaft_challenges_title = 'Common Mistakes That Delay or Reject GST Cancellation';
-        $caaft_challenges_intro = 'Most GST cancellation delays and rejections are caused by avoidable errors:';
-        $caaft_challenges_items = [
-            'Filing the cancellation application without first clearing all pending GST returns',
-            'Submitting incorrect or incomplete documentation at the time of application',
-            'Failing to clear outstanding tax liabilities before initiating the cancellation process',
-            'Providing inaccurate business closure details or effective date of discontinuance',
-            'Ignoring queries or notices from tax authorities during the review period',
-            'Assuming a single cancellation application covers registrations held in multiple states',
-        ];
-        $caaft_challenges_outro = 'CAAFT\'s structured, verification-first approach eliminates each of these — delivering clean, accurate cancellation applications with the documentation and compliance groundwork already in place.';
-        include __DIR__ . '/../../includes/components/caaft-challenges.php';
-        ?>
+        <section class="gst-cancel-mistakes-wrap" aria-labelledby="gst-cancel-mistakes-heading">
+            <div class="container">
+                <h2 id="gst-cancel-mistakes-heading" class="gst-cancel-mistakes-title">Common Mistakes That Delay or Reject GST Cancellation</h2>
+                <p class="gst-cancel-mistakes-intro">Most delays and rejections are caused by avoidable errors. Knowing them upfront protects your timeline.</p>
+                <ul class="gst-cancel-mistakes-list" role="list">
+                    <li>Filing the cancellation application without first clearing all pending GST returns</li>
+                    <li>Submitting incorrect or incomplete documentation at the time of application</li>
+                    <li>Failing to clear outstanding tax liabilities before initiating the cancellation process</li>
+                    <li>Providing inaccurate business closure details or effective date of discontinuance</li>
+                    <li>Ignoring queries or notices from tax authorities during the review period</li>
+                    <li>Assuming a single cancellation application covers registrations held in multiple states</li>
+                </ul>
+                <div class="gst-cancel-mistakes-success">
+                    <span class="gst-cancel-mistakes-success-icon" aria-hidden="true"><i class="fas fa-check"></i></span>
+                    <p><strong>CAAFT's structured, verification-first approach</strong> eliminates each of these — delivering clean, accurate cancellation applications with the documentation and compliance groundwork already in place.</p>
+                </div>
+            </div>
+        </section>
 
         <?php
         $why_choose_caaft_heading_id = 'gst-cancel-why-heading';
@@ -478,15 +665,16 @@
         $caaft_key_facts_title = 'Key Facts & Figures';
         $caaft_key_facts_items = [
             [
-                'stat' => '',
+                'stat' => 'Timely',
                 'text' => 'Under Rule 20 of the CGST Rules 2017, a taxpayer is required to apply for GST cancellation within 30 days of the date of discontinuance or dissolution of business — making timely application a legal obligation, not merely a best practice',
             ],
             [
-                'stat' => '',
+                'stat' => 'Power',
                 'text' => 'Under Section 29(2) of the CGST Act 2017, tax authorities hold the power to cancel GST registration suo motu if a taxpayer fails to file returns for six consecutive months (regular taxpayers) or three consecutive tax periods (composition dealers) — without any prior application from the business',
             ],
             [
-                'stat' => '',
+                'stat' => 'Fees',
+                'stat_icon_class' => 'fas fa-arrow-up',
                 'text' => 'An active GST registration on a non-operational business quietly accumulates return filing defaults, late fees of ₹20–₹50 per day, and department notices — all of which must be resolved before cancellation can be processed, making early action significantly less costly than delayed action',
             ],
         ];
