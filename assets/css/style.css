@@ -9634,11 +9634,19 @@ align-items: baseline;}
 }
 
 .page-bookkeeping-accounting .bk-overview,
-.page-bookkeeping-accounting .bk-delivered,
 .page-bookkeeping-accounting .bk-who,
-.page-bookkeeping-accounting .bk-challenges,
 .page-bookkeeping-accounting .bk-facts,
 .page-bookkeeping-accounting .bk-cta {
+    background: #fff;
+}
+
+/* Reusable challenges section (caaft-challenges.php) — global */
+.bk-challenges {
+    background: #fff;
+}
+
+/* Reusable delivered section (caaft-get-delivered.php) — global */
+.bk-delivered {
     background: #fff;
 }
 
@@ -9776,8 +9784,14 @@ align-items: baseline;}
 
 .page-bookkeeping-accounting .bk-overview-text,
 .page-bookkeeping-accounting .bk-who-intro,
-.page-bookkeeping-accounting .caaft-who-needs-intro,
-.page-bookkeeping-accounting .bk-challenges-intro {
+.page-bookkeeping-accounting .caaft-who-needs-intro {
+    margin: 0 0 10px;
+    font-size: 1.02rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+}
+
+.bk-challenges-intro {
     margin: 0 0 10px;
     font-size: 1.02rem;
     line-height: 1.7;
@@ -9786,17 +9800,20 @@ align-items: baseline;}
 
 .page-bookkeeping-accounting .bk-overview-text:last-child,
 .page-bookkeeping-accounting .bk-who-intro:last-child,
-.page-bookkeeping-accounting .caaft-who-needs-intro:last-child,
-.page-bookkeeping-accounting .bk-challenges-intro:last-child {
+.page-bookkeeping-accounting .caaft-who-needs-intro:last-child {
     margin-bottom: 0;
 }
 
-.page-bookkeeping-accounting .bk-delivered-table {
+.bk-challenges-intro:last-child {
+    margin-bottom: 0;
+}
+
+.bk-delivered-table {
     display: flex;
     flex-direction: column;
 }
 
-.page-bookkeeping-accounting .bk-delivered-row {
+.bk-delivered-row {
     display: grid;
     grid-template-columns: 52px minmax(180px, 0.9fr) minmax(0, 1.6fr);
     gap: 14px 22px;
@@ -9805,7 +9822,7 @@ align-items: baseline;}
     align-items: start;
 }
 
-.page-bookkeeping-accounting .bk-delivered-num {
+.bk-delivered-num {
     font-size: 12px;
     font-weight: 500;
     color: #777;
@@ -9813,7 +9830,7 @@ align-items: baseline;}
     padding-top: 3px;
 }
 
-.page-bookkeeping-accounting .bk-delivered-name {
+.bk-delivered-name {
     margin: 0;
     font-family: var(--heading-font);
     font-size: 1.05rem;
@@ -9822,21 +9839,21 @@ align-items: baseline;}
     color: #232323;
 }
 
-.page-bookkeeping-accounting .bk-delivered-text {
+.bk-delivered-text {
     margin: 0;
     font-size: 1rem;
     line-height: 1.75;
     color: #4a4a4a;
 }
 
-.page-bookkeeping-accounting .bk-delivered-body {
+.bk-delivered-body {
     margin: 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.page-bookkeeping-accounting .bk-delivered-body .bk-delivered-text {
+.bk-delivered-body .bk-delivered-text {
     margin: 0;
 }
 
@@ -9851,8 +9868,11 @@ align-items: baseline;}
 
 .page-bookkeeping-accounting .bk-who-header,
 .page-bookkeeping-accounting .caaft-who-needs-header,
-.page-bookkeeping-accounting .bk-challenges-header,
 .page-bookkeeping-accounting .bk-facts-header {
+    margin-bottom: 20px;
+}
+
+.bk-challenges-header {
     margin-bottom: 20px;
 }
 
@@ -9892,20 +9912,20 @@ align-items: baseline;}
     margin-bottom: 0;
 }
 
-.page-bookkeeping-accounting .bk-challenges-box {
+.bk-challenges-box {
     background: #fff;
     border: 1px solid #d8dde3;
     border-radius: 12px;
     padding: 6px 16px;
 }
 
-.page-bookkeeping-accounting .bk-challenges-list {
+.bk-challenges-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.page-bookkeeping-accounting .bk-challenges-list li {
+.bk-challenges-list li {
     position: relative;
     margin: 0;
     padding: 16px 8px 16px 28px;
@@ -9915,11 +9935,12 @@ align-items: baseline;}
     color: #444;
 }
 
-.page-bookkeeping-accounting .bk-challenges-list li:last-child {
+.bk-challenges-list li:last-child {
     border-bottom: 0;
 }
 
-.page-bookkeeping-accounting .bk-challenges-list li::before {
+/* caaft-challenges.php & .bk-challenges sections — bullet dots use theme blue */
+.bk-challenges .bk-challenges-list li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -9927,7 +9948,15 @@ align-items: baseline;}
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: #f0a020;
+    background: var(--theme-color);
+}
+
+.bk-challenges-outro {
+    margin: 16px 0 0;
+    padding: 4px 8px 8px;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
 }
 
 /* Reusable Key Facts default card layout (global) */
@@ -10050,10 +10079,6 @@ align-items: baseline;}
 
 .page-bookkeeping-accounting.page-financial-statement-analysis .bk-challenges-list li {
     color: #0b2f6b;
-}
-
-.page-bookkeeping-accounting.page-financial-statement-analysis .bk-challenges-list li::before {
-    background: #0b2f6b;
 }
 
 .page-bookkeeping-accounting .bk-facts-grid {
@@ -10259,12 +10284,12 @@ align-items: baseline;}
 }
 
 @media (max-width: 991.98px) {
-    .page-bookkeeping-accounting .bk-delivered-row {
+    .bk-delivered-row {
         grid-template-columns: 40px minmax(0, 1fr);
     }
 
-    .page-bookkeeping-accounting .bk-delivered-text,
-    .page-bookkeeping-accounting .bk-delivered-body {
+    .bk-delivered-text,
+    .bk-delivered-body {
         grid-column: 2;
     }
 
@@ -10831,4 +10856,69 @@ align-items: baseline;}
     line-height: 1.7;
     text-align: left !important;
     text-justify: auto !important;
+}
+
+/* Reusable: two-column "Who needs" bullet list (GST registration–style layout) */
+.caaft-who-needs-list-section {
+    padding-top: 48px;
+    padding-bottom: 78px;
+}
+
+.caaft-who-needs-list-card {
+    background: transparent;
+    border: 0;
+    border-radius: 2px;
+}
+
+.caaft-who-needs-list-title {
+    margin: 0 0 8px;
+    color: #2f2f2f;
+    font-size: clamp(1.35rem, 1.9vw, 2rem);
+    line-height: 1.2;
+    text-transform: none;
+}
+
+.caaft-who-needs-list-intro {
+    margin: 0 0 16px;
+    color: #505050;
+    line-height: 1.6;
+}
+
+.caaft-who-needs-list-items {
+    margin: 0;
+    padding-left: 0;
+    list-style: none !important;
+    columns: 2;
+    column-gap: 46px;
+}
+
+.caaft-who-needs-list-items li {
+    display: block !important;
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 14px;
+    break-inside: avoid;
+    color: #2f2f2f;
+    line-height: 1.6;
+}
+
+.caaft-who-needs-list-items li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #1aaf9b;
+    font-weight: 700;
+}
+
+.caaft-who-needs-list-closing {
+    margin: 16px 0 0;
+    color: #2f2f2f;
+    line-height: 1.6;
+}
+
+@media (max-width: 991.98px) {
+    .caaft-who-needs-list-items {
+        columns: 1;
+    }
 }

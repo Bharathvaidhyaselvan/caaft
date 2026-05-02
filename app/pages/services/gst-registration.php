@@ -68,7 +68,7 @@
             line-height: 1.3;
         }
         .page-gst-registration .gst-reg-info-title,
-        .page-gst-registration .gst-reg-needs-title,
+        .page-gst-registration .caaft-who-needs-list-title,
         .page-gst-registration .gst-reg-delivered-title,
         .page-gst-registration .caaft-ar-how-h2,
         .page-gst-registration .gst-reg-docs-title,
@@ -81,58 +81,6 @@
             line-height: 1.2 !important;
             text-transform: none !important;
             letter-spacing: normal !important;
-        }
-
-        .gst-reg-needs-wrap {
-            padding-top: 48px;
-            padding-bottom: 78px;
-        }
-
-        .gst-reg-needs-card {
-            background: transparent;
-            border: 0;
-            border-radius: 2px;
-        }
-
-        .gst-reg-needs-title {
-            margin: 0 0 8px;
-            color: #2f2f2f;
-            font-size: clamp(1.35rem, 1.9vw, 2rem);
-            line-height: 1.2;
-            text-transform: none;
-        }
-
-        .gst-reg-needs-intro {
-            margin: 0 0 16px;
-            color: #505050;
-            line-height: 1.6;
-        }
-
-        .gst-reg-needs-list {
-            margin: 0;
-            padding-left: 20px;
-            list-style: disc outside !important;
-            columns: 2;
-            column-gap: 46px;
-        }
-
-        .gst-reg-needs-list li {
-            display: block !important;
-            position: relative;
-            padding-left: 14px;
-            margin-bottom: 14px;
-            break-inside: avoid;
-            color: #2f2f2f;
-            line-height: 1.6;
-        }
-
-        .gst-reg-needs-list li::before {
-            content: "\2022";
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #1aaf9b;
-            font-weight: 700;
         }
 
         .gst-reg-delivered-wrap {
@@ -467,10 +415,6 @@
                 padding: 14px;
             }
 
-            .gst-reg-needs-list {
-                columns: 1;
-            }
-
             .gst-reg-delivered-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
@@ -654,16 +598,22 @@
         $caaft_overview_image_alt = 'Business documents and GST registration paperwork';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>
-        <section class="gst-reg-needs-wrap"><div class="container"><div class="gst-reg-needs-card"><h2 class="gst-reg-needs-title">Who Needs GST Registration Services?</h2><p class="gst-reg-needs-intro">CAAFT's GST registration services are built for businesses at every stage and across every transaction type:</p><ul class="gst-reg-needs-list">
-            <li>Startups and new businesses completing their first GST registration</li>
-            <li>SMEs expanding operations into new states requiring additional registrations</li>
-            <li>E-commerce sellers on Amazon, Flipkart, or other platforms with mandatory registration requirements</li>
-            <li>Import and export businesses needing cross-border GST compliance</li>
-            <li>Businesses below the turnover threshold considering voluntary registration for credibility and ITC benefits</li>
-            <li>Companies needing amendments to existing GST details after business changes</li>
-            <li>Businesses whose GST registration has been cancelled and requires revocation</li>
-            <li>Any business operating in India with taxable supplies, interstate transactions, or e-commerce sales has a GST compliance obligation that must be managed accurately from the outset.</li>
-        </ul></div></div></section>
+        <?php
+        $caaft_wnl_heading_id = 'gst-reg-who-needs-heading';
+        $caaft_wnl_title = 'Who Needs GST Registration Services?';
+        $caaft_wnl_intro = "CAAFT's GST registration services are built for businesses at every stage and across every transaction type:";
+        $caaft_wnl_items = [
+            'Startups and new businesses completing their first GST registration',
+            'SMEs expanding operations into new states requiring additional registrations',
+            'E-commerce sellers on Amazon, Flipkart, or other platforms with mandatory registration requirements',
+            'Import and export businesses needing cross-border GST compliance',
+            'Businesses below the turnover threshold considering voluntary registration for credibility and ITC benefits',
+            'Companies needing amendments to existing GST details after business changes',
+            'Businesses whose GST registration has been cancelled and requires revocation',
+            'Any business operating in India with taxable supplies, interstate transactions, or e-commerce sales has a GST compliance obligation that must be managed accurately from the outset.',
+        ];
+        include __DIR__ . '/../../includes/components/caaft-who-needs-list.php';
+        ?>
 
         <section class="gst-reg-delivered-wrap"><div class="container"><header class="gst-reg-delivered-header"><h2 class="gst-reg-delivered-title">GST Registration Services — What Gets Delivered</h2></header><div class="gst-reg-delivered-grid">
             <article class="gst-reg-delivered-card"><span class="gst-reg-delivered-num">01</span><h3>New GST Registration</h3><p>Complete assistance in applying for GST registration - accurate documentation, error-free filing, and quick processing - ensuring the business is compliant from day one without unnecessary back-and-forth.</p></article>

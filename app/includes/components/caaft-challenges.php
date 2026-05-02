@@ -10,7 +10,9 @@
  *
  * Optional:
  *   $caaft_challenges_outro (string)
- *   $caaft_challenges_section_class (string) default "bk-challenges py-90"
+ *   $caaft_challenges_section_class (string) default "bk-challenges py-90 caaft-challenges"
+ *
+ * Styling: list bullets use var(--theme-color) in style.css (see .bk-challenges .bk-challenges-list li::before).
  */
 if (!isset($caaft_challenges_heading_id, $caaft_challenges_title, $caaft_challenges_intro, $caaft_challenges_items) || !is_array($caaft_challenges_items) || $caaft_challenges_items === []) {
     trigger_error('caaft-challenges.php: set required challenges variables before including', E_USER_WARNING);
@@ -19,7 +21,7 @@ if (!isset($caaft_challenges_heading_id, $caaft_challenges_title, $caaft_challen
 $caaft_challenges_outro = isset($caaft_challenges_outro) ? (string) $caaft_challenges_outro : '';
 $caaft_challenges_section_class = isset($caaft_challenges_section_class) && $caaft_challenges_section_class !== ''
     ? (string) $caaft_challenges_section_class
-    : 'bk-challenges py-90';
+    : 'bk-challenges py-90 caaft-challenges';
 ?>
 <section class="<?php echo htmlspecialchars($caaft_challenges_section_class, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars((string) $caaft_challenges_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">

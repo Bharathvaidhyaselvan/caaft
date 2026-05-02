@@ -12,7 +12,7 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="GST Return Filing Services | Monthly GST Return Filing & Compliance Support">
-    <meta property="og:description" content="Accurate and timely GST return filing with ITC reconciliation, compliance support, and notice assistance for businesses across India.">
+    <meta property="og:description" content="Professional GST return filing services for businesses. Ensure accurate monthly GST return filing, avoid late GST return penalty, and maintain proper GST compliance with expert support.">
     <meta property="og:url" content="https://caaft.com/gst-return-filing-services/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <?php include "header-top.php"; ?>
@@ -68,139 +68,20 @@
             line-height: 1.3;
         }
 
-        .gst-return-overview-wrap {
-            padding-top: 48px;
-            padding-bottom: 48px;
-        }
-
-        .gst-return-overview-card {
-            background: #ffffff;
-            border: 1px solid #dfe5ee;
-            border-radius: 10px;
-            padding: 18px;
-        }
-
-        .gst-return-overview-title {
-            margin: 0 0 10px;
-            font-size: clamp(1.5rem, 2.2vw, 2.1rem);
-            line-height: 1.2;
-            color: #1f2c40;
-        }
-
-        .gst-return-overview-text {
-            margin: 0 0 10px;
-            color: #4d5868;
-            line-height: 1.75;
+        /* "What is GST Return Filing?" — airy paragraph rhythm (matches reference layout) */
+        .page-gst-return-filing-services .bk-overview .bk-section-title {
+            margin: 0 0 1.75rem;
             text-align: left;
         }
-
-        .gst-return-overview-text:last-child {
+        .page-gst-return-filing-services .bk-overview .bk-overview-text {
+            margin: 0 0 1.75rem;
+            text-align: left;
+            font-size: 1.02rem;
+            line-height: 1.6;
+            color: #2f2f2f;
+        }
+        .page-gst-return-filing-services .bk-overview .bk-overview-text:last-child {
             margin-bottom: 0;
-        }
-
-        .gst-return-overview-media img {
-            width: 100%;
-            max-height: 320px;
-            object-fit: cover;
-            border-radius: 10px;
-            display: block;
-        }
-
-        .gst-return-needs-wrap {
-            padding-top: 46px;
-            padding-bottom: 66px;
-        }
-
-        .gst-return-needs-title {
-            margin: 0 0 8px;
-            color: #2f2f2f;
-            font-size: clamp(1.35rem, 1.9vw, 2rem);
-            line-height: 1.2;
-        }
-
-        .gst-return-needs-intro {
-            margin: 0 0 14px;
-            color: #505050;
-            line-height: 1.6;
-        }
-
-        .gst-return-needs-list {
-            margin: 0;
-            padding-left: 20px;
-            columns: 2;
-            column-gap: 46px;
-        }
-
-        .gst-return-needs-list li {
-            position: relative;
-            padding-left: 14px;
-            margin-bottom: 12px;
-            break-inside: avoid;
-            color: #2f2f2f;
-            line-height: 1.6;
-        }
-
-        .gst-return-needs-list li::before {
-            content: "\2022";
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #1aaf9b;
-            font-weight: 700;
-        }
-
-        .gst-return-delivered-wrap {
-            background: #e8f4fb;
-            padding: 60px 0;
-        }
-
-        .gst-return-delivered-title {
-            margin: 0 0 22px;
-            color: #132946;
-            font-size: clamp(1.6rem, 2.4vw, 2.5rem);
-            line-height: 1.2;
-            text-transform: uppercase;
-            letter-spacing: 0.01em;
-        }
-
-        .gst-return-delivered-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 16px;
-        }
-
-        .gst-return-delivered-card {
-            position: relative;
-            background: #ffffff;
-            border: 1px solid #d8e2ec;
-            border-radius: 12px;
-            padding: 18px 16px 16px;
-            min-height: 180px;
-        }
-
-        .gst-return-delivered-num {
-            position: absolute;
-            top: 8px;
-            right: 12px;
-            font-size: 2.65rem;
-            line-height: 1;
-            font-weight: 800;
-            color: rgba(19, 41, 70, 0.1);
-        }
-
-        .gst-return-delivered-card h3 {
-            margin: 0 0 8px;
-            font-size: 1.08rem;
-            line-height: 1.35;
-            color: #1d2f46;
-            font-weight: 700;
-            max-width: calc(100% - 62px);
-        }
-
-        .gst-return-delivered-card p {
-            margin: 0;
-            color: #495c72;
-            line-height: 1.6;
         }
 
         .gst-return-importance-wrap {
@@ -495,132 +376,6 @@
             font-size: 0.92rem;
         }
 
-        .gst-return-challenges-wrap {
-            padding-top: 36px;
-            padding-bottom: 44px;
-        }
-
-        .gst-return-challenges-title {
-            margin: 0 0 8px;
-            color: #132946;
-            font-size: clamp(1.35rem, 2vw, 2rem);
-            line-height: 1.2;
-            font-weight: 700;
-        }
-
-        .gst-return-challenges-intro {
-            margin: 0 0 14px;
-            color: #4d5868;
-            line-height: 1.6;
-            max-width: 920px;
-        }
-
-        .gst-return-challenges-list {
-            display: grid;
-            gap: 8px;
-        }
-
-        .gst-return-challenge-item {
-            background: #f5f9ff;
-            border: 1px solid #dbe8f7;
-            border-left: 3px solid #37b8ff;
-            padding: 10px 12px;
-        }
-
-        .gst-return-challenge-item h3 {
-            margin: 0 0 4px;
-            color: #1f2c40;
-            font-size: 1rem;
-            line-height: 1.35;
-            font-weight: 700;
-        }
-
-        .gst-return-challenge-item p {
-            margin: 0;
-            color: #4d5868;
-            line-height: 1.55;
-        }
-
-        .gst-return-cta-wrap {
-            padding-top: 28px;
-            padding-bottom: 58px;
-        }
-
-        .gst-return-cta-box {
-            background: linear-gradient(135deg, #0d2b63 0%, #143f92 55%, #1f4eb5 100%);
-            border-radius: 14px;
-            padding: clamp(30px, 5vw, 56px) 22px;
-            text-align: center;
-            box-shadow: 0 16px 38px rgba(16, 41, 92, 0.26);
-        }
-
-        .gst-return-cta-title {
-            margin: 0 0 12px;
-            color: #ffffff;
-            font-size: clamp(2.1rem, 3.8vw, 3.8rem);
-            line-height: 1.1;
-            font-weight: 800;
-            letter-spacing: 0.01em;
-        }
-
-        .gst-return-cta-text {
-            margin: 0 auto 20px;
-            max-width: 860px;
-            color: rgba(255, 255, 255, 0.9);
-            line-height: 1.7;
-            font-size: 1.04rem;
-        }
-
-        .gst-return-cta-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .gst-reg-facts-wrap {
-            padding-top: 44px;
-            padding-bottom: 52px;
-        }
-
-        .gst-reg-facts-title {
-            margin: 0 0 14px;
-            color: #112b52;
-            font-size: clamp(1.75rem, 2.3vw, 3rem);
-            line-height: 1.15;
-            font-weight: 800;
-        }
-
-        .gst-reg-facts-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 16px;
-        }
-
-        .gst-reg-fact-card {
-            background: #ffffff;
-            border: 1px solid #dde3ea;
-            border-radius: 12px;
-            padding: 18px 16px 16px;
-            text-align: center;
-            min-height: 228px;
-        }
-
-        .gst-reg-fact-stat {
-            margin: 0 0 8px;
-            color: #142f60;
-            font-size: clamp(2.2rem, 3.4vw, 3.7rem);
-            line-height: 1.02;
-            font-weight: 800;
-            letter-spacing: 0.01em;
-        }
-
-        .gst-reg-fact-card p {
-            margin: 0 auto;
-            color: #4c5f7b;
-            line-height: 1.6;
-            max-width: 90%;
-        }
-
         .gst-return-docs-wrap {
             padding-top: 40px;
             padding-bottom: 40px;
@@ -706,7 +461,7 @@
           "@id": "https://caaft.com/gst-return-filing-services/#service",
           "name": "GST Return Filing Services",
           "url": "https://caaft.com/gst-return-filing-services/",
-          "description": "Professional GST return filing services including monthly GST return filing, compliance support, and penalty avoidance for businesses.",
+          "description": "Professional GST return filing services for businesses. Ensure accurate monthly GST return filing, avoid late GST return penalty, and maintain proper GST compliance with expert support.",
           "provider": {"@id": "https://caaft.com/#org"},
           "serviceType": "GST Compliance and Return Filing",
           "areaServed": {"@type": "Country","name": "India"}
@@ -715,9 +470,11 @@
           "@type": "FAQPage",
           "@id": "https://caaft.com/gst-return-filing-services/#faq",
           "mainEntity": [
-            {"@type": "Question","name": "Do I need to file GST returns if there are no transactions?","acceptedAnswer": {"@type": "Answer","text": "Yes, Nil GST returns must be filed even with zero transactions to avoid penalties and maintain active GST registration."}},
-            {"@type": "Question","name": "What is the late GST return penalty?","acceptedAnswer": {"@type": "Answer","text": "Late fees are ₹50 per day for regular returns and ₹20 per day for nil returns, along with interest on unpaid tax."}},
-            {"@type": "Question","name": "How often should GST returns be filed?","acceptedAnswer": {"@type": "Answer","text": "GST returns are typically filed monthly or quarterly depending on turnover and scheme such as QRMP."}}
+            {"@type": "Question","name": "Does a business with both B2B and B2C sales need to file different returns?","acceptedAnswer": {"@type": "Answer","text": "Not separate returns — but both must be reported correctly within the same filing. B2B supplies go into GSTR-1 with invoice-level details so buyers can claim ITC. B2C supplies are reported summary-wise. Mixing up the reporting format is one of the most common errors that creates ITC mismatches for buyers and reconciliation issues for the filing business."}},
+            {"@type": "Question","name": "Why is ITC being blocked when a supplier has not filed their GSTR-1?","acceptedAnswer": {"@type": "Answer","text": "Input Tax Credit is directly linked to what the supplier reports in their GSTR-1. If the supplier has not filed or has filed incorrectly, that credit will not reflect in GSTR-2B — and cannot be claimed. This is both a cash flow and a compliance issue. CAAFT helps clients track, follow up, and manage ITC eligibility systematically to prevent working capital disruption."}},
+            {"@type": "Question","name": "Is GST filing different for e-commerce sellers on Amazon or Flipkart?","acceptedAnswer": {"@type": "Answer","text": "Yes — significantly. E-commerce operators deduct TCS at source, which must be reconciled monthly. Supplies made through the platform must also be reported separately under specific tables in GSTR-1. Many e-commerce sellers underreport or misclassify these transactions — creating mismatches that attract notices during annual return filing."}},
+            {"@type": "Question","name": "Does a business still need to file GST returns when dormant for several months?","acceptedAnswer": {"@type": "Answer","text": "Yes. GST registration does not pause because business activity does. Nil returns must be filed for every period of registration — even with zero transactions. Missing nil filings attracts late fees of ₹20 per day and can eventually lead to registration cancellation, which is harder to reverse than most businesses expect."}},
+            {"@type": "Question","name": "Is a separate GST registration needed when expanding to a new state?","acceptedAnswer": {"@type": "Answer","text": "Yes. GST registration is state-specific. Supplying goods or services from a new state — whether through a branch, warehouse, or new office — requires a separate GSTIN for that state. Operating without it means inter-state supplies are non-compliant and buyers in that state cannot claim ITC against invoices issued."}}
           ]
         },
         {
@@ -741,7 +498,8 @@
                 <div class="col-md-12 col-lg-6 caaft-ar-hero-inner">
                     <h1 id="gst-return-h1" class="caaft-ar-hero-h1">GST Return Filing Services</h1>
                     <h2 class="caaft-ar-hero-h2">Accurate Returns. Zero Late Filings. Full ITC Protection — Every Filing Cycle.</h2>
-                    <p class="caaft-ar-hero-lead">GST return filing is not a routine administrative task — it is a legal obligation with direct consequences for Input Tax Credit, business credibility, and GSTIN status. For growing businesses dealing with multiple return types, strict deadlines, and evolving compliance requirements, even small errors affect tax records and ITC claims. CAAFT delivers professional GST return filing services — structured, accurate, and on time — for startups, SMEs, and professionals across India.</p>
+                    <p class="caaft-ar-hero-lead">GST return filing is not a routine administrative task — it is a legal obligation with direct consequences for Input Tax Credit, business credibility, and GSTIN status.</p>
+                    <p class="caaft-ar-hero-lead">For growing businesses dealing with multiple return types, strict deadlines, and evolving compliance requirements, even small errors affect tax records and ITC claims. CAAFT delivers professional GST return filing services — structured, accurate, and on time — for startups, SMEs, and professionals across India.</p>
                     <div class="caaft-ar-hero-ctas">
                         <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Schedule a Free Consultation <i class="fas fa-arrow-right"></i></a>
                         <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-secondary">Get Started Today! <i class="fas fa-arrow-right"></i></a>
@@ -755,40 +513,77 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             </div></div></div>
         </section>
 
-        <section class="caaft-ar-trust-indicators" aria-label="Trust indicators"><div class="container"><div class="caaft-ar-trust-grid">
-            <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-star"></i></span><div class="caaft-ar-trust-content"><h3>4.8/5</h3><p>Rated on Google</p></div></article>
-            <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-file-invoice"></i></span><div class="caaft-ar-trust-content"><h3>1000+</h3><p>Returns Filed Monthly</p></div></article>
-            <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-clock"></i></span><div class="caaft-ar-trust-content"><h3>Zero</h3><p>Late Filing Record</p></div></article>
-            <article class="caaft-ar-trust-item"><span class="caaft-ar-trust-icon"><i class="fas fa-shield-alt"></i></span><div class="caaft-ar-trust-content"><h3>100%</h3><p>Data Confidentiality</p></div></article>
-        </div></div></section>
+        <?php
+        $caaft_trust_items = [
+            [
+                'icon_class' => 'fas fa-star',
+                'title' => 'Rated 4.8/5 ⭐',
+                'description' => 'on Google',
+            ],
+            [
+                'icon_class' => 'fas fa-file-invoice',
+                'title' => '1000+',
+                'description' => 'Returns Filed Monthly',
+            ],
+            [
+                'icon_class' => 'fas fa-clock',
+                'title' => 'Zero',
+                'description' => 'Late Filing Record',
+            ],
+            [
+                'icon_class' => 'fas fa-shield-alt',
+                'title' => '100%',
+                'description' => 'Data Confidentiality',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/service-trust-indicators.php';
+        ?>
 
-        <section class="gst-return-overview-wrap"><div class="container"><div class="gst-return-overview-card"><div class="row align-items-center g-4"><div class="col-lg-6"><h2 class="gst-return-overview-title">What is GST Return Filing?</h2><p class="gst-return-overview-text">GST return filing is the process by which every GST-registered business submits periodic reports to the government — detailing sales, purchases, tax collected, and tax paid. These filings are a legal obligation for every entity registered under GST, from sole proprietors to large companies.</p><p class="gst-return-overview-text">Accurate and timely GST return filing does three essential things — it validates Input Tax Credit (ITC) claims, keeps the GSTIN active, and builds a credible compliance track record that banks, investors, and government agencies assess seriously.</p><p class="gst-return-overview-text">A single lapse — a missed return, an incorrect ITC claim, or a mismatch between GSTR-1 and GSTR-3B — can trigger notices, block credits, or attract penalties. For any GST-registered business, timely and accurate return filing is non-negotiable.</p></div><div class="col-lg-6"><div class="gst-return-overview-media"><img src="/assets/img/gst-return-overview.jpg" alt="Business professional reviewing GST return filing documents" loading="lazy"></div></div></div></div></div></section>
+        <?php
+        $caaft_overview_heading_id = 'gst-return-what-heading';
+        $caaft_overview_title = 'What is GST Return Filing?';
+        $caaft_overview_paragraphs = [
+            'GST return filing is the process by which every GST-registered business submits periodic reports to the government — detailing sales, purchases, tax collected, and tax paid. These filings are a legal obligation for every entity registered under GST, from sole proprietors to large companies.',
+            'Accurate and timely GST return filing does three essential things — it validates Input Tax Credit (ITC) claims, keeps the GSTIN active, and builds a credible compliance track record that banks, investors, and government agencies assess seriously.',
+            'A single lapse — a missed return, an incorrect ITC claim, or a mismatch between GSTR-1 and GSTR-3B — can trigger notices, block credits, or attract penalties. For any GST-registered business, timely and accurate return filing is non-negotiable.',
+        ];
+        $caaft_overview_bullets = [];
+        $caaft_overview_image_src = '/assets/img/gst-return-overview.jpg';
+        $caaft_overview_image_alt = 'Business professional reviewing GST return filing documents';
+        include __DIR__ . '/../../includes/components/caaft-overview-card.php';
+        ?>
 
-        <section class="gst-return-needs-wrap"><div class="container"><h2 class="gst-return-needs-title">Who Needs GST Return Filing Services?</h2><p class="gst-return-needs-intro">CAAFT's GST return filing services are relevant for every GST-registered business and professional across India:</p><ul class="gst-return-needs-list">
-            <li>Startups and new businesses completing their first filing cycles</li>
-            <li>SMEs managing monthly or quarterly returns across multiple return types</li>
-            <li>Freelancers and independent professionals with GST turnover above the threshold</li>
-            <li>E-commerce sellers and marketplace vendors with TCS reconciliation requirements</li>
-            <li>Partnership firms, LLPs, and companies across all sectors and transaction volumes</li>
-            <li>NRIs who have incorporated a business or company in India with GST obligations</li>
-            <li>Manufacturers, traders, and service providers managing high volumes of B2B invoices</li>
-            <li>Businesses that have received notices for non-filing or mismatched returns</li>
-            <li>Any GST-registered business is required to file returns — whether or not transactions occurred in a given period. Nil returns must be filed for every period of registration.</li>
-        </ul></div></section>
+        <?php
+        $caaft_wnl_heading_id = 'gst-return-who-heading';
+        $caaft_wnl_title = 'Who Needs GST Return Filing Services?';
+        $caaft_wnl_intro = "CAAFT's GST return filing services are relevant for every GST-registered business and professional across India:";
+        $caaft_wnl_items = [
+            'Startups and new businesses completing their first filing cycles',
+            'SMEs managing monthly or quarterly returns across multiple return types',
+            'Freelancers and independent professionals with GST turnover above the threshold',
+            'E-commerce sellers and marketplace vendors with TCS reconciliation requirements',
+            'Partnership firms, LLPs, and companies across all sectors and transaction volumes',
+            'NRIs who have incorporated a business or company in India with GST obligations',
+            'Manufacturers, traders, and service providers managing high volumes of B2B invoices',
+            'Businesses that have received notices for non-filing or mismatched returns',
+        ];
+        $caaft_wnl_closing = 'Any GST-registered business is required to file returns — whether or not transactions occurred in a given period. Nil returns must be filed for every period of registration.';
+        include __DIR__ . '/../../includes/components/caaft-who-needs-list.php';
+        ?>
 
-        <section class="gst-return-importance-wrap"><div class="container"><h2 class="gst-return-importance-title">Why GST Return Filing is Important</h2><p class="gst-return-importance-intro">Accurate, on-time GST filing does far more than satisfy a compliance requirement. Every GST-registered business must treat return filing as a strategic priority.</p><ul class="gst-return-importance-list">
-            <li class="gst-return-importance-item"><span class="gst-return-importance-icon"><i class="fas fa-file-invoice"></i></span><div><h3>Protects input tax credit</h3><p>ITC can only be claimed when a supplier's GSTR-1 matches GSTR-2B. Any delay or mismatch directly impacts working capital - making accurate filing a cash flow issue as much as a compliance one.</p></div></li>
-            <li class="gst-return-importance-item"><span class="gst-return-importance-icon"><i class="fas fa-check-circle"></i></span><div><h3>Maintains GST registration</h3><p>Consistent non-filing can lead to cancellation of the GSTIN - which is operationally crippling, especially for businesses supplying to other GST-registered entities.</p></div></li>
-            <li class="gst-return-importance-item"><span class="gst-return-importance-icon"><i class="fas fa-bomb"></i></span><div><h3>Prevents cascading penalties</h3><p>Late fees accumulate daily from the very next day after the deadline. After three consecutive defaults, GST registration can be suspended - creating compliance gaps that are difficult and costly to reverse.</p></div></li>
-            <li class="gst-return-importance-item"><span class="gst-return-importance-icon"><i class="fas fa-check"></i></span><div><h3>Supports business credibility</h3><p>Lenders, investors, and large corporate buyers verify GST compliance before entering contracts or disbursing loans. A clean filing record is a direct business asset.</p></div></li>
-            <li class="gst-return-importance-item"><span class="gst-return-importance-icon"><i class="fas fa-lock"></i></span><div><h3>Enables smooth annual closure</h3><p>GSTR-9 (annual return) requires data consistency across all monthly filings. Clean, accurate monthly returns make year-end filing significantly faster and less complex.</p></div></li>
+        <section class="gst-return-importance-wrap"><div class="container"><h2 class="gst-return-importance-title">Why GST Return Filing is Important</h2><p class="gst-return-importance-intro">Accurate, on-time GST filing does far more than satisfy a compliance requirement. Key reasons every GST-registered business must treat return filing as a strategic priority:</p><ul class="gst-return-importance-list">
+            <li class="gst-return-importance-item"><span class="gst-return-importance-icon"><i class="fas fa-file-invoice"></i></span><div><h3>Protects Input Tax Credit</h3><p>ITC can only be claimed when a supplier's GSTR-1 matches GSTR-2B. Any delay or mismatch in the supplier's filing directly impacts working capital — making accurate filing a cash flow issue as much as a compliance one.</p></div></li>
+            <li class="gst-return-importance-item"><span class="gst-return-importance-icon"><i class="fas fa-check-circle"></i></span><div><h3>Maintains GST Registration</h3><p>Consistent non-filing can lead to cancellation of the GSTIN — which is operationally crippling, especially for businesses supplying to other GST-registered entities.</p></div></li>
+            <li class="gst-return-importance-item"><span class="gst-return-importance-icon"><i class="fas fa-bomb"></i></span><div><h3>Prevents Cascading Penalties</h3><p>Late fees accumulate daily from the very next day after the deadline. After three consecutive defaults, GST registration can be suspended — creating compliance gaps that are difficult and costly to reverse.</p></div></li>
+            <li class="gst-return-importance-item"><span class="gst-return-importance-icon"><i class="fas fa-check"></i></span><div><h3>Supports Business Credibility</h3><p>Lenders, investors, and large corporate buyers verify GST compliance before entering contracts or disbursing loans. A clean filing record is a direct business asset.</p></div></li>
+            <li class="gst-return-importance-item"><span class="gst-return-importance-icon"><i class="fas fa-lock"></i></span><div><h3>Enables Smooth Annual Closure</h3><p>GSTR-9 (annual return) requires data consistency across all monthly filings. Clean, accurate monthly returns make year-end filing significantly faster and less complex.</p></div></li>
         </ul></div></section>
 
         <section class="gst-return-types-wrap"><div class="container"><h2 class="gst-return-types-title">Types of GST Returns</h2><p class="gst-return-types-intro">CAAFT manages the complete spectrum of GST return filings — not just the common ones.</p><div class="gst-return-types-table">
             <div class="gst-return-types-head"><div>Form</div><div>Applicable To</div><div>Frequency</div><div>Covers</div></div>
             <div class="gst-return-types-row"><div><span class="gst-return-type-badge">GSTR-1</span></div><div>All regular taxpayers</div><div>Monthly / Quarterly</div><div>Outward supplies (sales) details</div></div>
             <div class="gst-return-types-row"><div><span class="gst-return-type-badge">GSTR-3B</span></div><div>All regular taxpayers</div><div>Monthly / Quarterly</div><div>Summary of sales, purchases, and tax liability</div></div>
-            <div class="gst-return-types-row"><div><span class="gst-return-type-badge">GSTR-9</span></div><div>Turnover above ₹2 crore</div><div>Annually</div><div>Consolidated annual return</div></div>
+            <div class="gst-return-types-row"><div><span class="gst-return-type-badge">GSTR-9</span></div><div>Annual filers with turnover above ₹2 crore</div><div>Annually</div><div>Consolidated annual return</div></div>
             <div class="gst-return-types-row"><div><span class="gst-return-type-badge">GSTR-9C</span></div><div>Turnover above ₹5 crore</div><div>Annually</div><div>Reconciliation statement and certification</div></div>
             <div class="gst-return-types-row"><div><span class="gst-return-type-badge">GSTR-4</span></div><div>Composition scheme taxpayers</div><div>Annually</div><div>Summary return for composition dealers</div></div>
             <div class="gst-return-types-row"><div><span class="gst-return-type-badge">GSTR-10</span></div><div>Cancelled GST registrations</div><div>One-time</div><div>Final return upon cancellation</div></div>
@@ -811,26 +606,76 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             <article class="gst-return-penalty-item"><div class="gst-return-penalty-main"><h3>Interest on unpaid tax</h3><p>From the due date until payment</p></div><span class="gst-return-penalty-pill gst-return-penalty-pill--amber">18% per annum</span></article>
             <article class="gst-return-penalty-item"><div class="gst-return-penalty-main"><h3>Penalty for fraudulent suppression</h3><p>As per GST Act provisions</p></div><span class="gst-return-penalty-pill gst-return-penalty-pill--red">Up to 100% of tax</span></article>
             <article class="gst-return-penalty-item"><div class="gst-return-penalty-main"><h3>GSTIN suspension</h3><p>Triggered by repeated non-filing</p></div><span class="gst-return-penalty-pill gst-return-penalty-pill--amber">After 3 consecutive defaults</span></article>
-        </div><p class="gst-return-penalty-note">Impact beyond penalties: Late or non-filing blocks buyers from claiming ITC on purchases made from the non-compliant supplier — directly damaging business relationships and supply chain trust.</p></div></section>
+        </div><p class="gst-return-penalty-note">Beyond direct penalties, late or non-filing blocks buyers from claiming ITC on purchases made from the non-compliant supplier — directly damaging business relationships and supply chain trust.</p></div></section>
 
-        <section class="gst-return-delivered-wrap"><div class="container"><h2 class="gst-return-delivered-title">GST Return Filing Services — What Gets Delivered</h2><div class="gst-return-delivered-grid">
-            <article class="gst-return-delivered-card"><span class="gst-return-delivered-num">01</span><h3>GSTR-1 Filing — Outward Supplies</h3><p>Accurate preparation and filing of all outward supply details — B2B invoice-level reporting, B2C summary reporting, credit notes, debit notes, and HSN/SAC summaries — ensuring buyers can claim ITC without disruption.</p></article>
-            <article class="gst-return-delivered-card"><span class="gst-return-delivered-num">02</span><h3>GSTR-3B Filing — Summary and Tax Payment</h3><p>Monthly or quarterly summary returns prepared with full accuracy checks — reconciling tax liability, ITC claims, and net tax payable before every submission.</p></article>
-            <article class="gst-return-delivered-card"><span class="gst-return-delivered-num">03</span><h3>GSTR-9 Annual Return</h3><p>Comprehensive annual return preparation — consolidating all monthly or quarterly filings into a consistent, accurate annual statement that minimises discrepancy risk.</p></article>
-            <article class="gst-return-delivered-card"><span class="gst-return-delivered-num">04</span><h3>GSTR-9C Reconciliation Statement</h3><p>Reconciliation between audited financial statements and GST returns for businesses with turnover above ₹5 crore — prepared with full accuracy and professional certification.</p></article>
-            <article class="gst-return-delivered-card"><span class="gst-return-delivered-num">05</span><h3>ITC Reconciliation &amp; GSTR-2B Matching</h3><p>Purchase invoices are matched against GSTR-2B auto-drafted statements — identifying ITC discrepancies before they become notices, blocked credits, or working capital issues.</p></article>
-            <article class="gst-return-delivered-card"><span class="gst-return-delivered-num">06</span><h3>Composition Scheme Returns (GSTR-4 &amp; CMP-08)</h3><p>Quarterly and annual returns for composition scheme taxpayers — prepared accurately and filed within deadlines to maintain composition scheme eligibility.</p></article>
-            <article class="gst-return-delivered-card"><span class="gst-return-delivered-num">07</span><h3>Post-Filing Support</h3><p>Ongoing support for GST notices, ITC mismatch resolution, amendments, corrections, audit support, and compliance calendar management — with a dedicated point of contact.</p></article>
-        </div></div></section>
+        <?php
+        $caaft_delivered_heading_id = 'gst-return-delivered-heading';
+        $caaft_delivered_title = 'GST Return Filing Services — What Gets Delivered';
+        $caaft_delivered_items = [
+            [
+                'name' => 'GSTR-1 Filing — Outward Supplies',
+                'text' => 'Accurate preparation and filing of all outward supply details — B2B invoice-level reporting, B2C summary reporting, credit notes, debit notes, and HSN/SAC summaries — ensuring buyers can claim ITC without disruption.',
+            ],
+            [
+                'name' => 'GSTR-3B Filing — Summary and Tax Payment',
+                'text' => 'Monthly or quarterly summary returns prepared with full accuracy checks — reconciling tax liability, ITC claims, and net tax payable before every submission.',
+            ],
+            [
+                'name' => 'GSTR-9 Annual Return',
+                'text' => 'Comprehensive annual return preparation — consolidating all monthly or quarterly filings into a consistent, accurate annual statement that minimises the risk of discrepancies at year-end closure.',
+            ],
+            [
+                'name' => 'GSTR-9C Reconciliation Statement',
+                'text' => 'Reconciliation between audited financial statements and GST returns for businesses with turnover above ₹5 crore — prepared with full accuracy and professional certification.',
+            ],
+            [
+                'name' => 'ITC Reconciliation & GSTR-2B Matching',
+                'text' => 'Purchase invoices are matched against GSTR-2B auto-drafted statements — identifying ITC discrepancies before they become notices, blocked credits, or working capital issues.',
+            ],
+            [
+                'name' => 'Composition Scheme Returns (GSTR-4 & CMP-08)',
+                'text' => 'Quarterly and annual returns for composition scheme taxpayers — prepared accurately and filed within deadlines to maintain composition scheme eligibility.',
+            ],
+            [
+                'name' => 'Post-Filing Support',
+                'text' => 'Filing is just the beginning. Ongoing support is provided for GST notice handling, ITC mismatch resolution, amendments and corrections, GST audit support, and compliance calendar management — with a dedicated point of contact for every client.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
+        ?>
 
-        <section class="caaft-ar-how py-90"><div class="container"><header class="caaft-ar-how-header"><h2 class="caaft-ar-how-h2">Step-by-Step Process</h2></header><ol class="caaft-ar-how-timeline">
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">1. Onboarding &amp; Data Collection</h3><p class="caaft-ar-how-step-text">Business model, filing frequency, and compliance status are understood upfront. Sales, purchase, and bank data are collected through a secure shared workspace.</p></div></li>
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">2. Data Review &amp; Reconciliation</h3><p class="caaft-ar-how-step-text">Invoices are reviewed, GSTR-2B is matched against purchase records, and ITC discrepancies are identified and resolved before they become compliance issues.</p></div></li>
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">3. Return Preparation</h3><p class="caaft-ar-how-step-text">GSTR-1 and GSTR-3B are prepared with full accuracy checks — all figures verified against source documents before submission.</p></div></li>
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">4. Client Review &amp; Approval</h3><p class="caaft-ar-how-step-text">A summary draft is shared for review before filing. Queries are addressed and approval is confirmed before submission to the GST portal.</p></div></li>
-            <li class="caaft-ar-how-step caaft-ar-how-step--line"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">5. Filing &amp; Acknowledgement</h3><p class="caaft-ar-how-step-text">Returns are filed within deadlines and official filing acknowledgements (ARN) are shared immediately after successful submission.</p></div></li>
-            <li class="caaft-ar-how-step"><span class="caaft-ar-how-marker caaft-ar-how-marker--dot"></span><div class="caaft-ar-how-body"><h3 class="caaft-ar-how-step-title">6. Monthly Compliance Report</h3><p class="caaft-ar-how-step-text">After every filing cycle, a compliance summary is delivered covering tax liability, ITC claimed, and pending actions for the next period.</p></div></li>
-        </ol></div></section>
+        <?php
+        $caaft_steps_heading_id = 'gst-return-process-heading';
+        $caaft_steps_title = 'Step-by-Step Process';
+        $caaft_steps_numbered = true;
+        $caaft_steps_items = [
+            [
+                'title' => 'Onboarding & Data Collection',
+                'text' => 'Business model, filing frequency, and current compliance status are understood upfront. Sales, purchase, and bank data are collected through a secure shared workspace.',
+            ],
+            [
+                'title' => 'Data Review & Reconciliation',
+                'text' => 'All invoices are reviewed, GSTR-2B is matched against purchase records, and ITC discrepancies are identified and resolved before they become compliance issues.',
+            ],
+            [
+                'title' => 'Return Preparation',
+                'text' => 'GSTR-1 and GSTR-3B are prepared with full accuracy checks — all figures verified against source documents before any submission is made.',
+            ],
+            [
+                'title' => 'Client Review & Approval',
+                'text' => 'A summary draft is shared for client review before filing. All queries are addressed and approval is confirmed before the return is submitted to the GST portal.',
+            ],
+            [
+                'title' => 'Filing & Acknowledgement',
+                'text' => 'Returns are filed on the GST portal within the deadline — with official filing acknowledgements (ARN) shared immediately after successful submission.',
+            ],
+            [
+                'title' => 'Monthly Compliance Report',
+                'text' => 'After every filing cycle, a compliance summary is delivered — covering tax liability, ITC claimed, and any pending actions for the next period.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+        ?>
 
         <section class="gst-return-docs-wrap"><div class="container"><h2 class="gst-return-docs-title">Documents Required for GST Return Filing</h2><p class="gst-return-docs-intro">To ensure accurate and timely filing, the following documents are required each month:</p><div class="gst-return-docs-grid">
             <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>Sales invoices — B2B and B2C — for the filing period</span></div>
@@ -842,54 +687,119 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>Import and export documentation, for businesses in international trade</span></div>
             <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>HSN/SAC summary of goods and services supplied</span></div>
             <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>Details of advances received and adjustments for the period</span></div>
-            <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>Additional support documents based on transaction complexity</span></div>
         </div></div></section>
 
-        <section class="gst-return-challenges-wrap"><div class="container"><h2 class="gst-return-challenges-title">Common GST Return Filing Challenges CAAFT Solves</h2><p class="gst-return-challenges-intro">Most businesses seek professional GST filing support when facing one or more of these:</p><div class="gst-return-challenges-list">
-            <article class="gst-return-challenge-item"><h3>ITC being blocked due to supplier non-filing or GSTR-2B mismatches</h3><p>ITC being blocked due to supplier non-filing or GSTR-2B mismatches.</p></article>
-            <article class="gst-return-challenge-item"><h3>B2B and B2C sales being misclassified</h3><p>B2B and B2C sales being misclassified — creating ITC disputes for buyers.</p></article>
-            <article class="gst-return-challenge-item"><h3>E-commerce TCS not being reconciled correctly</h3><p>E-commerce TCS not being reconciled correctly — triggering notices during annual return filing.</p></article>
-            <article class="gst-return-challenge-item"><h3>Nil returns not being filed during dormant periods</h3><p>Nil returns not being filed during dormant periods — leading to late fees and potential cancellation.</p></article>
-            <article class="gst-return-challenge-item"><h3>GSTR-1 and GSTR-3B figures being inconsistent</h3><p>GSTR-1 and GSTR-3B figures being inconsistent — creating reconciliation issues at year-end.</p></article>
-            <article class="gst-return-challenge-item"><h3>Businesses expanding to new states operating without state-specific GSTINs</h3><p>Businesses expanding to new states operating without state-specific GSTINs.</p></article>
-            <article class="gst-return-challenge-item"><h3>Annual GSTR-9 preparation complicated by inconsistent monthly filings throughout the year</h3><p>Annual GSTR-9 preparation complicated by inconsistent monthly filings throughout the year.</p></article>
-            <article class="gst-return-challenge-item"><h3>CAAFT's structured approach addresses each of these</h3><p>CAAFT's structured approach addresses each of these — moving businesses from reactive, error-prone GST compliance to proactive, accurate, and penalty-free filing every cycle.</p></article>
-        </div></div></section>
+        <?php
+        $caaft_challenges_heading_id = 'gst-return-challenges-heading';
+        $caaft_challenges_title = 'Common GST Return Filing Challenges CAAFT Solves';
+        $caaft_challenges_intro = 'Most businesses seek professional GST filing support when facing one or more of these:';
+        $caaft_challenges_items = [
+            'ITC being blocked due to supplier non-filing or GSTR-2B mismatches',
+            'B2B and B2C sales being misclassified — creating ITC disputes for buyers',
+            'E-commerce TCS not being reconciled correctly — triggering notices during annual return filing',
+            'Nil returns not being filed during dormant periods — leading to late fees and potential cancellation',
+            'GSTR-1 and GSTR-3B figures being inconsistent — creating reconciliation issues at year-end',
+            'Businesses expanding to new states operating without state-specific GSTINs',
+            'Annual GSTR-9 preparation complicated by inconsistent monthly filings throughout the year',
+        ];
+        $caaft_challenges_outro = "CAAFT's structured approach addresses each of these — moving businesses from reactive, error-prone GST compliance to proactive, accurate, and penalty-free filing every cycle.";
+        include __DIR__ . '/../../includes/components/caaft-challenges.php';
+        ?>
 
-        <section class="caaft-ar-why py-90" aria-labelledby="gst-return-why-heading">
-            <div class="container">
-                <header class="caaft-ar-why-header"><h2 id="gst-return-why-heading" class="caaft-ar-why-h2">Why Choose CAAFT</h2></header>
-                <div class="caaft-ar-why-panel"><div class="caaft-ar-why-grid caaft-ar-why-grid--five">
-                    <div class="caaft-ar-why-row caaft-ar-why-row--top">
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Experienced tax professionals</h3><p class="caaft-ar-why-text">Every GST return engagement is handled by professionals who understand GST laws, ITC rules, compliance requirements, and industry-specific practices — bringing expertise that goes well beyond data entry.</p></article>
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Accurate return preparation and verification</h3><p class="caaft-ar-why-text">Every return is prepared with thorough validation before submission — cross-checking source documents, reconciling GSTR-2B, and eliminating errors that trigger notices or block credits.</p></article>
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Structured compliance processes</h3><p class="caaft-ar-why-text">A systematic, calendar-driven approach ensures timely and consistent GST compliance — with proactive reminders, structured data collection, and zero missed deadlines across every filing cycle.</p></article>
-                    </div>
-                    <div class="caaft-ar-why-row caaft-ar-why-row--bottom">
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Advisory-driven support</h3><p class="caaft-ar-why-text">Beyond filing, strategic insights are provided on tax efficiency, ITC optimisation, and compliance improvement — treating GST as a business tool, not just a compliance obligation.</p></article>
-                        <article class="caaft-ar-why-cell"><h3 class="caaft-ar-why-title">Comprehensive post-filing support</h3><p class="caaft-ar-why-text">Notice handling, ITC mismatch resolution, amendments, corrections, and audit support are all included — with a dedicated point of contact available at every stage of the compliance cycle.</p></article>
-                    </div>
-                </div></div>
-            </div>
-        </section>
+        <?php
+        $why_choose_caaft_heading_id = 'gst-return-why-heading';
+        $why_choose_caaft_title = 'Why Choose CAAFT';
+        $why_choose_caaft_show_intro = true;
+        $why_choose_caaft_intro = 'Businesses rely on CAAFT for disciplined GST return filing, deep ITC expertise, and dependable compliance support across every filing cycle.';
+        $why_choose_caaft_section_class = 'why-choose-caaft py-90';
+        $why_choose_caaft_items = [
+            [
+                'icon_class' => 'fas fa-user-tie',
+                'title' => 'Experienced tax professionals',
+                'text' => 'Every GST return engagement is handled by professionals who understand GST laws, ITC rules, compliance requirements, and industry-specific practices — bringing expertise that goes well beyond data entry.',
+            ],
+            [
+                'icon_class' => 'fas fa-check-double',
+                'title' => 'Accurate return preparation and verification',
+                'text' => 'Every return is prepared with thorough validation before submission — cross-checking source documents, reconciling GSTR-2B, and eliminating errors that trigger notices or block credits.',
+            ],
+            [
+                'icon_class' => 'fas fa-calendar-check',
+                'title' => 'Structured compliance processes',
+                'text' => 'A systematic, calendar-driven approach ensures timely and consistent GST compliance — with proactive reminders, structured data collection, and zero missed deadlines across every filing cycle.',
+            ],
+            [
+                'icon_class' => 'fas fa-lightbulb',
+                'title' => 'Advisory-driven support',
+                'text' => 'Beyond filing, strategic insights are provided on tax efficiency, ITC optimisation, and compliance improvement — treating GST as a business tool, not just a compliance obligation.',
+            ],
+            [
+                'icon_class' => 'fas fa-headset',
+                'title' => 'Comprehensive post-filing support',
+                'text' => 'Notice handling, ITC mismatch resolution, amendments, corrections, and audit support are all included — with a dedicated point of contact available at every stage of the compliance cycle.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+        ?>
 
-        <section class="gst-reg-facts-wrap"><div class="container"><h2 class="gst-reg-facts-title">Key Facts &amp; Figures</h2><div class="gst-reg-facts-grid">
-            <article class="gst-reg-fact-card"><h3 class="gst-reg-fact-stat">1.51 crore+</h3><p>1.51 crore+ businesses rely on timely GST return filing every month — making accurate, on-time compliance a baseline expectation for every registered taxpayer across India.</p></article>
-            <article class="gst-reg-fact-card"><h3 class="gst-reg-fact-stat">₹20 lakh</h3><p>The ₹20 lakh turnover threshold (₹10 lakh in special category states) triggers mandatory GST registration and ongoing return filing obligations — with penalties accumulating from the very first day of non-compliance.</p></article>
-            <article class="gst-reg-fact-card"><h3 class="gst-reg-fact-stat">1 lakh+</h3><p>Over 1 lakh show-cause notices are issued annually for GST non-compliance — the majority of which are entirely avoidable with structured, professional return filing and proactive compliance management.</p></article>
-        </div></div></section>
+        <?php
+        $caaft_key_facts_heading_id = 'gst-return-facts-heading';
+        $caaft_key_facts_title = 'Key Facts & Figures';
+        $caaft_key_facts_items = [
+            [
+                'stat' => '1.51 crore+',
+                'text' => 'Businesses rely on timely GST return filing every month — making accurate, on-time compliance a baseline expectation for every registered taxpayer across India.',
+            ],
+            [
+                'stat' => '₹20 lakh',
+                'text' => 'The ₹20 lakh turnover threshold (₹10 lakh in special category states) triggers mandatory GST registration and ongoing return filing obligations — with penalties accumulating from the very first day of non-compliance.',
+            ],
+            [
+                'stat' => '1 lakh+',
+                'text' => 'Over 1 lakh show-cause notices are issued annually for GST non-compliance — the majority of which are entirely avoidable with structured, professional return filing and proactive compliance management.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-key-facts.php';
+        ?>
 
-        <section class="gst-return-cta-wrap"><div class="container"><div class="gst-return-cta-box"><h2 class="gst-return-cta-title">Ready to File Without the Stress?</h2><p class="gst-return-cta-text">Every day of delay is a late fee accumulating — and every ITC mismatch is working capital sitting blocked. Professional GST return filing ensures every return is accurate, every deadline is met, and every ITC claim is protected — with expert support available at every step of the compliance cycle.</p><a href="/contact#contact_us" class="theme-btn gst-return-cta-btn">Your Custom Plan Starts Here <i class="fas fa-arrow-right"></i></a></div></div></section>
+        <?php
+        $caaft_cta_heading_id = 'gst-return-cta-heading';
+        $caaft_cta_title = 'Ready to File Without the Stress?';
+        $caaft_cta_text = 'Every day of delay is a late fee accumulating — and every ITC mismatch is working capital sitting blocked. Professional GST return filing ensures every return is accurate, every deadline is met, and every ITC claim is protected — with expert support available at every step of the compliance cycle.';
+        $caaft_cta_button_label = 'Your Custom Plan Starts Here';
+        $caaft_cta_button_href = '/contact#contact_us';
+        include __DIR__ . '/../../includes/components/caaft-cta.php';
+        ?>
 
-        <div id="faq" class="faq-area are_sections_faq py-120 caaft-ar-faq-wrap" aria-labelledby="gst-return-faq"><div class="container"><div class="site-heading text-center mb-3"><h2 id="gst-return-faq" class="site-title my-3">Frequently Asked Questions</h2></div>
-            <div class="frequent-question col-lg-10"><div class="accordion" id="accordionGstReturnFaq">
-                <div class="accordion-item"><p class="accordion-header" id="gstReturnFaqHeading1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#gstReturnFaqCollapse1" aria-expanded="true">1. Does a business with both B2B and B2C sales need to file different returns?</button></p><div id="gstReturnFaqCollapse1" class="accordion-collapse collapse show" aria-labelledby="gstReturnFaqHeading1" data-bs-parent="#accordionGstReturnFaq"><div class="accordion-body">Not separate returns — but both must be reported correctly within the same filing. B2B supplies go into GSTR-1 with invoice-level details so buyers can claim ITC. B2C supplies are reported summary-wise. Mixing up the reporting format is one of the most common errors that creates ITC mismatches for buyers and reconciliation issues for the filing business.</div></div></div>
-                <div class="accordion-item"><p class="accordion-header" id="gstReturnFaqHeading2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gstReturnFaqCollapse2">2. Why is ITC being blocked when a supplier has not filed their GSTR-1?</button></p><div id="gstReturnFaqCollapse2" class="accordion-collapse collapse" aria-labelledby="gstReturnFaqHeading2" data-bs-parent="#accordionGstReturnFaq"><div class="accordion-body">Input Tax Credit is directly linked to what the supplier reports in their GSTR-1. If the supplier has not filed or has filed incorrectly, that credit will not reflect in GSTR-2B — and cannot be claimed. This is both a cash flow and a compliance issue. CAAFT helps clients track, follow up, and manage ITC eligibility systematically to prevent working capital disruption.</div></div></div>
-                <div class="accordion-item"><p class="accordion-header" id="gstReturnFaqHeading3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gstReturnFaqCollapse3">3. Is GST filing different for e-commerce sellers on Amazon or Flipkart?</button></p><div id="gstReturnFaqCollapse3" class="accordion-collapse collapse" aria-labelledby="gstReturnFaqHeading3" data-bs-parent="#accordionGstReturnFaq"><div class="accordion-body">Yes — significantly. E-commerce operators deduct TCS at source, which must be reconciled monthly. Supplies made through the platform must also be reported separately under specific tables in GSTR-1. Many e-commerce sellers underreport or misclassify these transactions — creating mismatches that attract notices during annual return filing.</div></div></div>
-                <div class="accordion-item"><p class="accordion-header" id="gstReturnFaqHeading4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gstReturnFaqCollapse4">4. Does a business still need to file GST returns when dormant for several months?</button></p><div id="gstReturnFaqCollapse4" class="accordion-collapse collapse" aria-labelledby="gstReturnFaqHeading4" data-bs-parent="#accordionGstReturnFaq"><div class="accordion-body">Yes. GST registration does not pause because business activity does. Nil returns must be filed for every period of registration — even with zero transactions. Missing nil filings attracts late fees of ₹20 per day and can eventually lead to registration cancellation, which is harder to reverse than most businesses expect.</div></div></div>
-                <div class="accordion-item"><p class="accordion-header" id="gstReturnFaqHeading5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gstReturnFaqCollapse5">5. Is a separate GST registration needed when expanding to a new state?</button></p><div id="gstReturnFaqCollapse5" class="accordion-collapse collapse" aria-labelledby="gstReturnFaqHeading5" data-bs-parent="#accordionGstReturnFaq"><div class="accordion-body">Yes. GST registration is state-specific. Supplying goods or services from a new state — whether through a branch, warehouse, or new office — requires a separate GSTIN for that state. Operating without it means inter-state supplies are non-compliant and buyers in that state cannot claim ITC against invoices issued.</div></div></div>
-            </div></div>
-        </div></div>
+        <?php
+        $caaft_faq_heading_id = 'gst-return-faq';
+        $caaft_faq_title = 'Frequently Asked Questions';
+        $caaft_faq_accordion_id = 'accordionGstReturnFaq';
+        $caaft_faq_prefix = 'gstReturnFaq';
+        $caaft_faq_items = [
+            [
+                'question' => 'Does a business with both B2B and B2C sales need to file different returns?',
+                'answer' => 'Not separate returns — but both must be reported correctly within the same filing. B2B supplies go into GSTR-1 with invoice-level details so buyers can claim ITC. B2C supplies are reported summary-wise. Mixing up the reporting format is one of the most common errors that creates ITC mismatches for buyers and reconciliation issues for the filing business.',
+            ],
+            [
+                'question' => 'Why is ITC being blocked when a supplier has not filed their GSTR-1?',
+                'answer' => 'Input Tax Credit is directly linked to what the supplier reports in their GSTR-1. If the supplier has not filed or has filed incorrectly, that credit will not reflect in GSTR-2B — and cannot be claimed. This is both a cash flow and a compliance issue. CAAFT helps clients track, follow up, and manage ITC eligibility systematically to prevent working capital disruption.',
+            ],
+            [
+                'question' => 'Is GST filing different for e-commerce sellers on Amazon or Flipkart?',
+                'answer' => 'Yes — significantly. E-commerce operators deduct TCS at source, which must be reconciled monthly. Supplies made through the platform must also be reported separately under specific tables in GSTR-1. Many e-commerce sellers underreport or misclassify these transactions — creating mismatches that attract notices during annual return filing.',
+            ],
+            [
+                'question' => 'Does a business still need to file GST returns when dormant for several months?',
+                'answer' => 'Yes. GST registration does not pause because business activity does. Nil returns must be filed for every period of registration — even with zero transactions. Missing nil filings attracts late fees of ₹20 per day and can eventually lead to registration cancellation, which is harder to reverse than most businesses expect.',
+            ],
+            [
+                'question' => 'Is a separate GST registration needed when expanding to a new state?',
+                'answer' => 'Yes. GST registration is state-specific. Supplying goods or services from a new state — whether through a branch, warehouse, or new office — requires a separate GSTIN for that state. Operating without it means inter-state supplies are non-compliant and buyers in that state cannot claim ITC against invoices issued.',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-faq.php';
+        ?>
     </main>
     <?php include "footer.php"; ?>
     <a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a>

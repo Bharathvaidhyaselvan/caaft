@@ -57,21 +57,6 @@
             border-radius: 16px;
         }
 
-        .page-bookkeeping-accounting .bk-challenges-list {
-            list-style: disc;
-            padding-left: 1.25rem;
-        }
-
-        .page-bookkeeping-accounting .bk-challenges-list li::marker {
-            color: #0b2f6b !important;
-        }
-
-        .page-bookkeeping-accounting .bk-challenges-list li::before {
-            color: #0b2f6b !important;
-            background-color: #0b2f6b !important;
-            border-color: #0b2f6b !important;
-        }
-
         .page-bookkeeping-accounting .main,
         .page-bookkeeping-accounting .main * {
             text-align: justify !important;
