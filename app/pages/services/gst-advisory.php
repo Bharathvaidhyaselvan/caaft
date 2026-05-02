@@ -406,14 +406,12 @@
             ],
             [
                 'stat' => 'ITC',
-                'title' => 'Effective ITC optimisation through structured GST advisory directly improves working capital',
-                'desc' => '— with many businesses recovering significant blocked credits through proper reconciliation and timely supplier follow-up',
+                'text' => 'Effective ITC optimisation through structured GST advisory directly improves working capital — with many businesses recovering significant blocked credits through proper reconciliation and timely supplier follow-up',
             ],
             [
                 'stat' => 'Risk',
                 'stat_icon_class' => 'fas fa-arrow-down',
-                'title' => 'Businesses with professional GST compliance management are significantly less likely to receive notices, face audits, or incur penalties',
-                'desc' => '— making expert advisory a cost-effective investment relative to the risks of self-managed compliance',
+                'text' => 'Businesses with professional GST compliance management are significantly less likely to receive notices, face audits, or incur penalties — making expert advisory a cost-effective investment relative to the risks of self-managed compliance',
             ],
         ];
         include __DIR__ . '/../../includes/components/caaft-key-facts.php';

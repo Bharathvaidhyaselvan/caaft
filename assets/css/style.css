@@ -10157,6 +10157,7 @@ align-items: baseline;}
 .bk-facts-card .bk-facts-stat-text {
     margin: 0;
     font-size: 0.96rem;
+    font-weight: 400;
     line-height: 1.65;
     color: #4d5f76;
     text-align: center !important;
@@ -10169,6 +10170,7 @@ align-items: baseline;}
 
 .bk-facts-card--plain .bk-facts-stat-text {
     font-size: 0.96rem;
+    font-weight: 400;
     line-height: 1.65;
     color: #4d5f76;
 }
