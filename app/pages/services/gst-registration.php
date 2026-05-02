@@ -69,7 +69,7 @@
         }
         .page-gst-registration .gst-reg-info-title,
         .page-gst-registration .caaft-who-needs-list-title,
-        .page-gst-registration .gst-reg-delivered-title,
+        .page-gst-registration .caaft-get-delivered .bk-section-title,
         .page-gst-registration .caaft-ar-how-h2,
         .page-gst-registration .gst-reg-docs-title,
         .page-gst-registration .gst-reg-challenges-title,
@@ -83,62 +83,8 @@
             letter-spacing: normal !important;
         }
 
-        .gst-reg-delivered-wrap {
+        .page-gst-registration .caaft-get-delivered.gst-reg-delivered-tone {
             background: #e8f4fb;
-            padding: 60px 0;
-        }
-
-        .gst-reg-delivered-header {
-            margin-bottom: 22px;
-        }
-
-        .gst-reg-delivered-title {
-            margin: 0;
-            color: #132946;
-            font-size: clamp(1.6rem, 2.4vw, 2.5rem);
-            line-height: 1.2;
-            letter-spacing: 0.01em;
-        }
-
-        .gst-reg-delivered-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 16px;
-        }
-
-        .gst-reg-delivered-card {
-            position: relative;
-            background: #ffffff;
-            border: 1px solid #d8e2ec;
-            border-radius: 12px;
-            padding: 18px 16px 16px;
-            min-height: 170px;
-        }
-
-        .gst-reg-delivered-num {
-            position: absolute;
-            top: 8px;
-            right: 12px;
-            font-size: 2.65rem;
-            line-height: 1;
-            font-weight: 800;
-            color: rgba(19, 41, 70, 0.1);
-            letter-spacing: 0.02em;
-        }
-
-        .gst-reg-delivered-card h3 {
-            margin: 0 0 8px;
-            font-size: 1.12rem;
-            line-height: 1.35;
-            color: #1d2f46;
-            font-weight: 700;
-            max-width: calc(100% - 62px);
-        }
-
-        .gst-reg-delivered-card p {
-            margin: 0;
-            color: #495c72;
-            line-height: 1.6;
         }
 
         .gst-reg-docs-wrap {
@@ -415,10 +361,6 @@
                 padding: 14px;
             }
 
-            .gst-reg-delivered-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
             .gst-reg-why-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
@@ -433,10 +375,6 @@
         }
 
         @media (max-width: 575.98px) {
-            .gst-reg-delivered-grid {
-                grid-template-columns: 1fr;
-            }
-
             .gst-reg-docs-grid {
                 grid-template-columns: 1fr;
             }
@@ -615,18 +553,24 @@
         include __DIR__ . '/../../includes/components/caaft-who-needs-list.php';
         ?>
 
-        <section class="gst-reg-delivered-wrap"><div class="container"><header class="gst-reg-delivered-header"><h2 class="gst-reg-delivered-title">GST Registration Services — What Gets Delivered</h2></header><div class="gst-reg-delivered-grid">
-            <article class="gst-reg-delivered-card"><span class="gst-reg-delivered-num">01</span><h3>New GST Registration</h3><p>Complete assistance in applying for GST registration - accurate documentation, error-free filing, and quick processing - ensuring the business is compliant from day one without unnecessary back-and-forth.</p></article>
-            <article class="gst-reg-delivered-card"><span class="gst-reg-delivered-num">02</span><h3>GSTIN Application &amp; Approval</h3><p>The entire application process is managed end-to-end - from filing to follow-ups - ensuring faster GSTIN approval with minimum delays and maximum accuracy.</p></article>
-            <article class="gst-reg-delivered-card"><span class="gst-reg-delivered-num">03</span><h3>Document Collection &amp; Verification</h3><p>All required documents are carefully collected and verified before submission - reducing the risk of rejection and ensuring the application is complete and compliant before it reaches the portal.</p></article>
-            <article class="gst-reg-delivered-card"><span class="gst-reg-delivered-num">04</span><h3>GST Eligibility Assessment</h3><p>For businesses unsure about whether GST registration is required, a thorough assessment of the business model and turnover determines whether registration is mandatory or voluntarily beneficial.</p></article>
-            <article class="gst-reg-delivered-card"><span class="gst-reg-delivered-num">05</span><h3>Voluntary GST Registration</h3><p>Even when turnover falls below the mandatory threshold, voluntary GST registration enhances business credibility, opens doors to larger clients and contracts, and enables input tax credit claims.</p></article>
-            <article class="gst-reg-delivered-card"><span class="gst-reg-delivered-num">06</span><h3>GST for E-commerce Sellers</h3><p>Specialised GST registration support tailored to the unique compliance requirements of sellers operating on platforms such as Amazon, Flipkart, and other online marketplaces.</p></article>
-            <article class="gst-reg-delivered-card"><span class="gst-reg-delivered-num">07</span><h3>GST for Import/Export Businesses</h3><p>International trade operations are kept fully GST-compliant - navigating the specific regulations governing cross-border transactions and ensuring accurate documentation for import and export activities.</p></article>
-            <article class="gst-reg-delivered-card"><span class="gst-reg-delivered-num">08</span><h3>Amendment of GST Details</h3><p>Business details change - and updating them is handled accurately and promptly. Whether the change involves address, contact information, or business structure, amendments are filed correctly and without delay.</p></article>
-            <article class="gst-reg-delivered-card"><span class="gst-reg-delivered-num">09</span><h3>GST Cancellation &amp; Surrender</h3><p>When a business no longer requires GST registration, the cancellation process is managed properly - ensuring a clean, compliant closure with no outstanding obligations.</p></article>
-            <article class="gst-reg-delivered-card"><span class="gst-reg-delivered-num">10</span><h3>GST Revocation of Cancellation</h3><p>If GST registration has been cancelled, swift action is taken to restore it through the revocation process - getting the business back on track without unnecessary disruption or compliance gaps.</p></article>
-        </div></div></section>
+        <?php
+        $caaft_delivered_heading_id = 'gst-reg-delivered-heading';
+        $caaft_delivered_title = 'GST Registration Services — What Gets Delivered';
+        $caaft_delivered_section_class = 'bk-delivered py-90 caaft-get-delivered gst-reg-delivered-tone';
+        $caaft_delivered_items = [
+            ['name' => 'New GST Registration', 'text' => 'Complete assistance in applying for GST registration - accurate documentation, error-free filing, and quick processing - ensuring the business is compliant from day one without unnecessary back-and-forth.'],
+            ['name' => 'GSTIN Application & Approval', 'text' => 'The entire application process is managed end-to-end - from filing to follow-ups - ensuring faster GSTIN approval with minimum delays and maximum accuracy.'],
+            ['name' => 'Document Collection & Verification', 'text' => 'All required documents are carefully collected and verified before submission - reducing the risk of rejection and ensuring the application is complete and compliant before it reaches the portal.'],
+            ['name' => 'GST Eligibility Assessment', 'text' => 'For businesses unsure about whether GST registration is required, a thorough assessment of the business model and turnover determines whether registration is mandatory or voluntarily beneficial.'],
+            ['name' => 'Voluntary GST Registration', 'text' => 'Even when turnover falls below the mandatory threshold, voluntary GST registration enhances business credibility, opens doors to larger clients and contracts, and enables input tax credit claims.'],
+            ['name' => 'GST for E-commerce Sellers', 'text' => 'Specialised GST registration support tailored to the unique compliance requirements of sellers operating on platforms such as Amazon, Flipkart, and other online marketplaces.'],
+            ['name' => 'GST for Import/Export Businesses', 'text' => 'International trade operations are kept fully GST-compliant - navigating the specific regulations governing cross-border transactions and ensuring accurate documentation for import and export activities.'],
+            ['name' => 'Amendment of GST Details', 'text' => 'Business details change - and updating them is handled accurately and promptly. Whether the change involves address, contact information, or business structure, amendments are filed correctly and without delay.'],
+            ['name' => 'GST Cancellation & Surrender', 'text' => 'When a business no longer requires GST registration, the cancellation process is managed properly - ensuring a clean, compliant closure with no outstanding obligations.'],
+            ['name' => 'GST Revocation of Cancellation', 'text' => 'If GST registration has been cancelled, swift action is taken to restore it through the revocation process - getting the business back on track without unnecessary disruption or compliance gaps.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
+        ?>
 
         <?php
         $caaft_steps_heading_id = 'gst-reg-process-heading';

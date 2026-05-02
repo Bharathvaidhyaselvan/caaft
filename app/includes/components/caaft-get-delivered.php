@@ -12,6 +12,7 @@
  * Optional:
  *   $caaft_delivered_section_class (string) default "bk-delivered py-90 caaft-get-delivered"
  *   $caaft_delivered_intro (string)
+ *   $caaft_delivered_outro (string) paragraph after the table
  */
 if (!isset($caaft_delivered_heading_id, $caaft_delivered_title, $caaft_delivered_items) || !is_array($caaft_delivered_items) || $caaft_delivered_items === []) {
     trigger_error('caaft-get-delivered.php: set required delivered variables before including', E_USER_WARNING);
@@ -23,6 +24,7 @@ $caaft_delivered_section_class = isset($caaft_delivered_section_class) && $caaft
     ? (string) $caaft_delivered_section_class
     : 'bk-delivered py-90 caaft-get-delivered';
 $caaft_delivered_intro = isset($caaft_delivered_intro) ? (string) $caaft_delivered_intro : '';
+$caaft_delivered_outro = isset($caaft_delivered_outro) ? (string) $caaft_delivered_outro : '';
 ?>
 <section class="<?php echo htmlspecialchars($caaft_delivered_section_class, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars($caaft_delivered_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
@@ -39,5 +41,8 @@ $caaft_delivered_intro = isset($caaft_delivered_intro) ? (string) $caaft_deliver
                 </article>
             <?php endforeach; ?>
         </div>
+        <?php if ($caaft_delivered_outro !== '') : ?>
+            <p class="bk-overview-text mt-3"><?php echo htmlspecialchars($caaft_delivered_outro, ENT_QUOTES, 'UTF-8'); ?></p>
+        <?php endif; ?>
     </div>
 </section>

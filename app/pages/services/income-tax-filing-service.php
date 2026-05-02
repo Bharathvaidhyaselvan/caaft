@@ -491,71 +491,21 @@
             </div>
         </section>
 
-        <section class="caaft-ar-what-we-offer py-90" aria-labelledby="itr-services-heading">
-            <div class="container">
-                <header class="caaft-ar-offer-header">
-                    <h2 id="itr-services-heading" class="caaft-ar-offer-h2">Income Tax Filing Services — What Gets Delivered</h2>
-                </header>
-                <div class="row g-4 caaft-ar-offer-grid">
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">01</span>
-                            <h3 class="caaft-ar-offer-card-title">Income Computation &amp; Tax Calculation</h3>
-                            <p class="caaft-ar-offer-card-text">All income sources are assessed, computed accurately, and tax liability is calculated — ensuring the correct ITR form is selected and all applicable heads of income are reported.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">02</span>
-                            <h3 class="caaft-ar-offer-card-title">Deduction Planning Under Eligible Sections</h3>
-                            <p class="caaft-ar-offer-card-text">Applicable deductions under sections 80C, 80D, 80G, HRA, home loan interest, and other eligible provisions are identified and claimed — legally minimising tax liability.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">03</span>
-                            <h3 class="caaft-ar-offer-card-title">Filing of Applicable ITR Forms</h3>
-                            <p class="caaft-ar-offer-card-text">The correct ITR form is prepared and filed with the Income Tax Department — with acknowledgement (ITR-V) shared promptly after successful submission.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">04</span>
-                            <h3 class="caaft-ar-offer-card-title">Late or Revised Return Filing (ITR-U)</h3>
-                            <p class="caaft-ar-offer-card-text">Belated, defective, or previously filed returns requiring revision are handled accurately — ensuring compliance is restored with minimum penalty exposure.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">05</span>
-                            <h3 class="caaft-ar-offer-card-title">NRI Tax Filing Assistance</h3>
-                            <p class="caaft-ar-offer-card-text">Residential status determination, DTAA credit claims, foreign income reporting, and FEMA-compliant disclosures are managed for NRIs and foreign asset holders.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">06</span>
-                            <h3 class="caaft-ar-offer-card-title">High-Value Transaction &amp; Capital Gains Support</h3>
-                            <p class="caaft-ar-offer-card-text">Complex capital gains calculations, high-value transaction disclosures, and property sale reporting are handled with the rigour needed to avoid scrutiny notices.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">07</span>
-                            <h3 class="caaft-ar-offer-card-title">Audit &amp; Compliance Advisory</h3>
-                            <p class="caaft-ar-offer-card-text">For businesses under tax audit applicability, complete audit support and compliance advisory is provided — ensuring filings are accurate, documented, and defensible.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="caaft-ar-offer-card">
-                            <span class="caaft-ar-offer-num" aria-hidden="true">08</span>
-                            <h3 class="caaft-ar-offer-card-title">Post-Filing Support</h3>
-                            <p class="caaft-ar-offer-card-text">Continued support is available for notices, clarifications, rectifications, and future compliance queries — so clients are never left without expert guidance after filing.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $caaft_delivered_heading_id = 'itr-services-heading';
+        $caaft_delivered_title = 'Income Tax Filing Services — What Gets Delivered';
+        $caaft_delivered_items = [
+            ['name' => 'Income Computation & Tax Calculation', 'text' => 'All income sources are assessed, computed accurately, and tax liability is calculated — ensuring the correct ITR form is selected and all applicable heads of income are reported.'],
+            ['name' => 'Deduction Planning Under Eligible Sections', 'text' => 'Applicable deductions under sections 80C, 80D, 80G, HRA, home loan interest, and other eligible provisions are identified and claimed — legally minimising tax liability.'],
+            ['name' => 'Filing of Applicable ITR Forms', 'text' => 'The correct ITR form is prepared and filed with the Income Tax Department — with acknowledgement (ITR-V) shared promptly after successful submission.'],
+            ['name' => 'Late or Revised Return Filing (ITR-U)', 'text' => 'Belated, defective, or previously filed returns requiring revision are handled accurately — ensuring compliance is restored with minimum penalty exposure.'],
+            ['name' => 'NRI Tax Filing Assistance', 'text' => 'Residential status determination, DTAA credit claims, foreign income reporting, and FEMA-compliant disclosures are managed for NRIs and foreign asset holders.'],
+            ['name' => 'High-Value Transaction & Capital Gains Support', 'text' => 'Complex capital gains calculations, high-value transaction disclosures, and property sale reporting are handled with the rigour needed to avoid scrutiny notices.'],
+            ['name' => 'Audit & Compliance Advisory', 'text' => 'For businesses under tax audit applicability, complete audit support and compliance advisory is provided — ensuring filings are accurate, documented, and defensible.'],
+            ['name' => 'Post-Filing Support', 'text' => 'Continued support is available for notices, clarifications, rectifications, and future compliance queries — so clients are never left without expert guidance after filing.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
+        ?>
 
         <?php
         $caaft_steps_heading_id = 'itr-process-heading';

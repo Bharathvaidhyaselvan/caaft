@@ -190,49 +190,8 @@
             font-weight: 700;
             white-space: nowrap;
         }
-        .page-income-tax-appeal-services .appeal-delivered-section {
+        .page-income-tax-appeal-services .caaft-get-delivered.appeal-delivered-tone {
             background: #eefdff;
-        }
-        .page-income-tax-appeal-services .appeal-delivered-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 18px;
-            margin-top: 18px;
-        }
-        .page-income-tax-appeal-services .appeal-delivered-card {
-            position: relative;
-            background: #ffffff;
-            border: 1px solid #d9edf6;
-            border-radius: 10px;
-            padding: 18px 18px 16px;
-            min-height: 170px;
-            box-shadow: 0 6px 20px rgba(16, 70, 111, 0.04);
-        }
-        .page-income-tax-appeal-services .appeal-delivered-no {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            margin: 0;
-            color: #eef3f7;
-            font-size: 2.35rem;
-            line-height: 1;
-            font-weight: 800;
-            letter-spacing: 0.01em;
-        }
-        .page-income-tax-appeal-services .appeal-delivered-title {
-            margin: 0 0 8px;
-            color: #0f2340;
-            font-size: 1.12rem;
-            line-height: 1.3;
-            font-weight: 700;
-            max-width: 88%;
-        }
-        .page-income-tax-appeal-services .appeal-delivered-text {
-            margin: 0;
-            color: #4e5c70;
-            line-height: 1.55;
-            font-weight: 500;
-            max-width: 92%;
         }
         .page-income-tax-appeal-services .appeal-docs-table {
             margin-top: 18px;
@@ -570,7 +529,6 @@
             .page-income-tax-appeal-services .appeal-overview-grid,
             .page-income-tax-appeal-services .appeal-list-grid,
             .page-income-tax-appeal-services .appeal-facts-grid { grid-template-columns: 1fr; }
-            .page-income-tax-appeal-services .appeal-delivered-grid { grid-template-columns: 1fr; }
             .page-income-tax-appeal-services .appeal-assess-head,
             .page-income-tax-appeal-services .appeal-assess-row { grid-template-columns: 1fr; gap: 6px; }
             .page-income-tax-appeal-services .appeal-assess-head { display: none; }
@@ -818,21 +776,20 @@
         </div>
     </section>
 
-    <section class="caaft-ar-what-we-offer py-90 appeal-delivered-section" aria-labelledby="appeal-delivered-heading">
-        <div class="container">
-            <header class="caaft-ar-offer-header">
-                <h2 id="appeal-delivered-heading" class="caaft-ar-offer-h2">Tax Assessment & Appeal Services — What Gets Delivered</h2>
-            </header>
-            <div class="appeal-delivered-grid">
-                <article class="appeal-delivered-card"><h3 class="appeal-delivered-title">Tax Assessment Review & Correction</h3><p class="appeal-delivered-text">Assessment orders are analysed, errors are identified, and rectification applications are filed — protecting individuals and businesses from incorrect tax demands before they become confirmed liabilities.</p><p class="appeal-delivered-no">01</p></article>
-                <article class="appeal-delivered-card"><h3 class="appeal-delivered-title">Income Tax Appeal Filing</h3><p class="appeal-delivered-text">Grounds of appeal are drafted, the appeal memo is prepared, and representation is provided before CIT(A) or ITAT — for anyone disputing an assessment order or demand.</p><p class="appeal-delivered-no">02</p></article>
-                <article class="appeal-delivered-card"><h3 class="appeal-delivered-title">Scrutiny & Notice Handling</h3><p class="appeal-delivered-text">Comprehensive replies are prepared, supporting documents are compiled, and representation is provided at hearings — for taxpayers who have received Section 143(3), 148, or other scrutiny notices.</p><p class="appeal-delivered-no">03</p></article>
-                <article class="appeal-delivered-card"><h3 class="appeal-delivered-title">Tax Dispute Resolution</h3><p class="appeal-delivered-text">Negotiation assistance, alternative resolution through IBC, and settlement commission options are explored — particularly for long-pending disputes and large tax demands.</p><p class="appeal-delivered-no">04</p></article>
-                <article class="appeal-delivered-card"><h3 class="appeal-delivered-title">Property Tax Assessment & Appeal</h3><p class="appeal-delivered-text">Annual rental value and circle rate assessments are reviewed, unjust property tax orders are challenged, and representation is provided before local property tax tribunals — for property owners and real estate businesses.</p><p class="appeal-delivered-no">05</p></article>
-                <article class="appeal-delivered-card"><h3 class="appeal-delivered-title">Penalty Waiver & Stay of Demand</h3><p class="appeal-delivered-text">Applications for stay of demand and penalty waivers are filed simultaneously with appeals — protecting clients from coercive recovery action while proceedings are pending.</p><p class="appeal-delivered-no">06</p></article>
-            </div>
-        </div>
-    </section>
+    <?php
+    $caaft_delivered_heading_id = 'appeal-delivered-heading';
+    $caaft_delivered_title = 'Tax Assessment & Appeal Services — What Gets Delivered';
+    $caaft_delivered_section_class = 'bk-delivered py-90 caaft-get-delivered appeal-delivered-tone';
+    $caaft_delivered_items = [
+        ['name' => 'Tax Assessment Review & Correction', 'text' => 'Assessment orders are analysed, errors are identified, and rectification applications are filed — protecting individuals and businesses from incorrect tax demands before they become confirmed liabilities.'],
+        ['name' => 'Income Tax Appeal Filing', 'text' => 'Grounds of appeal are drafted, the appeal memo is prepared, and representation is provided before CIT(A) or ITAT — for anyone disputing an assessment order or demand.'],
+        ['name' => 'Scrutiny & Notice Handling', 'text' => 'Comprehensive replies are prepared, supporting documents are compiled, and representation is provided at hearings — for taxpayers who have received Section 143(3), 148, or other scrutiny notices.'],
+        ['name' => 'Tax Dispute Resolution', 'text' => 'Negotiation assistance, alternative resolution through IBC, and settlement commission options are explored — particularly for long-pending disputes and large tax demands.'],
+        ['name' => 'Property Tax Assessment & Appeal', 'text' => 'Annual rental value and circle rate assessments are reviewed, unjust property tax orders are challenged, and representation is provided before local property tax tribunals — for property owners and real estate businesses.'],
+        ['name' => 'Penalty Waiver & Stay of Demand', 'text' => 'Applications for stay of demand and penalty waivers are filed simultaneously with appeals — protecting clients from coercive recovery action while proceedings are pending.'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
+    ?>
 
     <?php
     $caaft_steps_heading_id = 'appeal-process-heading';

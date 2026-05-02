@@ -1144,14 +1144,19 @@
             </div>
         </section>
 
-        <section class="caaft-ar-what-we-offer py-90" aria-labelledby="audit-services-heading"><div class="container"><header class="caaft-ar-offer-header"><h2 id="audit-services-heading" class="caaft-ar-offer-h2">Tax Audit Services — What Gets Delivered</h2></header><div class="row g-4 caaft-ar-offer-grid">
-            <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">01</span><h3 class="caaft-ar-offer-card-title">Tax Audit Under Section 44AB</h3><p class="caaft-ar-offer-card-text">End-to-end statutory audit conducted by a qualified CA — covering all 44 clauses of Form 3CD with full accuracy, complete disclosure, and regulatory compliance.</p></article></div>
-            <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">02</span><h3 class="caaft-ar-offer-card-title">Preparation and Review of Financial Records</h3><p class="caaft-ar-offer-card-text">Ledgers, trial balance, and financial statements are organised, reconciled, and reviewed before the audit begins — minimising gaps and ensuring books are fully audit-ready.</p></article></div>
-            <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">03</span><h3 class="caaft-ar-offer-card-title">Tax Audit Report Filing</h3><p class="caaft-ar-offer-card-text">Form 3CA/3CB and Form 3CD are prepared and submitted on the Income Tax Portal — accurately and well within the 30 September deadline.</p></article></div>
-            <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">04</span><h3 class="caaft-ar-offer-card-title">Compliance Advisory and Risk Assessment</h3><p class="caaft-ar-offer-card-text">Financial disclosures are proactively reviewed to identify compliance gaps before the department does — with clear advice on corrections and process improvements.</p></article></div>
-            <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">05</span><h3 class="caaft-ar-offer-card-title">Tax Audit for Professionals</h3><p class="caaft-ar-offer-card-text">Specialised audit services for doctors, consultants, architects, chartered accountants, and freelancers whose gross receipts exceed ₹50 lakh — with sector-specific expertise applied to every engagement.</p></article></div>
-            <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">06</span><h3 class="caaft-ar-offer-card-title">Post-Audit Support and Assessment Assistance</h3><p class="caaft-ar-offer-card-text">If a return is selected for scrutiny after filing, complete documentation support and professional representation are provided throughout the assessment process.</p></article></div>
-        </div></div></section>
+        <?php
+        $caaft_delivered_heading_id = 'audit-services-heading';
+        $caaft_delivered_title = 'Tax Audit Services — What Gets Delivered';
+        $caaft_delivered_items = [
+            ['name' => 'Tax Audit Under Section 44AB', 'text' => 'End-to-end statutory audit conducted by a qualified CA — covering all 44 clauses of Form 3CD with full accuracy, complete disclosure, and regulatory compliance.'],
+            ['name' => 'Preparation and Review of Financial Records', 'text' => 'Ledgers, trial balance, and financial statements are organised, reconciled, and reviewed before the audit begins — minimising gaps and ensuring books are fully audit-ready.'],
+            ['name' => 'Tax Audit Report Filing', 'text' => 'Form 3CA/3CB and Form 3CD are prepared and submitted on the Income Tax Portal — accurately and well within the 30 September deadline.'],
+            ['name' => 'Compliance Advisory and Risk Assessment', 'text' => 'Financial disclosures are proactively reviewed to identify compliance gaps before the department does — with clear advice on corrections and process improvements.'],
+            ['name' => 'Tax Audit for Professionals', 'text' => 'Specialised audit services for doctors, consultants, architects, chartered accountants, and freelancers whose gross receipts exceed ₹50 lakh — with sector-specific expertise applied to every engagement.'],
+            ['name' => 'Post-Audit Support and Assessment Assistance', 'text' => 'If a return is selected for scrutiny after filing, complete documentation support and professional representation are provided throughout the assessment process.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
+        ?>
 
         <?php
         $caaft_steps_heading_id = 'audit-process-heading';

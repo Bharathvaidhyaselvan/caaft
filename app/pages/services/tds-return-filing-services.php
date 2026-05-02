@@ -612,27 +612,25 @@
             </div>
         </section>
 
-        <section class="caaft-ar-what-we-offer py-90" aria-labelledby="tds-services-heading">
-            <div class="container">
-                <header class="caaft-ar-offer-header">
-                    <h2 id="tds-services-heading" class="caaft-ar-offer-h2">TDS Filing Services — What Gets Delivered</h2>
-                    <p class="caaft-ar-offer-intro">CAAFT offers complete end-to-end TDS compliance solutions covering every form, deadline, and filing requirement:</p>
-                </header>
-                <div class="row g-4 caaft-ar-offer-grid">
-                    <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">01</span><h3 class="caaft-ar-offer-card-title">Quarterly TDS Return Filing</h3><p class="caaft-ar-offer-card-text">Q1, Q2, Q3, and Q4 filed accurately and on time.</p></article></div>
-                    <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">02</span><h3 class="caaft-ar-offer-card-title">Form 24Q</h3><p class="caaft-ar-offer-card-text">TDS on salary payments.</p></article></div>
-                    <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">03</span><h3 class="caaft-ar-offer-card-title">Form 26Q</h3><p class="caaft-ar-offer-card-text">TDS on non-salary payments.</p></article></div>
-                    <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">04</span><h3 class="caaft-ar-offer-card-title">Form 27Q</h3><p class="caaft-ar-offer-card-text">TDS on payments to NRIs.</p></article></div>
-                    <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">05</span><h3 class="caaft-ar-offer-card-title">Form 27EQ</h3><p class="caaft-ar-offer-card-text">TCS filing.</p></article></div>
-                    <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">06</span><h3 class="caaft-ar-offer-card-title">Revised &amp; Corrected Returns</h3><p class="caaft-ar-offer-card-text">Rectification of errors in previously filed returns.</p></article></div>
-                    <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">07</span><h3 class="caaft-ar-offer-card-title">Late Fee &amp; Interest Calculation</h3><p class="caaft-ar-offer-card-text">Accurate computation of penalties and interest for delayed filings.</p></article></div>
-                    <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">08</span><h3 class="caaft-ar-offer-card-title">Form 16 &amp; Form 16A Generation</h3><p class="caaft-ar-offer-card-text">Issued to employees and deductees after filing.</p></article></div>
-                    <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">09</span><h3 class="caaft-ar-offer-card-title">TDS Reconciliation with Form 26AS</h3><p class="caaft-ar-offer-card-text">Matching deducted amounts with tax credit reflecting in deductee accounts.</p></article></div>
-                    <div class="col-md-6 col-lg-4"><article class="caaft-ar-offer-card"><span class="caaft-ar-offer-num">10</span><h3 class="caaft-ar-offer-card-title">Notice Handling &amp; Rectification</h3><p class="caaft-ar-offer-card-text">Expert response and resolution for Income Tax Department notices.</p></article></div>
-                </div>
-                <p class="caaft-ar-offer-intro mt-3">Every filing follows a structured process ensuring accuracy, proper validation, and timely submission.</p>
-            </div>
-        </section>
+        <?php
+        $caaft_delivered_heading_id = 'tds-services-heading';
+        $caaft_delivered_title = 'TDS Filing Services — What Gets Delivered';
+        $caaft_delivered_intro = 'CAAFT offers complete end-to-end TDS compliance solutions covering every form, deadline, and filing requirement:';
+        $caaft_delivered_outro = 'Every filing follows a structured process ensuring accuracy, proper validation, and timely submission.';
+        $caaft_delivered_items = [
+            ['name' => 'Quarterly TDS Return Filing', 'text' => 'Q1, Q2, Q3, and Q4 filed accurately and on time.'],
+            ['name' => 'Form 24Q', 'text' => 'TDS on salary payments.'],
+            ['name' => 'Form 26Q', 'text' => 'TDS on non-salary payments.'],
+            ['name' => 'Form 27Q', 'text' => 'TDS on payments to NRIs.'],
+            ['name' => 'Form 27EQ', 'text' => 'TCS filing.'],
+            ['name' => 'Revised & Corrected Returns', 'text' => 'Rectification of errors in previously filed returns.'],
+            ['name' => 'Late Fee & Interest Calculation', 'text' => 'Accurate computation of penalties and interest for delayed filings.'],
+            ['name' => 'Form 16 & Form 16A Generation', 'text' => 'Issued to employees and deductees after filing.'],
+            ['name' => 'TDS Reconciliation with Form 26AS', 'text' => 'Matching deducted amounts with tax credit reflecting in deductee accounts.'],
+            ['name' => 'Notice Handling & Rectification', 'text' => 'Expert response and resolution for Income Tax Department notices.'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
+        ?>
 
         <section class="bk-who py-90" aria-labelledby="tds-required-heading">
             <div class="container">
