@@ -10127,20 +10127,26 @@ align-items: baseline;}
 
 .bk-facts-card .bk-facts-stat--with-icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: clamp(6px, 1.2vw, 10px);
 }
 
 .bk-facts-card .bk-facts-stat--with-icon > i {
     font-size: clamp(1.5rem, 3.2vw, 2rem);
     line-height: 1;
     opacity: 0.95;
+    flex-shrink: 0;
 }
 
 .bk-facts-card .bk-facts-stat .bk-facts-stat-label {
     display: block;
+}
+
+.bk-facts-card .bk-facts-stat--with-icon .bk-facts-stat-label {
+    display: inline;
 }
 
 .bk-facts-card .bk-facts-title {

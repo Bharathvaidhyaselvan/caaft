@@ -11,7 +11,7 @@
  *   - string: single paragraph
  *   - array with 'stat' + 'text' (big stat + body)
  *   - array with 'title' + 'desc' (heading + body; optional 'stat' before title)
- *   Optional per item: 'stat_icon_class' (e.g. Font Awesome) — shown above 'stat' when set (use with 'stat')
+ *   Optional per item: 'stat_icon_class' (e.g. Font Awesome) — shown inline before 'stat' when set (use with 'stat')
  *
  * Optional:
  *   $caaft_key_facts_section_class (string) default "bk-facts py-90"
