@@ -11,6 +11,7 @@
  *   - string: single paragraph
  *   - array with 'stat' + 'text' (big stat + body)
  *   - array with 'title' + 'desc' (heading + body; optional 'stat' before title)
+ *   Optional per item: 'stat_icon_class' (e.g. Font Awesome) — shown above 'stat' when set (use with 'stat')
  *
  * Optional:
  *   $caaft_key_facts_section_class (string) default "bk-facts py-90"
@@ -45,8 +46,10 @@ $caaft_key_facts_card_class = isset($caaft_key_facts_card_class) && $caaft_key_f
                 $caaft_key_facts_desc = '';
                 $caaft_key_facts_text = '';
 
+                $caaft_key_facts_stat_icon_class = '';
                 if (is_array($caaft_key_facts_item)) {
                     $caaft_key_facts_stat = trim((string) ($caaft_key_facts_item['stat'] ?? ''));
+                    $caaft_key_facts_stat_icon_class = trim((string) ($caaft_key_facts_item['stat_icon_class'] ?? ''));
                     $caaft_key_facts_title = trim((string) ($caaft_key_facts_item['title'] ?? ''));
                     $caaft_key_facts_desc = trim((string) ($caaft_key_facts_item['desc'] ?? ''));
                     $caaft_key_facts_text = trim((string) ($caaft_key_facts_item['text'] ?? ''));
@@ -55,8 +58,15 @@ $caaft_key_facts_card_class = isset($caaft_key_facts_card_class) && $caaft_key_f
                 }
                 ?>
                 <article class="<?php echo htmlspecialchars($caaft_key_facts_card_class, ENT_QUOTES, 'UTF-8'); ?>">
-                    <?php if ($caaft_key_facts_stat !== '') : ?>
-                        <h3 class="bk-facts-stat"><?php echo htmlspecialchars($caaft_key_facts_stat, ENT_QUOTES, 'UTF-8'); ?></h3>
+                    <?php if ($caaft_key_facts_stat !== '' || $caaft_key_facts_stat_icon_class !== '') : ?>
+                        <h3 class="bk-facts-stat<?php echo $caaft_key_facts_stat_icon_class !== '' ? ' bk-facts-stat--with-icon' : ''; ?>">
+                            <?php if ($caaft_key_facts_stat_icon_class !== '') : ?>
+                                <i class="<?php echo htmlspecialchars($caaft_key_facts_stat_icon_class, ENT_QUOTES, 'UTF-8'); ?>" aria-hidden="true"></i>
+                            <?php endif; ?>
+                            <?php if ($caaft_key_facts_stat !== '') : ?>
+                                <span class="bk-facts-stat-label"><?php echo htmlspecialchars($caaft_key_facts_stat, ENT_QUOTES, 'UTF-8'); ?></span>
+                            <?php endif; ?>
+                        </h3>
                     <?php endif; ?>
                     <?php if ($caaft_key_facts_title !== '') : ?>
                         <h3 class="bk-facts-title"><?php echo htmlspecialchars($caaft_key_facts_title, ENT_QUOTES, 'UTF-8'); ?></h3>
