@@ -401,16 +401,16 @@
         $caaft_key_facts_title = 'Key Facts & Figures';
         $caaft_key_facts_items = [
             [
-                'stat' => '',
-                'text' => '500+ businesses have relied on CAAFT for GST advisory and compliance support — across startups, SMEs, manufacturers, exporters, and established enterprises',
+                'stat' => '500+',
+                'text' => 'businesses have relied on CAAFT for GST advisory and compliance support — across startups, SMEs, manufacturers, exporters, and established enterprises',
             ],
             [
-                'stat' => '',
-                'text' => 'Effective ITC optimisation through structured GST advisory directly improves working capital — with many businesses recovering significant blocked credits through proper reconciliation and timely supplier follow-up',
+                'title' => 'Effective ITC optimisation through structured GST advisory directly improves working capital',
+                'desc' => '— with many businesses recovering significant blocked credits through proper reconciliation and timely supplier follow-up',
             ],
             [
-                'stat' => '',
-                'text' => 'Businesses with professional GST compliance management are significantly less likely to receive notices, face audits, or incur penalties — making expert advisory a cost-effective investment relative to the risks of self-managed compliance',
+                'title' => 'Businesses with professional GST compliance management are significantly less likely to receive notices, face audits, or incur penalties',
+                'desc' => '— making expert advisory a cost-effective investment relative to the risks of self-managed compliance',
             ],
         ];
         include __DIR__ . '/../../includes/components/caaft-key-facts.php';

@@ -7,6 +7,11 @@
  *   $caaft_key_facts_title (string)
  *   $caaft_key_facts_items (array)
  *
+ * Each item may be:
+ *   - string: single paragraph
+ *   - array with 'stat' + 'text' (big stat + body)
+ *   - array with 'title' + 'desc' (heading + body; optional 'stat' before title)
+ *
  * Optional:
  *   $caaft_key_facts_section_class (string) default "bk-facts py-90"
  *   $caaft_key_facts_grid_class (string) default "bk-facts-grid bk-facts-grid--plain"
@@ -36,10 +41,14 @@ $caaft_key_facts_card_class = isset($caaft_key_facts_card_class) && $caaft_key_f
             <?php foreach ($caaft_key_facts_items as $caaft_key_facts_item) : ?>
                 <?php
                 $caaft_key_facts_stat = '';
+                $caaft_key_facts_title = '';
+                $caaft_key_facts_desc = '';
                 $caaft_key_facts_text = '';
 
                 if (is_array($caaft_key_facts_item)) {
                     $caaft_key_facts_stat = trim((string) ($caaft_key_facts_item['stat'] ?? ''));
+                    $caaft_key_facts_title = trim((string) ($caaft_key_facts_item['title'] ?? ''));
+                    $caaft_key_facts_desc = trim((string) ($caaft_key_facts_item['desc'] ?? ''));
                     $caaft_key_facts_text = trim((string) ($caaft_key_facts_item['text'] ?? ''));
                 } else {
                     $caaft_key_facts_text = trim((string) $caaft_key_facts_item);
@@ -49,7 +58,13 @@ $caaft_key_facts_card_class = isset($caaft_key_facts_card_class) && $caaft_key_f
                     <?php if ($caaft_key_facts_stat !== '') : ?>
                         <h3 class="bk-facts-stat"><?php echo htmlspecialchars($caaft_key_facts_stat, ENT_QUOTES, 'UTF-8'); ?></h3>
                     <?php endif; ?>
-                    <p class="bk-facts-stat-text"><?php echo htmlspecialchars($caaft_key_facts_text, ENT_QUOTES, 'UTF-8'); ?></p>
+                    <?php if ($caaft_key_facts_title !== '') : ?>
+                        <h3 class="bk-facts-title"><?php echo htmlspecialchars($caaft_key_facts_title, ENT_QUOTES, 'UTF-8'); ?></h3>
+                    <?php endif; ?>
+                    <?php
+                    $caaft_key_facts_body = $caaft_key_facts_desc !== '' ? $caaft_key_facts_desc : $caaft_key_facts_text;
+                    ?>
+                    <p class="bk-facts-stat-text"><?php echo htmlspecialchars($caaft_key_facts_body, ENT_QUOTES, 'UTF-8'); ?></p>
                 </article>
             <?php endforeach; ?>
         </div>

@@ -10125,6 +10125,17 @@ align-items: baseline;}
     text-align: center !important;
 }
 
+.bk-facts-card .bk-facts-title {
+    margin: 0 0 10px;
+    font-family: var(--heading-font);
+    font-size: clamp(1.05rem, 2.1vw, 1.25rem);
+    line-height: 1.35;
+    color: var(--color-dark);
+    font-weight: 700;
+    width: 100%;
+    text-align: center !important;
+}
+
 .bk-facts-card .bk-facts-stat-text {
     margin: 0;
     font-size: 0.96rem;
