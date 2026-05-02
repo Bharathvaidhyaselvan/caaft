@@ -9857,6 +9857,123 @@ align-items: baseline;}
     margin: 0;
 }
 
+/* Reusable benefits card grid (caaft-benefits.php) — global */
+.caaft-benefits {
+    background: #eaf6fd;
+}
+
+.caaft-benefits-title {
+    margin: 0 0 1.5rem;
+    color: #0f2852;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 800;
+    text-transform: none;
+    letter-spacing: normal;
+    max-width: 900px;
+}
+
+.caaft-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px 16px;
+    align-items: stretch;
+}
+
+.caaft-benefit-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #dbe6f2;
+    border-radius: 12px;
+    padding: 22px 20px 20px;
+    box-shadow: 0 4px 18px rgba(15, 40, 82, 0.05);
+    min-height: 0;
+}
+
+.caaft-benefit-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-size: 0.92rem;
+    line-height: 1;
+}
+
+.caaft-benefit-icon--green {
+    background: #e6f7ef;
+    color: #379f70;
+}
+
+.caaft-benefit-icon--violet {
+    background: #efe9ff;
+    color: #7a57d1;
+}
+
+.caaft-benefit-icon--amber {
+    background: #fcf1df;
+    color: #b07d2a;
+}
+
+.caaft-benefit-icon--blue {
+    background: #e7f1fe;
+    color: #4b86c5;
+}
+
+.caaft-benefit-icon--pink {
+    background: #fce8f2;
+    color: #b35f92;
+}
+
+.caaft-benefit-icon--teal {
+    background: #e6f8f7;
+    color: #2d9e98;
+}
+
+.caaft-benefit-body {
+    margin: 0;
+    font-size: 1.02rem;
+    line-height: 1.65;
+    font-weight: 500;
+    color: #3d4a5c;
+}
+
+.caaft-benefit-lead {
+    font-size: inherit;
+    font-weight: 700;
+    line-height: inherit;
+    color: #1f2c40;
+    font-family: inherit;
+}
+
+.caaft-benefit-sep {
+    font-weight: 400;
+    color: #3d4a5c;
+}
+
+.caaft-benefit-desc {
+    font-weight: 500;
+    color: #3d4a5c;
+}
+
+@media (max-width: 991.98px) {
+    .caaft-benefits-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575.98px) {
+    .caaft-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .caaft-benefits-title {
+        font-size: 28px;
+    }
+}
+
 .page-bookkeeping-accounting .bk-who-card-title {
     margin: 0 0 10px;
     font-family: var(--heading-font);

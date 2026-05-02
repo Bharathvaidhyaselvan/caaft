@@ -83,6 +83,17 @@
             margin-bottom: 0;
         }
 
+        @media (min-width: 992px) {
+            .page-gst-lut-filing .bk-overview-layout {
+                align-items: center;
+            }
+            .page-gst-lut-filing .bk-overview-image-wrap img {
+                max-height: 360px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
         .page-gst-lut-filing .lut-importance-wrap {
             padding-top: 40px;
             padding-bottom: 44px;
@@ -277,101 +288,6 @@
             font-weight: 600;
         }
 
-        .page-gst-lut-filing .lut-benefits-wrap {
-            background: #eaf6fd;
-            padding-top: 56px;
-            padding-bottom: 56px;
-        }
-
-        .page-gst-lut-filing .lut-benefits-title {
-            margin: 0 0 10px;
-            color: #0f2852;
-            font-size: clamp(1.7rem, 2.9vw, 3rem);
-            line-height: 1.15;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.01em;
-            max-width: 820px;
-        }
-
-        .page-gst-lut-filing .lut-benefits-intro {
-            margin: 0 0 18px;
-            color: #234066;
-            line-height: 1.6;
-            font-weight: 700;
-        }
-
-        .page-gst-lut-filing .lut-benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 12px;
-        }
-
-        .page-gst-lut-filing .lut-benefit-card {
-            background: #ffffff;
-            border: 1px solid #dbe6f2;
-            border-radius: 10px;
-            padding: 14px 12px 12px;
-            min-height: 156px;
-        }
-
-        .page-gst-lut-filing .lut-benefit-icon {
-            width: 28px;
-            height: 28px;
-            border-radius: 8px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 10px;
-            font-size: 0.9rem;
-            line-height: 1;
-        }
-
-        .page-gst-lut-filing .lut-benefit-icon--green {
-            background: #e6f7ef;
-            color: #379f70;
-        }
-
-        .page-gst-lut-filing .lut-benefit-icon--violet {
-            background: #efe9ff;
-            color: #7a57d1;
-        }
-
-        .page-gst-lut-filing .lut-benefit-icon--amber {
-            background: #fcf1df;
-            color: #b07d2a;
-        }
-
-        .page-gst-lut-filing .lut-benefit-icon--blue {
-            background: #e7f1fe;
-            color: #4b86c5;
-        }
-
-        .page-gst-lut-filing .lut-benefit-icon--pink {
-            background: #fce8f2;
-            color: #b35f92;
-        }
-
-        .page-gst-lut-filing .lut-benefit-icon--teal {
-            background: #e6f8f7;
-            color: #2d9e98;
-        }
-
-        .page-gst-lut-filing .lut-benefit-card h3 {
-            margin: 0 0 4px;
-            color: #1f2c40;
-            font-size: 1.02rem;
-            line-height: 1.4;
-            font-weight: 700;
-        }
-
-        .page-gst-lut-filing .lut-benefit-card p {
-            margin: 0;
-            color: #4d5868;
-            line-height: 1.55;
-            font-weight: 600;
-        }
-
         @media (max-width: 991.98px) {
             .page-gst-lut-filing .caaft-ar-trust-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -521,7 +437,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         ];
         $caaft_overview_bullets = [];
         $caaft_overview_image_src = '/assets/img/gst-lut-overview.jpg';
-        $caaft_overview_image_alt = 'Exporter compliance paperwork for GST LUT filing';
+        $caaft_overview_image_alt = 'Indian GST filing and compliance — Letter of Undertaking (LUT) for zero-rated exports';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>
 
@@ -649,46 +565,86 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         include __DIR__ . '/../../includes/components/caaft-challenges.php';
         ?>
 
-        <section class="lut-benefits-wrap"><div class="container"><h2 class="lut-benefits-title">Benefits of Filing LUT Under GST</h2><div class="lut-benefits-grid">
-            <article class="lut-benefit-card"><span class="lut-benefit-icon lut-benefit-icon--green"><i class="fas fa-shield-check"></i></span><h3>No IGST outgo</h3><p>Exports go out without any tax payment on the invoice — zero-rated from the first shipment.</p></article>
-            <article class="lut-benefit-card"><span class="lut-benefit-icon lut-benefit-icon--violet"><i class="fas fa-wallet"></i></span><h3>Zero working capital lock-in</h3><p>No upfront tax payment means business funds remain available for operations and growth.</p></article>
-            <article class="lut-benefit-card"><span class="lut-benefit-icon lut-benefit-icon--amber"><i class="fas fa-file-signature"></i></span><h3>No bond or surety required</h3><p>Unlike the Bond route, LUT requires no financial guarantee or bank security.</p></article>
-            <article class="lut-benefit-card"><span class="lut-benefit-icon lut-benefit-icon--blue"><i class="fas fa-shipping-fast"></i></span><h3>Faster customs clearance</h3><p>Port authorities and freight agents process LUT-backed shipments more efficiently.</p></article>
-            <article class="lut-benefit-card"><span class="lut-benefit-icon lut-benefit-icon--pink"><i class="fas fa-handshake"></i></span><h3>Credibility with international buyers</h3><p>Signals a compliant, professionally managed export operation to overseas clients and partners.</p></article>
-            <article class="lut-benefit-card"><span class="lut-benefit-icon lut-benefit-icon--teal"><i class="fas fa-calendar-check"></i></span><h3>Valid for the full financial year</h3><p>One filing covers twelve months of compliant, uninterrupted exports.</p></article>
-            <article class="lut-benefit-card"><span class="lut-benefit-icon lut-benefit-icon--green"><i class="fas fa-industry"></i></span><h3>SEZ supply benefit</h3><p>Supplies to SEZ units also benefit from the LUT — not just overseas exports.</p></article>
-        </div></div></section>
+        <?php
+        $caaft_benefits_heading_id = 'gst-lut-benefits-heading';
+        $caaft_benefits_title = 'Benefits of Filing LUT Under GST';
+        $caaft_benefits_items = [
+            [
+                'lead' => 'No IGST outgo',
+                'text' => 'Eligible exports are treated as zero-rated supplies, so you do not pay IGST on the export invoice when you supply under LUT in line with GST rules.',
+                'icon_class' => 'fas fa-shield-alt',
+                'tone' => 'green',
+            ],
+            [
+                'lead' => 'Less working capital tied up in tax',
+                'text' => 'Where LUT applies, you avoid paying IGST upfront and then waiting for a refund, so more cash stays available for operations than under pay-and-refund.',
+                'icon_class' => 'fas fa-wallet',
+                'tone' => 'violet',
+            ],
+            [
+                'lead' => 'No bond or surety for LUT route',
+                'text' => 'The LUT path does not require a bank guarantee in the same way as furnishing a bond; eligibility and conditions are as prescribed on the GST portal.',
+                'icon_class' => 'fas fa-file-signature',
+                'tone' => 'amber',
+            ],
+            [
+                'lead' => 'Smoother alignment with export paperwork',
+                'text' => 'A valid LUT supports consistent treatment of zero-rated supplies in your GST records, which banks, buyers, and logistics partners often expect to see for export transactions.',
+                'icon_class' => 'fas fa-clipboard-list',
+                'tone' => 'blue',
+            ],
+            [
+                'lead' => 'Clearer standing with buyers and partners',
+                'text' => 'Having LUT on record shows you follow the prescribed GST process for exports, which helps when overseas clients or financiers ask for compliance evidence.',
+                'icon_class' => 'fas fa-handshake',
+                'tone' => 'pink',
+            ],
+            [
+                'lead' => 'Validity for the financial year',
+                'text' => 'Once accepted, LUT applies for the relevant period as shown on the GST system; renewals are needed for each new period as per current rules.',
+                'icon_class' => 'fas fa-calendar-check',
+                'tone' => 'teal',
+            ],
+            [
+                'lead' => 'SEZ and certain zero-rated supplies',
+                'text' => 'LUT can also cover notified zero-rated supplies, including supplies to SEZs, subject to eligibility—not only sales outside India.',
+                'icon_class' => 'fas fa-industry',
+                'tone' => 'green',
+            ],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-benefits.php';
+        ?>
 
         <?php
         $why_choose_caaft_heading_id = 'gst-lut-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
-        $why_choose_caaft_show_intro = false;
+        $why_choose_caaft_show_intro = true;
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             [
                 'icon_class' => 'fas fa-user-tie',
                 'title' => 'Dedicated advisory — not just filing',
-                'text' => 'Every client gets a named advisor who understands their export profile and handles queries personally — not a generic support queue or automated process.',
+                'text' => 'We explain LUT eligibility, the documents usually required, and how Form RFD-11 works on the GST portal, in plain terms. Eligibility and tax treatment always depend on facts, law, and the department—not on any consultant’s promise.',
             ],
             [
                 'icon_class' => 'fas fa-tasks',
                 'title' => 'End-to-end ownership',
-                'text' => 'From eligibility check to acknowledgement, the entire LUT filing process is managed — clients share documents and receive the approved LUT. Nothing falls between the cracks.',
+                'text' => 'We help collect information and documents, prepare the filing, submit it on the portal, and follow up using the status messages the GST system shows. Department-side processing is not controlled by us or any third party.',
             ],
             [
                 'icon_class' => 'fas fa-check-double',
-                'title' => 'Error-free submissions',
-                'text' => 'A multi-layer verification process is completed before every submission. Rejections are rare — and when corrections are needed, they are handled immediately on a priority basis.',
+                'title' => 'Checks before filing',
+                'text' => 'Before submission we review your entries and attachments for consistency and for common portal validation errors. That lowers the chance of rework; it does not guarantee acceptance or approval.',
             ],
             [
                 'icon_class' => 'fas fa-calendar-alt',
-                'title' => 'Annual renewal management',
-                'text' => 'LUT expiry is tracked proactively and renewal is filed every year before March 31st — without clients needing to remember deadlines or initiate the process themselves.',
+                'title' => 'Renewal reminders',
+                'text' => 'We remind you when your LUT is nearing expiry and assist with renewal in line with rules and forms published for that period. Deadlines and procedures follow CBIC / GSTN notifications and can change.',
             ],
             [
                 'icon_class' => 'fas fa-bolt',
-                'title' => 'Fast turnaround',
-                'text' => 'Standard LUT filings are completed in 1–2 business days. Renewals are processed the same day — ensuring export operations are never delayed by compliance gaps.',
+                'title' => 'Timely processing',
+                'text' => 'Once documents are complete and consistent, we aim to submit without avoidable delay. Final processing time depends on the GST portal, your return and compliance record, and tax officer queues—not on us alone.',
             ],
         ];
         include __DIR__ . '/../../includes/components/why-choose-caaft.php';
