@@ -10076,6 +10076,93 @@ align-items: baseline;}
     color: #3d3d3d;
 }
 
+/* Reusable documents required grid (caaft-documents.php) */
+.caaft-documents {
+    background: #fff;
+}
+
+.caaft-documents--tint {
+    background: #eaf8ff !important;
+}
+
+.caaft-documents-title {
+    margin: 0;
+    padding: 10px 12px 8px;
+    color: #2f2f2f;
+    font-size: clamp(1.35rem, 2vw, 2rem);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.caaft-documents-intro {
+    margin: 0;
+    padding: 8px 12px 10px;
+    border-bottom: 1px solid #d1d1d1;
+    color: #4a4a4a;
+    line-height: 1.55;
+    font-weight: 600;
+}
+
+.caaft-documents-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.caaft-documents-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 36px;
+    padding: 7px 10px;
+    border-bottom: 1px solid #d1d1d1;
+    color: #3a3a3a;
+    line-height: 1.45;
+    font-weight: 600;
+}
+
+.caaft-documents-item:nth-child(odd) {
+    border-right: 1px solid #d1d1d1;
+}
+
+.caaft-documents-item:nth-last-child(-n + 2) {
+    border-bottom: 0;
+}
+
+.caaft-documents-checkbox {
+    flex: 0 0 13px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #bcbcbc;
+    border-radius: 2px;
+    background: #f9f9f9;
+}
+
+.caaft-documents-outro {
+    margin: 16px 0 0;
+    padding: 8px 12px 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+}
+
+@media (max-width: 767.98px) {
+    .caaft-documents-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .caaft-documents-item {
+        border-right: 0 !important;
+    }
+
+    .caaft-documents-item:nth-last-child(-n + 2) {
+        border-bottom: 1px solid #d1d1d1;
+    }
+
+    .caaft-documents-item:last-child {
+        border-bottom: 0;
+    }
+}
+
 /* Reusable Key Facts default card layout (global) */
 .bk-facts-grid {
     display: grid;

@@ -80,6 +80,21 @@
         .page-gst-assessment-appeal .bk-overview .bk-overview-text:last-child {
             margin-bottom: 0;
         }
+        .page-gst-assessment-appeal .bk-overview-layout {
+            align-items: center;
+        }
+        .page-gst-assessment-appeal .bk-overview-image-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+        }
+        .page-gst-assessment-appeal .bk-overview-image-wrap img {
+            object-fit: contain;
+            width: 100%;
+            max-height: min(340px, 50vh);
+            height: auto;
+        }
         .page-gst-assessment-appeal .gst-assess-deadline-wrap,
         .page-gst-assessment-appeal .gst-assess-hierarchy-wrap { padding-top: 44px; padding-bottom: 44px; }
         .page-gst-assessment-appeal .gst-assess-title { margin: 0 0 10px; color: #1f2c40; font-size: clamp(1.5rem, 2.2vw, 2.1rem); line-height: 1.2; font-weight: 700; }
@@ -431,10 +446,10 @@
         ?>
 
         <?php
-        $caaft_wnl_heading_id = 'gst-assess-docs-heading';
-        $caaft_wnl_title = 'Documents Required for GST Assessment & Appeal';
-        $caaft_wnl_intro = 'Having complete documentation is half the battle. The following are typically required:';
-        $caaft_wnl_items = [
+        $caaft_docs_heading_id = 'gst-assess-docs-heading';
+        $caaft_docs_title = 'Documents Required for GST Assessment & Appeal';
+        $caaft_docs_intro = 'Having complete documentation is half the battle. The following are typically required:';
+        $caaft_docs_items = [
             'GST registration certificate (GSTIN details)',
             'Copy of the assessment notice, show-cause notice, or demand order',
             'GSTR-1, GSTR-3B, and GSTR-9 filings for the relevant period',
@@ -447,7 +462,8 @@
             'Previous correspondence with the GST department',
             'Financial statements and audit reports for the disputed period',
         ];
-        include __DIR__ . '/../../includes/components/caaft-who-needs-list.php';
+        $caaft_docs_tint = true;
+        include __DIR__ . '/../../includes/components/caaft-documents.php';
         ?>
 
         <section class="gst-assess-deadline-wrap" aria-labelledby="gst-assess-deadline-heading">
@@ -541,7 +557,8 @@
         <?php
         $why_choose_caaft_heading_id = 'gst-assess-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
-        $why_choose_caaft_show_intro = false;
+        $why_choose_caaft_show_intro = true;
+        $why_choose_caaft_intro = 'CAAFT combines deep GST dispute experience with hands-on representation — so every notice, hearing, and appeal is handled with clarity, precision, and a strategy built for your business.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             [

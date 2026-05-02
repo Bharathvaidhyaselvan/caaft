@@ -376,62 +376,6 @@
             font-size: 0.92rem;
         }
 
-        .gst-return-docs-wrap {
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-
-        .gst-return-docs-title {
-            margin: 0;
-            padding: 10px 12px 8px;
-            color: #2f2f2f;
-            font-size: clamp(1.35rem, 2vw, 2rem);
-            line-height: 1.2;
-            font-weight: 700;
-        }
-
-        .gst-return-docs-intro {
-            margin: 0;
-            padding: 8px 12px 10px;
-            border-bottom: 1px solid #d1d1d1;
-            color: #4a4a4a;
-            line-height: 1.55;
-            font-weight: 600;
-        }
-
-        .gst-return-docs-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .gst-return-docs-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            min-height: 36px;
-            padding: 7px 10px;
-            border-bottom: 1px solid #d1d1d1;
-            color: #3a3a3a;
-            line-height: 1.45;
-            font-weight: 600;
-        }
-
-        .gst-return-docs-item:nth-child(odd) {
-            border-right: 1px solid #d1d1d1;
-        }
-
-        .gst-return-docs-item:nth-last-child(-n + 2) {
-            border-bottom: 0;
-        }
-
-        .gst-return-docs-checkbox {
-            flex: 0 0 13px;
-            width: 13px;
-            height: 13px;
-            border: 1px solid #bcbcbc;
-            border-radius: 2px;
-            background: #f9f9f9;
-        }
         @media (max-width: 991.98px) {
             .page-gst-return-filing-services .caaft-ar-trust-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -677,17 +621,24 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
         ?>
 
-        <section class="gst-return-docs-wrap"><div class="container"><h2 class="gst-return-docs-title">Documents Required for GST Return Filing</h2><p class="gst-return-docs-intro">To ensure accurate and timely filing, the following documents are required each month:</p><div class="gst-return-docs-grid">
-            <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>Sales invoices — B2B and B2C — for the filing period</span></div>
-            <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>Purchase invoices from all GST-registered suppliers</span></div>
-            <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>Credit notes and debit notes issued or received</span></div>
-            <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>GSTR-2B auto-drafted statement from the GST portal</span></div>
-            <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>Bank statements for reconciliation and payment verification</span></div>
-            <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>E-way bills, if applicable to the business</span></div>
-            <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>Import and export documentation, for businesses in international trade</span></div>
-            <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>HSN/SAC summary of goods and services supplied</span></div>
-            <div class="gst-return-docs-item"><span class="gst-return-docs-checkbox" aria-hidden="true"></span><span>Details of advances received and adjustments for the period</span></div>
-        </div></div></section>
+        <?php
+        $caaft_docs_heading_id = 'gst-return-docs-heading';
+        $caaft_docs_title = 'Documents Required for GST Return Filing';
+        $caaft_docs_intro = 'To ensure accurate and timely filing, the following documents are required each month:';
+        $caaft_docs_items = [
+            'Sales invoices — B2B and B2C — for the filing period',
+            'Purchase invoices from all GST-registered suppliers',
+            'Credit notes and debit notes issued or received',
+            'GSTR-2B auto-drafted statement from the GST portal',
+            'Bank statements for reconciliation and payment verification',
+            'E-way bills, if applicable to the business',
+            'Import and export documentation, for businesses in international trade',
+            'HSN/SAC summary of goods and services supplied',
+            'Details of advances received and adjustments for the period',
+        ];
+        $caaft_docs_section_class = 'caaft-documents py-90';
+        include __DIR__ . '/../../includes/components/caaft-documents.php';
+        ?>
 
         <?php
         $caaft_challenges_heading_id = 'gst-return-challenges-heading';
