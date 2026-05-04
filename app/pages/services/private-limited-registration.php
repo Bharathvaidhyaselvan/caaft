@@ -775,8 +775,9 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         <?php
         $why_choose_caaft_heading_id = 'plc-why-caaft-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
-        $why_choose_caaft_show_intro = false;
-        $why_choose_caaft_intro = '';
+        $why_choose_caaft_show_intro = true;
+        $why_choose_caaft_link_desc = true;
+        $why_choose_caaft_intro = 'Founders and growing businesses rely on CAAFT for Pvt Ltd incorporation that is filing-accurate, timeline-clear, and backed by ongoing statutory support.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             [

@@ -37,6 +37,8 @@ Redirect 301 /company-incorporation/private-limited-registration /private-limite
 Redirect 301 /private-limited-registration /private-limited-company-registration
 Redirect 301 /company-incorporation/private-limited-company /private-limited-company-registration
 Redirect 301 /private-limited-company /private-limited-company-registration
+Redirect 301 /company-incorporation/public-limited-company /public-limited-company-registration
+Redirect 301 /public-limited-company /public-limited-company-registration
 Redirect 301 /msme-udyam-registration.php /business-setup-registration/msme-udyam-registration
 
 Redirect 301 /roc-compliance-services.php /compliance-regulatory/roc-compliance-services
