@@ -102,8 +102,8 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab1">Company Incorporation</a></li>
                                             <li><a href="/private-limited-company-registration">Private Limited Company</a></li>
                                             <li><a href="/public-limited-company-registration">Public Limited Company</a></li>
-                                            <li><a href="/company-incorporation/one-person-company-registration">One Person Company (OPC)</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab4">Limited Liability Partnership (LLP)</a></li>
+                                            <li><a href="/one-person-company-registration">One Person Company (OPC)</a></li>
+                                            <li><a href="/llp-registration-services">Limited Liability Partnership (LLP)</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab5">Partnership Firm</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab6">Sole Proprietorship</a></li>
                                         </ul>
@@ -276,7 +276,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/business-setup-registration/company-registration">One
                                                 Person Company</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/business-setup-registration/company-registration">Limited
+                                                href="/llp-registration-services">Limited
                                                 Liability Partnership</a></li>
 
                                         <li><a class="dropdown-item"
