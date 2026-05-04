@@ -89,8 +89,8 @@
             }
             .page-gst-lut-filing .bk-overview-image-wrap img {
                 max-height: 360px;
-                width: 100%;
-                object-fit: cover;
+            width: 100%;
+            object-fit: cover;
             }
         }
 

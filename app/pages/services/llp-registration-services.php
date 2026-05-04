@@ -293,6 +293,175 @@ declare(strict_types=1);
             font-weight: 600;
             color: #1f2c40;
         }
+        .page-llp-registration .llp-compliance-section {
+            padding-top: 44px;
+            padding-bottom: 48px;
+            background: #ffffff;
+        }
+        .page-llp-registration .llp-compliance-title {
+            margin: 0 0 10px;
+            color: #1f2c40;
+            font-size: clamp(1.5rem, 2.2vw, 2.1rem);
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        .page-llp-registration .llp-compliance-intro {
+            margin: 0 0 22px;
+            max-width: 950px;
+            color: #5d6674;
+            font-size: 1rem;
+            line-height: 1.65;
+            font-weight: 500;
+        }
+        .page-llp-registration .llp-compliance-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .page-llp-registration .llp-compliance-list > li {
+            list-style: none;
+        }
+        .page-llp-registration .llp-compliance-item {
+            display: grid;
+            grid-template-columns: 110px 24px minmax(0, 1fr);
+            gap: 0 12px;
+            align-items: start;
+            padding: 8px 0;
+        }
+        .page-llp-registration .llp-compliance-badge {
+            margin-top: 2px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 30px;
+            padding: 5px 10px;
+            border-radius: 6px;
+            background: #eef6ff;
+            color: var(--theme-color, #33b6ff);
+            border: 1px solid #d6eaff;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            text-align: center;
+        }
+        .page-llp-registration .llp-compliance-track {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            min-height: 100%;
+        }
+        .page-llp-registration .llp-compliance-track::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            bottom: -10px;
+            width: 2px;
+            background: #e2e8f0;
+        }
+        .page-llp-registration .llp-compliance-item:first-child .llp-compliance-track::before {
+            top: 12px;
+        }
+        .page-llp-registration .llp-compliance-item:last-child .llp-compliance-track::before {
+            bottom: calc(100% - 12px);
+        }
+        .page-llp-registration .llp-compliance-dot {
+            width: 10px;
+            height: 10px;
+            margin-top: 10px;
+            border-radius: 50%;
+            background: #cbd5e1;
+            box-shadow: 0 0 0 4px #ffffff;
+            z-index: 1;
+        }
+        .page-llp-registration .llp-compliance-meta {
+            margin: 0 0 4px;
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #5f6b7a;
+            line-height: 1.35;
+            text-transform: none;
+        }
+        .page-llp-registration .llp-compliance-name {
+            margin: 0 0 4px;
+            font-size: 1.28rem;
+            font-weight: 700;
+            line-height: 1.24;
+            color: #1f2c40;
+        }
+        .page-llp-registration .llp-compliance-text {
+            margin: 0;
+            font-size: 1.02rem;
+            line-height: 1.58;
+            font-weight: 500;
+            color: #4b5563;
+            max-width: 860px;
+        }
+        @media (max-width: 767.98px) {
+            .page-llp-registration .llp-compliance-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                border: 1px solid #e8edf2;
+                border-radius: 10px;
+                padding: 12px 14px;
+                margin-bottom: 10px;
+            }
+            .page-llp-registration .llp-compliance-track {
+                display: none;
+            }
+            .page-llp-registration .llp-compliance-name {
+                font-size: 1.08rem;
+            }
+            .page-llp-registration .llp-compliance-text {
+                font-size: 0.97rem;
+            }
+        }
+        .page-llp-registration .bk-cta {
+            padding-top: 36px;
+            padding-bottom: 46px;
+        }
+        .page-llp-registration .bk-cta-panel.caaft-cta-panel {
+            max-width: 980px;
+            margin: 0 auto;
+            border-radius: 14px;
+            padding: clamp(28px, 4vw, 40px) 24px clamp(30px, 4.2vw, 44px);
+        }
+        .page-llp-registration .bk-cta-title {
+            margin: 0 auto 14px;
+            max-width: 940px;
+            font-size: clamp(2rem, 3.4vw, 3.05rem);
+            line-height: 1.16;
+            font-weight: 700;
+        }
+        .page-llp-registration .bk-cta-text {
+            max-width: 790px;
+            margin: 0 auto 26px;
+            font-size: clamp(1rem, 1.3vw, 1.2rem);
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        .page-llp-registration .bk-cta-actions .bk-cta-button {
+            min-height: 48px;
+            padding: 12px 24px;
+            border-radius: 9px;
+            font-weight: 700;
+        }
+        @media (max-width: 767.98px) {
+            .page-llp-registration .bk-cta {
+                padding-top: 28px;
+                padding-bottom: 36px;
+            }
+            .page-llp-registration .bk-cta-panel.caaft-cta-panel {
+                padding: 24px 16px 28px;
+            }
+            .page-llp-registration .bk-cta-title {
+                font-size: clamp(1.48rem, 6.2vw, 1.95rem);
+                line-height: 1.22;
+            }
+            .page-llp-registration .bk-cta-text {
+                font-size: 0.97rem;
+                line-height: 1.56;
+            }
+        }
     </style>
     <?php include "header-top.php"; ?>
     <script type="application/ld+json">
@@ -583,42 +752,77 @@ declare(strict_types=1);
             </div>
         </section>
 
-        <?php
-        $caaft_llc_heading_id = 'llp-post-heading';
-        $caaft_llc_title = 'Post-Registration Compliance for LLPs';
-        $caaft_llc_lead = 'LLP registration is the starting point — not the finish line. Registered LLPs must meet annual compliance obligations to remain in good standing with the MCA and income tax authorities:';
-        $caaft_llc_items = [
-            [
-                'label' => '30 May — Form 11',
-                'text' => 'Annual Return.',
-            ],
-            [
-                'label' => '30 October — Form 8',
-                'text' => 'Statement of Accounts & Solvency.',
-            ],
-            [
-                'label' => 'Annually (as per due date) — ITR Form',
-                'text' => 'Income Tax Return for the LLP (separate from partners\' individual returns where applicable).',
-            ],
-            [
-                'label' => 'Monthly / Quarterly (as applicable) — GST Returns',
-                'text' => 'Based on turnover and business activity.',
-            ],
-            [
-                'label' => 'As and when applicable — prescribed MCA forms',
-                'text' => 'Partner addition or removal.',
-            ],
-            [
-                'label' => 'Within prescribed timeline — prescribed MCA forms',
-                'text' => 'Change of registered office.',
-            ],
-            [
-                'label' => 'As and when applicable — Form 24',
-                'text' => 'LLP strike off.',
-            ],
-        ];
-        include __DIR__ . '/../../includes/components/caaft-labeled-list-card.php';
-        ?>
+        <section class="llp-compliance-section" aria-labelledby="llp-post-heading">
+            <div class="container">
+                <h2 id="llp-post-heading" class="llp-compliance-title">Post-Registration Compliance for LLPs</h2>
+                <p class="llp-compliance-intro">LLP registration is the starting point — not the finish line. Registered LLPs must meet annual and event-based compliance obligations to remain in good standing with MCA and income tax authorities.</p>
+                <ul class="llp-compliance-list" role="list">
+                    <li class="llp-compliance-item" role="listitem">
+                        <span class="llp-compliance-badge">30 May</span>
+                        <span class="llp-compliance-track" aria-hidden="true"><span class="llp-compliance-dot"></span></span>
+                        <div class="llp-compliance-body">
+                            <p class="llp-compliance-meta">Form 11</p>
+                            <h3 class="llp-compliance-name">Annual return</h3>
+                            <p class="llp-compliance-text">Filed every year with the MCA, summarising partner details and LLP activity for the preceding financial year.</p>
+                        </div>
+                    </li>
+                    <li class="llp-compliance-item" role="listitem">
+                        <span class="llp-compliance-badge">30 October</span>
+                        <span class="llp-compliance-track" aria-hidden="true"><span class="llp-compliance-dot"></span></span>
+                        <div class="llp-compliance-body">
+                            <p class="llp-compliance-meta">Form 8</p>
+                            <h3 class="llp-compliance-name">Statement of accounts and solvency</h3>
+                            <p class="llp-compliance-text">Declares the financial position and solvency of the LLP, signed by designated partners and filed with the MCA.</p>
+                        </div>
+                    </li>
+                    <li class="llp-compliance-item" role="listitem">
+                        <span class="llp-compliance-badge">Annually</span>
+                        <span class="llp-compliance-track" aria-hidden="true"><span class="llp-compliance-dot"></span></span>
+                        <div class="llp-compliance-body">
+                            <p class="llp-compliance-meta">Income tax</p>
+                            <h3 class="llp-compliance-name">LLP income tax return</h3>
+                            <p class="llp-compliance-text">Filed for the LLP entity separately from individual partner returns, with due date based on audit applicability.</p>
+                        </div>
+                    </li>
+                    <li class="llp-compliance-item" role="listitem">
+                        <span class="llp-compliance-badge">As applicable</span>
+                        <span class="llp-compliance-track" aria-hidden="true"><span class="llp-compliance-dot"></span></span>
+                        <div class="llp-compliance-body">
+                            <p class="llp-compliance-meta">GST</p>
+                            <h3 class="llp-compliance-name">GST registration and return filing</h3>
+                            <p class="llp-compliance-text">Required based on turnover threshold and business activity; returns may be monthly, quarterly, or annual as applicable.</p>
+                        </div>
+                    </li>
+                    <li class="llp-compliance-item" role="listitem">
+                        <span class="llp-compliance-badge">As applicable</span>
+                        <span class="llp-compliance-track" aria-hidden="true"><span class="llp-compliance-dot"></span></span>
+                        <div class="llp-compliance-body">
+                            <p class="llp-compliance-meta">Prescribed MCA forms</p>
+                            <h3 class="llp-compliance-name">Partner addition or removal</h3>
+                            <p class="llp-compliance-text">Any change in designated partners or partners must be filed with MCA in the prescribed forms within timeline.</p>
+                        </div>
+                    </li>
+                    <li class="llp-compliance-item" role="listitem">
+                        <span class="llp-compliance-badge">Within timeline</span>
+                        <span class="llp-compliance-track" aria-hidden="true"><span class="llp-compliance-dot"></span></span>
+                        <div class="llp-compliance-body">
+                            <p class="llp-compliance-meta">Prescribed MCA forms</p>
+                            <h3 class="llp-compliance-name">Change of registered office</h3>
+                            <p class="llp-compliance-text">A registered office shift must be intimated through the relevant forms and documentary proof within prescribed timelines.</p>
+                        </div>
+                    </li>
+                    <li class="llp-compliance-item" role="listitem">
+                        <span class="llp-compliance-badge">As applicable</span>
+                        <span class="llp-compliance-track" aria-hidden="true"><span class="llp-compliance-dot"></span></span>
+                        <div class="llp-compliance-body">
+                            <p class="llp-compliance-meta">Form 24</p>
+                            <h3 class="llp-compliance-name">LLP strike off</h3>
+                            <p class="llp-compliance-text">If the LLP is not carrying on business and meets prescribed conditions, Form 24 can be filed for strike off.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         <?php
         $caaft_challenges_heading_id = 'llp-challenges-heading';
@@ -640,9 +844,9 @@ declare(strict_types=1);
         <?php
         $why_choose_caaft_heading_id = 'llp-why-caaft-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
-        $why_choose_caaft_show_intro = false;
+        $why_choose_caaft_show_intro = true;
         $why_choose_caaft_link_desc = true;
-        $why_choose_caaft_intro = '';
+        $why_choose_caaft_intro = 'Businesses rely on CAAFT for LLP incorporation that is filing-accurate, agreement-ready, and aligned with MCA requirements from day one.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             [

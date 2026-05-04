@@ -196,8 +196,8 @@
         $caaft_hero_secondary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
-        $caaft_enquiry_service = 'GST Advisory and Compliance Services';
-        $caaft_enquiry_action = '/incometax-services-mail.php';
+$caaft_enquiry_service = 'GST Advisory and Compliance Services';
+$caaft_enquiry_action = '/incometax-services-mail.php';
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 

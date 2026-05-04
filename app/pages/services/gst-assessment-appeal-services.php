@@ -322,7 +322,7 @@
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
         $caaft_enquiry_service = 'GST Assessment & Appeal Support Services';
-        $caaft_enquiry_action = '/incometax-services-mail.php';
+$caaft_enquiry_action = '/incometax-services-mail.php';
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -471,12 +471,12 @@
                 <h2 id="gst-assess-deadline-heading" class="gst-assess-title">Time Limits for GST Appeal — Critical Deadlines</h2>
                 <p class="gst-assess-lead">GST appeal time limits are strict and generally non-extendable. Filing even one day late can result in the appeal being rejected without a hearing on merits:</p>
                 <div class="gst-assess-deadline-table">
-                    <div class="gst-assess-deadline-head"><div>Stage</div><div>Timeline</div><div>Pre-deposit</div></div>
+            <div class="gst-assess-deadline-head"><div>Stage</div><div>Timeline</div><div>Pre-deposit</div></div>
                     <div class="gst-assess-deadline-row"><div>Reply to SCN / Assessment Notice</div><div>15–30 days from receipt (as specified in the notice).</div><div><span class="gst-assess-pre gst-assess-pre--green">none</span></div></div>
-                    <div class="gst-assess-deadline-row"><div>First Appeal — Commissioner (Appeals)</div><div>3 months from the date of the order.</div><div><span class="gst-assess-pre gst-assess-pre--red">10% of the disputed tax amount</span></div></div>
-                    <div class="gst-assess-deadline-row"><div>Second Appeal — GST Appellate Tribunal (GSTAT)</div><div>3 months from the Commissioner (Appeals) order.</div><div><span class="gst-assess-pre gst-assess-pre--red">20% of the remaining disputed tax</span></div></div>
-                    <div class="gst-assess-deadline-row"><div>High Court <span class="gst-assess-stage-sub">Substantial question of law</span></div><div>As per applicable High Court rules.</div><div><span class="gst-assess-pre gst-assess-pre--neutral">as directed by the Court</span></div></div>
-                    <div class="gst-assess-deadline-row"><div>Supreme Court <span class="gst-assess-stage-sub">Special Leave Petition</span></div><div>within 90 days of the High Court order.</div><div><span class="gst-assess-pre gst-assess-pre--neutral">as directed by the Court</span></div></div>
+            <div class="gst-assess-deadline-row"><div>First Appeal — Commissioner (Appeals)</div><div>3 months from the date of the order.</div><div><span class="gst-assess-pre gst-assess-pre--red">10% of the disputed tax amount</span></div></div>
+            <div class="gst-assess-deadline-row"><div>Second Appeal — GST Appellate Tribunal (GSTAT)</div><div>3 months from the Commissioner (Appeals) order.</div><div><span class="gst-assess-pre gst-assess-pre--red">20% of the remaining disputed tax</span></div></div>
+            <div class="gst-assess-deadline-row"><div>High Court <span class="gst-assess-stage-sub">Substantial question of law</span></div><div>As per applicable High Court rules.</div><div><span class="gst-assess-pre gst-assess-pre--neutral">as directed by the Court</span></div></div>
+            <div class="gst-assess-deadline-row"><div>Supreme Court <span class="gst-assess-stage-sub">Special Leave Petition</span></div><div>within 90 days of the High Court order.</div><div><span class="gst-assess-pre gst-assess-pre--neutral">as directed by the Court</span></div></div>
                 </div>
             </div>
         </section>
@@ -485,12 +485,12 @@
             <div class="container">
                 <h2 id="gst-assess-hierarchy-heading" class="gst-assess-title">GST Appeal Levels — The Hierarchy</h2>
                 <div class="gst-assess-hierarchy-list">
-                    <article class="gst-assess-hierarchy-step"><span class="gst-assess-hierarchy-dot">1</span><div class="gst-assess-hierarchy-body"><h3 class="gst-assess-hierarchy-title">Level 1 — Adjudicating Authority (GST Officer)</h3><div class="gst-assess-hierarchy-badges"><span class="gst-assess-hierarchy-pill">Governed by CGST Act, Sections 73/74</span><span class="gst-assess-hierarchy-pill gst-assess-hierarchy-pill--blue">Taxpayer or authorised representative appears</span></div></div></article>
-                    <article class="gst-assess-hierarchy-step"><span class="gst-assess-hierarchy-dot">2</span><div class="gst-assess-hierarchy-body"><h3 class="gst-assess-hierarchy-title">Level 2 — Appellate Authority — Commissioner (Appeals)</h3><div class="gst-assess-hierarchy-badges"><span class="gst-assess-hierarchy-pill">Governed by CGST Act, Section 107</span><span class="gst-assess-hierarchy-pill gst-assess-hierarchy-pill--blue">CA, advocate, or taxpayer appears</span></div></div></article>
-                    <article class="gst-assess-hierarchy-step"><span class="gst-assess-hierarchy-dot">3</span><div class="gst-assess-hierarchy-body"><h3 class="gst-assess-hierarchy-title">Level 3 — GST Appellate Tribunal (GSTAT)</h3><div class="gst-assess-hierarchy-badges"><span class="gst-assess-hierarchy-pill">Governed by CGST Act, Section 112</span><span class="gst-assess-hierarchy-pill gst-assess-hierarchy-pill--blue">CA, advocate, or tax practitioner appears</span></div></div></article>
-                    <article class="gst-assess-hierarchy-step"><span class="gst-assess-hierarchy-dot">4</span><div class="gst-assess-hierarchy-body"><h3 class="gst-assess-hierarchy-title">Level 4 — High Court</h3><div class="gst-assess-hierarchy-badges"><span class="gst-assess-hierarchy-pill">Constitutional jurisdiction</span><span class="gst-assess-hierarchy-pill gst-assess-hierarchy-pill--blue">Advocate appears</span></div></div></article>
-                    <article class="gst-assess-hierarchy-step"><span class="gst-assess-hierarchy-dot">5</span><div class="gst-assess-hierarchy-body"><h3 class="gst-assess-hierarchy-title">Level 5 — Supreme Court of India</h3><div class="gst-assess-hierarchy-badges"><span class="gst-assess-hierarchy-pill">Special Leave Petition</span><span class="gst-assess-hierarchy-pill gst-assess-hierarchy-pill--blue">Senior advocate appears</span></div></div></article>
-                </div>
+            <article class="gst-assess-hierarchy-step"><span class="gst-assess-hierarchy-dot">1</span><div class="gst-assess-hierarchy-body"><h3 class="gst-assess-hierarchy-title">Level 1 — Adjudicating Authority (GST Officer)</h3><div class="gst-assess-hierarchy-badges"><span class="gst-assess-hierarchy-pill">Governed by CGST Act, Sections 73/74</span><span class="gst-assess-hierarchy-pill gst-assess-hierarchy-pill--blue">Taxpayer or authorised representative appears</span></div></div></article>
+            <article class="gst-assess-hierarchy-step"><span class="gst-assess-hierarchy-dot">2</span><div class="gst-assess-hierarchy-body"><h3 class="gst-assess-hierarchy-title">Level 2 — Appellate Authority — Commissioner (Appeals)</h3><div class="gst-assess-hierarchy-badges"><span class="gst-assess-hierarchy-pill">Governed by CGST Act, Section 107</span><span class="gst-assess-hierarchy-pill gst-assess-hierarchy-pill--blue">CA, advocate, or taxpayer appears</span></div></div></article>
+            <article class="gst-assess-hierarchy-step"><span class="gst-assess-hierarchy-dot">3</span><div class="gst-assess-hierarchy-body"><h3 class="gst-assess-hierarchy-title">Level 3 — GST Appellate Tribunal (GSTAT)</h3><div class="gst-assess-hierarchy-badges"><span class="gst-assess-hierarchy-pill">Governed by CGST Act, Section 112</span><span class="gst-assess-hierarchy-pill gst-assess-hierarchy-pill--blue">CA, advocate, or tax practitioner appears</span></div></div></article>
+            <article class="gst-assess-hierarchy-step"><span class="gst-assess-hierarchy-dot">4</span><div class="gst-assess-hierarchy-body"><h3 class="gst-assess-hierarchy-title">Level 4 — High Court</h3><div class="gst-assess-hierarchy-badges"><span class="gst-assess-hierarchy-pill">Constitutional jurisdiction</span><span class="gst-assess-hierarchy-pill gst-assess-hierarchy-pill--blue">Advocate appears</span></div></div></article>
+            <article class="gst-assess-hierarchy-step"><span class="gst-assess-hierarchy-dot">5</span><div class="gst-assess-hierarchy-body"><h3 class="gst-assess-hierarchy-title">Level 5 — Supreme Court of India</h3><div class="gst-assess-hierarchy-badges"><span class="gst-assess-hierarchy-pill">Special Leave Petition</span><span class="gst-assess-hierarchy-pill gst-assess-hierarchy-pill--blue">Senior advocate appears</span></div></div></article>
+            </div>
             </div>
         </section>
 
