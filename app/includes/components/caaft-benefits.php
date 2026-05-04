@@ -21,6 +21,7 @@
  *
  * Optional:
  *   $caaft_benefits_section_class (string) default "caaft-benefits py-90"
+ *   $caaft_benefits_intro (string) — paragraph below H2, above the grid
  *
  * Optional per item:
  *   - tone (string) green | violet | amber | blue | pink | teal — cycles if omitted
@@ -34,12 +35,16 @@ $caaft_benefits_title = (string) $caaft_benefits_title;
 $caaft_benefits_section_class = isset($caaft_benefits_section_class) && $caaft_benefits_section_class !== ''
     ? (string) $caaft_benefits_section_class
     : 'caaft-benefits py-90';
+$caaft_benefits_intro = isset($caaft_benefits_intro) ? trim((string) $caaft_benefits_intro) : '';
 
 $caaft_benefits_tone_cycle = ['green', 'violet', 'amber', 'blue', 'pink', 'teal'];
 ?>
 <section class="<?php echo htmlspecialchars($caaft_benefits_section_class, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars($caaft_benefits_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
         <h2 id="<?php echo htmlspecialchars($caaft_benefits_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="caaft-benefits-title"><?php echo htmlspecialchars($caaft_benefits_title, ENT_QUOTES, 'UTF-8'); ?></h2>
+        <?php if ($caaft_benefits_intro !== '') : ?>
+            <p class="caaft-benefits-intro"><?php echo htmlspecialchars($caaft_benefits_intro, ENT_QUOTES, 'UTF-8'); ?></p>
+        <?php endif; ?>
         <div class="caaft-benefits-grid" role="list">
             <?php foreach ($caaft_benefits_items as $caaft_benefits_index => $caaft_benefits_item) : ?>
                 <?php

@@ -9670,6 +9670,13 @@ align-items: baseline;}
     min-width: 0;
 }
 
+.bk-overview .bk-overview-text {
+    margin: 0 0 1.75rem;
+    font-size: 1.02rem;
+    line-height: 1.6;
+    color: #2f2f2f;
+}
+
 .bk-overview-bullets {
     margin: 0 0 10px;
     padding-left: 18px;
@@ -9871,6 +9878,15 @@ align-items: baseline;}
     text-transform: none;
     letter-spacing: normal;
     max-width: 900px;
+}
+
+.caaft-benefits-intro {
+    margin: -0.25rem 0 1.5rem;
+    max-width: 900px;
+    font-size: 1.02rem;
+    line-height: 1.65;
+    font-weight: 500;
+    color: #4d5868;
 }
 
 .caaft-benefits-grid {
@@ -11162,4 +11178,82 @@ align-items: baseline;}
     .caaft-who-needs-list-items {
         columns: 1;
     }
+}
+
+/* Reusable: H2 + lead + white card with label: body rows (caaft-labeled-list-card.php) */
+.caaft-labeled-list-card-section {
+    background: #ffffff;
+}
+
+.caaft-labeled-list-card-section--tint {
+    background: #f8fafc;
+}
+
+.caaft-labeled-list-card-title {
+    margin: 0 0 10px;
+    color: #1f2c40;
+    font-size: clamp(1.5rem, 2.2vw, 2.1rem);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.caaft-labeled-list-card-lead {
+    margin: 0 0 20px;
+    max-width: 900px;
+    font-size: 1.02rem;
+    line-height: 1.65;
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.caaft-labeled-list-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px 26px 22px;
+}
+
+.caaft-labeled-list-card-items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.caaft-labeled-list-card-items li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 0;
+}
+
+.caaft-labeled-list-card-items li + li {
+    border-top: 1px solid #e8edf2;
+}
+
+.caaft-labeled-list-card-bullet {
+    flex: 0 0 8px;
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    margin-top: 0.55em;
+    border-radius: 50%;
+    background: var(--theme-color, #33b6ff);
+}
+
+.caaft-labeled-list-card-row {
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.caaft-labeled-list-card-label {
+    font-weight: 700;
+    color: #1f2c40;
+}
+
+.caaft-labeled-list-card-text {
+    font-weight: 500;
+    color: #4a5568;
 }

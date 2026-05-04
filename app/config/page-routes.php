@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 return [
+    'private-limited-company-registration' => 'pages/services/private-limited-registration.php',
     'company-incorporation/private-limited-company' => 'pages/services/private-limited-registration.php',
     'private-limited-company' => 'pages/services/private-limited-registration.php',
     'company-incorporation/private-limited-registration' => 'pages/services/private-limited-registration.php',

@@ -100,7 +100,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                     <div class="mega-split">
                                         <ul class="mega-split-col">
                                             <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab1">Company Incorporation</a></li>
-                                            <li><a href="/company-incorporation/private-limited-company">Private Limited Company</a></li>
+                                            <li><a href="/private-limited-company-registration">Private Limited Company</a></li>
                                             <li><a href="/company-incorporation/public-limited-company">Public Limited Company</a></li>
                                             <li><a href="/company-incorporation/one-person-company-registration">One Person Company (OPC)</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab4">Limited Liability Partnership (LLP)</a></li>
@@ -125,7 +125,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                     <div class="mega-split">
                                         <ul class="mega-split-col">
                                             <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab1">Company Compliance</a></li>
-                                            <li><a href="/company-incorporation/private-limited-company">Private Limited Compliance</a></li>
+                                            <li><a href="/private-limited-company-registration">Private Limited Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab2">Limited Liability Partnership (LLP) Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab3">One Person Company (OPC) Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab4">Partnership Firm Compliance</a></li>

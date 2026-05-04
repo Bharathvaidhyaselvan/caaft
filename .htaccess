@@ -32,9 +32,11 @@ RedirectMatch 301 ^/accounting-reporting/?$ /accounting-and-reporting-services
 
 Redirect 301 /new-business-registration-in-chennai.php /business-setup-registration/new-business-registration
 Redirect 301 /business-consultancy-company-registration-in-chennai.php /business-setup-registration/company-registration
-Redirect 301 /private-limited-registration-experts.php /company-incorporation/private-limited-company
-Redirect 301 /company-incorporation/private-limited-registration /company-incorporation/private-limited-company
-Redirect 301 /private-limited-registration /company-incorporation/private-limited-company
+Redirect 301 /private-limited-registration-experts.php /private-limited-company-registration
+Redirect 301 /company-incorporation/private-limited-registration /private-limited-company-registration
+Redirect 301 /private-limited-registration /private-limited-company-registration
+Redirect 301 /company-incorporation/private-limited-company /private-limited-company-registration
+Redirect 301 /private-limited-company /private-limited-company-registration
 Redirect 301 /msme-udyam-registration.php /business-setup-registration/msme-udyam-registration
 
 Redirect 301 /roc-compliance-services.php /compliance-regulatory/roc-compliance-services
