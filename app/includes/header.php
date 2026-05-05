@@ -93,6 +93,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'msme-udyam-registration') ? 'active':''; ?>
                                          <?= ($activePage == 'register-partnership-firm') ? 'active':''; ?>
                                          <?= ($activePage == 'register-sole-proprietorship') ? 'active':''; ?>
+                                         <?= ($activePage == 'fssai-food-licence-india') ? 'active':''; ?>
                                           <?= ($activePage == 'cfo-services') ? 'active':''; ?>
                                       ">Services</a>
 
@@ -112,7 +113,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                         <ul class="mega-split-col">
                                             <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab7">Other Registrations</a></li>
                                             <li><a href="/business-setup-registration/msme-udyam-registration">MSME / Udyam Registration</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab8">FSSAI Registration</a></li>
+                                            <li><a href="/fssai-food-licence-india">FSSAI Registration</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab9">Professional Tax Registration</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab10">EPF & ESI Registration & Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab11">Import Export Code (IEC)</a></li>
@@ -295,7 +296,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/business-setup-registration/company-registration">MSME/Udyam
                                                 Registration</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/business-setup-registration/company-registration">FSSAI</a>
+                                                href="/fssai-food-licence-india">FSSAI</a>
                                         </li>
 
                                         <li><a class="dropdown-item"
