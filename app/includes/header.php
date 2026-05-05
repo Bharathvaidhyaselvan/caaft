@@ -95,6 +95,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'register-sole-proprietorship') ? 'active':''; ?>
                                          <?= ($activePage == 'fssai-food-licence-india') ? 'active':''; ?>
                                          <?= ($activePage == 'professional-tax-return-filing') ? 'active':''; ?>
+                                         <?= ($activePage == 'epf-esi-registration-compliance') ? 'active':''; ?>
                                           <?= ($activePage == 'cfo-services') ? 'active':''; ?>
                                       ">Services</a>
 
@@ -116,7 +117,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a href="/business-setup-registration/msme-udyam-registration">MSME / Udyam Registration</a></li>
                                             <li><a href="/fssai-food-licence-india">FSSAI Registration</a></li>
                                             <li><a href="/professional-tax-return-filing">Professional Tax Registration</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab10">EPF & ESI Registration & Compliance</a></li>
+                                            <li><a href="/epf-esi-registration-compliance">EPF & ESI Registration & Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab11">Import Export Code (IEC)</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab12">Digital Signature Certificate (DSC)</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab13">12A & 80G Registration</a></li>
@@ -304,7 +305,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/professional-tax-return-filing">Professional
                                                 Tax</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/business-setup-registration/company-registration">Set Up
+                                                href="/epf-esi-registration-compliance">Set Up
                                                 and Administration of EPF & ESI</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/business-setup-registration/company-registration">Digital

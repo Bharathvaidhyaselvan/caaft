@@ -17,6 +17,7 @@ return [
     'register-sole-proprietorship' => 'pages/services/register-sole-proprietorship.php',
     'fssai-food-licence-india' => 'pages/services/fssai-food-licence-india.php',
     'professional-tax-return-filing' => 'pages/services/professional-tax-return-filing.php',
+    'epf-esi-registration-compliance' => 'pages/services/epf-esi-registration-compliance.php',
     'one-person-company-registration-online' => 'pages/services/one-person-company-registration.php',
     'gst/gst-cancellation-services' => 'pages/services/gst-cancellation-services.php',
     'gst-cancellation-services' => 'pages/services/gst-cancellation-services.php',

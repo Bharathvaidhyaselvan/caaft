@@ -45,6 +45,19 @@ declare(strict_types=1);
         .page-llp-registration .partnership-mistakes-item { background: #f9faf9; border-left: 2px solid var(--theme-color, #33b6ff); border-radius: 3px; padding: 12px 12px 11px; }
         .page-llp-registration .partnership-mistakes-item h3 { margin: 0 0 4px; color: #111827; font-size: 1rem; line-height: 1.35; font-weight: 700; }
         .page-llp-registration .partnership-mistakes-item p { margin: 0; color: #374151; font-size: 0.96rem; line-height: 1.55; font-weight: 500; }
+        .page-llp-registration .plc-docs-section { padding-top: 44px; padding-bottom: 44px; background: #ffffff; }
+        .page-llp-registration .plc-docs-title { margin: 0 0 22px; color: #1f2c40; font-size: clamp(1.5rem, 2.2vw, 2.1rem); line-height: 1.2; font-weight: 700; }
+        .page-llp-registration .plc-docs-cards-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+        .page-llp-registration .plc-docs-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px 22px 20px; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04); }
+        .page-llp-registration .plc-docs-card-head { display: flex; align-items: center; gap: 12px; padding-bottom: 14px; margin-bottom: 14px; border-bottom: 1px solid #e8edf2; }
+        .page-llp-registration .plc-docs-card-icon { width: 42px; height: 42px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; color: #ffffff; font-size: 1.05rem; flex-shrink: 0; }
+        .page-llp-registration .plc-docs-card-icon--violet { background: #7c3aed; }
+        .page-llp-registration .plc-docs-card-icon--amber { background: #f59e0b; }
+        .page-llp-registration .plc-docs-card h3 { margin: 0; font-size: 1.08rem; font-weight: 700; color: #1a202c; line-height: 1.35; }
+        .page-llp-registration .plc-docs-card-list { margin: 0; padding: 0; list-style: none; }
+        .page-llp-registration .plc-docs-card-list li { position: relative; padding: 6px 0 6px 16px; font-size: 0.97rem; line-height: 1.55; font-weight: 500; color: #4a5568; }
+        .page-llp-registration .plc-docs-card-list li::before { content: ""; position: absolute; left: 0; top: 0.92em; width: 7px; height: 7px; border-radius: 50%; background: var(--theme-color, #33b6ff); }
+        @media (max-width: 767.98px) { .page-llp-registration .plc-docs-cards-grid { grid-template-columns: 1fr; } }
         @media (max-width: 991.98px) { .page-llp-registration .plc-needs-grid { grid-template-columns: 1fr; } }
     </style>
     <?php include "header-top.php"; ?>
@@ -253,23 +266,37 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
     ?>
 
-    <?php
-    $caaft_challenges_heading_id = 'pt-docs-heading';
-    $caaft_challenges_title = 'Documents Required for Professional Tax Registration';
-    $caaft_challenges_intro = '';
-    $caaft_challenges_items = [
-        'PAN card of the business or applicant',
-        'Aadhaar card or valid government-issued identity proof',
-        'Business address proof — utility bill or lease agreement',
-        'Certificate of business registration — GST, ROC, or Shop Act registration',
-        'Recent passport-size photographs',
-        'Employee salary details and headcount data (for PTRC)',
-        'Business bank account information',
-        'Authorisation letter if filing through a consultant or agent',
-    ];
-    $caaft_challenges_outro = '';
-    include __DIR__ . '/../../includes/components/caaft-challenges.php';
-    ?>
+    <section class="plc-docs-section" aria-labelledby="pt-docs-heading">
+        <div class="container">
+            <h2 id="pt-docs-heading" class="plc-docs-title">Documents Required for Professional Tax Registration</h2>
+            <div class="plc-docs-cards-grid">
+                <article class="plc-docs-card">
+                    <div class="plc-docs-card-head">
+                        <span class="plc-docs-card-icon plc-docs-card-icon--violet" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
+                        <h3>For Business / Applicant</h3>
+                    </div>
+                    <ul class="plc-docs-card-list">
+                        <li>PAN card of the business or applicant</li>
+                        <li>Aadhaar card or valid government-issued identity proof</li>
+                        <li>Business address proof — utility bill or lease agreement</li>
+                        <li>Certificate of business registration — GST, ROC, or Shop Act registration</li>
+                        <li>Recent passport-size photographs</li>
+                    </ul>
+                </article>
+                <article class="plc-docs-card">
+                    <div class="plc-docs-card-head">
+                        <span class="plc-docs-card-icon plc-docs-card-icon--amber" aria-hidden="true"><i class="fas fa-users-cog"></i></span>
+                        <h3>For PTRC / Employer Setup</h3>
+                    </div>
+                    <ul class="plc-docs-card-list">
+                        <li>Employee salary details and headcount data (for PTRC)</li>
+                        <li>Business bank account information</li>
+                        <li>Authorisation letter if filing through a consultant or agent</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
 
     <section class="partnership-mistakes" aria-labelledby="pt-mistakes-heading">
         <div class="container">
