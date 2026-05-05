@@ -94,6 +94,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'register-partnership-firm') ? 'active':''; ?>
                                          <?= ($activePage == 'register-sole-proprietorship') ? 'active':''; ?>
                                          <?= ($activePage == 'fssai-food-licence-india') ? 'active':''; ?>
+                                         <?= ($activePage == 'professional-tax-return-filing') ? 'active':''; ?>
                                           <?= ($activePage == 'cfo-services') ? 'active':''; ?>
                                       ">Services</a>
 
@@ -114,7 +115,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab7">Other Registrations</a></li>
                                             <li><a href="/business-setup-registration/msme-udyam-registration">MSME / Udyam Registration</a></li>
                                             <li><a href="/fssai-food-licence-india">FSSAI Registration</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab9">Professional Tax Registration</a></li>
+                                            <li><a href="/professional-tax-return-filing">Professional Tax Registration</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab10">EPF & ESI Registration & Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab11">Import Export Code (IEC)</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab12">Digital Signature Certificate (DSC)</a></li>
@@ -300,7 +301,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                         </li>
 
                                         <li><a class="dropdown-item"
-                                                href="/business-setup-registration/company-registration">Professional
+                                                href="/professional-tax-return-filing">Professional
                                                 Tax</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/business-setup-registration/company-registration">Set Up
