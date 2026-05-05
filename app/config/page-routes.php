@@ -14,6 +14,7 @@ return [
     'company-incorporation/one-person-company-registration' => 'pages/services/one-person-company-registration.php',
     'llp-registration-services' => 'pages/services/llp-registration-services.php',
     'register-partnership-firm' => 'pages/services/register-partnership-firm.php',
+    'register-sole-proprietorship' => 'pages/services/register-sole-proprietorship.php',
     'one-person-company-registration-online' => 'pages/services/one-person-company-registration.php',
     'gst/gst-cancellation-services' => 'pages/services/gst-cancellation-services.php',
     'gst-cancellation-services' => 'pages/services/gst-cancellation-services.php',

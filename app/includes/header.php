@@ -92,6 +92,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                         <?= ($activePage == 'private-limited-registration-experts') ? 'active':''; ?>
                                          <?= ($activePage == 'msme-udyam-registration') ? 'active':''; ?>
                                          <?= ($activePage == 'register-partnership-firm') ? 'active':''; ?>
+                                         <?= ($activePage == 'register-sole-proprietorship') ? 'active':''; ?>
                                           <?= ($activePage == 'cfo-services') ? 'active':''; ?>
                                       ">Services</a>
 
@@ -106,7 +107,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a href="/one-person-company-registration">One Person Company (OPC)</a></li>
                                             <li><a href="/llp-registration-services">Limited Liability Partnership (LLP)</a></li>
                                             <li><a href="/register-partnership-firm">Partnership Firm</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab6">Sole Proprietorship</a></li>
+                                            <li><a href="/register-sole-proprietorship">Sole Proprietorship</a></li>
                                         </ul>
                                         <ul class="mega-split-col">
                                             <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab7">Other Registrations</a></li>
@@ -284,7 +285,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/register-partnership-firm">Partnership
                                                 Firm</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/business-setup-registration/company-registration">Sole
+                                                href="/register-sole-proprietorship">Sole
                                                 Proprietorship</a></li>
 
                                         <li><a class="link-extend dropdown-item"
