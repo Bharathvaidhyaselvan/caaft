@@ -91,6 +91,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                         <?= ($activePage == 'gst-registration-services') ? 'active':''; ?>
                                         <?= ($activePage == 'private-limited-registration-experts') ? 'active':''; ?>
                                          <?= ($activePage == 'msme-udyam-registration') ? 'active':''; ?>
+                                         <?= ($activePage == 'register-partnership-firm') ? 'active':''; ?>
                                           <?= ($activePage == 'cfo-services') ? 'active':''; ?>
                                       ">Services</a>
 
@@ -104,7 +105,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a href="/public-limited-company-registration">Public Limited Company</a></li>
                                             <li><a href="/one-person-company-registration">One Person Company (OPC)</a></li>
                                             <li><a href="/llp-registration-services">Limited Liability Partnership (LLP)</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab5">Partnership Firm</a></li>
+                                            <li><a href="/register-partnership-firm">Partnership Firm</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab6">Sole Proprietorship</a></li>
                                         </ul>
                                         <ul class="mega-split-col">
@@ -280,7 +281,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 Liability Partnership</a></li>
 
                                         <li><a class="dropdown-item"
-                                                href="/business-setup-registration/company-registration">Partnership
+                                                href="/register-partnership-firm">Partnership
                                                 Firm</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/business-setup-registration/company-registration">Sole
