@@ -98,6 +98,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'epf-esi-registration-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'iec-registration') ? 'active':''; ?>
                                          <?= ($activePage == 'digital-signature-certificate-registration') ? 'active':''; ?>
+                                         <?= ($activePage == '12a-80g-registration') ? 'active':''; ?>
                                           <?= ($activePage == 'cfo-services') ? 'active':''; ?>
                                       ">Services</a>
 
@@ -122,7 +123,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a href="/epf-esi-registration-compliance">EPF & ESI Registration & Compliance</a></li>
                                             <li><a href="/iec-registration">Import Export Code (IEC)</a></li>
                                             <li><a href="/digital-signature-certificate-registration">Digital Signature Certificate (DSC)</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab13">12A & 80G Registration</a></li>
+                                            <li><a href="/12a-80g-registration">12A & 80G Registration</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -316,7 +317,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/iec-registration">IEC
                                                 (Import Export Code)</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/business-setup-registration/company-registration">12A and
+                                                href="/12a-80g-registration">12A and
                                                 80G Registration</a></li>
 
                                     </ul>
