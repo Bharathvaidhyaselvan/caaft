@@ -1,11 +1,13 @@
 <footer class="footer-area footer-bg">
         <style>
-            .copyright-text .brevia-credit {
-                color: #ffffff;
+            .copyright-text a.brevia-credit,
+            .copyright-text a.brevia-credit:visited {
+                color: #ffffff !important;
                 transition: color 0.25s ease;
             }
-            .copyright-text .brevia-credit:hover {
-                color: #33b6ff;
+            .copyright-text a.brevia-credit:hover,
+            .copyright-text a.brevia-credit:focus {
+                color: #33b6ff !important;
             }
         </style>
         <div class="footer-widget">
