@@ -107,6 +107,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'winding-up-of-company') ? 'active':''; ?>
                                          <?= ($activePage == 'cfo-financial-management-services') ? 'active':''; ?>
                                          <?= ($activePage == 'budgeting-forecasting-services') ? 'active':''; ?>
+                                         <?= ($activePage == 'business-valuation-services') ? 'active':''; ?>
                                          <?= ($activePage == 'private-company-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'public-ltd-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'opc-annual-compliance') ? 'active':''; ?>
@@ -202,7 +203,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <a class="link-extend main_mesnus_colors menu-title-left" href="/advisory-and-cfo-services">ADVISORY & CFO SERVICES</a>
                                             <ul>
                                                 <li><a href="/budgeting-forecasting-services">Budgeting & Forecasting</a></li>
-                                                <li><a href="/compliance-regulatory/roc-compliance-services#parentVerticalTab2">Business Valuation</a></li>
+                                                <li><a href="/business-valuation-services">Business Valuation</a></li>
                                                 <li><a href="/compliance-regulatory/roc-compliance-services#parentVerticalTab3">Financial Assessment</a></li>
                                                 <li><a href="/compliance-regulatory/roc-compliance-services#parentVerticalTab4">Feasibility Study</a></li>
                                                 <li><a href="/cfo-financial-management-services">CFO & Financial Management</a></li>
@@ -359,7 +360,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/management-consultancy/services#parentVerticalTab3">Feasibility
                                                 Studies</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/management-consultancy/services#parentVerticalTab4">Business
+                                                href="/business-valuation-services">Business
                                                 Valuation</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/management-consultancy/services#parentVerticalTab5">Financial
