@@ -109,6 +109,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'budgeting-forecasting-services') ? 'active':''; ?>
                                          <?= ($activePage == 'business-valuation-services') ? 'active':''; ?>
                                          <?= ($activePage == 'financial-assessment-services') ? 'active':''; ?>
+                                         <?= ($activePage == 'feasibility-study') ? 'active':''; ?>
                                          <?= ($activePage == 'private-company-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'public-ltd-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'opc-annual-compliance') ? 'active':''; ?>
@@ -206,7 +207,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 <li><a href="/budgeting-forecasting-services">Budgeting & Forecasting</a></li>
                                                 <li><a href="/business-valuation-services">Business Valuation</a></li>
                                                 <li><a href="/financial-assessment-services">Financial Assessment</a></li>
-                                                <li><a href="/compliance-regulatory/roc-compliance-services#parentVerticalTab4">Feasibility Study</a></li>
+                                                <li><a href="/feasibility-study">Feasibility Study</a></li>
                                                 <li><a href="/cfo-financial-management-services">CFO & Financial Management</a></li>
                                                 <li><a href="/compliance-regulatory/roc-compliance-services#parentVerticalTab6">Payroll Management & Compliance</a></li>
                                             </ul>
@@ -358,8 +359,8 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/budgeting-forecasting-services">Budgeting
                                                 and Forecasting</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/management-consultancy/services#parentVerticalTab3">Feasibility
-                                                Studies</a></li>
+                                                href="/feasibility-study">Feasibility
+                                                Study</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/business-valuation-services">Business
                                                 Valuation</a></li>
