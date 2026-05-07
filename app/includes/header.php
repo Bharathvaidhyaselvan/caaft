@@ -110,6 +110,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'business-valuation-services') ? 'active':''; ?>
                                          <?= ($activePage == 'financial-assessment-services') ? 'active':''; ?>
                                          <?= ($activePage == 'feasibility-study') ? 'active':''; ?>
+                                         <?= ($activePage == 'payroll-management-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'private-company-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'public-ltd-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'opc-annual-compliance') ? 'active':''; ?>
@@ -209,7 +210,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 <li><a href="/financial-assessment-services">Financial Assessment</a></li>
                                                 <li><a href="/feasibility-study">Feasibility Study</a></li>
                                                 <li><a href="/cfo-financial-management-services">CFO & Financial Management</a></li>
-                                                <li><a href="/compliance-regulatory/roc-compliance-services#parentVerticalTab6">Payroll Management & Compliance</a></li>
+                                                <li><a href="/payroll-management-compliance">Payroll Management & Compliance</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -367,7 +368,9 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                         <li><a class="dropdown-item"
                                                 href="/financial-assessment-services">Financial
                                                 Assessment</a></li>
-                                        <!-- <li><a class="dropdown-item" href="/management-consultancy/services#parentVerticalTab6">Periodical Business Review Report</a></li> -->
+                                        <li><a class="dropdown-item"
+                                                href="/payroll-management-compliance">Payroll
+                                                Management & Compliance</a></li>
 
 
                                     </ul>
