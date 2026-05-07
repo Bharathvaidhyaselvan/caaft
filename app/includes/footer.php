@@ -1,4 +1,13 @@
- <footer class="footer-area footer-bg">
+<footer class="footer-area footer-bg">
+        <style>
+            .copyright-text .brevia-credit {
+                color: #ffffff;
+                transition: color 0.25s ease;
+            }
+            .copyright-text .brevia-credit:hover {
+                color: #33b6ff;
+            }
+        </style>
         <div class="footer-widget">
             <div class="container footer_container">
                 <div class="footer-widget-wrap pt-50 pb-30">
@@ -93,6 +102,7 @@
                             © Copyright 2026 - <a href="#">
                                 CAAFT Consultancy Services Private Limited.</a>
                             All Rights Reserved.
+                            <a class="brevia-credit" href="https://www.builtbybrevia.com" target="_blank" rel="noopener noreferrer">⚡Brevia Tech Solutions</a>
 
                         </p>
                     </div>
