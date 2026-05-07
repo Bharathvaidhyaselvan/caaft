@@ -23,6 +23,7 @@ return [
     '12a-80g-registration' => 'pages/services/12a-80g-registration.php',
     'private-company-compliance' => 'pages/services/private-company-compliance.php',
     'public-ltd-compliance' => 'pages/services/public-ltd-compliance.php',
+    'opc-annual-compliance' => 'pages/services/opc-annual-compliance.php',
     'one-person-company-registration-online' => 'pages/services/one-person-company-registration.php',
     'gst/gst-cancellation-services' => 'pages/services/gst-cancellation-services.php',
     'gst-cancellation-services' => 'pages/services/gst-cancellation-services.php',

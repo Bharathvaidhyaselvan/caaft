@@ -101,6 +101,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == '12a-80g-registration') ? 'active':''; ?>
                                          <?= ($activePage == 'private-company-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'public-ltd-compliance') ? 'active':''; ?>
+                                         <?= ($activePage == 'opc-annual-compliance') ? 'active':''; ?>
                                           <?= ($activePage == 'cfo-services') ? 'active':''; ?>
                                       ">Services</a>
 
@@ -137,7 +138,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab1">Company Compliance</a></li>
                                             <li><a href="/private-company-compliance">Private Limited Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab2">Limited Liability Partnership (LLP) Compliance</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab3">One Person Company (OPC) Compliance</a></li>
+                                            <li><a href="/opc-annual-compliance">One Person Company (OPC) Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab4">Partnership Firm Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab5">Sole Proprietorship Compliance</a></li>
                                             <li><a href="/public-ltd-compliance">Public Limited Compliance</a></li>
