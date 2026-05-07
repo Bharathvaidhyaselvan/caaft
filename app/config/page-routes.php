@@ -32,6 +32,7 @@ return [
     'roc-compliance-filing' => 'pages/services/roc-compliance-filing.php',
     'winding-up-of-company' => 'pages/services/winding-up-of-company.php',
     'cfo-financial-management-services' => 'pages/services/cfo-financial-management-services.php',
+    'budgeting-forecasting-services' => 'pages/services/budgeting-forecasting-services.php',
     'private-company-compliance' => 'pages/services/private-company-compliance.php',
     'public-ltd-compliance' => 'pages/services/public-ltd-compliance.php',
     'opc-annual-compliance' => 'pages/services/opc-annual-compliance.php',
