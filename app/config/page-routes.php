@@ -34,6 +34,7 @@ return [
     'cfo-financial-management-services' => 'pages/services/cfo-financial-management-services.php',
     'budgeting-forecasting-services' => 'pages/services/budgeting-forecasting-services.php',
     'business-valuation-services' => 'pages/services/business-valuation-services.php',
+    'financial-assessment-services' => 'pages/services/financial-assessment-services.php',
     'private-company-compliance' => 'pages/services/private-company-compliance.php',
     'public-ltd-compliance' => 'pages/services/public-ltd-compliance.php',
     'opc-annual-compliance' => 'pages/services/opc-annual-compliance.php',
