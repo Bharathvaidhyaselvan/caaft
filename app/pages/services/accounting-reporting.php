@@ -364,7 +364,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 'label' => 'Call us',
                 'values' => [
                     ['href' => 'tel:+918870078870', 'text' => '+91 88700 78870'],
-                    ['href' => 'tel:+919944617891', 'text' => '+91 99446 17891'],
+                    ['href' => 'tel:+919944617891', 'text' => '+91 88700 02354'],
                 ],
             ],
             [

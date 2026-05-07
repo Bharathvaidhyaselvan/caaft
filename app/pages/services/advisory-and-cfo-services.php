@@ -265,7 +265,7 @@ $caaft_enquiry_input_id_prefix = 'ac';
             ['href' => '#caaft-ac-enquiry-form-inner', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Share Your Business Goals'],
         ];
         $caaft_git_cards = [
-            ['icon_class' => 'fas fa-phone', 'label' => 'Call us', 'values' => [['href' => 'tel:+918870078870', 'text' => '+91 88700 78870'], ['href' => 'tel:+919944617891', 'text' => '+91 99446 17891']]],
+            ['icon_class' => 'fas fa-phone', 'label' => 'Call us', 'values' => [['href' => 'tel:+918870078870', 'text' => '+91 88700 78870'], ['href' => 'tel:+919944617891', 'text' => '+91 88700 02354']]],
             ['icon_class' => 'fab fa-whatsapp', 'label' => 'WhatsApp us', 'values' => [['href' => 'https://api.whatsapp.com/send?phone=918870078870', 'text' => '+91 88700 78870', 'target' => '_blank', 'rel' => 'noopener noreferrer']], 'hint' => 'Usually responds within the hour'],
             ['icon_class' => 'fas fa-envelope', 'label' => 'Email us', 'values' => [['href' => 'mailto:info@caaft.com', 'text' => 'info@caaft.com'], ['href' => 'mailto:services@caaft.com', 'text' => 'services@caaft.com']]],
         ];
