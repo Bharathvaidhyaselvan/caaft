@@ -105,6 +105,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'registered-office-change-india') ? 'active':''; ?>
                                          <?= ($activePage == 'roc-compliance-filing') ? 'active':''; ?>
                                          <?= ($activePage == 'winding-up-of-company') ? 'active':''; ?>
+                                         <?= ($activePage == 'cfo-financial-management-services') ? 'active':''; ?>
                                          <?= ($activePage == 'private-company-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'public-ltd-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'opc-annual-compliance') ? 'active':''; ?>
@@ -203,7 +204,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 <li><a href="/compliance-regulatory/roc-compliance-services#parentVerticalTab2">Business Valuation</a></li>
                                                 <li><a href="/compliance-regulatory/roc-compliance-services#parentVerticalTab3">Financial Assessment</a></li>
                                                 <li><a href="/compliance-regulatory/roc-compliance-services#parentVerticalTab4">Feasibility Study</a></li>
-                                                <li><a href="/compliance-regulatory/roc-compliance-services#parentVerticalTab5">CFO & Financial Management</a></li>
+                                                <li><a href="/cfo-financial-management-services">CFO & Financial Management</a></li>
                                                 <li><a href="/compliance-regulatory/roc-compliance-services#parentVerticalTab6">Payroll Management & Compliance</a></li>
                                             </ul>
                                         </div>
