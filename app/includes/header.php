@@ -108,7 +108,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                           <?= ($activePage == 'cfo-services') ? 'active':''; ?>
                                       ">Services</a>
 
-                            <ul class="mega-menu row" style="padding: 14px !important; background: #05050a url('/assets/img/mega-menu-bgg.jpeg') no-repeat center center; background-size: cover;">
+                            <ul class="mega-menu row" style="padding: 14px !important; background-color: #05050a !important; background-image: url('/assets/img/menu/mega-menu.jpeg?v=3') !important; background-repeat: no-repeat !important; background-position: center center !important; background-size: cover !important;">
                                 <li class="menu-has-sub col3">
                                     <a class="link-extend main_mesnus_colors menu-title-center" href="/business-setup-and-registration">BUSINESS SETUP & REGISTRATION</a>
                                     <div class="mega-split">
