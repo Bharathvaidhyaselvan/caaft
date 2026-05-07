@@ -99,6 +99,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'iec-registration') ? 'active':''; ?>
                                          <?= ($activePage == 'digital-signature-certificate-registration') ? 'active':''; ?>
                                          <?= ($activePage == '12a-80g-registration') ? 'active':''; ?>
+                                         <?= ($activePage == 'private-company-compliance') ? 'active':''; ?>
                                           <?= ($activePage == 'cfo-services') ? 'active':''; ?>
                                       ">Services</a>
 
@@ -133,7 +134,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                     <div class="mega-split">
                                         <ul class="mega-split-col">
                                             <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab1">Company Compliance</a></li>
-                                            <li><a href="/private-limited-company-registration">Private Limited Compliance</a></li>
+                                            <li><a href="/private-company-compliance">Private Limited Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab2">Limited Liability Partnership (LLP) Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab3">One Person Company (OPC) Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab4">Partnership Firm Compliance</a></li>
@@ -319,6 +320,9 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                         <li><a class="dropdown-item"
                                                 href="/12a-80g-registration">12A and
                                                 80G Registration</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="/private-company-compliance">Private Limited
+                                                Compliance</a></li>
 
                                     </ul>
                                 </li>

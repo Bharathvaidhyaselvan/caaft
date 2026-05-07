@@ -21,6 +21,7 @@ return [
     'iec-registration' => 'pages/services/iec-registration.php',
     'digital-signature-certificate-registration' => 'pages/services/digital-signature-certificate-registration.php',
     '12a-80g-registration' => 'pages/services/12a-80g-registration.php',
+    'private-company-compliance' => 'pages/services/private-company-compliance.php',
     'one-person-company-registration-online' => 'pages/services/one-person-company-registration.php',
     'gst/gst-cancellation-services' => 'pages/services/gst-cancellation-services.php',
     'gst-cancellation-services' => 'pages/services/gst-cancellation-services.php',
