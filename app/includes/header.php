@@ -102,6 +102,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'private-company-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'public-ltd-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'opc-annual-compliance') ? 'active':''; ?>
+                                         <?= ($activePage == 'llp-annual-compliance') ? 'active':''; ?>
                                           <?= ($activePage == 'cfo-services') ? 'active':''; ?>
                                       ">Services</a>
 
@@ -137,7 +138,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                         <ul class="mega-split-col">
                                             <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab1">Company Compliance</a></li>
                                             <li><a href="/private-company-compliance">Private Limited Compliance</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab2">Limited Liability Partnership (LLP) Compliance</a></li>
+                                            <li><a href="/llp-annual-compliance">Limited Liability Partnership (LLP) Compliance</a></li>
                                             <li><a href="/opc-annual-compliance">One Person Company (OPC) Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab4">Partnership Firm Compliance</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab5">Sole Proprietorship Compliance</a></li>
@@ -376,7 +377,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/compliance-regulatory/roc-compliance-services#parentVerticalTab3">One Person Company
                                                 Compliance</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/compliance-regulatory/roc-compliance-services#parentVerticalTab4">LLP Compliance</a>
+                                                href="/llp-annual-compliance">LLP Compliance</a>
                                         </li>
                                         <li><a class="dropdown-item"
                                                 href="/compliance-regulatory/roc-compliance-services#parentVerticalTab5">Partnership Firm

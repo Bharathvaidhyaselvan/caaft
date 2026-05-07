@@ -13,6 +13,7 @@ return [
     'one-person-company-registration' => 'pages/services/one-person-company-registration.php',
     'company-incorporation/one-person-company-registration' => 'pages/services/one-person-company-registration.php',
     'llp-registration-services' => 'pages/services/llp-registration-services.php',
+    'llp-annual-compliance' => 'pages/services/llp-annual-compliance.php',
     'register-partnership-firm' => 'pages/services/register-partnership-firm.php',
     'register-sole-proprietorship' => 'pages/services/register-sole-proprietorship.php',
     'fssai-food-licence-india' => 'pages/services/fssai-food-licence-india.php',
