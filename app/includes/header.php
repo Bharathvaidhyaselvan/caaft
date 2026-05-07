@@ -100,6 +100,8 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'digital-signature-certificate-registration') ? 'active':''; ?>
                                          <?= ($activePage == '12a-80g-registration') ? 'active':''; ?>
                                          <?= ($activePage == 'din-kyc-filing') ? 'active':''; ?>
+                                         <?= ($activePage == 'add-remove-director-service') ? 'active':''; ?>
+                                         <?= ($activePage == 'increase-authorised-share-capital') ? 'active':''; ?>
                                          <?= ($activePage == 'private-company-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'public-ltd-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'opc-annual-compliance') ? 'active':''; ?>
@@ -150,8 +152,8 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                         <ul class="mega-split-col">
                                             <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab7">ROC Compliance</a></li>
                                             <li><a href="/din-kyc-filing">Director KYC (DIR-3 KYC Filing)</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab8">Add / Remove Director</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab9">Increase in Authorized Capital</a></li>
+                                            <li><a href="/add-remove-director-service">Add / Remove Director</a></li>
+                                            <li><a href="/increase-authorised-share-capital">Increase in Authorized Capital</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab10">Registered Office Change</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab11">Miscellaneous ROC Filings</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab12">Company Closure / Winding Up</a></li>
@@ -395,10 +397,10 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/din-kyc-filing">DIR-3 Director
                                                 KYC</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/compliance-regulatory/roc-compliance-services#parentVerticalTab8">Add/Remove
+                                                href="/add-remove-director-service">Add/Remove
                                                 Director</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/compliance-regulatory/roc-compliance-services#parentVerticalTab9">Authorized Capital
+                                                href="/increase-authorised-share-capital">Authorized Capital
                                                 Increase</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/compliance-regulatory/roc-compliance-services#parentVerticalTab10">Registered Office
