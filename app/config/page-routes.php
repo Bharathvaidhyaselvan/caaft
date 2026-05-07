@@ -17,6 +17,7 @@ return [
     'register-partnership-firm' => 'pages/services/register-partnership-firm.php',
     'partnership-firm-compliance' => 'pages/services/partnership-firm-compliance.php',
     'register-sole-proprietorship' => 'pages/services/register-sole-proprietorship.php',
+    'msme-udyam-registration' => 'pages/services/msme-udyam-registration.php',
     'sole-proprietorship-compliance' => 'pages/services/sole-proprietorship-compliance.php',
     'fssai-food-licence-india' => 'pages/services/fssai-food-licence-india.php',
     'professional-tax-return-filing' => 'pages/services/professional-tax-return-filing.php',

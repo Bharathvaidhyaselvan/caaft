@@ -123,7 +123,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                         </ul>
                                         <ul class="mega-split-col">
                                             <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab7">Other Registrations</a></li>
-                                            <li><a href="/business-setup-registration/msme-udyam-registration">MSME / Udyam Registration</a></li>
+                                            <li><a href="/msme-udyam-registration">MSME / Udyam Registration</a></li>
                                             <li><a href="/fssai-food-licence-india">FSSAI Registration</a></li>
                                             <li><a href="/professional-tax-return-filing">Professional Tax Registration</a></li>
                                             <li><a href="/epf-esi-registration-compliance">EPF & ESI Registration & Compliance</a></li>
@@ -304,7 +304,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/business-setup-registration/company-registration">Other
                                                 Registrations and Licenses </a></li>
                                         <li><a class="dropdown-item"
-                                                href="/business-setup-registration/company-registration">MSME/Udyam
+                                                href="/msme-udyam-registration">MSME/Udyam
                                                 Registration</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/fssai-food-licence-india">FSSAI</a>
