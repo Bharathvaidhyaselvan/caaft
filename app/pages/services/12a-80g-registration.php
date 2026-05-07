@@ -395,8 +395,8 @@ declare(strict_types=1);
     <?php
     $caaft_cta_section_id = 'get-in-touch';
     $caaft_cta_heading_id = '12a80g-cta-heading';
-    $caaft_cta_title = 'Start Your NGO Registration Now';
-    $caaft_cta_text = '';
+    $caaft_cta_title = 'Ready to Secure Your NGO\'s Tax Status and Funding Future?';
+    $caaft_cta_text = 'A 12A and 80G registration ensures that every rupee your organisation earns is protected from tax liability — and every rupee a donor contributes is backed by a legitimate deduction claim — making your NGO credible, compliant, and fundable from the ground up. Whether applying for the first time, revalidating a pre-2021 registration, or managing an upcoming renewal — CAAFT delivers accurate, end-to-end 12A and 80G registration services for NGOs, public charitable trusts, and Section 8 companies across India.';
     $caaft_cta_button_label = 'Start Your NGO Registration Now';
     $caaft_cta_button_href = '/contact#contact_us';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
