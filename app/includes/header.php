@@ -104,6 +104,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'opc-annual-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'llp-annual-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'partnership-firm-compliance') ? 'active':''; ?>
+                                         <?= ($activePage == 'sole-proprietorship-compliance') ? 'active':''; ?>
                                           <?= ($activePage == 'cfo-services') ? 'active':''; ?>
                                       ">Services</a>
 
@@ -142,7 +143,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a href="/llp-annual-compliance">Limited Liability Partnership (LLP) Compliance</a></li>
                                             <li><a href="/opc-annual-compliance">One Person Company (OPC) Compliance</a></li>
                                             <li><a href="/partnership-firm-compliance">Partnership Firm Compliance</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab5">Sole Proprietorship Compliance</a></li>
+                                            <li><a href="/sole-proprietorship-compliance">Sole Proprietorship Compliance</a></li>
                                             <li><a href="/public-ltd-compliance">Public Limited Compliance</a></li>
                                         </ul>
                                         <ul class="mega-split-col">
@@ -384,7 +385,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/partnership-firm-compliance">Partnership Firm
                                                 Compliance</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/compliance-regulatory/roc-compliance-services#parentVerticalTab6">Sole
+                                                href="/sole-proprietorship-compliance">Sole
                                                 Proprietorship Compliance</a></li>
                                         <li><a class="link-extend extends_links dropdown-item"
                                                 href="/compliance-regulatory/roc-compliance-services#parentVerticalTab7">Other ROC
