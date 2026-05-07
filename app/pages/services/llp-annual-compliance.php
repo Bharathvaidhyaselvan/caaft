@@ -33,6 +33,11 @@ declare(strict_types=1);
         .page-llp-registration .llp-vs-table { width: 100%; border-collapse: collapse; font-size: 0.98rem; background: #ffffff; }
         .page-llp-registration .llp-vs-table th, .page-llp-registration .llp-vs-table td { border: 1px solid #dfe5ec; padding: 12px 14px; vertical-align: top; line-height: 1.5; text-align: left; }
         .page-llp-registration .llp-vs-table thead th { background: #f6f8fb; color: #1f2c40; font-weight: 700; }
+        .page-llp-registration .llp-nonroc-list-wrap { margin-top: 12px; border: 1px solid #dfe5ec; border-radius: 8px; background: #ffffff; overflow: hidden; }
+        .page-llp-registration .llp-nonroc-list { margin: 0; padding: 0; list-style: none; }
+        .page-llp-registration .llp-nonroc-list li { position: relative; margin: 0; padding: 12px 14px 12px 30px; border-bottom: 1px solid #e7edf3; color: #374151; font-size: 0.97rem; line-height: 1.55; font-weight: 500; }
+        .page-llp-registration .llp-nonroc-list li:last-child { border-bottom: 0; }
+        .page-llp-registration .llp-nonroc-list li::before { content: ""; position: absolute; left: 14px; top: 1.06em; width: 6px; height: 6px; border-radius: 50%; background: var(--theme-color, #33b6ff); }
         .page-llp-registration .compliance-calendar-wrap { border-radius: 12px; background: #ffffff; }
         .page-llp-registration .compliance-calendar-title { margin: 0 0 8px; color: #1f2c40; font-size: clamp(1.45rem, 2vw, 2rem); line-height: 1.25; font-weight: 700; text-transform: none; }
         .page-llp-registration .compliance-calendar-intro { margin: 0 0 18px; color: #5f6b7a; font-size: 1rem; line-height: 1.55; font-weight: 500; }
@@ -210,22 +215,17 @@ declare(strict_types=1);
                     </tbody>
                 </table>
             </div>
-            <h3 class="partnership-mistakes-title" style="margin-top: 20px;">Non-Registrar Compliance Obligations</h3>
-            <?php
-            $caaft_challenges_heading_id = 'llp-nonroc-heading';
-            $caaft_challenges_title = '';
-            $caaft_challenges_intro = '';
-            $caaft_challenges_items = [
-                'GST Return Filing — Monthly or quarterly for GST-registered LLPs through the GSTN portal',
-                'Tax Audit (Form 3CD) — Annual, where turnover exceeds ₹1 crore (business) or ₹50 lakh (profession)',
-                'TDS Compliance — Monthly deduction and quarterly return filing through the Income Tax Department where applicable',
-                'Provident Fund (PF) — Monthly, for LLPs with 20 or more employees under EPFO',
-                'ESI Compliance — Monthly, for LLPs with 10 or more employees under ESIC',
-                'Professional Tax — Monthly or annual, applicable based on the state of operation',
-            ];
-            $caaft_challenges_outro = '';
-            include __DIR__ . '/../../includes/components/caaft-challenges.php';
-            ?>
+            <h3 class="partnership-mistakes-title" style="margin-top: 60px;">Non-Registrar Compliance Obligations</h3>
+            <div class="llp-nonroc-list-wrap" aria-label="Non-Registrar Compliance Obligations">
+                <ul class="llp-nonroc-list">
+                    <li>GST Return Filing — Monthly or quarterly for GST-registered LLPs through the GSTN portal</li>
+                    <li>Tax Audit (Form 3CD) — Annual, where turnover exceeds ₹1 crore (business) or ₹50 lakh (profession)</li>
+                    <li>TDS Compliance — Monthly deduction and quarterly return filing through the Income Tax Department where applicable</li>
+                    <li>Provident Fund (PF) — Monthly, for LLPs with 20 or more employees under EPFO</li>
+                    <li>ESI Compliance — Monthly, for LLPs with 10 or more employees under ESIC</li>
+                    <li>Professional Tax — Monthly or annual, applicable based on the state of operation</li>
+                </ul>
+            </div>
         </div>
     </section>
 
