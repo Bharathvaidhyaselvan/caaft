@@ -104,6 +104,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'increase-authorised-share-capital') ? 'active':''; ?>
                                          <?= ($activePage == 'registered-office-change-india') ? 'active':''; ?>
                                          <?= ($activePage == 'roc-compliance-filing') ? 'active':''; ?>
+                                         <?= ($activePage == 'winding-up-of-company') ? 'active':''; ?>
                                          <?= ($activePage == 'private-company-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'public-ltd-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'opc-annual-compliance') ? 'active':''; ?>
@@ -158,7 +159,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a href="/increase-authorised-share-capital">Increase in Authorized Capital</a></li>
                                             <li><a href="/registered-office-change-india">Registered Office Change</a></li>
                                             <li><a href="/roc-compliance-filing">Miscellaneous ROC Filings</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab12">Company Closure / Winding Up</a></li>
+                                            <li><a href="/winding-up-of-company">Company Closure / Winding Up</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -411,7 +412,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/roc-compliance-filing">Miscellaneous ROC
                                                 Filings</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/compliance-regulatory/roc-compliance-services#parentVerticalTab12">Winding Up Of A
+                                                href="/winding-up-of-company">Winding Up Of A
                                                 Company</a></li>
                                     </ul>
                                 </li>
