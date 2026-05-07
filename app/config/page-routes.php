@@ -28,6 +28,7 @@ return [
     'din-kyc-filing' => 'pages/services/din-kyc-filing.php',
     'add-remove-director-service' => 'pages/services/add-remove-director-service.php',
     'increase-authorised-share-capital' => 'pages/services/increase-authorised-share-capital.php',
+    'registered-office-change-india' => 'pages/services/registered-office-change-india.php',
     'private-company-compliance' => 'pages/services/private-company-compliance.php',
     'public-ltd-compliance' => 'pages/services/public-ltd-compliance.php',
     'opc-annual-compliance' => 'pages/services/opc-annual-compliance.php',

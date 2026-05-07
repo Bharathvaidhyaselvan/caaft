@@ -102,6 +102,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                          <?= ($activePage == 'din-kyc-filing') ? 'active':''; ?>
                                          <?= ($activePage == 'add-remove-director-service') ? 'active':''; ?>
                                          <?= ($activePage == 'increase-authorised-share-capital') ? 'active':''; ?>
+                                         <?= ($activePage == 'registered-office-change-india') ? 'active':''; ?>
                                          <?= ($activePage == 'private-company-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'public-ltd-compliance') ? 'active':''; ?>
                                          <?= ($activePage == 'opc-annual-compliance') ? 'active':''; ?>
@@ -154,7 +155,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a href="/din-kyc-filing">Director KYC (DIR-3 KYC Filing)</a></li>
                                             <li><a href="/add-remove-director-service">Add / Remove Director</a></li>
                                             <li><a href="/increase-authorised-share-capital">Increase in Authorized Capital</a></li>
-                                            <li><a href="/business-setup-registration/company-registration#parentVerticalTab10">Registered Office Change</a></li>
+                                            <li><a href="/registered-office-change-india">Registered Office Change</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab11">Miscellaneous ROC Filings</a></li>
                                             <li><a href="/business-setup-registration/company-registration#parentVerticalTab12">Company Closure / Winding Up</a></li>
                                         </ul>
@@ -403,7 +404,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/increase-authorised-share-capital">Authorized Capital
                                                 Increase</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/compliance-regulatory/roc-compliance-services#parentVerticalTab10">Registered Office
+                                                href="/registered-office-change-india">Registered Office
                                                 Change</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/compliance-regulatory/roc-compliance-services#parentVerticalTab11">Miscellaneous ROC
