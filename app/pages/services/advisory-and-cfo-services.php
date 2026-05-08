@@ -209,13 +209,13 @@ $caaft_enquiry_input_id_prefix = 'ac';
         $caaft_card_section_intro = "Whether you need a strategic financial partner for the long term or expert support for a specific business decision, CAAFT's advisory services are built around what your business actually needs - not a fixed package.";
         $caaft_card_grid_col_class = 'col-md-6 col-lg-4';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-user-tie', 'title' => 'CFO Services', 'text' => 'Senior CA-led virtual CFO support covering financial oversight, cash flow management, investor reporting, and strategic decision-making - without the cost of a full-time hire.'],
-            ['icon_class' => 'fas fa-chart-area', 'title' => 'Budgeting & Forecasting', 'text' => 'Detailed, realistic financial budgets and forward-looking forecasts that give your business a clear financial roadmap - and a benchmark to measure performance against.'],
-            ['icon_class' => 'fas fa-balance-scale', 'title' => 'Business Valuation', 'text' => 'Rigorous, methodology-driven valuation of your business - for fundraising, acquisitions, partner buyouts, ESOPs, or any transaction where an accurate, defensible number matters.'],
-            ['icon_class' => 'fas fa-stethoscope', 'title' => 'Financial Assessment', 'text' => "A thorough diagnostic of your business's financial health - identifying strengths, gaps, inefficiencies, and risks across your P&L, balance sheet, and cash flow."],
-            ['icon_class' => 'fas fa-search', 'title' => 'Feasibility Study', 'text' => 'Structured analysis of a new business, project, or investment - assessing market viability, financial projections, risk factors, and whether the opportunity is worth pursuing.'],
-            ['icon_class' => 'fas fa-file-invoice-dollar', 'title' => 'CFO & Financial Management', 'text' => 'Ongoing financial leadership for growing businesses - covering month-end reporting, KPI tracking, and board-ready management accounts to keep your finances sharp and decision-ready.'],
-            ['icon_class' => 'fas fa-money-check-alt', 'title' => 'Payroll Management & Compliance', 'text' => 'End-to-end payroll processing - from salary computation and TDS deductions to PF/ESI contributions and statutory compliance - so your team gets paid accurately and on time, every time.'],
+            ['icon_class' => 'fas fa-user-tie', 'title' => 'CFO Services', 'text' => 'Senior CA-led virtual CFO support covering financial oversight, cash flow management, investor reporting, and strategic decision-making - without the cost of a full-time hire.', 'href' => '/cfo-financial-management-services'],
+            ['icon_class' => 'fas fa-chart-area', 'title' => 'Budgeting & Forecasting', 'text' => 'Detailed, realistic financial budgets and forward-looking forecasts that give your business a clear financial roadmap - and a benchmark to measure performance against.', 'href' => '/budgeting-forecasting-services'],
+            ['icon_class' => 'fas fa-balance-scale', 'title' => 'Business Valuation', 'text' => 'Rigorous, methodology-driven valuation of your business - for fundraising, acquisitions, partner buyouts, ESOPs, or any transaction where an accurate, defensible number matters.', 'href' => '/business-valuation-services'],
+            ['icon_class' => 'fas fa-stethoscope', 'title' => 'Financial Assessment', 'text' => "A thorough diagnostic of your business's financial health - identifying strengths, gaps, inefficiencies, and risks across your P&L, balance sheet, and cash flow.", 'href' => '/financial-assessment-services'],
+            ['icon_class' => 'fas fa-search', 'title' => 'Feasibility Study', 'text' => 'Structured analysis of a new business, project, or investment - assessing market viability, financial projections, risk factors, and whether the opportunity is worth pursuing.', 'href' => '/feasibility-study'],
+            ['icon_class' => 'fas fa-file-invoice-dollar', 'title' => 'CFO & Financial Management', 'text' => 'Ongoing financial leadership for growing businesses - covering month-end reporting, KPI tracking, and board-ready management accounts to keep your finances sharp and decision-ready.', 'href' => '/cfo-financial-management-services'],
+            ['icon_class' => 'fas fa-money-check-alt', 'title' => 'Payroll Management & Compliance', 'text' => 'End-to-end payroll processing - from salary computation and TDS deductions to PF/ESI contributions and statutory compliance - so your team gets paid accurately and on time, every time.', 'href' => '/payroll-management-compliance'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
@@ -298,4 +298,3 @@ $caaft_enquiry_input_id_prefix = 'ac';
     <?php include "footer-bottom.php"; ?>
 </body>
 </html>
-

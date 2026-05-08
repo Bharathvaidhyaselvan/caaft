@@ -125,7 +125,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                     <a class="link-extend main_mesnus_colors menu-title-center" href="/business-setup-and-registration">BUSINESS SETUP & REGISTRATION</a>
                                     <div class="mega-split">
                                         <ul class="mega-split-col">
-                                            <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab1">Company Incorporation</a></li>
+                                            <li><a class="link-extend extends_links" href="/business-setup-and-registration">Company Incorporation</a></li>
                                             <li><a href="/private-limited-company-registration">Private Limited Company</a></li>
                                             <li><a href="/public-limited-company-registration">Public Limited Company</a></li>
                                             <li><a href="/one-person-company-registration">One Person Company (OPC)</a></li>
@@ -134,7 +134,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a href="/register-sole-proprietorship">Sole Proprietorship</a></li>
                                         </ul>
                                         <ul class="mega-split-col">
-                                            <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab7">Other Registrations</a></li>
+                                            <li><a class="link-extend extends_links" href="/business-setup-and-registration">Other Registrations</a></li>
                                             <li><a href="/msme-udyam-registration">MSME / Udyam Registration</a></li>
                                             <li><a href="/fssai-food-licence-india">FSSAI Registration</a></li>
                                             <li><a href="/professional-tax-return-filing">Professional Tax Registration</a></li>
@@ -150,7 +150,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                     <a class="link-extend main_mesnus_colors menu-title-center" href="/compliance-and-regulatory-services">COMPLIANCE & REGULATORY</a>
                                     <div class="mega-split">
                                         <ul class="mega-split-col">
-                                            <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab1">Company Compliance</a></li>
+                                            <li><a class="link-extend extends_links" href="/compliance-and-regulatory-services">Company Compliance</a></li>
                                             <li><a href="/private-company-compliance">Private Limited Compliance</a></li>
                                             <li><a href="/llp-annual-compliance">Limited Liability Partnership (LLP) Compliance</a></li>
                                             <li><a href="/opc-annual-compliance">One Person Company (OPC) Compliance</a></li>
@@ -159,7 +159,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                             <li><a href="/public-ltd-compliance">Public Limited Compliance</a></li>
                                         </ul>
                                         <ul class="mega-split-col">
-                                            <li><a class="link-extend extends_links" href="/business-setup-registration/company-registration#parentVerticalTab7">ROC Compliance</a></li>
+                                            <li><a class="link-extend extends_links" href="/compliance-and-regulatory-services">ROC Compliance</a></li>
                                             <li><a href="/din-kyc-filing">Director KYC (DIR-3 KYC Filing)</a></li>
                                             <li><a href="/add-remove-director-service">Add / Remove Director</a></li>
                                             <li><a href="/increase-authorised-share-capital">Increase in Authorized Capital</a></li>
@@ -262,10 +262,10 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 and Assessment Support</a></li>
 
                                         <li><a class=" link-extend extends_links dropdown-item"
-                                                href="/taxation/gst-income-tax-services#parentVerticalTab6">GST
+                                                href="/taxation-services">GST
                                                 Services</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/taxation/gst-income-tax-services#parentVerticalTab6">GST
+                                                href="/gst/gst-registration">GST
                                                 Registration</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/gst/gst-lut-filing">GST
@@ -290,16 +290,16 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                     <ul class="dropdown-menu">
 
                                         <li><a class="link-extend dropdown-item"
-                                                href="/business-setup-registration/company-registration">Business
+                                                href="/business-setup-and-registration">Business
                                                 Incorporation Services</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/business-setup-registration/company-registration">Private
+                                                href="/private-limited-company-registration">Private
                                                 Limited Company</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/business-setup-registration/company-registration">Public
+                                                href="/public-limited-company-registration">Public
                                                 Limited Company</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/business-setup-registration/company-registration">One
+                                                href="/one-person-company-registration">One
                                                 Person Company</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/llp-registration-services">Limited
@@ -313,7 +313,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 Proprietorship</a></li>
 
                                         <li><a class="link-extend dropdown-item"
-                                                href="/business-setup-registration/company-registration">Other
+                                                href="/business-setup-and-registration">Other
                                                 Registrations and Licenses </a></li>
                                         <li><a class="dropdown-item"
                                                 href="/msme-udyam-registration">MSME/Udyam
@@ -337,24 +337,18 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                         <li><a class="dropdown-item"
                                                 href="/12a-80g-registration">12A and
                                                 80G Registration</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="/private-company-compliance">Private Limited
-                                                Compliance</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="/public-ltd-compliance">Public Limited
-                                                Compliance</a></li>
 
                                     </ul>
                                 </li>
 
                                 <li class="dropdown-submenu">
                                     <a class="dropdown-item dropdown-toggle main_mesnus_colors"
-                                        href="business-management-consultancy-services.php">Management Consultancy
+                                        href="/advisory-and-cfo-services">Advisory &amp; CFO
                                         Services</a>
                                     <ul class="dropdown-menu">
 
                                         <li><a class="dropdown-item"
-                                                href="/management-consultancy/services#parentVerticalTab1">CFO
+                                                href="/cfo-financial-management-services">CFO
                                                 Services</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/budgeting-forecasting-services">Budgeting
@@ -381,16 +375,15 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                         href="/compliance-and-regulatory-services"> Compliance Services</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="link-extend extends_links dropdown-item"
-                                                href="/compliance-regulatory/roc-compliance-services#parentVerticalTab1">Entity Wise
-                                                Services</a></li>
+                                                href="/compliance-and-regulatory-services">Company Compliance</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/compliance-regulatory/roc-compliance-services#parentVerticalTab1">Private Limited
+                                                href="/private-company-compliance">Private Limited
                                                 Compliance</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/compliance-regulatory/roc-compliance-services#parentVerticalTab2">Public Limited
+                                                href="/public-ltd-compliance">Public Limited
                                                 Compliance</a></li>
                                         <li><a class="dropdown-item"
-                                                href="/compliance-regulatory/roc-compliance-services#parentVerticalTab3">One Person Company
+                                                href="/opc-annual-compliance">One Person Company
                                                 Compliance</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/llp-annual-compliance">LLP Compliance</a>
@@ -402,8 +395,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                                 href="/sole-proprietorship-compliance">Sole
                                                 Proprietorship Compliance</a></li>
                                         <li><a class="link-extend extends_links dropdown-item"
-                                                href="/compliance-regulatory/roc-compliance-services#parentVerticalTab7">Other ROC
-                                                Services</a></li>
+                                                href="/compliance-and-regulatory-services">ROC Compliance</a></li>
                                         <li><a class="dropdown-item"
                                                 href="/din-kyc-filing">DIR-3 Director
                                                 KYC</a></li>
@@ -474,5 +466,4 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
             </div>
         </nav>
     </div>
-
 </header>

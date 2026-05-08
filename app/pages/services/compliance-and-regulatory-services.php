@@ -227,10 +227,10 @@
         $caaft_card_section_intro = 'Every registered company carries a mandatory annual compliance calendar. CAAFT manages the entire calendar — ensuring every filing is accurate and on time.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-building', 'title' => 'Private Limited Company Compliance', 'text' => 'Complete annual compliance for Pvt Ltd companies — board meetings, annual returns, financial statements, and all MCA obligations managed without gaps.'],
-            ['icon_class' => 'fas fa-city', 'title' => 'Public Limited Company Compliance', 'text' => 'End-to-end statutory compliance for Public Limited Companies — including AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act.'],
-            ['icon_class' => 'fas fa-user-tie', 'title' => 'One Person Company Compliance', 'text' => 'Annual compliance for OPCs — board resolutions, financial statements, and ROC filings, kept lean for single-director structures.'],
-            ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Compliance', 'text' => 'Annual filing and compliance for LLPs — Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end.'],
+            ['icon_class' => 'fas fa-building', 'title' => 'Private Limited Company Compliance', 'text' => 'Complete annual compliance for Pvt Ltd companies — board meetings, annual returns, financial statements, and all MCA obligations managed without gaps.', 'href' => '/private-company-compliance'],
+            ['icon_class' => 'fas fa-city', 'title' => 'Public Limited Company Compliance', 'text' => 'End-to-end statutory compliance for Public Limited Companies — including AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act.', 'href' => '/public-ltd-compliance'],
+            ['icon_class' => 'fas fa-user-tie', 'title' => 'One Person Company Compliance', 'text' => 'Annual compliance for OPCs — board resolutions, financial statements, and ROC filings, kept lean for single-director structures.', 'href' => '/opc-annual-compliance'],
+            ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Compliance', 'text' => 'Annual filing and compliance for LLPs — Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end.', 'href' => '/llp-annual-compliance'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
@@ -241,8 +241,8 @@
         $caaft_card_section_intro = 'Registered firms carry their own compliance obligations — often overlooked, but no less important. CAAFT ensures records, filings, and statutory requirements are consistently maintained.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-6';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-users', 'title' => 'Partnership Firm Compliance', 'text' => 'Ongoing compliance for registered partnerships — books maintenance, registration renewals, and regulatory filings under the Partnership Act.'],
-            ['icon_class' => 'fas fa-store', 'title' => 'Sole Proprietorship Compliance', 'text' => 'Licence renewals, professional tax filings, and regulatory compliance for sole proprietorships — keeping the business active and in good standing.'],
+            ['icon_class' => 'fas fa-users', 'title' => 'Partnership Firm Compliance', 'text' => 'Ongoing compliance for registered partnerships — books maintenance, registration renewals, and regulatory filings under the Partnership Act.', 'href' => '/partnership-firm-compliance'],
+            ['icon_class' => 'fas fa-store', 'title' => 'Sole Proprietorship Compliance', 'text' => 'Licence renewals, professional tax filings, and regulatory compliance for sole proprietorships — keeping the business active and in good standing.', 'href' => '/sole-proprietorship-compliance'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
@@ -253,12 +253,12 @@
         $caaft_card_section_intro = 'Changes within a company require formal filings with the Registrar of Companies. CAAFT handles every ROC transaction accurately and within prescribed timelines.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-4';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-id-card-alt', 'title' => 'Director KYC (DIR-3 KYC)', 'text' => 'Annual KYC filing for every DIN holder — mandatory to keep the DIN active and avoid filing blockages.'],
-            ['icon_class' => 'fas fa-user-plus', 'title' => 'Add / Remove Director', 'text' => 'Formal director appointment or resignation filed with the ROC — including resolution drafting, Form DIR-12, and MCA submission.'],
-            ['icon_class' => 'fas fa-chart-line', 'title' => 'Authorised Capital Increase', 'text' => 'Filing for increased authorised share capital — board and shareholder resolutions, Form SH-7, and Form MGT-14 within prescribed timelines.'],
-            ['icon_class' => 'fas fa-map-marker-alt', 'title' => 'Registered Office Change', 'text' => 'Address change filed correctly with the ROC — within the same city, state, or across states — with all resolutions and Form INC-22 or INC-23.'],
-            ['icon_class' => 'fas fa-file-alt', 'title' => 'ROC Filings', 'text' => 'Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — prepared accurately and submitted before due dates.'],
-            ['icon_class' => 'fas fa-times-circle', 'title' => 'Company Closure / Winding Up', 'text' => 'Managed strike-off or voluntary winding up — resolutions, indemnity bonds, compliance clearances, and STK-2 filing handled completely.'],
+            ['icon_class' => 'fas fa-id-card-alt', 'title' => 'Director KYC (DIR-3 KYC)', 'text' => 'Annual KYC filing for every DIN holder — mandatory to keep the DIN active and avoid filing blockages.', 'href' => '/din-kyc-filing'],
+            ['icon_class' => 'fas fa-user-plus', 'title' => 'Add / Remove Director', 'text' => 'Formal director appointment or resignation filed with the ROC — including resolution drafting, Form DIR-12, and MCA submission.', 'href' => '/add-remove-director-service'],
+            ['icon_class' => 'fas fa-chart-line', 'title' => 'Authorised Capital Increase', 'text' => 'Filing for increased authorised share capital — board and shareholder resolutions, Form SH-7, and Form MGT-14 within prescribed timelines.', 'href' => '/increase-authorised-share-capital'],
+            ['icon_class' => 'fas fa-map-marker-alt', 'title' => 'Registered Office Change', 'text' => 'Address change filed correctly with the ROC — within the same city, state, or across states — with all resolutions and Form INC-22 or INC-23.', 'href' => '/registered-office-change-india'],
+            ['icon_class' => 'fas fa-file-alt', 'title' => 'ROC Filings', 'text' => 'Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — prepared accurately and submitted before due dates.', 'href' => '/roc-compliance-filing'],
+            ['icon_class' => 'fas fa-times-circle', 'title' => 'Company Closure / Winding Up', 'text' => 'Managed strike-off or voluntary winding up — resolutions, indemnity bonds, compliance clearances, and STK-2 filing handled completely.', 'href' => '/winding-up-of-company'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
@@ -342,4 +342,3 @@
     <?php include "footer-bottom.php"; ?>
 </body>
 </html>
-

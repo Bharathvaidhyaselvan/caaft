@@ -4,98 +4,86 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+<!-- Core pages -->
+<url><loc>https://caaft.com/</loc><lastmod>2026-05-08</lastmod><priority>1.00</priority></url>
+<url><loc>https://caaft.com/about</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/contact</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/compliance-calendar</loc><lastmod>2026-05-08</lastmod><priority>0.70</priority></url>
+<url><loc>https://caaft.com/privacy-policy</loc><lastmod>2026-05-08</lastmod><priority>0.40</priority></url>
 
-<url>
-  <loc>https://caaft.com/</loc>
-  <lastmod>2025-03-20T07:44:41+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://caaft.com/about.php</loc>
-  <lastmod>2025-03-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/accounting-firms-in-chennai.php</loc>
-  <lastmod>2025-03-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/gst-filing-itr-filing-in-chennai.php</loc>
-  <lastmod>2025-03-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/business-consultancy-company-registration-in-chennai.php</loc>
-  <lastmod>2025-03-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/management-consultancy-services-in-chennai.php</loc>
-  <lastmod>2025-03-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/roc-compliance-services.php</loc>
-  <lastmod>2025-03-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/contact.php</loc>
-  <lastmod>2025-03-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/blog1.php</loc>
-  <lastmod>2025-04-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/simplifying-financial-reporting-and-audits-for-growing-businesses.php</loc>
-  <lastmod>2025-04-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/how-caaft-consultancy-services-simplifies-income-tax-returns-for-salaried-professionals-in-chennai.php</loc>
-  <lastmod>2025-04-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/how-caaft-consultancy-services-supports-small-businesses-with-gst-compliance-in-chennai.php</loc>
-  <lastmod>2025-04-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/accounting-company-in-chennai.php</loc>
-  <lastmod>2025-04-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/income-tax-filling-services-in-chennai.php</loc>
-  <lastmod>2025-04-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://caaft.com/gst-return-filing-services.php</loc>
-  <lastmod>2025-04-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-  <url>
-  <loc>https://caaft.com/new-business-registration-in-chennai.php</loc>
-  <lastmod>2025-04-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
- <url>
-  <loc>https://caaft.com/roc-compliance-filing.php</loc>
-  <lastmod>2025-04-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
- <url>
-  <loc>https://caaft.com/business-advisory-services.php</loc>
-  <lastmod>2025-04-20T07:44:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+<!-- Hub pages -->
+<url><loc>https://caaft.com/accounting-and-reporting-services</loc><lastmod>2026-05-08</lastmod><priority>0.90</priority></url>
+<url><loc>https://caaft.com/taxation-services</loc><lastmod>2026-05-08</lastmod><priority>0.90</priority></url>
+<url><loc>https://caaft.com/business-setup-and-registration</loc><lastmod>2026-05-08</lastmod><priority>0.90</priority></url>
+<url><loc>https://caaft.com/compliance-and-regulatory-services</loc><lastmod>2026-05-08</lastmod><priority>0.90</priority></url>
+<url><loc>https://caaft.com/advisory-and-cfo-services</loc><lastmod>2026-05-08</lastmod><priority>0.90</priority></url>
+
+<!-- 1. Accounting & Reporting -->
+<url><loc>https://caaft.com/accounting-and-reporting/bookkeeping-and-accounting</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/accounting-and-reporting/financial-analysis-mis</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/accounting-and-reporting/financial-statement-analysis</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/accounting-and-reporting/accounts-receivable-payable-service</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+
+<!-- 2. Taxation - Income Tax -->
+<url><loc>https://caaft.com/income-tax/income-tax-filing-service</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/income-tax/tds-return-filing-services</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/income-tax/tax-audit</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/income-tax/tax-planning-services</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/income-tax/income-tax-appeal-services</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+
+<!-- 2. Taxation - GST -->
+<url><loc>https://caaft.com/gst/gst-registration</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/gst/gst-return-filing-services</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/gst/gst-lut-filing</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/gst/gst-advisory</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/gst/gst-assessment-appeal-services</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/gst/gst-cancellation-services</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+
+<!-- 3. Business Setup & Registration -->
+<url><loc>https://caaft.com/private-limited-company-registration</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/public-limited-company-registration</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/one-person-company-registration</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/llp-registration-services</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/register-partnership-firm</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/register-sole-proprietorship</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/msme-udyam-registration</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/fssai-food-licence-india</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/professional-tax-return-filing</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/epf-esi-registration-compliance</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/iec-registration</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/digital-signature-certificate-registration</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/12a-80g-registration</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+
+<!-- 4. Compliance & Regulatory - Company Compliance -->
+<url><loc>https://caaft.com/private-company-compliance</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/public-ltd-compliance</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/opc-annual-compliance</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/llp-annual-compliance</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/partnership-firm-compliance</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/sole-proprietorship-compliance</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+
+<!-- 4. Compliance & Regulatory - ROC -->
+<url><loc>https://caaft.com/din-kyc-filing</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/add-remove-director-service</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/increase-authorised-share-capital</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/registered-office-change-india</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/roc-compliance-filing</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/winding-up-of-company</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+
+<!-- 5. Advisory & CFO -->
+<url><loc>https://caaft.com/cfo-financial-management-services</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/budgeting-forecasting-services</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/business-valuation-services</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/financial-assessment-services</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/feasibility-study</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+<url><loc>https://caaft.com/payroll-management-compliance</loc><lastmod>2026-05-08</lastmod><priority>0.80</priority></url>
+
+<!-- Blog / Insights -->
+<url><loc>https://caaft.com/blog</loc><lastmod>2026-05-08</lastmod><priority>0.70</priority></url>
+<url><loc>https://caaft.com/insights/major-updates-to-aoc-4-mgt-7-roc-annual-filing-forms</loc><lastmod>2026-05-08</lastmod><priority>0.60</priority></url>
+<url><loc>https://caaft.com/insights/simplifying-financial-reporting-and-audits-for-growing-businesses</loc><lastmod>2026-05-08</lastmod><priority>0.60</priority></url>
+<url><loc>https://caaft.com/insights/how-caaft-consultancy-services-simplifies-income-tax-returns-for-salaried-professionals-in-chennai</loc><lastmod>2026-05-08</lastmod><priority>0.60</priority></url>
+<url><loc>https://caaft.com/insights/how-caaft-consultancy-services-supports-small-businesses-with-gst-compliance-in-chennai</loc><lastmod>2026-05-08</lastmod><priority>0.60</priority></url>
 
 </urlset>
