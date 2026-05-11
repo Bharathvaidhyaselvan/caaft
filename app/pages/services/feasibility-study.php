@@ -372,30 +372,6 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
 
-    <section class="plc-docs-section" aria-labelledby="feasibility-docs-heading">
-        <div class="container">
-            <h2 id="feasibility-docs-heading" class="plc-docs-title">Documents & Information Required for a Feasibility Study</h2>
-            <article class="plc-docs-card">
-                <div class="plc-docs-card-head">
-                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
-                    <h3>Typical Information Required</h3>
-                </div>
-                <ul class="plc-docs-card-list">
-                    <li>Business concept description and strategic objectives</li>
-                    <li>Target market, geography, and customer profile</li>
-                    <li>Proposed product or service details and pricing</li>
-                    <li>Estimated startup and capital expenditure requirements</li>
-                    <li>Financial history of the promoter entity (if existing business)</li>
-                    <li>Details of any existing orders, MOUs, or letters of intent</li>
-                    <li>Land, building, or infrastructure details (for manufacturing/real estate)</li>
-                    <li>Regulatory licences or approvals required for the project</li>
-                    <li>Promoter background and management team details</li>
-                    <li>Any prior market research, surveys, or technical assessments available</li>
-                </ul>
-            </article>
-        </div>
-    </section>
-
     <?php
     $why_choose_caaft_heading_id = 'feasibility-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
@@ -417,9 +393,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'feasibility-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => '90%+', 'text' => 'Many startup failures link back to weak market validation and planning.'],
-        ['stat' => 'INR 18L Cr+', 'text' => 'MSME credit ecosystem often expects structured project/feasibility reporting.'],
-        ['stat' => '2.5x', 'text' => 'Businesses with formal planning are more likely to reach early profitability.'],
+        ['stat' => '90%+', 'text' => 'Over 90% of Indian startups fail within five years — primarily due to poor market validation and inadequate financial planning.'],
+        ['stat' => '₹18L Cr+', 'text' => 'Indian banks and NBFCs handle ₹18 lakh crore+ in MSME credit annually — with formal project reports and feasibility studies required as part of most credit appraisal processes.'],
+        ['stat' => '2.5x', 'text' => 'Businesses with formal financial planning are 2.5x more likely to be profitable within their first three years of operation.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>

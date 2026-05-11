@@ -275,9 +275,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'din-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => '30 lakh+', 'text' => 'Over 30 lakh DINs have been issued by MCA, making Director KYC one of India\'s broadest annual corporate compliances.'],
-        ['stat' => 'Rs. 5,000', 'text' => 'Directors who miss the deadline must pay a Rs. 5,000 penalty to reactivate DIN before filings can continue.'],
-        ['stat' => '1 Oct impact', 'text' => 'A deactivated DIN immediately blocks participation in MCA filings and statutory document execution.'],
+        ['stat' => '30 lakh+', 'text' => 'Over 30 lakh Director Identification Numbers (DINs) have been issued by the MCA — making Director KYC one of the most widely applicable annual compliance requirements in India\'s corporate ecosystem.'],
+        ['stat' => '₹5,000', 'text' => 'Thousands of directors face DIN deactivation every year due to missed DIR-3 KYC filing — resulting in ₹5,000 penalties and compliance disruptions that block all company filings until reactivation is completed.'],
+        ['stat' => '1 Oct impact', 'text' => 'A deactivated DIN immediately restricts participation in MCA form filing, statutory document signing, and all company compliance activities — creating cascading delays across Annual Returns, Financial Statements, and other time-sensitive corporate filings.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>

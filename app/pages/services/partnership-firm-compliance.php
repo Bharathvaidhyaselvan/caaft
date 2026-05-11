@@ -234,30 +234,6 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
-    <section class="plc-docs-section" aria-labelledby="partnership-docs-heading">
-        <div class="container">
-            <h2 id="partnership-docs-heading" class="plc-docs-title">Documents Required for Partnership Compliance</h2>
-            <article class="plc-docs-card">
-                <div class="plc-docs-card-head">
-                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
-                    <h3>Required Documents</h3>
-                </div>
-                <ul class="plc-docs-card-list">
-                    <li>Partnership deed (registered or unregistered)</li>
-                    <li>PAN card of the partnership firm</li>
-                    <li>PAN cards of all partners</li>
-                    <li>TAN of the firm (where TDS applicable)</li>
-                    <li>GST registration certificate (where applicable)</li>
-                    <li>Bank account statements for the financial year</li>
-                    <li>Books of accounts — cash book, ledger, purchase and sales records</li>
-                    <li>Invoices, expense vouchers, and supporting documents</li>
-                    <li>Previous year tax returns and acknowledgements</li>
-                    <li>Details of capital contributions and partner drawings</li>
-                </ul>
-            </article>
-        </div>
-    </section>
-
     <?php
     $why_choose_caaft_heading_id = 'partnership-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
@@ -279,9 +255,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'partnership-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => '10 lakh+', 'text' => 'Over 10 lakh partnership firms operate across India — making structured compliance management essential for legal and financial stability.'],
-        ['stat' => 'Penalty risk', 'text' => 'A significant proportion of partnership firms face penalties and notices annually due to delayed filings or incomplete documentation.'],
-        ['stat' => 'Growth impact', 'text' => 'Firms that fail to maintain proper accounting records and statutory compliance encounter difficulties obtaining bank loans, government approvals, and business contracts.'],
+        ['stat' => '10 lakh+', 'text' => 'Over 10 lakh partnership firms operate across India — making structured compliance management essential for maintaining legal and financial stability across one of India\'s most common business structures.'],
+        ['stat' => 'Penalty risk', 'text' => 'A significant proportion of partnership firms face penalties and notices annually due to delayed income tax filings, GST return defaults, or incomplete financial documentation — all of which are avoidable with professional compliance management.'],
+        ['stat' => 'Growth impact', 'text' => 'Partnership firms that fail to maintain proper accounting records and statutory compliance encounter difficulties obtaining bank loans, government approvals, and business contracts — making compliance a direct enabler of business growth.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>

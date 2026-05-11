@@ -305,9 +305,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'authorized-capital-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => 'Sec 61(1)(a)', 'text' => 'Authorised capital increase is permitted through ordinary resolution at general meeting.'],
-        ['stat' => '30 days', 'text' => 'Form SH-7 must be filed with ROC within 30 days of passing resolution.'],
-        ['stat' => 'Legal prerequisite', 'text' => 'Shares beyond existing authorised capital are void, so increase is mandatory before fresh issuance.'],
+        ['stat' => 'Sec 61(1)(a)', 'text' => 'Section 61(1)(a) of the Companies Act, 2013 permits an increase in authorised share capital through an ordinary resolution at a general meeting — a simple majority is sufficient.'],
+        ['stat' => '30 days', 'text' => 'Form SH-7 must be filed with the Registrar of Companies within 30 days of passing the resolution — delays attract compounding late fees on the MCA portal.'],
+        ['stat' => 'Legal prerequisite', 'text' => 'Shares allotted beyond the existing authorised capital limit are legally void — making the capital increase a mandatory prerequisite to any fresh share issuance.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>

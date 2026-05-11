@@ -385,30 +385,6 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
 
-    <section class="plc-docs-section" aria-labelledby="payroll-docs-heading">
-        <div class="container">
-            <h2 id="payroll-docs-heading" class="plc-docs-title">Documents Required for Payroll Setup & Compliance</h2>
-            <article class="plc-docs-card">
-                <div class="plc-docs-card-head">
-                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
-                    <h3>Required Documents</h3>
-                </div>
-                <ul class="plc-docs-card-list">
-                    <li>Company PAN, TAN, and GST registration certificate</li>
-                    <li>PF and ESI registration numbers (or details for new registration)</li>
-                    <li>Professional Tax registration certificate (state-specific)</li>
-                    <li>Employee details — PAN, Aadhaar, bank account, and joining date</li>
-                    <li>CTC breakup and salary structure for each employee</li>
-                    <li>Previous month payroll data and payslips (for migration cases)</li>
-                    <li>Attendance and leave records for the pay period</li>
-                    <li>Investment declaration forms from employees (for TDS computation)</li>
-                    <li>Prior year Form 16 and TDS returns (for onboarding mid-year)</li>
-                    <li>HR policy document covering leave, overtime, and deduction rules</li>
-                </ul>
-            </article>
-        </div>
-    </section>
-
     <?php
     $why_choose_caaft_heading_id = 'payroll-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
@@ -430,9 +406,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'payroll-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => '80%', 'text' => 'Many SMEs using manual payroll remain exposed to multi-point compliance errors.'],
-        ['stat' => 'INR 5,000-20,000/day', 'text' => 'Potential daily penalty exposure for missed statutory filing obligations.'],
-        ['stat' => 'Multi-layer compliance', 'text' => 'Payroll spans both central and state-level obligations simultaneously.'],
+        ['stat' => '80%', 'text' => '80% of SMEs processing payroll manually are exposed to errors across 40+ statutory obligations — including PF, ESI, and the Wages Code.'],
+        ['stat' => '₹5,000–20,000/day', 'text' => 'Missing PF or ESI filing deadlines attracts penalties of ₹5,000–20,000 per day plus interest at 12–18% per annum.'],
+        ['stat' => 'Multi-layer compliance', 'text' => 'India\'s payroll compliance landscape spans central and state-level obligations simultaneously — making multi-state businesses especially vulnerable to gaps without dedicated expert oversight.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>

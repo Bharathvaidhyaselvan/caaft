@@ -255,30 +255,6 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
-    <section class="plc-docs-section" aria-labelledby="financial-assessment-docs-heading">
-        <div class="container">
-            <h2 id="financial-assessment-docs-heading" class="plc-docs-title">Documents Required for Financial Assessment</h2>
-            <article class="plc-docs-card">
-                <div class="plc-docs-card-head">
-                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
-                    <h3>Required Documents</h3>
-                </div>
-                <ul class="plc-docs-card-list">
-                    <li>Audited financial statements for last 2–3 years (Balance Sheet, P&L, Cash Flow)</li>
-                    <li>Current year management accounts or trial balance</li>
-                    <li>Bank statements for the last 6–12 months</li>
-                    <li>Outstanding loan and credit facility details with repayment schedules</li>
-                    <li>Accounts receivable and payable ageing reports</li>
-                    <li>GST and income tax return filings for the last 2–3 years</li>
-                    <li>Cost structure breakdown — fixed, variable, and overhead</li>
-                    <li>Revenue data by product, service line, or customer segment</li>
-                    <li>Any existing budgets, forecasts, or management reports</li>
-                    <li>Details of any pending litigation, contingent liabilities, or off-balance-sheet commitments</li>
-                </ul>
-            </article>
-        </div>
-    </section>
-
     <?php
     $why_choose_caaft_heading_id = 'financial-assessment-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
@@ -300,9 +276,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'financial-assessment-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => '3x likelihood', 'text' => 'Quarterly assessment programs detect cash flow issues earlier.'],
-        ['stat' => '60%+ SMEs', 'text' => 'Many lack structured review processes, leaving performance gaps unnoticed.'],
-        ['stat' => '2x faster', 'text' => 'Monthly statement reviews improve speed and confidence of decisions.'],
+        ['stat' => '3x likelihood', 'text' => 'Businesses that conduct financial assessments quarterly are 3x more likely to detect cash flow issues before they become critical.'],
+        ['stat' => '60%+ SMEs', 'text' => '60%+ of SMEs in India lack a structured financial review process — leaving performance gaps undetected for months.'],
+        ['stat' => '2x faster', 'text' => 'Companies that review financial statements monthly make decisions up to 2x faster than those relying on annual reviews.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>

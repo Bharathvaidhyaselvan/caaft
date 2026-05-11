@@ -213,30 +213,6 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
 
-    <section class="plc-docs-section" aria-labelledby="roc-docs-heading">
-        <div class="container">
-            <h2 id="roc-docs-heading" class="plc-docs-title">Documents Typically Required for ROC Filings</h2>
-            <article class="plc-docs-card">
-                <div class="plc-docs-card-head">
-                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
-                    <h3>Required Documents</h3>
-                </div>
-                <ul class="plc-docs-card-list">
-                    <li>Certificate of Incorporation and CIN</li>
-                    <li>MOA and AOA of the company</li>
-                    <li>PAN and DSC of all signing directors</li>
-                    <li>Board resolutions relevant to the filing event</li>
-                    <li>Audited financial statements (for AOC-4 and related filings)</li>
-                    <li>Auditor appointment letter and consent (for ADT-1)</li>
-                    <li>Director consent and identity proof (for DIR-12 and DIR-3 KYC)</li>
-                    <li>Shareholder resolution or MGT-14 supporting documents (where applicable)</li>
-                    <li>Previous ROC filing acknowledgements and SRN numbers</li>
-                    <li>Any event-specific documents required by the particular MCA form</li>
-                </ul>
-            </article>
-        </div>
-    </section>
-
     <?php
     $why_choose_caaft_heading_id = 'roc-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
@@ -258,9 +234,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'roc-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => '15 lakh+', 'text' => 'Registered companies in India carry ongoing annual and event-based ROC filing obligations.'],
-        ['stat' => 'High-frequency filings', 'text' => 'Director, address, auditor, and resolution events make miscellaneous ROC filings highly active through the year.'],
-        ['stat' => 'Avoidable penalties', 'text' => 'Timely and accurate submissions prevent compounding penalties and status risks.'],
+        ['stat' => '15 lakh+', 'text' => 'Over 15 lakh companies are registered with the Ministry of Corporate Affairs in India — every one of which carries ongoing annual and event-based ROC filing obligations that must be met accurately and on time.'],
+        ['stat' => 'High-frequency filings', 'text' => 'Thousands of companies complete miscellaneous ROC filings every year for director updates, address changes, auditor appointments, and resolution filings — making event-based compliance one of the most active areas of corporate filing activity.'],
+        ['stat' => 'Avoidable penalties', 'text' => 'Companies that fail to complete mandatory ROC filings on time face compounding penalties, compliance notices, and risks to their active company status — all of which are avoidable with accurate and timely MCA form submission.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>

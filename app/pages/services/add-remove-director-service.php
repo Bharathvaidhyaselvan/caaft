@@ -322,9 +322,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'director-change-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => 'Rs. 200/day', 'text' => 'Per form penalty accrues from Day 31 of missed DIR-12 deadline with no upper cap.'],
-        ['stat' => '30 days', 'text' => 'Mandatory filing window for director appointment, resignation, and removal events.'],
-        ['stat' => 'Sec 164(2)', 'text' => 'Automatic disqualification applies where filing defaults continue for 3 consecutive years.'],
+        ['stat' => '₹200/day', 'text' => '₹200 per day per form accrues from Day 31 of a missed DIR-12 deadline — with no upper cap on total penalty under the Companies Act, 2013.'],
+        ['stat' => '30 days', 'text' => 'Director changes must be filed within 30 days of the board meeting or resignation effective date — failure to meet this deadline triggers immediate penalty accrual.'],
+        ['stat' => 'Sec 164(2)', 'text' => 'Section 164(2) disqualification applies automatically to directors of companies with filing defaults for 3 consecutive financial years — restricting their ability to serve on any board until resolved.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>

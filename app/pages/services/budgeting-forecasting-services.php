@@ -180,46 +180,6 @@ declare(strict_types=1);
     ?>
 
     <?php
-    $caaft_steps_heading_id = 'budgeting-forecasting-process-heading';
-    $caaft_steps_title = 'Step-by-Step Budgeting & Forecasting Process';
-    $caaft_steps_numbered = true;
-    $caaft_steps_items = [
-        ['title' => 'Discovery and data collection', 'text' => 'Business goals, historical financial data, revenue streams, cost structure, and upcoming strategic plans are gathered — forming the factual foundation the budget and forecast will be built on.'],
-        ['title' => 'Historical performance analysis', 'text' => 'Prior year actuals are reviewed across revenue, costs, margins, and cash flow — identifying trends, seasonality patterns, and variances that inform realistic forward-looking assumptions.'],
-        ['title' => 'Assumption setting and validation', 'text' => 'Key planning assumptions — growth rates, pricing, headcount, capital expenditure, and market conditions — are agreed with leadership, benchmarked against industry data, and stress-tested before the model is built.'],
-        ['title' => 'Budget and forecast model build', 'text' => 'A detailed financial model is constructed covering revenue projections, cost budgets, cash flow forecasts, and balance sheet movements — with scenario variants (conservative, base, optimistic) built in.'],
-        ['title' => 'Review and refinement', 'text' => 'Draft outputs are reviewed with the leadership team, assumptions are challenged, and the model is refined until it accurately reflects the business\'s operational reality and strategic intent.'],
-        ['title' => 'Final delivery and presentation', 'text' => 'The completed budget and forecast is delivered in a board-ready format with clear commentary, visual dashboards, and the key metrics leadership needs to track performance against plan.'],
-        ['title' => 'Ongoing variance monitoring', 'text' => 'Monthly actual-versus-plan reviews are conducted — variances are explained, root causes are identified, and corrective actions are recommended to keep the business on track.'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
-    ?>
-
-    <section class="plc-docs-section" aria-labelledby="budgeting-docs-heading">
-        <div class="container">
-            <h2 id="budgeting-docs-heading" class="plc-docs-title">Information Required for Budgeting & Forecasting</h2>
-            <article class="plc-docs-card">
-                <div class="plc-docs-card-head">
-                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
-                    <h3>Typical Documents and Data Required</h3>
-                </div>
-                <ul class="plc-docs-card-list">
-                    <li>Last 2–3 years of audited financial statements</li>
-                    <li>Current year management accounts or trial balance</li>
-                    <li>Bank statements for the last 6–12 months</li>
-                    <li>Sales data broken down by product, service, or customer segment</li>
-                    <li>Cost structure details — fixed costs, variable costs, and overheads</li>
-                    <li>Headcount plan and payroll data</li>
-                    <li>Capital expenditure plans for the forecast period</li>
-                    <li>Existing budget or projections (if any)</li>
-                    <li>Key contracts, pricing agreements, or revenue commitments</li>
-                    <li>Strategic plan or growth targets set by leadership</li>
-                </ul>
-            </article>
-        </div>
-    </section>
-
-    <?php
     $caaft_challenges_heading_id = 'budgeting-forecasting-common-heading';
     $caaft_challenges_title = 'Common Challenges in Financial Planning';
     $caaft_challenges_intro = 'Most businesses seek budgeting and forecasting support when facing one or more of these:';
@@ -255,9 +215,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'budgeting-forecasting-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => 'Better control', 'text' => 'Businesses with structured budgeting and forecasting are better positioned to manage cash flow and costs.'],
-        ['stat' => 'Early risk detection', 'text' => 'Regular variance analysis helps catch financial deviations before they become expensive.'],
-        ['stat' => 'Expansion confidence', 'text' => 'Scenario-backed planning strengthens expansion and investment decision quality.'],
+        ['stat' => 'Better control', 'text' => 'Businesses with structured budgeting and forecasting processes are significantly better positioned to manage cash flow, control costs, and respond to market changes.'],
+        ['stat' => 'Early risk detection', 'text' => 'Regular variance analysis — comparing actual results against projections — helps businesses catch financial deviations before they become costly problems.'],
+        ['stat' => 'Expansion confidence', 'text' => 'Companies that combine budgeting with scenario planning are better prepared to make expansion and investment decisions with confidence.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>

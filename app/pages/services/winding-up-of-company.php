@@ -308,9 +308,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'winding-up-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => '3.4 lakh+', 'text' => 'Companies were struck off in a major MCA exercise, underscoring inactive-company compliance risk.'],
-        ['stat' => 'Rs. 100/day', 'text' => 'Daily default penalties can apply to annual filing non-compliance with significant cumulative impact.'],
-        ['stat' => 'Sec 164(2)', 'text' => 'Automatic director disqualification can apply after 3 consecutive years of filing defaults.'],
+        ['stat' => '3.4 lakh+', 'text' => 'Over 3.4 lakh companies were struck off by the MCA in 2017–18 alone under a single suo motu exercise — demonstrating the scale of inactive company non-compliance across India.'],
+        ['stat' => '₹100/day', 'text' => '₹100 per day penalty applies for non-filing of Annual Return (MGT-7) — with no upper cap, meaning an inactive company accumulates significant liability for every year it remains open without filing.'],
+        ['stat' => 'Sec 164(2)', 'text' => 'Section 164(2) disqualification applies automatically after 3 consecutive years of filing defaults — a 5-year bar from serving as a director in any Indian company.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>

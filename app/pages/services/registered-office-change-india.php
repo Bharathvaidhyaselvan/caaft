@@ -298,9 +298,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'registered-office-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => '15 lakh+', 'text' => 'Companies in India must maintain an accurate registered office for legal and statutory communication.'],
-        ['stat' => 'Common filing', 'text' => 'Registered office change is one of the most frequent corporate compliance events due to relocation and growth.'],
-        ['stat' => 'Avoidable risk', 'text' => 'Missed updates can lead to penalties, notices, and record mismatch across departments.'],
+        ['stat' => '15 lakh+', 'text' => 'Over 15 lakh companies are registered with the Ministry of Corporate Affairs in India — every one of which must maintain an accurate registered office address for official communication and legal compliance.'],
+        ['stat' => 'Thousands yearly', 'text' => 'Thousands of companies update their registered address every year due to office relocation, business expansion, or operational restructuring — making registered office change one of the most common corporate compliance filings.'],
+        ['stat' => 'Avoidable risk', 'text' => 'Companies that fail to update their registered address with the ROC risk penalties, missed government communications, and compliance notices — all of which are avoidable with timely and accurate MCA filing.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
