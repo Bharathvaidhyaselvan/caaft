@@ -255,11 +255,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-certificate', 'title' => 'IBBI-Registered Valuers', 'text' => 'Legally valid valuation reports accepted by MCA, tax, and other authorities.'],
-        ['icon_class' => 'fas fa-industry', 'title' => 'Cross-sector execution depth', 'text' => 'Experience across startups, D2C, SaaS, manufacturing, and services.'],
-        ['icon_class' => 'fas fa-user-friends', 'title' => 'End-to-end single-point engagement', 'text' => 'Scoping to final report delivery with consistent accountability.'],
-        ['icon_class' => 'fas fa-search-dollar', 'title' => 'Investor-aware report framing', 'text' => 'Reports structured for diligence scrutiny, not just compliance checkboxes.'],
-        ['icon_class' => 'fas fa-lock', 'title' => 'Strict confidentiality', 'text' => 'NDA-backed handling of sensitive financial and strategic information.'],
+        ['icon_class' => 'fas fa-certificate', 'title' => 'IBBI-Registered Valuers', 'text' => 'Valuations are conducted by IBBI-registered professionals, producing reports that are legally valid and accepted by MCA, income tax authorities, SEBI, and other regulatory bodies — meeting the formal requirements for statutory filings, fundraising, and transaction purposes.'],
+        ['icon_class' => 'fas fa-industry', 'title' => 'Cross-sector execution depth', 'text' => 'CAAFT\'s valuation team has hands-on experience across startups, D2C brands, SaaS businesses, manufacturing companies, professional services firms, and NGOs — applying sector-relevant benchmarks, comparable transactions, and industry-specific assumptions to produce defensible, market-grounded valuations.'],
+        ['icon_class' => 'fas fa-user-friends', 'title' => 'End-to-end single-point engagement', 'text' => 'From initial scoping and methodology selection through financial analysis, report preparation, and final delivery — one consistent team manages the entire engagement. There is no handoff between departments and no ambiguity about accountability at any stage.'],
+        ['icon_class' => 'fas fa-search-dollar', 'title' => 'Investor-aware report framing', 'text' => 'Valuation reports are structured with investor and acquirer due diligence in mind — not just regulatory compliance. Assumptions are documented clearly, methodology choices are justified, and outputs are presented in a format that withstands scrutiny from sophisticated financial counterparties.'],
+        ['icon_class' => 'fas fa-lock', 'title' => 'Strict confidentiality', 'text' => 'All financial data, strategic plans, and commercially sensitive information shared during the engagement are handled under NDA-backed confidentiality protocols — with strict controls over access, storage, and use of client information throughout and after the engagement.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>
@@ -268,9 +268,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'business-valuation-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => 'USD 100B+', 'text' => 'India M&A activity scale highlights the importance of credible transaction valuations.'],
-        ['stat' => '1,00,000+', 'text' => 'Private limited companies incorporated annually require valuation at key lifecycle events.'],
-        ['stat' => 'USD 7B+', 'text' => 'Startup funding momentum drives need for investor-ready, compliance-grade valuation reports.'],
+        ['stat' => 'USD 100B+', 'text' => 'India\'s M&A deal volume surpassed USD 100 billion in 2023 — with credible valuations driving every transaction.'],
+        ['stat' => '1,00,000+', 'text' => 'Over 1,00,000 private limited companies are incorporated annually in India, each requiring valuation expertise across its lifecycle.'],
+        ['stat' => 'USD 7B+', 'text' => 'India\'s startups secured USD 7 billion+ in funding in 2023 — fuelling demand for investor-ready, compliance-grade valuation reports.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>

@@ -372,6 +372,30 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
 
+    <section class="plc-docs-section" aria-labelledby="feasibility-docs-heading">
+        <div class="container">
+            <h2 id="feasibility-docs-heading" class="plc-docs-title">Documents & Information Required for a Feasibility Study</h2>
+            <article class="plc-docs-card">
+                <div class="plc-docs-card-head">
+                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
+                    <h3>Typical Information Required</h3>
+                </div>
+                <ul class="plc-docs-card-list">
+                    <li>Business concept description and strategic objectives</li>
+                    <li>Target market, geography, and customer profile</li>
+                    <li>Proposed product or service details and pricing</li>
+                    <li>Estimated startup and capital expenditure requirements</li>
+                    <li>Financial history of the promoter entity (if existing business)</li>
+                    <li>Details of any existing orders, MOUs, or letters of intent</li>
+                    <li>Land, building, or infrastructure details (for manufacturing/real estate)</li>
+                    <li>Regulatory licences or approvals required for the project</li>
+                    <li>Promoter background and management team details</li>
+                    <li>Any prior market research, surveys, or technical assessments available</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
     <?php
     $why_choose_caaft_heading_id = 'feasibility-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
@@ -380,11 +404,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-user-graduate', 'title' => 'CA-led advisory', 'text' => 'Engagements led by qualified Chartered Accountants for high analytical rigor.'],
-        ['icon_class' => 'fas fa-industry', 'title' => 'Cross-industry expertise', 'text' => 'Sector depth across manufacturing, retail, tech, hospitality, healthcare, and more.'],
-        ['icon_class' => 'fas fa-drafting-compass', 'title' => 'Tailored, not templated', 'text' => 'Every report is built specifically for business model, location, and audience.'],
-        ['icon_class' => 'fas fa-file-invoice', 'title' => 'Lender-aligned formats', 'text' => 'Structured for Indian bank and development finance submission requirements.'],
-        ['icon_class' => 'fas fa-headset', 'title' => 'End-to-end support', 'text' => 'Assistance from scoping through final presentation to lenders or investors.'],
+        ['icon_class' => 'fas fa-user-graduate', 'title' => 'CA-led advisory', 'text' => 'Every feasibility engagement is led by qualified Chartered Accountants who bring financial rigour, commercial judgement, and analytical depth to the assessment — ensuring projections are realistic, assumptions are justified, and conclusions are grounded in numbers rather than optimism.'],
+        ['icon_class' => 'fas fa-industry', 'title' => 'Cross-industry expertise', 'text' => 'CAAFT has worked across manufacturing, retail, technology, hospitality, healthcare, agriculture, and professional services — applying sector-relevant benchmarks, cost structures, and market dynamics to each feasibility study rather than relying on generic financial templates.'],
+        ['icon_class' => 'fas fa-drafting-compass', 'title' => 'Tailored, not templated', 'text' => 'Every feasibility report is built from scratch for the specific business, location, audience, and purpose. Whether it is for internal go/no-go decision-making, bank submission, investor review, or government grant applications — the scope, depth, and format are customised accordingly.'],
+        ['icon_class' => 'fas fa-file-invoice', 'title' => 'Lender-aligned formats', 'text' => 'Feasibility reports are structured to meet the submission requirements of Indian public sector banks, private lenders, SIDBI, NABARD, and other development finance institutions — covering the financial, technical, market, and management parameters that credit appraisal teams look for.'],
+        ['icon_class' => 'fas fa-headset', 'title' => 'End-to-end support', 'text' => 'The engagement covers the full process — from scoping the study and gathering inputs through financial modelling, report preparation, and final presentation to lenders, investors, or internal leadership. Clients are supported through every stage, not just handed a report at the end.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>

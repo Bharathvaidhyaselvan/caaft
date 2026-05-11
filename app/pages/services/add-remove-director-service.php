@@ -309,11 +309,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-balance-scale', 'title' => 'Expert Companies Act knowledge', 'text' => 'Up-to-date handling aligned with MCA regulations and ROC filing requirements.'],
-        ['icon_class' => 'fas fa-tasks', 'title' => 'End-to-end change support', 'text' => 'Complete process managed from resolution drafting to final MCA submission.'],
-        ['icon_class' => 'fas fa-calendar-check', 'title' => 'Timely filing and tracking', 'text' => '30-day timeline tracked with structured execution to avoid penalties.'],
-        ['icon_class' => 'fas fa-check-circle', 'title' => 'Error-free documentation', 'text' => 'Careful verification reduces rejection from drafting and data mismatch issues.'],
-        ['icon_class' => 'fas fa-bolt', 'title' => 'Fast-track delayed filing', 'text' => 'Immediate action for late cases to limit further penalty accrual.'],
+        ['icon_class' => 'fas fa-balance-scale', 'title' => 'Expert Companies Act knowledge', 'text' => 'Every director change is handled by professionals current with Companies Act requirements, MCA portal procedures, and ROC filing practices — ensuring the correct forms, resolutions, and timelines are applied for every type of appointment or cessation.'],
+        ['icon_class' => 'fas fa-tasks', 'title' => 'End-to-end change support', 'text' => 'From drafting board resolutions and consent letters to filing DIR-12 and coordinating DIR-11 with the outgoing director — the entire process is managed without requiring internal teams to coordinate across multiple steps on the MCA portal.'],
+        ['icon_class' => 'fas fa-calendar-check', 'title' => 'Timely filing and tracking', 'text' => 'The 30-day filing window from the date of change is tracked and actioned with structured execution — avoiding the additional fees and complications that apply once the deadline is missed.'],
+        ['icon_class' => 'fas fa-check-circle', 'title' => 'Error-free documentation', 'text' => 'Resolutions, digital signatures, DIN status, and form attachments are carefully verified before submission — reducing the risk of MCA rejection, resubmission cycles, and delayed updates to the company\'s official records.'],
+        ['icon_class' => 'fas fa-bolt', 'title' => 'Fast-track delayed filing', 'text' => 'Where the 30-day window has already passed, immediate action is taken to file with additional fees and limit further penalty accrual — getting the company\'s director records corrected and current as quickly as possible.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>

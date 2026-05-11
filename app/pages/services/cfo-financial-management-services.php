@@ -151,6 +151,58 @@ declare(strict_types=1);
     ?>
 
     <?php
+    $caaft_benefits_heading_id = 'cfo-benefits-heading';
+    $caaft_benefits_title = 'Benefits of Virtual CFO Services';
+    $caaft_benefits_intro = 'What changes when a business engages CAAFT\'s CFO services:';
+    $caaft_benefits_items = [
+        ['lead' => 'Financial clarity and control', 'text' => 'Real-time visibility into cash position, profitability, and cost structure — replacing guesswork with data-backed decisions.', 'icon_class' => 'fas fa-eye', 'tone' => 'blue'],
+        ['lead' => 'Cost-effective senior expertise', 'text' => 'Board-level financial thinking at a fraction of the cost of a full-time CFO hire — with no recruitment, benefits, or fixed overhead.', 'icon_class' => 'fas fa-tags', 'tone' => 'violet'],
+        ['lead' => 'Investor and lender readiness', 'text' => 'Financials, projections, and reporting structured to meet the expectations of investors, banks, and due diligence teams.', 'icon_class' => 'fas fa-handshake', 'tone' => 'green'],
+        ['lead' => 'Proactive risk management', 'text' => 'Financial risks identified and addressed before they escalate — through scenario planning, cash flow monitoring, and variance analysis.', 'icon_class' => 'fas fa-shield-alt', 'tone' => 'orange'],
+        ['lead' => 'Scalable as the business grows', 'text' => 'Support that adjusts to the business\'s complexity — from early-stage controls to multi-entity reporting as the organisation scales.', 'icon_class' => 'fas fa-expand-arrows-alt', 'tone' => 'blue'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-benefits.php';
+    ?>
+
+    <?php
+    $caaft_steps_heading_id = 'cfo-process-heading';
+    $caaft_steps_title = 'How CAAFT\'s CFO Engagement Works';
+    $caaft_steps_numbered = true;
+    $caaft_steps_items = [
+        ['title' => 'Discovery and financial health review', 'text' => 'The engagement begins with a thorough review of the business\'s current financial position — accounts, reporting, cash flow, and compliance — to establish a clear baseline and identify the highest-priority areas.'],
+        ['title' => 'Goals and scope definition', 'text' => 'The CFO engagement scope is defined based on business stage, strategic objectives, and what financial leadership is needed — whether that is monthly reporting, fundraising support, cash flow management, or a combination.'],
+        ['title' => 'Financial systems and reporting setup', 'text' => 'Management reporting frameworks, KPI dashboards, and accounting workflows are established or upgraded — giving leadership timely, accurate financial visibility every month.'],
+        ['title' => 'Budgeting and forecasting', 'text' => 'Annual budgets and rolling forecasts are built using real business data and strategic assumptions — providing a financial roadmap and a benchmark for measuring actual performance.'],
+        ['title' => 'Ongoing financial oversight', 'text' => 'Monthly management accounts are reviewed, cash flow is monitored, variance analysis is conducted, and strategic financial decisions are supported on an ongoing basis throughout the engagement.'],
+        ['title' => 'Investor and lender support', 'text' => 'Where needed, investor-ready financial models, pitch decks, data rooms, and lender presentations are prepared — with CAAFT supporting the entire fundraising or credit process from preparation through to close.'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+    ?>
+
+    <section class="plc-docs-section" aria-labelledby="cfo-docs-heading">
+        <div class="container">
+            <h2 id="cfo-docs-heading" class="plc-docs-title">Information Needed to Engage CAAFT CFO Services</h2>
+            <article class="plc-docs-card">
+                <div class="plc-docs-card-head">
+                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
+                    <h3>Typical Documents and Data Required</h3>
+                </div>
+                <ul class="plc-docs-card-list">
+                    <li>Last 2–3 years of audited financial statements</li>
+                    <li>Current year management accounts or trial balance</li>
+                    <li>Bank statements for the last 6–12 months</li>
+                    <li>Existing budget or financial projections (if available)</li>
+                    <li>List of key customers, revenue streams, and cost centres</li>
+                    <li>Details of outstanding loans, credit facilities, and repayment schedules</li>
+                    <li>Cap table or shareholding structure (for investor-focused engagements)</li>
+                    <li>Income tax and GST compliance status</li>
+                    <li>Any investor term sheets, pitch decks, or funding documents (if applicable)</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <?php
     $caaft_challenges_heading_id = 'cfo-common-heading';
     $caaft_challenges_title = 'Common Financial Challenges CAAFT Solves';
     $caaft_challenges_intro = 'Most businesses seek CFO support when facing one or more of these:';
@@ -173,13 +225,24 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-user-tie', 'title' => 'Senior-level expertise at fractional cost', 'text' => 'Board-ready strategic finance support without full-time executive overhead.'],
-        ['icon_class' => 'fas fa-chart-line', 'title' => 'True strategy, not just accounting', 'text' => 'Planning, modelling, cash flow control, and profitability tracking for growth.'],
-        ['icon_class' => 'fas fa-certificate', 'title' => 'Qualified CAs with cross-industry depth', 'text' => 'Hands-on experience across startups, SMEs, manufacturing, services, and NGOs.'],
-        ['icon_class' => 'fas fa-shield-alt', 'title' => 'Integrated compliance + finance oversight', 'text' => 'Financial management aligned with tax, GST, audit, and regulatory readiness.'],
-        ['icon_class' => 'fas fa-expand', 'title' => 'Scalable support by business stage', 'text' => 'From foundational controls to investor reporting as complexity grows.'],
+        ['icon_class' => 'fas fa-user-tie', 'title' => 'Senior-level expertise at fractional cost', 'text' => 'CAAFT provides board-ready strategic finance leadership — financial modelling, investor reporting, cash flow oversight, and CFO-level decision support — without the cost and commitment of hiring a full-time CFO. Businesses get the expertise they need, at the stage they actually need it.'],
+        ['icon_class' => 'fas fa-chart-line', 'title' => 'True strategy, not just accounting', 'text' => 'The engagement goes beyond bookkeeping and routine reporting. CAAFT\'s virtual CFO service covers financial planning, scenario modelling, working capital optimisation, profitability analysis, and forward-looking management — helping founders and business owners make better decisions with better information.'],
+        ['icon_class' => 'fas fa-certificate', 'title' => 'Qualified CAs with cross-industry depth', 'text' => 'Every engagement is led by qualified Chartered Accountants with hands-on experience across startups, SMEs, manufacturing, professional services, NGOs, and family businesses — combining technical rigour with practical commercial understanding across a wide range of business models and sectors.'],
+        ['icon_class' => 'fas fa-shield-alt', 'title' => 'Integrated compliance and finance oversight', 'text' => 'Financial management is delivered in alignment with the business\'s tax, GST, statutory audit, and regulatory obligations — so finance decisions are made with full awareness of compliance implications, and the two functions reinforce rather than conflict with each other.'],
+        ['icon_class' => 'fas fa-expand', 'title' => 'Scalable support by business stage', 'text' => 'Whether the business is at the stage of establishing basic financial controls or preparing for investor due diligence and Series A reporting, the scope and depth of support scales accordingly — growing alongside the business without requiring a change of advisors at each new milestone.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+    ?>
+
+    <?php
+    $caaft_key_facts_heading_id = 'cfo-facts-heading';
+    $caaft_key_facts_title = 'Key Facts & Figures';
+    $caaft_key_facts_items = [
+        ['stat' => '₹0 overhead', 'text' => 'Virtual CFO services deliver senior financial leadership without the recruitment cost, salary, and benefits of a full-time hire.'],
+        ['stat' => '90%+', 'text' => 'Of SMEs that implement structured CFO-led financial controls report improved cash flow visibility within the first quarter.'],
+        ['stat' => '3x faster', 'text' => 'Investor-ready businesses with structured financial reporting close funding rounds significantly faster than those without.'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
 
     <?php

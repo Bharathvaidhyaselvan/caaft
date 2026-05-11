@@ -180,6 +180,46 @@ declare(strict_types=1);
     ?>
 
     <?php
+    $caaft_steps_heading_id = 'budgeting-forecasting-process-heading';
+    $caaft_steps_title = 'Step-by-Step Budgeting & Forecasting Process';
+    $caaft_steps_numbered = true;
+    $caaft_steps_items = [
+        ['title' => 'Discovery and data collection', 'text' => 'Business goals, historical financial data, revenue streams, cost structure, and upcoming strategic plans are gathered — forming the factual foundation the budget and forecast will be built on.'],
+        ['title' => 'Historical performance analysis', 'text' => 'Prior year actuals are reviewed across revenue, costs, margins, and cash flow — identifying trends, seasonality patterns, and variances that inform realistic forward-looking assumptions.'],
+        ['title' => 'Assumption setting and validation', 'text' => 'Key planning assumptions — growth rates, pricing, headcount, capital expenditure, and market conditions — are agreed with leadership, benchmarked against industry data, and stress-tested before the model is built.'],
+        ['title' => 'Budget and forecast model build', 'text' => 'A detailed financial model is constructed covering revenue projections, cost budgets, cash flow forecasts, and balance sheet movements — with scenario variants (conservative, base, optimistic) built in.'],
+        ['title' => 'Review and refinement', 'text' => 'Draft outputs are reviewed with the leadership team, assumptions are challenged, and the model is refined until it accurately reflects the business\'s operational reality and strategic intent.'],
+        ['title' => 'Final delivery and presentation', 'text' => 'The completed budget and forecast is delivered in a board-ready format with clear commentary, visual dashboards, and the key metrics leadership needs to track performance against plan.'],
+        ['title' => 'Ongoing variance monitoring', 'text' => 'Monthly actual-versus-plan reviews are conducted — variances are explained, root causes are identified, and corrective actions are recommended to keep the business on track.'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+    ?>
+
+    <section class="plc-docs-section" aria-labelledby="budgeting-docs-heading">
+        <div class="container">
+            <h2 id="budgeting-docs-heading" class="plc-docs-title">Information Required for Budgeting & Forecasting</h2>
+            <article class="plc-docs-card">
+                <div class="plc-docs-card-head">
+                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
+                    <h3>Typical Documents and Data Required</h3>
+                </div>
+                <ul class="plc-docs-card-list">
+                    <li>Last 2–3 years of audited financial statements</li>
+                    <li>Current year management accounts or trial balance</li>
+                    <li>Bank statements for the last 6–12 months</li>
+                    <li>Sales data broken down by product, service, or customer segment</li>
+                    <li>Cost structure details — fixed costs, variable costs, and overheads</li>
+                    <li>Headcount plan and payroll data</li>
+                    <li>Capital expenditure plans for the forecast period</li>
+                    <li>Existing budget or projections (if any)</li>
+                    <li>Key contracts, pricing agreements, or revenue commitments</li>
+                    <li>Strategic plan or growth targets set by leadership</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <?php
     $caaft_challenges_heading_id = 'budgeting-forecasting-common-heading';
     $caaft_challenges_title = 'Common Challenges in Financial Planning';
     $caaft_challenges_intro = 'Most businesses seek budgeting and forecasting support when facing one or more of these:';
@@ -202,11 +242,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-database', 'title' => 'Data-driven planning', 'text' => 'Budgets and forecasts grounded in real data, benchmarks, and strategic goals.'],
-        ['icon_class' => 'fas fa-sliders-h', 'title' => 'Customised models', 'text' => 'Frameworks tailored to each business model, stage, and complexity level.'],
-        ['icon_class' => 'fas fa-random', 'title' => 'Scenario planning depth', 'text' => 'Sensitivity analysis for resilient decision-making under changing conditions.'],
-        ['icon_class' => 'fas fa-user-graduate', 'title' => 'Qualified CA expertise', 'text' => 'Experienced Chartered Accountants who align numbers to business context.'],
-        ['icon_class' => 'fas fa-binoculars', 'title' => 'Ongoing variance monitoring', 'text' => 'Regular actual-vs-plan review with corrective recommendations through the year.'],
+        ['icon_class' => 'fas fa-database', 'title' => 'Data-driven planning', 'text' => 'Every budget and forecast is built on real business data, historical performance, industry benchmarks, and strategic objectives — not generic templates. The output reflects the actual operating reality of the business and gives decision-makers a reliable financial foundation to work from.'],
+        ['icon_class' => 'fas fa-sliders-h', 'title' => 'Customised models', 'text' => 'Financial models are built specifically around each business — its revenue structure, cost base, seasonality, growth stage, and funding position. Whether the business is project-based, subscription-driven, product-led, or service-oriented, the framework is designed to match the model, not the other way around.'],
+        ['icon_class' => 'fas fa-random', 'title' => 'Scenario planning depth', 'text' => 'Budgets and forecasts are stress-tested across multiple scenarios — conservative, base, and optimistic — with sensitivity analysis on key drivers. This gives leadership the visibility to make resilient decisions under uncertainty rather than committing to a single-path financial plan.'],
+        ['icon_class' => 'fas fa-user-graduate', 'title' => 'Qualified CA expertise', 'text' => 'Every engagement is led by qualified Chartered Accountants who understand both the technical mechanics of financial modelling and the commercial context behind the numbers — ensuring forecasts are analytically sound, tax-aware, and aligned with the business\'s real strategic direction.'],
+        ['icon_class' => 'fas fa-binoculars', 'title' => 'Ongoing variance monitoring', 'text' => 'The engagement does not end at delivery. Regular actual-versus-plan reviews are conducted through the year — identifying variances early, understanding what is driving them, and making corrective recommendations before small deviations become significant financial problems.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>

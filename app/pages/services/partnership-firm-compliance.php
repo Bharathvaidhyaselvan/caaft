@@ -234,6 +234,30 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
+    <section class="plc-docs-section" aria-labelledby="partnership-docs-heading">
+        <div class="container">
+            <h2 id="partnership-docs-heading" class="plc-docs-title">Documents Required for Partnership Compliance</h2>
+            <article class="plc-docs-card">
+                <div class="plc-docs-card-head">
+                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
+                    <h3>Required Documents</h3>
+                </div>
+                <ul class="plc-docs-card-list">
+                    <li>Partnership deed (registered or unregistered)</li>
+                    <li>PAN card of the partnership firm</li>
+                    <li>PAN cards of all partners</li>
+                    <li>TAN of the firm (where TDS applicable)</li>
+                    <li>GST registration certificate (where applicable)</li>
+                    <li>Bank account statements for the financial year</li>
+                    <li>Books of accounts — cash book, ledger, purchase and sales records</li>
+                    <li>Invoices, expense vouchers, and supporting documents</li>
+                    <li>Previous year tax returns and acknowledgements</li>
+                    <li>Details of capital contributions and partner drawings</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
     <?php
     $why_choose_caaft_heading_id = 'partnership-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';

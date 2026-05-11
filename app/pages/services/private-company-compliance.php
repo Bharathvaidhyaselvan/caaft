@@ -252,6 +252,22 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
 
+    <?php
+    $caaft_steps_heading_id = 'pvt-ltd-process-heading';
+    $caaft_steps_title = 'Step-by-Step Compliance Process';
+    $caaft_steps_numbered = true;
+    $caaft_steps_items = [
+        ['title' => 'Compliance calendar setup', 'text' => 'All annual due dates — AOC-4, MGT-7, board meetings, AGM, DIR-3 KYC, and income tax — are mapped at the start of the year with reminders set well in advance of each deadline.'],
+        ['title' => 'Bookkeeping and accounts finalisation', 'text' => 'Financial records are maintained throughout the year and accounts are finalised after 31 March — with Balance Sheet, Profit & Loss, and Cash Flow Statement prepared and ready for audit.'],
+        ['title' => 'Statutory audit coordination', 'text' => 'Auditor is appointed via ADT-1, audit is coordinated with accurate financial data, and the signed audit report is obtained before the AGM.'],
+        ['title' => 'Board meetings and AGM management', 'text' => 'Minimum 4 board meetings are scheduled, noticed, and minuted across the year. AGM is held on or before 30 September with financials approved and auditors reappointed.'],
+        ['title' => 'ROC filings — AOC-4 and MGT-7', 'text' => 'Financial statements and Annual Return are filed with the MCA within the prescribed deadlines — with all attachments verified and every field accurately completed before submission.'],
+        ['title' => 'Income tax and TDS compliance', 'text' => 'Corporate ITR is filed by 31 October. TDS is deducted, deposited, and returns filed quarterly — with advance tax paid on time to avoid interest.'],
+        ['title' => 'Director KYC filing', 'text' => 'DIR-3 KYC is completed for every director before 30 September — keeping all DINs active and all MCA access uninterrupted.'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+    ?>
+
     <section class="llp-vs-section" aria-labelledby="plc-compliance-calendar-heading">
         <div class="container">
             <h2 id="plc-compliance-calendar-heading" class="compliance-calendar-title">Annual compliance calendar</h2>

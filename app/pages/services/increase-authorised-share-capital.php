@@ -292,11 +292,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-scale-balanced', 'title' => 'Expert Companies Act compliance', 'text' => 'Filings are handled by professionals aligned with MCA regulations and ROC practice.'],
-        ['icon_class' => 'fas fa-list-check', 'title' => 'End-to-end increase support', 'text' => 'From MOA review to ROC confirmation, the full workflow is managed.'],
-        ['icon_class' => 'fas fa-clock', 'title' => 'Timely SH-7 deadline tracking', 'text' => '30-day filing window is monitored to prevent compounding penalties.'],
-        ['icon_class' => 'fas fa-lightbulb', 'title' => 'Advisory beyond filing', 'text' => 'AOA checks, stamp duty analysis, and practical capital planning support included.'],
-        ['icon_class' => 'fas fa-check-circle', 'title' => 'Error-free documentation', 'text' => 'Resolutions, amended MOA, and forms are verified before submission.'],
+        ['icon_class' => 'fas fa-scale-balanced', 'title' => 'Expert Companies Act compliance', 'text' => 'Every authorised capital increase is handled by professionals who stay current with Companies Act requirements, MCA procedures, and ROC filing practices — ensuring the correct workflow is followed based on the company\'s AOA, existing capital structure, and filing history.'],
+        ['icon_class' => 'fas fa-list-check', 'title' => 'End-to-end increase support', 'text' => 'From reviewing the MOA and drafting board and shareholder resolutions to Form SH-7 and MGT-14 filing and final ROC confirmation — the entire workflow is managed without requiring internal teams to coordinate across multiple steps.'],
+        ['icon_class' => 'fas fa-clock', 'title' => 'Timely SH-7 deadline tracking', 'text' => 'The 30-day window for filing Form SH-7 after passing the special resolution is monitored carefully — with filings completed on time to prevent compounding additional fees and MCA complications.'],
+        ['icon_class' => 'fas fa-lightbulb', 'title' => 'Advisory beyond filing', 'text' => 'Beyond the forms, practical guidance is provided on AOA amendment requirements, applicable stamp duty calculations, headroom planning for upcoming fundraises, and the right capital structure for the company\'s next stage.'],
+        ['icon_class' => 'fas fa-check-circle', 'title' => 'Error-free documentation', 'text' => 'Board and shareholder resolutions, amended MOA, and all MCA form attachments are carefully prepared and verified before submission — reducing the risk of rejection, resubmission, and delays to time-sensitive transactions.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>

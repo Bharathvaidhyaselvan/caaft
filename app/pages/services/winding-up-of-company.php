@@ -295,11 +295,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-user-tie', 'title' => 'CA and CS-led execution', 'text' => 'Qualified professionals manage closure from audit through dissolution.'],
-        ['icon_class' => 'fas fa-magnifying-glass-chart', 'title' => 'Pre-closure compliance audit', 'text' => 'Pending filings and dues identified upfront to avoid late-stage rejection.'],
-        ['icon_class' => 'fas fa-layer-group', 'title' => 'End-to-end integrated support', 'text' => 'GST, bank closure, ROC filing, and final documentation in one workflow.'],
-        ['icon_class' => 'fas fa-globe', 'title' => 'Foreign subsidiary exit expertise', 'text' => 'FEMA, RBI, and parent documentation managed alongside ROC closure.'],
-        ['icon_class' => 'fas fa-tags', 'title' => 'Transparent fees', 'text' => 'Clear scope and pricing defined upfront without hidden add-ons.'],
+        ['icon_class' => 'fas fa-user-tie', 'title' => 'CA and CS-led execution', 'text' => 'Company closure requires coordinated expertise across company law, taxation, and regulatory compliance. Every engagement is led by qualified Chartered Accountants and Company Secretaries who manage the process from pre-closure audit through to final dissolution — with nothing falling through the gap between disciplines.'],
+        ['icon_class' => 'fas fa-magnifying-glass-chart', 'title' => 'Pre-closure compliance audit', 'text' => 'Before any closure filing is initiated, a thorough review of pending ROC filings, outstanding tax dues, GST liabilities, and TDS arrears is completed — identifying and resolving every open obligation upfront to prevent late-stage rejection of the STK-2 application.'],
+        ['icon_class' => 'fas fa-layer-group', 'title' => 'End-to-end integrated support', 'text' => 'GST cancellation, bank account closure, ROC strike-off filing, income tax clearance, and final documentation are all handled under one engagement — so directors do not need to coordinate across multiple service providers for different parts of the closure process.'],
+        ['icon_class' => 'fas fa-globe', 'title' => 'Foreign subsidiary exit expertise', 'text' => 'Closing a company with foreign investment or a company that is itself a subsidiary of an overseas parent involves FEMA compliance, RBI reporting, and parent company documentation requirements alongside the standard ROC closure workflow — all of which are managed as part of the engagement.'],
+        ['icon_class' => 'fas fa-tags', 'title' => 'Transparent fees', 'text' => 'Closure engagements are scoped clearly from the outset with defined deliverables and fixed pricing — so there are no hidden charges, no last-minute additions, and no ambiguity about what is included in the service.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>

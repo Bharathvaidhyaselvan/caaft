@@ -285,11 +285,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-balance-scale', 'title' => 'Expert MCA compliance knowledge', 'text' => 'Updated handling aligned with Companies Act procedures and ROC requirements.'],
-        ['icon_class' => 'fas fa-list-check', 'title' => 'End-to-end process management', 'text' => 'From documentation to filing and post-change updates, full execution support.'],
-        ['icon_class' => 'fas fa-clock', 'title' => 'Timely filing and tracking', 'text' => 'INC-22 and MGT-14 timelines tracked to avoid avoidable penalties.'],
-        ['icon_class' => 'fas fa-route', 'title' => 'Support for all move types', 'text' => 'Within city, inter-city, inter-jurisdictional, and inter-state changes covered.'],
-        ['icon_class' => 'fas fa-check-circle', 'title' => 'Accurate documentation', 'text' => 'Address proofs, NOCs, and forms verified before submission to reduce rejection risk.'],
+        ['icon_class' => 'fas fa-balance-scale', 'title' => 'Expert MCA compliance knowledge', 'text' => 'Every registered office change is handled by professionals who stay current with Companies Act procedures, MCA form requirements, and ROC practices — ensuring the correct route and filing sequence is followed based on the type of move and the company\'s existing registrations.'],
+        ['icon_class' => 'fas fa-list-check', 'title' => 'End-to-end process management', 'text' => 'From drafting the board resolution and sourcing the required address proofs and NOC to filing INC-22 or INC-23 and updating all downstream registrations — the complete process is managed without requiring internal coordination across multiple agencies.'],
+        ['icon_class' => 'fas fa-clock', 'title' => 'Timely filing and tracking', 'text' => 'INC-22 and MGT-14 timelines are tracked from the date of the board or shareholder resolution — ensuring filings are completed within the prescribed windows and avoidable additional fees are not incurred.'],
+        ['icon_class' => 'fas fa-route', 'title' => 'Support for all move types', 'text' => 'Whether the change is within the same city, between cities in the same ROC jurisdiction, across ROC jurisdictions within the same state, or an inter-state move requiring RD approval — the correct procedure is applied for every scenario.'],
+        ['icon_class' => 'fas fa-check-circle', 'title' => 'Accurate documentation', 'text' => 'Address proofs, utility bills, NOCs from property owners, and all MCA form attachments are carefully verified before submission — reducing the risk of rejection, resubmission delays, and gaps in the company\'s official address records.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>

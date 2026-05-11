@@ -251,6 +251,30 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
+    <section class="plc-docs-section" aria-labelledby="opc-docs-heading">
+        <div class="container">
+            <h2 id="opc-docs-heading" class="plc-docs-title">Documents Required for OPC Annual Compliance</h2>
+            <article class="plc-docs-card">
+                <div class="plc-docs-card-head">
+                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
+                    <h3>Required Documents</h3>
+                </div>
+                <ul class="plc-docs-card-list">
+                    <li>Certificate of Incorporation and CIN</li>
+                    <li>MOA and AOA of the OPC</li>
+                    <li>PAN and DSC of the director</li>
+                    <li>Aadhaar and PAN of the director (for DIR-3 KYC)</li>
+                    <li>Bank account statements for the financial year</li>
+                    <li>Books of accounts — cash book, ledger, and supporting vouchers</li>
+                    <li>Previous year audited financial statements</li>
+                    <li>Auditor appointment details and consent letter</li>
+                    <li>Previous year AOC-4 and MGT-7A acknowledgements</li>
+                    <li>Details of any changes to nominee, director, or registered office during the year</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
     <?php
     $why_choose_caaft_heading_id = 'opc-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';

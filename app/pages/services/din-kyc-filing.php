@@ -262,11 +262,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-gavel', 'title' => 'Expert MCA knowledge', 'text' => 'Professionals stay current with MCA rules and DIR-3 KYC requirements.'],
-        ['icon_class' => 'fas fa-tasks', 'title' => 'End-to-end filing support', 'text' => 'From document collection to final portal filing, every step is managed.'],
-        ['icon_class' => 'fas fa-calendar-check', 'title' => 'Deadline tracking', 'text' => '30 September due date is tracked with reminders to avoid DIN deactivation.'],
-        ['icon_class' => 'fas fa-check-circle', 'title' => 'Error-free documentation', 'text' => 'Careful verification reduces rejections caused by mismatch and form selection errors.'],
-        ['icon_class' => 'fas fa-bolt', 'title' => 'Fast DIN reactivation', 'text' => 'Where DIN is deactivated, reactivation support is executed quickly and accurately.'],
+        ['icon_class' => 'fas fa-gavel', 'title' => 'Expert MCA knowledge', 'text' => 'Every DIR-3 KYC filing is handled by professionals who stay current with MCA rules, form updates, and verification requirements — so the correct route is always taken the first time, whether it is web-based or DSC-signed.'],
+        ['icon_class' => 'fas fa-tasks', 'title' => 'End-to-end filing support', 'text' => 'From document collection and Aadhaar OTP coordination to final portal submission and acknowledgement — every step of the DIR-3 KYC process is managed without requiring the director to navigate the MCA portal themselves.'],
+        ['icon_class' => 'fas fa-calendar-check', 'title' => 'Deadline tracking', 'text' => 'The 30 September annual deadline is tracked for every client with proactive reminders well in advance — so DIN deactivation and the avoidable ₹5,000 reactivation penalty never become a problem.'],
+        ['icon_class' => 'fas fa-check-circle', 'title' => 'Error-free documentation', 'text' => 'PAN, Aadhaar, contact details, and identity proofs are carefully verified before submission — reducing the risk of MCA rejection caused by data mismatch, incorrect form selection, or missing attachments.'],
+        ['icon_class' => 'fas fa-bolt', 'title' => 'Fast DIN reactivation', 'text' => 'Where a DIN has already been deactivated due to missed KYC, reactivation support is executed promptly and accurately — minimising disruption to ongoing compliance filings, board resolutions, and MCA transactions.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>

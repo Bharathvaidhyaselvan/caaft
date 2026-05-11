@@ -385,6 +385,30 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
 
+    <section class="plc-docs-section" aria-labelledby="payroll-docs-heading">
+        <div class="container">
+            <h2 id="payroll-docs-heading" class="plc-docs-title">Documents Required for Payroll Setup & Compliance</h2>
+            <article class="plc-docs-card">
+                <div class="plc-docs-card-head">
+                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
+                    <h3>Required Documents</h3>
+                </div>
+                <ul class="plc-docs-card-list">
+                    <li>Company PAN, TAN, and GST registration certificate</li>
+                    <li>PF and ESI registration numbers (or details for new registration)</li>
+                    <li>Professional Tax registration certificate (state-specific)</li>
+                    <li>Employee details — PAN, Aadhaar, bank account, and joining date</li>
+                    <li>CTC breakup and salary structure for each employee</li>
+                    <li>Previous month payroll data and payslips (for migration cases)</li>
+                    <li>Attendance and leave records for the pay period</li>
+                    <li>Investment declaration forms from employees (for TDS computation)</li>
+                    <li>Prior year Form 16 and TDS returns (for onboarding mid-year)</li>
+                    <li>HR policy document covering leave, overtime, and deduction rules</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
     <?php
     $why_choose_caaft_heading_id = 'payroll-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
@@ -393,11 +417,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-cogs', 'title' => 'End-to-end payroll ownership', 'text' => 'Attendance to disbursement cycle managed under one accountable team.'],
-        ['icon_class' => 'fas fa-check-circle', 'title' => 'Complete statutory compliance', 'text' => 'PF, ESI, TDS, PT, and LWF adherence with filing evidence.'],
-        ['icon_class' => 'fas fa-user-tie', 'title' => 'CA-led advisory support', 'text' => 'Qualified support on salary structuring and tax treatment through the year.'],
-        ['icon_class' => 'fas fa-cloud', 'title' => 'Scalable outsourcing + ESS', 'text' => 'Secure self-service plus automation from 10 to 1,000+ employees.'],
-        ['icon_class' => 'fas fa-chart-line', 'title' => 'Proactive MIS and MNC onboarding', 'text' => 'Management dashboards and India-entry payroll setup for foreign entities.'],
+        ['icon_class' => 'fas fa-cogs', 'title' => 'End-to-end payroll ownership', 'text' => 'The entire payroll cycle — from attendance and leave inputs through salary computation, payslip generation, bank disbursement, and month-end reconciliation — is managed under one accountable team. There is no fragmented handoff between HR, finance, and compliance functions.'],
+        ['icon_class' => 'fas fa-check-circle', 'title' => 'Complete statutory compliance', 'text' => 'PF, ESI, TDS, Professional Tax, and Labour Welfare Fund obligations are calculated accurately, filed on time, and supported by proper documentation and filing evidence — so the business remains clean across all statutory payroll registers and audit trails.'],
+        ['icon_class' => 'fas fa-user-tie', 'title' => 'CA-led advisory support', 'text' => 'Beyond processing, qualified Chartered Accountants provide ongoing advice on salary structuring, tax-efficient allowance planning, perquisite treatment, and year-end Form 16 and ITR coordination — helping employees optimise take-home and helping businesses manage payroll costs effectively.'],
+        ['icon_class' => 'fas fa-cloud', 'title' => 'Scalable outsourcing with employee self-service', 'text' => 'The service scales from small teams of 10 employees to organisations with 1,000 or more — supported by secure employee self-service portals for payslip access and leave management, and automation that reduces manual effort as headcount grows.'],
+        ['icon_class' => 'fas fa-chart-line', 'title' => 'Proactive MIS and MNC onboarding support', 'text' => 'Management dashboards and payroll MIS reports are provided for leadership visibility across cost centres, headcount, and compliance status. For foreign entities entering India, dedicated onboarding support covers India-specific payroll setup, compliance framework establishment, and ongoing statutory management.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>

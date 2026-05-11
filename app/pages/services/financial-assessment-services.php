@@ -255,6 +255,30 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
+    <section class="plc-docs-section" aria-labelledby="financial-assessment-docs-heading">
+        <div class="container">
+            <h2 id="financial-assessment-docs-heading" class="plc-docs-title">Documents Required for Financial Assessment</h2>
+            <article class="plc-docs-card">
+                <div class="plc-docs-card-head">
+                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
+                    <h3>Required Documents</h3>
+                </div>
+                <ul class="plc-docs-card-list">
+                    <li>Audited financial statements for last 2–3 years (Balance Sheet, P&L, Cash Flow)</li>
+                    <li>Current year management accounts or trial balance</li>
+                    <li>Bank statements for the last 6–12 months</li>
+                    <li>Outstanding loan and credit facility details with repayment schedules</li>
+                    <li>Accounts receivable and payable ageing reports</li>
+                    <li>GST and income tax return filings for the last 2–3 years</li>
+                    <li>Cost structure breakdown — fixed, variable, and overhead</li>
+                    <li>Revenue data by product, service line, or customer segment</li>
+                    <li>Any existing budgets, forecasts, or management reports</li>
+                    <li>Details of any pending litigation, contingent liabilities, or off-balance-sheet commitments</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
     <?php
     $why_choose_caaft_heading_id = 'financial-assessment-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
@@ -263,11 +287,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-clipboard-check', 'title' => 'Comprehensive structured review', 'text' => 'Complete analysis across profitability, liquidity, debt, and working capital.'],
-        ['icon_class' => 'fas fa-user-graduate', 'title' => 'Qualified CA expertise', 'text' => 'Experienced Chartered Accountants with strong analytical depth.'],
-        ['icon_class' => 'fas fa-exclamation-triangle', 'title' => 'Early risk identification', 'text' => 'Surface vulnerabilities and compliance gaps before escalation.'],
-        ['icon_class' => 'fas fa-bullseye', 'title' => 'Purpose-tailored assessment', 'text' => 'Scope matched to due diligence, audit, loans, restructuring, or internal planning.'],
-        ['icon_class' => 'fas fa-file-signature', 'title' => 'Clear reporting and action plan', 'text' => 'Jargon-free report with practical recommendations and forward plan.'],
+        ['icon_class' => 'fas fa-clipboard-check', 'title' => 'Comprehensive, structured financial review', 'text' => 'CAAFT conducts thorough financial assessments covering revenue streams, cost structures, profitability, liquidity, debt obligations, and working capital — delivering a complete, honest picture of where a business truly stands financially.'],
+        ['icon_class' => 'fas fa-user-graduate', 'title' => 'Qualified professionals with sharp analytical expertise', 'text' => 'Every financial assessment is conducted by experienced Chartered Accountants who combine technical financial knowledge with real-world business understanding — ensuring findings go beyond surface-level numbers to uncover meaningful, actionable insights.'],
+        ['icon_class' => 'fas fa-exclamation-triangle', 'title' => 'Identifying risks before they become problems', 'text' => 'The assessment process is designed to surface financial vulnerabilities, inefficiencies, and compliance gaps early — giving businesses the opportunity to address weaknesses before they escalate into costly disruptions or regulatory consequences.'],
+        ['icon_class' => 'fas fa-bullseye', 'title' => 'Assessment tailored to the purpose', 'text' => 'Whether the need is internal decision-making, investor due diligence, loan applications, business restructuring, or pre-audit preparation — CAAFT customises the scope and depth of every review to match the specific objective and audience.'],
+        ['icon_class' => 'fas fa-file-signature', 'title' => 'Clear reporting and forward-looking recommendations', 'text' => 'Findings are translated into clear, jargon-free reports with practical recommendations. Every CAAFT financial assessment concludes with a structured action plan — helping businesses move from understanding their financial position to actively improving it.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>

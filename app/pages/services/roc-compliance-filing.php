@@ -213,6 +213,30 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
 
+    <section class="plc-docs-section" aria-labelledby="roc-docs-heading">
+        <div class="container">
+            <h2 id="roc-docs-heading" class="plc-docs-title">Documents Typically Required for ROC Filings</h2>
+            <article class="plc-docs-card">
+                <div class="plc-docs-card-head">
+                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
+                    <h3>Required Documents</h3>
+                </div>
+                <ul class="plc-docs-card-list">
+                    <li>Certificate of Incorporation and CIN</li>
+                    <li>MOA and AOA of the company</li>
+                    <li>PAN and DSC of all signing directors</li>
+                    <li>Board resolutions relevant to the filing event</li>
+                    <li>Audited financial statements (for AOC-4 and related filings)</li>
+                    <li>Auditor appointment letter and consent (for ADT-1)</li>
+                    <li>Director consent and identity proof (for DIR-12 and DIR-3 KYC)</li>
+                    <li>Shareholder resolution or MGT-14 supporting documents (where applicable)</li>
+                    <li>Previous ROC filing acknowledgements and SRN numbers</li>
+                    <li>Any event-specific documents required by the particular MCA form</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
     <?php
     $why_choose_caaft_heading_id = 'roc-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
@@ -221,11 +245,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-balance-scale', 'title' => 'Expert ROC and MCA knowledge', 'text' => 'Filings are handled by professionals current with Companies Act and MCA updates.'],
-        ['icon_class' => 'fas fa-layer-group', 'title' => 'Comprehensive filing coverage', 'text' => 'DIR-3 KYC, ADT-1, DIR-12, INC-22, MGT-14, and corrections managed in one workflow.'],
-        ['icon_class' => 'fas fa-calendar-check', 'title' => 'Deadline management', 'text' => 'Due dates are tracked to prevent avoidable penalties and missed submissions.'],
-        ['icon_class' => 'fas fa-check-circle', 'title' => 'Accurate documentation', 'text' => 'Data and attachments are validated to reduce rejection and resubmission cycles.'],
-        ['icon_class' => 'fas fa-wrench', 'title' => 'Corrections and resubmission support', 'text' => 'Correction filings are handled promptly to restore accurate MCA records.'],
+        ['icon_class' => 'fas fa-balance-scale', 'title' => 'Expert ROC and MCA knowledge', 'text' => 'Every filing is handled by professionals who stay current with Companies Act amendments, MCA portal updates, and ROC practices — ensuring the correct forms, fee calculations, and supporting documents are applied for each type of filing.'],
+        ['icon_class' => 'fas fa-layer-group', 'title' => 'Comprehensive filing coverage', 'text' => 'DIR-3 KYC, ADT-1 auditor appointment, DIR-12 director changes, INC-22 office updates, MGT-14 resolutions, and correction filings are all managed under one engagement — without requiring different service providers for different MCA requirements.'],
+        ['icon_class' => 'fas fa-calendar-check', 'title' => 'Deadline management', 'text' => 'Due dates across every active filing obligation are tracked and actioned proactively — so no submission window is missed, no avoidable additional fee is incurred, and no compliance default accumulates on the company\'s MCA record.'],
+        ['icon_class' => 'fas fa-check-circle', 'title' => 'Accurate documentation', 'text' => 'Data, DSC coordination, and form attachments are validated before every submission — reducing the rejection rate, eliminating resubmission cycles, and keeping the company\'s MCA records clean and current.'],
+        ['icon_class' => 'fas fa-wrench', 'title' => 'Corrections and resubmission support', 'text' => 'Where earlier filings contain errors — whether from previous advisors or internal submissions — correction filings are handled promptly to restore accurate MCA records and remove inaccuracies before they affect future transactions or due diligence.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>
