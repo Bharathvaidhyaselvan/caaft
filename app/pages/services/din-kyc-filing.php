@@ -93,7 +93,7 @@ declare(strict_types=1);
     $caaft_hero_h2_after = '';
     $caaft_hero_lead_paragraphs = [
         'The Director KYC (DIN KYC) process, mandated by the MCA, ensures that the identity and contact details of every director holding a Director Identification Number remain verified and current in government records.',
-        'Every director of a Private Limited Company, LLP, or registered entity must complete the DIR-3 KYC filing annually by 30 September. Non-compliance leads to automatic DIN deactivation until the KYC is filed and the DIN is reactivated with a Rs. 5,000 penalty. CAAFT delivers accurate, timely DIR-3 KYC filing and DIN reactivation support for directors across India.',
+        'Every director of a Private Limited Company, LLP, or registered entity must complete the DIR-3 KYC filing annually by 30 September. Non-compliance leads to automatic DIN deactivation — restricting the director from filing company forms, signing statutory documents, or participating in any compliance activity — until the KYC is filed and the DIN is reactivated with a ₹5,000 penalty. CAAFT delivers accurate, timely DIR-3 KYC filing and DIN reactivation support for directors across India.',
     ];
     $caaft_hero_primary_cta_label = 'Complete Your DIN KYC Today';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
@@ -136,13 +136,13 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'din-importance-heading';
     $caaft_challenges_title = 'Why Director KYC Compliance Is Important';
-    $caaft_challenges_intro = 'Key consequences of non-compliance:';
+    $caaft_challenges_intro = 'The MCA uses Director KYC data to verify the identity and authenticity of directors — ensuring accountability and transparency within registered companies. If a director fails to complete DIR-3 KYC by the deadline, the DIN is automatically deactivated — immediately restricting the director from acting in any corporate compliance capacity. Key consequences of non-compliance:';
     $caaft_challenges_items = [
-        'DIN marked as "Deactivated due to non-filing of KYC" on the MCA portal immediately after the deadline.',
-        'Rs. 5,000 penalty must be paid before the DIN can be reactivated.',
-        'All MCA forms requiring the director\'s digital signature become unfiled, causing cascading compliance delays.',
-        'Annual Return (MGT-7), Financial Statement (AOC-4), and other time-sensitive filings are delayed.',
-        'Reputational and governance complications when company compliance filings are held up due to DIN status.',
+        'DIN marked as "Deactivated due to non-filing of KYC" — visible on the MCA portal immediately after the deadline',
+        '₹5,000 penalty must be paid before the DIN can be reactivated — blocking all company filings until payment and reactivation are complete',
+        'All MCA forms requiring the director\'s digital signature become unfiled — creating cascading compliance failures across the company',
+        'Annual Return (MGT-7), Financial Statement (AOC-4), and other time-sensitive filings are delayed when a director\'s DIN is deactivated',
+        'Reputational and governance complications when a company\'s compliance filings are held up due to a director\'s DIN status',
     ];
     $caaft_challenges_outro = '';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
@@ -153,8 +153,8 @@ declare(strict_types=1);
     $caaft_benefits_title = 'Types of Director KYC Filing';
     $caaft_benefits_intro = 'The MCA provides two methods for completing Director KYC. Selecting the correct method is essential to avoid rejection:';
     $caaft_benefits_items = [
-        ['lead' => 'DIR-3 KYC Form Filing', 'text' => 'Required when filing KYC for the first time or updating details. The form must be digitally signed by the director and certified by a practising CA, CS, or CMA, with full document submission.', 'icon_class' => 'fas fa-file-signature', 'tone' => 'blue'],
-        ['lead' => 'DIR-3 KYC Web Filing', 'text' => 'A simplified method for directors who already filed KYC and only need to confirm existing details without changes. OTP verification on registered email and mobile is used.', 'icon_class' => 'fas fa-globe', 'tone' => 'violet'],
+        ['lead' => 'DIR-3 KYC Form Filing', 'text' => ' Required when a director is filing KYC for the first time or updating specific information such as contact details. The form must be digitally signed by the director and certified by a practising Chartered Accountant, Company Secretary, or Cost Accountant. This method requires full document submission and professional attestation.', 'icon_class' => 'fas fa-file-signature', 'tone' => 'blue'],
+        ['lead' => 'DIR-3 KYC Web Filing', 'text' => 'A simplified method available for directors who have already filed KYC previously and only need to confirm existing details without changes. The process involves OTP verification through the registered email and mobile number — no professional certification required for the web-based confirmation.', 'icon_class' => 'fas fa-globe', 'tone' => 'violet'],
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
@@ -162,15 +162,16 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'din-needs-heading';
     $caaft_challenges_title = 'Who Needs Director KYC Filing?';
-    $caaft_challenges_intro = 'Every individual holding a Director Identification Number issued by the MCA must complete annual KYC, including:';
+    $caaft_challenges_intro = 'Every individual holding a Director Identification Number (DIN) issued by the MCA must complete the annual KYC process — regardless of whether they are actively involved in company operations:';
     $caaft_challenges_items = [
-        'Directors of Private Limited Companies with DIN issued on or before 31 March of the preceding financial year',
-        'Designated Partners of LLPs holding DPIN',
-        'Newly appointed directors completing first-time DIR-3 KYC filing',
-        'Startup founders who are directors in their own company',
-        'Business owners holding multiple directorships across companies',
-        'Professionals responsible for MCA filings requiring active DIN status',
-        'Foreign nationals holding DIN for their role in Indian companies',
+        'Directors of Private Limited Companies holding a DIN issued on or before 31 March of the preceding financial year',
+        'Designated Partners of LLPs holding DPIN (Designated Partner Identification Number)',
+'Newly appointed directors completing their first DIR-3 KYC filing',
+'Startup founders who are directors in their own company',
+'Business owners holding multiple directorships across different companies',
+'Professionals responsible for MCA filings who require an active DIN at all times',
+'Foreign nationals holding a DIN for their role in Indian companies',
+
     ];
     $caaft_challenges_outro = '';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
@@ -180,13 +181,14 @@ declare(strict_types=1);
     $caaft_delivered_heading_id = 'din-delivered-heading';
     $caaft_delivered_title = 'Director KYC Services — What Gets Delivered';
     $caaft_delivered_items = [
-        ['name' => 'DIR-3 KYC Form Filing', 'text' => 'Complete preparation and submission through the MCA portal with document verification, DSC authentication, and professional certification.'],
-        ['name' => 'DIR-3 KYC Web Filing', 'text' => 'Quick web confirmation for annual verification where no detail changes are required.'],
-        ['name' => 'DIN Status Verification', 'text' => 'DIN status checked before filing to identify correct compliance route and avoid errors.'],
-        ['name' => 'DIN Reactivation Support', 'text' => 'End-to-end support for deactivated DIN restoration, including form route and late fee handling guidance.'],
-        ['name' => 'Document Preparation and Verification', 'text' => 'PAN, Aadhaar, identity and address proofs validated before submission to reduce rejection risk.'],
-        ['name' => 'OTP and Contact Verification', 'text' => 'Registered mobile and email authentication support for successful MCA processing.'],
-        ['name' => 'Annual Compliance Reminders', 'text' => 'Proactive reminders to ensure no deadline is missed in future filing cycles.'],
+        ['name' => 'DIR-3 KYC Form Filing', 'text' => 'Complete preparation and submission of the DIR-3 KYC form through the MCA portal — with proper document verification, digital signature authentication, and professional certification.'],
+        ['name' => 'DIR-3 KYC Web Filing', 'text' => 'Quick web-based confirmation for directors completing annual verification without changes to existing details — with OTP verification through registered email and mobile management efficiently.'],
+        ['name' => 'DIN Status Verification', 'text' => 'DIN status checked on the MCA portal before filing begins — confirming whether the DIN is active, deactivated, or pending compliance, and identifying the appropriate filing route.'],
+        ['name' => 'DIN Reactivation Support', 'text' => 'Fast assistance for restoring deactivated DINs — including late fee payment guidance, correct form selection, and complete reactivation process management from start to finish.'],
+        ['name' => 'Document Preparation and Verification', 'text' => 'PAN, address proof, Aadhaar, and identity documents carefully reviewed and validated before submission — preventing form rejection due to documentation errors or mismatches.'],
+        ['name' => 'Email and Mobile OTP Verification', 'text' => 'Secure verification of the director\'s registered email ID and mobile number — required for MCA authentication and successful DIR-3 KYC processing.'],
+        ['name' => 'Late Fee Handling', 'text' => 'Guidance for directors who missed the filing deadline — including late fee calculation, payment procedures, and complete reactivation process management.'],
+        ['name' => 'Annual Compliance Reminders', 'text' => 'Proactive deadline reminders every year — ensuring no director misses the 30 September filing date and no DIN is ever deactivated due to an oversight.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
@@ -202,11 +204,12 @@ declare(strict_types=1);
                 <ul class="plc-docs-card-list">
                     <li>PAN Card of the director</li>
                     <li>Aadhaar Card or valid passport (for foreign nationals)</li>
-                    <li>Residential address proof - utility bill, bank statement, or passport</li>
+                    <li>Residential address proof — utility bill, bank statement, or passport</li>
                     <li>Mobile number registered with Aadhaar for OTP verification</li>
                     <li>Email ID for MCA portal verification</li>
                     <li>Digital Signature Certificate (DSC) of the director</li>
                 </ul>
+                <p style="margin:16px 0 0;font-size:0.97rem;line-height:1.6;color:#4a5568;font-weight:500;">All documents must be accurate and match existing MCA records — any mismatch between PAN, Aadhaar, or contact details and MCA records causes form rejection and requires correction before resubmission.</p>
             </article>
         </div>
     </section>
@@ -216,12 +219,12 @@ declare(strict_types=1);
     $caaft_steps_title = 'Step-by-Step Process';
     $caaft_steps_numbered = true;
     $caaft_steps_items = [
-        ['title' => 'Document Collection', 'text' => 'PAN, Aadhaar, identity proof, address proof and required data are collected before filing.'],
-        ['title' => 'Verification of Details', 'text' => 'All details are matched with MCA records to prevent rejection due to data mismatch.'],
-        ['title' => 'DIR-3 KYC Preparation', 'text' => 'The form is prepared with accurate personal and contact details and cross-checked before authentication.'],
-        ['title' => 'Digital Signature Authentication', 'text' => 'Director DSC and professional certification are completed where required.'],
-        ['title' => 'Submission on MCA Portal', 'text' => 'Authenticated filing is submitted and acknowledgement is retained for compliance records.'],
-        ['title' => 'Compliance Confirmation', 'text' => 'Post-approval confirmation is shared to ensure DIN remains active and compliant.'],
+        ['title' => 'Document Collection', 'text' => ' Identity proof, address proof, PAN, Aadhaar, and all other required information are collected and reviewed before the filing process begins.'],
+        ['title' => 'Verification of Details', 'text' => ' All documents and information are verified against existing MCA records to ensure consistency — preventing rejection due to data mismatches.'],
+        ['title' => 'DIR-3 KYC Preparation', 'text' => ' The form is prepared with the directors accurate personal and contact details — cross-checked before digital authentication.'],
+        ['title' => 'Digital Signature Authentication', 'text' => 'The form is digitally signed by the director and certified by a practising CA, CS, or CMA — as required for DIR-3 KYC Form filing.'],
+        ['title' => 'Submission on MCA Portal', 'text' => 'The completed and authenticated form is uploaded to the MCA portal for processing — with submission confirmation and acknowledgement retained for records.'],
+        ['title' => 'Compliance Confirmation', 'text' => 'Once approved, the director\'s DIN remains active and compliant — confirmed and documented for the director\'s records and the company compliance file.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
     ?>
@@ -229,16 +232,17 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'din-common-heading';
     $caaft_challenges_title = 'Common Director KYC Challenges CAAFT Solves';
-    $caaft_challenges_intro = 'Most directors seek support when facing one or more of these:';
+    $caaft_challenges_intro = 'Most directors seek professional KYC filing support when facing one or more of these:';
     $caaft_challenges_items = [
-        'DIN already deactivated and uncertainty about reactivation route and penalty payment.',
-        'PAN and Aadhaar mismatches causing DIR-3 KYC rejection.',
-        'Changed mobile or email causing OTP failures during web filing.',
-        'Foreign directors needing notarisation or apostille support for overseas documents.',
-        'Multiple directors needing coordinated KYC completion before deadline.',
-        'First-time directors unsure whether to file DIR-3 KYC Form or DIR-3 KYC Web.',
+        'DIN already deactivated and the director is unsure of the correct reactivation process and late fee payment procedure',
+        'Mismatch between PAN and Aadhaar details causing DIR-3 KYC form rejection on the MCA portal',
+        'Director\'s registered email or mobile number changed — causing OTP verification failure during web filing',
+        'Foreign directors unsure of the additional documentation requirements — including notarisation or apostille for overseas address proof',
+        'Multiple company directors in the same organisation needing coordinated KYC filing across all DINs before the deadline',
+        'Directors who assumed their KYC was already filed — and discover the DIN is deactivated only when a company form submission fails',
+        'First-time directors unsure whether to use DIR-3 KYC Form or DIR-3 KYC Web — selecting the wrong method and causing submission errors',
     ];
-    $caaft_challenges_outro = 'CAAFT\'s structured approach addresses each of these, delivering accurate and timely filing without directors navigating the MCA process independently.';
+    $caaft_challenges_outro = 'CAAFT\'s structured approach addresses each of these — delivering accurate, on-time Director KYC filing and fast DIN reactivation support without requiring directors to navigate the MCA portal process independently.';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
@@ -247,9 +251,9 @@ declare(strict_types=1);
     $caaft_benefits_title = 'Consequences of Not Filing Director KYC';
     $caaft_benefits_intro = '';
     $caaft_benefits_items = [
-        ['lead' => 'DIN Deactivation', 'text' => 'DIN is marked as deactivated due to non-filing of KYC from 1 October.', 'icon_class' => 'fas fa-ban', 'tone' => 'orange'],
-        ['lead' => 'Rs. 5,000 Reactivation Penalty', 'text' => 'Late filing and penalty payment are mandatory before DIN can be restored.', 'icon_class' => 'fas fa-rupee-sign', 'tone' => 'violet'],
-        ['lead' => 'Operational Disruption', 'text' => 'Directors cannot sign MCA forms, delaying annual returns and other time-sensitive filings.', 'icon_class' => 'fas fa-exclamation-triangle', 'tone' => 'blue'],
+        ['lead' => 'DIN Deactivation', 'text' => 'The MCA automatically marks the DIN as "Deactivated due to non-filing of KYC" on 1 October — the day after the 30 September deadline — without any prior warning or notice.', 'icon_class' => 'fas fa-ban', 'tone' => 'orange'],
+        ['lead' => 'Rs. 5,000 Reactivation Penalty', 'text' => ' A penalty of ₹5,000 must be paid through the MCA portal before the DIN can be reactivated. Filing and payment are required before the DIN becomes active again.', 'icon_class' => 'fas fa-rupee-sign', 'tone' => 'violet'],
+        ['lead' => 'Operational Disruption', 'text' => 'A deactivated DIN restricts the director from filing any MCA form, signing statutory documents, or participating in company compliance activities — blocking Annual Returns, Financial Statements, and all other time-sensitive filings until reactivation is complete.', 'icon_class' => 'fas fa-exclamation-triangle', 'tone' => 'blue'],
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
@@ -259,14 +263,14 @@ declare(strict_types=1);
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = '';
+    $why_choose_caaft_intro = 'Every DIR-3 KYC filing is handled by professionals who stay current with MCA guidelines and DIR-3 KYC requirements — ensuring complete, accurate compliance with every annual filing.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-gavel', 'title' => 'Expert MCA knowledge', 'text' => 'Every DIR-3 KYC filing is handled by professionals who stay current with MCA rules, form updates, and verification requirements — so the correct route is always taken the first time, whether it is web-based or DSC-signed.'],
-        ['icon_class' => 'fas fa-tasks', 'title' => 'End-to-end filing support', 'text' => 'From document collection and Aadhaar OTP coordination to final portal submission and acknowledgement — every step of the DIR-3 KYC process is managed without requiring the director to navigate the MCA portal themselves.'],
-        ['icon_class' => 'fas fa-calendar-check', 'title' => 'Deadline tracking', 'text' => 'The 30 September annual deadline is tracked for every client with proactive reminders well in advance — so DIN deactivation and the avoidable ₹5,000 reactivation penalty never become a problem.'],
-        ['icon_class' => 'fas fa-check-circle', 'title' => 'Error-free documentation', 'text' => 'PAN, Aadhaar, contact details, and identity proofs are carefully verified before submission — reducing the risk of MCA rejection caused by data mismatch, incorrect form selection, or missing attachments.'],
-        ['icon_class' => 'fas fa-bolt', 'title' => 'Fast DIN reactivation', 'text' => 'Where a DIN has already been deactivated due to missed KYC, reactivation support is executed promptly and accurately — minimising disruption to ongoing compliance filings, board resolutions, and MCA transactions.'],
+        ['icon_class' => 'fas fa-gavel', 'title' => 'Expert knowledge of MCA regulations', 'text' => 'Every engagement is handled by professionals who stay current with MCA guidelines and DIR-3 KYC requirements — ensuring complete, accurate compliance with every annual filing.'],
+        ['icon_class' => 'fas fa-tasks', 'title' => 'End-to-end KYC filing support', 'text' => 'From document collection and verification to digital signature authentication and final MCA portal submission — the entire Director KYC process is managed without requiring the director to navigate the portal independently.'],
+        ['icon_class' => 'fas fa-calendar-check', 'title' => 'Timely filing and deadline tracking', 'text' => 'The 30 September deadline is tracked for every client — with advance reminders ensuring KYC is filed well before the deadline and no DIN is ever deactivated due to an oversight.'],
+        ['icon_class' => 'fas fa-check-circle', 'title' => 'Accurate documentation and error-free filing', 'text' => 'All documents are carefully verified before submission — minimising the risk of rejection due to PAN-Aadhaar mismatches, contact detail errors, or incorrect form selection.'],
+        ['icon_class' => 'fas fa-bolt', 'title' => 'Fast DIN reactivation support', 'text' => 'Where a DIN has already been deactivated, the reactivation process is managed immediately — including late fee payment guidance, correct form preparation, and MCA portal submission — restoring compliance as quickly as possible.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>
@@ -277,7 +281,7 @@ declare(strict_types=1);
     $caaft_key_facts_items = [
         ['stat' => '30 lakh+', 'text' => 'Over 30 lakh Director Identification Numbers (DINs) have been issued by the MCA — making Director KYC one of the most widely applicable annual compliance requirements in India\'s corporate ecosystem.'],
         ['stat' => '₹5,000', 'text' => 'Thousands of directors face DIN deactivation every year due to missed DIR-3 KYC filing — resulting in ₹5,000 penalties and compliance disruptions that block all company filings until reactivation is completed.'],
-        ['stat' => '1 Oct impact', 'text' => 'A deactivated DIN immediately restricts participation in MCA form filing, statutory document signing, and all company compliance activities — creating cascading delays across Annual Returns, Financial Statements, and other time-sensitive corporate filings.'],
+        ['stat' => 'Cascading impact', 'text' => 'A deactivated DIN immediately restricts participation in MCA form filing, statutory document signing, and all company compliance activities — creating cascading delays across Annual Returns, Financial Statements, and other time-sensitive corporate filings.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
@@ -286,7 +290,7 @@ declare(strict_types=1);
     $caaft_cta_section_id = 'get-in-touch';
     $caaft_cta_heading_id = 'din-cta-heading';
     $caaft_cta_title = 'Ready to Complete Director KYC the Right Way?';
-    $caaft_cta_text = 'An active DIN is the foundation of every director\'s ability to participate in company compliance. Missing the 30 September deadline costs Rs. 5,000 and blocks filings until reactivation. Whether filing on time, updating contact details, or reactivating a deactivated DIN, CAAFT delivers accurate and compliant support across India.';
+    $caaft_cta_text = 'An active DIN is the foundation of every director\'s ability to participate in company compliance — from signing MCA forms to approving annual returns. Missing the 30 September deadline costs ₹5,000 in penalty and blocks all company filings until reactivation is complete. Whether filing on time, updating contact details, or reactivating a deactivated DIN — CAAFT delivers accurate, fast, and fully compliant Director KYC support for every director across India.';
     $caaft_cta_button_label = 'Reactivate Your DIN Today';
     $caaft_cta_button_href = '/contact#contact_us';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
@@ -299,10 +303,10 @@ declare(strict_types=1);
     $caaft_faq_prefix = 'dinKycFaq';
     $caaft_faq_items = [
         ['question' => 'How can a director check whether their DIN KYC is already completed?', 'answer' => 'DIN status can be verified on the MCA portal using the "Verify DIN Status" feature. By entering the DIN number, the system displays whether the DIN is active, deactivated, or compliant with KYC requirements.'],
-        ['question' => 'Can a director update personal details during the DIR-3 KYC process?', 'answer' => 'Yes. Details such as email address, mobile number, and residential address can be updated during DIR-3 KYC filing. Major corrections like name changes require additional supporting documents and approval through specific MCA forms.'],
-        ['question' => 'Do foreign directors need to complete DIN KYC?', 'answer' => 'Yes. Foreign nationals holding a DIN must complete Director KYC annually with valid passport and overseas address proof, which may require notarisation or apostille depending on MCA requirements.'],
-        ['question' => 'What should a director do if their email or mobile number changes after filing KYC?', 'answer' => 'Updated details should be submitted during the next DIR-3 KYC filing cycle or through the appropriate MCA procedure to ensure accurate contact information is maintained.'],
-        ['question' => 'Can multiple directors from the same company complete KYC together?', 'answer' => 'Yes. Multiple directors can complete KYC in parallel, but each DIN requires an individual filing.'],
+        ['question' => 'Can a director update personal details during the DIR-3 KYC process?', 'answer' => 'Yes. Details such as email address, mobile number, and residential address can be updated during the DIR-3 KYC filing. Major corrections like name changes require additional supporting documents and approval through specific MCA forms — and cannot be made through the standard KYC process.'],
+        ['question' => 'Do foreign directors need to complete DIN KYC?', 'answer' => 'Yes. Foreign nationals holding a DIN must complete the Director KYC process annually — submitting valid identity proof such as a passport and overseas address proof, which may require notarisation or apostille depending on MCA requirements.'],
+        ['question' => 'What should a director do if their email or mobile number changes after filing KYC?', 'answer' => 'Updated details should be submitted during the next DIR-3 KYC filing cycle or through the appropriate MCA procedure to ensure accurate contact information is maintained in government records — preventing OTP verification failures in future compliance cycles.'],
+        ['question' => 'Can multiple directors from the same company complete KYC together?', 'answer' => 'Yes. Multiple directors from the same company can complete their KYC filings simultaneously. However, each director must submit an individual DIR-3 KYC form — as the compliance requirement applies independently to every DIN, not to the company as a whole.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-faq.php';
     ?>
