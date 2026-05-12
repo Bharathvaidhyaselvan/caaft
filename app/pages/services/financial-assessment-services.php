@@ -114,8 +114,9 @@ declare(strict_types=1);
     $caaft_hero_h2_highlight = 'Actionable Insights.';
     $caaft_hero_h2_after = ' Audit-Ready Reports';
     $caaft_hero_lead_paragraphs = [
-        'Effective financial management starts with knowing exactly where a business stands. Whether a startup in Chennai, a growing SME, or an established corporate entity, a structured financial assessment gives the clarity and control needed for smarter decisions and sustainable growth.',
-        'A properly conducted financial assessment not only presents current financial position but also gives actionable recommendations to improve profitability, streamline cash flow, and strengthen investment planning.',
+      'Effective financial management starts with knowing exactly where a business stands. Whether a startup in Chennai, a growing SME, or an established corporate entity — a structured financial assessment provides the clarity, control, and insight needed to make smarter decisions and grow sustainably.',
+      'A properly conducted financial assessment not only presents the current financial position but also delivers actionable recommendations to enhance profitability, streamline cash flow, and support better investment planning.',
+
     ];
     $caaft_hero_primary_cta_label = 'Start Financial Assessment Today';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
@@ -144,9 +145,9 @@ declare(strict_types=1);
     $caaft_overview_heading_id = 'financial-assessment-what-heading';
     $caaft_overview_title = 'What is Financial Assessment?';
     $caaft_overview_paragraphs = [
-        'Financial assessment is the systematic evaluation of an organisation or individual financial condition through analysis of statements, cash flow, assets, liabilities, and overall performance.',
-        'The process helps determine financial stability, identify risks, and align financial goals with business strategy.',
-        'It gives decision-makers a clear and honest picture of financial health at any point in time.',
+      'Financial assessment is the systematic evaluation of an organisation\'s or individual\'s financial condition. It involves analyzing financial statements, cash flow, assets, liabilities, and overall financial performance.',
+      'The process helps determine financial stability, identify potential risks, and ensure that financial goals remain aligned with business strategies — giving decision-makers a clear, honest picture of financial health at any given point.',
+
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
@@ -158,26 +159,28 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'financial-assessment-needs-heading';
     $caaft_challenges_title = 'Who Needs Financial Assessment Services?';
-    $caaft_challenges_intro = 'CAAFT\'s financial assessment services are designed for:';
+    $caaft_challenges_intro = 'CAAFT\'s financial assessment services are built for a wide range of clients:';
     $caaft_challenges_items = [
         'Small and Medium Business Owners (SMEs) seeking structured financial oversight',
-        'Startups and entrepreneurs needing a baseline view of financial health',
+        'Startups and entrepreneurs needing a clear baseline of financial health',
         'Corporate companies preparing for audits, due diligence, or restructuring',
-        'Investors and analysts evaluating business performance',
-        'Individuals seeking clarity for personal financial planning and investment decisions',
+        'Investors and financial analysts evaluating business performance',
+        'Individuals seeking clarity on personal financial planning and investment decisions',
+
+
     ];
-    $caaft_challenges_outro = 'Whether for business or personal finance, structured assessments provide actionable and practical insights.';
+    $caaft_challenges_outro = 'Whether managing a growing business or planning personal finances, a structured financial assessment delivers valuable, actionable insights.';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
     <?php
     $caaft_benefits_heading_id = 'financial-assessment-fy-ay-heading';
     $caaft_benefits_title = 'What are Assessment Year and Financial Year?';
-    $caaft_benefits_intro = 'Understanding FY and AY is essential for tax compliance and financial planning in India.';
+    $caaft_benefits_intro = 'Understanding the difference between the assessment year and financial year is essential for proper financial planning and tax compliance in India.';
     $caaft_benefits_items = [
-        ['lead' => 'Financial Year (FY)', 'text' => 'The period in which income is earned, from April 1 to March 31.', 'icon_class' => 'fas fa-calendar-alt', 'tone' => 'blue'],
-        ['lead' => 'Assessment Year (AY)', 'text' => 'The year following FY in which that income is assessed and taxed.', 'icon_class' => 'fas fa-file-invoice-dollar', 'tone' => 'violet'],
-        ['lead' => 'Example', 'text' => 'Income earned in FY 2024-25 is assessed in AY 2025-26.', 'icon_class' => 'fas fa-lightbulb', 'tone' => 'green'],
+        ['lead' => 'Financial Year (FY)', 'text' => 'The period in which income is earned. In India, it runs from April 1 to March 31.', 'icon_class' => 'fas fa-calendar-alt', 'tone' => 'blue'],
+        ['lead' => 'Assessment Year (AY)', 'text' => 'The year following the financial year in which income is assessed and taxed.', 'icon_class' => 'fas fa-file-invoice-dollar', 'tone' => 'violet'],
+        ['lead' => 'Example', 'text' => 'For example, income earned in FY 2024–25 is assessed in AY 2025–26. Getting this distinction right is fundamental to accurate tax planning and regulatory compliance.', 'icon_class' => 'fas fa-lightbulb', 'tone' => 'green'],
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
@@ -185,28 +188,32 @@ declare(strict_types=1);
     <?php
     $caaft_benefits_heading_id = 'financial-assessment-importance-heading';
     $caaft_benefits_title = 'Why Financial Assessment is Important';
-    $caaft_benefits_intro = 'Regular financial assessments give businesses clarity, control, and confidence.';
+    $caaft_benefits_intro = 'A comprehensive financial assessment provides clarity and control over business finances. Key reasons it matters:';
     $caaft_benefits_items = [
-        ['lead' => 'Identifies strengths and gaps', 'text' => 'Surface financial weaknesses before they become critical issues.', 'icon_class' => 'fas fa-search', 'tone' => 'blue'],
-        ['lead' => 'Improves decision-making', 'text' => 'Better choices on investments, expansion, and cost control.', 'icon_class' => 'fas fa-chess-knight', 'tone' => 'violet'],
-        ['lead' => 'Strengthens cash flow visibility', 'text' => 'Track liquidity trends and optimize working capital.', 'icon_class' => 'fas fa-water', 'tone' => 'green'],
-        ['lead' => 'Reduces risk and liabilities', 'text' => 'Detect risk points early and prevent unplanned financial exposure.', 'icon_class' => 'fas fa-shield-alt', 'tone' => 'orange'],
-        ['lead' => 'Supports compliance', 'text' => 'Stay aligned with financial and tax reporting expectations.', 'icon_class' => 'fas fa-check-circle', 'tone' => 'blue'],
+        ['lead' => 'Identifies strengths and gaps', 'text' => 'Identifies financial strengths and weaknesses before they become problems', 'icon_class' => 'fas fa-search', 'tone' => 'blue'],
+        ['lead' => 'Improves decision-making', 'text' => 'Improves decision-making for investments, expansion, and cost control', 'icon_class' => 'fas fa-chess-knight', 'tone' => 'violet'],
+        ['lead' => 'Strengthens cash flow visibility', 'text' => 'Ensures better cash flow visibility and management', 'icon_class' => 'fas fa-water', 'tone' => 'green'],
+        ['lead' => 'Reduces risk and liabilities', 'text' => 'Reduces financial risks and unplanned liabilities', 'icon_class' => 'fas fa-shield-alt', 'tone' => 'orange'],
+        ['lead' => 'Supports compliance', 'text' => 'Supports compliance with financial and tax regulations', 'icon_class' => 'fas fa-check-circle', 'tone' => 'blue'],
     ];
-    include __DIR__ . '/../../includes/components/caaft-benefits.php';
-    ?>
-
+  include __DIR__ . '/../../includes/components/caaft-benefits.php';
+?>
+<div style="background:#eaf6fd;padding:0 0 40px;">
+    <div class="container">
+        <p style="margin:0;font-size:1.02rem;line-height:1.65;font-weight:500;color:#4d5868;">For businesses across India, regular financial assessments are essential to remain competitive, compliant, and prepared for growth.</p>
+    </div>
+</div>
     <?php
     $caaft_delivered_heading_id = 'financial-assessment-delivered-heading';
     $caaft_delivered_title = 'Financial Assessment Services - What Gets Delivered';
     $caaft_delivered_items = [
-        ['name' => 'Financial Health Analysis', 'text' => 'Comprehensive evaluation of income, expenses, assets, liabilities, and stability.'],
-        ['name' => 'Cash Flow Assessment', 'text' => 'Liquidity and working-capital assessment to avoid operational disruptions.'],
-        ['name' => 'Profitability & Risk Analysis', 'text' => 'Identify margin leakages, inefficiencies, and high-impact risk exposures.'],
-        ['name' => 'Budgeting & Forecasting', 'text' => 'Forward-looking plans built from historical performance and realistic assumptions.'],
-        ['name' => 'Financial Statement Review', 'text' => 'Detailed review of balance sheet, P&L, and cash flow reporting quality.'],
-        ['name' => 'Debt & Liability Evaluation', 'text' => 'Assess current debt load and strategies to improve balance-sheet strength.'],
-        ['name' => 'Investment Analysis', 'text' => 'Evaluate potential investments based on risk, return, and strategic fit.'],
+        ['name' => 'Financial Health Analysis', 'text' => ' A comprehensive evaluation of overall financial stability — reviewing income, expenses, assets, and liabilities to provide a clear picture of financial status and highlight areas for improvement.'],
+        ['name' => 'Cash Flow Assessment', 'text' => 'Cash flow is the backbone of any business. This analysis ensures sufficient liquidity to meet operational expenses, avoid financial disruptions, and maintain a healthy working capital cycle.'],
+        ['name' => 'Profitability & Risk Analysis', 'text' => 'Identification of profit margins, cost inefficiencies, and potential risks that could impact business performance — turning financial data into a clear picture of where profitability can be improved.'],
+        ['name' => 'Budgeting & Forecasting', 'text' => 'Accurate budgeting and forecasting built on historical data — predicting revenues, expenses, and financial outcomes to help businesses plan confidently for the future.'],
+        ['name' => 'Financial Statement Review', 'text' => 'Detailed analysis of balance sheets, income statements, and cash flow statements — ensuring accuracy, consistency, and full compliance with applicable financial reporting standards.'],
+        ['name' => 'Debt & Liability Evaluation', 'text' => 'Assessment of existing liabilities and debt obligations with strategic recommendations to reduce financial burden and improve the overall balance sheet position.'],
+        ['name' => 'Investment Analysis', 'text' => 'Careful evaluation of the viability, risks, and returns of potential investments — helping businesses and individuals make informed capital allocation decisions.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
@@ -216,11 +223,11 @@ declare(strict_types=1);
     $caaft_steps_title = 'Step-by-Step Process';
     $caaft_steps_numbered = true;
     $caaft_steps_items = [
-        ['title' => 'Data Collection', 'text' => 'Gather statements, bank records, tax data, and supporting financial documents.'],
-        ['title' => 'Financial Analysis', 'text' => 'Evaluate performance, cash flow, profitability, debt, and financial risks.'],
-        ['title' => 'Reporting', 'text' => 'Prepare a clear, jargon-free report with key observations and findings.'],
-        ['title' => 'Strategy Development', 'text' => 'Design actionable recommendations aligned to business goals and constraints.'],
-        ['title' => 'Implementation Support', 'text' => 'Support execution and monitoring of recommended actions over time.'],
+        ['title' => 'Data Collection', 'text' => 'All relevant financial records are gathered — including income statements, balance sheets, cash flow statements, bank statements, and tax returns.'],
+        ['title' => 'Financial Analysis', 'text' => 'A thorough evaluation of financial performance, cash flow position, profitability metrics, debt levels, and risk factors across the business.'],
+        ['title' => 'Reporting', 'text' => 'A detailed, jargon-free report is prepared covering findings, observations, and key insights derived from the financial data reviewed.'],
+        ['title' => 'Strategy Development', 'text' => 'Actionable financial strategies and recommendations are developed — aligned with the specific goals, challenges, and growth stage of the business.'],
+        ['title' => 'Implementation Support', 'text' => 'Ongoing support is provided to assist in executing the recommended financial strategies effectively and monitoring progress over time.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
     ?>
@@ -228,7 +235,7 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'financial-assessment-status-heading';
     $caaft_challenges_title = 'Financial Status - Key Indicators to Monitor';
-    $caaft_challenges_intro = 'Financial status reflects how effectively income, expenses, and liabilities are managed. Core indicators include:';
+    $caaft_challenges_intro = 'A business\'s financial status reflects its ability to manage income, expenses, and liabilities effectively. Key indicators include';
     $caaft_challenges_items = [
         'Net worth (total assets minus total liabilities)',
         'Income stability and revenue consistency',
@@ -236,22 +243,22 @@ declare(strict_types=1);
         'Debt levels and repayment capacity',
         'Investment portfolio performance and returns',
     ];
-    $caaft_challenges_outro = 'Regular tracking of these indicators supports long-term stability and sustainable growth.';
+    $caaft_challenges_outro = 'Regular monitoring of these factors ensures long-term financial stability and positions businesses for sustainable growth.';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
     <?php
     $caaft_challenges_heading_id = 'financial-assessment-common-heading';
     $caaft_challenges_title = 'Common Financial Challenges a Financial Assessment Addresses';
-    $caaft_challenges_intro = 'Businesses usually seek assessment support when facing one or more of these issues:';
+    $caaft_challenges_intro = 'Most businesses and individuals seek a financial assessment when facing one or more of these:';
     $caaft_challenges_items = [
         'No clear picture of overall financial health or performance',
-        'Inconsistent cash flow and weak planning visibility',
-        'Rising costs without clarity on profitability leakage',
+        'Inconsistent cash flow making planning difficult',
+        'Rising costs with no visibility into where profitability is leaking',
         'Upcoming audit, loan application, or investor due diligence',
-        'Need for a baseline before restructuring or expansion',
+        'Need for a structured baseline before restructuring or expansion',
     ];
-    $caaft_challenges_outro = 'CAAFT turns financial uncertainty into clear diagnostics and confident next-step decisions.';
+    $caaft_challenges_outro = 'CAAFT\'s assessment process addresses each of these — moving businesses from financial uncertainty to clarity and confident decision-making.';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
@@ -266,7 +273,7 @@ declare(strict_types=1);
         ['icon_class' => 'fas fa-clipboard-check', 'title' => 'Comprehensive, structured financial review', 'text' => 'CAAFT conducts thorough financial assessments covering revenue streams, cost structures, profitability, liquidity, debt obligations, and working capital — delivering a complete, honest picture of where a business truly stands financially.'],
         ['icon_class' => 'fas fa-user-graduate', 'title' => 'Qualified professionals with sharp analytical expertise', 'text' => 'Every financial assessment is conducted by experienced Chartered Accountants who combine technical financial knowledge with real-world business understanding — ensuring findings go beyond surface-level numbers to uncover meaningful, actionable insights.'],
         ['icon_class' => 'fas fa-exclamation-triangle', 'title' => 'Identifying risks before they become problems', 'text' => 'The assessment process is designed to surface financial vulnerabilities, inefficiencies, and compliance gaps early — giving businesses the opportunity to address weaknesses before they escalate into costly disruptions or regulatory consequences.'],
-        ['icon_class' => 'fas fa-bullseye', 'title' => 'Assessment tailored to the purpose', 'text' => 'Whether the need is internal decision-making, investor due diligence, loan applications, business restructuring, or pre-audit preparation — CAAFT customises the scope and depth of every review to match the specific objective and audience.'],
+        ['icon_class' => 'fas fa-bullseye', 'title' => 'Assessment tailored to the purpose', 'text' => ' Whether the need is internal decision-making, investor due diligence, loan applications, business restructuring, or pre-audit preparation — CAAFT customises the scope and depth of every review to match the specific objective and audience.'],
         ['icon_class' => 'fas fa-file-signature', 'title' => 'Clear reporting and forward-looking recommendations', 'text' => 'Findings are translated into clear, jargon-free reports with practical recommendations. Every CAAFT financial assessment concludes with a structured action plan — helping businesses move from understanding their financial position to actively improving it.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
@@ -276,9 +283,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'financial-assessment-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => '3x likelihood', 'text' => 'Businesses that conduct financial assessments quarterly are 3x more likely to detect cash flow issues before they become critical.'],
-        ['stat' => '60%+ SMEs', 'text' => '60%+ of SMEs in India lack a structured financial review process — leaving performance gaps undetected for months.'],
-        ['stat' => '2x faster', 'text' => 'Companies that review financial statements monthly make decisions up to 2x faster than those relying on annual reviews.'],
+        ['stat' => '3x likelihood', 'text' => 'Businesses that conduct financial assessments quarterly are 3x more likely to detect cash flow issues before they become critical'],
+        ['stat' => '60%+ SMEs', 'text' => '60%+ of SMEs in India lack a structured financial review process — leaving performance gaps undetected for months'],
+        ['stat' => '2x faster', 'text' => 'Companies that review financial statements monthly make decisions up to 2x faster than those relying on annual reviews'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
@@ -287,7 +294,7 @@ declare(strict_types=1);
     $caaft_cta_section_id = 'get-in-touch';
     $caaft_cta_heading_id = 'financial-assessment-cta-heading';
     $caaft_cta_title = 'Ready to Take Control of Your Financial Future?';
-    $caaft_cta_text = 'A professional financial assessment gives the clarity to evaluate current financial status, identify risks, and make confident decisions. Whether preparing for funding, improving cash flow, or strengthening strategy, CAAFT delivers expert guidance and actionable insight.';
+    $caaft_cta_text = 'A professional financial assessment provides the clarity needed to understand financial status, identify risks, and make confident business decisions. Whether the goal is improving cash flow, preparing for a funding round, or strengthening overall financial strategy — CAAFT delivers the expertise to make it happen.';
     $caaft_cta_button_label = 'Get Your Financial Report Today';
     $caaft_cta_button_href = '/contact#contact_us';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
@@ -299,11 +306,11 @@ declare(strict_types=1);
     $caaft_faq_accordion_id = 'accordionFinancialAssessmentFaq';
     $caaft_faq_prefix = 'financialAssessmentFaq';
     $caaft_faq_items = [
-        ['question' => 'How often should a business conduct a financial assessment?', 'answer' => 'At least quarterly. High-volume businesses may benefit from monthly assessments.'],
-        ['question' => 'What documents are needed to start a financial assessment?', 'answer' => 'Balance sheet, P&L, cash flow, bank statements, and relevant tax records are typically required.'],
-        ['question' => 'Can a financial assessment help in securing loans or funding?', 'answer' => 'Yes. It improves credibility by clearly presenting financial status and repayment capacity to lenders and investors.'],
-        ['question' => 'Who should perform a financial assessment for a business?', 'answer' => 'Internal teams can run basic checks, but qualified professionals provide deeper analysis, compliance alignment, and strategic recommendations.'],
-        ['question' => 'How long does a financial assessment take to complete?', 'answer' => 'Usually a few days to a couple of weeks, depending on business size and data complexity.'],
+        ['question' => 'How often should a business conduct a financial assessment?', 'answer' => 'A financial assessment should be conducted at least once every quarter to stay current on financial performance. Businesses with high transaction volumes may benefit from monthly assessments for better control and accuracy.'],
+        ['question' => 'What documents are needed to start a financial assessment?', 'answer' => 'Key financial documents typically required include balance sheets, profit and loss statements, cash flow statements, bank statements, and tax records — enabling a complete and accurate assessment.'],
+        ['question' => 'Can a financial assessment help in securing loans or funding?', 'answer' => 'Yes. A detailed financial assessment improves credibility by clearly presenting financial status — helping lenders and investors evaluate a business more confidently and make faster funding decisions.'],
+        ['question' => 'Who should perform a financial assessment for a business?', 'answer' => 'A basic assessment can be performed internally, but engaging a qualified financial expert ensures accurate analysis, regulatory compliance, and strategic recommendations tailored to specific business goals.'],
+        ['question' => 'How long does a financial assessment take to complete?', 'answer' => 'The duration depends on the size and complexity of the finances involved. For most SMEs, a professional financial assessment typically takes a few days to a couple of weeks from data collection to final report delivery.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-faq.php';
     ?>

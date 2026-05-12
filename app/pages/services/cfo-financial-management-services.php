@@ -105,7 +105,8 @@ declare(strict_types=1);
     $caaft_overview_heading_id = 'cfo-role-heading';
     $caaft_overview_title = 'What is the Role of the CFO in Financial Management?';
     $caaft_overview_paragraphs = [
-        'The role of the CFO in financial management goes far beyond bookkeeping. A Chief Financial Officer shapes the financial direction of a business, turning numbers into decisions, risks into plans, and goals into executable strategies.',
+        'The role of the CFO in financial management goes far beyond bookkeeping. A Chief Financial Officer shapes the financial direction of a business — turning numbers into decisions, risks into plans, and goals into executable strategies.
+Key responsibilities include:.',
     ];
     $caaft_overview_bullets = [
         'Strategic financial planning and decision-making',
@@ -126,7 +127,7 @@ declare(strict_types=1);
     $caaft_challenges_intro = 'CAAFT\'s CFO services are built for businesses at every growth stage:';
     $caaft_challenges_items = [
         'Startups and early-stage businesses building financial foundations',
-        'Small and Medium Enterprises needing structured oversight',
+        'Small and Medium Enterprises (SMEs) needing structured oversight',
         'Growing companies preparing for scale or expansion',
         'Entrepreneurs seeking financial clarity without a full-time hire',
         'Companies actively raising funds or attracting investment',
@@ -139,13 +140,13 @@ declare(strict_types=1);
     $caaft_delivered_heading_id = 'cfo-delivered-heading';
     $caaft_delivered_title = 'CFO Services — What Gets Delivered';
     $caaft_delivered_items = [
-        ['name' => 'Financial Planning & Strategy', 'text' => 'Customized financial strategies aligned with growth goals, scenario analysis, and risk controls.'],
-        ['name' => 'Budgeting and Forecasting', 'text' => 'Realistic, data-driven projections to improve planning and resource allocation.'],
-        ['name' => 'Cash Flow Management', 'text' => 'Liquidity-focused monitoring and optimization for operations and growth.'],
-        ['name' => 'Financial Reporting & MIS', 'text' => 'Clear management reports and dashboards for real-time business visibility.'],
-        ['name' => 'Virtual & Temporary CFO Services', 'text' => 'Senior financial leadership on a flexible basis without full-time CFO overhead.'],
-        ['name' => 'Cost Control & Profitability Analysis', 'text' => 'Identify margin leakages and convert financial analysis into bottom-line gains.'],
-        ['name' => 'Fundraising & Investor Support', 'text' => 'Financial models, investor reports, and funding-readiness support.'],
+        ['name' => 'Financial Planning & Strategy', 'text' => ' Customized financial strategies aligned with business goals — covering expansion planning, scenario analysis, and risk management to support confident decision-making.'],
+        ['name' => 'Budgeting and Forecasting', 'text' => ' Realistic, data-driven financial projections that help businesses plan ahead, allocate resources effectively, and respond quickly to changing conditions.'],
+        ['name' => 'Cash Flow Management', 'text' => 'Continuous monitoring and optimization of cash position — ensuring every business has the liquidity needed for operations today and growth tomorrow.'],
+        ['name' => 'Financial Reporting & MIS ', 'text' => 'Clear, insightful financial reports and Management Information Systems that deliver a real-time view of business performance.'],
+        ['name' => 'Virtual & Temporary CFO Services', 'text' => 'Senior-level financial leadership on a flexible basis — without the cost or commitment of a full-time CFO hire. Ideal for startups, SMEs, and businesses in transition.'],
+        ['name' => 'Cost Control & Profitability Analysis', 'text' => 'Identifying where money is being lost, where margins can improve, and where efficiencies can be gained — turning financial analysis into bottom-line results.'],
+        ['name' => 'Fundraising & Investor Support', 'text' => 'Preparation of financial models, pitch decks, and investor reports that help businesses walk into funding conversations with confidence.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
@@ -159,9 +160,9 @@ declare(strict_types=1);
         'Cash flow that is unpredictable or poorly managed',
         'Financial reports that are delayed, unclear, or unreliable',
         'Difficulty attracting investors or securing funding',
-        'Rising costs with no visibility into profit leakage',
+        'Rising costs with no visibility into where profits are leaking',
     ];
-    $caaft_challenges_outro = 'CAAFT\'s CFO solutions address each of these with a strategic approach that moves businesses from reactive fire-fighting to proactive financial management.';
+    $caaft_challenges_outro = 'CAAFT\'s CFO solutions address each of these with a structured, strategic approach — moving businesses from reactive fire-fighting to proactive financial management';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
@@ -173,11 +174,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-user-tie', 'title' => 'Senior-level expertise at fractional cost', 'text' => 'CAAFT provides board-ready strategic finance leadership — financial modelling, investor reporting, cash flow oversight, and CFO-level decision support — without the cost and commitment of hiring a full-time CFO. Businesses get the expertise they need, at the stage they actually need it.'],
-        ['icon_class' => 'fas fa-chart-line', 'title' => 'True strategy, not just accounting', 'text' => 'The engagement goes beyond bookkeeping and routine reporting. CAAFT\'s virtual CFO service covers financial planning, scenario modelling, working capital optimisation, profitability analysis, and forward-looking management — helping founders and business owners make better decisions with better information.'],
-        ['icon_class' => 'fas fa-certificate', 'title' => 'Qualified CAs with cross-industry depth', 'text' => 'Every engagement is led by qualified Chartered Accountants with hands-on experience across startups, SMEs, manufacturing, professional services, NGOs, and family businesses — combining technical rigour with practical commercial understanding across a wide range of business models and sectors.'],
-        ['icon_class' => 'fas fa-shield-alt', 'title' => 'Integrated compliance and finance oversight', 'text' => 'Financial management is delivered in alignment with the business\'s tax, GST, statutory audit, and regulatory obligations — so finance decisions are made with full awareness of compliance implications, and the two functions reinforce rather than conflict with each other.'],
-        ['icon_class' => 'fas fa-expand', 'title' => 'Scalable support by business stage', 'text' => 'Whether the business is at the stage of establishing basic financial controls or preparing for investor due diligence and Series A reporting, the scope and depth of support scales accordingly — growing alongside the business without requiring a change of advisors at each new milestone.'],
+        ['icon_class' => 'fas fa-user-tie', 'title' => 'Senior-level expertise at fractional cost', 'text' => 'CAAFT provides experienced CFO-level leadership on a flexible, fractional basis — delivering board-ready reporting, strategic decision support, and financial oversight without the overhead of a full-time executive hire.'],
+        ['icon_class' => 'fas fa-chart-line', 'title' => 'True financial strategy — not just accounting', 'text' => 'CAAFT\'s CFO and financial management service goes well beyond maintaining accounts. Cash flow planning, budget forecasting, profitability analysis, and financial modelling give businesses a clear, real-time picture of financial health and growth trajectory.'],
+        ['icon_class' => 'fas fa-certificate', 'title' => 'Qualified CAs with cross-industry experience ', 'text' => 'Every CAAFT engagement is led by qualified Chartered Accountants with hands-on experience across startups, SMEs, manufacturing, services, and NGOs — bringing sector-informed perspective to every financial decision.'],
+        ['icon_class' => 'fas fa-shield-alt', 'title' => 'Integrated compliance & financial oversight', 'text' => ' Financial management at CAAFT is aligned with tax planning, GST compliance, audit requirements, and regulatory obligations — ensuring finances are not only well-managed but fully audit-ready at every stage.'],
+        ['icon_class' => 'fas fa-expand', 'title' => 'Scalable support that grows with the business', 'text' => ' From foundational financial systems for early-stage businesses to investor reporting for scaling enterprises, CAAFT\'s CFO services adapt to the stage, complexity, and evolving needs of every client.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>
@@ -197,7 +198,7 @@ declare(strict_types=1);
     $caaft_cta_section_id = 'get-in-touch';
     $caaft_cta_heading_id = 'cfo-cta-heading';
     $caaft_cta_title = 'Ready to Strengthen Your Financial Strategy?';
-    $caaft_cta_text = 'Expert CFO support delivers complete visibility over finances, sharper decision-making, and a clear path to growth. Whether the need is strategic guidance, cash flow management, or investor-ready financials, CAAFT is here to help.';
+    $caaft_cta_text = 'Expert CFO support delivers complete visibility over business finances, sharper decision-making, and a clear path to growth. Whether the need is strategic guidance, cash flow management, or investor-ready financials — CAAFT is here to help.';
     $caaft_cta_button_label = 'Transform Your Financial Strategy Today';
     $caaft_cta_button_href = '/contact#contact_us';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
@@ -209,11 +210,11 @@ declare(strict_types=1);
     $caaft_faq_accordion_id = 'accordionCfoServicesFaq';
     $caaft_faq_prefix = 'cfoServicesFaq';
     $caaft_faq_items = [
-        ['question' => 'How do CFO services support day-to-day business decisions?', 'answer' => 'CFO services provide real-time financial insights that support better operational and strategic decisions around pricing, spending, and investments.'],
-        ['question' => 'When should a business consider hiring a virtual CFO?', 'answer' => 'When the business is growing, facing cash flow pressure, or needs strategic financial oversight without full-time CFO cost.'],
-        ['question' => 'How can a CFO improve business profitability?', 'answer' => 'By identifying cost leakages, optimizing pricing, and improving financial efficiency and control.'],
-        ['question' => 'What financial reports should a CFO regularly review?', 'answer' => 'Profit and loss, balance sheet, cash flow statement, and MIS reports should be reviewed consistently.'],
-        ['question' => 'How do temporary CFO services help during expansion?', 'answer' => 'They provide planning, risk assessment, and funding strategy support to scale in a controlled, sustainable way.'],
+        ['question' => 'How do CFO services support day-to-day business decisions?', 'answer' => 'CFO services provide real-time financial insights that help businesses make informed operational and strategic decisions. By tracking key metrics, a CFO guides pricing, spending, and investment choices before they become costly mistakes.'],
+        ['question' => 'When should a business consider hiring a virtual CFO?', 'answer' => 'A virtual CFO makes sense when a business starts growing, faces cash flow pressure, or needs a financial strategy but cannot justify the cost of a full-time hire.'],
+        ['question' => 'How can a CFO improve business profitability?', 'answer' => 'By identifying cost leakages, sharpening pricing strategies, and improving financial efficiency — a CFO directly improves the bottom line.'],
+        ['question' => 'What financial reports should a CFO regularly review?', 'answer' => 'Profit & loss statements, balance sheets, cash flow statements, and MIS reports — reviewed consistently to track performance and flag issues early.'],
+        ['question' => 'How do temporary CFO services help during business expansion?', 'answer' => ' Temporary CFO services provide the financial planning, risk assessment, and funding strategy needed to expand in a controlled, sustainable way — without overcommitting on permanent headcount.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-faq.php';
     ?>
