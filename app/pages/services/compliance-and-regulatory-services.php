@@ -78,10 +78,10 @@
             "@type": "OfferCatalog",
             "name": "CAAFT Compliance & Regulatory Services",
             "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Private Limited Company Compliance"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Public Limited Company Compliance"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "One Person Company Compliance"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LLP Compliance"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Private Limited Compliance"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Public Limited Compliance"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "One Person Company (OPC) Compliance"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Limited Liability Partnership (LLP) Compliance"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Partnership Firm Compliance"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sole Proprietorship Compliance"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Director KYC (DIR-3 KYC Filing)"}},
@@ -107,10 +107,10 @@
             "@type": "OfferCatalog",
             "name": "Company Compliance Services",
             "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Private Limited Company Compliance", "description": "Complete annual compliance for Pvt Ltd companies — board meetings, annual returns, financial statements, and all MCA obligations managed without gaps."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Public Limited Company Compliance", "description": "End-to-end statutory compliance for Public Limited Companies — including AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "One Person Company Compliance", "description": "Annual compliance for OPCs — board resolutions, financial statements, and ROC filings, kept lean for single-director structures."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LLP Compliance", "description": "Annual filing and compliance for LLPs — Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end."}}
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Private Limited Compliance", "description": "Complete annual compliance for Pvt Ltd companies — board meetings, annual returns, financial statements, and all MCA obligations managed without gaps."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Public Limited Compliance", "description": "End-to-end statutory compliance for Public Limited Companies — including AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "One Person Company (OPC) Compliance", "description": "Annual compliance for OPCs — board resolutions, financial statements, and ROC filings, kept lean for single-director structures."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Limited Liability Partnership (LLP) Compliance", "description": "Annual filing and compliance for LLPs — Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end."}}
             ]
           }
         },
@@ -227,10 +227,10 @@
         $caaft_card_section_intro = 'Every registered company carries a mandatory annual compliance calendar. CAAFT manages the entire calendar — ensuring every filing is accurate and on time.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-building', 'title' => 'Private Limited Company Compliance', 'text' => 'Complete annual compliance for Pvt Ltd companies — board meetings, annual returns, financial statements, and all MCA obligations managed without gaps.', 'href' => '/private-company-compliance'],
-            ['icon_class' => 'fas fa-city', 'title' => 'Public Limited Company Compliance', 'text' => 'End-to-end statutory compliance for Public Limited Companies — including AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act.', 'href' => '/public-ltd-compliance'],
-            ['icon_class' => 'fas fa-user-tie', 'title' => 'One Person Company Compliance', 'text' => 'Annual compliance for OPCs — board resolutions, financial statements, and ROC filings, kept lean for single-director structures.', 'href' => '/opc-annual-compliance'],
-            ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Compliance', 'text' => 'Annual filing and compliance for LLPs — Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end.', 'href' => '/llp-annual-compliance'],
+            ['icon_class' => 'fas fa-building', 'title' => 'Private Limited Compliance', 'text' => 'Complete annual compliance for Pvt Ltd companies — board meetings, annual returns, financial statements, and all MCA obligations managed without gaps.', 'href' => '/private-company-compliance'],
+            ['icon_class' => 'fas fa-city', 'title' => 'Public Limited Compliance', 'text' => 'End-to-end statutory compliance for Public Limited Companies — including AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act.', 'href' => '/public-ltd-compliance'],
+            ['icon_class' => 'fas fa-user-tie', 'title' => 'One Person Company (OPC) Compliance', 'text' => 'Annual compliance for OPCs — board resolutions, financial statements, and ROC filings, kept lean for single-director structures.', 'href' => '/opc-annual-compliance'],
+            ['icon_class' => 'fas fa-handshake', 'title' => 'Limited Liability Partnership (LLP) Compliance', 'text' => 'Annual filing and compliance for LLPs — Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end.', 'href' => '/llp-annual-compliance'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>

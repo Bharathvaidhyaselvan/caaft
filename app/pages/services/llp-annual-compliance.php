@@ -375,7 +375,7 @@ declare(strict_types=1);
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = '';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
         ['icon_class' => 'fas fa-user-tie', 'title' => 'CA-led expert team', 'text' => 'Every LLP compliance engagement is handled by qualified Chartered Accountants who understand both the regulatory requirements and commercial implications of each filing — not automated portal submissions.'],
