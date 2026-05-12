@@ -217,7 +217,7 @@ declare(strict_types=1);
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = '';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
         ['icon_class' => 'fas fa-balance-scale', 'title' => 'Expert Knowledge of ROC and MCA Regulations: ', 'text' => 'Every engagement is handled by professionals who stay current with the latest Companies Act rules and MCA compliance requirements — ensuring accurate, complete filing for every ROC obligation.'],

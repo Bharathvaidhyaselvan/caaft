@@ -37,6 +37,7 @@ declare(strict_types=1);
         .page-llp-registration .plc-docs-card-list { margin: 0; padding: 0; list-style: none; }
         .page-llp-registration .plc-docs-card-list li { position: relative; padding: 6px 0 6px 16px; font-size: 0.97rem; line-height: 1.55; font-weight: 500; color: #4a5568; }
         .page-llp-registration .plc-docs-card-list li::before { content: ""; position: absolute; left: 0; top: 0.92em; width: 7px; height: 7px; border-radius: 50%; background: var(--theme-color, #33b6ff); }
+        .page-llp-registration .plc-docs-note { max-width: 920px; margin: 14px 0 0; color: #1f2c40; font-size: 1rem; line-height: 1.6; font-weight: 600; }
     </style>
     <?php include "header-top.php"; ?>
     <script type="application/ld+json">
@@ -241,8 +242,8 @@ declare(strict_types=1);
                     </ul>
                 </article>
             </div>
+            <p class="plc-docs-note">All documents must be accurate and consistent with existing MCA records — any mismatch in company details or capital figures can cause form rejection and require correction before resubmission.</p>
         </div>
-        <h2 class="partnership-mistakes-title" style="font-size:1.2rem;margin:0 0 10px;">All documents must be accurate and consistent with existing MCA records — any mismatch in company details or capital figures can cause form rejection and require correction before resubmission.</h2>       
     </section>
 
     <?php
@@ -298,7 +299,7 @@ declare(strict_types=1);
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = '';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
         ['icon_class' => 'fas fa-scale-balanced', 'title' => 'Expert Knowledge of Companies Act Compliance:', 'text' => ' Every engagement is handled by professionals who stay current with MCA regulations and ROC filing requirements — ensuring complete, accurate compliance with every authorised capital increase filing.'],

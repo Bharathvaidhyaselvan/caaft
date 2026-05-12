@@ -84,11 +84,11 @@
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LLP Compliance"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Partnership Firm Compliance"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sole Proprietorship Compliance"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Director KYC (DIR-3 KYC)"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Director KYC (DIR-3 KYC Filing)"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Add / Remove Director"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Authorised Capital Increase"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Increase in Authorized Capital"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Registered Office Change"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ROC Filings"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Miscellaneous ROC Filings"}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Company Closure / Winding Up"}}
             ]
           }
@@ -147,11 +147,11 @@
             "@type": "OfferCatalog",
             "name": "ROC Compliance Services",
             "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Director KYC (DIR-3 KYC)", "description": "Annual KYC filing for every DIN holder — mandatory to keep the DIN active and avoid filing blockages."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Director KYC (DIR-3 KYC Filing)", "description": "Annual KYC filing for every DIN holder — mandatory to keep the DIN active and avoid filing blockages."}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Add / Remove Director", "description": "Formal director appointment or resignation filed with the ROC — including resolution drafting, Form DIR-12, and MCA submission."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Authorised Capital Increase", "description": "Filing for increased authorised share capital — board and shareholder resolutions, Form SH-7, and Form MGT-14 within prescribed timelines."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Increase in Authorized Capital", "description": "Filing for increased authorised share capital — board and shareholder resolutions, Form SH-7, and Form MGT-14 within prescribed timelines."}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Registered Office Change", "description": "Address change filed correctly with the ROC — within the same city, state, or across states — with all resolutions and Form INC-22 or INC-23."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ROC Filings", "description": "Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — prepared accurately and submitted before due dates."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Miscellaneous ROC Filings", "description": "Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — prepared accurately and submitted before due dates."}},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Company Closure / Winding Up", "description": "Managed strike-off or voluntary winding up — resolutions, indemnity bonds, compliance clearances, and STK-2 filing handled completely."}}
             ]
           }
@@ -253,11 +253,11 @@
         $caaft_card_section_intro = 'Changes within a company require formal filings with the Registrar of Companies. CAAFT handles every ROC transaction accurately and within prescribed timelines.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-4';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-id-card-alt', 'title' => 'Director KYC (DIR-3 KYC)', 'text' => 'Annual KYC filing for every DIN holder — mandatory to keep the DIN active and avoid filing blockages.', 'href' => '/din-kyc-filing'],
+            ['icon_class' => 'fas fa-id-card-alt', 'title' => 'Director KYC (DIR-3 KYC Filing)', 'text' => 'Annual KYC filing for every DIN holder — mandatory to keep the DIN active and avoid filing blockages.', 'href' => '/din-kyc-filing'],
             ['icon_class' => 'fas fa-user-plus', 'title' => 'Add / Remove Director', 'text' => 'Formal director appointment or resignation filed with the ROC — including resolution drafting, Form DIR-12, and MCA submission.', 'href' => '/add-remove-director-service'],
-            ['icon_class' => 'fas fa-chart-line', 'title' => 'Authorised Capital Increase', 'text' => 'Filing for increased authorised share capital — board and shareholder resolutions, Form SH-7, and Form MGT-14 within prescribed timelines.', 'href' => '/increase-authorised-share-capital'],
+            ['icon_class' => 'fas fa-chart-line', 'title' => 'Increase in Authorized Capital', 'text' => 'Filing for increased authorised share capital — board and shareholder resolutions, Form SH-7, and Form MGT-14 within prescribed timelines.', 'href' => '/increase-authorised-share-capital'],
             ['icon_class' => 'fas fa-map-marker-alt', 'title' => 'Registered Office Change', 'text' => 'Address change filed correctly with the ROC — within the same city, state, or across states — with all resolutions and Form INC-22 or INC-23.', 'href' => '/registered-office-change-india'],
-            ['icon_class' => 'fas fa-file-alt', 'title' => 'ROC Filings', 'text' => 'Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — prepared accurately and submitted before due dates.', 'href' => '/roc-compliance-filing'],
+            ['icon_class' => 'fas fa-file-alt', 'title' => 'Miscellaneous ROC Filings', 'text' => 'Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — prepared accurately and submitted before due dates.', 'href' => '/roc-compliance-filing'],
             ['icon_class' => 'fas fa-times-circle', 'title' => 'Company Closure / Winding Up', 'text' => 'Managed strike-off or voluntary winding up — resolutions, indemnity bonds, compliance clearances, and STK-2 filing handled completely.', 'href' => '/winding-up-of-company'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
@@ -266,7 +266,7 @@
         <?php
         $why_choose_caaft_heading_id = 'cr-why-heading';
         $why_choose_caaft_title = 'WHY CHOOSE CAAFT';
-        $why_choose_caaft_intro = '';
+        $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             ['icon_class' => 'fas fa-clock', 'title' => 'Never Miss a Deadline', 'text' => 'A compliance calendar is maintained for every client entity — with proactive preparation well before due dates.'],
