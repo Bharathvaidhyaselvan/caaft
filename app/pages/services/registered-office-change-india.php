@@ -108,9 +108,7 @@ declare(strict_types=1);
     $caaft_hero_h2_highlight = 'Compliant Filing, Zero Delays';
     $caaft_hero_h2_after = '';
     $caaft_hero_lead_paragraphs = [
-        'The registered office is the official address recorded with the MCA for all legal and statutory communications. Any change must be filed with the Registrar of Companies within the prescribed timeline.',
-        'Delays can lead to penalties, missed notices, and compliance gaps. CAAFT ensures accurate, timely registered office change filings across India.',
-    ];
+'The registered office is the official address recorded with the MCA for all legal and statutory communications. Any change must be filed with the Registrar of Companies within the prescribed timeline. Delays can lead to penalties, missed notices, and compliance gaps. CAAFT ensures accurate, timely registered office change filings across India.'    ];
     $caaft_hero_primary_cta_label = 'Change Registered Office Today';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_label = 'File INC-22 Instantly';
@@ -138,9 +136,9 @@ declare(strict_types=1);
     $caaft_overview_heading_id = 'registered-office-what-heading';
     $caaft_overview_title = 'What Is a Registered Office Address?';
     $caaft_overview_paragraphs = [
-        'A registered office address is the official address of a company recorded with the Ministry of Corporate Affairs for legal and statutory communication.',
-        'Under the Companies Act, 2013, every company must maintain a valid registered office and display it visibly through a registered office address board.',
-        'Once updated successfully, MCA records reflect the new address so statutory communications reach the right location without interruption.',
+    'A registered office address is the official address of a company registered with the Ministry of Corporate Affairs — used for receiving government communications, tax notices, and legal correspondence. It is recorded in the MCA database and must remain accurate and current at all times.',
+    'Under the Companies Act, 2013, every company must maintain a valid registered address to ensure transparency and accountability — and must display it visibly at its premises through a registered office address board.',
+    'Once updated successfully, the company\'s MCA records reflect the new address — ensuring all statutory communications, government notices, and legal documents reach the correct location without interruption.',
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
@@ -152,30 +150,30 @@ declare(strict_types=1);
     <section class="registered-needs-section" aria-labelledby="registered-office-needs-heading">
         <div class="container">
             <h2 id="registered-office-needs-heading" class="registered-needs-title">Who Needs Registered Office Change Services?</h2>
-            <p class="registered-needs-intro">Any company relocating its registered office must comply with mandatory filing requirements under the Companies Act, 2013:</p>
+            <p class="registered-needs-intro">Any company relocating its registered office — whether within the same city, across cities, or across states — must comply with the mandatory filing requirements under the Companies Act, 2013:</p>
             <ul class="registered-needs-list">
-                <li class="registered-needs-item"><span class="registered-needs-num">1</span><p class="registered-needs-text">Private limited companies relocating due to expansion, lease expiry, or operational changes</p></li>
+                <li class="registered-needs-item"><span class="registered-needs-num">1</span><p class="registered-needs-text">Private limited companies relocating their registered office due to expansion, lease expiry, or operational changes</p></li>
                 <li class="registered-needs-item"><span class="registered-needs-num">2</span><p class="registered-needs-text">Companies moving to a different city within the same state requiring Board Resolution and MCA filings</p></li>
                 <li class="registered-needs-item"><span class="registered-needs-num">3</span><p class="registered-needs-text">Businesses shifting to a new ROC jurisdiction requiring additional approvals and coordinated filing</p></li>
                 <li class="registered-needs-item"><span class="registered-needs-num">4</span><p class="registered-needs-text">Companies relocating across state borders requiring Special Resolution, Regional Director approval, and MOA amendment</p></li>
-                <li class="registered-needs-item"><span class="registered-needs-num">5</span><p class="registered-needs-text">Startups using a residential address as the registered office and transitioning to commercial premises</p></li>
-                <li class="registered-needs-item"><span class="registered-needs-num">6</span><p class="registered-needs-text">Companies with outdated MCA address records requiring regularisation to avoid compliance notices</p></li>
-                <li class="registered-needs-item"><span class="registered-needs-num">7</span><p class="registered-needs-text">Businesses updating registered office details as part of restructuring or rebranding exercises</p></li>
+                <li class="registered-needs-item"><span class="registered-needs-num">5</span><p class="registered-needs-text">Startups using a residential address as the registered office and transitioning to a commercial premises</p></li>
+                <li class="registered-needs-item"><span class="registered-needs-num">6</span><p class="registered-needs-text">Companies with outdated registered addresses on MCA records requiring regularisation to avoid compliance notices</p></li>
+                <li class="registered-needs-item"><span class="registered-needs-num">7</span><p class="registered-needs-text">Businesses updating registered office details as part of a broader corporate restructuring or rebranding exercise</p></li>
             </ul>
-            <p class="registered-needs-note">If a company changes its registered office, filing under the correct route (INC-22 with applicable approvals) is mandatory to keep MCA records compliant and current.</p>
         </div>
     </section>
 
     <?php
     $caaft_challenges_heading_id = 'registered-office-importance-heading';
     $caaft_challenges_title = 'Why Registered Office Change Compliance Is Important';
-    $caaft_challenges_intro = 'Key consequences of non-compliance:';
+    $caaft_challenges_intro = 'The MCA requires every change in a company\'s registered office address to be formally approved and filed with the Registrar of Companies — ensuring that government records remain accurate and that statutory communications are delivered without disruption. Failure to update the registered address within the prescribed timeline creates compliance gaps and exposes the company to penalties.
+ Key consequences of non-compliance:';
     $caaft_challenges_items = [
-        'Delay in INC-22 filing can attract penalties that increase with time.',
-        'Government notices sent to old address are considered validly served even if not received.',
-        'Incorrect MCA address can trigger ROC scrutiny and compliance notices.',
-        'Incorrect address on invoices/contracts creates legal and operational complications.',
-        'Failure to update GST, Income Tax, and bank records creates cascading compliance issues.',
+        'Failure to file INC-22 within the prescribed timeline attracts penalties under the Companies Act, 2013 — increasing with each day of delay.',
+        'Government notices, tax communications, and legal documents sent to an outdated address are treated as validly served — even if never received',
+        'An inaccurate registered address on MCA records can trigger ROC scrutiny and compliance notices against the company',
+        'Statutory documents, invoices, and business contracts carrying an incorrect registered address create legal and operational complications',
+        'Failure to update GST, Income Tax, and banking records with the new address leads to cascading compliance issues across multiple government departments',
     ];
     $caaft_challenges_outro = '';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
@@ -184,12 +182,12 @@ declare(strict_types=1);
     <?php
     $caaft_benefits_heading_id = 'registered-office-types-heading';
     $caaft_benefits_title = 'Types of Registered Office Address Change';
-    $caaft_benefits_intro = 'Procedure varies based on the extent of relocation under the Companies Act, 2013:';
+    $caaft_benefits_intro = 'The procedure for changing a company\'s registered address depends on the nature and extent of the relocation — each type carrying distinct filing requirements under the Companies Act, 2013:';
     $caaft_benefits_items = [
-        ['lead' => 'Change Within the Same City', 'text' => 'Most straightforward route using INC-22 with minimal additional approvals.', 'icon_class' => 'fas fa-city', 'tone' => 'blue'],
-        ['lead' => 'Change Within the Same State', 'text' => 'Requires board resolution and supporting MCA documentation for inter-city move.', 'icon_class' => 'fas fa-map', 'tone' => 'violet'],
-        ['lead' => 'Change to Another ROC Jurisdiction', 'text' => 'May involve additional approvals and filings based on jurisdictional shift.', 'icon_class' => 'fas fa-building-columns', 'tone' => 'green'],
-        ['lead' => 'Change from One State to Another', 'text' => 'Requires special resolution, Regional Director approval, and MOA amendment.', 'icon_class' => 'fas fa-route', 'tone' => 'orange'],
+        ['lead' => 'Change Within the Same City', 'text' => ' If the registered office moves within the same city or town, the company files Form INC-22 with the Registrar of Companies — the most straightforward type of address change with minimal additional approvals required.', 'icon_class' => 'fas fa-city', 'tone' => 'blue'],
+        ['lead' => 'Change Within the Same State', 'text' => 'When the office shifts to another city within the same state, the company must pass a Board Resolution and complete the required MCA filings — with additional documentation to support the inter-city relocation.', 'icon_class' => 'fas fa-map', 'tone' => 'violet'],
+        ['lead' => 'Change to Another ROC Jurisdiction', 'text' => 'If the new address falls under a different ROC jurisdiction within the same state, additional approvals and filings may be required — including a special resolution and Regional Director confirmation in certain cases.', 'icon_class' => 'fas fa-building-columns', 'tone' => 'green'],
+        ['lead' => 'Change from One State to Another', 'text' => 'Shifting the registered office from one state to another involves the most detailed process — including passing a Special Resolution, obtaining Regional Director approval, and amending the Memorandum of Association (MOA) to reflect the new state of registration.', 'icon_class' => 'fas fa-route', 'tone' => 'orange'],
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
@@ -198,14 +196,14 @@ declare(strict_types=1);
     $caaft_delivered_heading_id = 'registered-office-delivered-heading';
     $caaft_delivered_title = 'Registered Office Change Services — What Gets Delivered';
     $caaft_delivered_items = [
-        ['name' => 'Board Resolution Drafting', 'text' => 'Drafting support for board approval of new address and effective date.'],
-        ['name' => 'Special Resolution and EGM Support', 'text' => 'Where required, complete EGM notice and resolution handling support.'],
-        ['name' => 'Document Collection and Verification', 'text' => 'Address proof, NOC, rent/ownership docs checked to reduce rejection risk.'],
-        ['name' => 'INC-22 Filing', 'text' => 'INC-22 prepared and filed within prescribed timeline with required attachments.'],
-        ['name' => 'MGT-14 Filing Where Applicable', 'text' => 'Resolution filing support when special resolution route applies.'],
-        ['name' => 'Regional Director Approval Management', 'text' => 'Inter-state application support including petition and affidavit preparation.'],
-        ['name' => 'Registered Office Address Board Guidance', 'text' => 'Practical guidance on compliant display of updated address board.'],
-        ['name' => 'Post-Change Compliance Advisory', 'text' => 'Support for updates across GST, PAN, bank accounts, and licences.'],
+        ['name' => 'Board Resolution Drafting', 'text' => 'The board resolution approving the registered office change is drafted accurately — reflecting the new address, effective date, and all required statutory language — and circulated for director signatures before the board meeting.'],
+        ['name' => 'Special Resolution and EGM Support ', 'text' => 'Where the nature of the address change requires shareholder approval, the special resolution and EGM notice are prepared and managed — ensuring the resolution is passed and recorded correctly before MCA filing proceeds.'],
+        ['name' => 'Document Collection and Verification', 'text' => ' Address proof, NOC from the property owner, rent agreement or ownership documents, and all supporting materials are collected and verified before submission — preventing rejection due to documentation errors or mismatches.'],
+        ['name' => 'Form INC-22 Filing', 'text' => 'Form INC-22 is prepared and filed with the Registrar of Companies within the prescribed timeline — with all supporting documents attached and submission confirmation retained for the company\'s compliance records.'],
+        ['name' => 'MGT-14 Filing Where Applicable', 'text' => 'Where a special resolution has been passed, Form MGT-14 is filed with the ROC within 30 days — ensuring the resolution is formally recorded in the company\'s compliance file with the MCA.'],
+        ['name' => 'Regional Director Approval Management', 'text' => 'For inter-state registered office changes requiring Regional Director approval, the complete application — including petition, affidavit, and supporting documents — is prepared and submitted to the Regional Director for confirmation.'],
+        ['name' => 'Registered Office Address Board Guidance', 'text' => 'Guidance is provided on the display requirements for the registered office address board — ensuring the company meets its obligation to display the updated address visibly at the new premises once the change is approved.'],
+        ['name' => 'Post-Change Compliance Advisory', 'text' => 'Proactive guidance on downstream obligations following the address change — including updates to GST registration, PAN records, bank accounts, business licences, and official company documents to reflect the new registered address.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
@@ -213,21 +211,20 @@ declare(strict_types=1);
     <section class="plc-docs-section" aria-labelledby="registered-office-docs-heading">
         <div class="container">
             <h2 id="registered-office-docs-heading" class="plc-docs-title">Documents Required for Registered Office Change</h2>
-            <p class="plc-docs-intro">To complete a registered office change, the following documents are typically required:</p>
             <div class="plc-docs-cards-grid">
                 <article class="plc-docs-card">
                     <ul class="plc-docs-card-list">
                         <li>Board Resolution approving the address change</li>
-                        <li>Address proof of new office (utility bill not older than 2 months)</li>
-                        <li>No Objection Certificate from property owner</li>
-                        <li>Rent agreement or ownership proof of new premises</li>
-                        <li>Special Resolution copy for inter-jurisdictional or inter-state changes</li>
-                        <li>MOA amendment for inter-state changes</li>
-                        <li>Affidavit and petition for Regional Director approval where applicable</li>
+                        <li>Address proof of the new registered office — electricity bill or utility bill not older than 2 months</li>
+                        <li>No Objection Certificate (NOC) from the property owner</li>
+                        <li>Rent agreement or ownership proof of the new premises</li>
+                        <li>Special Resolution copy — required for inter-jurisdictional or inter-state changes</li>
+                        <li>MOA amendment — required for inter-state registered office changes</li>
+                        <li>Affidavit and petition — required for Regional Director approval in applicable cases</li>
                     </ul>
                 </article>
             </div>
-            <p class="plc-docs-note">All documents must be accurate and consistent with MCA records to avoid rejection and resubmission delays.</p>
+            <p class="plc-docs-note">All documents must be accurate and consistent with existing MCA records — any mismatch in company details or address information can cause form rejection and require correction before resubmission.</p>
         </div>
     </section>
 
@@ -236,13 +233,13 @@ declare(strict_types=1);
     $caaft_steps_title = 'Step-by-Step Process';
     $caaft_steps_numbered = true;
     $caaft_steps_items = [
-        ['title' => 'Board Meeting', 'text' => 'Board approves the address change and records the effective date.'],
-        ['title' => 'Shareholder Approval Where Required', 'text' => 'Special resolution route handled for inter-jurisdictional and inter-state moves.'],
-        ['title' => 'Document Collection and Verification', 'text' => 'Address proof, NOC, and supporting docs verified before filing.'],
-        ['title' => 'INC-22 and MGT-14 Filing', 'text' => 'Forms filed with required attachments within applicable timelines.'],
-        ['title' => 'Regional Director Approval Where Required', 'text' => 'Inter-state petition and approval workflow managed before final ROC filing.'],
-        ['title' => 'Address Board Installation', 'text' => 'Updated registered office board display ensured at new premises.'],
-        ['title' => 'Post-Change Record Updates', 'text' => 'GST, PAN, bank, licence, and document records aligned with new address.'],
+        ['title' => 'Board Meeting', 'text' => 'The board of directors reviews and approves the proposal to change the registered address — passing a board resolution that formally records the new registered office location and the effective date of change.'],
+        ['title' => 'Shareholder Approval — Where Required ', 'text' => ' For address changes requiring shareholder consent — including inter-jurisdictional and inter-state relocations — a Special Resolution is passed at an EGM convened with the prescribed notice period.'],
+        ['title' => 'Document Collection and Verification', 'text' => 'Address proof, NOC, rent agreement or ownership documents, and all other required supporting materials are collected and verified before the filing process begins.'],
+        ['title' => 'Form INC-22 and MGT-14 Filing', 'text' => 'Form INC-22 is filed with the Registrar of Companies within the prescribed timeline — with MGT-14 filed simultaneously where a special resolution has been passed — and all supporting documents attached to the submission.'],
+        ['title' => 'Regional Director Approval — Where Required', 'text' => 'For inter-state registered office changes, the complete application is submitted to the Regional Director — with the petition, affidavit, and supporting documents prepared and filed for confirmation before the ROC filing proceeds.'],
+        ['title' => 'Registered Office Address Board Installation', 'text' => 'Once the change is approved, the company displays the updated registered office address board at the new premises — meeting the statutory obligation to show the registered address visibly outside the office.'],
+        ['title' => 'Post-Change Record Updates', 'text' => 'The new registered address is updated across all relevant records — including GST registration, PAN, bank accounts, business licences, letterheads, invoices, and official company documents — to ensure consistency with the updated MCA records.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
     ?>
@@ -252,15 +249,15 @@ declare(strict_types=1);
             <h2 id="registered-office-common-heading" class="registered-challenges-title">Common Registered Office Change Challenges CAAFT Solves</h2>
             <p class="registered-challenges-intro">Most companies seek professional support for registered office changes when facing one or more of these:</p>
             <ul class="registered-challenges-list">
-                <li class="registered-challenges-item">Address proof documents not meeting MCA requirements — causing INC-22 rejection and process restart</li>
+                <li class="registered-challenges-item">Address proof documents not meeting MCA requirements — causing INC-22 rejection and restarting the filing process</li>
                 <li class="registered-challenges-item">NOC from the property owner not obtained or incorrectly drafted — leading to form rejection on the MCA portal</li>
-                <li class="registered-challenges-item">Wrong procedure selected for inter-jurisdictional or inter-state changes — causing avoidable filing errors</li>
-                <li class="registered-challenges-item">Special Resolution not correctly passed or EGM notice period miscalculated — making resolution procedurally defective</li>
-                <li class="registered-challenges-item">Regional Director application requirements unclear for inter-state changes — resulting in incomplete petitions</li>
-                <li class="registered-challenges-item">Post-change updates to GST, PAN, and banking records overlooked — creating compliance gaps</li>
-                <li class="registered-challenges-item">Outdated registered address already flagged by ROC — requiring urgent regularisation to prevent escalation</li>
+                <li class="registered-challenges-item">Company unaware of the additional filing requirements for inter-jurisdictional or inter-state address changes — selecting the wrong procedure and causing submission errors</li>
+                <li class="registered-challenges-item">Special Resolution not correctly passed or EGM notice period not accurately calculated — making the resolution procedurally defective</li>
+                <li class="registered-challenges-item">Regional Director application requirements unclear for inter-state changes — resulting in incomplete petitions and delayed approvals</li>
+                <li class="registered-challenges-item">Post-change updates to GST, PAN, and banking records overlooked — creating compliance gaps across multiple government departments</li>
+                <li class="registered-challenges-item">Companies with outdated registered addresses already flagged by the ROC — requiring urgent regularisation to prevent further notices</li>
             </ul>
-            <p class="registered-challenges-outro">CAAFT's structured approach addresses each of these — delivering accurate, on-time registered office change filings and complete ROC compliance support.</p>
+            <p class="registered-challenges-outro">CAAFT's structured approach addresses each of these — delivering accurate, on-time registered office change filings and complete ROC compliance support without requiring companies to navigate the MCA portal process independently.</p>
         </div>
     </section>
 
@@ -269,10 +266,10 @@ declare(strict_types=1);
     $caaft_benefits_title = 'Consequences of Not Filing Registered Office Changes';
     $caaft_benefits_intro = '';
     $caaft_benefits_items = [
-        ['lead' => 'Penalties for Non-Filing', 'text' => 'Delays in prescribed filings attract penalties that increase with continued non-compliance.', 'icon_class' => 'fas fa-rupee-sign', 'tone' => 'orange'],
-        ['lead' => 'Missed Government Communications', 'text' => 'Notices sent to old address are considered served even if not received.', 'icon_class' => 'fas fa-envelope-open-text', 'tone' => 'violet'],
-        ['lead' => 'ROC Scrutiny and Notices', 'text' => 'Inaccurate MCA address can trigger compliance scrutiny and notices.', 'icon_class' => 'fas fa-search', 'tone' => 'blue'],
-        ['lead' => 'Cascading Compliance Failures', 'text' => 'Mismatch across GST, tax, and bank records can block filings and disrupt operations.', 'icon_class' => 'fas fa-exclamation-triangle', 'tone' => 'green'],
+        ['lead' => 'Penalties for Non-Filing', 'text' => 'Failure to file the required forms within the prescribed timeline attracts penalties under the Companies Act, 2013 — increasing with each day of continued non-compliance and compounding the total cost of the oversight.', 'icon_class' => 'fas fa-rupee-sign', 'tone' => 'orange'],
+        ['lead' => 'Missed Government Communications', 'text' => 'Legal notices, tax communications, and statutory documents sent to the outdated registered address are treated as validly served — even if never received — creating compliance risks that the company may only discover when a deadline has already passed.', 'icon_class' => 'fas fa-envelope-open-text', 'tone' => 'violet'],
+        ['lead' => 'ROC Scrutiny and Notices', 'text' => 'An inaccurate registered address on MCA records triggers ROC scrutiny and can result in compliance notices being issued against the company — requiring urgent regularisation to restore good standing.', 'icon_class' => 'fas fa-search', 'tone' => 'blue'],
+        ['lead' => 'Cascading Compliance Failures', 'text' => 'Failure to update GST, Income Tax, and banking records with the new address creates downstream compliance gaps across multiple government departments — leading to mismatched records, blocked filings, and operational disruptions.', 'icon_class' => 'fas fa-exclamation-triangle', 'tone' => 'green'],
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
@@ -285,11 +282,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-balance-scale', 'title' => 'Expert MCA compliance knowledge', 'text' => 'Every registered office change is handled by professionals who stay current with Companies Act procedures, MCA form requirements, and ROC practices — ensuring the correct route and filing sequence is followed based on the type of move and the company\'s existing registrations.'],
-        ['icon_class' => 'fas fa-list-check', 'title' => 'End-to-end process management', 'text' => 'From drafting the board resolution and sourcing the required address proofs and NOC to filing INC-22 or INC-23 and updating all downstream registrations — the complete process is managed without requiring internal coordination across multiple agencies.'],
-        ['icon_class' => 'fas fa-clock', 'title' => 'Timely filing and tracking', 'text' => 'INC-22 and MGT-14 timelines are tracked from the date of the board or shareholder resolution — ensuring filings are completed within the prescribed windows and avoidable additional fees are not incurred.'],
-        ['icon_class' => 'fas fa-route', 'title' => 'Support for all move types', 'text' => 'Whether the change is within the same city, between cities in the same ROC jurisdiction, across ROC jurisdictions within the same state, or an inter-state move requiring RD approval — the correct procedure is applied for every scenario.'],
-        ['icon_class' => 'fas fa-check-circle', 'title' => 'Accurate documentation', 'text' => 'Address proofs, utility bills, NOCs from property owners, and all MCA form attachments are carefully verified before submission — reducing the risk of rejection, resubmission delays, and gaps in the company\'s official address records.'],
+        ['icon_class' => 'fas fa-balance-scale', 'title' => 'Expert Knowledge of MCA Regulations:', 'text' => 'Every engagement is handled by professionals who stay current with the latest Companies Act rules and ROC procedures — ensuring accurate, complete compliance with every registered office change filing.'],
+        ['icon_class' => 'fas fa-list-check', 'title' => 'End-to-End Process Management:', 'text' => 'From document collection and board resolution drafting to INC-22 filing, Regional Director approval management, and post-change record updates — the entire registered office change process is managed without requiring the company to navigate the MCA portal independently.'],
+        ['icon_class' => 'fas fa-clock', 'title' => 'Timely Filing and Deadline Tracking:', 'text' => ' Filing deadlines for INC-22 and MGT-14 are tracked for every client — with structured processes ensuring all forms are submitted on time and no avoidable penalties are incurred.'],
+        ['icon_class' => 'fas fa-route', 'title' => 'Support for All Types of Address Changes:', 'text' => 'Whether within the same city, across cities in the same state, across ROC jurisdictions, or from one state to another — CAAFT manages all types of registered office changes with the appropriate procedures and filings.'],
+        ['icon_class' => 'fas fa-check-circle', 'title' => 'Accurate Documentation and Error-Free Filing: ', 'text' => 'All address proofs, NOCs, board resolutions, and statutory forms are carefully verified before submission — minimising the risk of rejection due to documentation errors, mismatches, or incorrect form selection.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>
@@ -298,9 +295,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'registered-office-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => '15 lakh+', 'text' => 'Over 15 lakh companies are registered with the Ministry of Corporate Affairs in India — every one of which must maintain an accurate registered office address for official communication and legal compliance.'],
-        ['stat' => 'Thousands yearly', 'text' => 'Thousands of companies update their registered address every year due to office relocation, business expansion, or operational restructuring — making registered office change one of the most common corporate compliance filings.'],
-        ['stat' => 'Avoidable risk', 'text' => 'Companies that fail to update their registered address with the ROC risk penalties, missed government communications, and compliance notices — all of which are avoidable with timely and accurate MCA filing.'],
+        ['stat' => '15 lakh+', 'text' => 'Over 15 lakh companies are registered with the Ministry of Corporate Affairs in India — every one of which must maintain an accurate registered office address for official communication and legal compliance'],
+        ['stat' => 'Thousands yearly', 'text' => 'Thousands of companies update their registered address every year due to office relocation, business expansion, or operational restructuring — making registered office change one of the most common corporate compliance filings'],
+        ['stat' => 'Avoidable risk', 'text' => 'Companies that fail to update their registered address with the ROC risk penalties, missed government communications, and compliance notices — all of which are avoidable with timely and accurate MCA filing'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
@@ -309,7 +306,7 @@ declare(strict_types=1);
     $caaft_cta_section_id = 'get-in-touch';
     $caaft_cta_heading_id = 'registered-office-cta-heading';
     $caaft_cta_title = 'Ready to Complete the Registered Office Change the Right Way?';
-    $caaft_cta_text = 'An outdated registered address creates compliance risk over time, from missed government notices to ROC scrutiny and record mismatches across GST, tax, and banking. CAAFT delivers accurate and fully compliant address change support across India.';
+    $caaft_cta_text = 'An outdated registered address creates compliance risks that compound over time — from missed government notices to ROC scrutiny and cascading record mismatches across GST, tax, and banking. CAAFT delivers accurate, fast, and fully compliant registered office change support for companies across India.';
     $caaft_cta_button_label = 'Complete Address Change Today';
     $caaft_cta_button_href = '/contact#contact_us';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
@@ -321,11 +318,11 @@ declare(strict_types=1);
     $caaft_faq_accordion_id = 'accordionRegisteredOfficeFaq';
     $caaft_faq_prefix = 'registeredOfficeFaq';
     $caaft_faq_items = [
-        ['question' => 'How long does the registered office change approval take from the ROC?', 'answer' => 'Timeline depends on move type and document accuracy. Within-city changes are often processed quickly, while inter-state moves take longer due to Regional Director stage.'],
-        ['question' => 'Can a company use a residential address as its registered office?', 'answer' => 'Yes. A residential address is valid with proper NOC and address proof documentation.'],
-        ['question' => 'Does a registered office change affect the company\'s legal identity?', 'answer' => 'No. CIN, incorporation, and legal identity remain unchanged. Only registered address records are updated.'],
-        ['question' => 'Can a company operate from multiple offices after changing the registered office?', 'answer' => 'Yes. Multiple operational offices are allowed, but one official registered office must be maintained for statutory communication.'],
-        ['question' => 'Do banks and tax authorities need to be informed after changing the registered office?', 'answer' => 'Yes. The new address should be updated with banks, GST, Income Tax, and other relevant departments for consistent compliance records.'],
+        ['question' => 'How long does the registered office change approval take from the ROC?', 'answer' => 'The approval timeline depends on the type of address change and the accuracy of the documents submitted. For within-city changes, the ROC typically processes the INC-22 filing within a few working days after reviewing the forms and supporting documents. Inter-state changes involving Regional Director approval take longer due to the additional approval stage.'],
+        ['question' => 'Can a company use a residential address as its registered office?', 'answer' => 'Yes. A company can use a residential property as its registered office. A No Objection Certificate (NOC) from the property owner must be obtained and valid address proof submitted while filing the change request with the MCA.'],
+        ['question' => 'Does a registered office change affect the company\'s legal identity?', 'answer' => 'No. Changing the registered office address does not affect the company\'s legal identity, CIN, or incorporation status. The company continues to operate under the same legal structure — only the address on MCA records is updated.'],
+        ['question' => 'Can a company operate from multiple offices after changing the registered office?', 'answer' => 'Yes. A company can run operations from multiple branch offices or locations. However, one official registered office address must be maintained for receiving statutory communications and legal notices — and that address must remain current in MCA records at all times.'],
+        ['question' => 'Do banks and tax authorities need to be informed after changing the registered office?', 'answer' => 'Yes. The new registered address must be updated with banks, GST authorities, the Income Tax Department, and other relevant government departments — ensuring accurate records and uninterrupted communication across all compliance channels.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-faq.php';
     ?>

@@ -92,9 +92,7 @@ declare(strict_types=1);
     $caaft_hero_h2_highlight = 'Every Capital Increase, Done Right';
     $caaft_hero_h2_after = '';
     $caaft_hero_lead_paragraphs = [
-        'Increasing authorised share capital is a critical step before funding, share allotment, or restructuring, governed by strict requirements under the Companies Act, 2013.',
-        'It involves board and shareholder approvals, MOA amendment, and timely ROC filings. Non-compliance can invalidate allotments and trigger penalties. CAAFT ensures accurate, timely filings across India.',
-    ];
+        'Increasing authorised share capital is a critical step before funding, share allotment, or restructuring — governed by strict requirements under the Companies Act, 2013. It involves board and shareholder approvals, MOA amendment, and timely ROC filings. Non-compliance can invalidate allotments and trigger penalties. CAAFT ensures accurate, timely filings across India.'     ];
     $caaft_hero_primary_cta_label = 'Increase Authorised Capital Today';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_label = 'File SH-7 Without Delay';
@@ -122,9 +120,9 @@ declare(strict_types=1);
     $caaft_overview_heading_id = 'authorized-capital-what-heading';
     $caaft_overview_title = 'What Is Authorised Share Capital?';
     $caaft_overview_paragraphs = [
-        'Authorised share capital, also called registered or nominal capital, is the maximum value of shares a company is legally permitted to issue. It is declared in the Memorandum of Association at incorporation and sets the upper limit of the capital structure.',
-        'Authorised capital is not the money received by the company. It is the ceiling for future issuance. A company may issue only a part of it and keep the rest available for future equity needs.',
-        'If the required issuance exceeds the current authorised limit, MOA amendment and authorised capital increase are mandatory before allotment.',
+        'Authorised share capital — also called registered capital or nominal capital — is the maximum value of shares that a company is legally permitted to issue to its shareholders. It is declared in the Memorandum of Association (MOA) at the time of incorporation and forms the upper limit of a company\'s capital structure.',
+        'Authorised capital is not money the company has received or invested — it is simply the ceiling that governs how many shares can ever be issued. A company may choose to issue only a part of it, and the remainder stays unissued but available whenever the business needs to raise equity.',
+        'For example, if a private limited company has authorised capital of ₹10 lakhs and paid-up capital of ₹5 lakhs, additional shares worth up to ₹5 lakhs can be issued without amending the MOA. Any requirement beyond that ceiling makes a capital increase mandatory before any further allotment can proceed.',
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
@@ -136,15 +134,15 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'authorized-capital-needs-heading';
     $caaft_challenges_title = 'Who Needs Authorised Capital Increase Services?';
-    $caaft_challenges_intro = 'Any company planning to issue new shares, onboard investors, or restructure equity must ensure authorised capital is adequate, including:';
+    $caaft_challenges_intro = 'Any company planning to issue new shares, onboard investors, or restructure its equity must ensure the authorised capital is adequate before any allotment proceeds — regardless of the reason for the increase:';
     $caaft_challenges_items = [
-        'Private limited companies preparing for angel, VC, or institutional rounds',
-        'Startups creating or expanding ESOP pools',
-        'Companies onboarding co-founders, strategic partners, or nominee directors through equity',
-        'Businesses converting debt or loans into equity',
-        'Companies undertaking mergers, acquisitions, or share swap transactions',
-        'Growing businesses restructuring equity for working capital',
-        'Companies that exhausted existing authorised capital before next allotment',
+        'Private limited companies preparing for angel, VC, or institutional funding rounds requiring fresh share allotment',
+        'Startups creating or expanding an ESOP pool requiring dedicated share capital headroom',
+        'Companies onboarding co-founders, strategic partners, or nominee directors through equity allotment',
+        'Businesses converting outstanding debt or loans into equity stakes for lenders or creditors',
+        'Companies undertaking mergers, acquisitions, or share swap transactions requiring additional capital headroom',
+        'Growing businesses restructuring their equity to bring in working capital or reward existing shareholders',
+        'Companies that have exhausted their existing authorised capital and need to expand the ceiling before the next allotment',
     ];
     $caaft_challenges_outro = '';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
@@ -153,13 +151,16 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'authorized-capital-importance-heading';
     $caaft_challenges_title = 'Why Authorised Capital Increase Compliance Is Important';
-    $caaft_challenges_intro = 'Key consequences of non-compliance:';
+    $caaft_challenges_intro= 'The MCA requires all changes to a company\'s authorised capital to be formally approved by shareholders and filed with the Registrar of Companies — ensuring that share allotments remain legally valid and the company\'s capital structure is accurately reflected in government records. Shares allotted beyond the existing authorised capital limit are legally void and subject to regulatory challenge.
+    Key consequences of non-compliance:
+';
+    
     $caaft_challenges_items = [
-        'Shares issued beyond authorised limit are legally invalid and vulnerable to challenge.',
-        'Delay in SH-7 beyond 30 days attracts compounding late fees on MCA portal.',
-        'Missing valid shareholder resolution or EGM process can render filing defective.',
-        'Incorrect fee or stamp duty payment can lead to rejection and penalty exposure.',
-        'Repeated defaults may attract Section 450 prosecution: fine up to Rs. 10,000 plus Rs. 1,000 per day of continuing default.',
+        'Shares issued beyond the authorised capital limit are legally invalid — exposing the company to cap table disputes and regulatory scrutiny',
+        'Delay in filing Form SH-7 beyond 30 days attracts compounding late fees on the MCA portal — with penalties increasing with each passing day',
+        'Missing shareholder resolution or proper EGM process renders the resolution challengeable as void — and the MCA may reject the filing outright.',
+        'Non-payment of applicable government fees or stamp duty causes filing rejection — with penalty interest applicable in states with strict enforcement',
+        'Repeated defaults or wilful non-compliance attracts prosecution under Section 450 of the Companies Act, 2013 — fine up to ₹10,000 plus ₹1,000 per day of continuing default',
     ];
     $caaft_challenges_outro = '';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
@@ -168,26 +169,33 @@ declare(strict_types=1);
     <?php
     $caaft_benefits_heading_id = 'authorized-capital-when-heading';
     $caaft_benefits_title = 'When Should a Company Increase Authorised Capital?';
-    $caaft_benefits_intro = 'The Companies Act allows increase at any time, and it becomes essential in these situations:';
+    $caaft_benefits_intro = 'The Companies Act, 2013 permits an increase in authorised capital at any point — but the following situations make an increase not just advisable but essential:';
     $caaft_benefits_items = [
-        ['lead' => 'Funding rounds', 'text' => 'Angel, VC, or Series A allotments require enough headroom under authorised capital.', 'icon_class' => 'fas fa-sack-dollar', 'tone' => 'blue'],
-        ['lead' => 'ESOP pool creation', 'text' => 'Employee option pools require dedicated shares and often exhaust existing limit quickly.', 'icon_class' => 'fas fa-users', 'tone' => 'violet'],
-        ['lead' => 'Strategic onboarding', 'text' => 'Co-founders, strategic investors, and partners require fresh allotment capacity.', 'icon_class' => 'fas fa-handshake', 'tone' => 'green'],
-        ['lead' => 'M&A and restructuring', 'text' => 'Share swap and reorganisation transactions require capital headroom.', 'icon_class' => 'fas fa-sitemap', 'tone' => 'orange'],
-        ['lead' => 'Debt-to-equity conversion', 'text' => 'Loan conversion into equity requires additional authorised share capacity.', 'icon_class' => 'fas fa-arrow-right-arrow-left', 'tone' => 'blue'],
+        ['lead' => 'Preparing for a funding round (Angel / VC / Series A) ', 'text' => 'Investors require shares to be issued and existing authorised capital may not be sufficient to accommodate the allotment
+', 'icon_class' => 'fas fa-sack-dollar', 'tone' => 'blue'],
+        ['lead' => 'Issuing ESOP (Employee Stock Option Plan) ', 'text' => ' ESOPs require a dedicated pool of shares and companies often exhaust existing headroom quickly.', 'icon_class' => 'fas fa-users', 'tone' => 'violet'],
+        ['lead' => 'Onboarding strategic investors or co-founders  ', 'text' => 'New equity partners require fresh share allotment, which is only possible within authorised limits', 'icon_class' => 'fas fa-handshake', 'tone' => 'green'],
+        ['lead' => 'Mergers, acquisitions, or restructuring ', 'text' => ' Share swaps and reorganisation plans need adequate capital headroom.', 'icon_class' => 'fas fa-sitemap', 'tone' => 'orange'],
+        ['lead' => 'Converting debt to equity', 'text' => 'Lenders converting loans into equity stakes require new share issuance.', 'icon_class' => 'fas fa-arrow-right-arrow-left', 'tone' => 'blue'],
+        ['lead' => 'Expanding the share structure for operations ', 'text' => 'Growing companies restructure equity to bring in working capital or reward shareholders', 'icon_class' => 'fas fa-sack-dollar', 'tone' => 'blue'],
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
 
     <section class="llp-vs-section" aria-labelledby="authorized-capital-forms-heading">
         <div class="container">
-            <h2 id="authorized-capital-forms-heading" class="plc-docs-title">Forms Required for Authorised Capital Increase</h2>
+            <h2 id="authorized-capital-forms-heading" class="plc-docs-title"> Forms Required for Director Changes</h2>
             <div class="table-responsive">
                 <table class="llp-vs-table">
                     <thead><tr><th>Form</th><th>Purpose</th><th>Filed By</th><th>Timeline</th></tr></thead>
                     <tbody>
-                        <tr><td>SH-7</td><td>Notice of increase in authorised share capital and MOA capital clause alteration</td><td>Company</td><td>Within 30 days of ordinary resolution</td></tr>
-                        <tr><td>MGT-14</td><td>Filing of board/shareholder resolution (where applicable)</td><td>Company</td><td>Within 30 days of resolution</td></tr>
+                        <tr><td>DIR-2</td><td>Consent to act as director</td><td>Director (submitted to company)</td><td>Before appointment</td></tr>
+                        <tr><td>DIR-3</td><td>Application for DIN (new directors)</td><td>Individual applicant</td><td>Before appointment</td></tr>
+                        <tr><td>DIR-8</td><td>Declaration of no disqualification</td><td>Director (submitted to company)</td><td>Before appointment</td></tr>
+                        <tr><td>DIR-11</td><td>Intimation of resignation by director</td><td>Resigning director</td><td>Within 30 days of resignation</td></tr>
+                        <tr><td>DIR-12</td><td>Intimation of appointment / resignation / removal to ROC</td><td>Company</td><td>Within 30 days of event</td></tr>
+                        <tr><td>MGT-14</td><td>Filing of Board / Special Resolution with ROC</td><td>Company</td><td>Within 30 days of resolution</td></tr>
+
                     </tbody>
                 </table>
             </div>
@@ -198,14 +206,14 @@ declare(strict_types=1);
     $caaft_delivered_heading_id = 'authorized-capital-delivered-heading';
     $caaft_delivered_title = 'Authorised Capital Increase Services - What Gets Delivered';
     $caaft_delivered_items = [
-        ['name' => 'MOA and AOA Review', 'text' => 'Clause review to confirm increase permissibility and identify restrictive provisions early.'],
-        ['name' => 'Board Resolution Drafting', 'text' => 'Accurate board resolution drafting to recommend increase and call EGM.'],
-        ['name' => 'EGM Notice and Shareholder Communication', 'text' => 'Proper 21 clear days notice drafting and shareholder dispatch support.'],
-        ['name' => 'Ordinary Resolution Preparation', 'text' => 'Section 61(1)(a) resolution drafting, recording, and statutory minute support.'],
-        ['name' => 'MOA Capital Clause Amendment', 'text' => 'Clause V amendment drafting aligned with revised authorised capital.'],
-        ['name' => 'SH-7 and MGT-14 Filing', 'text' => 'Timely ROC filing with required annexures and resolution documents.'],
-        ['name' => 'Government Fee and Stamp Duty Management', 'text' => 'Computation and payment support based on incremental capital and state rules.'],
-        ['name' => 'Post-Filing Compliance Updates', 'text' => 'MCA verification and statutory register updates after approval.'],
+        ['name' => 'MOA and AOA Review', 'text' => 'The existing Memorandum of Association and Articles of Association are reviewed to confirm whether an increase in authorised capital is permitted — and any restrictive or silent clauses are identified before the process begins.'],
+        ['name' => 'Board Resolution Drafting', 'text' => 'The board resolution recommending the capital increase and authorising the convening of an EGM is drafted accurately — reflecting all required statutory language and circulated for director signatures before the board meeting.'],
+        ['name' => 'EGM Notice and Shareholder Communication', 'text' => ' The EGM notice is prepared with the mandatory 21 clear days\' notice period — specifying the proposed increase, revised MOA clause, and all required agenda items — and dispatched to all shareholders within the prescribed timeline.'],
+        ['name' => 'Ordinary Resolution Preparation', 'text' => 'The ordinary resolution under Section 61(1)(a) is prepared for shareholder approval at the EGM — with minutes accurately recorded, signed, and maintained in the company\'s statutory registers post-meeting.'],
+        ['name' => 'MOA Capital Clause Amendment', 'text' => ' The Capital Clause (Clause V) of the MOA is amended to reflect the new authorised capital — formalised through accurate drafting and attached to the ROC filing as required.'],
+        ['name' => 'SH-7 and MGT-14 Filing', 'text' => ' Form SH-7, along with the altered MOA and ordinary resolution, is filed with the ROC within the mandatory 30-day window — with MGT-14 filed simultaneously where applicable for the resolution on record.'],
+        ['name' => 'Government Fee and Stamp Duty Management', 'text' => 'Applicable government fees based on the incremental capital increase and state-specific stamp duty are calculated and paid — with challan receipts retained for the company\'s compliance records.'],
+        ['name' => 'Post-Filing Compliance Updates', 'text' => 'Once the ROC approves the filing, the updated authorised capital is verified on the MCA portal and all statutory registers — including the Register of Members — are updated to reflect the new capital structure.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
@@ -221,19 +229,20 @@ declare(strict_types=1);
                     </div>
                     <ul class="plc-docs-card-list">
                         <li>Certificate of Incorporation</li>
-                        <li>Existing MOA and AOA</li>
+                        <li>Existing Memorandum of Association (MOA) and Articles of Association (AOA)</li>
                         <li>Existing shareholding pattern and share capital details</li>
-                        <li>PAN and identity/address proof of directors (where triggered)</li>
+                        <li>PAN and identity/address proof of directors (if new filings trigger KYC)</li>
                         <li>Board Resolution for increase in authorised capital</li>
-                        <li>EGM notice / postal ballot notice</li>
-                        <li>Ordinary Resolution and signed EGM minutes</li>
-                        <li>Attendance sheet and proxy forms from EGM</li>
+                        <li>Notice of EGM / Postal Ballot notice</li>
+                        <li>Ordinary Resolution passed at EGM with minutes</li>
+                        <li>Attendance sheet and proxy forms from the EGM</li>
                         <li>Altered/amended MOA</li>
-                        <li>Government fees and stamp duty challans</li>
+                        <li>Challan for government fees / stamp duty (paid during filing)</li>
                     </ul>
                 </article>
             </div>
         </div>
+        <h2 class="partnership-mistakes-title" style="font-size:1.2rem;margin:0 0 10px;">All documents must be accurate and consistent with existing MCA records — any mismatch in company details or capital figures can cause form rejection and require correction before resubmission.</h2>       
     </section>
 
     <?php
@@ -241,14 +250,14 @@ declare(strict_types=1);
     $caaft_steps_title = 'Step-by-Step Process';
     $caaft_steps_numbered = true;
     $caaft_steps_items = [
-        ['title' => 'MOA and AOA Review', 'text' => 'Review permissibility and identify any clause amendments needed before filing process begins.'],
-        ['title' => 'Board Meeting', 'text' => 'Board passes resolution recommending increase and authorising EGM.'],
-        ['title' => 'EGM Notice Issuance', 'text' => '21 clear days notice issued with revised capital clause proposal.'],
-        ['title' => 'Ordinary Resolution at EGM', 'text' => 'Shareholders approve increase under Section 61(1)(a).'],
-        ['title' => 'MOA Amendment', 'text' => 'Clause V is altered to reflect revised authorised capital.'],
-        ['title' => 'SH-7 Filing Within 30 Days', 'text' => 'SH-7 with altered MOA and resolution is filed, along with MGT-14 where applicable.'],
-        ['title' => 'Government Fee Payment', 'text' => 'Incremental fee and stamp duty are paid as per applicable rates.'],
-        ['title' => 'Compliance Confirmation', 'text' => 'MCA records are verified and statutory registers are updated.'],
+        ['title' => 'MOA and AOA Review', 'text' => 'The existing MOA and AOA are reviewed to confirm whether an increase in authorised capital is permitted. If restrictive or silent, a simultaneous amendment is initiated before the process moves forward.'],
+        ['title' => 'Board Meeting', 'text' => 'A board meeting is convened with a minimum 7 days\' notice. The board passes a resolution recommending the capital increase and authorises the convening of an EGM.'],
+        ['title' => 'EGM Notice Issuance', 'text' => 'An EGM is convened with 21 days\' clear notice to all shareholders — with the agenda specifying the proposed increase and the revised MOA clause.'],
+        ['title' => 'Ordinary Resolution at EGM', 'text' => 'Shareholders vote on the increase at the EGM. An ordinary resolution under Section 61(1)(a) — requiring a simple majority — is passed and the outcome is recorded in the minutes.'],
+        ['title' => 'MOA Amendment', 'text' => 'The Capital Clause (Clause V) of the MOA is amended to reflect the new authorised capital and formalised through accurate drafting ahead of ROC filing.'],
+        ['title' => 'SH-7 Filing Within 30 Days', 'text' => 'Form SH-7, along with the altered MOA and ordinary resolution, is filed with the ROC within 30 days of passing the resolution — with MGT-14 filed simultaneously where applicable.'],
+        ['title' => 'Government Fee Payment', 'text' => 'Additional government fees based on the incremental capital increase are calculated and paid — with the rate varying by state and challan receipts preserved for compliance records.'],
+        ['title' => 'Compliance Confirmation', 'text' => ' Once the ROC approves the filing, the MCA portal reflects the updated authorised capital and all statutory registers are updated to confirm the new capital structure.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
     ?>
@@ -256,18 +265,18 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'authorized-capital-common-heading';
     $caaft_challenges_title = 'Common Authorised Capital Increase Challenges CAAFT Solves';
-    $caaft_challenges_intro = 'Most companies seek support when facing one or more of these:';
+    $caaft_challenges_intro = 'Most companies seek professional support for authorised capital increases when facing one or more of these:';
     $caaft_challenges_items = [
-        'Funding round closing with insufficient authorised capital headroom',
-        'AOA restrictive clauses discovered mid-process',
-        'Incorrect EGM notice period leading to procedural defects',
-        'Unknown or miscalculated stamp duty causing rejection',
-        'Missed SH-7 timeline with compounding late fees',
-        'Overlooked MGT-14 obligation creating ROC filing gaps',
-        'Shares allotted before increase requiring urgent regularisation',
-        'Multiple capital events requiring coordinated sequencing and filing',
+        'Funding round closing imminently and the company\'s existing authorised capital is insufficient to accommodate the investor allotment',
+        'AOA contains restrictive clauses requiring amendment before the capital increase can proceed — identified only mid-process',
+        'EGM notice period not correctly calculated — causing the resolution to be procedurally defective and challengeable',
+        'Stamp duty amount unknown or miscalculated — resulting in filing rejection or underpayment penalties',
+        'SH-7 filing deadline missed — triggering compounding late fees on the MCA portal',
+        'MGT-14 filing obligation overlooked — creating a gap in the company\'s ROC compliance record',
+        'Companies that allotted shares before completing the capital increase — requiring urgent regularisation to avoid legal invalidity of the allotment',
+        'Multiple capital events — ESOP pool creation, investor allotment, and co-founder onboarding — requiring coordinated filing across all transactions',
     ];
-    $caaft_challenges_outro = 'CAAFT delivers structured, accurate, and timely authorised capital increase support without portal complexity for management teams.';
+    $caaft_challenges_outro = 'CAAFT\'s structured approach addresses each of these — delivering accurate, on-time authorised capital increase filings and complete ROC compliance support without requiring companies to navigate the MCA portal process independently.';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
@@ -276,10 +285,10 @@ declare(strict_types=1);
     $caaft_benefits_title = 'Consequences of Not Filing Correctly';
     $caaft_benefits_intro = '';
     $caaft_benefits_items = [
-        ['lead' => 'Invalid Share Allotments', 'text' => 'Allotments beyond authorised limit are legally void and vulnerable to challenge.', 'icon_class' => 'fas fa-ban', 'tone' => 'orange'],
-        ['lead' => 'Compounding Late Fees', 'text' => 'Delay beyond 30 days increases SH-7 filing cost each day.', 'icon_class' => 'fas fa-rupee-sign', 'tone' => 'violet'],
-        ['lead' => 'ROC Rejection for Procedural Defects', 'text' => 'Defective resolutions, EGM process, or MOA drafting can force process restart.', 'icon_class' => 'fas fa-triangle-exclamation', 'tone' => 'blue'],
-        ['lead' => 'Section 450 Prosecution Risk', 'text' => 'Repeated defaults may attract fines up to Rs. 10,000 and Rs. 1,000/day continuing default.', 'icon_class' => 'fas fa-gavel', 'tone' => 'green'],
+        ['lead' => 'Invalid Share Allotments', 'text' => 'Shares allotted beyond the existing authorised capital limit are legally void — exposing the company to cap table disputes, investor complications, and potential regulatory action to nullify the allotment.', 'icon_class' => 'fas fa-ban', 'tone' => 'orange'],
+        ['lead' => 'Compounding Late Fees', 'text' => ' Delay in filing Form SH-7 beyond 30 days attracts additional late filing fees on the MCA portal — compounding with each passing day and increasing the total cost of non-compliance significantly.', 'icon_class' => 'fas fa-rupee-sign', 'tone' => 'violet'],
+        ['lead' => 'ROC Rejection for Procedural Defects', 'text' => ' Missing shareholder resolutions, incorrectly conducted EGMs, or improperly drafted MOA amendments cause the MCA to reject the filing outright — requiring the process to restart from the resolution stage.', 'icon_class' => 'fas fa-triangle-exclamation', 'tone' => 'blue'],
+        ['lead' => 'Section 450 Prosecution Risk', 'text' => 'Repeated defaults or wilful non-compliance attracts prosecution under Section 450 of the Companies Act, 2013 — with fines up to ₹10,000 and an additional ₹1,000 per day of continuing default applicable to every officer in default.', 'icon_class' => 'fas fa-gavel', 'tone' => 'green'],
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
@@ -292,11 +301,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-scale-balanced', 'title' => 'Expert Companies Act compliance', 'text' => 'Every authorised capital increase is handled by professionals who stay current with Companies Act requirements, MCA procedures, and ROC filing practices — ensuring the correct workflow is followed based on the company\'s AOA, existing capital structure, and filing history.'],
-        ['icon_class' => 'fas fa-list-check', 'title' => 'End-to-end increase support', 'text' => 'From reviewing the MOA and drafting board and shareholder resolutions to Form SH-7 and MGT-14 filing and final ROC confirmation — the entire workflow is managed without requiring internal teams to coordinate across multiple steps.'],
-        ['icon_class' => 'fas fa-clock', 'title' => 'Timely SH-7 deadline tracking', 'text' => 'The 30-day window for filing Form SH-7 after passing the special resolution is monitored carefully — with filings completed on time to prevent compounding additional fees and MCA complications.'],
-        ['icon_class' => 'fas fa-lightbulb', 'title' => 'Advisory beyond filing', 'text' => 'Beyond the forms, practical guidance is provided on AOA amendment requirements, applicable stamp duty calculations, headroom planning for upcoming fundraises, and the right capital structure for the company\'s next stage.'],
-        ['icon_class' => 'fas fa-check-circle', 'title' => 'Error-free documentation', 'text' => 'Board and shareholder resolutions, amended MOA, and all MCA form attachments are carefully prepared and verified before submission — reducing the risk of rejection, resubmission, and delays to time-sensitive transactions.'],
+        ['icon_class' => 'fas fa-scale-balanced', 'title' => 'Expert Knowledge of Companies Act Compliance:', 'text' => ' Every engagement is handled by professionals who stay current with MCA regulations and ROC filing requirements — ensuring complete, accurate compliance with every authorised capital increase filing.'],
+        ['icon_class' => 'fas fa-list-check', 'title' => 'End-to-End Capital Increase Support:', 'text' => 'From MOA review and board resolution drafting to EGM coordination, MOA amendment, and final MCA portal submission — the entire process is managed without requiring the company to navigate the portal independently.'],
+        ['icon_class' => 'fas fa-clock', 'title' => 'Timely Filing and Deadline Tracking:', 'text' => ' The 30-day SH-7 filing window is tracked for every client — with structured processes ensuring all forms are submitted well before the deadline and no compounding penalties are incurred.'],
+        ['icon_class' => 'fas fa-lightbulb', 'title' => 'Advisory — Not Just Filing:', 'text' => 'MOA review, AOA restriction checks, stamp duty assessment, and capital planning advice based on actual growth plans — not just mechanical form submission.'],
+        ['icon_class' => 'fas fa-check-circle', 'title' => 'Accurate Documentation and Error-Free Filing:', 'text' => 'All resolutions, EGM notices, amended MOA, and statutory forms are carefully verified before submission — minimising the risk of rejection due to drafting errors, procedural defects, or incorrect capital figures.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>
@@ -305,9 +314,9 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'authorized-capital-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => 'Sec 61(1)(a)', 'text' => 'Section 61(1)(a) of the Companies Act, 2013 permits an increase in authorised share capital through an ordinary resolution at a general meeting — a simple majority is sufficient.'],
-        ['stat' => '30 days', 'text' => 'Form SH-7 must be filed with the Registrar of Companies within 30 days of passing the resolution — delays attract compounding late fees on the MCA portal.'],
-        ['stat' => 'Legal prerequisite', 'text' => 'Shares allotted beyond the existing authorised capital limit are legally void — making the capital increase a mandatory prerequisite to any fresh share issuance.'],
+        ['stat' => 'Sec 61(1)(a)', 'text' => 'Section 61(1)(a) of the Companies Act, 2013 permits an increase in authorised share capital through an ordinary resolution at a general meeting — a simple majority is sufficient'],
+        ['stat' => '30 days', 'text' => 'Form SH-7 must be filed with the Registrar of Companies within 30 days of passing the resolution — delays attract compounding late fees on the MCA portal'],
+        ['stat' => 'Legal prerequisite', 'text' => 'Shares allotted beyond the existing authorised capital limit are legally void — making the capital increase a mandatory prerequisite to any fresh share issuance'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
@@ -316,7 +325,7 @@ declare(strict_types=1);
     $caaft_cta_section_id = 'get-in-touch';
     $caaft_cta_heading_id = 'authorized-capital-cta-heading';
     $caaft_cta_title = 'Ready to Increase Authorised Capital the Right Way?';
-    $caaft_cta_text = 'Waiting until a funding round is mid-close to address capital ceiling creates avoidable risk. CAAFT delivers accurate, fast, and fully compliant authorised capital increase support from board resolution to ROC confirmation for companies across India.';
+    $caaft_cta_text = 'Waiting until a funding round is mid-close to address a capital ceiling is a risk no company needs to take. CAAFT delivers accurate, fast, and fully compliant authorised capital increase support — from board resolution to ROC confirmation — for companies across India.';
     $caaft_cta_button_label = 'Complete Capital Increase Today';
     $caaft_cta_button_href = '/contact#contact_us';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
@@ -328,11 +337,11 @@ declare(strict_types=1);
     $caaft_faq_accordion_id = 'accordionIncreaseAuthorizedCapitalFaq';
     $caaft_faq_prefix = 'increaseAuthorizedCapitalFaq';
     $caaft_faq_items = [
-        ['question' => 'What is the minimum and maximum limit for authorised share capital in India?', 'answer' => 'There is no statutory minimum or maximum under the Companies Act, 2013. It depends on business needs, and government fees are linked to authorised capital amount.'],
-        ['question' => 'Is a special resolution required for increasing authorised capital?', 'answer' => 'No. An ordinary resolution is usually sufficient under Section 61(1)(a), unless the AOA specifically requires a special resolution.'],
-        ['question' => 'What is the difference between authorised capital and paid-up capital, and why does it matter?', 'answer' => 'Authorised capital is the issuance ceiling; paid-up capital is actual money received against issued shares. Capital must be increased before issuing shares beyond authorised limit.'],
-        ['question' => 'Can a company increase authorised capital and issue shares in the same EGM?', 'answer' => 'Yes, both resolutions can be passed together, but allotment should be completed only after SH-7 filing and authorised capital update with ROC.'],
-        ['question' => 'Does increasing authorised capital attract any tax or GST?', 'answer' => 'No income tax or GST applies directly on increase, but stamp duty and ROC filing fees apply based on incremental authorised capital.'],
+        ['question' => 'What is the minimum and maximum limit for authorised share capital in India?', 'answer' => 'There is no statutory minimum or maximum for authorised capital under the Companies Act, 2013. A private limited company can have authorised capital starting from ₹1 lakh — common at incorporation — but there is no upper ceiling. The amount is determined by the company\'s present and anticipated capital requirements. Government fees for incorporation and capital increases are calculated on the authorised capital amount, so the choice has direct cost implications.'],
+        ['question' => 'Is a special resolution required for increasing authorised capital?', 'answer' => 'No. Under Section 61(1)(a) of the Companies Act, 2013, an ordinary resolution — requiring a simple majority of shareholders present and voting at the general meeting — is sufficient to increase authorised capital. A special resolution (requiring 75% majority) is not needed unless the Articles of Association specifically mandate it. CAAFT reviews the AOA before advising on the resolution type.'],
+        ['question' => 'What is the difference between authorised capital and paid-up capital, and why does it matter for funding?', 'answer' => 'Authorised capital is the ceiling — the maximum value of shares the company is allowed to issue. Paid-up capital is what has actually been received from shareholders. For funding purposes, investors receive newly issued shares. If the paid-up capital after allotment would exceed the existing authorised capital, the capital must be increased first. Most companies discover this gap mid-way through closing a round — which is why proactive capital planning matters.'],
+        ['question' => 'Can a company increase authorised capital and issue shares in the same EGM?', 'answer' => 'Technically yes — the capital increase resolution and a share allotment resolution can be placed on the same EGM agenda. However, the allotment can only be completed after Form SH-7 is filed with the ROC and the authorised capital is formally updated. CAAFT coordinates both actions in sequence so that the allotment follows the ROC confirmation, keeping the cap table clean and legally sound.'],
+        ['question' => 'Does increasing authorised capital attract any tax or GST?', 'answer' => 'Increasing authorised capital does not trigger income tax or GST. However, it does attract stamp duty — payable to the respective state government — calculated on the incremental authorised capital amount. The rate varies by state. Additionally, the MCA charges a government fee scaled to the capital amount when filing Form SH-7. CAAFT provides a clear cost estimate covering all applicable duties and fees before the process begins.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-faq.php';
     ?>
