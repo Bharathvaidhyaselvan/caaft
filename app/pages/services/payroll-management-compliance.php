@@ -141,8 +141,7 @@ declare(strict_types=1);
     $caaft_hero_h2_highlight = 'Every Month';
     $caaft_hero_h2_after = '';
     $caaft_hero_lead_paragraphs = [
-        'CAAFT delivers end-to-end payroll management services for startups, SMEs, enterprises, and MNCs operating in India.',
-        'From accurate salary processing to statutory compliance, every complexity layer is handled so internal teams can stay focused on core business priorities.',
+'CAAFT delivers end-to-end payroll management services for startups, SMEs, large enterprises, and MNCs operating in India. From accurate salary processing to statutory compliance — every layer of complexity is handled so internal teams can focus on what matters most.',
     ];
     $caaft_hero_primary_cta_label = 'Start Payroll Management Today';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
@@ -171,9 +170,10 @@ declare(strict_types=1);
     $caaft_overview_heading_id = 'payroll-overview-heading';
     $caaft_overview_title = 'What is Payroll Management & Compliance?';
     $caaft_overview_paragraphs = [
-        'Payroll management includes salary computation, statutory deductions, disbursement, and compliant record keeping across HR, finance, and legal workflows.',
-        'Payroll compliance means meeting obligations under PF, ESI, PT, TDS, gratuity, and minimum wage laws to avoid penalties and reputational risk.',
-        'Together, payroll operations and compliance build employee trust and regulatory stability for every business.',
+        'Payroll management is the process of calculating salaries, deducting taxes and contributions, disbursing pay, and maintaining compliant records. It goes beyond payslips — linking finance, HR, and legal functions into a single, interdependent process.',
+        'Payroll compliance involves meeting statutory obligations like PF, ESI, Professional Tax, TDS, gratuity, and minimum wage laws. Non-compliance can lead to penalties, interest, and reputational risk.',
+        'Together, they ensure smooth operations, regulatory adherence, and employee trust — forming a critical foundation for any organisation.',
+
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
@@ -185,43 +185,52 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'payroll-needs-heading';
     $caaft_challenges_title = 'Who Needs Payroll Management Services?';
-    $caaft_challenges_intro = 'Built for organisations across stages and scales:';
+    $caaft_challenges_intro = 'CAAFT\'s payroll management services are built for organisations at every stage and scale:
+';
     $caaft_challenges_items = [
-        'Startups launching first payroll and statutory registrations',
-        'SMEs scaling headcount and requiring automated compliant workflows',
-        'Large enterprises managing 500+ employees and multi-location complexity',
-        'MNCs/foreign companies entering India and needing local payroll setup',
-        'Companies post-restructuring requiring revised CTC and reconciliations',
-        'HR/finance teams facing month-end errors, delayed filings, and notices',
+        'Startups setting up payroll and statutory registrations for the first time',
+        'SMEs scaling headcount and needing automated, compliant payroll workflows',
+        'Large enterprises managing 500+ employees across multiple departments and locations',
+        'MNCs and foreign companies entering India requiring end-to-end payroll setup',
+        'Companies post-restructuring needing payroll reconciliation and revised CTC computation',
+        'Finance and HR teams under pressure from month-end errors, delayed filings, and penalty notices',
     ];
-    $caaft_challenges_outro = 'Any organisation with employees in India carries payroll compliance obligations.';
+    $caaft_challenges_outro = 'Any organisation with employees in India has a payroll compliance obligation — and the complexity only grows with headcount and geography.';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
     <?php
     $caaft_benefits_heading_id = 'payroll-importance-heading';
     $caaft_benefits_title = 'Why Payroll Compliance is Important';
-    $caaft_benefits_intro = 'Payroll is not just back-office processing; it is a strategic risk and trust function.';
+    $caaft_benefits_intro = 'Many business owners treat payroll as a back-office routine. That mindset is costly. Key reasons payroll compliance deserves a front-row seat in business strategy:';
     $caaft_benefits_items = [
-        ['lead' => 'Penalty prevention', 'text' => 'Missed PF/ESI/TDS obligations can trigger heavy penalties and interest.', 'icon_class' => 'fas fa-exclamation-triangle', 'tone' => 'blue'],
-        ['lead' => 'Audit and diligence readiness', 'text' => 'Compliant records matter during audits, M&A, and funding due diligence.', 'icon_class' => 'fas fa-search', 'tone' => 'violet'],
-        ['lead' => 'Employee trust protection', 'text' => 'Accurate, timely salaries and payslips strengthen confidence and retention.', 'icon_class' => 'fas fa-users', 'tone' => 'green'],
-        ['lead' => 'Litigation risk reduction', 'text' => 'Correct calculations reduce labour disputes and escalations.', 'icon_class' => 'fas fa-gavel', 'tone' => 'orange'],
-        ['lead' => 'Tax and provision accuracy', 'text' => 'Supports correct deductions, input claims, and gratuity provisioning.', 'icon_class' => 'fas fa-calculator', 'tone' => 'blue'],
+        ['lead' => 'Penalty prevention', 'text' => 'Statutory penalties for non-compliance with PF, ESI, or TDS can run into lakhs — with compounding interest.', 'icon_class' => 'fas fa-exclamation-triangle', 'tone' => 'blue'],
+        ['lead' => 'Audit and diligence readiness', 'text' => 'Non-compliant companies face scrutiny during audits, M&A due diligence, and funding rounds', 'icon_class' => 'fas fa-search', 'tone' => 'violet'],
+        ['lead' => 'Employee trust protection', 'text' => 'Labour disputes arising from incorrect salary calculations damage employer brand and invite litigation', 'icon_class' => 'fas fa-users', 'tone' => 'green'],
+        ['lead' => 'Litigation risk reduction', 'text' => 'Employees who receive inaccurate payslips or delayed salaries lose confidence in leadership', 'icon_class' => 'fas fa-gavel', 'tone' => 'orange'],
+        ['lead' => 'Tax and provision accuracy', 'text' => 'For MNCs and foreign companies operating in India, compliance gaps attract attention from tax authorities and can delay repatriation of funds', 'icon_class' => 'fas fa-calculator', 'tone' => 'blue'],
+        ['lead' => 'Payroll Processing', 'text' => 'Correct payroll processing ensures accurate input tax credits, gratuity provisions, and deductions — reducing the overall tax burden', 'icon_class' => 'fas fa-calculator', 'tone' => 'blue'],
     ];
-    include __DIR__ . '/../../includes/components/caaft-benefits.php';
-    ?>
+ include __DIR__ . '/../../includes/components/caaft-benefits.php';
+?>
+<div style="background:#eaf6fd;padding:0 0 40px;">
+    <div class="container">
+        <p style="margin:0;font-size:1.02rem;line-height:1.65;font-weight:500;color:#4d5868;">Payroll compliance is not just a legal obligation — it is a business advantage when managed proactively.
+</p>
+    </div>
+</div>
 
     <?php
     $caaft_delivered_heading_id = 'payroll-when-needed-heading';
     $caaft_delivered_title = 'When Do You Need Payroll Services?';
+    $caaft_delivered_intro='Not every business recognises the right moment to bring in professional payroll support. Key business scenarios and signals that indicate it is time to act:';
     $caaft_delivered_items = [
-        ['name' => 'Startup with 10-50 employees', 'text' => 'Needs setup, registrations, and payslip framework for first payroll cycles.'],
-        ['name' => 'SME scaling rapidly', 'text' => 'Needs outsourcing and automation to remove month-end processing bottlenecks.'],
-        ['name' => 'Large enterprise', 'text' => 'Needs compliance audit and systems after statutory finding escalations.'],
-        ['name' => 'MNC entering India', 'text' => 'Needs India-specific payroll setup and statutory advisory.'],
-        ['name' => 'Post-restructuring organisation', 'text' => 'Needs CTC re-computation and payroll reconciliation.'],
-        ['name' => 'Pressured HR/finance team', 'text' => 'Needs reliable outsourced payroll and compliance turnaround.'],
+        ['name' => 'Startup with 10-50 employees', 'text' => ' First payroll run or first compliance notice. Requires payroll setup, PF/ESI registration, and payslip templates'],
+        ['name' => 'SME scaling rapidly', 'text' => ' HR team overwhelmed by month-end processing. Requires payroll outsourcing and automated workflows'],
+        ['name' => 'Large enterprise (500+ Employees)', 'text' => 'Audit findings related to statutory compliance. Requires a compliance audit and systematic payroll management'],
+        ['name' => 'MNC entering India', 'text' => 'Absence of India-specific payroll knowledge in-house. Requires end-to-end payroll system setup and advisory support'],
+        ['name' => 'Company Post-Restructuring', 'text' => 'Employees moving onto new pay structures or revised CTCs. Requires payroll reconciliation and revised computation'],
+        ['name' => 'Finance/HR Department Under Pressure', 'text' => 'Month-end errors, delayed filings, and penalty notices. Requires outsourced payroll processing and compliance support'],
     ];
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
@@ -229,13 +238,15 @@ declare(strict_types=1);
     <?php
     $caaft_delivered_heading_id = 'payroll-components-heading';
     $caaft_delivered_title = 'Key Components of Payroll Management';
+    $caaft_delivered_intro='A robust payroll management system covers several interdependent components:';
+
     $caaft_delivered_items = [
-        ['name' => 'Salary Structure Design', 'text' => 'CTC breakups with tax-efficient component architecture.'],
-        ['name' => 'Payroll Processing', 'text' => 'Monthly gross-to-net computation with all statutory deductions.'],
-        ['name' => 'Statutory Compliance', 'text' => 'On-time PF, ESI, PT, TDS, and related filing obligations.'],
-        ['name' => 'Payslip Generation', 'text' => 'Detailed compliant payslips for every employee period.'],
-        ['name' => 'Leave & Attendance Integration', 'text' => 'Sync LOP/overtime and attendance data for accuracy.'],
-        ['name' => 'Full & Final Settlement', 'text' => 'Exit dues, notice pay, gratuity, and final computations.'],
+        ['name' => 'Salary Structure Design', 'text' => 'Building CTC breakups covering Basic, HRA, LTA, Special Allowances, and Reimbursements — optimised for tax efficiency'],
+        ['name' => 'Payroll Processing', 'text' => 'Monthly computation of gross pay, deductions (TDS, PF, ESI, PT, loans), and net pay disbursement'],
+        ['name' => 'Statutory Compliance', 'text' => 'Timely filing and payment of PF, ESI, PT, TDS, LWF, and all applicable contributions'],
+        ['name' => 'Payslip Generation', 'text' => 'Detailed, compliant payslips for every employee covering all earnings and deductions'],
+        ['name' => 'Leave & Attendance Integration', 'text' => 'Syncing leave records, Loss of Pay (LOP), and overtime data with payroll calculations for accurate processing'],
+        ['name' => 'Full & Final Settlement', 'text' => 'Accurate computation of all dues for resigned or terminated employees — including gratuity and notice pay'],
     ];
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
@@ -243,13 +254,30 @@ declare(strict_types=1);
     <?php
     $caaft_delivered_heading_id = 'payroll-compliance-req-heading';
     $caaft_delivered_title = 'Payroll Compliance Requirements in India';
+    $caaft_delivered_intro= 'India\'s payroll compliance landscape is layered, with central and state-level obligations running simultaneously:';
     $caaft_delivered_items = [
-        ['name' => 'Employees\' Provident Fund (EPF)', 'text' => '12% employer + 12% employee contribution model; monthly due date compliance.'],
-        ['name' => 'Employees\' State Insurance (ESI)', 'text' => 'Contribution applicability by wages/headcount with periodic return compliance.'],
-        ['name' => 'TDS on Salaries', 'text' => 'Section 192 deductions, deposits, quarterly returns, and Form 16 issuance.'],
-        ['name' => 'Professional Tax (PT)', 'text' => 'State-wise slab-driven deduction and remittance obligations.'],
-        ['name' => 'Labour Welfare Fund (LWF)', 'text' => 'State-specific contribution cycles (monthly/half-yearly).'],
-        ['name' => 'Gratuity & Bonus', 'text' => 'Statutory eligibility and payout obligations under applicable acts.'],
+        ['name' => 'Employees\' Provident Fund (EPF)', 'text' => 'Applicable to establishments with 20 or more employees;
+Employer contributes 12% of Basic + DA; employee contributes 12%;
+Monthly challan to be deposited by the 15th of the following month;
+Annual return filing via the EPFO unified portal;
+'],
+        ['name' => 'Employees\' State Insurance (ESI)', 'text' => 'Applicable to establishments with 10 or more employees earning up to Rs. 21,000/month
+Employer contributes 3.25%; employee contributes 0.75% of gross wages
+Half-yearly returns to be filed; monthly challans due by the 15th
+'],
+        ['name' => 'Tax Deducted at Source (TDS) — Salaries', 'text' => 'Deducted from employee salaries under Section 192 of the Income Tax Act
+Monthly TDS deposit by the 7th of the following month
+Quarterly TDS returns (Form 24Q) and annual Form 16 issuance
+'],
+        ['name' => 'Professional Tax (PT)', 'text' => 'Levied by state governments — applicable in Maharashtra, Karnataka, Tamil Nadu, West Bengal, and others
+Employee-specific slabs vary by state; employers are obligated to deduct and remit
+'],
+        ['name' => 'Labour Welfare Fund (LWF)', 'text' => 'Applicable in notified states; contributions are deducted from employee salaries
+Frequency varies by state — some require monthly, others half-yearly contributions
+'],
+        ['name' => 'Gratuity & Bonus', 'text' => 'Gratuity payable to employees who have completed 5 years of service under the Payment of Gratuity Act, 1972
+Statutory bonus applicable under the Payment of Bonus Act, 1965 for eligible employees
+'],
     ];
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
@@ -259,15 +287,15 @@ declare(strict_types=1);
     $caaft_steps_title = 'Step-by-Step Process';
     $caaft_steps_numbered = true;
     $caaft_steps_items = [
-        ['title' => 'Data Collection', 'text' => 'Attendance, leaves, joiners/exits, salary updates, and claims captured.'],
-        ['title' => 'Salary Computation', 'text' => 'Gross pay, deductions, and net pay calculation with controls.'],
-        ['title' => 'Review & Approval', 'text' => 'Payroll register and variance review by HR/finance stakeholders.'],
-        ['title' => 'Salary Disbursement', 'text' => 'Bank transfer processing with confirmation records.'],
-        ['title' => 'Payslip Distribution', 'text' => 'Secure compliant payslips shared with employees.'],
-        ['title' => 'Statutory Payments', 'text' => 'PF, ESI, TDS, PT, and other applicable deposits completed on time.'],
-        ['title' => 'Return Filing', 'text' => 'All periodic statutory returns submitted per timelines.'],
-        ['title' => 'Reporting & MIS', 'text' => 'Payroll cost, headcount, and trend insights delivered.'],
-        ['title' => 'Year-End Activities', 'text' => 'IT proofs, final TDS adjustments, Form 16, and FY closure.'],
+        ['title' => 'Data Collection', 'text' => 'Attendance, leaves, new joiners, exits, salary changes, and claims are gathered as inputs for the payroll cycle.'],
+        ['title' => 'Salary Computation', 'text' => ' Gross pay is calculated, deductions (LOP, PF, ESI, PT, TDS) are applied, and net salary is arrived at accurately.'],
+        ['title' => 'Review & Approval', 'text' => 'A payroll register and variance report are shared with HR/Finance for review and approval before disbursement.'],
+        ['title' => 'Salary Disbursement', 'text' => 'Payments are processed via bank transfer and disbursement confirmation is maintained for records.'],
+        ['title' => 'Payslip Distribution', 'text' => 'Secure, compliant payslips are generated and distributed to every employee for the processed period.'],
+        ['title' => 'Statutory Payments', 'text' => 'PF, ESI, TDS, PT, and other applicable contributions are deposited within due dates with records maintained.'],
+        ['title' => 'Return Filing', 'text' => 'All required statutory returns — PF, ESI, TDS, PT — are filed as per applicable timelines and regulatory formats.'],
+        ['title' => 'Reporting & MIS', 'text' => 'Management reports covering payroll costs, headcount, department-wise spends, and trends are delivered regularly.'],
+        ['title' => 'Year-End Activities', 'text' => 'Investment proofs are collected, final TDS adjustments are made, Form 16 is issued, and the financial year is closed accurately.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
     ?>
@@ -279,47 +307,34 @@ declare(strict_types=1);
                 <article class="payroll-doc-card">
                     <div class="payroll-doc-card-head">
                         <span class="payroll-doc-icon purple" aria-hidden="true"><i class="fas fa-building"></i></span>
-                        <h3>Company Setup</h3>
+                        <h3> At Onboarding / Setup</h3>
                     </div>
                     <ul class="payroll-doc-list">
-                        <li>Certificate of Incorporation / Firm registration documents</li>
-                        <li>TAN of the company</li>
-                        <li>Company bank account details for salary and statutory payments</li>
+                        <li>Certificate of Incorporation / Firm Registration documents</li>
+                        <li>PF Registration Certificate (if already registered)</li>
+                        <li>ESI Registration Certificate (if applicable)</li>
+                        <li>TAN (Tax Deduction Account Number) of the company</li>
+                        <li>Professional Tax Registration Certificate (state-specific)</li>
+                        <li>Bank account details of the company for statutory payments</li>
                     </ul>
                 </article>
                 <article class="payroll-doc-card">
                     <div class="payroll-doc-card-head">
                         <span class="payroll-doc-icon green" aria-hidden="true"><i class="fas fa-file-shield"></i></span>
-                        <h3>Statutory Registrations</h3>
+                        <h3>For Each Employee</h3>
                     </div>
                     <ul class="payroll-doc-list">
-                        <li>PF registration certificate (if applicable)</li>
-                        <li>ESI registration certificate (if applicable)</li>
-                        <li>Professional Tax registration certificate (state-specific)</li>
-                    </ul>
-                </article>
-                <article class="payroll-doc-card">
-                    <div class="payroll-doc-card-head">
-                        <span class="payroll-doc-icon orange" aria-hidden="true"><i class="fas fa-id-card"></i></span>
-                        <h3>Employee KYC &amp; Employment</h3>
-                    </div>
-                    <ul class="payroll-doc-list">
-                        <li>Offer/appointment letter</li>
+                        <li>Offer letter / Appointment letter</li>
                         <li>Aadhaar card and PAN card copies</li>
-                        <li>Employee bank account details and UAN</li>
+                        <li>Bank account details (account number, IFSC)</li>
+                        <li>UAN (Universal Account Number) for PF</li>
+                        <li>Previous employment details (Form 16, relieving letter) for TDS computation</li>
+                        <li>Investment declaration form (at the start of the financial year)</li>
+                        <li>Investment proofs (submitted before March 31 of each financial year)</li>
                     </ul>
                 </article>
-                <article class="payroll-doc-card">
-                    <div class="payroll-doc-card-head">
-                        <span class="payroll-doc-icon blue" aria-hidden="true"><i class="fas fa-file-invoice-dollar"></i></span>
-                        <h3>Tax &amp; Payroll Inputs</h3>
-                    </div>
-                    <ul class="payroll-doc-list">
-                        <li>Previous employment details (Form 16, relieving letter)</li>
-                        <li>Investment declaration at start of financial year</li>
-                        <li>Investment proofs submitted before financial year-end</li>
-                    </ul>
-                </article>
+               
+                
             </div>
         </div>
     </section>
@@ -327,14 +342,19 @@ declare(strict_types=1);
     <?php
     $caaft_benefits_heading_id = 'payroll-calendar-heading';
     $caaft_benefits_title = 'Payroll Compliance Calendar';
-    $caaft_benefits_intro = 'Missing statutory due dates can trigger penalties and interest liabilities.';
+    $caaft_benefits_intro = 'Missing statutory due dates attracts penalties and interest. Key compliance deadlines every employer must track:';
     $caaft_benefits_items = [
-        ['lead' => 'EPF/ESI challans', 'text' => 'Monthly by 15th of following month.', 'icon_class' => 'fas fa-calendar-alt', 'tone' => 'blue'],
-        ['lead' => 'TDS salary deposit', 'text' => 'Monthly by 7th (March cycle special due date applies).', 'icon_class' => 'fas fa-file-invoice-dollar', 'tone' => 'violet'],
-        ['lead' => 'ESI return', 'text' => 'Half-yearly: 11 May and 11 November.', 'icon_class' => 'fas fa-check-square', 'tone' => 'green'],
-        ['lead' => 'TDS 24Q return', 'text' => 'Quarterly due-date cycle: Jul/Oct/Jan/May.', 'icon_class' => 'fas fa-clock', 'tone' => 'orange'],
-        ['lead' => 'Form 16 issuance', 'text' => 'Annual issue deadline by 15 June.', 'icon_class' => 'fas fa-file-alt', 'tone' => 'blue'],
-        ['lead' => 'Bonus/Gratuity timelines', 'text' => 'As per statutory payout windows and eligibility events.', 'icon_class' => 'fas fa-award', 'tone' => 'violet'],
+        ['lead' => 'EPF challan deposit', 'text' => 'Monthly by the 15th of the following month.', 'icon_class' => 'fas fa-calendar-alt', 'tone' => 'blue'],
+        ['lead' => 'ESI challans deposit', 'text' => 'Monthly by the 15th of the following month.', 'icon_class' => 'fas fa-calendar-alt', 'tone' => 'blue'],
+        ['lead' => 'TDS Deposit (Salary) ', 'text' => ' Monthly, by the 7th of the following month (March: 30 April)', 'icon_class' => 'fas fa-file-invoice-dollar', 'tone' => 'violet'],
+        ['lead' => 'Professional Tax', 'text' => 'Monthly or quarterly, varies by state', 'icon_class' => 'fas fa-file-invoice-dollar', 'tone' => 'violet'],
+        ['lead' => 'Labour Welfare Fund ','text' => 'Monthly or half-yearly, varies by state', 'icon_class' => 'fas fa-check-square', 'tone' => 'green'],
+        ['lead' => 'ESI Half-Yearly Return ','text' => '11 May and 11 November', 'icon_class' => 'fas fa-check-square', 'tone' => 'green'],
+        ['lead' => 'PF Annual Return (Form 3A/6A)','text' => '30 April annually', 'icon_class' => 'fas fa-clock', 'tone' => 'orange'],
+        ['lead' => 'TDS Quarterly Return (Form 24Q) ', 'text' => '31 July, 31 October, 31 January, 31 May', 'icon_class' => 'fas fa-clock', 'tone' => 'orange'],
+        ['lead' => 'Form 16 Issue to Employees', 'text' => '15 June annually', 'icon_class' => 'fas fa-file-alt', 'tone' => 'blue'],
+        ['lead' => ' Bonus Payment (Statutory) ','text' => 'Within 8 months of the financial year end', 'icon_class' => 'fas fa-file-alt', 'tone' => 'blue'],
+        ['lead' => 'Gratuity Payment ', 'text' => 'Within 30 days of employee eligibility on exit', 'icon_class' => 'fas fa-award', 'tone' => 'violet'],
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
@@ -342,16 +362,17 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'payroll-common-challenges-heading';
     $caaft_challenges_title = 'Common Payroll Challenges';
-    $caaft_challenges_intro = 'Typical operational pain points that drive payroll outsourcing decisions:';
+    $caaft_challenges_intro = 'Most businesses seek professional payroll support when facing one or more of these:';
     $caaft_challenges_items = [
-        'Frequent PF/ESI/TDS changes without dedicated compliance capacity',
-        'Spreadsheet-heavy manual processing causing errors as teams grow',
-        'Attendance and LOP mismatches leading to incorrect salary outputs',
-        'TDS inaccuracies due to missing declarations or proof timing issues',
-        'Multi-state PT/LWF complexity with varying local rules',
-        'Full-and-final settlement disputes and delayed clearances',
-        'Insufficient audit trail for inspections and statutory audits',
-        'Limited management visibility due to weak payroll analytics',
+        'Keeping up with frequent changes in PF, ESI, and TDS regulations without dedicated compliance staff',
+        'Manual payroll processing in spreadsheets leading to errors as headcount grows',
+        'Inconsistent leave and attendance data feeding incorrect LOP deductions into payroll',
+        'Incorrect TDS computation due to missing investment declarations or last-minute proof submissions',
+        'Multiple state operations where Professional Tax slabs and LWF rules differ significantly',
+        'Full and final settlement errors for exiting employees — leading to disputes and delayed clearances',
+        'Lack of audit trail and documentation when facing labour inspections or statutory audits',
+        'Difficulty generating accurate management reports and cost analytics from manual payroll records',
+
     ];
     $caaft_challenges_outro = '';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
@@ -362,12 +383,14 @@ declare(strict_types=1);
     $caaft_benefits_title = 'Benefits of Outsourcing Payroll';
     $caaft_benefits_intro = '';
     $caaft_benefits_items = [
-        ['lead' => 'Zero compliance risk posture', 'text' => 'Deadline-managed filings and penalty prevention.', 'icon_class' => 'fas fa-shield-alt', 'tone' => 'blue'],
-        ['lead' => 'Cost efficiency', 'text' => 'Predictable service model versus full in-house overhead.', 'icon_class' => 'fas fa-rupee-sign', 'tone' => 'violet'],
-        ['lead' => 'Scalability', 'text' => 'Grows with headcount without retraining and retooling cycles.', 'icon_class' => 'fas fa-expand-arrows-alt', 'tone' => 'green'],
-        ['lead' => 'CA-led expertise', 'text' => 'Advisory on structuring, tax optimization, and compliance updates.', 'icon_class' => 'fas fa-user-graduate', 'tone' => 'orange'],
-        ['lead' => 'Data security and audit readiness', 'text' => 'Controlled access, records, challans, returns, and traceability.', 'icon_class' => 'fas fa-lock', 'tone' => 'blue'],
-        ['lead' => 'Management visibility', 'text' => 'MIS-driven view of cost, trends, and department-level payroll data.', 'icon_class' => 'fas fa-chart-pie', 'tone' => 'violet'],
+        ['lead' => 'Zero compliance Risk ', 'text' => ' Expert handling of all statutory filings means no missed deadlines, no penalty notices, and no last-minute scrambles before due dates', 'icon_class' => 'fas fa-shield-alt', 'tone' => 'blue'],
+        ['lead' => 'Cost efficiency', 'text' => 'Eliminates the overhead of maintaining a dedicated in-house payroll team with a predictable monthly engagement fee', 'icon_class' => 'fas fa-rupee-sign', 'tone' => 'violet'],
+        ['lead' => 'Scalability', 'text' => 'Payroll services scale with headcount automatically — no software upgrades or retraining cycles required', 'icon_class' => 'fas fa-expand-arrows-alt', 'tone' => 'green'],
+        ['lead' => 'CA-led expertise', 'text' => 'Direct access to Chartered Accountant-led advisory on salary structuring, tax optimisation, and emerging compliance requirements', 'icon_class' => 'fas fa-user-graduate', 'tone' => 'orange'],
+        ['lead' => 'Data security ', 'text' => 'All payroll data managed in secure, access-controlled environments with role-based permissions and audit logs', 'icon_class' => 'fas fa-lock', 'tone' => 'blue'],
+        ['lead' => 'Audit Readliness ', 'text' => ' Complete documentation trails — challans, return acknowledgements, payroll registers — maintained and available at any point for inspections or due diligence', 'icon_class' => 'fas fa-lock', 'tone' => 'blue'],
+        ['lead' => 'Better Employee Experience', 'text' => 'Accurate, on-time payslips and an accessible Employee Self-Service portal reduce payroll-related queries and build employee confidence', 'icon_class' => 'fas fa-chart-pie', 'tone' => 'violet'],
+        ['lead' => 'Management visibility', 'text' => 'Regular MIS reports and analytics deliver real-time visibility into payroll costs, headcount trends, and department-wise spends', 'icon_class' => 'fas fa-chart-pie', 'tone' => 'violet'],
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
@@ -375,12 +398,13 @@ declare(strict_types=1);
     <?php
     $caaft_delivered_heading_id = 'payroll-technology-heading';
     $caaft_delivered_title = 'Technology in Payroll Management';
+    $caaft_delivered_intro = 'Modern payroll management is no longer a spreadsheet exercise. Technology has transformed how payroll is processed, monitored, and reported:';
     $caaft_delivered_items = [
-        ['name' => 'Automated Payroll Processing', 'text' => 'Rule-based gross-to-net calculations with minimal manual intervention.'],
-        ['name' => 'Employee Self-Service (ESS) Portal', 'text' => 'Payslips, Form 16, IT declarations, leave and claims access.'],
-        ['name' => 'Attendance & HRMS Integration', 'text' => 'Auto-import attendance, regularisation, and joiner data into payroll.'],
-        ['name' => 'Compliance Dashboards', 'text' => 'Due-date and filing-status visibility in real time.'],
-        ['name' => 'Analytics & Custom Reporting', 'text' => 'Department-level salary analytics, trend summaries, and CTC insights.'],
+        ['name' => 'Automated Payroll Processing', 'text' => 'Rule-based automation handles recurring calculations — from TDS workings to PF contribution splits — reducing manual intervention and the errors that come with it.'],
+        ['name' => 'Employee Self-Service (ESS) Portal', 'text' => 'Employees can log in to view payslips, download Form 16, submit investment declarations, check leave balances, and raise reimbursement requests — reducing HR queries and improving transparency.'],
+        ['name' => 'Integration with Attendance & HRMS', 'text' => ' Payroll systems connect with attendance tools and HR management platforms to auto-import leave data, regularisation requests, and new joiner information directly into the payroll engine.'],
+        ['name' => 'Compliance Dashboards', 'text' => 'Real-time dashboards track upcoming compliance due dates, payment statuses, and filing confirmations — so nothing falls through the cracks.'],
+        ['name' => 'Analytics & Custom Reporting', 'text' => 'Department-wise salary cost reports, headcount analytics, CTC breakup summaries, and year-on-year payroll trend analyses — all generated on demand.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
@@ -393,11 +417,11 @@ declare(strict_types=1);
     $why_choose_caaft_intro = '';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-cogs', 'title' => 'End-to-end payroll ownership', 'text' => 'The entire payroll cycle — from attendance and leave inputs through salary computation, payslip generation, bank disbursement, and month-end reconciliation — is managed under one accountable team. There is no fragmented handoff between HR, finance, and compliance functions.'],
-        ['icon_class' => 'fas fa-check-circle', 'title' => 'Complete statutory compliance', 'text' => 'PF, ESI, TDS, Professional Tax, and Labour Welfare Fund obligations are calculated accurately, filed on time, and supported by proper documentation and filing evidence — so the business remains clean across all statutory payroll registers and audit trails.'],
-        ['icon_class' => 'fas fa-user-tie', 'title' => 'CA-led advisory support', 'text' => 'Beyond processing, qualified Chartered Accountants provide ongoing advice on salary structuring, tax-efficient allowance planning, perquisite treatment, and year-end Form 16 and ITR coordination — helping employees optimise take-home and helping businesses manage payroll costs effectively.'],
-        ['icon_class' => 'fas fa-cloud', 'title' => 'Scalable outsourcing with employee self-service', 'text' => 'The service scales from small teams of 10 employees to organisations with 1,000 or more — supported by secure employee self-service portals for payslip access and leave management, and automation that reduces manual effort as headcount grows.'],
-        ['icon_class' => 'fas fa-chart-line', 'title' => 'Proactive MIS and MNC onboarding support', 'text' => 'Management dashboards and payroll MIS reports are provided for leadership visibility across cost centres, headcount, and compliance status. For foreign entities entering India, dedicated onboarding support covers India-specific payroll setup, compliance framework establishment, and ongoing statutory management.'],
+        ['icon_class' => 'fas fa-cogs', 'title' => 'End-to-end payroll processing, fully owned', 'text' => 'From attendance data integration and salary structuring to disbursement confirmation and payslip distribution, CAAFT manages the complete payroll cycle — nothing falls between teams, nothing is left to chance.'],
+        ['icon_class' => 'fas fa-check-circle', 'title' => 'Statutory compliance across all obligations', 'text' => 'PF, ESI, TDS, PT, and LWF filings handled accurately and on time every month — with payment confirmations and return acknowledgements maintained — keeping every business consistently penalty-free and audit-ready.'],
+        ['icon_class' => 'fas fa-user-tie', 'title' => 'CA-led advisory and structured tax support', 'text' => 'Payroll is not managed by software alone. Qualified Chartered Accountants review every payroll cycle, advise on salary structuring, and remain available for TDS and compensation-related queries throughout the year.'],
+        ['icon_class' => 'fas fa-cloud', 'title' => 'Scalable outsourcing with employee self-service', 'text' => 'Whether a business has 10 employees or 1,000 — rule-based automation and a dedicated Employee Self-Service Portal give every team member independent access to payslips, Form 16, IT declarations, and leave balances — securely and without HR intervention.'],
+        ['icon_class' => 'fas fa-chart-line', 'title' => 'Proactive reporting, dedicated support and MNC onboarding', 'text' => 'Monthly MIS reports, audit-ready documentation, and management dashboards delivered proactively — backed by dedicated relationship managers who know every account. Complete India entry payroll setup for foreign companies is also provided — from statutory registrations to the first payslip run.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>
@@ -406,9 +430,10 @@ declare(strict_types=1);
     $caaft_key_facts_heading_id = 'payroll-facts-heading';
     $caaft_key_facts_title = 'Key Facts & Figures';
     $caaft_key_facts_items = [
-        ['stat' => '80%', 'text' => '80% of SMEs processing payroll manually are exposed to errors across 40+ statutory obligations — including PF, ESI, and the Wages Code.'],
-        ['stat' => '₹5,000–20,000/day', 'text' => 'Missing PF or ESI filing deadlines attracts penalties of ₹5,000–20,000 per day plus interest at 12–18% per annum.'],
-        ['stat' => 'Multi-layer compliance', 'text' => 'India\'s payroll compliance landscape spans central and state-level obligations simultaneously — making multi-state businesses especially vulnerable to gaps without dedicated expert oversight.'],
+        ['stat' => '80%', 'text' => '80% of SMEs processing payroll manually are exposed to errors across 40+ statutory obligations — including PF, ESI, and the Wages Code
+'],
+        ['stat' => '₹5,000–20,000/day', 'text' => 'Missing PF or ESI filing deadlines attracts penalties of Rs. 5,000–20,000 per day plus interest at 12–18% per annum'],
+        ['stat' => 'Multi-layer compliance', 'text' => 'India\'s payroll compliance landscape spans central and state-level obligations simultaneously — making multi-state businesses especially vulnerable to gaps without dedicated expert oversight'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
@@ -417,7 +442,7 @@ declare(strict_types=1);
     $caaft_cta_section_id = 'get-in-touch';
     $caaft_cta_heading_id = 'payroll-cta-heading';
     $caaft_cta_title = 'Ready to Take Payroll Off Your Plate?';
-    $caaft_cta_text = 'From first-time setup to outsourced processing and multi-state compliance execution, CAAFT delivers accurate payroll and full statutory control every month so internal teams can focus on growth.';
+    $caaft_cta_text = 'Expert payroll management delivers accurate processing, full statutory compliance, and complete peace of mind — every month, without exception. Whether the need is a first payroll setup, outsourced processing, or multi-state compliance management — CAAFT handles every layer so internal teams can focus entirely on building the business.';
     $caaft_cta_button_label = 'Outsource Payroll with Confidence';
     $caaft_cta_button_href = '/contact#contact_us';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
@@ -429,11 +454,11 @@ declare(strict_types=1);
     $caaft_faq_accordion_id = 'accordionPayrollFaq';
     $caaft_faq_prefix = 'payrollFaq';
     $caaft_faq_items = [
-        ['question' => 'What is the difference between payroll processing and payroll compliance?', 'answer' => 'Payroll processing handles salary calculations and disbursement. Payroll compliance covers statutory deposits, filings, and year-end obligations; both must run together.'],
-        ['question' => 'When does a company in India need to register for EPF and ESI?', 'answer' => 'EPF typically applies from 20 employees and ESI from 10 employees (state context applies), with ongoing obligations after registration.'],
-        ['question' => 'Can a startup with fewer than 10 employees benefit from payroll outsourcing?', 'answer' => 'Yes. Early-stage startups reduce compliance risk and setup errors by outsourcing from day one.'],
-        ['question' => 'How does payroll outsourcing work for employees across multiple states?', 'answer' => 'State-specific PT/LWF compliance and payroll rules are managed centrally under one operating model.'],
-        ['question' => 'What happens during a statutory audit if payroll is managed by CAAFT?', 'answer' => 'Audit-ready records, challans, filings, and payroll documentation are maintained and supported during inspections or scrutiny.'],
+        ['question' => 'What is the difference between payroll processing and payroll compliance?', 'answer' => 'Payroll processing refers to the monthly exercise of calculating salaries, applying deductions, and disbursing net pay. Payroll compliance refers to the statutory obligations attached to that process — depositing PF and ESI contributions, filing TDS returns, and issuing Form 16. Both must work in tandem; accurate processing without timely compliance filings still leads to penalties.'],
+        ['question' => 'When does a company in India need to register for EPF and ESI?', 'answer' => 'EPF registration is mandatory when a company reaches 20 or more employees. ESI registration is mandatory when headcount reaches 10 or more employees (in most states) and at least some employees earn Rs. 21,000 or less per month. Once registered, even if headcount drops below the threshold, the obligation continues.'],
+        ['question' => 'Can a startup with fewer than 10 employees benefit from payroll outsourcing?', 'answer' => 'Absolutely. Early-stage startups benefit the most — because they lack internal expertise to navigate compliance, and a single penalty can be disproportionately costly. Flexible engagement models scaled to headcount and budget make professional payroll management accessible from day one.'],
+        ['question' => 'How does payroll outsourcing work for businesses with employees across multiple Indian states?', 'answer' => 'Multi-state payroll requires navigating state-specific compliance — different Professional Tax slabs, LWF contribution rules, and Shops & Establishments Act requirements. CAAFT manages multi-state payroll under a single engagement — handling state-specific compliance centrally so internal HR teams do not need to track each state separately.'],
+        ['question' => 'What happens during a statutory audit if payroll records are managed by CAAFT? ', 'answer' => 'Complete, audit-ready payroll documentation is maintained for all clients — including challan receipts, return acknowledgements, payroll registers, payslips, and correspondence records. If a company is selected for a PF inspection, ESI audit, or income tax scrutiny, CAAFT provides full documentation support and, where required, representation before the authorities.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-faq.php';
     ?>
