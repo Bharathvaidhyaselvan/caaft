@@ -166,8 +166,8 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'registered-office-importance-heading';
     $caaft_challenges_title = 'Why Registered Office Change Compliance Is Important';
-    $caaft_challenges_intro = 'The MCA requires every change in a company\'s registered office address to be formally approved and filed with the Registrar of Companies — ensuring that government records remain accurate and that statutory communications are delivered without disruption. Failure to update the registered address within the prescribed timeline creates compliance gaps and exposes the company to penalties.
- Key consequences of non-compliance:';
+    $caaft_challenges_intro = 'The MCA requires every change in a company\'s registered office address to be formally approved and filed with the Registrar of Companies — ensuring that government records remain accurate and that statutory communications are delivered without disruption. Failure to update the registered address within the prescribed timeline creates compliance gaps and exposes the company to penalties.';
+    $caaft_challenges_subtext='Key consequences of non-compliance:';
     $caaft_challenges_items = [
         'Failure to file INC-22 within the prescribed timeline attracts penalties under the Companies Act, 2013 — increasing with each day of delay.',
         'Government notices, tax communications, and legal documents sent to an outdated address are treated as validly served — even if never received',

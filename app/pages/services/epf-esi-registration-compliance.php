@@ -156,8 +156,8 @@ declare(strict_types=1);
     $caaft_overview_title = 'What is EPF & ESI Registration?';
     $caaft_overview_paragraphs = [
         'EPF (Employees\' Provident Fund) and ESI (Employees\' State Insurance) are essential statutory social security schemes in India — mandatory for all eligible businesses employing workers above the prescribed thresholds.',
-        'EPF is governed by the Employees\' Provident Funds Act, 1952 and managed by EPFO. It is a retirement savings scheme where both employer and employee contribute a fixed portion of salary each month to build a long-term financial corpus for employees.',
-        'ESI is governed by the Employees\' State Insurance Act, 1948 and managed by ESIC. It provides employees with medical care, maternity benefits, disability coverage, and dependent support — at no direct cost to the employee.',
+        '<strong>EPF</strong> is governed by the Employees\' Provident Funds Act, 1952 and managed by EPFO. It is a retirement savings scheme where both employer and employee contribute a fixed portion of salary each month to build a long-term financial corpus for employees.',
+        '<strong>ESI</strong> is governed by the Employees\' State Insurance Act, 1948 and managed by ESIC. It provides employees with medical care, maternity benefits, disability coverage, and dependent support — at no direct cost to the employee.',
         'Together, EPF and ESI registration ensure legal compliance while promoting employee welfare. Non-compliance leads to penalties, interest, and legal consequences that can significantly disrupt business operations.',
     ];
     $caaft_overview_bullets = [];
@@ -436,9 +436,10 @@ declare(strict_types=1);
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = 'State-wise compliance knowledge EPF and ESI applicability, contribution structures, and filing requirements vary across states and industries. Accurate, up-to-date knowledge of regulations in each specific jurisdiction eliminates the errors that arise from generic, one-size-fits-all compliance approaches.';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for seamless business incorporation, timely registrations, and dependable compliance support that scales with their growth';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
+        ['icon_class' => 'fas fa-file-signature', 'title' => 'State-wise compliance knowledge ', 'text' => ' EPF and ESI applicability, contribution structures, and filing requirements vary across states and industries. Accurate, up-to-date knowledge of regulations in each specific jurisdiction eliminates the errors that arise from generic, one-size-fits-all compliance approaches.'],
         ['icon_class' => 'fas fa-file-signature', 'title' => 'End-to-end registration support', 'text' => 'Everything from application preparation and document gathering to securing PF Code, ESI Employer Number, and employee UAN and IP numbers is managed — making registration smooth, fast, and completely stress-free.'],
         ['icon_class' => 'fas fa-bell', 'title' => 'Proactive deadline management', 'text' => 'Every EPF and ESI due date is tracked on behalf of every client. Timely submissions keep businesses consistently penalty-free and inspection-ready.'],
         ['icon_class' => 'fas fa-money-check-alt', 'title' => 'Payroll-aligned compliance', 'text' => 'A structured, error-free contribution calculation and remittance process is established that runs seamlessly alongside monthly payroll operations.'],

@@ -274,9 +274,10 @@ declare(strict_types=1);
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = 'Hassle-free IEC registration: The complete IEC application process is managed — from document preparation and DGFT portal submission to obtaining the Import Export Code — ensuring a smooth, error-free registration without delays or rejections.';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for seamless business incorporation, timely registrations, and dependable compliance support that scales with their growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
+        ['icon_class' => 'fas fa-user-tie', 'title' => 'Hassle-free IEC registration', 'text' => 'The complete IEC application process is managed — from document preparation and DGFT portal submission to obtaining the Import Export Code — ensuring a smooth, error-free registration without delays or rejections.'],
         ['icon_class' => 'fas fa-user-tie', 'title' => 'Expert guidance for all business types', 'text' => 'Whether a sole proprietor, partnership firm, private limited company, or LLP entering international trade — every IEC application is assessed for the correct entity structure and filed accurately the first time.'],
         ['icon_class' => 'fas fa-file-alt', 'title' => 'Accurate documentation and compliance', 'text' => 'Incomplete or incorrect documents are the most common reason for IEC rejections. Every required document — PAN, bank details, business proof, and more — is meticulously reviewed and prepared before submission to DGFT.'],
         ['icon_class' => 'fas fa-sync', 'title' => 'IEC modification and update support', 'text' => 'Business details change over time. Timely IEC modifications — including changes in address, bank account, or business structure — are managed accurately, ensuring the Import Export Code always reflects current and correct information.'],

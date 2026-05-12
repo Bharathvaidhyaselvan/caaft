@@ -242,7 +242,7 @@ declare(strict_types=1);
                     </ul>
                 </article>
             </div>
-            <p class="plc-docs-note">All documents must be accurate and consistent with existing MCA records — any mismatch in company details or capital figures can cause form rejection and require correction before resubmission.</p>
+            <p >All documents must be accurate and consistent with existing MCA records — any mismatch in company details or capital figures can cause form rejection and require correction before resubmission.</p>
         </div>
     </section>
 

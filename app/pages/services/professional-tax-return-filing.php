@@ -346,9 +346,10 @@ declare(strict_types=1);
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = 'State-specific expertise across India: Professional Tax regulations, slabs, and due dates vary significantly from state to state. In-depth knowledge of PT laws across multiple states ensures registration and compliance are handled accurately for each specific jurisdiction — not as a generic, one-size-fits-all process.';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for seamless business incorporation, timely registrations, and dependable compliance support that scales with their growth';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
+        ['icon_class' => 'fas fa-bolt', 'title' => 'State-specific expertise across India', 'text' => ' Professional Tax regulations, slabs, and due dates vary significantly from state to state. In-depth knowledge of PT laws across multiple states ensures registration and compliance are handled accurately for each specific jurisdiction — not as a generic, one-size-fits-all process.'],
         ['icon_class' => 'fas fa-bolt', 'title' => 'Quick and hassle-free registration', 'text' => 'The entire PT registration process is managed — from application preparation and document submission to obtaining the PTEC and PTRC certificates — with minimal effort required from the client.'],
         ['icon_class' => 'fas fa-calendar-check', 'title' => 'Timely filing and zero penalty assurance', 'text' => 'Missing PT payment deadlines or filing dates attracts penalties and interest. The compliance calendar is actively monitored and every return is filed and every payment is made on time — without exception.'],
         ['icon_class' => 'fas fa-sliders-h', 'title' => 'Seamless payroll integration', 'text' => 'Professional tax deduction is a recurring payroll obligation for every employer. CAAFT helps integrate PT compliance smoothly into the payroll process — ensuring accurate employee deductions and employer contributions without disruption to monthly payroll runs.'],

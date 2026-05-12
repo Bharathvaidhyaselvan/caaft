@@ -138,9 +138,8 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'director-change-importance-heading';
     $caaft_challenges_title = 'Why Director Change Compliance Is Important';
-    $caaft_challenges_intro = 'The MCA requires all director changes to be formally recorded and filed — ensuring transparency, accountability, and accurate board composition in government records. If a company fails to file the required forms within the prescribed timeline, penalties begin accruing immediately from Day 31 — with no ceiling on the total amount. 
-    Key consequences of non-compliance:';
-
+    $caaft_challenges_intro = 'The MCA requires all director changes to be formally recorded and filed — ensuring transparency, accountability, and accurate board composition in government records. If a company fails to file the required forms within the prescribed timeline, penalties begin accruing immediately from Day 31 — with no ceiling on the total amount.';
+    $caaft_challenges_subtext = 'Key consequences of non-compliance:';
     $caaft_challenges_items = [
         '₹200 per day per form accrues from the 31st day after the triggering event — with no upper cap on total penalty',
         'Filing delayed beyond 300 days requires NCLT intervention — significantly increasing legal costs and procedural complexity',
@@ -256,7 +255,7 @@ declare(strict_types=1);
                     </ul>
                 </article>
             </div>
-            <h2 class="partnership-mistakes-title" style="font-size:1.2rem;margin:0 0 10px;">All documents must be accurate and consistent with existing MCA records — any mismatch in director details, PAN, or Aadhaar information can cause form rejection and require correction before resubmission.</h2>
+            <p class="plc-docs-note">All documents must be accurate and consistent with existing MCA records — any mismatch in director details, PAN, or Aadhaar information can cause form rejection and require correction before resubmission..</p>
         </div>
     </section>
 
@@ -317,7 +316,7 @@ declare(strict_types=1);
         ['icon_class' => 'fas fa-balance-scale', 'title' => 'Expert Knowledge of Companies Act Compliance:', 'text' => 'Every engagement is handled by professionals who stay current with MCA regulations and ROC filing requirements — ensuring complete, accurate compliance with every director change filing.'],
         ['icon_class' => 'fas fa-tasks', 'title' => 'End-to-End Director Change Support', 'text' => ' From board resolution drafting and document verification to digital form preparation and final MCA portal submission — the entire director change process is managed without requiring the company to navigate the portal independently.'],
         ['icon_class' => 'fas fa-calendar-check', 'title' => 'Timely Filing and Deadline Tracking', 'text' => 'The 30-day filing window is tracked for every client — with structured processes ensuring all DIR-12, DIR-11, and MGT-14 filings are submitted well before the deadline and no penalties are incurred.'],
-        ['icon_class' => 'fas fa-check-circle', 'title' => 'Accurate Documentation and Error-Free Filing', 'text' => 'Resolutions, digital signatures, DIN status, and form attachments are carefully verified before submission — reducing the risk of MCA rejection, resubmission cycles, and delayed updates to the company\'s official records.'],
+        ['icon_class' => 'fas fa-check-circle', 'title' => 'Accurate Documentation and Error-Free Filing', 'text' => 'All board resolutions, consent letters, and statutory forms are carefully verified before submission — minimising the risk of rejection due to drafting errors, data mismatches, or incorrect form selection.'],
         ['icon_class' => 'fas fa-bolt', 'title' => 'Fast-Track Support for Delayed Filings:', 'text' => 'Where the 30-day deadline has already passed, the filing process is initiated immediately — limiting further penalty accrual and managing the complete late submission process from start to finish.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';

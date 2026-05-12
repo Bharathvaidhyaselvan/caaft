@@ -393,9 +393,10 @@ declare(strict_types=1);
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
         $why_choose_caaft_link_desc = true;
-        $why_choose_caaft_intro = 'Correct licence category — first time: FSSAI registration varies based on business type, turnover, and scale of operations. Every food business is assessed to ensure the correct category — Basic, State, or Central — is applied for, avoiding rejections, delays, and future compliance complications.';
+        $why_choose_caaft_intro = 'Businesses trust CAAFT for seamless business incorporation, timely registrations, and dependable compliance support that scales with their growth.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
+            ['icon_class' => 'fas fa-tasks', 'title' => 'Correct licence category — first time', 'text' => 'FSSAI registration varies based on business type, turnover, and scale of operations. Every food business is assessed to ensure the correct category — Basic, State, or Central — is applied for, avoiding rejections, delays, and future compliance complications.'],
             ['icon_class' => 'fas fa-tasks', 'title' => 'End-to-end application management', 'text' => 'From document preparation and FoSCoS portal submission to authority follow-up and licence issuance — the entire FSSAI registration process is managed so food businesses can focus on operations without getting lost in regulatory paperwork.'],
             ['icon_class' => 'fas fa-utensils', 'title' => 'Serving all food business types', 'text' => 'Whether a home baker, cloud kitchen, restaurant, food manufacturer, importer, distributor, or e-commerce food seller — FSSAI registration across all food business categories is handled accurately and efficiently.'],
             ['icon_class' => 'fas fa-calendar-check', 'title' => 'Timely renewal and modification support', 'text' => 'An expired FSSAI licence results in heavy penalties and business disruption. Licence validity is tracked proactively, renewals are managed on time, and modifications — including address, product category, or business name changes — are handled without interruption to operations.'],

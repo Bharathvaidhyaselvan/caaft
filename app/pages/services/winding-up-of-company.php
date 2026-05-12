@@ -153,7 +153,8 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'winding-up-importance-heading';
     $caaft_challenges_title = 'Why Company Closure Compliance Is Important';
-    $caaft_challenges_intro = 'The MCA requires every company — active or inactive — to meet its annual filing obligations until formally dissolved. An unfiled company continues to attract penalties, compliance notices, and director disqualification risk regardless of whether any business activity is taking place. Initiating closure through the correct legal process is the only way to formally extinguish these obligations. Key consequences of delaying or mishandling closure:';
+    $caaft_challenges_intro = 'The MCA requires every company — active or inactive — to meet its annual filing obligations until formally dissolved. An unfiled company continues to attract penalties, compliance notices, and director disqualification risk regardless of whether any business activity is taking place. Initiating closure through the correct legal process is the only way to formally extinguish these obligations.' ;
+    $caaft_challenges_subtext='Key consequences of delaying or mishandling closure:';
     $caaft_challenges_items = [
         'Non-filing of Annual Return (MGT-7) attracts ₹100 per day of default — with no upper cap in many cases',
         'Non-filing of Financial Statements (AOC-4) attracts ₹100 per day of default — with the officer in default personally liable under Section 137',

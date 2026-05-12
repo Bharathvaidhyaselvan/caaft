@@ -135,14 +135,14 @@ declare(strict_types=1);
     $caaft_challenges_title = 'When Do You Need Business Valuation?';
     $caaft_challenges_intro = 'Many business owners assume valuation is only relevant when planning to sell. The reality is far broader. Here are the most common situations that demand a formal valuation:';
     $caaft_challenges_items = [
-        'Fundraising from Investors — Required for startups and growth-stage companies when issuing preference or equity shares to investors',
-        'Mergers & Acquisitions — Applicable to acquirers, targets, and promoters, governed by the Companies Act and SEBI Takeover Code',
-        'Share Transfer / Buy-Back — Mandated under Section 56(2)(x) of the Income Tax Act for Pvt Ltd companies and promoters',
-        'ESOP Valuation — Required for companies offering stock options to employees, in accordance with SEBI ESOP guidelines',
-        'RBI Compliance (FDI/ODI) — Necessary for companies with foreign investment, as required under FEMA regulations',
-        'Litigation & Dispute Resolution — Needed for shareholder disputes, court proceedings, and arbitration',
-        'Strategic Business Planning — Useful for founders and boards for internal decision-making, investor presentations, and long-term planning',
-        'Winding Up / Restructuring — Mandated under IBC 2016 and for NCLT filings during insolvency or restructuring proceedings',
+        '<strong>Fundraising from Investors</strong> — Required for startups and growth-stage companies when issuing preference or equity shares to investors',
+        '<strong>Mergers & Acquisitions </strong>— Applicable to acquirers, targets, and promoters, governed by the Companies Act and SEBI Takeover Code',
+        '<strong>ESOP Valuation</strong> — Required for companies offering stock options to employees, in accordance with SEBI ESOP guidelines',
+        '<strong>RBI Compliance (FDI/ODI)</strong> — Necessary for companies with foreign investment, as required under FEMA regulations',
+        '<strong>Share Transfer / Buy-Back</strong> — Mandated under Section 56(2)(x) of the Income Tax Act for Pvt Ltd companies and promoters',
+        '<strong>Litigation & Dispute Resolution </strong> — Needed for shareholder disputes, court proceedings, and arbitration',
+        '<strong>Strategic Business Planning</strong> — Useful for founders and boards for internal decision-making, investor presentations, and long-term planning',
+        '<strong>Winding Up / Restructuring</strong> — Mandated under IBC 2016 and for NCLT filings during insolvency or restructuring proceedings',
 
     ];
     $caaft_challenges_outro = '';
@@ -152,7 +152,7 @@ declare(strict_types=1);
     <?php
     $caaft_benefits_heading_id = 'business-valuation-methods-heading';
     $caaft_benefits_title = 'Types of Business Valuation Methods';
-    $caaft_benefits_intro = 'The right method depends on industry, transaction purpose, and available data:';
+    $caaft_benefits_intro = 'There is no single correct formula for valuing a business. The right method depends on the nature of the industry, the purpose of the valuation, and the data available.';
     $caaft_benefits_items = [
         ['lead' => 'Discounted Cash Flow (DCF)', 'text' => ' Projects future free cash flows and discounts them to present value. Best suited for profitable businesses with predictable cash flows', 'icon_class' => 'fas fa-chart-line', 'tone' => 'blue'],
         ['lead' => 'Comparable Company Analysis (CCA)', 'text' => ' Benchmarks the business against valuation multiples of similar listed companies. Best suited for companies with strong market comparables', 'icon_class' => 'fas fa-building', 'tone' => 'violet'],
@@ -252,12 +252,12 @@ declare(strict_types=1);
     $caaft_challenges_title = 'Benefits of Getting a Professional Business Valuation';
     $caaft_challenges_intro = '';
     $caaft_challenges_items = [
-        'Stronger Investor Negotiations — Walk into funding discussions with a defensible, third-party endorsed valuation — not a number invented in a spreadsheet',
-        'Regulatory Protection — Avoid tax reassessments and penalty proceedings by complying with Rule 11UA, Companies Act, and FEMA requirements',
-        'Informed Strategic Decisions — Whether acquiring, divesting, or restructuring, an accurate valuation ensures the deal is priced correctly',
-        'Shareholder Dispute Prevention — A formally documented valuation minimises disputes among co-founders and investors during exits or secondary sales',
-        'Credit and Lending Leverage — Banks and NBFCs increasingly rely on business valuations to determine lending limits and collateral adequacy',
-        'Succession Planning Clarity — Family-owned businesses benefit from a structured valuation for estate planning and inter-generational transfer',
+        '<strong>Stronger Investor Negotiations</strong> — Walk into funding discussions with a defensible, third-party endorsed valuation — not a number invented in a spreadsheet',
+        '<strong>Regulatory Protection </strong>— Avoid tax reassessments and penalty proceedings by complying with Rule 11UA, Companies Act, and FEMA requirements',
+        '<strong>Informed Strategic Decisions </strong>— Whether acquiring, divesting, or restructuring, an accurate valuation ensures the deal is priced correctly',
+        '<strong>Shareholder Dispute Prevention </strong>— A formally documented valuation minimises disputes among co-founders and investors during exits or secondary sales',
+        '<strong>Credit and Lending Leverage</strong> — Banks and NBFCs increasingly rely on business valuations to determine lending limits and collateral adequacy',
+        '<strong>Succession Planning Clarity</strong> — Family-owned businesses benefit from a structured valuation for estate planning and inter-generational transfer',
     ];
     $caaft_challenges_outro = '';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';

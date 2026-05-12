@@ -105,8 +105,8 @@ declare(strict_types=1);
     $caaft_overview_heading_id = 'cfo-role-heading';
     $caaft_overview_title = 'What is the Role of the CFO in Financial Management?';
     $caaft_overview_paragraphs = [
-        'The role of the CFO in financial management goes far beyond bookkeeping. A Chief Financial Officer shapes the financial direction of a business — turning numbers into decisions, risks into plans, and goals into executable strategies.
-Key responsibilities include:.',
+        'The role of the CFO in financial management goes far beyond bookkeeping. A Chief Financial Officer shapes the financial direction of a business — turning numbers into decisions, risks into plans, and goals into executable strategies.',
+    $caaft_overview_subtext='Key responsibilities include:',
     ];
     $caaft_overview_bullets = [
         'Strategic financial planning and decision-making',

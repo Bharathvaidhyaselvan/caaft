@@ -298,9 +298,10 @@ declare(strict_types=1);
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = 'Fast and accurate DSC processing: The entire DSC application process is managed — from document verification and form submission to certificate issuance — ensuring the Digital Signature Certificate is received quickly, correctly, and without unnecessary delays.';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for seamless business incorporation, timely registrations, and dependable compliance support that scales with their growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
+        ['icon_class' => 'fas fa-layer-group', 'title' => 'Fast and accurate DSC processing', 'text' => 'The entire DSC application process is managed — from document verification and form submission to certificate issuance — ensuring the Digital Signature Certificate is received quickly, correctly, and without unnecessary delays.'],
         ['icon_class' => 'fas fa-layer-group', 'title' => 'Guidance on the right DSC class and type', 'text' => 'Class 3, individual, organisation, or DGFT — choosing the wrong certificate causes filing rejections and delays. Every client\'s specific use case is assessed and the exact DSC type required is recommended before the application begins.'],
         ['icon_class' => 'fas fa-link', 'title' => 'Seamless integration with compliance needs', 'text' => 'Whether the DSC is needed for MCA filings, GST registration, income tax returns, tender submissions, or EPF transactions — the certificate is correctly configured and ready to use across all required platforms from day one.'],
         ['icon_class' => 'fas fa-user-friends', 'title' => 'Support for individuals and businesses alike', 'text' => 'From sole proprietors and company directors to authorised signatories and government contractors — DSC registration is facilitated for all applicant categories with equal attention and efficiency.'],

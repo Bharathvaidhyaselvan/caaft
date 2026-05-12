@@ -140,7 +140,8 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'roc-importance-heading';
     $caaft_challenges_title = 'Why ROC Compliance Is Important';
-    $caaft_challenges_intro = 'The MCA requires all registered companies to maintain accurate and current records through timely ROC filings — ensuring transparency, accountability, and legal validity of all corporate events. Non-compliance — whether through missed deadlines, incorrect documentation, or unfiled event-based forms — attracts penalties and creates compliance gaps that affect the company\'s standing with the Registrar.Key consequences of non-compliance:';
+    $caaft_challenges_intro = 'The MCA requires all registered companies to maintain accurate and current records through timely ROC filings — ensuring transparency, accountability, and legal validity of all corporate events. Non-compliance — whether through missed deadlines, incorrect documentation, or unfiled event-based forms — attracts penalties and creates compliance gaps that affect the company\'s standing with the Registrar.';
+    $caaft_challenges_subtext='Key consequences of non-compliance:';
     $caaft_challenges_items = [
         'Late or incorrect filings attract heavy penalties and additional fees — compounding with each day of continued default',
         'Missed event-based filings create gaps in MCA records — affecting the legal validity of director changes, resolutions, and corporate events',

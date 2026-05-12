@@ -123,8 +123,8 @@ declare(strict_types=1);
     $caaft_overview_title = 'What is Budgeting and Forecasting?';
     $caaft_overview_paragraphs = [
       'Budgeting and forecasting are two foundational tools of effective financial management — often used together but serving distinct purposes.',
-      'Budgeting is the process of creating a fixed financial plan that outlines expected income and expenses over a specific period. It sets the financial targets a business works toward.',
-      'Forecasting involves predicting future financial outcomes based on historical data, market trends, and business performance. It is flexible, updated regularly, and helps businesses anticipate change and adjust strategy accordingly.',
+      '<strong>Budgeting</strong> is the process of creating a fixed financial plan that outlines expected income and expenses over a specific period. It sets the financial targets a business works toward.',
+      '<strong>Forecasting</strong> involves predicting future financial outcomes based on historical data, market trends, and business performance. It is flexible, updated regularly, and helps businesses anticipate change and adjust strategy accordingly.',
       'The key difference between budget and forecast lies in purpose — a budget sets targets, a forecast tracks whether those targets remain realistic. Used together, they give businesses both direction and adaptability.',
     ];
     $caaft_overview_bullets = [];

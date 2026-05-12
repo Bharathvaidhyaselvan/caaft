@@ -370,9 +370,10 @@ declare(strict_types=1);
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = 'Specialised in non-profit compliance — not a side service. Charitable organisation compliance is a core practice area — not one item on a generic menu. Advisors understand the nuances of non-profit structures — trusts, societies, Section 8 companies — and the specific Income Tax provisions that govern them.';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for seamless business incorporation, timely registrations, and dependable compliance support that scales with their growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
+        ['icon_class' => 'fas fa-search', 'title' => 'Specialised in non-profit compliance — not a side service ', 'text' => 'Charitable organisation compliance is a core practice area — not one item on a generic menu. Advisors understand the nuances of non-profit structures — trusts, societies, Section 8 companies — and the specific Income Tax provisions that govern them.'],
         ['icon_class' => 'fas fa-search', 'title' => 'Advisory-first approach — not a form-filling service', 'text' => 'Before any application is submitted, a structured eligibility review of the objects, governance, and financials is conducted. This prevents rejections, saves time, and protects the organisation from compliance gaps that could surface later during audits.'],
         ['icon_class' => 'fas fa-tasks', 'title' => 'Transparent timelines with accountable follow-through', 'text' => 'Realistic timelines are set at the start, progress is communicated at every stage, and IT Department queries are handled without asking the management team to manage back-and-forth correspondence.'],
         ['icon_class' => 'fas fa-handshake', 'title' => 'Long-term relationship — not a one-time transaction', 'text' => 'Registration is the beginning. CAAFT clients are supported through annual compliance filings, renewal cycles, audit readiness, and future regulatory changes — with the same team that filed the registration helping to maintain it.'],

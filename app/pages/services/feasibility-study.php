@@ -209,13 +209,13 @@ declare(strict_types=1);
     $caaft_challenges_title = 'When Do You Need a Feasibility Study?';
     $caaft_challenges_intro = 'A feasibility study is not reserved for large corporations. Any individual or business considering a significant commitment of time, capital, or people stands to benefit:';
     $caaft_challenges_items = [
-        'Starting a New Business — Validates market demand, startup costs, and break-even points before registering or investing capital',
-        'Entering a New Market or Geography — Assesses local competition, regulatory requirements, and addressable opportunity in the target market',
-        'Launching a New Product or Service — Tests pricing viability and cost structure so product development is grounded in data',
-        'Expanding Manufacturing or Operations — Evaluates location suitability, infrastructure readiness, and ROI of the proposed capital investment',
-        'Applying for a Bank or MSME Loan — Produces the project report and financial projections most institutional lenders formally require',
-        'Seeking VC or PE Investment — Strengthens investor confidence with market data, revenue models, IRR calculations, and risk analysis',
-        'Evaluating a Franchise or Joint Venture — Determines whether the partnership is commercially and operationally sound before any agreement is signed',
+        '<strong>Starting a New Business</strong> — Validates market demand, startup costs, and break-even points before registering or investing capital',
+        '<strong>Entering a New Market or Geography </strong>— Assesses local competition, regulatory requirements, and addressable opportunity in the target market',
+        '<strong>Launching a New Product or Service </strong>— Tests pricing viability and cost structure so product development is grounded in data',
+        '<strong>Expanding Manufacturing or Operations </strong>— Evaluates location suitability, infrastructure readiness, and ROI of the proposed capital investment',
+        '<strong>Applying for a Bank or MSME Loan</strong> — Produces the project report and financial projections most institutional lenders formally require',
+        '<strong>Seeking VC or PE Investment</strong> — Strengthens investor confidence with market data, revenue models, IRR calculations, and risk analysis',
+        '<strong>Evaluating a Franchise or Joint Venture</strong> — Determines whether the partnership is commercially and operationally sound before any agreement is signed',
     ];
     $caaft_challenges_outro = '';
     include __DIR__ . '/../../includes/components/caaft-challenges.php';

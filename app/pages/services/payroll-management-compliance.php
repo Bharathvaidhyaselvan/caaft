@@ -199,23 +199,28 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
-    <?php
-    $caaft_benefits_heading_id = 'payroll-importance-heading';
-    $caaft_benefits_title = 'Why Payroll Compliance is Important';
-    $caaft_benefits_intro = 'Many business owners treat payroll as a back-office routine. That mindset is costly. Key reasons payroll compliance deserves a front-row seat in business strategy:';
-    $caaft_benefits_items = [
-        ['lead' => 'Penalty prevention', 'text' => 'Statutory penalties for non-compliance with PF, ESI, or TDS can run into lakhs — with compounding interest.', 'icon_class' => 'fas fa-exclamation-triangle', 'tone' => 'blue'],
-        ['lead' => 'Audit and diligence readiness', 'text' => 'Non-compliant companies face scrutiny during audits, M&A due diligence, and funding rounds', 'icon_class' => 'fas fa-search', 'tone' => 'violet'],
-        ['lead' => 'Employee trust protection', 'text' => 'Labour disputes arising from incorrect salary calculations damage employer brand and invite litigation', 'icon_class' => 'fas fa-users', 'tone' => 'green'],
-        ['lead' => 'Litigation risk reduction', 'text' => 'Employees who receive inaccurate payslips or delayed salaries lose confidence in leadership', 'icon_class' => 'fas fa-gavel', 'tone' => 'orange'],
-        ['lead' => 'Tax and provision accuracy', 'text' => 'For MNCs and foreign companies operating in India, compliance gaps attract attention from tax authorities and can delay repatriation of funds', 'icon_class' => 'fas fa-calculator', 'tone' => 'blue'],
-        ['lead' => 'Payroll Processing', 'text' => 'Correct payroll processing ensures accurate input tax credits, gratuity provisions, and deductions — reducing the overall tax burden', 'icon_class' => 'fas fa-calculator', 'tone' => 'blue'],
-    ];
- include __DIR__ . '/../../includes/components/caaft-benefits.php';
-?>
-<div style="background:#eaf6fd;padding:0 0 40px;">
+    
+    <section class="payroll-docs-section" aria-labelledby="payroll-importance-heading">
     <div class="container">
-        <p style="margin:0;font-size:1.02rem;line-height:1.65;font-weight:500;color:#4d5868;">Payroll compliance is not just a legal obligation — it is a business advantage when managed proactively.
+        <h2 id="payroll-importance-heading" class="payroll-docs-title">Why Payroll Compliance is Important</h2>
+        <p class="bk-challenges-intro">Many business owners treat payroll as a back-office routine. That mindset is costly. Key reasons payroll compliance deserves a front-row seat in business strategy:</p>
+        <article class="payroll-doc-card">
+            
+            <ul class="payroll-doc-list">
+                <li>Statutory penalties for non-compliance with PF, ESI, or TDS can run into lakhs — with compounding interest</li>
+                <li>Non-compliant companies face scrutiny during audits, M&A due diligence, and funding rounds</li>
+                <li>Labour disputes arising from incorrect salary calculations damage employer brand and invite litigation</li>
+                <li>Employees who receive inaccurate payslips or delayed salaries lose confidence in leadership</li>
+                <li>For MNCs and foreign companies operating in India, compliance gaps attract attention from tax authorities and can delay repatriation of funds</li>
+                <li>Correct payroll processing ensures accurate input tax credits, gratuity provisions, and deductions — reducing the overall tax burden</li>
+            </ul>
+        </article>
+    </div>
+</section>
+   
+<div style="padding:0 0 40px;">
+    <div class="container">
+        <p style="margin:0;font-size:1.02rem;line-height:1.65;font-weight:500;">Payroll compliance is not just a legal obligation — it is a business advantage when managed proactively.
 </p>
     </div>
 </div>

@@ -661,7 +661,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         $why_choose_caaft_heading_id = 'gst-return-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
-        $why_choose_caaft_intro = 'Businesses rely on CAAFT for disciplined GST return filing, deep ITC expertise, and dependable compliance support across every filing cycle.';
+        $why_choose_caaft_intro='Businesses trust CAAFT for accurate GST compliance, timely return filings, and dependable tax support that keeps their business running smoothly';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             [

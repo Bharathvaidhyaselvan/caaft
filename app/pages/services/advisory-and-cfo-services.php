@@ -223,8 +223,8 @@ $caaft_enquiry_input_id_prefix = 'ac';
         <?php
         $why_choose_caaft_heading_id = 'ac-why-heading';
         $why_choose_caaft_title = 'WHY CHOOSE CAAFT';
-        $why_choose_caaft_intro = '';
-        $why_choose_caaft_show_intro = false;
+        $why_choose_caaft_intro = 'Businesses trust CAAFT for strategic CFO and advisory services, insightful financial guidance, and dependable support that drives sustainable business growth.';
+        $why_choose_caaft_show_intro = true;
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             ['icon_class' => 'fas fa-user-check', 'title' => 'CA-Led, Not Consultant-Led', 'text' => 'Every engagement is led by a Chartered Accountant with hands-on experience — not a generalist working from a template.'],
