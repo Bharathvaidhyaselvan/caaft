@@ -2865,9 +2865,9 @@ a.footer-logo {
 }
 
 .pricing-feature li {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
     color: #595b62;
-     
+
     display: flex;
     line-height: 28px;
     align-items: baseline;
@@ -5941,9 +5941,10 @@ nav.navbar.navbar-expand-lg .fixed_logo {
 
 /* Desktop Services mega-menu: click to open with slide animation */
 @media (min-width: 992px) {
+
     /* Override global .main-menu ul li:hover ul.mega-menu — Services opens only when .is-open */
-    .main-menu ul li.mega-menu-wrap.dispaly_desktop:not(.is-open) > ul.mega-menu,
-    .main-menu ul li.mega-menu-wrap.dispaly_desktop:not(.is-open):hover > ul.mega-menu {
+    .main-menu ul li.mega-menu-wrap.dispaly_desktop:not(.is-open)>ul.mega-menu,
+    .main-menu ul li.mega-menu-wrap.dispaly_desktop:not(.is-open):hover>ul.mega-menu {
         visibility: hidden !important;
         opacity: 0 !important;
         margin-top: 0 !important;
@@ -5951,11 +5952,11 @@ nav.navbar.navbar-expand-lg .fixed_logo {
         z-index: -1 !important;
     }
 
-    .main-menu .mega-menu-wrap.dispaly_desktop > a.nav-link.dropdown-toggle {
+    .main-menu .mega-menu-wrap.dispaly_desktop>a.nav-link.dropdown-toggle {
         cursor: pointer;
     }
 
-    .main-menu .mega-menu-wrap.dispaly_desktop > ul.mega-menu {
+    .main-menu .mega-menu-wrap.dispaly_desktop>ul.mega-menu {
         position: absolute !important;
         top: 100% !important;
         left: 50% !important;
@@ -5971,15 +5972,15 @@ nav.navbar.navbar-expand-lg .fixed_logo {
         z-index: 110 !important;
     }
 
-    .main-menu .mega-menu-wrap.dispaly_desktop:hover > ul.mega-menu {
+    .main-menu .mega-menu-wrap.dispaly_desktop:hover>ul.mega-menu {
         visibility: hidden !important;
         opacity: 0 !important;
         pointer-events: none;
         transform: translateX(-50%) scaleY(0);
     }
 
-    .main-menu .mega-menu-wrap.dispaly_desktop.is-open > ul.mega-menu,
-    .main-menu .mega-menu-wrap.dispaly_desktop.is-open:hover > ul.mega-menu {
+    .main-menu .mega-menu-wrap.dispaly_desktop.is-open>ul.mega-menu,
+    .main-menu .mega-menu-wrap.dispaly_desktop.is-open:hover>ul.mega-menu {
         visibility: visible !important;
         opacity: 1 !important;
         pointer-events: auto;
@@ -6404,11 +6405,11 @@ nav.navbar.navbar-expand-lg a.hides img.img-fluid {
     display: none !important;
 }
 
-.navbar a#manimaenu.hides + a#submenu {
+.navbar a#manimaenu.hides+a#submenu {
     display: block;
 }
 
-.navbar.fixed-top a#manimaenu.hides + a#submenu {
+.navbar.fixed-top a#manimaenu.hides+a#submenu {
     display: none !important;
 }
 
@@ -7537,22 +7538,27 @@ a.view.theme-btn {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
 th.month {
     background-color: #2e7aa1;
     color: #fff !important;
 }
-td.cal-info{
+
+td.cal-info {
     font-size: 16px;
 }
+
 .head-com {
     font-size: 26px;
     margin-bottom: 1rem;
 }
+
 .calendar-new {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
 }
-@media(min-width:310px) and (max-width:680px){
+
+@media(min-width:310px) and (max-width:680px) {
     .head-com {
         font-size: 20px;
         margin-bottom: 1rem;
@@ -7577,7 +7583,7 @@ td.cal-info{
     text-align: justify;
 }
 
-.caft-design-blog .blog-caft-head{
+.caft-design-blog .blog-caft-head {
     font-size: 20px;
     line-height: 35px;
     font-weight: 700;
@@ -7603,19 +7609,23 @@ td.cal-info{
     line-height: 23px;
     text-align: justify;
 }
+
 .singles_forms_frames {
-    padding-top:120px !important;
+    padding-top: 120px !important;
 }
+
 .singles_forms_frames .hero-img-wrap {
     padding: 20px;
 }
+
 /* .singles_forms_frames h1.hero-title { */
-        /* font-size: 32px !important; */
-    /* line-height: 45px; */
+/* font-size: 32px !important; */
+/* line-height: 45px; */
 /* }    */
 .singles_forms_frames .hero-img-wrap {
     float: inline-end;
 }
+
 .singles_forms_frames .quote-content .quote-head span {
     font-size: 18px;
     font-weight: 700;
@@ -7626,37 +7636,47 @@ td.cal-info{
 .singles_forms_frames .caaft-ar-hero-img-wrap.hero-img-wrap {
     padding: 12px;
 }
+
 .caaft-ar-hero-img-wrap .quote-content {
     padding: 12px 14px;
 }
+
 .caaft-ar-hero-img-wrap .quote-head {
     margin-bottom: 6px;
 }
+
 .singles_forms_frames .caaft-ar-hero-img-wrap .quote-head span {
     font-size: 16px;
     line-height: 1.2;
 }
+
 .caaft-ar-hero-img-wrap .quote-form .input-group {
     margin-bottom: 8px;
 }
+
 .caaft-ar-hero-img-wrap .quote-form .input-group .form-control {
     padding: 10px 16px 10px 0;
     font-size: 14px;
 }
+
 .caaft-ar-hero-img-wrap .quote-form .input-group .input-group-text {
     padding-left: 14px;
     padding-right: 6px;
 }
+
 .caaft-ar-hero-img-wrap .quote-form .input-group.textarea .input-group-text {
     padding-top: 10px;
 }
+
 .caaft-ar-hero-img-wrap .quote-form textarea.form-control {
     min-height: 6rem;
     line-height: 1.35;
 }
+
 .caaft-ar-hero-img-wrap .quote-form .g-recaptcha {
     margin-bottom: 6px;
 }
+
 .caaft-ar-hero-img-wrap .quote-form .theme-btn {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -7667,8 +7687,9 @@ td.cal-info{
     background: #f4f4f8;
     padding: 60px 0 60px;
 }
-.abt_sections_services{
-     padding: 60px 0 60px;
+
+.abt_sections_services {
+    padding: 60px 0 60px;
 }
 
 .service-content span.service-title {
@@ -7678,328 +7699,402 @@ td.cal-info{
     color: var(--color-dark);
     line-height: 20px;
 }
+
 .wrk_transparents .service-info h3.service-title {
     font-size: 18px;
     text-align: left;
     font-weight: 700;
 }
+
 .wrk_transparents .service-info p.service-text {
     line-height: 20px;
     text-align: left;
 }
+
 .wrk_transparents .service-content {
     gap: 6px;
 }
+
 .prices_sections .pricing-feature ul {
     column-count: 1;
 }
+
 .prices_sections .pricing-feature {
     padding-top: 0;
 }
+
 .prices_sections {
     padding: 50px 0 50px;
 }
+
 .testimonial-area .blog-item-info h3.blog-title {
     font-weight: 700;
 }
+
 .counter-area .video-info {
     padding-top: 0;
     padding-bottom: 0;
 }
+
 .counter-area .video-info h2 {
-        font-size: 25px;
-    text-align: justify; 
+    font-size: 25px;
+    text-align: justify;
     line-height: 35px;
 }
+
 .counter-area .video-info p {
     margin-bottom: 10px;
-     text-align: justify; 
+    text-align: justify;
     font-size: 16px;
     font-weight: 100;
 }
+
 .counter-area .counter-box {
     border: none !important;
     float: inline-end;
 }
+
 .are_sections_faq {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .income_sections .about-left .about-img img.img-1.img-fluid {
     width: 60%;
 }
+
 .why_us_sections .about-img .img-1 {
     border-radius: inherit;
 }
+
 .server_sections_wyus .service-content h3.service-title {
     font-size: 20px;
 }
-@media(min-width:991px){
+
+@media(min-width:991px) {
     .services_why_us_sections .service-item {
-    height: 470px;
-}
-.blog_sections_servicesss .blog-item{
-     height: auto !important;
-}
-.testimonial-area .blog-item {
-    height: 230px;
-}
-.server_sections_wyus .service-item {
-    height: 320px;
-}
+        height: 470px;
+    }
+
+    .blog_sections_servicesss .blog-item {
+        height: auto !important;
+    }
+
+    .testimonial-area .blog-item {
+        height: 230px;
+    }
+
+    .server_sections_wyus .service-item {
+        height: 320px;
+    }
 }
 
-@media(max-width:991px){
+@media(max-width:991px) {
     .prices_sections .pricing-feature ul {
-    column-count: 1;
+        column-count: 1;
+    }
+
+    .pricing-item {
+        padding: 10px;
+    }
 }
-.pricing-item {
-    padding: 10px;
-}
-}
-@media (min-width:1199px) and (max-width:1270px){
-   .services_why_us_sections .service-item {
+
+@media (min-width:1199px) and (max-width:1270px) {
+    .services_why_us_sections .service-item {
         height: 500px;
     }
 }
-@media(max-width:767px){
+
+@media(max-width:767px) {
     .singles_forms_frames h1.hero-title {
-    font-size: 17px !important;
-    line-height: 26px;
-}
-.hero-single .hero-content p {
-    font-size: 14px;
-    line-height: 23px;
-}
-.singles_forms_frames .hero-img-wrap {
-    padding: 10px;
-    margin-top: 10px !important;
-}
+        font-size: 17px !important;
+        line-height: 26px;
+    }
+
+    .hero-single .hero-content p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .singles_forms_frames .hero-img-wrap {
+        padding: 10px;
+        margin-top: 10px !important;
+    }
+
     .about-right {
         margin-top: 20px;
     }
+
     .abt_sections_services {
-    padding: 30px 0 30px;
-}
-.service-content span.service-title {
-    font-size: 15px;
-}
-.service-content p.service-text {
-    font-size: 13px;
-}
-.service-icon img {
-    width: 25px;
-}
+        padding: 30px 0 30px;
+    }
+
+    .service-content span.service-title {
+        font-size: 15px;
+    }
+
+    .service-content p.service-text {
+        font-size: 13px;
+    }
+
+    .service-icon img {
+        width: 25px;
+    }
 }
 
 
-.style_bgs{
-     background: #f7f7f7 !important;
-     padding-top: 171px !important;
+.style_bgs {
+    background: #f7f7f7 !important;
+    padding-top: 171px !important;
 }
+
 .style_bgs .hero-content h1.hero-title {
     font-size: 42px !important;
 }
+
 .style_bgs .hero-img-wrap .hero-img img {
     position: relative;
     right: 0;
 }
+
 .style_bgs .hero-img-wrap .hero-img:before {
     content: '';
     background: transparent;
     border: navajowhite;
 }
+
 .style_bgs .hero-img-wrap .hero-img img.img-fluid {
     position: relative;
     width: 100%;
     right: 0;
     left: 0;
 }
+
 .whys_gst_chooses .choose-item-info span {
     color: var(--color-dark);
     margin-bottom: 8px;
     font-size: 20px;
 }
+
 .whys_gst_chooses .choose-item-icon {
     color: #000;
     font-size: 22px;
 }
+
 .whys_gst_chooses {
     background: #c9ecff7d;
 }
+
 .whys_gst_chooses .choose-img {
     text-align: center;
 }
-.choose_taxes .video-info h3, .choose_taxes .video-info h4, .choose_taxes .video-info h5 {
+
+.choose_taxes .video-info h3,
+.choose_taxes .video-info h4,
+.choose_taxes .video-info h5 {
     color: #fff;
     text-align: justify;
     font-size: 16px;
 }
+
 .choose_taxes .video-info h2 {
     margin-bottom: 19px;
 }
+
 .counter-boxs {
     width: 85%;
     margin: 0 auto;
 }
+
 .abts_services_sections span.title_us {
     font-size: 23px;
     font-weight: 700;
     color: #000;
 }
+
 .abts_services_sections .about-right {
     padding-left: 0;
 }
-.abts_services_sections{
+
+.abts_services_sections {
     background: #fff;
     padding: 20px 0;
 }
+
 .abtus_sections {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .abts_services_sections .pricing-feature {
     padding: 0;
 }
+
 .abts_services_sections .site-heading {
     /* margin-bottom: 0 !important; */
 }
+
 .abts_services_sections .site-heading h3.about.site-title {
     font-size: 20px;
 }
+
 .abts_services_sections .pricing-feature ul li {
     margin-bottom: 0;
 }
+
 .gst_returns_filliings .hero-single {
     background: #fbfbfb;
     padding-top: 40px !important;
     padding-bottom: 40px !important;
 }
+
 .gst_returns_filliings .hero-single .hero-content h2.hero-title {
     color: #000;
     margin-bottom: 0;
 }
+
 .gst_returns_filliings .hero-single .hero-content p {
-   color: #000;
+    color: #000;
     font-size: 17px;
     line-height: 30px;
     margin-top: 10px;
     margin-bottom: 0;
 }
+
 .gst_returns_filliings .hero-single h3 {
     font-size: 17px;
     margin-top: 14px;
 }
+
 .gst_returns_filliings .hero-single .pricing-feature ul li {
     margin-bottom: 0;
     font-size: 17px;
 }
+
 .gst_returns_filliings .hero-single .pricing-feature {
     padding-top: 0;
 }
+
 /*--style--*/
 
 .faq-area .pricing-feature i {
 
-        color: var(--theme-color);
+    color: var(--theme-color);
     margin-right: 10px;
-        background-color: #ffff;
+    background-color: #ffff;
 }
 
-.faq-area .pricing-feature li{
+.faq-area .pricing-feature li {
 
     margin-bottom: 0px;
 }
-.faq-area .pricing-feature{
+
+.faq-area .pricing-feature {
 
     padding-top: 0.5rem;
 
 }
+
 .choose_taxes .video-info .pricing-feature ul {
     text-align: justify;
 }
+
 .choose_taxes .video-info .pricing-feature ul li {
     color: #fff;
 }
+
 .grps_sections .nice-select.select ul.list {
     height: 200px;
     overflow-y: scroll;
 }
 
-@media(max-width:991px){
+@media(max-width:991px) {
     .style_bgs .hero-content h1.hero-title {
-    font-size: 21px !important;
-            padding-top: 27px !important;
+        font-size: 21px !important;
+        padding-top: 27px !important;
+    }
+
+    .whys_gst_chooses .choose-item-info span {
+        font-size: 16px;
+    }
+
+    .choose_taxes .video-info h2 {
+        font-size: 15px;
+    }
+
+    .abts_services_sections .site-heading h3.about.site-title {
+        font-size: 16px;
+    }
+
+    .gst_returns_filliings .hero-single .pricing-feature ul li {
+        text-align: justify;
+        font-size: 13px;
+    }
+
+    .about-left {
+        display: none;
+    }
 }
-.whys_gst_chooses .choose-item-info span {
-    font-size: 16px;
-}
-.choose_taxes .video-info h2 {
-    font-size: 15px;
-}
-.abts_services_sections .site-heading h3.about.site-title {
-    font-size: 16px;
-}
-.gst_returns_filliings .hero-single .pricing-feature ul li {
-    text-align: justify;
-    font-size: 13px;
-}
-.about-left {
-    display: none;
-}
-}
+
 /***new busniess****/
 .pricings_selected .pricing-item {
     box-shadow: 0 0 0;
     padding: 20px;
 }
+
 .pricings_selected .site-heading {
     margin-bottom: 20px;
 }
 
 
 .lines_stpes {
-  position: relative;
-  max-width: 700px;
-  width: 100%;
-  padding-left: 30px;
-  border-left: 2px solid #33b6ff;
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    padding-left: 30px;
+    border-left: 2px solid #33b6ff;
 }
 
 .timeline-step {
-  position: relative;
- 
+    position: relative;
+
 }
 
 .lines_stpes .dot {
-  position: absolute;
- left: -52px;
+    position: absolute;
+    left: -52px;
     top: 4px;
     width: 42px;
     height: 42px;
-  background: #33b6ff;
-  border-radius: 50%;
-  box-shadow: 0 0 8px #203867;
+    background: #33b6ff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #203867;
 }
-.lines_stpes .dot p{color:#fff;  font-weight:bold;   margin: 6px 0px 0px 14px;}
+
+.lines_stpes .dot p {
+    color: #fff;
+    font-weight: bold;
+    margin: 6px 0px 0px 14px;
+}
 
 .lines_stpes .content span {
-  margin: 0 0 6px;
-  font-size: 1.2rem;
-  color: #203867;
-      font-weight: 600;
+    margin: 0 0 6px;
+    font-size: 1.2rem;
+    color: #203867;
+    font-weight: 600;
 }
 
 .lines_stpes .content p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #595b62;
+    margin: 0;
+    font-size: 0.95rem;
+    color: #595b62;
     display: flex;
     line-height: 28px;
     align-items: baseline;
 }
-.new_busniess_sections .blog-item{
-    height:auto;
+
+.new_busniess_sections .blog-item {
+    height: auto;
 }
 
 
@@ -8010,19 +8105,23 @@ td.cal-info{
     display: block;
     padding: 0;
 }
+
 .counters_list span.text-white {
     font-size: 23px;
 }
+
 .blog-area .blog-item .counter-box {
     box-shadow: 0 0 0px 0px rgb(0 0 0 / 5%) !important;
     padding: 0 !important;
 }
+
 .blogs_stpes_services .blog-item {
     border-top-left-radius: 30px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
+
 .are_sections_faq .accordion-body ul i {
     width: 20px;
     height: 20px;
@@ -8030,22 +8129,26 @@ td.cal-info{
     line-height: 20px;
     margin-right: 10px;
 }
+
 .choose_taxes .video-info span {
     display: block;
     text-align: left;
     color: #fff;
     font-weight: 600;
 }
-.testimonial-author-img{
+
+.testimonial-author-img {
     display: none;
 }
 
 .managements_services .service-content h3.service-title {
     font-size: 20px;
 }
+
 .managements_services .service-content .pricing-feature {
     padding-top: 10px;
 }
+
 .managements_services .service-content .pricing-feature ul li {
     margin-bottom: 6px;
     line-height: 26px;
@@ -8053,194 +8156,217 @@ td.cal-info{
 }
 
 
-@media(min-width:991px){
+@media(min-width:991px) {
     .blogs_stpes_services .blog-item {
-    height: 392px;
+        height: 392px;
+    }
+
+    .blogs_stpes_services .blog-item-info p {
+        height: 190px;
+    }
+
+    .managements_const .blog-item {
+        height: 210px;
+    }
+
+    .why_us_managements .service-item {
+        height: 230px;
+    }
+
+    .trust_us .counter-boxs {
+        margin-top: 16%;
+    }
+
+    .managements_services .service-item {
+        height: 360px;
+    }
+
+    .rights_policys {
+        height: 344px;
+    }
+
+    .secounds_plicys {
+        height: 300px;
+    }
 }
-.blogs_stpes_services .blog-item-info p {
-    height: 190px;
-}
-.managements_const .blog-item {
-    height: 210px;
-}
-.why_us_managements .service-item{
-    height:230px;
-}
-.trust_us .counter-boxs {
-    margin-top: 16%;
-}
-.managements_services .service-item {
-    height: 360px;
-}
-.rights_policys {
-    height: 344px;
-}
-.secounds_plicys {
-    height: 300px;
-}
-}
+
 .rights_policys {
     background: #fff;
     padding: 20px !important;
     margin-bottom: 20px;
-        border-radius: 20px;
+    border-radius: 20px;
 }
 
-.timeliness{
-  position:relative;
-  margin:10px auto;
-  padding:40px 0;
-  width:1000px;
-  box-sizing:border-box;
+.timeliness {
+    position: relative;
+    margin: 10px auto;
+    padding: 40px 0;
+    width: 1000px;
+    box-sizing: border-box;
 }
-.timeliness:before{
-  content:'';
-  position:absolute;
-  left:50%;
-  width:2px;
-  height:100%;
-  background:#33b6ff;
+
+.timeliness:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #33b6ff;
 }
-.timeliness ul{
-  padding:0;
-  margin:0;
+
+.timeliness ul {
+    padding: 0;
+    margin: 0;
 }
-.timeliness ul li{
-  list-style:none;
-  position:relative;
-  width:50%;
-  padding:20px 40px;
-  box-sizing:border-box;
+
+.timeliness ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
 }
-.timeliness ul li:nth-child(odd){
-  float:left;
-  text-align:right;
-  clear:both;
+
+.timeliness ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
 }
-.timeliness ul li:nth-child(even){
-  float:right;
-  text-align:left;
-  clear:both;
+
+.timeliness ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
 }
-.content{
-  padding-bottom:20px;
+
+.content {
+    padding-bottom: 20px;
 }
-.timeliness ul li:nth-child(odd):before
-{
-  content:'';
-  position:absolute;
-  width:10px;
-  height:10px;
-  top:24px;
-  right:-6px;
-  background:rgb(32 56 103);
-  border-radius:50%;
-  box-shadow:0 0 0 3px rgb(51 182 255 / 70%);
+
+.timeliness ul li:nth-child(odd):before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    right: -6px;
+    background: rgb(32 56 103);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgb(51 182 255 / 70%);
 }
-.timeliness ul li:nth-child(even):before
-{
-  content:'';
-  position:absolute;
-  width:10px;
-  height:10px;
-  top:24px;
-  left:-4px;
-  background:rgb(32 56 103);
-  border-radius:50%;
-  box-shadow:0 0 0 3px rgb(51 182 255 / 70%);
+
+.timeliness ul li:nth-child(even):before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    left: -4px;
+    background: rgb(32 56 103);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgb(51 182 255 / 70%);
 }
-.timeliness ul li h3{
-  padding:0;
-  margin:0;
-  color:rgb(32 56 103);
-  font-weight:600;
+
+.timeliness ul li h3 {
+    padding: 0;
+    margin: 0;
+    color: rgb(32 56 103);
+    font-weight: 600;
 }
-.timeliness ul li p{
-  margin:10px 0 0;
-  padding:0;
+
+.timeliness ul li p {
+    margin: 10px 0 0;
+    padding: 0;
 }
-.timeliness ul li .time h4{
-  margin:0;
-  padding:0;
-  font-size:14px;
+
+.timeliness ul li .time h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
 }
-.timeliness ul li:nth-child(odd) .time
-{
-  position:absolute;
-  top:12px;
-  right:-165px;
-  margin:0;
-  padding:8px 16px;
-  background:rgb(32 56 103);
-  color:#fff;
-  border-radius:18px;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+
+.timeliness ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgb(32 56 103);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
 }
-.timeliness ul li:nth-child(even) .time
-{
-  position:absolute;
-  top:12px;
-  left:-165px;
-  margin:0;
-  padding:8px 16px;
-  background:rgb(32 56 103);
-  color:#fff;
-  border-radius:18px;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+
+.timeliness ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgb(32 56 103);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
 }
+
 .why_ussections .site-heading {
     margin-bottom: 0;
 }
-@media(max-width:1000px)
-{
-  .timeliness{
-    width:100%;
-  }
+
+@media(max-width:1000px) {
+    .timeliness {
+        width: 100%;
+    }
 }
-@media(max-width:991px){
+
+@media(max-width:991px) {
     .abt_sections_services .pricing-feature li {
-    display: block;
+        display: block;
     }
+
     .abts_services_sections .pricing-feature ul li {
-    margin-bottom: 0;
-    display: block;
+        margin-bottom: 0;
+        display: block;
     }
 }
-@media(max-width:767px){
-  .timeliness{
-    width:100%;
-    padding-bottom:0;
-  }
- 
-  .timeliness:before{
-    left:20px;
-    height:100%;
-  }
-  .timeliness ul li:nth-child(odd),
-  .timeliness ul li:nth-child(even)
-  {
-    width:100%;
-    text-align:left;
-    padding-left:50px;
-    padding-bottom:50px;
-  }
-  .timeliness ul li:nth-child(odd):before,
-  .timeliness ul li:nth-child(even):before
-  {
-    top:-18px;
-    left:16px;
-  }
-  .timeliness ul li:nth-child(odd) .time,
-  .timeliness ul li:nth-child(even) .time{
-    top:-30px;
-    left:50px;
-    right:inherit;
-  }
-  .abts_services_sections .pricing-feature ul li {
-    margin-bottom: 0;
-    font-size: 13px;
-    line-height: 20px;
-}
+
+@media(max-width:767px) {
+    .timeliness {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .timeliness:before {
+        left: 20px;
+        height: 100%;
+    }
+
+    .timeliness ul li:nth-child(odd),
+    .timeliness ul li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .timeliness ul li:nth-child(odd):before,
+    .timeliness ul li:nth-child(even):before {
+        top: -18px;
+        left: 16px;
+    }
+
+    .timeliness ul li:nth-child(odd) .time,
+    .timeliness ul li:nth-child(even) .time {
+        top: -30px;
+        left: 50px;
+        right: inherit;
+    }
+
+    .abts_services_sections .pricing-feature ul li {
+        margin-bottom: 0;
+        font-size: 13px;
+        line-height: 20px;
+    }
 }
 
 /*--end--*/
@@ -8248,35 +8374,44 @@ td.cal-info{
 .maintain.blog-item {
     max-height: 9rem;
 }
+
 .blog-area .income.blog-title {
     font-size: 21px;
     font-weight: 600 !important;
     line-height: 1.8rem;
 }
+
 .choose-area p.bookkeeping {
     margin: 0px;
 }
+
 .choose-area span.accounts-payable {
     color: #000;
     font-size: 20px;
     font-weight: 600;
 }
+
 .choose-area .accounting-keeping.choose-content-wrap {
     column-count: 1;
 }
+
 .afford.hero-section.hs-1 {
     margin: 0px;
 }
+
 .accounting-solutions.hero-title {
     font-size: 34px !important;
 }
+
 .afford .hero-single.style_bgs {
     padding-top: 2rem !important;
 }
+
 .maintain-document {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+
 .maintain-document .pricing-feature {
     padding: 10px 0 0;
 }
@@ -8284,74 +8419,90 @@ td.cal-info{
 .counter-area p.combine-choose {
     margin-top: 0px !important;
 }
+
 .counter-area .easy-access {
     margin-top: 1rem;
 }
+
 .maintain-document .more-book {
     text-align-last: center;
 }
 
-@media(min-width:310px) and (max-width:680px){
-        .singles_forms_frames .hero-img-wrap {
+@media(min-width:310px) and (max-width:680px) {
+    .singles_forms_frames .hero-img-wrap {
         padding: 0px;
         margin-top: 10px !important;
     }
+
     .singles_forms_frames .hero-img-wrap {
-    float: none;
-}
-.blog-area {
-    position: relative;
-    padding-bottom: 0rem !important;
-    padding-top: 3rem;
-}
-.choose-area .accounting-keeping.choose-content-wrap {
-    column-count: 1;
-}
-.accounting-solutions.hero-title {
-    font-size: 25px !important;
-}
-.maintain-document {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-}
-.accurate-tax.blog-item {
-    max-height: 11rem !important;
-    margin-bottom: 0.5rem  !important;
-}
+        float: none;
+    }
+
+    .blog-area {
+        position: relative;
+        padding-bottom: 0rem !important;
+        padding-top: 3rem;
+    }
+
+    .choose-area .accounting-keeping.choose-content-wrap {
+        column-count: 1;
+    }
+
+    .accounting-solutions.hero-title {
+        font-size: 25px !important;
+    }
+
+    .maintain-document {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .accurate-tax.blog-item {
+        max-height: 11rem !important;
+        margin-bottom: 0.5rem !important;
+    }
 }
 
-@media(min-width:700px) and (max-width:999px){
+@media(min-width:700px) and (max-width:999px) {
     .maintain.blog-item {
-    min-height: 8rem;
-}
-.choose-area .accounting-keeping.choose-content-wrap {
-    column-count: 1;
-}
-.accounting-solutions.hero-title {
-    font-size: 26px !important;
-}
-.benefits-outsourcing {
-    margin: 0px;
-}
+        min-height: 8rem;
+    }
+
+    .choose-area .accounting-keeping.choose-content-wrap {
+        column-count: 1;
+    }
+
+    .accounting-solutions.hero-title {
+        font-size: 26px !important;
+    }
+
+    .benefits-outsourcing {
+        margin: 0px;
+    }
 }
 
 .accurate-tax.blog-item {
     max-height: 9rem;
 }
+
 .personal-itr.apricing-area {
     background-color: #eaf8ff;
 }
-.income-tax .faq-area{
+
+.income-tax .faq-area {
 
     background-color: #f2f2f280 !important;
 }
+
 .abts_services_sections ul.threshold li {
     display: block;
 }
+
 .gst-registration.abtus_sections {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
 .new-company.about-area {
     background-color: #eaf8ff;
 }
@@ -8359,26 +8510,32 @@ td.cal-info{
 .register-service.pricing-feature {
     padding: 0px;
 }
+
 .aadhar.pricing-feature {
     padding: 0px;
 }
+
 .udyam-regis {
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
+
 .assistance-msme {
     padding-top: 2rem;
     padding-bottom: 2rem;
-        background-color: #e5f6ff;
+    background-color: #e5f6ff;
 }
+
 .challenges.why_us_sections {
     padding-top: 3rem;
     padding-bottom: 0rem !important;
 }
+
 .service-matter.blog-area {
     padding-top: 4rem;
     padding-bottom: 1rem;
 }
+
 .frequent-question {
     margin: 0 auto;
 }
@@ -8388,20 +8545,22 @@ td.cal-info{
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
+
 .accurate {
-      background: var(--color-white);
+    background: var(--color-white);
     border-radius: 15px;
     position: relative;
     padding: 40px;
     overflow: hidden;
     box-shadow: var(--box-shadow);
-    transition: all .5s 
-ease-in-out;
+    transition: all .5s ease-in-out;
     z-index: 1;
 }
+
 .deductions.about.site-title {
     color: #33b6ff;
 }
+
 /* .bookkeeping.accounting-keeping.choose-content-wrap .choose-item-icon::before {
     content: "";
     position: absolute;
@@ -8412,50 +8571,79 @@ ease-in-out;
 
 /* Saravana CSS */
 
-.hero-content h1 {font-size:30px!important;}
-
-.hero-content h2 {font-size:22px!important; line-height: 2.74; color:#fff!important;}
-.hero-content p 	{    text-align: justify !important; line-height: 1.74;   font-family: "Roboto", sans-serif; font-weight:bold;
+.hero-content h1 {
+    font-size: 30px !important;
 }
+
+.hero-content h2 {
+    font-size: 22px !important;
+    line-height: 2.74;
+    color: #fff !important;
+}
+
+.hero-content p {
+    text-align: justify !important;
+    line-height: 1.74;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
 /*banner*/
 
-.hs-3 .itf{    background-image: url(../img/hero//img/income-tac-fille.webp);
+.hs-3 .itf {
+    background-image: url(../img/hero//img/income-tac-fille.webp);
 }
 
-.bg-color {background:#f8f5f2!important;}
-.ptagal  {    color: #33b6ff !important;
+.bg-color {
+    background: #f8f5f2 !important;
+}
+
+.ptagal {
+    color: #33b6ff !important;
     font-weight: 800;
-    font-size: 22px;margin-bottom: 15px; }
-.ptaga p{	
-	    margin-top: 15px;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.ptaga p {
+    margin-top: 15px;
     color: #595b62;
     display: flex;
     line-height: 28px;
-align-items: baseline;}
+    align-items: baseline;
+}
 
-.tfs-content h3{    font-size: 20px;
+.tfs-content h3 {
+    font-size: 20px;
     font-weight: 800;
     margin-bottom: 10px;
-    color: var(--color-dark);}
-	
- .tfs-content img	{     margin-bottom: 18px;
-    width: 36px;
-    
+    color: var(--color-dark);
 }
- .tfs-content
-{   position: relative;
+
+.tfs-content img {
+    margin-bottom: 18px;
+    width: 36px;
+
+}
+
+.tfs-content {
+    position: relative;
     padding: 20px;
     background: var(--color-white);
     border-radius: 20px;
     transition: var(--transition);
     overflow: hidden;
-    z-index: 1;}
-	
-	.tfs-content:hover {
+    z-index: 1;
+}
+
+.tfs-content:hover {
     transform: translateY(-10px);
 }
 
-.stepimg img   {  border-radius: 10px;}
+.stepimg img {
+    border-radius: 10px;
+}
+
 .pricing-items {
     background: var(--color-white);
     border-radius: 15px;
@@ -8475,6 +8663,15 @@ align-items: baseline;}
 .page-accounting-reporting main h5,
 .page-accounting-reporting main h6 {
     font-family: var(--heading-font);
+}
+
+/* Service pages: justify body copy and list content, preserve headings */
+body.home-3.page-accounting-reporting p,
+body.home-3.page-accounting-reporting ul,
+body.home-3.page-accounting-reporting ol,
+body.home-3.page-accounting-reporting li {
+    text-align: justify !important;
+    text-justify: inter-word !important;
 }
 
 .page-accounting-reporting .caaft-ar-hero {
@@ -10237,7 +10434,7 @@ align-items: baseline;}
     gap: clamp(6px, 1.2vw, 10px);
 }
 
-.bk-facts-card .bk-facts-stat--with-icon > i {
+.bk-facts-card .bk-facts-stat--with-icon>i {
     font-size: clamp(1.5rem, 3.2vw, 2rem);
     line-height: 1;
     opacity: 0.95;
@@ -11226,7 +11423,7 @@ align-items: baseline;}
     padding: 16px 0;
 }
 
-.caaft-labeled-list-card-items li + li {
+.caaft-labeled-list-card-items li+li {
     border-top: 1px solid #e8edf2;
 }
 
