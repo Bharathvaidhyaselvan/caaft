@@ -256,36 +256,85 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
 
-    <?php
-    $caaft_delivered_heading_id = 'payroll-compliance-req-heading';
-    $caaft_delivered_title = 'Payroll Compliance Requirements in India';
-    $caaft_delivered_intro= 'India\'s payroll compliance landscape is layered, with central and state-level obligations running simultaneously:';
-    $caaft_delivered_items = [
-        ['name' => 'Employees\' Provident Fund (EPF)', 'text' => 'Applicable to establishments with 20 or more employees;
-Employer contributes 12% of Basic + DA; employee contributes 12%;
-Monthly challan to be deposited by the 15th of the following month;
-Annual return filing via the EPFO unified portal;
-'],
-        ['name' => 'Employees\' State Insurance (ESI)', 'text' => 'Applicable to establishments with 10 or more employees earning up to Rs. 21,000/month
-Employer contributes 3.25%; employee contributes 0.75% of gross wages
-Half-yearly returns to be filed; monthly challans due by the 15th
-'],
-        ['name' => 'Tax Deducted at Source (TDS) — Salaries', 'text' => 'Deducted from employee salaries under Section 192 of the Income Tax Act
-Monthly TDS deposit by the 7th of the following month
-Quarterly TDS returns (Form 24Q) and annual Form 16 issuance
-'],
-        ['name' => 'Professional Tax (PT)', 'text' => 'Levied by state governments — applicable in Maharashtra, Karnataka, Tamil Nadu, West Bengal, and others
-Employee-specific slabs vary by state; employers are obligated to deduct and remit
-'],
-        ['name' => 'Labour Welfare Fund (LWF)', 'text' => 'Applicable in notified states; contributions are deducted from employee salaries
-Frequency varies by state — some require monthly, others half-yearly contributions
-'],
-        ['name' => 'Gratuity & Bonus', 'text' => 'Gratuity payable to employees who have completed 5 years of service under the Payment of Gratuity Act, 1972
-Statutory bonus applicable under the Payment of Bonus Act, 1965 for eligible employees
-'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
-    ?>
+   <section class="payroll-compliance-section" aria-labelledby="payroll-compliance-req-heading">
+    <div class="container">
+        <h2 id="payroll-compliance-req-heading" class="payroll-docs-title">Payroll Compliance Requirements in India</h2>
+        <p>India's payroll compliance landscape is layered, with central and state-level obligations running simultaneously:</p>
+        <div class="payroll-docs-grid">
+
+            <article class="payroll-doc-card">
+                <div class="payroll-doc-card-head">
+                    <span class="payroll-doc-icon purple" aria-hidden="true"><i class="fas fa-piggy-bank"></i></span>
+                    <h3>Employees' Provident Fund (EPF)</h3>
+                </div>
+                <ul class="payroll-doc-list">
+                    <li>Applicable to establishments with 20 or more employees</li>
+                    <li>Employer contributes 12% of Basic + DA; employee contributes 12%</li>
+                    <li>Monthly challan to be deposited by the 15th of the following month</li>
+                    <li>Annual return filing via the EPFO unified portal</li>
+                </ul>
+            </article>
+
+            <article class="payroll-doc-card">
+                <div class="payroll-doc-card-head">
+                    <span class="payroll-doc-icon green" aria-hidden="true"><i class="fas fa-shield-halved"></i></span>
+                    <h3>Employees' State Insurance (ESI)</h3>
+                </div>
+                <ul class="payroll-doc-list">
+                    <li>Applicable to establishments with 10 or more employees earning up to Rs. 21,000/month</li>
+                    <li>Employer contributes 3.25%; employee contributes 0.75% of gross wages</li>
+                    <li>Half-yearly returns to be filed; monthly challans due by the 15th</li>
+                </ul>
+            </article>
+
+            <article class="payroll-doc-card">
+                <div class="payroll-doc-card-head">
+                    <span class="payroll-doc-icon blue" aria-hidden="true"><i class="fas fa-file-invoice-dollar"></i></span>
+                    <h3>Tax Deducted at Source (TDS) — Salaries</h3>
+                </div>
+                <ul class="payroll-doc-list">
+                    <li>Deducted from employee salaries under Section 192 of the Income Tax Act</li>
+                    <li>Monthly TDS deposit by the 7th of the following month</li>
+                    <li>Quarterly TDS returns (Form 24Q) and annual Form 16 issuance</li>
+                </ul>
+            </article>
+
+            <article class="payroll-doc-card">
+                <div class="payroll-doc-card-head">
+                    <span class="payroll-doc-icon orange" aria-hidden="true"><i class="fas fa-landmark"></i></span>
+                    <h3>Professional Tax (PT)</h3>
+                </div>
+                <ul class="payroll-doc-list">
+                    <li>Levied by state governments — applicable in Maharashtra, Karnataka, Tamil Nadu, West Bengal, and others</li>
+                    <li>Employee-specific slabs vary by state; employers are obligated to deduct and remit</li>
+                </ul>
+            </article>
+
+            <article class="payroll-doc-card">
+                <div class="payroll-doc-card-head">
+                    <span class="payroll-doc-icon teal" aria-hidden="true"><i class="fas fa-hand-holding-heart"></i></span>
+                    <h3>Labour Welfare Fund (LWF)</h3>
+                </div>
+                <ul class="payroll-doc-list">
+                    <li>Applicable in notified states; contributions are deducted from employee salaries</li>
+                    <li>Frequency varies by state — some require monthly, others half-yearly contributions</li>
+                </ul>
+            </article>
+
+            <article class="payroll-doc-card">
+                <div class="payroll-doc-card-head">
+                    <span class="payroll-doc-icon red" aria-hidden="true"><i class="fas fa-gift"></i></span>
+                    <h3>Gratuity &amp; Bonus</h3>
+                </div>
+                <ul class="payroll-doc-list">
+                    <li>Gratuity payable to employees who have completed 5 years of service under the Payment of Gratuity Act, 1972</li>
+                    <li>Statutory bonus applicable under the Payment of Bonus Act, 1965 for eligible employees</li>
+                </ul>
+            </article>
+
+        </div>
+    </div>
+</section>
 
     <?php
     $caaft_steps_heading_id = 'payroll-steps-heading';
@@ -419,7 +468,7 @@ Statutory bonus applicable under the Payment of Bonus Act, 1965 for eligible emp
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = '';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for strategic CFO and advisory services, insightful financial guidance, and dependable support that drives sustainable business growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
         ['icon_class' => 'fas fa-cogs', 'title' => 'End-to-end payroll processing, fully owned', 'text' => 'From attendance data integration and salary structuring to disbursement confirmation and payslip distribution, CAAFT manages the complete payroll cycle — nothing falls between teams, nothing is left to chance.'],

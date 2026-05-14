@@ -152,9 +152,8 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'authorized-capital-importance-heading';
     $caaft_challenges_title = 'Why Authorised Capital Increase Compliance Is Important';
-    $caaft_challenges_intro= 'The MCA requires all changes to a company\'s authorised capital to be formally approved by shareholders and filed with the Registrar of Companies — ensuring that share allotments remain legally valid and the company\'s capital structure is accurately reflected in government records. Shares allotted beyond the existing authorised capital limit are legally void and subject to regulatory challenge.
-    Key consequences of non-compliance:
-';
+    $caaft_challenges_intro= 'The MCA requires all changes to a company\'s authorised capital to be formally approved by shareholders and filed with the Registrar of Companies — ensuring that share allotments remain legally valid and the company\'s capital structure is accurately reflected in government records. Shares allotted beyond the existing authorised capital limit are legally void and subject to regulatory challenge.';
+    $caaft_challenges_subtext='Key consequences of non-compliance:';
     
     $caaft_challenges_items = [
         'Shares issued beyond the authorised capital limit are legally invalid — exposing the company to cap table disputes and regulatory scrutiny',

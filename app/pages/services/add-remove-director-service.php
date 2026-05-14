@@ -139,7 +139,6 @@ declare(strict_types=1);
     $caaft_challenges_heading_id = 'director-change-importance-heading';
     $caaft_challenges_title = 'Why Director Change Compliance Is Important';
     $caaft_challenges_intro = 'The MCA requires all director changes to be formally recorded and filed — ensuring transparency, accountability, and accurate board composition in government records. If a company fails to file the required forms within the prescribed timeline, penalties begin accruing immediately from Day 31 — with no ceiling on the total amount.';
-    $caaft_challenges_subtext = 'Key consequences of non-compliance:';
     $caaft_challenges_items = [
         '₹200 per day per form accrues from the 31st day after the triggering event — with no upper cap on total penalty',
         'Filing delayed beyond 300 days requires NCLT intervention — significantly increasing legal costs and procedural complexity',
@@ -277,7 +276,7 @@ declare(strict_types=1);
     <?php
     $caaft_challenges_heading_id = 'director-change-common-heading';
     $caaft_challenges_title = 'Common Director Change Challenges CAAFT Solves';
-    $caaft_challenges_intro = 'Most companies seek support when facing one or more of these:';
+    $caaft_challenges_intro = 'Most companies seek professional director change support when facing one or more of these:';
     $caaft_challenges_items = [
         'DIR-12 deadline approaching and the company is unsure of the correct documentation or filing procedure',
         'Board resolution incorrectly drafted — causing ROC rejection and restarting the 30-day filing clock',

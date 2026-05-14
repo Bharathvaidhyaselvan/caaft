@@ -267,7 +267,7 @@ declare(strict_types=1);
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = '';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for strategic CFO and advisory services, insightful financial guidance, and dependable support that drives sustainable business growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
         ['icon_class' => 'fas fa-clipboard-check', 'title' => 'Comprehensive, structured financial review', 'text' => 'CAAFT conducts thorough financial assessments covering revenue streams, cost structures, profitability, liquidity, debt obligations, and working capital — delivering a complete, honest picture of where a business truly stands financially.'],

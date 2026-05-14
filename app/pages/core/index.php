@@ -764,6 +764,351 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
+
+        <!-- ===== 1. TRUST & SOCIAL PROOF SECTION ===== -->
+        <div class="trust-area py-60" style="background:#f8faff; border-top:1px solid #e8eef8; border-bottom:1px solid #e8eef8;">
+            <div class="container">
+                <div class="row text-center mb-40">
+                    <div class="col-12">
+                        <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="trend" class="img-fluid"></i> Trusted By Businesses</span>
+                        <h2 class="site-title mt-2">Why Clients <span>Choose CAAFT</span></h2>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center text-center">
+                    <div class="col-6 col-md-3">
+                        <div class="trust-card p-30" style="background:#fff; border-radius:12px; box-shadow:0 2px 16px rgba(0,80,180,0.07); padding:28px 20px;">
+                            <div style="font-size:2.2rem; font-weight:800; color:#0d6efd;">500+</div>
+                            <div style="font-size:0.97rem; color:#555; margin-top:6px;">Businesses Served</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="trust-card p-30" style="background:#fff; border-radius:12px; box-shadow:0 2px 16px rgba(0,80,180,0.07); padding:28px 20px;">
+                            <div style="font-size:2.2rem; font-weight:800; color:#0d6efd;">98%</div>
+                            <div style="font-size:0.97rem; color:#555; margin-top:6px;">Client Satisfaction Rate</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="trust-card p-30" style="background:#fff; border-radius:12px; box-shadow:0 2px 16px rgba(0,80,180,0.07); padding:28px 20px;">
+                            <div style="font-size:2.2rem; font-weight:800; color:#0d6efd;">10+</div>
+                            <div style="font-size:0.97rem; color:#555; margin-top:6px;">Years of Expertise</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="trust-card p-30" style="background:#fff; border-radius:12px; box-shadow:0 2px 16px rgba(0,80,180,0.07); padding:28px 20px;">
+                            <div style="display:flex; justify-content:center; align-items:center; gap:4px; font-size:1.5rem; color:#f5a623; font-weight:800;">
+                                ★★★★★
+                            </div>
+                            <div style="font-size:0.97rem; color:#555; margin-top:6px;">Google Rated 5.0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-40 align-items-center justify-content-center g-3">
+                    <div class="col-auto">
+                        <div style="background:#fff; border-radius:10px; padding:14px 24px; box-shadow:0 1px 8px rgba(0,0,0,0.07); display:flex; align-items:center; gap:10px;">
+                            <span style="font-size:1.3rem;">🔒</span>
+                            <span style="font-size:0.93rem; color:#444;">100% Data Confidential</span>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div style="background:#fff; border-radius:10px; padding:14px 24px; box-shadow:0 1px 8px rgba(0,0,0,0.07); display:flex; align-items:center; gap:10px;">
+                            <span style="font-size:1.3rem;">⚡</span>
+                            <span style="font-size:0.93rem; color:#444;">Fast Turnaround Time</span>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div style="background:#fff; border-radius:10px; padding:14px 24px; box-shadow:0 1px 8px rgba(0,0,0,0.07); display:flex; align-items:center; gap:10px;">
+                            <span style="font-size:1.3rem;">✅</span>
+                            <span style="font-size:0.93rem; color:#444;">CA & CS Verified Services</span>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div style="background:#fff; border-radius:10px; padding:14px 24px; box-shadow:0 1px 8px rgba(0,0,0,0.07); display:flex; align-items:center; gap:10px;">
+                            <span style="font-size:1.3rem;">📞</span>
+                            <span style="font-size:0.93rem; color:#444;">Dedicated Account Manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 2. SECURITY / AUTHORITY SECTION ===== -->
+        <div class="security-area py-70" style="background:#fff;">
+            <div class="container">
+                <div class="row text-center mb-35">
+                    <div class="col-12">
+                        <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="trend" class="img-fluid"></i> Recognition & Trust</span>
+                        <h2 class="site-title mt-2">Authorised, Recognised & <span>Compliant</span></h2>
+                        <p style="color:#666; max-width:580px; margin:10px auto 0;">Our credentials and affiliations ensure that every service we deliver meets the highest standards of accuracy and legal compliance.</p>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div style="text-align:center; padding:20px 10px; border:1px solid #e8eef8; border-radius:10px; background:#fafcff;">
+                            <div style="font-size:2rem; margin-bottom:8px;">🏛️</div>
+                            <div style="font-size:0.83rem; font-weight:600; color:#333;">MCA Registered</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div style="text-align:center; padding:20px 10px; border:1px solid #e8eef8; border-radius:10px; background:#fafcff;">
+                            <div style="font-size:2rem; margin-bottom:8px;">📋</div>
+                            <div style="font-size:0.83rem; font-weight:600; color:#333;">GST Practitioner</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div style="text-align:center; padding:20px 10px; border:1px solid #e8eef8; border-radius:10px; background:#fafcff;">
+                            <div style="font-size:2rem; margin-bottom:8px;">⚖️</div>
+                            <div style="font-size:0.83rem; font-weight:600; color:#333;">ICAI Affiliated</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div style="text-align:center; padding:20px 10px; border:1px solid #e8eef8; border-radius:10px; background:#fafcff;">
+                            <div style="font-size:2rem; margin-bottom:8px;">🔐</div>
+                            <div style="font-size:0.83rem; font-weight:600; color:#333;">ISO Compliant Process</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div style="text-align:center; padding:20px 10px; border:1px solid #e8eef8; border-radius:10px; background:#fafcff;">
+                            <div style="font-size:2rem; margin-bottom:8px;">🌐</div>
+                            <div style="font-size:0.83rem; font-weight:600; color:#333;">MSME Registered</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div style="text-align:center; padding:20px 10px; border:1px solid #e8eef8; border-radius:10px; background:#fafcff;">
+                            <div style="font-size:2rem; margin-bottom:8px;">🛡️</div>
+                            <div style="font-size:0.83rem; font-weight:600; color:#333;">FSSAI Authorised</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 3. TESTIMONIALS SECTION ===== -->
+        <div class="testimonial-area py-100" style="background:#f0f6ff;">
+            <div class="container">
+                <div class="row text-center mb-40">
+                    <div class="col-12">
+                        <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="trend" class="img-fluid"></i> Testimonials</span>
+                        <h2 class="site-title mt-2">What Our <span>Clients Say</span></h2>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div style="background:#fff; border-radius:14px; padding:28px; box-shadow:0 2px 16px rgba(0,80,180,0.07); height:100%;">
+                            <div style="color:#f5a623; font-size:1.1rem; margin-bottom:12px;">★★★★★</div>
+                            <p style="color:#444; font-size:0.95rem; line-height:1.7; margin-bottom:18px;">"CAAFT handled our company registration and GST setup seamlessly. Their team was responsive, knowledgeable and made the entire process stress-free. Highly recommended for any new business!"</p>
+                            <div style="display:flex; align-items:center; gap:12px;">
+                                <div style="width:44px; height:44px; border-radius:50%; background:#0d6efd; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:1.1rem;">R</div>
+                                <div>
+                                    <div style="font-weight:700; color:#222; font-size:0.95rem;">Ramesh Kumar</div>
+                                    <div style="font-size:0.82rem; color:#888;">Director, Chennai-based Startup</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div style="background:#fff; border-radius:14px; padding:28px; box-shadow:0 2px 16px rgba(0,80,180,0.07); height:100%;">
+                            <div style="color:#f5a623; font-size:1.1rem; margin-bottom:12px;">★★★★★</div>
+                            <p style="color:#444; font-size:0.95rem; line-height:1.7; margin-bottom:18px;">"We've been with CAAFT for our annual ROC filings and income tax returns for 3 years. They are thorough, deadline-driven and always available to answer our queries. A true business partner."</p>
+                            <div style="display:flex; align-items:center; gap:12px;">
+                                <div style="width:44px; height:44px; border-radius:50%; background:#28a745; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:1.1rem;">P</div>
+                                <div>
+                                    <div style="font-weight:700; color:#222; font-size:0.95rem;">Priya Venkatesh</div>
+                                    <div style="font-size:0.82rem; color:#888;">CFO, Manufacturing Firm</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div style="background:#fff; border-radius:14px; padding:28px; box-shadow:0 2px 16px rgba(0,80,180,0.07); height:100%;">
+                            <div style="color:#f5a623; font-size:1.1rem; margin-bottom:12px;">★★★★★</div>
+                            <p style="color:#444; font-size:0.95rem; line-height:1.7; margin-bottom:18px;">"Outstanding support for our GST compliance and bookkeeping. CAAFT's team is proactive in alerting us to deadlines and regulatory changes. Our accounts have never been in better shape."</p>
+                            <div style="display:flex; align-items:center; gap:12px;">
+                                <div style="width:44px; height:44px; border-radius:50%; background:#fd7e14; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:1.1rem;">A</div>
+                                <div>
+                                    <div style="font-weight:700; color:#222; font-size:0.95rem;">Arjun Sharma</div>
+                                    <div style="font-size:0.82rem; color:#888;">Proprietor, Retail Business</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-40">
+                    <a href="contact.php#contact_us" class="theme-btn">Share Your Experience<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 4. PRICING PLANS SECTION ===== -->
+        <div class="pricing-area py-100" style="background:#fff;">
+            <div class="container">
+                <div class="row text-center mb-40">
+                    <div class="col-12">
+                        <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="trend" class="img-fluid"></i> Pricing Plans</span>
+                        <h2 class="site-title mt-2">Transparent <span>Service Packages</span></h2>
+                        <p style="color:#666; max-width:560px; margin:10px auto 0;">Choose a plan that fits your business size. All plans include dedicated support and guaranteed compliance.</p>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div style="border:2px solid #e0e8f8; border-radius:16px; padding:36px 28px; text-align:center; height:100%; transition:box-shadow 0.2s;">
+                            <div style="font-size:0.85rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:#0d6efd; margin-bottom:8px;">Starter</div>
+                            <div style="font-size:2.4rem; font-weight:800; color:#222;">₹4,999<span style="font-size:1rem; font-weight:400; color:#888;">/year</span></div>
+                            <p style="color:#777; font-size:0.9rem; margin:12px 0 24px;">Ideal for freelancers & sole proprietors</p>
+                            <ul style="list-style:none; padding:0; margin:0 0 28px; text-align:left;">
+                                <li style="padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:0.92rem; color:#444;"><span style="color:#28a745; margin-right:8px;">✓</span> ITR Filing (1 return)</li>
+                                <li style="padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:0.92rem; color:#444;"><span style="color:#28a745; margin-right:8px;">✓</span> GST Return Filing (Monthly)</li>
+                                <li style="padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:0.92rem; color:#444;"><span style="color:#28a745; margin-right:8px;">✓</span> Basic Bookkeeping</li>
+                                <li style="padding:8px 0; font-size:0.92rem; color:#bbb;"><span style="margin-right:8px;">✗</span> ROC / MCA Compliance</li>
+                            </ul>
+                            <a href="contact.php#contact_us" class="theme-btn theme-btn2" style="display:block; text-align:center;">Get Started<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div style="border:2px solid #0d6efd; border-radius:16px; padding:36px 28px; text-align:center; height:100%; background:#f0f6ff; position:relative; box-shadow:0 8px 32px rgba(13,110,253,0.12);">
+                            <div style="position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:#0d6efd; color:#fff; font-size:0.78rem; font-weight:700; padding:4px 18px; border-radius:20px; text-transform:uppercase; letter-spacing:1px;">Most Popular</div>
+                            <div style="font-size:0.85rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:#0d6efd; margin-bottom:8px;">Growth</div>
+                            <div style="font-size:2.4rem; font-weight:800; color:#222;">₹14,999<span style="font-size:1rem; font-weight:400; color:#888;">/year</span></div>
+                            <p style="color:#777; font-size:0.9rem; margin:12px 0 24px;">Perfect for small & growing businesses</p>
+                            <ul style="list-style:none; padding:0; margin:0 0 28px; text-align:left;">
+                                <li style="padding:8px 0; border-bottom:1px solid #d8e8ff; font-size:0.92rem; color:#444;"><span style="color:#28a745; margin-right:8px;">✓</span> ITR Filing (Company / Firm)</li>
+                                <li style="padding:8px 0; border-bottom:1px solid #d8e8ff; font-size:0.92rem; color:#444;"><span style="color:#28a745; margin-right:8px;">✓</span> GST Filing + Advisory</li>
+                                <li style="padding:8px 0; border-bottom:1px solid #d8e8ff; font-size:0.92rem; color:#444;"><span style="color:#28a745; margin-right:8px;">✓</span> Full Bookkeeping & Reports</li>
+                                <li style="padding:8px 0; font-size:0.92rem; color:#444;"><span style="color:#28a745; margin-right:8px;">✓</span> ROC Annual Compliance</li>
+                            </ul>
+                            <a href="contact.php#contact_us" class="theme-btn" style="display:block; text-align:center;">Get Started<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div style="border:2px solid #e0e8f8; border-radius:16px; padding:36px 28px; text-align:center; height:100%;">
+                            <div style="font-size:0.85rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:#0d6efd; margin-bottom:8px;">Enterprise</div>
+                            <div style="font-size:2.4rem; font-weight:800; color:#222;">Custom</div>
+                            <p style="color:#777; font-size:0.9rem; margin:12px 0 24px;">Tailored for mid-size & growing companies</p>
+                            <ul style="list-style:none; padding:0; margin:0 0 28px; text-align:left;">
+                                <li style="padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:0.92rem; color:#444;"><span style="color:#28a745; margin-right:8px;">✓</span> Everything in Growth</li>
+                                <li style="padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:0.92rem; color:#444;"><span style="color:#28a745; margin-right:8px;">✓</span> Virtual CFO Services</li>
+                                <li style="padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:0.92rem; color:#444;"><span style="color:#28a745; margin-right:8px;">✓</span> MIS & Financial Analysis</li>
+                                <li style="padding:8px 0; font-size:0.92rem; color:#444;"><span style="color:#28a745; margin-right:8px;">✓</span> Dedicated Account Manager</li>
+                            </ul>
+                            <a href="contact.php#contact_us" class="theme-btn theme-btn2" style="display:block; text-align:center;">Contact Us<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center mt-20" style="color:#999; font-size:0.85rem;">* Prices are indicative. Final pricing depends on scope. <a href="contact.php#contact_us" style="color:#0d6efd;">Get a custom quote →</a></p>
+            </div>
+        </div>
+
+        <!-- ===== 5. OUR ACHIEVEMENTS SECTION ===== -->
+        <div class="achievements-area py-100" style="background:linear-gradient(135deg, #0d2d6b 0%, #1a4fba 100%);">
+            <div class="container">
+                <div class="row text-center mb-40">
+                    <div class="col-12">
+                        <span class="site-title-tagline light" style="color:#a8c8ff;"><i><img src="assets/img/trend-img.webp" alt="trend" class="img-fluid"></i> Our Achievements</span>
+                        <h2 class="site-title mt-2" style="color:#fff;">Numbers That <span style="color:#64b5f6;">Speak For Us</span></h2>
+                    </div>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-6 col-md-3">
+                        <div style="padding:20px 10px;">
+                            <div style="font-size:2.8rem; font-weight:800; color:#fff; line-height:1;">500<span style="color:#64b5f6;">+</span></div>
+                            <div style="color:#a8c8ff; font-size:0.95rem; margin-top:8px;">Businesses Registered</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div style="padding:20px 10px;">
+                            <div style="font-size:2.8rem; font-weight:800; color:#fff; line-height:1;">2,000<span style="color:#64b5f6;">+</span></div>
+                            <div style="color:#a8c8ff; font-size:0.95rem; margin-top:8px;">ITR & GST Returns Filed</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div style="padding:20px 10px;">
+                            <div style="font-size:2.8rem; font-weight:800; color:#fff; line-height:1;">10<span style="color:#64b5f6;">+</span></div>
+                            <div style="color:#a8c8ff; font-size:0.95rem; margin-top:8px;">Years in Practice</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div style="padding:20px 10px;">
+                            <div style="font-size:2.8rem; font-weight:800; color:#fff; line-height:1;">15<span style="color:#64b5f6;">+</span></div>
+                            <div style="color:#a8c8ff; font-size:0.95rem; margin-top:8px;">Industries Served</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-50 g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div style="background:rgba(255,255,255,0.08); border-radius:14px; padding:24px; border:1px solid rgba(255,255,255,0.15);">
+                            <div style="font-size:1.6rem; margin-bottom:10px;">🏆</div>
+                            <h5 style="color:#fff; font-weight:700;">Top-Rated CA Firm in Chennai</h5>
+                            <p style="color:#a8c8ff; font-size:0.9rem; margin:0;">Consistently rated 5★ on Google by clients across Tamil Nadu.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div style="background:rgba(255,255,255,0.08); border-radius:14px; padding:24px; border:1px solid rgba(255,255,255,0.15);">
+                            <div style="font-size:1.6rem; margin-bottom:10px;">📈</div>
+                            <h5 style="color:#fff; font-weight:700;">Zero Penalty Track Record</h5>
+                            <p style="color:#a8c8ff; font-size:0.9rem; margin:0;">Our compliance-first approach means clients have never faced avoidable GST or MCA penalties.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div style="background:rgba(255,255,255,0.08); border-radius:14px; padding:24px; border:1px solid rgba(255,255,255,0.15);">
+                            <div style="font-size:1.6rem; margin-bottom:10px;">🤝</div>
+                            <h5 style="color:#fff; font-weight:700;">Long-Term Client Retention</h5>
+                            <p style="color:#a8c8ff; font-size:0.9rem; margin:0;">Over 80% of our clients have been with us for 3+ years — a testament to trust and results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 6. TEAM / FOUNDER SECTION ===== -->
+        <div class="team-area py-100" style="background:#fff;">
+            <div class="container">
+                <div class="row text-center mb-40">
+                    <div class="col-12">
+                        <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="trend" class="img-fluid"></i> Meet The Team</span>
+                        <h2 class="site-title mt-2">The Experts <span>Behind CAAFT</span></h2>
+                        <p style="color:#666; max-width:560px; margin:10px auto 0;">People trust people. Our leadership team brings decades of combined experience in accounting, taxation, and business advisory.</p>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div style="text-align:center; border:1px solid #e8eef8; border-radius:16px; padding:36px 24px; transition:box-shadow 0.2s; background:#fafcff;">
+                            <div style="width:90px; height:90px; border-radius:50%; background:linear-gradient(135deg,#0d6efd,#1a4fba); display:flex; align-items:center; justify-content:center; font-size:2rem; font-weight:800; color:#fff; margin:0 auto 20px;">C</div>
+                            <h4 style="font-weight:700; color:#222; margin-bottom:4px;">Founder & Managing Director</h4>
+                            <div style="font-size:0.88rem; color:#0d6efd; font-weight:600; margin-bottom:14px;">CAAFT Consultancy Services Pvt. Ltd.</div>
+                            <p style="font-size:0.9rem; color:#666; line-height:1.65;">Chartered Accountant with 10+ years of experience in corporate taxation, business structuring, and compliance advisory. Passionate about helping businesses grow with clarity and confidence.</p>
+                            <div style="margin-top:16px; display:flex; justify-content:center; gap:10px;">
+                                <a href="about.php" style="font-size:0.85rem; color:#0d6efd; font-weight:600;">Read Full Story →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div style="text-align:center; border:1px solid #e8eef8; border-radius:16px; padding:36px 24px; transition:box-shadow 0.2s; background:#fafcff;">
+                            <div style="width:90px; height:90px; border-radius:50%; background:linear-gradient(135deg,#28a745,#1a7a32); display:flex; align-items:center; justify-content:center; font-size:2rem; font-weight:800; color:#fff; margin:0 auto 20px;">T</div>
+                            <h4 style="font-weight:700; color:#222; margin-bottom:4px;">Head of Taxation</h4>
+                            <div style="font-size:0.88rem; color:#0d6efd; font-weight:600; margin-bottom:14px;">Income Tax & GST Division</div>
+                            <p style="font-size:0.9rem; color:#666; line-height:1.65;">Specialist in GST advisory, income tax litigation, and tax planning strategies. Known for translating complex tax law into practical, cost-saving decisions for clients.</p>
+                            <div style="margin-top:16px; display:flex; justify-content:center; gap:10px;">
+                                <a href="about.php" style="font-size:0.85rem; color:#0d6efd; font-weight:600;">Read Full Story →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div style="text-align:center; border:1px solid #e8eef8; border-radius:16px; padding:36px 24px; transition:box-shadow 0.2s; background:#fafcff;">
+                            <div style="width:90px; height:90px; border-radius:50%; background:linear-gradient(135deg,#fd7e14,#c85c00); display:flex; align-items:center; justify-content:center; font-size:2rem; font-weight:800; color:#fff; margin:0 auto 20px;">C</div>
+                            <h4 style="font-weight:700; color:#222; margin-bottom:4px;">Head of Compliance</h4>
+                            <div style="font-size:0.88rem; color:#0d6efd; font-weight:600; margin-bottom:14px;">ROC & Regulatory Services</div>
+                            <p style="font-size:0.9rem; color:#666; line-height:1.65;">Company Secretary with expertise in ROC filings, MCA compliance, and corporate governance. Ensures all clients remain legally compliant without operational disruption.</p>
+                            <div style="margin-top:16px; display:flex; justify-content:center; gap:10px;">
+                                <a href="about.php" style="font-size:0.85rem; color:#0d6efd; font-weight:600;">Read Full Story →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-40">
+                    <a href="about.php" class="theme-btn theme-btn2">Meet The Full Team<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <?php include "footer.php";?>

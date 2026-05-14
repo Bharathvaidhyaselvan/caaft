@@ -853,6 +853,7 @@
         <?php
         $why_choose_caaft_heading_id = 'tax-plan-why';
         $why_choose_caaft_title = 'Why Choose CAAFT';
+         $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate income tax return filing, timely compliance, and dependable tax support tailored to their financial needs.';
         $why_choose_caaft_show_intro = true;
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [

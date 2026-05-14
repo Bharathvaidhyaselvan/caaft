@@ -208,7 +208,7 @@ include __DIR__ . '/../../includes/components/caaft-benefits.php';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = '';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for strategic CFO and advisory services, insightful financial guidance, and dependable support that drives sustainable business growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
         ['icon_class' => 'fas fa-database', 'title' => 'Data-driven planning — not guesswork', 'text' => 'CAAFT builds budgets and forecasts grounded in actual financial data, industry benchmarks, and business objectives — delivering a reliable, realistic financial roadmap that supports confident decision-making at every level.'],

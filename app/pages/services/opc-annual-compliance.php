@@ -171,20 +171,20 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
-    <?php
-    $caaft_steps_heading_id = 'opc-delivered-heading';
-    $caaft_steps_title = 'OPC Annual Compliance Services — What Gets Delivered';
-    $caaft_steps_numbered = true;
-    $caaft_steps_items = [
-        ['title' => 'Financial Statement Preparation', 'text' => 'Accurate financial statements prepared at the end of each financial year — including Balance Sheet, Profit and Loss Statement, Cash Flow Statement (where applicable), and Director\'s Report — ready for MCA filing and audit.'],
-        ['title' => 'AOC-4 Filing — Financial Statements with ROC', 'text' => 'Financial statements filed with the MCA within 180 days from the end of the financial year — ensuring the OPC\'s financial records are accurately submitted and available for regulatory review.'],
-        ['title' => 'MGT-7A Filing — Annual Return', 'text' => 'Annual Return filed within 60 days from the AOC-4 due date — covering director details, company activities, and other statutory information required by the MCA.'],
-        ['title' => 'Income Tax Return Filing', 'text' => 'Corporate income tax return filed by 31 October — covering business income, expenses, deductions, and applicable corporate tax — with proper accounting records maintained throughout the year.'],
-        ['title' => 'Director KYC — DIR-3 KYC', 'text' => 'Annual KYC filing completed for the director by 30 September — maintaining an active DIN and ensuring all personal and contact details remain current in the MCA database.'],
-        ['title' => 'Board Resolution and Documentation', 'text' => 'Board resolutions, director decisions, compliance records, and statutory registers prepared and maintained — ensuring proper corporate documentation for regulatory reviews and financial audits.'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
-    ?>
+        <?php
+        $caaft_delivered_heading_id = '';
+        $caaft_delivered_title = 'OPC Annual Compliance Services — What Gets Delivered';
+        $caaft_delivered_items = [
+            ['name' => 'Financial Statement Preparation', 'text' => 'Accurate financial statements prepared at the end of each financial year — including Balance Sheet, Profit and Loss Statement, Cash Flow Statement (where applicable), and Director\'s Report — ready for MCA filing and audit.'],
+            ['name' => 'AOC-4 Filing — Financial Statements with ROC', 'text' => 'Financial statements filed with the MCA within 180 days from the end of the financial year — ensuring the OPC\'s financial records are accurately submitted and available for regulatory review.'],
+            ['name' => 'MGT-7A Filing — Annual Return', 'text' => 'Annual Return filed within 60 days from the AOC-4 due date — covering director details, company activities, and other statutory information required by the MCA.'],
+            ['name' => 'Income Tax Return Filing', 'text' => 'Corporate income tax return filed by 31 October — covering business income, expenses, deductions, and applicable corporate tax — with proper accounting records maintained throughout the year.'],
+            ['name' => 'Director KYC — DIR-3 KYC', 'text' => 'Annual KYC filing completed for the director by 30 September — maintaining an active DIN and ensuring all personal and contact details remain current in the MCA database.'],
+            ['name' => 'Board Resolution and Documentation', 'text' => 'Board resolutions, director decisions, compliance records, and statutory registers prepared and maintained — ensuring proper corporate documentation for regulatory reviews and financial audits'],
+        ];
+        include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
+        ?>
+   
 
     <section class="llp-vs-section" aria-labelledby="opc-due-dates-heading">
         <div class="container">

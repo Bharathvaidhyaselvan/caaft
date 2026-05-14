@@ -397,7 +397,7 @@ Market analysis covers:';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = '';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for strategic CFO and advisory services, insightful financial guidance, and dependable support that drives sustainable business growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
         ['icon_class' => 'fas fa-user-graduate', 'title' => 'CA-led advisory', 'text' => 'Every feasibility engagement is guided by qualified Chartered Accountants — ensuring financial analysis meets the standards expected by banks, auditors, and regulatory bodies.'],

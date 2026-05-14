@@ -270,7 +270,7 @@ declare(strict_types=1);
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
     $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = '';
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for strategic CFO and advisory services, insightful financial guidance, and dependable support that drives sustainable business growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
         ['icon_class' => 'fas fa-certificate', 'title' => 'IBBI-Registered Valuers', 'text' => ' Every CAAFT valuation report is prepared by Registered Valuers certified under IBBI — ensuring every report is legally valid, court-admissible, and accepted by MCA, SEBI, and the Income Tax Department.'],
