@@ -1,41 +1,82 @@
 <meta name="google-site-verification" content="MJT4gBxcLeTzhaKPpQm-4yphgWGBiS_IS_vwJNjtzzA" />
 <base href="/" />
-  <link rel="icon" type="image/x-icon" href="assets/img/caaft-icon.webp">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Roboto:wght@100;300;400;500;700;900&display=swap">
+<link rel="icon" type="image/x-icon" href="assets/img/caaft-icon.webp">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/animation.min.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/nice-select.min.css">
-    <?php $caaft_style_version = @filemtime(__DIR__ . '/../../assets/css/style.css') ?: time(); ?>
-    <link rel="stylesheet" href="assets/css/style.css?v=<?php echo htmlspecialchars((string) $caaft_style_version, ENT_QUOTES, 'UTF-8'); ?>">
-     <link rel="stylesheet" href="assets/css/easy-responsive-tabs.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16913150504"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<?php
+$styleVersion = caaft_asset_version('assets/css/style.css');
+$features = caaft_page_features();
+if ($features['home']) {
+    echo '<link rel="preload" as="image" href="assets/img/support-slider-banner.webp" fetchpriority="high">' . "\n";
+}
+?>
 
-  gtag('config', 'AW-16913150504');
-</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"></noscript>
 
-<script>
-  gtag('config', 'G-T71VJ6VCZR');
-</script>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css?v=<?php echo caaft_asset_version('assets/css/bootstrap.min.css'); ?>">
+<link rel="stylesheet" href="assets/css/style.css?v=<?php echo htmlspecialchars($styleVersion, ENT_QUOTES, 'UTF-8'); ?>">
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KQ559WPT');</script>
-<!-- End Google Tag Manager -->
- <!-- Event snippet for Submit lead form conversion page --> <script> gtag('event', 'conversion', { 'send_to': 'AW-16913150504/bku6CITDpacaEKjk6IA_', 'value': 1.0, 'currency': 'INR' }); </script>  
+<?php
+caaft_defer_stylesheet('assets/css/all-fontawesome.min.css?v=' . caaft_asset_version('assets/css/all-fontawesome.min.css'));
+if ($features['carousel']) {
+    caaft_defer_stylesheet('assets/css/owl.carousel.min.css?v=' . caaft_asset_version('assets/css/owl.carousel.min.css'));
+    caaft_defer_stylesheet('assets/css/animate.min.css?v=' . caaft_asset_version('assets/css/animate.min.css'));
+    caaft_defer_stylesheet('assets/css/animation.min.css?v=' . caaft_asset_version('assets/css/animation.min.css'));
+}
+caaft_defer_stylesheet('assets/css/aos.css?v=' . caaft_asset_version('assets/css/aos.css'));
+if ($features['gallery']) {
+    caaft_defer_stylesheet('assets/css/magnific-popup.min.css?v=' . caaft_asset_version('assets/css/magnific-popup.min.css'));
+}
+caaft_defer_stylesheet('assets/css/nice-select.min.css?v=' . caaft_asset_version('assets/css/nice-select.min.css'));
+if ($features['tabs']) {
+    caaft_defer_stylesheet('assets/css/easy-responsive-tabs.css?v=' . caaft_asset_version('assets/css/easy-responsive-tabs.css'));
+}
+?>
+
+<style>
+/* Reserve logo space without distorting aspect ratio (source logos are ~1510×1333) */
+.navbar-brand img,
+.navbar-brand img.img-fluid {
+  width: auto !important;
+  max-width: 150px;
+  height: auto !important;
+  max-height: 120px;
+  object-fit: contain;
+}
+.navbar.fixed-top .navbar-brand.fixed_logo img {
+  max-width: 160px;
+  max-height: 50px;
+}
+.hero-img img { width: 100%; height: auto; aspect-ratio: 600 / 500; object-fit: contain; }
+<?php if ($features['home']) : ?>
+/* Owl hides .owl-carousel until .owl-loaded; show first slide until JS runs */
+.home-3 .hero-slider.owl-carousel:not(.owl-loaded) {
+  display: block !important;
+}
+.home-3 .hero-slider.owl-carousel:not(.owl-loaded) > .hero-single {
+  display: none;
+}
+.home-3 .hero-slider.owl-carousel:not(.owl-loaded) > .hero-single:first-child,
+.home-3 .hero-slider.hero-slider-fallback > .hero-single:first-child {
+  display: flex !important;
+}
+.home-3 .hero-slider .hero-img-wrap.wow {
+  visibility: visible !important;
+}
+.home-3 .hs-3 {
+  margin-top: 0;
+  padding-top: 0.5rem;
+}
+<?php endif; ?>
+body.navbar-is-sticky {
+  padding-top: var(--caaft-navbar-height, 72px);
+}
+@media (max-width: 991px) {
+  .navbar-brand img { max-width: 130px; max-height: 100px; }
+  .navbar.fixed-top .navbar-brand.fixed_logo img { max-width: 140px; max-height: 44px; }
+  body.navbar-is-sticky { padding-top: var(--caaft-navbar-height, 64px); }
+}
+</style>

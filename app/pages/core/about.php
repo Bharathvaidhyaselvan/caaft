@@ -26,10 +26,7 @@
 </head>
 
 <body class="home-3">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<?php include dirname(__DIR__, 2) . '/includes/gtm-noscript.php'; ?>
 <!--<div class="preloader">
         <div class="loader-ripple">
             <div>

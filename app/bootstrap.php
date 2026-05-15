@@ -13,6 +13,8 @@ if (!isset($GLOBALS['appSeoConfig'])) {
     $GLOBALS['appSeoConfig'] = require APP_ROOT . '/config/seo.php';
 }
 
+require_once APP_ROOT . '/includes/perf-assets.php';
+
 if (!function_exists('canonical_url')) {
     function canonical_url(string $fallback): string
     {

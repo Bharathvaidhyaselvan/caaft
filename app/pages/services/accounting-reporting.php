@@ -143,8 +143,7 @@
 </head>
 
 <body class="home-3 page-accounting-reporting">
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<?php include dirname(__DIR__, 2) . '/includes/gtm-noscript.php'; ?>
 
     <div class="header-sections">
         <?php include "header.php"; ?>

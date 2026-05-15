@@ -30,8 +30,11 @@ $pageRoutes = require APP_ROOT . '/config/page-routes.php';
 $allRoutes = $serviceRoutes + $pageRoutes;
 
 if ($requestedRoute !== '' && isset($allRoutes[$requestedRoute])) {
-    include APP_ROOT . '/' . $allRoutes[$requestedRoute];
+    $targetFile = $allRoutes[$requestedRoute];
+    $GLOBALS['caaft_active_page'] = basename($targetFile, '.php');
+    include APP_ROOT . '/' . $targetFile;
     return;
 }
 
+$GLOBALS['caaft_active_page'] = 'index';
 include APP_ROOT . '/pages/core/index.php';

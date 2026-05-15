@@ -1,5 +1,6 @@
 <?php
 $activePage = basename($_SERVER['PHP_SELF'], ".php");
+$GLOBALS['caaft_active_page'] = $activePage;
 
 // Helper: check if current page matches any of the given slugs
 function isServiceActive($activePage, $slugs) {
@@ -163,18 +164,21 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         letter-spacing: inherit;
         line-height: inherit;
         cursor: pointer;
-        transition: color 0.2s ease, text-decoration 0.2s ease;
+        transition: color 0.2s ease;
     }
 
     .mm-tab-link:hover,
     .mm-tab-link:focus-visible {
         color: #33b6ff;
-        text-decoration: underline;
+        text-decoration: none;
         outline: none;
     }
 
-    .mm-tab.is-active .mm-tab-link {
+    .mm-tab.is-active .mm-tab-link,
+    .mm-tab.is-active .mm-tab-link:hover,
+    .mm-tab.is-active .mm-tab-link:focus-visible {
         color: #33b6ff;
+        text-decoration: none;
     }
 
     .mm-tab-icon {
@@ -337,19 +341,19 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         <nav class="navbar navbar-expand-lg">
             <div class="container position-relative">
 
-                <a class="navbar-brand static-logo" id="manimaenu" href="https://caaft.builtbybrevia.com/">
-                    <img src="assets/img/caaft-logo-header.webp" alt="CAAFT Consultancy Services" class="img-fluid">
+                    <a class="navbar-brand static-logo" id="manimaenu" href="https://caaft.builtbybrevia.com/">
+                    <img src="assets/img/caaft-logo-header.webp" alt="CAAFT Consultancy Services" class="img-fluid" width="150" height="132" decoding="async">
                 </a>
                 <a class="navbar-brand reaming-logo" id="submenu" href="https://caaft.builtbybrevia.com/">
-                    <img src="assets/img/caaft-static-logo.webp" alt="CAAFT Consultancy Services" class="img-fluid">
+                    <img src="assets/img/caaft-static-logo.webp" alt="CAAFT Consultancy Services" class="img-fluid" width="150" height="132" decoding="async">
                 </a>
                 <a class="navbar-brand fixed_logo" href="https://caaft.builtbybrevia.com/">
-                    <img src="assets/img/static-logos.webp" alt="CAAFT Consultancy Services" class="img-fluid">
+                    <img src="assets/img/static-logos.webp" alt="CAAFT Consultancy Services" class="img-fluid" width="160" height="62" decoding="async">
                 </a>
 
                 <div class="mobile-menu-right">
                     <div class="search-btn">
-                        <button type="button" class="nav-right-link search-box-outer"><i class="far fa-search"></i></button>
+                        <button type="button" class="nav-right-link search-box-outer" aria-label="Open search"><i class="far fa-search" aria-hidden="true"></i></button>
                     </div>
                     <a href="https://api.whatsapp.com/send?phone=918870078870" class="text-center" target="_blank">
                         <img src="assets/img/whatsapp-icon.webp" width="50" height="50" alt="Whatsapp">
@@ -359,7 +363,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
+                        <span class="navbar-toggler-mobile-icon"><i class="far fa-bars" aria-hidden="true"></i></span>
                     </button>
                 </div>
 

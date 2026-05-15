@@ -137,9 +137,7 @@
 
 <body class="home-3">
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ559WPT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<?php include dirname(__DIR__, 2) . '/includes/gtm-noscript.php'; ?>
 <!--<div class="preloader">
         <div class="loader-ripple">
             <div>
@@ -154,11 +152,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <div class="search-popup">
-        <button class="close-search"><span class="far fa-times"></span></button>
+        <button type="button" class="close-search" aria-label="Close search"><span class="far fa-times" aria-hidden="true"></span></button>
         <form action="#">
             <div class="form-group">
                 <input type="search" name="search-field" class="form-control" placeholder="Search Here..." required>
-                <button type="submit"><i class="far fa-search"></i></button>
+                <button type="submit" aria-label="Submit search"><i class="far fa-search" aria-hidden="true"></i></button>
             </div>
         </form>
     </div>
@@ -185,7 +183,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="order-1s col-md-12 col-lg-6">
                             <div class="hero-img-wrap wow fadeInRight" data-wow-delay=".50s">
                                 <div class="hero-img">
-                                    <img src="assets/img/support-slider-banner.webp" class="img-fluid" alt="Business Consultancy Services" title="Business Consultancy Services">
+                                    <img src="assets/img/support-slider-banner.webp" class="img-fluid" alt="Business Consultancy Services" title="Business Consultancy Services" width="600" height="500" fetchpriority="high" decoding="async">
                                 </div>
                             </div>
                         </div>
@@ -212,7 +210,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="order-1s col-md-12 col-lg-6">
                             <div class="hero-img-wrap wow fadeInRight" data-wow-delay=".50s">
                                 <div class="hero-img">
-                                    <img src="assets/img/provide-slider-banner.webp" class="img-fluid" alt="Business Consultancy Services" title="Business Consultancy Services">
+                                    <img src="assets/img/provide-slider-banner.webp" class="img-fluid" alt="Business Consultancy Services" title="Business Consultancy Services" width="600" height="500" loading="lazy" decoding="async">
                                 </div>
                             </div>
                         </div>
