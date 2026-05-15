@@ -90,7 +90,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         z-index: 201;
         padding: 0;
         overflow: hidden;
-        min-height: 380px;
+        min-height: 420px;
         max-height: min(72vh, 520px);
         opacity: 0;
         visibility: hidden;
@@ -99,7 +99,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
     }
 
     .nav-item.mega-services-item.is-open .mega-menu-new {
-        display: flex;
+        display: block;
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -116,111 +116,74 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
     }
 
-    .mm-tabs {
-        display: flex;
-        flex-direction: column;
-        flex: 0 0 300px;
-        max-width: 300px;
-        background: rgba(0, 0, 0, 0.5);
-        border-right: 1px solid rgba(51, 182, 255, 0.22);
-        padding: 10px 0;
+    .mm-panels {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto auto;
+        gap: 0;
+        padding: 0;
+        overflow-y: auto;
+        max-height: min(78vh, 560px);
+        background: transparent;
     }
 
-    .mm-tab {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        width: 100%;
-        padding: 14px 18px 14px 20px;
-        color: rgba(245, 250, 255, 0.78);
+    .mm-column {
+        padding: 22px 24px 26px;
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .mm-column--business { grid-column: 1 / 4; grid-row: 1; }
+    .mm-column--compliance { grid-column: 4 / 7; grid-row: 1; border-right: 0; }
+    .mm-column--taxation { grid-column: 1 / 3; grid-row: 2; }
+    .mm-column--accounting { grid-column: 3 / 5; grid-row: 2; }
+    .mm-column--advisory { grid-column: 5 / 7; grid-row: 2; border-right: 0; border-bottom: 0; }
+    .mm-column--taxation,
+    .mm-column--accounting { border-bottom: 0; }
+
+    .mm-section-title {
         font-family: var(--heading-font, "Plus Jakarta Sans", sans-serif);
         font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.04em;
+        font-weight: 800;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
-        text-align: left;
-        cursor: pointer;
-        border: 0;
-        border-left: 3px solid transparent;
-        background: transparent;
-        transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-        white-space: normal;
+        color: #33b6ff;
+        margin: 0 0 16px;
+        padding: 0 0 10px;
+        border-bottom: 1px solid rgba(51, 182, 255, 0.35);
+        line-height: 1.3;
+    }
+
+    .mm-column-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 28px;
+    }
+
+    .mm-column--accounting .mm-column-body,
+    .mm-column--advisory .mm-column-body {
+        display: block;
+        grid-template-columns: none;
+    }
+
+    .mm-subtitle {
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 10px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
         line-height: 1.35;
     }
 
-    .mm-tab:hover,
-    .mm-tab.is-active {
-        color: #33b6ff;
-        background: rgba(51, 182, 255, 0.1);
-        border-left-color: #33b6ff;
-    }
-
-    .mm-tab-icon {
-        flex-shrink: 0;
-        width: 22px;
-        text-align: center;
-    }
-
-    .mm-tab svg {
-        width: 18px;
-        height: 18px;
-        fill: currentColor;
-        opacity: 0.85;
-    }
-
-    .mm-tab-label {
-        flex: 1;
-        min-width: 0;
-    }
-
-    .mm-tab-chevron {
-        flex-shrink: 0;
-        font-size: 11px;
-        opacity: 0.55;
-        color: currentColor;
-    }
-
-    .mm-tab.is-active .mm-tab-chevron {
-        opacity: 1;
-    }
-
-    .mm-panels {
-        flex: 1;
-        padding: 28px 36px 32px;
-        overflow-y: auto;
-        max-height: min(72vh, 520px);
-        background: transparent;
-    }
-
-    .mm-panel {
-        display: none;
-        animation: mmFadeIn 0.22s ease;
-    }
-
-    .mm-panel.is-active {
-        display: grid;
-    }
-
-    @keyframes mmFadeIn {
-        from { opacity: 0; transform: translateY(6px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    .mm-panel--accounting { grid-template-columns: 1fr; }
-    .mm-panel--taxation { grid-template-columns: 1fr 1fr; gap: 28px; }
-    .mm-panel--business { grid-template-columns: 1fr 1fr; gap: 28px; }
-    .mm-panel--compliance { grid-template-columns: 1fr 1fr; gap: 28px; }
-    .mm-panel--advisory { grid-template-columns: 1fr; }
-
     .mm-group-title {
-        font-size: 11px;
-        font-weight: 800;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #33b6ff;
-        margin-bottom: 12px;
-        padding-bottom: 8px;
-        border-bottom: 1px solid rgba(51, 182, 255, 0.35);
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 10px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+        line-height: 1.35;
     }
 
     .mm-links {
@@ -248,32 +211,10 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         padding-left: 16px;
     }
 
-    .mm-grid-flat {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 10px 24px;
-        margin-top: 4px;
-    }
-
-    .mm-grid-flat a {
-        display: block;
-        font-size: 13px;
-        font-weight: 500;
-        color: rgba(245, 250, 255, 0.82);
-        padding: 8px 10px 8px 12px;
-        border-left: 2px solid transparent;
-        border-radius: 0 4px 4px 0;
-        transition: color 0.15s, border-color 0.15s, padding-left 0.15s, background 0.15s;
-        text-decoration: none;
-        line-height: 1.4;
-    }
-
-    .mm-grid-flat a:hover,
-    .mm-grid-flat a:focus-visible {
-        color: #fff;
-        border-left-color: var(--theme-color, #33b6ff);
-        background: rgba(51, 182, 255, 0.08);
-        padding-left: 16px;
+    .mm-list-flat {
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -357,8 +298,9 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                             <a class="nav-link <?= ($activePage == 'about') ? 'active' : ''; ?>" href="about.php">About Us</a>
                         </li>
 
+
                         <!-- ═══════════════════════════════════════════════════════════
-                             DESKTOP MEGA MENU — 5-tab tabbed layout
+                             DESKTOP MEGA MENU — grid layout (all sections visible)
                         ════════════════════════════════════════════════════════════ -->
                         <li class="nav-item dispaly_desktop mega-services-item">
                             <a class="nav-link mega-services-trigger <?= $servicesActive; ?>" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="mega-services-trigger">
@@ -366,156 +308,122 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                             </a>
 
                             <div class="mega-menu-new" role="navigation" aria-label="Services mega menu" aria-labelledby="mega-services-trigger">
-
-                                <!-- ── LEFT: Tab strip ── -->
-                                <div class="mm-tabs" role="tablist">
-
-                                    <button type="button" class="mm-tab is-active" data-panel="business" role="tab" aria-selected="true">
-                                        <span class="mm-tab-icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L2 12h3v8h6v-5h2v5h6v-8h3L12 3zm0 2.7L19 12h-1v7h-4v-5H10v5H6v-7H5l7-6.3z"/></svg>
-                                        </span>
-                                        <span class="mm-tab-label">Business Setup &amp; Registration</span>
-                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
-                                    </button>
-
-                                    <button type="button" class="mm-tab" data-panel="compliance" role="tab" aria-selected="false">
-                                        <span class="mm-tab-icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L3 6v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6l-9-4zm-1 14l-3-3 1.41-1.41L11 13.17l4.59-4.58L17 10l-6 6z"/></svg>
-                                        </span>
-                                        <span class="mm-tab-label">Compliance &amp; Regulatory</span>
-                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
-                                    </button>
-
-                                    <button type="button" class="mm-tab" data-panel="taxation" role="tab" aria-selected="false">
-                                        <span class="mm-tab-icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM9 13h2v2H9v-2zm4 0h2v2h-2v-2zm-4 4h2v2H9v-2zm4 0h2v2h-2v-2z"/></svg>
-                                        </span>
-                                        <span class="mm-tab-label">Taxation</span>
-                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
-                                    </button>
-
-                                    <button type="button" class="mm-tab" data-panel="accounting" role="tab" aria-selected="false">
-                                        <span class="mm-tab-icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 3h5v2h-5V6zm0 4h5v2h-5v-2zm-5-4h3v6H7V6zm0 8h10v2H7v-2zm0 4h10v2H7v-2z"/></svg>
-                                        </span>
-                                        <span class="mm-tab-label">Accounting &amp; Reporting</span>
-                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
-                                    </button>
-
-                                    <button type="button" class="mm-tab" data-panel="advisory" role="tab" aria-selected="false">
-                                        <span class="mm-tab-icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 13h2v7H3v-7zm4-6h2v13H7V7zm4-4h2v17h-2V3zm4 7h2v10h-2V10zm4-3h2v13h-2V7z"/></svg>
-                                        </span>
-                                        <span class="mm-tab-label">Advisory &amp; CFO Services</span>
-                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
-                                    </button>
-
-                                </div><!-- /mm-tabs -->
-
-                                <!-- ── RIGHT: Panels ── -->
                                 <div class="mm-panels">
 
-                                    <!-- ① ACCOUNTING & REPORTING -->
-                                    <div class="mm-panel mm-panel--accounting" id="panel-accounting" role="tabpanel">
-                                        <div class="mm-group-title">Accounting & Reporting Services</div>
-                                        <div class="mm-grid-flat">
-                                            <a href="/accounting-and-reporting/bookkeeping-and-accounting">General Accounting &amp; Bookkeeping</a>
-                                            <a href="/accounting-and-reporting/financial-analysis-mis">Financial Analysis &amp; MIS Reporting</a>
-                                            <a href="/accounting-and-reporting/financial-statement-analysis">Financial Statements</a>
-                                            <a href="/accounting-and-reporting/accounts-receivable-payable-service">Receivable &amp; Payable Management</a>
+                                    <!-- ① BUSINESS SETUP & REGISTRATION -->
+                                    <section class="mm-column mm-column--business" aria-labelledby="mm-title-business">
+                                        <h3 class="mm-section-title" id="mm-title-business">Business Setup &amp; Registration</h3>
+                                        <div class="mm-column-body">
+                                            <div>
+                                                <h4 class="mm-subtitle">Company Incorporation</h4>
+                                                <ul class="mm-links">
+                                                    <li><a href="/private-limited-company-registration">Private Limited Company</a></li>
+                                                    <li><a href="/public-limited-company-registration">Public Limited Company</a></li>
+                                                    <li><a href="/one-person-company-registration">One Person Company (OPC)</a></li>
+                                                    <li><a href="/llp-registration-services">Limited Liability Partnership (LLP)</a></li>
+                                                    <li><a href="/register-partnership-firm">Partnership Firm</a></li>
+                                                    <li><a href="/register-sole-proprietorship">Sole Proprietorship</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h4 class="mm-subtitle">Other Registrations</h4>
+                                                <ul class="mm-links">
+                                                    <li><a href="/msme-udyam-registration">MSME / Udyam Registration</a></li>
+                                                    <li><a href="/fssai-food-licence-india">FSSAI Registration</a></li>
+                                                    <li><a href="/professional-tax-return-filing">Professional Tax Registration</a></li>
+                                                    <li><a href="/epf-esi-registration-compliance">EPF &amp; ESI Registration &amp; Compliance</a></li>
+                                                    <li><a href="/iec-registration">Import Export Code (IEC)</a></li>
+                                                    <li><a href="/digital-signature-certificate-registration">Digital Signature Certificate (DSC)</a></li>
+                                                    <li><a href="/12a-80g-registration">12A &amp; 80G Registration</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </section>
 
-                                    <!-- ② TAXATION -->
-                                    <div class="mm-panel mm-panel--taxation" id="panel-taxation" role="tabpanel">
-                                        <div>
-                                            <div class="mm-group-title">Income Tax</div>
-                                            <ul class="mm-links">
-                                                <li><a href="/income-tax/income-tax-filing-service">Income Tax Return (ITR) Filing</a></li>
-                                                <li><a href="/income-tax/tds-return-filing-services">TDS Return Filing</a></li>
-                                                <li><a href="/income-tax/tax-audit">Tax Audit Assistance</a></li>
-                                                <li><a href="/income-tax/tax-planning-services">Tax Planning &amp; Advisory</a></li>
-                                                <li><a href="/income-tax/income-tax-appeal-services">Tax Assessment &amp; Appeal Support</a></li>
-                                            </ul>
+                                    <!-- ② COMPLIANCE & REGULATORY -->
+                                    <section class="mm-column mm-column--compliance" aria-labelledby="mm-title-compliance">
+                                        <h3 class="mm-section-title" id="mm-title-compliance">Compliance &amp; Regulatory</h3>
+                                        <div class="mm-column-body">
+                                            <div>
+                                                <h4 class="mm-subtitle">Company Compliance</h4>
+                                                <ul class="mm-links">
+                                                    <li><a href="/private-company-compliance">Private Limited Compliance</a></li>
+                                                    <li><a href="/llp-annual-compliance">Limited Liability Partnership (LLP) Compliance</a></li>
+                                                    <li><a href="/opc-annual-compliance">One Person Company (OPC) Compliance</a></li>
+                                                    <li><a href="/partnership-firm-compliance">Partnership Firm Compliance</a></li>
+                                                    <li><a href="/sole-proprietorship-compliance">Sole Proprietorship Compliance</a></li>
+                                                    <li><a href="/public-ltd-compliance">Public Limited Compliance</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h4 class="mm-subtitle">ROC Compliance</h4>
+                                                <ul class="mm-links">
+                                                    <li><a href="/din-kyc-filing">Director KYC (DIR-3 KYC Filing)</a></li>
+                                                    <li><a href="/add-remove-director-service">Add / Remove Director</a></li>
+                                                    <li><a href="/increase-authorised-share-capital">Increase in Authorized Capital</a></li>
+                                                    <li><a href="/registered-office-change-india">Registered Office Change</a></li>
+                                                    <li><a href="/roc-compliance-filing">Miscellaneous ROC Filings</a></li>
+                                                    <li><a href="/winding-up-of-company">Company Closure / Winding Up</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <div class="mm-group-title">Goods &amp; Services Tax (GST)</div>
-                                            <ul class="mm-links">
-                                                <li><a href="/gst/gst-registration">GST Registration</a></li>
-                                                <li><a href="/gst/gst-return-filing-services">GST Returns Filing</a></li>
-                                                <li><a href="/gst/gst-lut-filing">GST LUT Filing</a></li>
-                                                <li><a href="/gst/gst-cancellation-services">GST Registration Cancellation</a></li>
-                                                <li><a href="/gst/gst-advisory">GST Advisory &amp; Compliance</a></li>
-                                                <li><a href="/gst/gst-assessment-appeal-services">GST Assessment &amp; Appeal Support</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    </section>
 
-                                    <!-- ③ BUSINESS SETUP & REGISTRATION -->
-                                    <div class="mm-panel mm-panel--business is-active" id="panel-business" role="tabpanel">
-                                        <div>
-                                            <div class="mm-group-title">Company Incorporation</div>
-                                            <ul class="mm-links">
-                                                <li><a href="/private-limited-company-registration">Private Limited Company</a></li>
-                                                <li><a href="/public-limited-company-registration">Public Limited Company</a></li>
-                                                <li><a href="/one-person-company-registration">One Person Company (OPC)</a></li>
-                                                <li><a href="/llp-registration-services">Limited Liability Partnership (LLP)</a></li>
-                                                <li><a href="/register-partnership-firm">Partnership Firm</a></li>
-                                                <li><a href="/register-sole-proprietorship">Sole Proprietorship</a></li>
-                                            </ul>
+                                    <!-- ③ TAXATION -->
+                                    <section class="mm-column mm-column--taxation" aria-labelledby="mm-title-taxation">
+                                        <h3 class="mm-section-title" id="mm-title-taxation">Taxation</h3>
+                                        <div class="mm-column-body">
+                                            <div>
+                                                <h4 class="mm-subtitle">Income Tax</h4>
+                                                <ul class="mm-links">
+                                                    <li><a href="/income-tax/tax-planning-services">Tax Planning &amp; Advisory</a></li>
+                                                    <li><a href="/income-tax/income-tax-filing-service">Income Tax Return (ITR) Filing</a></li>
+                                                    <li><a href="/income-tax/tds-return-filing-services">TDS Return Filing</a></li>
+                                                    <li><a href="/income-tax/tax-audit">Tax Audit Assistance</a></li>
+                                                    <li><a href="/income-tax/income-tax-appeal-services">Tax Assessment &amp; Appeal Support</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h4 class="mm-subtitle">Goods And Services Tax</h4>
+                                                <ul class="mm-links">
+                                                    <li><a href="/gst/gst-registration">GST Registration</a></li>
+                                                    <li><a href="/gst/gst-return-filing-services">GST Return Filing</a></li>
+                                                    <li><a href="/gst/gst-lut-filing">GST LUT Filing</a></li>
+                                                    <li><a href="/gst/gst-advisory">GST Advisory &amp; Compliance</a></li>
+                                                    <li><a href="/gst/gst-assessment-appeal-services">GST Assessment &amp; Appeal Support</a></li>
+                                                    <li><a href="/gst/gst-cancellation-services">GST Registration Cancellation</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <div class="mm-group-title">Other Registrations &amp; Licences</div>
-                                            <ul class="mm-links">
-                                                <li><a href="/msme-udyam-registration">MSME / Udyam Registration</a></li>
-                                                <li><a href="/fssai-food-licence-india">FSSAI Registration</a></li>
-                                                <li><a href="/professional-tax-return-filing">Professional Tax Registration</a></li>
-                                                <li><a href="/iec-registration">Import Export Code (IEC)</a></li>
-                                                <li><a href="/digital-signature-certificate-registration">Digital Signature Certificate (DSC)</a></li>
-                                                <li><a href="/12a-80g-registration">12A &amp; 80G Registration</a></li>
-                                                <li><a href="/epf-esi-registration-compliance">EPF &amp; ESI Registration &amp; Compliance</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    </section>
 
-                                    <!-- ④ COMPLIANCE & REGULATORY -->
-                                    <div class="mm-panel mm-panel--compliance" id="panel-compliance" role="tabpanel">
-                                        <div>
-                                            <div class="mm-group-title">Company Compliance</div>
-                                            <ul class="mm-links">
-                                                <li><a href="/private-company-compliance">Private Limited Compliance</a></li>
-                                                <li><a href="/llp-annual-compliance">Limited Liability Partnership (LLP) Compliance</a></li>
-                                                <li><a href="/opc-annual-compliance">One Person Company (OPC) Compliance</a></li>
-                                                <li><a href="/partnership-firm-compliance">Partnership Firm Compliance</a></li>
-                                                <li><a href="/sole-proprietorship-compliance">Sole Proprietorship Compliance</a></li>
-                                                <li><a href="/public-ltd-compliance">Public Limited Compliance</a></li>
+                                    <!-- ④ ACCOUNTING & REPORTING -->
+                                    <section class="mm-column mm-column--accounting" aria-labelledby="mm-title-accounting">
+                                        <h3 class="mm-section-title" id="mm-title-accounting">Accounting &amp; Reporting</h3>
+                                        <div class="mm-column-body">
+                                            <ul class="mm-links mm-list-flat">
+                                                <li><a href="/accounting-and-reporting/bookkeeping-and-accounting">General Accounting &amp; Bookkeeping</a></li>
+                                                <li><a href="/accounting-and-reporting/financial-analysis-mis">Financial Analysis &amp; MIS Reporting</a></li>
+                                                <li><a href="/accounting-and-reporting/financial-statement-analysis">Financial Statements</a></li>
+                                                <li><a href="/accounting-and-reporting/accounts-receivable-payable-service">Receivable &amp; Payable Management</a></li>
                                             </ul>
                                         </div>
-                                        <div>
-                                            <div class="mm-group-title">ROC Compliance</div>
-                                            <ul class="mm-links">
-                                                <li><a href="/din-kyc-filing">Director KYC (DIR-3 KYC Filing)</a></li>
-                                                <li><a href="/add-remove-director-service">Add / Remove Director</a></li>
-                                                <li><a href="/increase-authorised-share-capital">Increase in Authorized Capital</a></li>
-                                                <li><a href="/registered-office-change-india">Registered Office Change</a></li>
-                                                <li><a href="/roc-compliance-filing">Miscellaneous ROC Filings</a></li>
-                                                <li><a href="/winding-up-of-company">Company Closure / Winding Up</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    </section>
 
                                     <!-- ⑤ ADVISORY & CFO SERVICES -->
-                                    <div class="mm-panel mm-panel--advisory" id="panel-advisory" role="tabpanel">
-                                        <div class="mm-group-title">Advisory &amp; CFO Services</div>
-                                        <div class="mm-grid-flat">
-                                            <a href="/budgeting-forecasting-services">Budgeting &amp; Forecasting</a>
-                                            <a href="/business-valuation-services">Business Valuation</a>
-                                            <a href="/financial-assessment-services">Financial Assessment</a>
-                                            <a href="/feasibility-study">Feasibility Study</a>
-                                            <a href="/cfo-financial-management-services">CFO &amp; Financial Management</a>
-                                            <a href="/payroll-management-compliance">Payroll Management &amp; Compliance</a>
+                                    <section class="mm-column mm-column--advisory" aria-labelledby="mm-title-advisory">
+                                        <h3 class="mm-section-title" id="mm-title-advisory">Advisory &amp; CFO Services</h3>
+                                        <div class="mm-column-body">
+                                            <ul class="mm-links mm-list-flat">
+                                                <li><a href="/budgeting-forecasting-services">Budgeting &amp; Forecasting</a></li>
+                                                <li><a href="/business-valuation-services">Business Valuation</a></li>
+                                                <li><a href="/financial-assessment-services">Financial Assessment</a></li>
+                                                <li><a href="/feasibility-study">Feasibility Study</a></li>
+                                                <li><a href="/cfo-financial-management-services">CFO &amp; Financial Management</a></li>
+                                                <li><a href="/payroll-management-compliance">Payroll Management &amp; Compliance</a></li>
+                                            </ul>
                                         </div>
-                                    </div>
+                                    </section>
 
                                 </div><!-- /mm-panels -->
                             </div><!-- /mega-menu-new -->
