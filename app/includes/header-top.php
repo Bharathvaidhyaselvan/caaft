@@ -66,9 +66,15 @@ if ($features['tabs']) {
 .home-3 .hero-slider .hero-img-wrap.wow {
   visibility: visible !important;
 }
-.home-3 .hs-3 {
+/* Pull hero under header (style.css default -6rem); margin-top:0 left a white body gap */
+.home-3 .main {
   margin-top: 0;
-  padding-top: 0.5rem;
+  padding-top: 0;
+}
+.home-3 .hero-slider.hs-3 {
+  margin-top: -6rem;
+  padding-top: 0;
+  background-color: #0a1020;
 }
 <?php endif; ?>
 body.navbar-is-sticky {
