@@ -443,7 +443,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                         <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
                                         </span>
-                                        <a class="mm-tab-link" href="/payroll-management-compliance">Payroll Management &amp; Compliance</a>
+                                        <a class="mm-tab-link" href="/payroll-management-compliance">Payroll</a>
                                         <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
                                     </div>
 
@@ -555,9 +555,9 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
 
                                     <!-- ⑥ PAYROLL MANAGEMENT & COMPLIANCE -->
                                     <div class="mm-panel mm-panel--payroll" id="panel-payroll" role="tabpanel">
-                                        <div class="mm-group-title">Payroll Management &amp; Compliance</div>
+                                        <div class="mm-group-title">Payroll</div>
                                         <div class="mm-grid-flat">
-                                            <a href="/payroll-management-compliance">Payroll Management &amp; Compliance</a>
+                                            <a href="/payroll-management-compliance">Payroll</a>
                                         </div>
                                     </div>
 
@@ -663,7 +663,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
 
                                 <!-- Payroll -->
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle main_mesnus_colors" href="/payroll-management-compliance">Payroll Management &amp; Compliance</a>
+                                    <a class="dropdown-item dropdown-toggle main_mesnus_colors" href="/payroll-management-compliance">Payroll</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="/payroll-management-compliance">Payroll Management &amp; Compliance</a></li>
                                     </ul>

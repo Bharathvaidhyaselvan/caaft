@@ -34,7 +34,7 @@
                                     <li><a href="/taxation-services"><i class="far fa-arrow-right"></i>Taxation</a></li>
                                     <li><a href="/accounting-and-reporting-services"><i class="far fa-arrow-right"></i>Accounting &amp; Reporting</a></li>
                                     <li><a href="/advisory-and-cfo-services"><i class="far fa-arrow-right"></i>Advisory &amp; CFO Services</a></li>
-                                    <li><a href="/payroll-management-compliance"><i class="far fa-arrow-right"></i>Payroll Management &amp; Compliance</a></li>
+                                    <li><a href="/payroll-management-compliance"><i class="far fa-arrow-right"></i>Payroll</a></li>
                                 </ul>
                             </div>
                         </div>
