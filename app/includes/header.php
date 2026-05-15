@@ -555,9 +555,9 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
 
                                     <!-- ⑥ PAYROLL MANAGEMENT & COMPLIANCE -->
                                     <div class="mm-panel mm-panel--payroll" id="panel-payroll" role="tabpanel">
-                                        <div class="mm-group-title">Payroll</div>
+                                        <div class="mm-group-title">Payroll Management &amp; Compliance</div>
                                         <div class="mm-grid-flat">
-                                            <a href="/payroll-management-compliance">Payroll</a>
+                                            <a href="/payroll-management-compliance">Payroll Management &amp; Compliance</a>
                                         </div>
                                     </div>
 
