@@ -38,191 +38,249 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
 ?>
 
 <style>
-/* ─── MEGA MENU OVERRIDES ─── */
-.mega-menu-new {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1200px, 96vw);
-    background: #05050a;
-    background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url('/assets/img/menu/mega-menu.jpeg?v=4');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-top: 2px solid #c8a96e;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 20px 60px rgba(0,0,0,.7);
-    z-index: 9999;
-    padding: 0;
-    overflow: hidden;
+/* ─── Desktop Services mega menu (boxed width, click to open, CAAFT theme) ─── */
+@media (min-width: 992px) {
+    .header {
+        z-index: 200;
+    }
+
+    .main-navigation .navbar {
+        z-index: 202;
+    }
+
+    .navbar.fixed-top {
+        z-index: 203 !important;
+    }
+
+    .nav-item.mega-services-item {
+        position: static;
+    }
+
+    .nav-item.mega-services-item > .nav-link.mega-services-trigger {
+        cursor: pointer;
+    }
+
+    .nav-item.mega-services-item > .nav-link.mega-services-trigger .mega-chevron {
+        font-size: 10px;
+        margin-left: 4px;
+        transition: transform 0.25s ease;
+    }
+
+    .nav-item.mega-services-item.is-open > .nav-link.mega-services-trigger .mega-chevron {
+        transform: rotate(180deg);
+    }
+
+    .mega-menu-new {
+        display: none;
+        position: fixed;
+        top: var(--caaft-mega-top, 120px);
+        left: var(--caaft-mega-left, 50%);
+        width: var(--caaft-mega-width, min(1320px, calc(100vw - 32px)));
+        max-width: none;
+        margin: 0;
+        transform: none;
+        background-color: #05050a;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/img/menu/mega-menu.jpeg?v=4');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: 0;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+        z-index: 201;
+        padding: 0;
+        overflow: hidden;
+        min-height: 380px;
+        max-height: min(72vh, 520px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.28s ease, visibility 0s linear 0.28s;
+    }
+
+    .nav-item.mega-services-item.is-open .mega-menu-new {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity 0.28s ease, visibility 0s;
+    }
+
+    .main-navigation.mega-menu-open .navbar {
+        box-shadow: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .main-navigation.mega-menu-open .mega-menu-new {
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+    }
+
+    .mm-tabs {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 300px;
+        max-width: 300px;
+        background: rgba(0, 0, 0, 0.5);
+        border-right: 1px solid rgba(51, 182, 255, 0.22);
+        padding: 10px 0;
+    }
+
+    .mm-tab {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        padding: 14px 18px 14px 20px;
+        color: rgba(245, 250, 255, 0.78);
+        font-family: var(--heading-font, "Plus Jakarta Sans", sans-serif);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-align: left;
+        cursor: pointer;
+        border: 0;
+        border-left: 3px solid transparent;
+        background: transparent;
+        transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+        white-space: normal;
+        line-height: 1.35;
+    }
+
+    .mm-tab:hover,
+    .mm-tab.is-active {
+        color: #33b6ff;
+        background: rgba(51, 182, 255, 0.1);
+        border-left-color: #33b6ff;
+    }
+
+    .mm-tab-icon {
+        flex-shrink: 0;
+        width: 22px;
+        text-align: center;
+    }
+
+    .mm-tab svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+        opacity: 0.85;
+    }
+
+    .mm-tab-label {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .mm-tab-chevron {
+        flex-shrink: 0;
+        font-size: 11px;
+        opacity: 0.55;
+        color: currentColor;
+    }
+
+    .mm-tab.is-active .mm-tab-chevron {
+        opacity: 1;
+    }
+
+    .mm-panels {
+        flex: 1;
+        padding: 28px 36px 32px;
+        overflow-y: auto;
+        max-height: min(72vh, 520px);
+        background: transparent;
+    }
+
+    .mm-panel {
+        display: none;
+        animation: mmFadeIn 0.22s ease;
+    }
+
+    .mm-panel.is-active {
+        display: grid;
+    }
+
+    @keyframes mmFadeIn {
+        from { opacity: 0; transform: translateY(6px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .mm-panel--accounting { grid-template-columns: 1fr; }
+    .mm-panel--taxation { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .mm-panel--business { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .mm-panel--compliance { grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+    .mm-panel--advisory { grid-template-columns: 1fr; }
+
+    .mm-group-title {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #33b6ff;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid rgba(51, 182, 255, 0.35);
+    }
+
+    .mm-links {
+        list-style: none;
+        margin: 0 0 16px;
+        padding: 0;
+    }
+
+    .mm-links li a {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(245, 250, 255, 0.82);
+        padding: 6px 0 6px 12px;
+        border-left: 2px solid transparent;
+        transition: color 0.15s, border-color 0.15s, padding-left 0.15s;
+        text-decoration: none;
+        line-height: 1.45;
+    }
+
+    .mm-links li a:hover,
+    .mm-links li a:focus-visible {
+        color: #fff;
+        border-left-color: var(--theme-color, #33b6ff);
+        padding-left: 16px;
+    }
+
+    .mm-grid-flat {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px 24px;
+        margin-top: 4px;
+    }
+
+    .mm-grid-flat a {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(245, 250, 255, 0.82);
+        padding: 8px 10px 8px 12px;
+        border-left: 2px solid transparent;
+        border-radius: 0 4px 4px 0;
+        transition: color 0.15s, border-color 0.15s, padding-left 0.15s, background 0.15s;
+        text-decoration: none;
+        line-height: 1.4;
+    }
+
+    .mm-grid-flat a:hover,
+    .mm-grid-flat a:focus-visible {
+        color: #fff;
+        border-left-color: var(--theme-color, #33b6ff);
+        background: rgba(51, 182, 255, 0.08);
+        padding-left: 16px;
+    }
 }
 
-.nav-item.dispaly_desktop:hover .mega-menu-new,
-.nav-item.dispaly_desktop:focus-within .mega-menu-new {
-    display: flex;
-}
-
-/* Tab strip */
-.mm-tabs {
-    display: flex;
-    flex-direction: column;
-    min-width: 220px;
-    background: rgba(0,0,0,.5);
-    border-right: 1px solid rgba(200,169,110,.25);
-    padding: 8px 0;
-}
-
-.mm-tab {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 13px 20px;
-    color: #c0c0c0;
-    font-size: 12.5px;
-    font-weight: 600;
-    letter-spacing: .06em;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-left: 3px solid transparent;
-    transition: all .2s ease;
-    white-space: nowrap;
-    text-decoration: none;
-}
-
-.mm-tab:hover,
-.mm-tab.is-active {
-    color: #c8a96e;
-    background: rgba(200,169,110,.08);
-    border-left-color: #c8a96e;
-}
-
-.mm-tab-icon {
-    font-size: 16px;
-    opacity: .8;
-    width: 20px;
-    text-align: center;
-}
-
-.mm-tab svg {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    opacity: .75;
-    fill: currentColor;
-}
-
-/* Panel area */
-.mm-panels {
-    flex: 1;
-    padding: 24px 28px;
-    overflow-y: auto;
-    max-height: 480px;
-}
-
-.mm-panel {
-    display: none;
-    animation: mmFadeIn .18s ease;
-}
-
-.mm-panel.is-active {
-    display: grid;
-}
-
-@keyframes mmFadeIn {
-    from { opacity: 0; transform: translateY(4px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
-
-/* Panel grid layouts */
-.mm-panel--accounting  { grid-template-columns: 1fr; }
-.mm-panel--taxation    { grid-template-columns: 1fr 1fr; gap: 24px; }
-.mm-panel--business    { grid-template-columns: 1fr 1fr; gap: 24px; }
-.mm-panel--compliance  { grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
-.mm-panel--advisory    { grid-template-columns: 1fr; }
-
-/* Group headings */
-.mm-group-title {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: #c8a96e;
-    margin-bottom: 10px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid rgba(200,169,110,.3);
-}
-
-/* Links */
-.mm-links {
-    list-style: none;
-    margin: 0 0 18px;
-    padding: 0;
-}
-
-.mm-links li a {
-    display: block;
-    font-size: 12.5px;
-    color: #b0b0b0;
-    padding: 5px 0 5px 12px;
-    border-left: 2px solid transparent;
-    transition: color .15s, border-color .15s, padding-left .15s;
-    text-decoration: none;
-    line-height: 1.4;
-}
-
-.mm-links li a:hover {
-    color: #fff;
-    border-left-color: #c8a96e;
-    padding-left: 16px;
-}
-
-/* Flat grid for Advisory */
-.mm-grid-flat {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px 20px;
-    margin-top: 4px;
-}
-
-.mm-grid-flat a {
-    display: block;
-    font-size: 12.5px;
-    color: #b0b0b0;
-    padding: 7px 10px 7px 12px;
-    border-left: 2px solid rgba(200,169,110,.3);
-    border-radius: 0 4px 4px 0;
-    transition: all .15s;
-    text-decoration: none;
-}
-
-.mm-grid-flat a:hover {
-    color: #fff;
-    border-left-color: #c8a96e;
-    background: rgba(200,169,110,.06);
-}
-
-/* "View all" footer row */
-.mm-view-all {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 11px;
-    color: #c8a96e;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: .05em;
-    margin-top: 4px;
-    transition: gap .15s;
-}
-
-.mm-view-all:hover { gap: 8px; color: #dfc080; }
-
-/* Responsive: hide desktop mega on mobile */
 @media (max-width: 991px) {
     .dispaly_desktop { display: none !important; }
     .display_mobiles { display: block !important; }
+    .mega-menu-new { display: none !important; }
 }
 @media (min-width: 992px) {
     .display_mobiles { display: none !important; }
@@ -302,55 +360,55 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                         <!-- ═══════════════════════════════════════════════════════════
                              DESKTOP MEGA MENU — 5-tab tabbed layout
                         ════════════════════════════════════════════════════════════ -->
-                        <li class="nav-item dispaly_desktop" style="position:static;">
-                            <a class="nav-link <?= $servicesActive; ?>" href="#" role="button" aria-haspopup="true">
-                                Services <i class="fas fa-chevron-down" style="font-size:10px; margin-left:3px;"></i>
+                        <li class="nav-item dispaly_desktop mega-services-item">
+                            <a class="nav-link mega-services-trigger <?= $servicesActive; ?>" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="mega-services-trigger">
+                                Services <i class="fas fa-chevron-down mega-chevron" aria-hidden="true"></i>
                             </a>
 
-                            <div class="mega-menu-new" role="navigation" aria-label="Services mega menu">
+                            <div class="mega-menu-new" role="navigation" aria-label="Services mega menu" aria-labelledby="mega-services-trigger">
 
                                 <!-- ── LEFT: Tab strip ── -->
                                 <div class="mm-tabs" role="tablist">
 
-                                    <a class="mm-tab is-active" data-panel="accounting" role="tab" aria-selected="true" href="/accounting-and-reporting-services">
-                                        <span class="mm-tab-icon">
-                                            <!-- Ledger icon -->
+                                    <button type="button" class="mm-tab is-active" data-panel="accounting" role="tab" aria-selected="true">
+                                        <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 3h5v2h-5V6zm0 4h5v2h-5v-2zm-5-4h3v6H7V6zm0 8h10v2H7v-2zm0 4h10v2H7v-2z"/></svg>
                                         </span>
-                                        Accounting & Reporting
-                                    </a>
+                                        <span class="mm-tab-label">Accounting &amp; Reporting</span>
+                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
+                                    </button>
 
-                                    <a class="mm-tab" data-panel="taxation" role="tab" href="/taxation-services">
-                                        <span class="mm-tab-icon">
-                                            <!-- Tax/receipt icon -->
+                                    <button type="button" class="mm-tab" data-panel="taxation" role="tab" aria-selected="false">
+                                        <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM9 13h2v2H9v-2zm4 0h2v2h-2v-2zm-4 4h2v2H9v-2zm4 0h2v2h-2v-2z"/></svg>
                                         </span>
-                                        Taxation
-                                    </a>
+                                        <span class="mm-tab-label">Taxation</span>
+                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
+                                    </button>
 
-                                    <a class="mm-tab" data-panel="business" role="tab" href="/business-setup-and-registration">
-                                        <span class="mm-tab-icon">
-                                            <!-- Building icon -->
+                                    <button type="button" class="mm-tab" data-panel="business" role="tab" aria-selected="false">
+                                        <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L2 12h3v8h6v-5h2v5h6v-8h3L12 3zm0 2.7L19 12h-1v7h-4v-5H10v5H6v-7H5l7-6.3z"/></svg>
                                         </span>
-                                        Business Setup & Registration
-                                    </a>
+                                        <span class="mm-tab-label">Business Setup &amp; Registration</span>
+                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
+                                    </button>
 
-                                    <a class="mm-tab" data-panel="compliance" role="tab" href="/compliance-and-regulatory-services">
-                                        <span class="mm-tab-icon">
-                                            <!-- Shield / check icon -->
+                                    <button type="button" class="mm-tab" data-panel="compliance" role="tab" aria-selected="false">
+                                        <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L3 6v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6l-9-4zm-1 14l-3-3 1.41-1.41L11 13.17l4.59-4.58L17 10l-6 6z"/></svg>
                                         </span>
-                                        Compliance & Regulatory
-                                    </a>
+                                        <span class="mm-tab-label">Compliance &amp; Regulatory</span>
+                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
+                                    </button>
 
-                                    <a class="mm-tab" data-panel="advisory" role="tab" href="/advisory-and-cfo-services">
-                                        <span class="mm-tab-icon">
-                                            <!-- Chart/advisory icon -->
+                                    <button type="button" class="mm-tab" data-panel="advisory" role="tab" aria-selected="false">
+                                        <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 13h2v7H3v-7zm4-6h2v13H7V7zm4-4h2v17h-2V3zm4 7h2v10h-2V10zm4-3h2v13h-2V7z"/></svg>
                                         </span>
-                                        Advisory & CFO Services
-                                    </a>
+                                        <span class="mm-tab-label">Advisory &amp; CFO Services</span>
+                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
+                                    </button>
 
                                 </div><!-- /mm-tabs -->
 
@@ -366,8 +424,6 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                             <a href="/accounting-and-reporting/financial-statement-analysis">Financial Statements</a>
                                             <a href="/accounting-and-reporting/accounts-receivable-payable-service">Receivable &amp; Payable Management</a>
                                         </div>
-                                        <br>
-                                        <a class="mm-view-all" href="/accounting-and-reporting-services">View all Accounting Services →</a>
                                     </div>
 
                                     <!-- ② TAXATION -->
@@ -381,7 +437,6 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                                 <li><a href="/income-tax/tax-planning-services">Tax Planning &amp; Advisory</a></li>
                                                 <li><a href="/income-tax/income-tax-appeal-services">Tax Assessment &amp; Appeal Support</a></li>
                                             </ul>
-                                            <a class="mm-view-all" href="/income-tax">All Income Tax Services →</a>
                                         </div>
                                         <div>
                                             <div class="mm-group-title">Goods &amp; Services Tax (GST)</div>
@@ -393,7 +448,6 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                                 <li><a href="/gst/gst-advisory">GST Advisory &amp; Compliance</a></li>
                                                 <li><a href="/gst/gst-assessment-appeal-services">GST Assessment &amp; Appeal Support</a></li>
                                             </ul>
-                                            <a class="mm-view-all" href="/taxation-services">All GST Services →</a>
                                         </div>
                                     </div>
 
@@ -409,7 +463,6 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                                 <li><a href="/register-partnership-firm">Partnership Firm</a></li>
                                                 <li><a href="/register-sole-proprietorship">Sole Proprietorship</a></li>
                                             </ul>
-                                            <a class="mm-view-all" href="/business-setup-and-registration">All Incorporation Services →</a>
                                         </div>
                                         <div>
                                             <div class="mm-group-title">Other Registrations &amp; Licences</div>
@@ -422,7 +475,6 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                                 <li><a href="/12a-80g-registration">12A &amp; 80G Registration</a></li>
                                                 <li><a href="/epf-esi-registration-compliance">EPF &amp; ESI Registration &amp; Compliance</a></li>
                                             </ul>
-                                            <a class="mm-view-all" href="/business-setup-and-registration">All Registrations →</a>
                                         </div>
                                     </div>
 
@@ -454,7 +506,6 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                                 <li><a href="/roc-compliance-filing">Miscellaneous ROC Filings</a></li>
                                                 <li><a href="/winding-up-of-company">Company Closure / Winding Up</a></li>
                                             </ul>
-                                            <a class="mm-view-all" href="/compliance-and-regulatory-services">All Compliance Services →</a>
                                         </div>
                                     </div>
 
@@ -469,8 +520,6 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                             <a href="/cfo-financial-management-services">CFO &amp; Financial Management</a>
                                             <a href="/payroll-management-compliance">Payroll Management &amp; Compliance</a>
                                         </div>
-                                        <br>
-                                        <a class="mm-view-all" href="/advisory-and-cfo-services">View all Advisory Services →</a>
                                     </div>
 
                                 </div><!-- /mm-panels -->
@@ -620,33 +669,3 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         </nav>
     </div>
 </header>
-
-<script>
-(function () {
-    /* ── Tabbed mega menu hover logic ── */
-    const tabs = document.querySelectorAll('.mm-tab[data-panel]');
-    const panels = document.querySelectorAll('.mm-panel');
-
-    function activateTab(tab) {
-        tabs.forEach(t => t.classList.remove('is-active'));
-        panels.forEach(p => p.classList.remove('is-active'));
-
-        tab.classList.add('is-active');
-        const target = document.getElementById('panel-' + tab.dataset.panel);
-        if (target) target.classList.add('is-active');
-    }
-
-    tabs.forEach(tab => {
-        tab.addEventListener('mouseenter', () => activateTab(tab));
-        tab.addEventListener('focus', () => activateTab(tab));
-    });
-
-    /* ── Prevent mega menu close on inner hover ── */
-    const megaMenu = document.querySelector('.mega-menu-new');
-    if (megaMenu) {
-        megaMenu.addEventListener('mouseleave', function () {
-            // panel stays as-is; closing handled by parent li mouseleave
-        });
-    }
-})();
-</script>
