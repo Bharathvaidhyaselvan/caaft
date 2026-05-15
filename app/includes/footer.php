@@ -29,11 +29,11 @@
                             <div class="footer-widget-box list">
                                 <h4 class="footer-widget-title">Services</h4>
                                 <ul class="footer-list">
-                                    <li><a href="/business-setup-and-registration"><i class="far fa-arrow-right"></i>Business Consultancy</a></li>
-                                    <li><a href="/compliance-and-regulatory-services"><i class="far fa-arrow-right"></i>Compliance</a></li>
+                                    <li><a href="/business-setup-and-registration"><i class="far fa-arrow-right"></i>Business Setup &amp; Registration</a></li>
+                                    <li><a href="/compliance-and-regulatory-services"><i class="far fa-arrow-right"></i>Compliance &amp; Regulatory</a></li>
                                     <li><a href="/taxation-services"><i class="far fa-arrow-right"></i>Taxation</a></li>
                                     <li><a href="/accounting-and-reporting-services"><i class="far fa-arrow-right"></i>Accounting &amp; Reporting</a></li>
-                                    <li><a href="/advisory-and-cfo-services"><i class="far fa-arrow-right"></i>Management Consultancy</a></li>
+                                    <li><a href="/advisory-and-cfo-services"><i class="far fa-arrow-right"></i>Advisory &amp; CFO Services</a></li>
                                 </ul>
                             </div>
                         </div>
