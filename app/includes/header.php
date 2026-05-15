@@ -401,7 +401,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
 
                                     <div class="mm-tab is-active" data-panel="business" role="tab" tabindex="0" aria-selected="true">
                                         <span class="mm-tab-icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L2 12h3v8h6v-5h2v5h6v-8h3L12 3zm0 2.7L19 12h-1v7h-4v-5H10v5H6v-7H5l7-6.3z"/></svg>
+                                          <img src="assets/img/business.png" alt="Business Setup" width="24" height="24">
                                         </span>
                                         <a class="mm-tab-link" href="/business-setup-and-registration">Business Setup &amp; Registration</a>
                                         <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>

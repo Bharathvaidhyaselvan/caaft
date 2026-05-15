@@ -854,18 +854,18 @@
                         <article class="home3-review-card wow fadeInUp" data-wow-delay=".15s">
                             <header class="home3-review-card__head">
                                 <div class="home3-review-card__intro">
-                                    <div class="home3-review-avatar home3-review-avatar--a" aria-hidden="true">R</div>
+
+<div class="home3-review-avatar home3-review-avatar--a" aria-hidden="true">M</div>
                                     <div class="home3-review-card__identity">
-                                        <p class="home3-review-name">Ramesh Kumar</p>
+                                        <p class="home3-review-name">Mr. Murali Krishnan</p>
                                         <div class="home3-review-stars" aria-label="5 out of 5 stars"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
-                                        <p class="home3-review-role">Director, Chennai-based Startup</p>
-                                    </div>
+                                        <p class="home3-review-role">Director - Focused Corporate Solutions</p>                            </div>
                                 </div>
                                 <div class="home3-review-google" title="Google review" aria-label="Google review">
                                     <svg class="home3-review-google__mark" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
                                 </div>
                             </header>
-                            <p class="home3-review-quote">CAAFT handled our company registration and GST setup seamlessly. Their team was responsive, knowledgeable and made the entire process stress-free. Highly recommended for any new business!</p>
+<p class="home3-review-quote">Recently, I availed accounting services from CAAFT Consultancy Services, and the experience was excellent. The team was highly professional, responsive, and extremely knowledgeable in handling compliance and accounting matters. The service quality was outstanding, timelines were strictly followed, and the pricing was very budget-friendly compared to the market. I would definitely recommend CAAFT Consultancy Services to anyone looking for reliable, efficient, and cost-effective accounting and compliance solutions.</p>
                         </article>
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -874,34 +874,34 @@
                                 <div class="home3-review-card__intro">
                                     <div class="home3-review-avatar home3-review-avatar--b" aria-hidden="true">P</div>
                                     <div class="home3-review-card__identity">
-                                        <p class="home3-review-name">Priya Venkatesh</p>
+                                        <p class="home3-review-name">Mr. Padmakumar</p>
                                         <div class="home3-review-stars" aria-label="5 out of 5 stars"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
-                                        <p class="home3-review-role">CFO, Manufacturing Firm</p>
+                                        <p class="home3-review-role">Director - E Sollutions Consultancy</p>
                                     </div>
                                 </div>
                                 <div class="home3-review-google" title="Google review" aria-label="Google review">
                                     <svg class="home3-review-google__mark" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
                                 </div>
                             </header>
-                            <p class="home3-review-quote">We&apos;ve been with CAAFT for our annual ROC filings and income tax returns for 3 years. They are thorough, deadline-driven and always available to answer our queries. A true business partner.</p>
+<p class="home3-review-quote">We have been associated with CAAFT for more than six months and I am sure that they are meeting our expectations and look forward for more value addition into the system.</p>
                         </article>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <article class="home3-review-card wow fadeInUp" data-wow-delay=".25s">
                             <header class="home3-review-card__head">
                                 <div class="home3-review-card__intro">
-                                    <div class="home3-review-avatar home3-review-avatar--c" aria-hidden="true">A</div>
+<div class="home3-review-avatar home3-review-avatar--c" aria-hidden="true">S</div>
                                     <div class="home3-review-card__identity">
-                                        <p class="home3-review-name">Arjun Sharma</p>
+                                        <p class="home3-review-name">Mrs. Sharmila Venkat</p>
                                         <div class="home3-review-stars" aria-label="5 out of 5 stars"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
-                                        <p class="home3-review-role">Proprietor, Retail Business</p>
-                                    </div>
+                                        <p class="home3-review-role">Partner - Trust Infosys Incorporation</p>
+                            </div>
                                 </div>
                                 <div class="home3-review-google" title="Google review" aria-label="Google review">
                                     <svg class="home3-review-google__mark" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
                                 </div>
                             </header>
-                            <p class="home3-review-quote">Outstanding support for our GST compliance and bookkeeping. CAAFT&apos;s team is proactive in alerting us to deadlines and regulatory changes. Our accounts have never been in better shape.</p>
+<p class="home3-review-quote">A highly professional and dependable company with excellent service quality. My experience has been smooth, efficient, and consistently satisfying.</p>
                         </article>
                     </div>
                 </div>
