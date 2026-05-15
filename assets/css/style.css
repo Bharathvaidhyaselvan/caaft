@@ -11176,12 +11176,55 @@ body.home-3.page-accounting-reporting li {
     text-justify: auto !important;
 }
 
-.caaft-cta-panel {
+/* Reusable caaft-cta.php — dark image panel, centered copy, theme button */
+.bk-cta-panel.caaft-cta-panel {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 14px 36px rgba(10, 36, 88, 0.22);
+    background-color: #0a1020;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/3.jpg") !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.bk-cta-panel.caaft-cta-panel .bk-cta-title {
+    max-width: 760px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-wrap: balance;
+}
+
+.bk-cta-panel.caaft-cta-panel .bk-cta-text {
+    max-width: 760px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-wrap: balance;
+}
+
+.bk-cta-panel.caaft-cta-panel .bk-cta-actions .bk-cta-button.theme-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 54px;
+    padding: 14px 28px;
+    font-weight: 700;
+    text-transform: none;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(51, 182, 255, 0.34);
+}
+
+.bk-cta-panel.caaft-cta-panel .bk-cta-actions .bk-cta-button.theme-btn:hover,
+.bk-cta-panel.caaft-cta-panel .bk-cta-actions .bk-cta-button.theme-btn:focus {
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 12px 28px rgba(51, 182, 255, 0.44);
 }
 
 .page-bookkeeping-accounting .bk-cta-panel.caaft-cta-panel {

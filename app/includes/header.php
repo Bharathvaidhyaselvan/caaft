@@ -468,10 +468,10 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                         <div>
                                             <div class="mm-group-title">Income Tax</div>
                                             <ul class="mm-links">
+                                                <li><a href="/income-tax/tax-planning-services">Tax Planning &amp; Advisory</a></li>
                                                 <li><a href="/income-tax/income-tax-filing-service">Income Tax Return (ITR) Filing</a></li>
                                                 <li><a href="/income-tax/tds-return-filing-services">TDS Return Filing</a></li>
                                                 <li><a href="/income-tax/tax-audit">Tax Audit Assistance</a></li>
-                                                <li><a href="/income-tax/tax-planning-services">Tax Planning &amp; Advisory</a></li>
                                                 <li><a href="/income-tax/income-tax-appeal-services">Tax Assessment &amp; Appeal Support</a></li>
                                             </ul>
                                         </div>
@@ -481,9 +481,9 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                                 <li><a href="/gst/gst-registration">GST Registration</a></li>
                                                 <li><a href="/gst/gst-return-filing-services">GST Returns Filing</a></li>
                                                 <li><a href="/gst/gst-lut-filing">GST LUT Filing</a></li>
-                                                <li><a href="/gst/gst-cancellation-services">GST Registration Cancellation</a></li>
                                                 <li><a href="/gst/gst-advisory">GST Advisory &amp; Compliance</a></li>
                                                 <li><a href="/gst/gst-assessment-appeal-services">GST Assessment &amp; Appeal Support</a></li>
+                                                <li><a href="/gst/gst-cancellation-services">GST Registration Cancellation</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -507,10 +507,10 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                                 <li><a href="/msme-udyam-registration">MSME / Udyam Registration</a></li>
                                                 <li><a href="/fssai-food-licence-india">FSSAI Registration</a></li>
                                                 <li><a href="/professional-tax-return-filing">Professional Tax Registration</a></li>
+                                                <li><a href="/epf-esi-registration-compliance">EPF &amp; ESI Registration &amp; Compliance</a></li>
                                                 <li><a href="/iec-registration">Import Export Code (IEC)</a></li>
                                                 <li><a href="/digital-signature-certificate-registration">Digital Signature Certificate (DSC)</a></li>
                                                 <li><a href="/12a-80g-registration">12A &amp; 80G Registration</a></li>
-                                                <li><a href="/epf-esi-registration-compliance">EPF &amp; ESI Registration &amp; Compliance</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -588,10 +588,10 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                         <li><a class="dropdown-item" href="/msme-udyam-registration">MSME / Udyam Registration</a></li>
                                         <li><a class="dropdown-item" href="/fssai-food-licence-india">FSSAI Registration</a></li>
                                         <li><a class="dropdown-item" href="/professional-tax-return-filing">Professional Tax Registration</a></li>
+                                        <li><a class="dropdown-item" href="/epf-esi-registration-compliance">EPF &amp; ESI Registration &amp; Compliance</a></li>
                                         <li><a class="dropdown-item" href="/iec-registration">Import Export Code (IEC)</a></li>
                                         <li><a class="dropdown-item" href="/digital-signature-certificate-registration">Digital Signature Certificate (DSC)</a></li>
                                         <li><a class="dropdown-item" href="/12a-80g-registration">12A &amp; 80G Registration</a></li>
-                                        <li><a class="dropdown-item" href="/epf-esi-registration-compliance">EPF &amp; ESI Registration &amp; Compliance</a></li>
                                     </ul>
                                 </li>
 
@@ -601,13 +601,11 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item link-extend" href="/compliance-and-regulatory-services">Company Compliance</a></li>
                                         <li><a class="dropdown-item" href="/private-company-compliance">Private Limited Compliance</a></li>
-                                        <li><a class="dropdown-item" href="/public-ltd-compliance">Public Limited Compliance</a></li>
-                                        <li><a class="dropdown-item" href="/opc-annual-compliance">One Person Company Compliance</a></li>
                                         <li><a class="dropdown-item" href="/llp-annual-compliance">LLP Compliance</a></li>
-
-                                        <li><a class="dropdown-item link-extend" href="/compliance-and-regulatory-services">Firm Compliance</a></li>
+                                        <li><a class="dropdown-item" href="/opc-annual-compliance">One Person Company Compliance</a></li>
                                         <li><a class="dropdown-item" href="/partnership-firm-compliance">Partnership Firm Compliance</a></li>
                                         <li><a class="dropdown-item" href="/sole-proprietorship-compliance">Sole Proprietorship Compliance</a></li>
+                                        <li><a class="dropdown-item" href="/public-ltd-compliance">Public Limited Compliance</a></li>
 
                                         <li><a class="dropdown-item link-extend" href="/compliance-and-regulatory-services">ROC Compliance</a></li>
                                         <li><a class="dropdown-item" href="/din-kyc-filing">Director KYC (DIR-3 KYC)</a></li>
@@ -624,19 +622,19 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                     <a class="dropdown-item dropdown-toggle main_mesnus_colors" href="/taxation-services">Taxation</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item link-extend" href="/income-tax">Income Tax</a></li>
+                                        <li><a class="dropdown-item" href="/income-tax/tax-planning-services">Tax Planning &amp; Advisory</a></li>
                                         <li><a class="dropdown-item" href="/income-tax/income-tax-filing-service">Income Tax Return (ITR) Filing</a></li>
                                         <li><a class="dropdown-item" href="/income-tax/tds-return-filing-services">TDS Return Filing</a></li>
                                         <li><a class="dropdown-item" href="/income-tax/tax-audit">Tax Audit Assistance</a></li>
-                                        <li><a class="dropdown-item" href="/income-tax/tax-planning-services">Tax Planning &amp; Advisory</a></li>
                                         <li><a class="dropdown-item" href="/income-tax/income-tax-appeal-services">Tax Assessment &amp; Appeal Support</a></li>
 
                                         <li><a class="dropdown-item link-extend" href="/taxation-services">GST Services</a></li>
                                         <li><a class="dropdown-item" href="/gst/gst-registration">GST Registration</a></li>
                                         <li><a class="dropdown-item" href="/gst/gst-return-filing-services">GST Returns Filing</a></li>
                                         <li><a class="dropdown-item" href="/gst/gst-lut-filing">GST LUT Filing</a></li>
-                                        <li><a class="dropdown-item" href="/gst/gst-cancellation-services">GST Registration Cancellation</a></li>
                                         <li><a class="dropdown-item" href="/gst/gst-advisory">GST Advisory &amp; Compliance</a></li>
                                         <li><a class="dropdown-item" href="/gst/gst-assessment-appeal-services">GST Assessment &amp; Appeal Support</a></li>
+                                        <li><a class="dropdown-item" href="/gst/gst-cancellation-services">GST Registration Cancellation</a></li>
                                     </ul>
                                 </li>
 

@@ -689,70 +689,6 @@
             text-align: center !important;
         }
 
-        .page-tax-audit .bk-cta,
-        .page-tax-audit .bk-cta * {
-            text-align: center !important;
-            text-justify: auto !important;
-        }
-
-        .page-tax-audit .bk-cta-panel {
-            text-align: center !important;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            background: linear-gradient(135deg, #0a2458 0%, #0c2f74 55%, #133f93 100%);
-            border-radius: 14px;
-            padding: clamp(2rem, 6vw, 4rem) clamp(1.2rem, 4vw, 3rem);
-            box-shadow: 0 14px 36px rgba(10, 36, 88, 0.28);
-        }
-
-        .page-tax-audit .bk-cta-title,
-        .page-tax-audit .bk-cta-text,
-        .page-tax-audit .bk-cta-button {
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-
-        .page-tax-audit .bk-cta-title {
-            max-width: 760px;
-            margin-bottom: 0 !important;
-            text-align: center !important;
-            text-wrap: balance;
-            color: #ffffff !important;
-            font-size: clamp(2rem, 4.5vw, 3.2rem);
-            line-height: 1.15;
-            font-weight: 800;
-        }
-
-        .page-tax-audit .bk-cta-text {
-            max-width: 760px;
-            line-height: 1.6;
-            margin-bottom: 0 !important;
-            text-wrap: balance;
-            color: rgba(255, 255, 255, 0.92) !important;
-            font-size: clamp(1rem, 1.7vw, 1.18rem);
-        }
-
-        .page-tax-audit .bk-cta-button {
-            background: linear-gradient(90deg, #2eb4ff 0%, #27a6ff 100%) !important;
-            color: #ffffff !important;
-            border: 0 !important;
-            border-radius: 10px !important;
-            padding: 13px 24px !important;
-            min-width: 230px;
-            font-weight: 700;
-            box-shadow: 0 10px 24px rgba(46, 180, 255, 0.34);
-        }
-
-        .page-tax-audit .bk-cta-button:hover,
-        .page-tax-audit .bk-cta-button:focus {
-            transform: translateY(-1px);
-            box-shadow: 0 12px 28px rgba(46, 180, 255, 0.44);
-            color: #ffffff !important;
-        }
-
         @media (max-width: 991.98px) {
             .page-tax-audit .caaft-ar-trust-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1389,7 +1325,7 @@
         $caaft_cta_heading_id = 'audit-cta-heading';
         $caaft_cta_title = 'Ready to File Your Tax Audit With Complete Confidence?';
         $caaft_cta_text = 'Businesses that plan ahead do not just avoid penalties — they build credibility, strengthen their financials, and walk into every assessment with nothing to worry about. Expert CA-led audits, timely filing, and zero compliance gaps — delivered every financial year without exception.';
-        $caaft_cta_button_label = 'Hassle-Free TDS Filing';
+        $caaft_cta_button_label = 'Get Expert Tax Audit Support';
         $caaft_cta_button_href = '/contact#contact_us';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
