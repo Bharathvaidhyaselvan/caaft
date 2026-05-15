@@ -5,8 +5,21 @@
     return;
   }
 
-  function setNavbarHeightVar() {
+  function setHeaderHeightVars() {
+    var header = document.querySelector(".header");
     var nav = document.querySelector(".main-navigation .navbar");
+    if (header) {
+      var headerHeight = header.offsetHeight;
+      if (nav && window.matchMedia("(max-width: 991.98px)").matches) {
+        var headerTop = header.getBoundingClientRect().top;
+        var navBottom = nav.getBoundingClientRect().bottom;
+        headerHeight = Math.max(headerHeight, Math.ceil(navBottom - headerTop));
+      }
+      document.documentElement.style.setProperty(
+        "--caaft-header-height",
+        headerHeight + "px",
+      );
+    }
     if (nav) {
       document.documentElement.style.setProperty(
         "--caaft-navbar-height",
@@ -20,16 +33,21 @@
     if (!$nav.length) {
       return;
     }
-    setNavbarHeightVar();
-    var isSticky = $(window).scrollTop() > 50;
+    setHeaderHeightVars();
+    var scrollTop =
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop ||
+      0;
+    var isSticky = scrollTop > 50;
     $nav.toggleClass("fixed-top", isSticky);
     document.body.classList.toggle("navbar-is-sticky", isSticky);
   }
 
   $(window).on("scroll", updateStickyNavbar);
   $(document).ready(function () {
-    setNavbarHeightVar();
+    setHeaderHeightVars();
     updateStickyNavbar();
   });
-  $(window).on("resize", setNavbarHeightVar);
+  $(window).on("resize", setHeaderHeightVars);
 })(window.jQuery);

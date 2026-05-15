@@ -71,18 +71,104 @@ if ($features['tabs']) {
   margin-top: 0;
   padding-top: 0;
 }
-.home-3 .hero-slider.hs-3 {
-  margin-top: -6rem;
-  padding-top: 0;
-  background-color: #0a1020;
+@media (min-width: 992px) {
+  .home-3 .hero-slider.hs-3 {
+    margin-top: -6rem;
+    padding-top: 0;
+    background-color: #0a1020;
+  }
 }
 <?php endif; ?>
 body.navbar-is-sticky {
   padding-top: var(--caaft-navbar-height, 72px);
 }
-@media (max-width: 991px) {
-  .navbar-brand img { max-width: 130px; max-height: 100px; }
+
+/* hs-3 in style.css uses margin-top:-6rem — OK for home carousel only */
+.hero-section.hs-3.caaft-ar-hero,
+.hs-3.caaft-ar-hero:not(.hero-slider) {
+  margin-top: 0 !important;
+}
+
+/* Service pages: white navbar (overrides global .navbar #101010 and home-3 dark) */
+.page-accounting-reporting .main-navigation .navbar.navbar-expand-lg {
+  background: #fff !important;
+}
+
+@media (min-width: 992px) {
+  /* Restore original service hero spacing (not clamp 16vw which grows too large) */
+  .page-accounting-reporting .caaft-ar-hero-single.hero-single.singles_forms_frames {
+    padding-top: 120px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .page-accounting-reporting .navbar .nav-item .nav-link,
+  .page-accounting-reporting .navbar .nav-item .nav-link.active,
+  .page-accounting-reporting .nav-right .search-btn .nav-right-link,
+  .page-accounting-reporting .mobile-menu-right .nav-right-link,
+  .page-accounting-reporting .navbar-toggler-mobile-icon {
+    color: var(--color-dark) !important;
+  }
+
+  .page-accounting-reporting .navbar .nav-item .nav-link:hover {
+    color: var(--theme-color) !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* style.css sets navbar position:absolute — overlaps hero; relative until sticky */
+  .main-navigation {
+    min-height: 0;
+  }
+
+  .main-navigation .navbar.navbar-expand-lg:not(.fixed-top) {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100%;
+  }
+
+  .main-navigation .navbar.navbar-expand-lg.fixed-top {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1030;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Homepage mobile: dark nav; service pages stay white (rule above) */
+  body.home-3:not(.page-accounting-reporting) .main-navigation .navbar.navbar-expand-lg {
+    background: #101010 !important;
+  }
+
+  .navbar-brand img { max-width: 130px; max-height: 72px; }
   .navbar.fixed-top .navbar-brand.fixed_logo img { max-width: 140px; max-height: 44px; }
   body.navbar-is-sticky { padding-top: var(--caaft-navbar-height, 64px); }
+
+  .home-3 .hero-slider.hs-3 {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #0a1020;
+  }
+
+  .page-accounting-reporting .caaft-ar-hero-single.hero-single {
+    padding-top: 2rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  .home-3:not(.page-accounting-reporting) .hero-slider .hero-single {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .home-3 .hero-slider .hero-single .hero-content {
+    margin-top: 0;
+  }
+
+  .page-accounting-reporting .caaft-ar-hero {
+    margin-top: 0 !important;
+  }
 }
 </style>
