@@ -134,18 +134,17 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         padding: 14px 18px 14px 20px;
         color: rgba(245, 250, 255, 0.78);
         font-family: var(--heading-font, "Plus Jakarta Sans", sans-serif);
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
         text-align: left;
-        cursor: pointer;
+        cursor: default;
         border: 0;
         border-left: 3px solid transparent;
         background: transparent;
         transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
         white-space: normal;
-        line-height: 1.35;
+        line-height: 1.4;
     }
 
     .mm-tab:hover,
@@ -153,6 +152,29 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         color: #33b6ff;
         background: rgba(51, 182, 255, 0.1);
         border-left-color: #33b6ff;
+    }
+
+    .mm-tab-link {
+        flex: 1;
+        min-width: 0;
+        color: inherit;
+        text-decoration: none;
+        font: inherit;
+        letter-spacing: inherit;
+        line-height: inherit;
+        cursor: pointer;
+        transition: color 0.2s ease, text-decoration 0.2s ease;
+    }
+
+    .mm-tab-link:hover,
+    .mm-tab-link:focus-visible {
+        color: #33b6ff;
+        text-decoration: underline;
+        outline: none;
+    }
+
+    .mm-tab.is-active .mm-tab-link {
+        color: #33b6ff;
     }
 
     .mm-tab-icon {
@@ -166,11 +188,6 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         height: 18px;
         fill: currentColor;
         opacity: 0.85;
-    }
-
-    .mm-tab-label {
-        flex: 1;
-        min-width: 0;
     }
 
     .mm-tab-chevron {
@@ -370,45 +387,45 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                 <!-- ── LEFT: Tab strip ── -->
                                 <div class="mm-tabs" role="tablist">
 
-                                    <button type="button" class="mm-tab is-active" data-panel="business" role="tab" aria-selected="true">
+                                    <div class="mm-tab is-active" data-panel="business" role="tab" tabindex="0" aria-selected="true">
                                         <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L2 12h3v8h6v-5h2v5h6v-8h3L12 3zm0 2.7L19 12h-1v7h-4v-5H10v5H6v-7H5l7-6.3z"/></svg>
                                         </span>
-                                        <span class="mm-tab-label">Business Setup &amp; Registration</span>
+                                        <a class="mm-tab-link" href="/business-setup-and-registration">Business Setup &amp; Registration</a>
                                         <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
-                                    </button>
+                                    </div>
 
-                                    <button type="button" class="mm-tab" data-panel="compliance" role="tab" aria-selected="false">
+                                    <div class="mm-tab" data-panel="compliance" role="tab" tabindex="0" aria-selected="false">
                                         <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L3 6v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6l-9-4zm-1 14l-3-3 1.41-1.41L11 13.17l4.59-4.58L17 10l-6 6z"/></svg>
                                         </span>
-                                        <span class="mm-tab-label">Compliance &amp; Regulatory</span>
+                                        <a class="mm-tab-link" href="/compliance-and-regulatory-services">Compliance &amp; Regulatory</a>
                                         <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
-                                    </button>
+                                    </div>
 
-                                    <button type="button" class="mm-tab" data-panel="taxation" role="tab" aria-selected="false">
+                                    <div class="mm-tab" data-panel="taxation" role="tab" tabindex="0" aria-selected="false">
                                         <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM9 13h2v2H9v-2zm4 0h2v2h-2v-2zm-4 4h2v2H9v-2zm4 0h2v2h-2v-2z"/></svg>
                                         </span>
-                                        <span class="mm-tab-label">Taxation</span>
+                                        <a class="mm-tab-link" href="/taxation-services">Taxation</a>
                                         <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
-                                    </button>
+                                    </div>
 
-                                    <button type="button" class="mm-tab" data-panel="accounting" role="tab" aria-selected="false">
+                                    <div class="mm-tab" data-panel="accounting" role="tab" tabindex="0" aria-selected="false">
                                         <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 3h5v2h-5V6zm0 4h5v2h-5v-2zm-5-4h3v6H7V6zm0 8h10v2H7v-2zm0 4h10v2H7v-2z"/></svg>
                                         </span>
-                                        <span class="mm-tab-label">Accounting &amp; Reporting</span>
+                                        <a class="mm-tab-link" href="/accounting-and-reporting-services">Accounting &amp; Reporting</a>
                                         <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
-                                    </button>
+                                    </div>
 
-                                    <button type="button" class="mm-tab" data-panel="advisory" role="tab" aria-selected="false">
+                                    <div class="mm-tab" data-panel="advisory" role="tab" tabindex="0" aria-selected="false">
                                         <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 13h2v7H3v-7zm4-6h2v13H7V7zm4-4h2v17h-2V3zm4 7h2v10h-2V10zm4-3h2v13h-2V7z"/></svg>
                                         </span>
-                                        <span class="mm-tab-label">Advisory &amp; CFO Services</span>
+                                        <a class="mm-tab-link" href="/advisory-and-cfo-services">Advisory &amp; CFO Services</a>
                                         <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
-                                    </button>
+                                    </div>
 
                                 </div><!-- /mm-tabs -->
 
