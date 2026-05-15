@@ -209,7 +209,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
     .mm-panel--accounting { grid-template-columns: 1fr; }
     .mm-panel--taxation { grid-template-columns: 1fr 1fr; gap: 28px; }
     .mm-panel--business { grid-template-columns: 1fr 1fr; gap: 28px; }
-    .mm-panel--compliance { grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+    .mm-panel--compliance { grid-template-columns: 1fr 1fr; gap: 28px; }
     .mm-panel--advisory { grid-template-columns: 1fr; }
 
     .mm-group-title {
@@ -370,23 +370,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                 <!-- ── LEFT: Tab strip ── -->
                                 <div class="mm-tabs" role="tablist">
 
-                                    <button type="button" class="mm-tab is-active" data-panel="accounting" role="tab" aria-selected="true">
-                                        <span class="mm-tab-icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 3h5v2h-5V6zm0 4h5v2h-5v-2zm-5-4h3v6H7V6zm0 8h10v2H7v-2zm0 4h10v2H7v-2z"/></svg>
-                                        </span>
-                                        <span class="mm-tab-label">Accounting &amp; Reporting</span>
-                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
-                                    </button>
-
-                                    <button type="button" class="mm-tab" data-panel="taxation" role="tab" aria-selected="false">
-                                        <span class="mm-tab-icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM9 13h2v2H9v-2zm4 0h2v2h-2v-2zm-4 4h2v2H9v-2zm4 0h2v2h-2v-2z"/></svg>
-                                        </span>
-                                        <span class="mm-tab-label">Taxation</span>
-                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
-                                    </button>
-
-                                    <button type="button" class="mm-tab" data-panel="business" role="tab" aria-selected="false">
+                                    <button type="button" class="mm-tab is-active" data-panel="business" role="tab" aria-selected="true">
                                         <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L2 12h3v8h6v-5h2v5h6v-8h3L12 3zm0 2.7L19 12h-1v7h-4v-5H10v5H6v-7H5l7-6.3z"/></svg>
                                         </span>
@@ -399,6 +383,22 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L3 6v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6l-9-4zm-1 14l-3-3 1.41-1.41L11 13.17l4.59-4.58L17 10l-6 6z"/></svg>
                                         </span>
                                         <span class="mm-tab-label">Compliance &amp; Regulatory</span>
+                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
+                                    </button>
+
+                                    <button type="button" class="mm-tab" data-panel="taxation" role="tab" aria-selected="false">
+                                        <span class="mm-tab-icon" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM9 13h2v2H9v-2zm4 0h2v2h-2v-2zm-4 4h2v2H9v-2zm4 0h2v2h-2v-2z"/></svg>
+                                        </span>
+                                        <span class="mm-tab-label">Taxation</span>
+                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
+                                    </button>
+
+                                    <button type="button" class="mm-tab" data-panel="accounting" role="tab" aria-selected="false">
+                                        <span class="mm-tab-icon" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 3h5v2h-5V6zm0 4h5v2h-5v-2zm-5-4h3v6H7V6zm0 8h10v2H7v-2zm0 4h10v2H7v-2z"/></svg>
+                                        </span>
+                                        <span class="mm-tab-label">Accounting &amp; Reporting</span>
                                         <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
                                     </button>
 
@@ -416,7 +416,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                 <div class="mm-panels">
 
                                     <!-- ① ACCOUNTING & REPORTING -->
-                                    <div class="mm-panel mm-panel--accounting is-active" id="panel-accounting" role="tabpanel">
+                                    <div class="mm-panel mm-panel--accounting" id="panel-accounting" role="tabpanel">
                                         <div class="mm-group-title">Accounting & Reporting Services</div>
                                         <div class="mm-grid-flat">
                                             <a href="/accounting-and-reporting/bookkeeping-and-accounting">General Accounting &amp; Bookkeeping</a>
@@ -452,7 +452,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                     </div>
 
                                     <!-- ③ BUSINESS SETUP & REGISTRATION -->
-                                    <div class="mm-panel mm-panel--business" id="panel-business" role="tabpanel">
+                                    <div class="mm-panel mm-panel--business is-active" id="panel-business" role="tabpanel">
                                         <div>
                                             <div class="mm-group-title">Company Incorporation</div>
                                             <ul class="mm-links">
@@ -484,24 +484,19 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                             <div class="mm-group-title">Company Compliance</div>
                                             <ul class="mm-links">
                                                 <li><a href="/private-company-compliance">Private Limited Compliance</a></li>
-                                                <li><a href="/public-ltd-compliance">Public Limited Compliance</a></li>
-                                                <li><a href="/opc-annual-compliance">One Person Company Compliance</a></li>
-                                                <li><a href="/llp-annual-compliance">LLP Compliance</a></li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <div class="mm-group-title">Firm Compliance</div>
-                                            <ul class="mm-links">
+                                                <li><a href="/llp-annual-compliance">Limited Liability Partnership (LLP) Compliance</a></li>
+                                                <li><a href="/opc-annual-compliance">One Person Company (OPC) Compliance</a></li>
                                                 <li><a href="/partnership-firm-compliance">Partnership Firm Compliance</a></li>
                                                 <li><a href="/sole-proprietorship-compliance">Sole Proprietorship Compliance</a></li>
+                                                <li><a href="/public-ltd-compliance">Public Limited Compliance</a></li>
                                             </ul>
                                         </div>
                                         <div>
                                             <div class="mm-group-title">ROC Compliance</div>
                                             <ul class="mm-links">
-                                                <li><a href="/din-kyc-filing">Director KYC (DIR-3 KYC)</a></li>
+                                                <li><a href="/din-kyc-filing">Director KYC (DIR-3 KYC Filing)</a></li>
                                                 <li><a href="/add-remove-director-service">Add / Remove Director</a></li>
-                                                <li><a href="/increase-authorised-share-capital">Increase in Authorised Capital</a></li>
+                                                <li><a href="/increase-authorised-share-capital">Increase in Authorized Capital</a></li>
                                                 <li><a href="/registered-office-change-india">Registered Office Change</a></li>
                                                 <li><a href="/roc-compliance-filing">Miscellaneous ROC Filings</a></li>
                                                 <li><a href="/winding-up-of-company">Company Closure / Winding Up</a></li>
@@ -532,38 +527,6 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                         <li class="nav-item dropdown display_mobiles">
                             <a class="nav-link dropdown-toggle <?= $servicesActive; ?>" href="#" data-bs-toggle="dropdown">Services</a>
                             <ul class="dropdown-menu fade-down">
-
-                                <!-- Accounting -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle main_mesnus_colors" href="/accounting-and-reporting-services">Accounting &amp; Reporting</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="/accounting-and-reporting/bookkeeping-and-accounting">General Accounting &amp; Bookkeeping</a></li>
-                                        <li><a class="dropdown-item" href="/accounting-and-reporting/financial-analysis-mis">Financial Analysis &amp; MIS Reporting</a></li>
-                                        <li><a class="dropdown-item" href="/accounting-and-reporting/financial-statement-analysis">Financial Statements</a></li>
-                                        <li><a class="dropdown-item" href="/accounting-and-reporting/accounts-receivable-payable-service">Receivable &amp; Payable Management</a></li>
-                                    </ul>
-                                </li>
-
-                                <!-- Taxation -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle main_mesnus_colors" href="/taxation-services">Taxation</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item link-extend" href="/income-tax">Income Tax</a></li>
-                                        <li><a class="dropdown-item" href="/income-tax/income-tax-filing-service">Income Tax Return (ITR) Filing</a></li>
-                                        <li><a class="dropdown-item" href="/income-tax/tds-return-filing-services">TDS Return Filing</a></li>
-                                        <li><a class="dropdown-item" href="/income-tax/tax-audit">Tax Audit Assistance</a></li>
-                                        <li><a class="dropdown-item" href="/income-tax/tax-planning-services">Tax Planning &amp; Advisory</a></li>
-                                        <li><a class="dropdown-item" href="/income-tax/income-tax-appeal-services">Tax Assessment &amp; Appeal Support</a></li>
-
-                                        <li><a class="dropdown-item link-extend" href="/taxation-services">GST Services</a></li>
-                                        <li><a class="dropdown-item" href="/gst/gst-registration">GST Registration</a></li>
-                                        <li><a class="dropdown-item" href="/gst/gst-return-filing-services">GST Returns Filing</a></li>
-                                        <li><a class="dropdown-item" href="/gst/gst-lut-filing">GST LUT Filing</a></li>
-                                        <li><a class="dropdown-item" href="/gst/gst-cancellation-services">GST Registration Cancellation</a></li>
-                                        <li><a class="dropdown-item" href="/gst/gst-advisory">GST Advisory &amp; Compliance</a></li>
-                                        <li><a class="dropdown-item" href="/gst/gst-assessment-appeal-services">GST Assessment &amp; Appeal Support</a></li>
-                                    </ul>
-                                </li>
 
                                 <!-- Business Setup -->
                                 <li class="dropdown-submenu">
@@ -612,6 +575,38 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                     </ul>
                                 </li>
 
+                                <!-- Taxation -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle main_mesnus_colors" href="/taxation-services">Taxation</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item link-extend" href="/income-tax">Income Tax</a></li>
+                                        <li><a class="dropdown-item" href="/income-tax/income-tax-filing-service">Income Tax Return (ITR) Filing</a></li>
+                                        <li><a class="dropdown-item" href="/income-tax/tds-return-filing-services">TDS Return Filing</a></li>
+                                        <li><a class="dropdown-item" href="/income-tax/tax-audit">Tax Audit Assistance</a></li>
+                                        <li><a class="dropdown-item" href="/income-tax/tax-planning-services">Tax Planning &amp; Advisory</a></li>
+                                        <li><a class="dropdown-item" href="/income-tax/income-tax-appeal-services">Tax Assessment &amp; Appeal Support</a></li>
+
+                                        <li><a class="dropdown-item link-extend" href="/taxation-services">GST Services</a></li>
+                                        <li><a class="dropdown-item" href="/gst/gst-registration">GST Registration</a></li>
+                                        <li><a class="dropdown-item" href="/gst/gst-return-filing-services">GST Returns Filing</a></li>
+                                        <li><a class="dropdown-item" href="/gst/gst-lut-filing">GST LUT Filing</a></li>
+                                        <li><a class="dropdown-item" href="/gst/gst-cancellation-services">GST Registration Cancellation</a></li>
+                                        <li><a class="dropdown-item" href="/gst/gst-advisory">GST Advisory &amp; Compliance</a></li>
+                                        <li><a class="dropdown-item" href="/gst/gst-assessment-appeal-services">GST Assessment &amp; Appeal Support</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Accounting -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle main_mesnus_colors" href="/accounting-and-reporting-services">Accounting &amp; Reporting</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="/accounting-and-reporting/bookkeeping-and-accounting">General Accounting &amp; Bookkeeping</a></li>
+                                        <li><a class="dropdown-item" href="/accounting-and-reporting/financial-analysis-mis">Financial Analysis &amp; MIS Reporting</a></li>
+                                        <li><a class="dropdown-item" href="/accounting-and-reporting/financial-statement-analysis">Financial Statements</a></li>
+                                        <li><a class="dropdown-item" href="/accounting-and-reporting/accounts-receivable-payable-service">Receivable &amp; Payable Management</a></li>
+                                    </ul>
+                                </li>
+
                                 <!-- Advisory -->
                                 <li class="dropdown-submenu">
                                     <a class="dropdown-item dropdown-toggle main_mesnus_colors" href="/advisory-and-cfo-services">Advisory &amp; CFO Services</a>
@@ -625,7 +620,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                     </ul>
                                 </li>
 
-                            </ul>
+                                                        </ul>
                         </li><!-- /mobile menu -->
 
                         <!-- Resources -->

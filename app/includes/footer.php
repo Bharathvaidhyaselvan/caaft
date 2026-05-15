@@ -29,13 +29,11 @@
                             <div class="footer-widget-box list">
                                 <h4 class="footer-widget-title">Services</h4>
                                 <ul class="footer-list">
-                                    <li><a href="accounting-firms-in-chennai.php"><i class="far fa-arrow-right"></i>Accounting & Reporting </a></li>
-                                    <li><a href="gst-filing-itr-filing-in-chennai.php"><i class="far fa-arrow-right"></i>Taxation</a></li>
-                                    <li><a href="business-consultancy-company-registration-in-chennai.php"><i class="far fa-arrow-right"></i>Business Consultancy </a></li>
-                                    <li><a href="management-consultancy-services-in-chennai.php"><i class="far fa-arrow-right"></i>Management Consultancy </a></li>
-
-                                    <li><a href="roc-compliance-services.php"><i class="far fa-arrow-right"></i>Compliance </a></li>
-
+                                    <li><a href="/business-setup-and-registration"><i class="far fa-arrow-right"></i>Business Consultancy</a></li>
+                                    <li><a href="/compliance-and-regulatory-services"><i class="far fa-arrow-right"></i>Compliance</a></li>
+                                    <li><a href="/taxation-services"><i class="far fa-arrow-right"></i>Taxation</a></li>
+                                    <li><a href="/accounting-and-reporting-services"><i class="far fa-arrow-right"></i>Accounting &amp; Reporting</a></li>
+                                    <li><a href="/advisory-and-cfo-services"><i class="far fa-arrow-right"></i>Management Consultancy</a></li>
                                 </ul>
                             </div>
                         </div>
