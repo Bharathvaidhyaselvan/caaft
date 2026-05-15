@@ -39,8 +39,7 @@ if (empty($name) || empty($email) || empty($phone) || empty($service) || empty($
 }
 
 // Email settings
-$to = "info@caaft.com"; // Main recipient
-$bcc = "kpwebtechseo@gmail.com"; // ✅ Add your BCC email here
+$to = caaft_form_recipient_email();
 $subject = "ROC Compliance Filing Enquiry from " . $name;
 
 $body = "
@@ -56,7 +55,6 @@ $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8\r\n";
 $headers .= "From: $name <$email>\r\n";
 $headers .= "Reply-To: $email\r\n";
-$headers .= "Bcc: $bcc\r\n";
 
 // Send mail
 if (mail($to, $subject, $body, $headers)) {

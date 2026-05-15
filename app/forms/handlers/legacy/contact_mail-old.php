@@ -14,7 +14,7 @@ $about = $_POST['about'];
 $title = $_POST['title'];
 $msg = $_POST['msg'];
 
-$to 	   ='kpwebtechseo@gmail.com';
+$to = caaft_form_recipient_email();
 $subject ="Contact mail from CAAFT Consultancy Services Private Limited";
 
 

@@ -135,7 +135,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         padding: 14px 18px 14px 20px;
         color: rgba(245, 250, 255, 0.78);
         font-family: var(--heading-font, "Plus Jakarta Sans", sans-serif);
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 600;
         letter-spacing: 0.01em;
         text-align: left;
@@ -160,11 +160,18 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         min-width: 0;
         color: inherit;
         text-decoration: none;
-        font: inherit;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: inherit;
         letter-spacing: inherit;
-        line-height: inherit;
+        line-height: 1.4;
         cursor: pointer;
         transition: color 0.2s ease;
+    }
+
+    .mm-tabs .mm-tab,
+    .mm-tabs .mm-tab-link {
+        font-size: 14px !important;
     }
 
     .mm-tab-link:hover,
@@ -232,6 +239,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
     .mm-panel--business { grid-template-columns: 1fr 1fr; gap: 28px; }
     .mm-panel--compliance { grid-template-columns: 1fr 1fr; gap: 28px; }
     .mm-panel--advisory { grid-template-columns: 1fr; }
+    .mm-panel--payroll { grid-template-columns: 1fr; }
 
     .mm-group-title {
         font-size: 11px;
@@ -379,7 +387,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                         </li>
 
                         <!-- ═══════════════════════════════════════════════════════════
-                             DESKTOP MEGA MENU — 5-tab tabbed layout
+                             DESKTOP MEGA MENU — 6-tab tabbed layout
                         ════════════════════════════════════════════════════════════ -->
                         <li class="nav-item dispaly_desktop mega-services-item">
                             <a class="nav-link mega-services-trigger <?= $servicesActive; ?>" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="mega-services-trigger">
@@ -428,6 +436,14 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 13h2v7H3v-7zm4-6h2v13H7V7zm4-4h2v17h-2V3zm4 7h2v10h-2V10zm4-3h2v13h-2V7z"/></svg>
                                         </span>
                                         <a class="mm-tab-link" href="/advisory-and-cfo-services">Advisory &amp; CFO Services</a>
+                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div class="mm-tab" data-panel="payroll" role="tab" tabindex="0" aria-selected="false">
+                                        <span class="mm-tab-icon" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                                        </span>
+                                        <a class="mm-tab-link" href="/payroll-management-compliance">Payroll Management &amp; Compliance</a>
                                         <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
                                     </div>
 
@@ -534,6 +550,13 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                             <a href="/financial-assessment-services">Financial Assessment</a>
                                             <a href="/feasibility-study">Feasibility Study</a>
                                             <a href="/cfo-financial-management-services">CFO &amp; Financial Management</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- ⑥ PAYROLL MANAGEMENT & COMPLIANCE -->
+                                    <div class="mm-panel mm-panel--payroll" id="panel-payroll" role="tabpanel">
+                                        <div class="mm-group-title">Payroll Management &amp; Compliance</div>
+                                        <div class="mm-grid-flat">
                                             <a href="/payroll-management-compliance">Payroll Management &amp; Compliance</a>
                                         </div>
                                     </div>
@@ -637,6 +660,13 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                         <li><a class="dropdown-item" href="/financial-assessment-services">Financial Assessment</a></li>
                                         <li><a class="dropdown-item" href="/feasibility-study">Feasibility Study</a></li>
                                         <li><a class="dropdown-item" href="/cfo-financial-management-services">CFO &amp; Financial Management</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Payroll -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle main_mesnus_colors" href="/payroll-management-compliance">Payroll Management &amp; Compliance</a>
+                                    <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="/payroll-management-compliance">Payroll Management &amp; Compliance</a></li>
                                     </ul>
                                 </li>

@@ -36,14 +36,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Email setup
-    $to = "info@caaft.com"; // Replace with your recipient email
-    $bcc = "kpwebtechseo@gmail.com"; // Replace with your BCC email
+    $to = caaft_form_recipient_email();
     $subject = "New Contact Form Submission - $title";
 
     // Email headers
     $headers = "From: $name <$email>\r\n";
     $headers .= "Reply-To: $email\r\n";
-    $headers .= "BCC: $bcc\r\n"; // Add BCC
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 

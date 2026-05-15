@@ -30,3 +30,22 @@ if (!function_exists('has_honeypot_value')) {
         return false;
     }
 }
+
+if (!function_exists('caaft_form_recipient_email')) {
+    function caaft_form_recipient_email(): string
+    {
+        static $recipient = null;
+        if ($recipient !== null) {
+            return $recipient;
+        }
+
+        $configPath = (defined('APP_ROOT') ? APP_ROOT : dirname(__DIR__, 2)) . '/config/mail.php';
+        $config = is_file($configPath) ? require $configPath : [];
+        $recipient = filter_var(
+            (string) ($config['form_recipient'] ?? 'services@caaft.com'),
+            FILTER_VALIDATE_EMAIL,
+        );
+
+        return is_string($recipient) ? $recipient : 'services@caaft.com';
+    }
+}

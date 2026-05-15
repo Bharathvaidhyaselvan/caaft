@@ -39,8 +39,7 @@ if (empty($name) || empty($email) || empty($phone) || empty($service) || empty($
 }
 
 // Mail setup
-$to = "info@caaft.com";  // Main recipient
-$bcc = "kpwebtechseo@gmail.com"; // Optional BCC
+$to = caaft_form_recipient_email();
 $subject = "Accounting Services Enquiry from " . $name;
 
 $body = "
@@ -56,7 +55,6 @@ $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8\r\n";
 $headers .= "From: $name <$email>\r\n";
 $headers .= "Reply-To: $email\r\n";
-$headers .= "Bcc: $bcc\r\n"; // ✅ Hidden BCC
 
 // Send mail
 if (mail($to, $subject, $body, $headers)) {
