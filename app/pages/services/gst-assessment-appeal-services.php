@@ -315,9 +315,9 @@
             'When a GST notice lands, the clock is already ticking — and every wrong move costs more than the original demand.',
             'CAAFT\'s GST Assessment & Appeal Support services are built for businesses, SMEs, exporters, and companies that cannot afford to leave a GST dispute to chance. From reviewing assessment notices to representing clients before the GST Appellate Tribunal — expert support is available at every stage, with legal precision, strategic clarity, and zero confusion.',
         ];
-        $caaft_hero_primary_cta_label = 'Get a Free Case Review';
+        $caaft_hero_primary_cta_label = 'End-to-End GST Compliance & Litigation';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Talk to a GST Expert Now!';
+        $caaft_hero_secondary_cta_label = 'Handle GST Litigation With Confidence';
         $caaft_hero_secondary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 

@@ -398,8 +398,8 @@
                                 For startups, SMEs, freelancers, exporters, and NRIs, structured and accurate filing builds credibility with banks, investors, and institutions — while protecting against penalties, notices, and compliance risk. CAAFT delivers professionally managed, end-to-end income tax filing services designed for precision, transparency, and strategic tax efficiency.
                             </p>
                             <div class="caaft-ar-hero-ctas">
-                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Start Filing Now <i class="fas fa-arrow-right"></i></a>
-                                <a href="#itr-services-heading" class="theme-btn theme-btn2 caaft-ar-hero-btn-secondary">Free ITR Check! <i class="fas fa-arrow-down"></i></a>
+                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Explore Tax & Compliance Services  <i class="fas fa-arrow-right"></i></a>
+                                <a href="#itr-services-heading" class="theme-btn theme-btn2 caaft-ar-hero-btn-secondary">Start Filing Now  <i class="fas fa-arrow-down"></i></a>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6">

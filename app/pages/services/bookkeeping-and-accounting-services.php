@@ -409,7 +409,7 @@
         $caaft_hero_lead_paragraphs = [
             'Whether a startup finding its footing, a growing SME, or an established enterprise — structured, reliable bookkeeping and accounting services provide the financial clarity, compliance confidence, and decision-ready data needed to grow sustainably.',
         ];
-        $caaft_hero_primary_cta_label = 'Take Control of Your Finances -';
+        $caaft_hero_primary_cta_label = 'Take Control of Your Finances';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_label = 'Expert Bookkeeping Made Simple';
         $caaft_hero_secondary_cta_href = '/contact#contact_us';

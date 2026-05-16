@@ -129,9 +129,9 @@ declare(strict_types=1);
     $caaft_hero_lead_paragraphs = [
     'CAAFT helps startup founders, expanding businesses, MSME owners, and investors make confident, evidence-backed decisions through rigorous feasibility study services — delivering research-driven analysis, financial projections, and board-ready reports built for every boardroom, bank, and investor meeting.'
     ];
-    $caaft_hero_primary_cta_label = 'Start Feasibility Study Today';
+    $caaft_hero_primary_cta_label = 'Professional Business Evaluation Services ';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'Validate Your Idea Instantly';
+    $caaft_hero_secondary_cta_label = 'Test Your Idea Before You Invest ';
     $caaft_hero_secondary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Feasibility Study Services';

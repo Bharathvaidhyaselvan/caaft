@@ -537,9 +537,9 @@
             'Delays, incorrect filings, or compliance gaps in TDS can trigger penalties, interest, and notices from the Income Tax Department.',
             'CAAFT offers expert TDS return filing for Private Limited Companies, LLPs, Partnership Firms, Proprietorships, Startups, and Employers — handled by experienced tax professionals to keep every business fully compliant, penalty-free, and audit-ready.',
         ];
-        $caaft_hero_primary_cta_label = 'Start Your TDS Filing';
+        $caaft_hero_primary_cta_label = 'Explore Smart Tax Solutions ';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Contact Us Today';
+        $caaft_hero_secondary_cta_label = ' Start Your TDS Filing Today ';
         $caaft_hero_secondary_cta_href = '#tds-services-heading';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-down';
 

@@ -109,9 +109,9 @@ declare(strict_types=1);
     $caaft_hero_h2_after = '';
     $caaft_hero_lead_paragraphs = [
 'The registered office is the official address recorded with the MCA for all legal and statutory communications. Any change must be filed with the Registrar of Companies within the prescribed timeline. Delays can lead to penalties, missed notices, and compliance gaps. CAAFT ensures accurate, timely registered office change filings across India.'    ];
-    $caaft_hero_primary_cta_label = 'Change Registered Office Today';
+    $caaft_hero_primary_cta_label = 'Smart ROC Filing & Amendment Support  ';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'File INC-22 Instantly';
+    $caaft_hero_secondary_cta_label = ' File INC-22 Instantly';
     $caaft_hero_secondary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Registered Office Change';

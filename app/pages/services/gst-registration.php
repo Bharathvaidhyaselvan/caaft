@@ -507,7 +507,7 @@
         $caaft_hero_lead_paragraphs = [
             'GST registration is not just a compliance requirement — it is the legal foundation every Indian business needs to operate, collect tax, and claim input tax credit with confidence. Whether a startup completing its first registration, an SME expanding into new states, or an e-commerce seller navigating platform-specific requirements — CAAFT delivers accurate, fast, and hassle-free GST registration services that get businesses compliant from day one.',
         ];
-        $caaft_hero_primary_cta_label = 'Start Your GST Registration –';
+        $caaft_hero_primary_cta_label = 'Business Registration & Tax Experts';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_label = 'Quick & Hassle-Free Setup';
         $caaft_hero_secondary_cta_href = '/contact#contact_us';

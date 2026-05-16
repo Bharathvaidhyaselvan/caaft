@@ -640,9 +640,9 @@
         $caaft_hero_lead_paragraphs = [
             'Whether a tax notice has been received, an assessment is disputed, or an appeal needs to be filed — navigating income tax authorities is complex, time-sensitive, and high-stakes. CAAFT delivers end-to-end income tax appeal, tax assessment, and dispute resolution services for individuals, businesses, and property owners — ensuring what is actually owed is exactly what gets paid. Nothing more.',
         ];
-        $caaft_hero_primary_cta_label = 'Resolve Your Tax Notice –';
+        $caaft_hero_primary_cta_label = ' Smart Tax & Compliance Solutions';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Get Expert Help Now';
+        $caaft_hero_secondary_cta_label = 'Resolve Your Tax Notice ';
         $caaft_hero_secondary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_hero_secondary_extra_class = '';

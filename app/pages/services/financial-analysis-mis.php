@@ -534,9 +534,9 @@
         $caaft_hero_lead_paragraphs = [
             'Financial analysis and MIS reporting give startups, SMEs, and growing businesses the financial discipline, trend visibility, and decision-ready data needed to control expenses, track profitability, and identify growth opportunities — turning raw financial data into a genuine strategic advantage.',
         ];
-        $caaft_hero_primary_cta_label = 'Boost Financial Performance -';
+        $caaft_hero_primary_cta_label = 'Explore Financial Solutions';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Expert MIS Insights, On Demand';
+        $caaft_hero_secondary_cta_label = 'Smarter Business Support for Growth ';
         $caaft_hero_secondary_cta_href = '/contact#contact_us';
 
         $caaft_enquiry_service = 'Financial Analysis & MIS Reporting Services';

@@ -103,9 +103,9 @@ declare(strict_types=1);
         'A One Person Company offers limited liability and full ownership under a recognised corporate structure — but comes with mandatory annual compliance obligations under the Companies Act, 2013 that apply regardless of business size or turnover.',
         'Staying compliant keeps the OPC legally active, protects the director from personal liability, avoids accumulating penalties, and builds credibility with banks, investors, and regulatory authorities. CAAFT delivers complete OPC annual compliance management — from financial statement preparation and ROC filings through to director KYC and income tax returns.',
     ];
-    $caaft_hero_primary_cta_label = 'Start OPC Compliance Today';
+    $caaft_hero_primary_cta_label = 'Stay Legally Compliant With Experts';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'File OPC Returns Now';
+    $caaft_hero_secondary_cta_label = 'Keep Your OPC Legally Active ';
     $caaft_hero_secondary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'OPC Annual Compliance';

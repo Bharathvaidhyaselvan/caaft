@@ -92,9 +92,9 @@ declare(strict_types=1);
 'Know what a business is truly worth — and use that knowledge to grow, raise, or exit with confidence.',
 'Whether raising a first funding round, planning a merger, transferring shares, or simply looking to understand a company\'s financial standing — a credible, SEBI and RBI-compliant business valuation report is non-negotiable. CAAFT delivers precisely that: data-backed, professionally prepared valuations that hold up in boardrooms, due diligence meetings, and regulatory filings.'    
 ];
-    $caaft_hero_primary_cta_label = 'Start Valuation Today';
+    $caaft_hero_primary_cta_label = 'Smart Business Valuation Services ';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'Get Accurate Valuation Now';
+    $caaft_hero_secondary_cta_label = 'Build Smarter Financial Decisions ';
     $caaft_hero_secondary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Business Valuation Services';

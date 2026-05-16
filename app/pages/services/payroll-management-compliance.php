@@ -143,9 +143,9 @@ declare(strict_types=1);
     $caaft_hero_lead_paragraphs = [
 'CAAFT delivers end-to-end payroll management services for startups, SMEs, large enterprises, and MNCs operating in India. From accurate salary processing to statutory compliance — every layer of complexity is handled so internal teams can focus on what matters most.',
     ];
-    $caaft_hero_primary_cta_label = 'Start Payroll Management Today';
+    $caaft_hero_primary_cta_label = 'Business Payroll Made Simple';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'Simplify Your Payroll Instantly';
+    $caaft_hero_secondary_cta_label = 'Stay Payroll Compliant Every Month';
     $caaft_hero_secondary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Payroll Management & Compliance';

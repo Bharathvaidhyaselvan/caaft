@@ -847,9 +847,9 @@
         $caaft_hero_lead_paragraphs = [
             'For growing businesses, startups, and professionals, maintaining accurate financial records and complying with tax regulations is not optional — it is the foundation of financial credibility. CAAFT delivers structured tax audit services under Section 44AB, helping businesses review financial records, ensure timely report filing, and stay fully compliant without the last-minute scramble.',
         ];
-        $caaft_hero_primary_cta_label = 'Start Your Audit';
+        $caaft_hero_primary_cta_label = 'Complete Audit & Tax Support';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Contact Us Today';
+        $caaft_hero_secondary_cta_label = 'Audit Ready? Let’s Go';
         $caaft_hero_secondary_cta_href = '#audit-services-heading';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-down';
 

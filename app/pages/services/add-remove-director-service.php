@@ -97,9 +97,9 @@ declare(strict_types=1);
         'Director changes are among the most compliance-sensitive events in a company\'s lifecycle - with strict MCA timelines and mandatory ROC filings that cannot be missed.',
         'Non-compliance triggers Rs. 200 per day in penalties with no upper cap and can escalate to director disqualification and company strike-off. CAAFT delivers accurate, timely director appointment and removal filings for companies across India.',
     ];
-    $caaft_hero_primary_cta_label = 'Start Director Change Today';
+    $caaft_hero_primary_cta_label = 'Professional DIR-12 Filing Support';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'File DIR-12 Instantly';
+    $caaft_hero_secondary_cta_label = 'Fast & Accurate Director Filing ';
     $caaft_hero_secondary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Add / Remove Director Service';

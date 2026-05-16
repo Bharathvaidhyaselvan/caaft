@@ -95,7 +95,7 @@ declare(strict_types=1);
     $caaft_hero_lead_paragraphs = [
 'Closing a company is not just about stopping operations—it is a structured legal process under the Companies Act, 2013 and the Insolvency and Bankruptcy Code, 2016. It involves ROC filings, liability clearance, and strict compliance procedures. Delays can lead to penalties, director disqualification, and higher costs. CAAFT provides end-to-end support for smooth company closure and strike off for Private Limited Companies, dormant startups, and foreign subsidiaries in India.',
     ];
-    $caaft_hero_primary_cta_label = 'Start Company Closure Today';
+    $caaft_hero_primary_cta_label = 'Reliable ROC Filing for Company Closure ';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_label = 'Apply for Strike Off Now';
     $caaft_hero_secondary_cta_href = '/contact#contact_us';

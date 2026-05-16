@@ -102,9 +102,9 @@ declare(strict_types=1);
         'Operating a partnership firm offers flexibility and ease of management — but it also requires businesses to meet several legal, financial, and tax obligations throughout the year.',
         'Proper partnership firm compliance ensures smooth operations, accurate financial reporting, and full regulatory adherence under Indian law. Without structured compliance management, partnership firms face penalties, legal notices, banking complications, and operational challenges that are entirely avoidable. CAAFT delivers complete partnership firm compliance services — from income tax filing and GST returns to deed amendments, bookkeeping, and ongoing statutory monitoring.',
     ];
-    $caaft_hero_primary_cta_label = 'Start Your Firm Compliance Today';
+    $caaft_hero_primary_cta_label = 'Smart GST & Tax Filing Support ';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'File Tax & GST Returns Now';
+    $caaft_hero_secondary_cta_label = ' File GST & Tax Returns With Experts ';
     $caaft_hero_secondary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Partnership Firm Compliance';

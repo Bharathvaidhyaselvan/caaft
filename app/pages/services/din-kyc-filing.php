@@ -95,9 +95,9 @@ declare(strict_types=1);
         'The Director KYC (DIN KYC) process, mandated by the MCA, ensures that the identity and contact details of every director holding a Director Identification Number remain verified and current in government records.',
         'Every director of a Private Limited Company, LLP, or registered entity must complete the DIR-3 KYC filing annually by 30 September. Non-compliance leads to automatic DIN deactivation — restricting the director from filing company forms, signing statutory documents, or participating in any compliance activity — until the KYC is filed and the DIN is reactivated with a ₹5,000 penalty. CAAFT delivers accurate, timely DIR-3 KYC filing and DIN reactivation support for directors across India.',
     ];
-    $caaft_hero_primary_cta_label = 'Complete Your DIN KYC Today';
+    $caaft_hero_primary_cta_label = 'Professional DIR-3 KYC Support ';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'File DIR-3 KYC Now';
+    $caaft_hero_secondary_cta_label = 'Avoid DIN Deactivation & Penalties';
     $caaft_hero_secondary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Director KYC (DIN KYC)';

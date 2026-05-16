@@ -190,9 +190,9 @@ declare(strict_types=1);
             'For local shop owners, traders, home-based entrepreneurs, and first-time business owners, a sole proprietorship is the simplest and most practical way to start a business in India.',
             'While the setup is straightforward, proper registration is essential — without the right licences and registrations, banking hurdles, GST complications, and legal setbacks can follow. CAAFT delivers complete sole proprietorship registration support — covering every required licence, registration, and compliance obligation in one place.',
         ];
-        $caaft_hero_primary_cta_label = 'Start Your Business Today';
+        $caaft_hero_primary_cta_label = 'End-to-End Startup Registration Support';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Register Your Proprietorship Now';
+        $caaft_hero_secondary_cta_label = 'Build Your Business the Right Way';
         $caaft_hero_secondary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'Sole Proprietorship Registration';

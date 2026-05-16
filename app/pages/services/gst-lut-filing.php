@@ -406,8 +406,8 @@
                     <h2 class="caaft-ar-hero-h2">One Filing. Twelve Months of Compliant, GST-Free Exports.</h2>
                     <p class="caaft-ar-hero-lead">Indian exporters — goods, services, or e-commerce — need a compliance partner who gets it done right the first time. CAAFT handles GST LUT filing end-to-end, from eligibility checks and document preparation to submission and annual renewal — so internal teams can focus entirely on growing the export business.</p>
                     <div class="caaft-ar-hero-ctas">
-                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">File Your LUT Now <i class="fas fa-arrow-right"></i></a>
-                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-secondary">Talk to an Export Expert <i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">End-to-End Export Tax Compliance  <i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-secondary"> Stay Export-Ready With Experts  <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php

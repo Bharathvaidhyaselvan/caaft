@@ -131,9 +131,9 @@ declare(strict_types=1);
         'Missing annual compliance deadlines as an LLP costs far more than just a fine — it triggers compounding daily penalties with no upper cap, risks MCA strike-off, and exposes Designated Partners to personal liability.',
         'Whether a startup, a professional firm, or a growing SME structured as an LLP — every Limited Liability Partnership registered in India carries mandatory annual compliance obligations under the LLP Act, 2008 and MCA regulations. CAAFT delivers complete LLP annual compliance management — from Form 8 and Form 11 filings and financial statements to statutory records and partner-level advisory.',
     ];
-    $caaft_hero_primary_cta_label = 'Manage Your Compliance';
+    $caaft_hero_primary_cta_label = 'Reliable ROC & LLP Filing Solutions';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'Contact Us Today!';
+    $caaft_hero_secondary_cta_label = 'Keep Your LLP Legally Active';
     $caaft_hero_secondary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'LLP Annual Compliance';

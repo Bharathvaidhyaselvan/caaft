@@ -144,7 +144,7 @@ declare(strict_types=1);
         'Every Private Limited Company registered in India is legally required to meet a fixed set of compliance obligations under the Companies Act, 2013. From ROC filings and board meetings to statutory registers and financial statements — these obligations are ongoing, time-sensitive, and carry escalating penalties for every day of delay.',
         'CAAFT manages the complete annual compliance cycle for private limited companies — so businesses stay clean, credible, and confidently on track.',
     ];
-    $caaft_hero_primary_cta_label = 'Start Your Annual Compliance Today';
+    $caaft_hero_primary_cta_label = 'End-to-End Company Compliance Services ';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_label = 'File Your ROC Returns Now';
     $caaft_hero_secondary_cta_href = '/contact#contact_us';

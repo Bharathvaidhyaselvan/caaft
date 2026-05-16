@@ -247,9 +247,9 @@ declare(strict_types=1);
         $caaft_hero_lead_paragraphs = [
             'For small business owners, traders, family-run enterprises, and startups with two or more founders, a Partnership Firm is one of the most practical and cost-effective business structures in India. While registration is not mandatory under the Indian Partnership Act, 1932, registering a firm provides legal recognition, strengthens credibility with banks and institutions, and protects partners\' rights in the event of disputes.',
         ];
-        $caaft_hero_primary_cta_label = 'Start Your Partnership Firm Now';
+        $caaft_hero_primary_cta_label = 'Company & Firm Registration Services';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Register Your Firm Today';
+        $caaft_hero_secondary_cta_label = 'Hassle-Free Partnership Registration ';
         $caaft_hero_secondary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'Partnership Firm Registration';

@@ -128,9 +128,9 @@ declare(strict_types=1);
     $caaft_hero_lead_paragraphs = [
         'CAAFT helps startups, SMEs, manufacturers, and HR teams get EPF and ESI registered correctly and stay compliant every single month — without the confusion, the chase, or the regulatory risk that comes from managing it without dedicated expert support.',
     ];
-    $caaft_hero_primary_cta_label = 'Start EPF & ESI Registration Today';
+    $caaft_hero_primary_cta_label = 'Your Hub for Payroll & Labour Compliance';
     $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'Get PF & ESI Compliance Now';
+    $caaft_hero_secondary_cta_label = 'Fast & Accurate PF & ESI Registration ';
     $caaft_hero_secondary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'EPF & ESI Registration';

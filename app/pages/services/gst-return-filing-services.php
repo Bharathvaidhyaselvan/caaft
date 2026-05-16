@@ -445,8 +445,8 @@
                     <p class="caaft-ar-hero-lead">GST return filing is not a routine administrative task — it is a legal obligation with direct consequences for Input Tax Credit, business credibility, and GSTIN status.</p>
                     <p class="caaft-ar-hero-lead">For growing businesses dealing with multiple return types, strict deadlines, and evolving compliance requirements, even small errors affect tax records and ITC claims. CAAFT delivers professional GST return filing services — structured, accurate, and on time — for startups, SMEs, and professionals across India.</p>
                     <div class="caaft-ar-hero-ctas">
-                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Schedule a Free Consultation <i class="fas fa-arrow-right"></i></a>
-                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-secondary">Get Started Today! <i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary"> All-in-One GST & Financial Support<i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-secondary">  File GST Returns Without Stress <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php
