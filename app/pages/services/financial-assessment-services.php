@@ -118,10 +118,8 @@ declare(strict_types=1);
       'A properly conducted financial assessment not only presents the current financial position but also delivers actionable recommendations to enhance profitability, streamline cash flow, and support better investment planning.',
 
     ];
-    $caaft_hero_primary_cta_label = 'Business Growth Through Financial Clarity';
-    $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'Financial Clarity Starts Here';
-    $caaft_hero_secondary_cta_href = '/contact#contact_us';
+    $caaft_hero_primary_cta_label = 'Financial Clarity Starts Here';
+    $caaft_hero_primary_cta_href = '/contact';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Financial Assessment Services';
     $caaft_enquiry_action = '/business-registration-mail.php';

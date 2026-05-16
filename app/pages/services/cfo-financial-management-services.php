@@ -78,10 +78,8 @@ declare(strict_types=1);
     $caaft_hero_lead_paragraphs = [
         'Running a business without financial leadership is like navigating without a map. Whether a startup finding its footing or an SME ready to scale, CAAFT\'s CFO & Financial Management services provide strategic oversight, reporting clarity, and financial discipline to grow with confidence.',
     ];
-    $caaft_hero_primary_cta_label = 'Business Finance & Growth Solutions';
-    $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'Get Financial Clarity Now';
-    $caaft_hero_secondary_cta_href = '/contact#contact_us';
+    $caaft_hero_primary_cta_label = 'Get Financial Clarity Now';
+    $caaft_hero_primary_cta_href = '/contact';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'CFO & Financial Management Services';
     $caaft_enquiry_action = '/business-registration-mail.php';

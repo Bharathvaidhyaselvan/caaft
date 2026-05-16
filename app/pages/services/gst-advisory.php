@@ -190,10 +190,8 @@
             'GST compliance requires a structured, methodical approach that goes far beyond routine return filing.',
             'Businesses must understand applicable regulations, maintain accurate records, and implement proper reporting systems — all while keeping pace with evolving tax rules and increasing regulatory scrutiny. CAAFT delivers expert GST advisory and compliance services that help businesses navigate the full complexity of India\'s GST framework, minimise risks, and maintain complete tax efficiency.',
         ];
-        $caaft_hero_primary_cta_label = 'Your Trusted GST Compliance Partner';
-        $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = ' Accurate GST Support, Every Month ';
-        $caaft_hero_secondary_cta_href = '/contact#contact_us';
+        $caaft_hero_primary_cta_label = ' Accurate GST Support, Every Month ';
+        $caaft_hero_primary_cta_href = '/contact';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
 $caaft_enquiry_service = 'GST Advisory and Compliance Services';

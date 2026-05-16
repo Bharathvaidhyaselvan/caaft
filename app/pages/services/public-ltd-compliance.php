@@ -122,10 +122,8 @@ declare(strict_types=1);
         'Running a Public Limited Company means legal obligations that never pause — no matter how busy the boardroom gets.',
         'From ROC filings and board meetings to SEBI disclosures and financial statement preparation, public limited company compliance is broader, stricter, and more consequential than for private entities. CAAFT manages the complete compliance calendar for public limited companies — so leadership stays focused on the business while every regulatory obligation is met accurately and on time.',
     ];
-    $caaft_hero_primary_cta_label = 'Smart ROC & SEBI Filing Support';
-    $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'File ROC & SEBI Now';
-    $caaft_hero_secondary_cta_href = '/contact#contact_us';
+    $caaft_hero_primary_cta_label = 'File ROC & SEBI Now';
+    $caaft_hero_primary_cta_href = '/contact';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Public Limited Company Compliance';
     $caaft_enquiry_action = '/business-registration-mail.php';

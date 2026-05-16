@@ -94,10 +94,8 @@ declare(strict_types=1);
     $caaft_hero_h2_after = '';
     $caaft_hero_lead_paragraphs = [
         'Increasing authorised share capital is a critical step before funding, share allotment, or restructuring — governed by strict requirements under the Companies Act, 2013. It involves board and shareholder approvals, MOA amendment, and timely ROC filings. Non-compliance can invalidate allotments and trigger penalties. CAAFT ensures accurate, timely filings across India.'     ];
-    $caaft_hero_primary_cta_label = 'Complete Capital & Compliance Solutions';
-    $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'File SH-7 Hassle-Free';
-    $caaft_hero_secondary_cta_href = '/contact#contact_us';
+    $caaft_hero_primary_cta_label = 'File SH-7 Hassle-Free';
+    $caaft_hero_primary_cta_href = '/contact';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Increase Authorised Share Capital';
     $caaft_enquiry_action = '/business-registration-mail.php';

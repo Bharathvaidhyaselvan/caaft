@@ -82,10 +82,8 @@ declare(strict_types=1);
     $caaft_hero_lead_paragraphs = [
         'ROC compliance is a continuous legal obligation for every registered company in India — covering both annual filings and event-based submissions that must be completed accurately and within prescribed timelines. Missing deadlines or filing incorrect forms attracts heavy penalties, triggers compliance notices, and can affect a company\'s active status with the MCA. CAAFT delivers accurate, timely miscellaneous ROC filing support for Private Limited Companies, One Person Companies, and LLPs across India.'
     ];
-    $caaft_hero_primary_cta_label = 'Complete ROC Filing Solutions';
-    $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = ' File ROC Forms Hassle-Free ';
-    $caaft_hero_secondary_cta_href = '/contact#contact_us';
+    $caaft_hero_primary_cta_label = 'File ROC Forms Hassle-Free';
+    $caaft_hero_primary_cta_href = '/contact';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Miscellaneous ROC Filings';
     $caaft_enquiry_action = '/business-registration-mail.php';

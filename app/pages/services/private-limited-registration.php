@@ -426,10 +426,8 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             'A Private Limited Company stands as the most widely chosen business structure in India — combining limited liability protection, separate legal identity, and a governance framework that supports credible, scalable business growth.',
             'This structure restricts share transferability and caps shareholders at a maximum of 200 — making it the preferred choice for startups, growing enterprises, and businesses planning structured investment rounds. CAAFT manages end-to-end Private Limited Company registration and compliance — from name approval and ROC filing through to post-incorporation statutory management.',
         ];
-        $caaft_hero_primary_cta_label = 'Professional Incorporation & ROC Services';
-        $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Incorporate Today';
-        $caaft_hero_secondary_cta_href = '/contact#contact_us';
+        $caaft_hero_primary_cta_label = 'Incorporate Today';
+        $caaft_hero_primary_cta_href = '/contact';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 $caaft_enquiry_service = 'Private Limited Company Registration';
 $caaft_enquiry_action = '/business-registration-mail.php';

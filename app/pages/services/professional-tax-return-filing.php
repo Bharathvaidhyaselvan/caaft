@@ -118,10 +118,8 @@ declare(strict_types=1);
         'Professional tax is a state-level tax levied on salaried employees, self-employed professionals, and business owners across applicable Indian states — and compliance is not optional.',
         'Employers must deduct and deposit professional tax on behalf of their workforce, while eligible individuals must register and pay independently. Accurate and timely professional tax return filing helps businesses avoid penalties, maintain payroll compliance, and meet state-specific regulatory requirements without disruption. CAAFT delivers complete professional tax registration and return filing services — across all applicable states, for every business type and professional category.',
     ];
-    $caaft_hero_primary_cta_label = 'End-to-End PT Registration Services ';
-    $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'Stay PT Compliant Without Stress ';
-    $caaft_hero_secondary_cta_href = '/contact#contact_us';
+    $caaft_hero_primary_cta_label = 'Stay PT Compliant Without Stress ';
+    $caaft_hero_primary_cta_href = '/contact';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Professional Tax Return Filing';
     $caaft_enquiry_action = '/business-registration-mail.php';

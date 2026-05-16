@@ -733,10 +733,8 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             'A One Person Company gives solo entrepreneurs what a sole proprietorship never could — a separate legal identity, limited liability protection, and the credibility of a registered corporate structure, all under single ownership.',
             'Understanding how to register a One Person Company and navigating the OPC registration process correctly from the start ensures faster incorporation, cleaner compliance, and a stronger legal foundation. CAAFT manages the complete One Person Company registration for individual founders, freelancers, and independent professionals across India — from DSC procurement and name approval through to Certificate of Incorporation and post-registration compliance.',
         ];
-        $caaft_hero_primary_cta_label = 'Your Hub for Startup & ROC Compliance';
-        $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = ' Quick & Easy OPC Registration ';
-        $caaft_hero_secondary_cta_href = '/contact#contact_us';
+        $caaft_hero_primary_cta_label = 'Quick & Easy OPC Registration';
+        $caaft_hero_primary_cta_href = '/contact';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'One Person Company (OPC) Registration';
         $caaft_enquiry_action = '/business-registration-mail.php';

@@ -181,7 +181,7 @@
             "From virtual CFO support to investment-grade valuations, CAAFT gives your business the financial expertise to make better decisions, plan ahead, and grow with confidence. Every business reaches a point where bookkeeping isn't enough — you need senior financial thinking, not just numbers. CAAFT delivers CFO-level expertise on a flexible, engagement-based model that fits your business and your budget.",
         ];
         $caaft_hero_primary_cta_label = 'Book a Free Advisory Consultation';
-        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_primary_cta_href = '/contact';
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
         $caaft_hero_secondary_cta_href = '#ac-services-heading';
 

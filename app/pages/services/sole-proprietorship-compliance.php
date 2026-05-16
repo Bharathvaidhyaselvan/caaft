@@ -128,10 +128,8 @@ declare(strict_types=1);
         'As a sole proprietor in India, every compliance obligation — income tax, GST, TDS, audits, and licences — falls on one person. Missing a deadline or filing incorrectly means penalties, interest charges, and legal risk that accumulate quickly.',
         'CAAFT handles the complete compliance calendar for sole proprietors — accurately, on time, and without the stress. Freelancers, retailers, e-commerce sellers, and independent professionals across India rely on structured compliance management to stay clean, credible, and penalty-free throughout the year.',
     ];
-    $caaft_hero_primary_cta_label = 'Complete Sole Proprietor Compliance Solutions';
-    $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'Stay Compliant Without the Stress';
-    $caaft_hero_secondary_cta_href = '/contact#contact_us';
+    $caaft_hero_primary_cta_label = 'Stay Compliant Without the Stress';
+    $caaft_hero_primary_cta_href = '/contact';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Sole Proprietorship Compliance';
     $caaft_enquiry_action = '/business-registration-mail.php';

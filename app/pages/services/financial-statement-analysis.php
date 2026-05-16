@@ -147,10 +147,8 @@
             'Accurate financial statements are not just a compliance requirement — they are the foundation of every smart business decision.',
             'Whether a startup tracking early-stage finances, an SME evaluating growth, or an established company maintaining investor transparency — structured, professionally prepared financial statements provide the clarity, control, and credibility needed to manage performance and plan with confidence.',
         ];
-        $caaft_hero_primary_cta_label = 'Boost Financial Performance';
-        $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Get Expert Assistance Today!';
-        $caaft_hero_secondary_cta_href = '/contact#contact_us';
+        $caaft_hero_primary_cta_label = 'Get Expert Assistance Today!';
+        $caaft_hero_primary_cta_href = '/contact';
                                 $caaft_enquiry_service = 'Financial Statement Analysis Services';
                                 $caaft_enquiry_form_id = 'caaft-fs-enquiry-form-inner';
                                 $caaft_enquiry_input_id_prefix = 'fs';

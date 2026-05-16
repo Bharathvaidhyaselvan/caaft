@@ -570,10 +570,8 @@ declare(strict_types=1);
             'A Limited Liability Partnership combines the flexibility of a partnership with the legal protection of a company — offering partners personal liability protection without the compliance burden of a Private Limited Company.',
             'Registered under the LLP Act, 2008, an LLP holds a separate legal identity, can own assets, enter contracts, and sue or be sued in its own name. CAAFT handles end-to-end LLP registration across India — from name reservation and FiLLiP filing to LLP Agreement drafting, Certificate of Incorporation, and post-registration compliance.',
         ];
-        $caaft_hero_primary_cta_label = 'Complete LLP & Company Registration Solutions';
-        $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Register Your LLP Now';
-        $caaft_hero_secondary_cta_href = '/contact#contact_us';
+        $caaft_hero_primary_cta_label = 'Register Your LLP Now';
+        $caaft_hero_primary_cta_href = '/contact';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'LLP Registration';
         $caaft_enquiry_action = '/business-registration-mail.php';

@@ -406,8 +406,7 @@
                     <h2 class="caaft-ar-hero-h2">One Filing. Twelve Months of Compliant, GST-Free Exports.</h2>
                     <p class="caaft-ar-hero-lead">Indian exporters — goods, services, or e-commerce — need a compliance partner who gets it done right the first time. CAAFT handles GST LUT filing end-to-end, from eligibility checks and document preparation to submission and annual renewal — so internal teams can focus entirely on growing the export business.</p>
                     <div class="caaft-ar-hero-ctas">
-                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">End-to-End Export Tax Compliance  <i class="fas fa-arrow-right"></i></a>
-                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-secondary"> Stay Export-Ready With Experts  <i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact" class="theme-btn caaft-ar-hero-btn-primary"> Stay Export-Ready With Experts<i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php
@@ -677,7 +676,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         $caaft_cta_title = 'Ready to Export Without GST Hassles?';
         $caaft_cta_text = 'A valid GST LUT is the single compliance step that protects every export transaction, preserves working capital, and keeps the business credible in the eyes of customs, buyers, and tax authorities. Whether it is a first-time filing, an annual renewal, or a correction of a rejected application — CAAFT delivers accurate, fast, and fully compliant LUT support for every exporter across India.';
         $caaft_cta_button_label = 'Expert LUT Filing Starts Here';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '/contact';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

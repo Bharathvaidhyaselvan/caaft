@@ -155,10 +155,8 @@
             'Cash flow problems rarely appear without warning — they build up through untracked invoices, missed follow-ups, and delayed vendor payments.',
             'Whether an SME managing multiple vendors, a startup building financial discipline, or an established business dealing with high transaction volumes — structured receivable and payable management provides the financial control, payment visibility, and working capital efficiency needed to operate and grow with confidence.',
         ];
-        $caaft_hero_primary_cta_label = 'Simplify Payables & Receivables';
-        $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Expert Cash Flow Control';
-        $caaft_hero_secondary_cta_href = '/contact#contact_us';
+        $caaft_hero_primary_cta_label = 'Expert Cash Flow Control';
+        $caaft_hero_primary_cta_href = '/contact';
         $caaft_enquiry_service = 'Receivable & Payable Management Services';
         $caaft_enquiry_form_id = 'caaft-arap-enquiry-form-inner';
         $caaft_enquiry_input_id_prefix = 'arap';

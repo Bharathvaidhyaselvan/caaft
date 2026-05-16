@@ -95,10 +95,8 @@ declare(strict_types=1);
     $caaft_hero_lead_paragraphs = [
         'Running a business without a financial plan is like setting off without a destination. Whether a startup mapping its first budget or an enterprise managing multi-department projections, CAAFT\'s budgeting and forecasting services provide the financial clarity, planning discipline, and forward visibility needed to grow with confidence.',
     ];
-    $caaft_hero_primary_cta_label = 'Plan Smarter. Grow Faster';
-    $caaft_hero_primary_cta_href = '/contact#contact_us';
-    $caaft_hero_secondary_cta_label = 'Build Your Budget Now';
-    $caaft_hero_secondary_cta_href = '/contact#contact_us';
+    $caaft_hero_primary_cta_label = 'Build Your Budget Now';
+    $caaft_hero_primary_cta_href = '/contact';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Budgeting & Forecasting Services';
     $caaft_enquiry_action = '/business-registration-mail.php';

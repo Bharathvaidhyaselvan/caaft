@@ -447,10 +447,8 @@
             'When a business closes, restructures, or falls below the GST threshold, the registration does not deactivate automatically.',
             'Without formal GST cancellation, the obligation to file returns, respond to notices, and maintain compliance continues — regardless of whether the business is operational. CAAFT manages the complete GST registration cancellation process for businesses across India — handling documentation, portal filing, authority queries, and final approval from start to finish.',
         ];
-        $caaft_hero_primary_cta_label = 'End-to-End GST Compliance Support';
-        $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = ' Simplify Your GST Exit Process';
-        $caaft_hero_secondary_cta_href = '/contact#contact_us';
+        $caaft_hero_primary_cta_label = 'Simplify Your GST Exit Process';
+        $caaft_hero_primary_cta_href = '/contact';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
         $caaft_enquiry_service = 'GST Cancellation Services';

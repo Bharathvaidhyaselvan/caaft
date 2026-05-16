@@ -199,7 +199,7 @@
             "From annual filings to ROC changes, CAAFT manages every compliance obligation your company carries — so nothing lapses, penalties don't build up, and your business always stands on solid legal ground. Missing a deadline can mean late fees or director disqualification. We track every obligation, file on time, and handle every change so compliance is never a problem.",
         ];
         $caaft_hero_primary_cta_label = 'Get a Free Compliance Review';
-        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_primary_cta_href = '/contact';
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
         $caaft_hero_secondary_cta_href = '#cr-company-heading';
 

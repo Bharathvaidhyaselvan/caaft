@@ -93,9 +93,9 @@ declare(strict_types=1);
         'The process, also called MSME Udyog Aadhaar registration or Aadhaar Udyog online registration, is now simplified through Udyam Registration, allowing entrepreneurs to complete the entire process online quickly and efficiently.',
     ];
     $caaft_hero_primary_cta_label = 'Enquire Now';
-    $caaft_hero_primary_cta_href = '/contact#contact_us';
+    $caaft_hero_primary_cta_href = '/contact';
     $caaft_hero_secondary_cta_label = 'Start Udyam Registration';
-    $caaft_hero_secondary_cta_href = '/contact#contact_us';
+    $caaft_hero_secondary_cta_href = '/contact';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'MSME / Udyam Registration';
     $caaft_enquiry_action = '/business-registration-mail.php';

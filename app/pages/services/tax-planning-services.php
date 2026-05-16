@@ -508,9 +508,7 @@
             'CAAFT specialises in advanced, personalised tax strategies for high-income earners, business owners, startups, and professionals — helping preserve wealth, reduce tax exposure legally, and build a financial structure that works across every stage of growth.',
         ];
         $caaft_hero_primary_cta_label = 'Complete Tax & Compliance Support  ';
-        $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Get Personalized Tax Guidance ';
-        $caaft_hero_secondary_cta_href = '#tax-plan-what';
+        $caaft_hero_primary_cta_href = '/contact';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-down';
 
         $caaft_enquiry_service = 'Tax Planning Services';

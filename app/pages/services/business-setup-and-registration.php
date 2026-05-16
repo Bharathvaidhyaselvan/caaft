@@ -186,10 +186,8 @@
         $caaft_hero_lead_paragraphs = [
             'From company incorporation to essential business licences, CAAFT handles every registration your business needs — accurately, efficiently, and without the back-and-forth. Every business deserves a strong legal foundation from day one. We handle the paperwork, portal filings, and follow-ups so you can focus on building.',
         ];
-        $caaft_hero_primary_cta_label = 'Get a Free Registration Consultation';
-        $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Explore Our Services';
-        $caaft_hero_secondary_cta_href = '#bsr-company-heading';
+        $caaft_hero_primary_cta_label = 'Explore Our Services';
+        $caaft_hero_primary_cta_href = '/contact';
 
                                 $caaft_enquiry_service = 'Business Setup & Registration Services';
                                 $caaft_enquiry_action = '/business-registration-mail.php';

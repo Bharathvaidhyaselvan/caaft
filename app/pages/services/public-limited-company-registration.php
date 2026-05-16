@@ -424,10 +424,8 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             'A Public Limited Company enables large-scale operations, public capital raising, and strong corporate credibility — with a governance structure built to support long-term expansion.',
             'This business structure allows shares to be offered to the general public and traded on stock exchanges, provides limited liability to shareholders, and operates under the structured governance and disclosure standards of the Companies Act, 2013. CAAFT delivers end-to-end Public Limited Company registration and compliance support — from name approval and ROC filing through to post-incorporation statutory management.',
         ];
-        $caaft_hero_primary_cta_label = 'End-to-End ROC & Corporate Compliance';
-        $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_secondary_cta_label = 'Consult a Registration Expert ';
-        $caaft_hero_secondary_cta_href = '/contact#contact_us';
+        $caaft_hero_primary_cta_label = 'Consult a Registration Expert';
+        $caaft_hero_primary_cta_href = '/contact';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'Public Limited Company Registration';
         $caaft_enquiry_action = '/business-registration-mail.php';
