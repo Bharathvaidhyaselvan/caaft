@@ -201,6 +201,15 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         opacity: 0.85;
     }
 
+    .mm-tab-icon > i.fas {
+        font-size: 15px;
+        width: 18px;
+        display: inline-block;
+        text-align: center;
+        line-height: 1;
+        opacity: 0.85;
+    }
+
     .mm-tab-chevron {
         flex-shrink: 0;
         font-size: 11px;
@@ -401,7 +410,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
 
                                     <div class="mm-tab is-active" data-panel="business" role="tab" tabindex="0" aria-selected="true">
                                         <span class="mm-tab-icon" aria-hidden="true">
-                                          <img src="assets/img/business.png" alt="Business Setup" width="24" height="24">
+                                            <i class="fas fa-building"></i>
                                         </span>
                                         <a class="mm-tab-link" href="/business-setup-and-registration">Business Setup &amp; Registration</a>
                                         <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
