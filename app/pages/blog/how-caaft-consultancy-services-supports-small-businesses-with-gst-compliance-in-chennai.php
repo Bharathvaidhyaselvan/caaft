@@ -256,19 +256,5 @@
     </script>
 
 </body>
-<script>
-$(document).ready(function() {
-    $("#manimaenu").attr("class", function(i, hide) {
-        return hide + " hides";
-
-    });
-});
-// $(document).ready(function(){
-//     $(".nav-link").click(function(){
-//         $("#static-logo").addClass("hide");
-//     });
-
-// })
-</script>
 
 </html>

@@ -312,20 +312,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 </body>
-<script>
-$(document).ready(function() {
-    $("#manimaenu").attr("class", function(i, hide) {
-        return hide + " hides";
-
-    });
-});
-// $(document).ready(function(){
-//     $(".nav-link").click(function(){
-//         $("#static-logo").addClass("hide");
-//     });
-
-// })
-</script>
 
 <script src='https://www.google.com/recaptcha/api.js'></script>	  
 

@@ -259,19 +259,5 @@ for the financial year 2024–25. Below is a detailed summary of the key modific
     </script>
 
 </body>
-<script>
-$(document).ready(function() {
-    $("#manimaenu").attr("class", function(i, hide) {
-        return hide + " hides";
-
-    });
-});
-// $(document).ready(function(){
-//     $(".nav-link").click(function(){
-//         $("#static-logo").addClass("hide");
-//     });
-
-// })
-</script>
 
 </html>

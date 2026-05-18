@@ -94,6 +94,28 @@ body.navbar-is-sticky {
   background: #fff !important;
 }
 
+/* Inner pages (.header-sections): white nav — dark logo (#submenu), not white caaft-logo-header.webp */
+.header-sections .navbar a#manimaenu,
+.header-sections .navbar a#manimaenu.hides {
+  display: none !important;
+}
+.header-sections .navbar a#manimaenu img,
+.header-sections .navbar a#manimaenu.hides img.img-fluid {
+  display: none !important;
+}
+.header-sections .navbar a#submenu {
+  display: block !important;
+}
+.header-sections .navbar a#submenu img.img-fluid {
+  display: block !important;
+}
+.header-sections .navbar.fixed-top a#submenu {
+  display: none !important;
+}
+.header-sections .navbar.fixed-top a.navbar-brand.fixed_logo {
+  display: block !important;
+}
+
 @media (min-width: 992px) {
   /* Restore original service hero spacing (not clamp 16vw which grows too large) */
   .page-accounting-reporting .caaft-ar-hero-single.hero-single.singles_forms_frames {
