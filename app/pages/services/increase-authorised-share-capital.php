@@ -125,7 +125,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/share-capital-concept-illustration_114360-1555.jpg?w=1200&q=80';
+    $caaft_overview_image_src = '/assets/img/services/ROC%20Compliance/Increase%20in%20Authorised%20Capital.jpg';
     $caaft_overview_image_alt = 'Increase authorised share capital process and filing';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

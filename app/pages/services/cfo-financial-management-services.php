@@ -114,7 +114,7 @@ declare(strict_types=1);
         'Fundraising support and investor relations',
     ];
     $caaft_overview_closing = 'A strong CFO function keeps a business financially healthy, compliant, and future-ready.';
-    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/cfo-services-concept-illustration_114360-2006.jpg?w=1200&q=80';
+    $caaft_overview_image_src = '/assets/img/services/Advisory%20%26%20CFO/CFO%20%26%20Financial%20management.jpeg';
     $caaft_overview_image_alt = 'Role of CFO in financial management';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

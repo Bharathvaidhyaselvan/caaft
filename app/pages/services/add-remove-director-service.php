@@ -128,7 +128,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/director-board-concept-illustration_114360-1444.jpg?w=1200&q=80';
+    $caaft_overview_image_src = '/assets/img/services/ROC%20Compliance/Add%20ro%20remove%20director.jpg';
     $caaft_overview_image_alt = 'Add or remove director service in India';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

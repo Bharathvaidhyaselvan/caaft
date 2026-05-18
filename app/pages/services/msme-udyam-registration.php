@@ -130,7 +130,7 @@ declare(strict_types=1);
         'Enhanced Business Credibility: Registration increases trust and recognition in the market.',
     ];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/udyam-registration-concept-illustration_114360-2003.jpg?w=1200&q=80';
+    $caaft_overview_image_src = '/assets/img/services/Business%20Set%20up%20%26%20REgistration/MSME.jpg';
     $caaft_overview_image_alt = 'MSME and Udyam registration services';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

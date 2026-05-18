@@ -160,7 +160,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/payroll-concept-illustration_114360-5120.jpg?w=1200&q=80';
+    $caaft_overview_image_src = '/assets/img/services/Business%20Set%20up%20%26%20REgistration/EPF%20%26%20ESI.jpg';
     $caaft_overview_image_alt = 'EPF and ESI registration compliance services';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

@@ -123,7 +123,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/business-valuation-concept-illustration_114360-2105.jpg?w=1200&q=80';
+    $caaft_overview_image_src = '/assets/img/services/Advisory%20%26%20CFO/Business%20valuation.jpg';
     $caaft_overview_image_alt = 'Business valuation and share valuation services';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

@@ -481,7 +481,7 @@
             'Improved financial and regulatory clarity for directors, owners, and stakeholders',
         ];
         $caaft_overview_closing = 'GST registration may be cancelled voluntarily by the taxpayer or initiated suo motu by tax authorities under specific conditions.';
-        $caaft_overview_image_src = 'https://img.freepik.com/free-vector/cancellation-concept-illustration_114360-2001.jpg?w=1200&q=80';
+        $caaft_overview_image_src = '/assets/img/services/Taxation/GST/GST%20REgistration%20Cancellation.jpg';
         $caaft_overview_image_alt = 'GST cancellation process and compliance closure review';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

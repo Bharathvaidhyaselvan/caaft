@@ -149,7 +149,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/data-analysis-concept-illustration_114360-8500.jpg?w=1200&q=80';
+    $caaft_overview_image_src = '/assets/img/services/Advisory%20%26%20CFO/Financial%20Assessment.jpg';
     $caaft_overview_image_alt = 'Financial assessment and financial status review';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

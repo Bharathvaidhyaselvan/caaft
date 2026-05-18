@@ -435,7 +435,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             'Without a valid LUT, exporters are required to either pay IGST at the time of export and claim a refund later — tying up working capital unnecessarily — or furnish a Bond with a financial guarantee. Neither option is practical for a business that exports regularly. The LUT route eliminates both complications entirely.',
         ];
         $caaft_overview_bullets = [];
-        $caaft_overview_image_src = 'https://img.freepik.com/free-vector/lut-filing-concept-illustration_114360-2002.jpg?w=1200&q=80';
+        $caaft_overview_image_src = '/assets/img/services/Taxation/GST/GST%20LUT%20filing.jpg';
         $caaft_overview_image_alt = 'Indian GST filing and compliance — Letter of Undertaking (LUT) for zero-rated exports';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

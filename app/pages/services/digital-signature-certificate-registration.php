@@ -145,7 +145,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/digital-signature-concept-illustration_114360-5548.jpg?w=1200&q=80';
+    $caaft_overview_image_src = '/assets/img/services/Business%20Set%20up%20%26%20REgistration/Digital%20Signature.jpg';
     $caaft_overview_image_alt = 'Digital Signature Certificate registration services';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

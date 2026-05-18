@@ -148,7 +148,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/professional-tax-concept-illustration_114360-1888.jpg?w=1200&q=80';
+    $caaft_overview_image_src = '/assets/img/services/Business%20Set%20up%20%26%20REgistration/Professional%20Tax.jpg';
     $caaft_overview_image_alt = 'Professional tax registration and return filing in India';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

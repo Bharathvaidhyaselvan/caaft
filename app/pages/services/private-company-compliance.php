@@ -174,7 +174,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/compliance-concept-illustration_114360-3333.jpg?w=1200&q=80';
+    $caaft_overview_image_src = '/assets/img/services/ROC%20Compliance/Miselleneous%20ROC%20filings.jpg';
     $caaft_overview_image_alt = 'Annual compliance for private limited company in India';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>
