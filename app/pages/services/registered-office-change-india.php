@@ -140,7 +140,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = '/assets/img/services/ROC%20Compliance/Registered%20Office%20change.jpg';
+    $caaft_overview_image_src = '/assets/img/services-images/ROC%20Compliance/Registered%20Office%20change.jpg';
     $caaft_overview_image_alt = 'Registered office change filing services in India';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

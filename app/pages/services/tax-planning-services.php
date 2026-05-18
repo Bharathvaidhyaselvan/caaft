@@ -539,7 +539,7 @@
         ];
         $caaft_overview_bullets = [];
         $caaft_overview_closing = '';
-        $caaft_overview_image_src = '/assets/img/services/Taxation/ITR/Tax%20Planning%20%26%20Advisory.jpg';
+        $caaft_overview_image_src = '/assets/img/services-images/Taxation/ITR/Tax%20Planning%20%26%20Advisory.jpg';
         $caaft_overview_image_alt = 'Tax planning strategy discussion and financial analysis';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

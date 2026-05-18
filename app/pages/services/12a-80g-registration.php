@@ -148,7 +148,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = '/assets/img/services/Business%20Set%20up%20%26%20REgistration/12A%20%26%2080G.jpg';
+    $caaft_overview_image_src = '/assets/img/services-images/Business%20Set%20up%20%26%20REgistration/12A%20%26%2080G.jpg';
     $caaft_overview_image_alt = '12A and 80G registration support for NGOs';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

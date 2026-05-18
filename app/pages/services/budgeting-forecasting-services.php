@@ -127,7 +127,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = '/assets/img/services/Advisory%20%26%20CFO/Budgeting%20%26%20Forecasting.jpg';
+    $caaft_overview_image_src = '/assets/img/services-images/Advisory%20%26%20CFO/Budgeting%20%26%20Forecasting.jpg';
     $caaft_overview_image_alt = 'Budgeting and forecasting services in India';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

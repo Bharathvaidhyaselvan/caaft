@@ -226,7 +226,7 @@ declare(strict_types=1);
             'Current Bank Account in the business name',
         ];
         $caaft_overview_closing = 'Proper registration formalises operations, creates a recognised business identity, and opens access to banking, government schemes, and business contracts.';
-        $caaft_overview_image_src = '/assets/img/services/Business%20Set%20up%20%26%20REgistration/Sole%20proprietorship.jpg';
+        $caaft_overview_image_src = '/assets/img/services-images/Business%20Set%20up%20%26%20REgistration/Sole%20proprietorship.jpg';
         $caaft_overview_image_alt = 'Sole proprietorship registration services in India';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

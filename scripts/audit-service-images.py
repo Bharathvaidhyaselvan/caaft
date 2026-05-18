@@ -27,7 +27,7 @@ for php in sorted(services.glob("*.php")):
         "bk-overview" in text and "overview-image" in text
     ):
         with_overview.add(php.name)
-    if "/assets/img/services/" in text:
+    if "/assets/img/services-images/" in text:
         with_local.add(php.name)
 
 no_overview = sorted(set(all_php) - with_overview - hubs)
@@ -39,7 +39,7 @@ for php in with_overview:
     text = (services / php).read_text(encoding="utf-8")
     m = re.search(r"caaft_overview_image_src\s*=\s*'([^']+)'", text)
     if not m:
-        m = re.search(r'src="(/assets/img/services/[^"]+)"', text)
+        m = re.search(r'src="(/assets/img/services-images/[^"]+)"', text)
     if m:
         shared.setdefault(m.group(1), []).append(php)
 
@@ -62,6 +62,6 @@ for u, pages in sorted(shared.items(), key=lambda x: -len(x[1])):
         for p in sorted(pages):
             print(f"    - {p}")
 
-asset_count = sum(1 for _ in (root / "assets/img/services").rglob("*") if _.is_file())
+asset_count = sum(1 for _ in (root / "assets/img/services-images").rglob("*") if _.is_file())
 print(f"\nAssets in folder: {asset_count}")
 print(f"Pages with local image: {len(with_local)}")

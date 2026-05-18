@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replace Freepik overview images with local assets/img/services/ images."""
+"""Set service overview images from assets/img/services-images/."""
 from __future__ import annotations
 
 import re
@@ -8,8 +8,9 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 SERVICES = ROOT / "app" / "pages" / "services"
+ASSET_ROOT = "assets/img/services-images"
 
-# PHP basename -> path under assets/img/services/
+# PHP basename -> path under assets/img/services-images/
 IMAGE_MAP: dict[str, str] = {
     "private-limited-registration.php": "Business Set up & REgistration/Pvt ltd.jpg",
     "public-limited-company-registration.php": "Business Set up & REgistration/Public limited.jpg",
@@ -24,7 +25,7 @@ IMAGE_MAP: dict[str, str] = {
     "iec-registration.php": "Business Set up & REgistration/IMport Export Code.jpg",
     "digital-signature-certificate-registration.php": "Business Set up & REgistration/Digital Signature.jpg",
     "12a-80g-registration.php": "Business Set up & REgistration/12A & 80G.jpg",
-    "gst-registration.php": "Taxation/GST/GST Registration.jpg",
+    "gst-registration.php": "Taxation/GST/GST Registration.png",
     "gst-return-filing-services.php": "Taxation/GST/GST Return filing.jpg",
     "gst-advisory.php": "Taxation/GST/GST Advisory.jpg",
     "gst-assessment-appeal-services.php": "Taxation/GST/GST Assessment.jpg",
@@ -51,7 +52,6 @@ IMAGE_MAP: dict[str, str] = {
     "feasibility-study.php": "Advisory & CFO/Feasibility Study.jpeg",
     "financial-assessment-services.php": "Advisory & CFO/Financial Assessment.jpg",
     "payroll-management-compliance.php": "Advisory & CFO/Payroll Management.jpeg",
-    # Annual compliance pages (no dedicated asset — shared ROC illustration)
     "private-company-compliance.php": "ROC Compliance/Miselleneous ROC filings.jpg",
     "partnership-firm-compliance.php": "ROC Compliance/Miselleneous ROC filings.jpg",
     "sole-proprietorship-compliance.php": "ROC Compliance/Miselleneous ROC filings.jpg",
@@ -62,17 +62,17 @@ IMAGE_MAP: dict[str, str] = {
 
 
 def asset_url(relative: str) -> str:
-    parts = ["assets", "img", "services", *relative.replace("\\", "/").split("/")]
+    parts = [*ASSET_ROOT.split("/"), *relative.replace("\\", "/").split("/")]
     return "/" + "/".join(quote(p, safe="") for p in parts)
 
 
 def main() -> None:
     overview_re = re.compile(
-        r"(\$caaft_overview_image_src\s*=\s*)['\"]https://img\.freepik\.com[^'\"]+['\"]\s*;",
+        r"(\$caaft_overview_image_src\s*=\s*)['\"][^'\"]+['\"]\s*;",
         re.MULTILINE,
     )
-    img_re = re.compile(
-        r'(<img\s+src=")https://img\.freepik\.com[^"]+(")',
+    overview_img_re = re.compile(
+        r'(<div class="bk-overview-image-wrap[^"]*">\s*<img\s+src=")[^"]+(")',
         re.MULTILINE,
     )
 
@@ -82,7 +82,7 @@ def main() -> None:
         if not path.is_file():
             print(f"SKIP missing page: {php_name}")
             continue
-        img_path = ROOT / "assets" / "img" / "services" / rel.replace("/", "\\")
+        img_path = ROOT / ASSET_ROOT.replace("/", "\\") / rel.replace("/", "\\")
         if not img_path.is_file():
             print(f"SKIP missing image: {rel}")
             continue
@@ -90,9 +90,9 @@ def main() -> None:
         url = asset_url(rel)
         text = path.read_text(encoding="utf-8")
         new_text, n1 = overview_re.subn(rf"\1'{url}';", text, count=1)
-        new_text, n2 = img_re.subn(rf"\1{url}\2", new_text, count=1)
+        new_text, n2 = overview_img_re.subn(rf"\1{url}\2", new_text, count=1)
         if n1 == 0 and n2 == 0:
-            print(f"SKIP no freepik match: {php_name}")
+            print(f"SKIP no overview image slot: {php_name}")
             continue
         if new_text != text:
             path.write_text(new_text, encoding="utf-8")

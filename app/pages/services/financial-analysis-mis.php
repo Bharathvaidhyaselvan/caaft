@@ -583,7 +583,7 @@
             'Budget versus actual performance',
         ];
         $caaft_overview_closing = 'For growing businesses, MIS reporting acts as a financial dashboard — helping leadership teams track key metrics, monitor performance, and improve operational efficiency with confidence.';
-        $caaft_overview_image_src = '/assets/img/services/Accounting%26Reporting/Financial%20Analysis%20%26%20MIS%20reporting.jpg';
+        $caaft_overview_image_src = '/assets/img/services-images/Accounting%26Reporting/Financial%20Analysis%20%26%20MIS%20reporting.jpg';
         $caaft_overview_image_alt = 'What is MIS Reporting?';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>
