@@ -527,6 +527,63 @@
                 </div>
             </div>
         </div>
+        <!-- ===== PRICING PLANS SECTION ===== -->
+        <div class="home3-plans-area py-100">
+            <div class="container">
+                <div class="site-heading text-center mb-40 wow fadeInUp" data-wow-delay=".1s">
+                    <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="" class="img-fluid" width="30" height="30"></i> Pricing Plans</span>
+                    <h2 class="site-title mt-2">Transparent <span>Service Packages</span></h2>
+                    <p class="home3-section-lead">Choose a plan that fits your business size. All plans include dedicated support and guaranteed compliance.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="home3-plan wow fadeInUp" data-wow-delay=".15s">
+                            <div class="home3-plan-name">Starter</div>
+                            <div class="home3-plan-price">₹4,999<small>/year</small></div>
+                            <p class="home3-plan-desc">Ideal for freelancers &amp; sole proprietors</p>
+                            <ul class="home3-plan-features">
+                                <li><i class="fas fa-check" aria-hidden="true"></i><span>ITR Filing (1 return)</span></li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i><span>GST Return Filing (Monthly)</span></li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Basic Bookkeeping</span></li>
+                                <li class="is-muted"><i class="fas fa-times" aria-hidden="true"></i><span>ROC / MCA Compliance</span></li>
+                            </ul>
+                            <a href="contact.php#contact_us" class="theme-btn theme-btn2">Get Started<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="home3-plan home3-plan--featured wow fadeInUp" data-wow-delay=".2s">
+                            <div class="home3-plan-badge">Most Popular</div>
+                            <div class="home3-plan-name">Growth</div>
+                            <div class="home3-plan-price">₹14,999<small>/year</small></div>
+                            <p class="home3-plan-desc">Perfect for small &amp; growing businesses</p>
+                            <ul class="home3-plan-features">
+                                <li><i class="fas fa-check" aria-hidden="true"></i><span>ITR Filing (Company / Firm)</span></li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i><span>GST Filing + Advisory</span></li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Full Bookkeeping &amp; Reports</span></li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i><span>ROC Annual Compliance</span></li>
+                            </ul>
+                            <a href="contact.php#contact_us" class="theme-btn">Get Started<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="home3-plan wow fadeInUp" data-wow-delay=".25s">
+                            <div class="home3-plan-name">Enterprise</div>
+                            <div class="home3-plan-price">Custom</div>
+                            <p class="home3-plan-desc">Tailored for mid-size &amp; growing companies</p>
+                            <ul class="home3-plan-features">
+                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Everything in Growth</span></li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Virtual CFO Services</span></li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i><span>MIS &amp; Financial Analysis</span></li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Dedicated Account Manager</span></li>
+                            </ul>
+                            <a href="contact.php#contact_us" class="theme-btn theme-btn2">Contact Us<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center home3-plan-footnote">* Prices are indicative. Final pricing depends on scope. <a href="contact.php#contact_us">Get a custom quote &rarr;</a></p>
+            </div>
+        </div>
+
         <div class="process-area" style="    padding-bottom: 50px;">
             <div class="container">
                 <div class="process-wrap pt-50 pb-50">
@@ -908,63 +965,6 @@
                 <div class="text-center mt-40 wow fadeInUp" data-wow-delay=".3s">
                     <a href="contact.php#contact_us" class="theme-btn">Share Your Experience<i class="fas fa-arrow-right"></i></a>
                 </div>
-            </div>
-        </div>
-
-        <!-- ===== 4. PRICING PLANS SECTION ===== -->
-        <div class="home3-plans-area py-100">
-            <div class="container">
-                <div class="site-heading text-center mb-40 wow fadeInUp" data-wow-delay=".1s">
-                    <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="" class="img-fluid" width="30" height="30"></i> Pricing Plans</span>
-                    <h2 class="site-title mt-2">Transparent <span>Service Packages</span></h2>
-                    <p class="home3-section-lead">Choose a plan that fits your business size. All plans include dedicated support and guaranteed compliance.</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="home3-plan wow fadeInUp" data-wow-delay=".15s">
-                            <div class="home3-plan-name">Starter</div>
-                            <div class="home3-plan-price">₹4,999<small>/year</small></div>
-                            <p class="home3-plan-desc">Ideal for freelancers &amp; sole proprietors</p>
-                            <ul class="home3-plan-features">
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>ITR Filing (1 return)</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>GST Return Filing (Monthly)</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Basic Bookkeeping</span></li>
-                                <li class="is-muted"><i class="fas fa-times" aria-hidden="true"></i><span>ROC / MCA Compliance</span></li>
-                            </ul>
-                            <a href="contact.php#contact_us" class="theme-btn theme-btn2">Get Started<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="home3-plan home3-plan--featured wow fadeInUp" data-wow-delay=".2s">
-                            <div class="home3-plan-badge">Most Popular</div>
-                            <div class="home3-plan-name">Growth</div>
-                            <div class="home3-plan-price">₹14,999<small>/year</small></div>
-                            <p class="home3-plan-desc">Perfect for small &amp; growing businesses</p>
-                            <ul class="home3-plan-features">
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>ITR Filing (Company / Firm)</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>GST Filing + Advisory</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Full Bookkeeping &amp; Reports</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>ROC Annual Compliance</span></li>
-                            </ul>
-                            <a href="contact.php#contact_us" class="theme-btn">Get Started<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="home3-plan wow fadeInUp" data-wow-delay=".25s">
-                            <div class="home3-plan-name">Enterprise</div>
-                            <div class="home3-plan-price">Custom</div>
-                            <p class="home3-plan-desc">Tailored for mid-size &amp; growing companies</p>
-                            <ul class="home3-plan-features">
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Everything in Growth</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Virtual CFO Services</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>MIS &amp; Financial Analysis</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Dedicated Account Manager</span></li>
-                            </ul>
-                            <a href="contact.php#contact_us" class="theme-btn theme-btn2">Contact Us<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-center home3-plan-footnote">* Prices are indicative. Final pricing depends on scope. <a href="contact.php#contact_us">Get a custom quote &rarr;</a></p>
             </div>
         </div>
 

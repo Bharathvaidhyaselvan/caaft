@@ -1,12 +1,20 @@
 <footer class="footer-area footer-bg">
         <style>
-            .copyright-text a.brevia-credit,
-            .copyright-text a.brevia-credit:visited {
+            .footer-widget-box.about-us .footer-social {
+                justify-content: flex-start;
+                margin-top: 12px;
+                margin-bottom: 0;
+                padding-left: 0;
+            }
+            .copyright .brevia-credit,
+            .copyright .brevia-credit:visited {
                 color: #ffffff !important;
                 transition: color 0.25s ease;
+                font-size: 16px;
+                white-space: nowrap;
             }
-            .copyright-text a.brevia-credit:hover,
-            .copyright-text a.brevia-credit:focus {
+            .copyright .brevia-credit:hover,
+            .copyright .brevia-credit:focus {
                 color: #33b6ff !important;
             }
         </style>
@@ -21,7 +29,12 @@
                                     <img src="assets/img/caaft-logo-header.webp" alt="CAAFT Consultancy Services Private Limited" title="CAAFT Consultancy Services Private Limited" class="img-fluid">
                                 </a>
                                 <p>Empowering Your Business with Clarity, Strategy, and Success.</p>
-
+                                <ul class="footer-social">
+                                    <li><a href="https://www.facebook.com/profile.php?id=61564521313943" target="_blank" rel="noopener noreferrer" title="facebook"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://x.com/CaaftServices" target="_blank" rel="noopener noreferrer" title="twitter"><i class="fab fa-x-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/caaftconsultancyservices/" target="_blank" rel="noopener noreferrer" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/caaft-consultancy-services-private-limited/" target="_blank" rel="noopener noreferrer" title="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
                             </div>
                         </div>
 
@@ -96,25 +109,15 @@
         </div>
         <div class="container">
             <div class="copyright">
-                <div class="row">
-                    <div class="col-md-9 align-self-center">
-                        <p class="copyright-text">
-
-                            © Copyright 2026 - <a href="#">
-                                CAAFT Consultancy Services Private Limited.</a>
+                <div class="row align-items-center gy-2">
+                    <div class="col-12 col-md-8 col-lg-9 align-self-center">
+                        <p class="copyright-text mb-0">
+                            © Copyright 2026 - <a href="#">CAAFT Consultancy Services Private Limited.</a>
                             All Rights Reserved.
-                            <a class="brevia-credit" href="https://www.builtbybrevia.com" target="_blank" rel="noopener noreferrer">BuiltByBrevia</a>
-
                         </p>
                     </div>
-                    <div class="col-md-3 align-self-center">
-                        <ul class="footer-social">
-                          
-                       <li> <a href="https://www.facebook.com/profile.php?id=61564521313943" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
-                           <li> <a href="https://x.com/CaaftServices" target="_blank" title="twitter"><i class="fab fa-x-twitter"></i></a></li>
-                        <li>    <a href="https://www.instagram.com/caaftconsultancyservices/" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a></li>
-                          <li>  <a href="https://www.linkedin.com/company/caaft-consultancy-services-private-limited/" target="_blank" title="linkedin"><i class="fab fa-linkedin"></i></a></li>
-                        </ul>
+                    <div class="col-12 col-md-4 col-lg-3 align-self-center text-end">
+                        <a class="brevia-credit" href="https://www.builtbybrevia.com" target="_blank" rel="noopener noreferrer">⚡BuiltByBrevia</a>
                     </div>
                 </div>
             </div>
