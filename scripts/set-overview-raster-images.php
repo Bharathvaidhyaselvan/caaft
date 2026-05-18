@@ -4,6 +4,8 @@ declare(strict_types=1);
 /**
  * Replace $caaft_overview_illustration with $caaft_overview_image_src pointing to
  * Unsplash / Pexels raster images — unique URL per service page.
+ *
+ * @deprecated For Freepik CDN overview URLs, use scripts/apply-overview-freepik-hotlinks.php.
  */
 $base = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'services' . DIRECTORY_SEPARATOR;
 

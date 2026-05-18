@@ -6,7 +6,7 @@
  *   $caaft_overview_heading_id (string)
  *   $caaft_overview_title (string)
  *   $caaft_overview_image_alt (string)
- *   $caaft_overview_image_src (string) — full URL or site path (e.g. Unsplash / Pexels / /assets/...)
+ *   $caaft_overview_image_src (string) — full URL or site path (e.g. Freepik CDN https://img.freepik.com/... or /assets/...)
  *
  * Optional:
  *   $caaft_overview_paragraphs (string[])  // supports <strong>, <em>, <br>

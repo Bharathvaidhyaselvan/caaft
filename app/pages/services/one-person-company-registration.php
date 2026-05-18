@@ -763,7 +763,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         ];
         $caaft_overview_bullets = [];
         $caaft_overview_closing = '';
-        $caaft_overview_image_src = 'https://images.unsplash.com/photo-1522071820081-909f73824506?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
+        $caaft_overview_image_src = 'https://img.freepik.com/free-vector/startup-concept-illustration_114360-405.jpg?w=1200&q=80';
         $caaft_overview_image_alt = 'One Person Company registration and OPC incorporation support';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

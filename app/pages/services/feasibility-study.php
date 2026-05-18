@@ -161,7 +161,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800';
+    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/feasibility-study-concept-illustration_114360-3200.jpg?w=1200&q=80';
     $caaft_overview_image_alt = 'Feasibility study services for business decisions';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

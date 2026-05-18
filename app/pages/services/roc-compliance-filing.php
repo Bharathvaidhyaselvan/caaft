@@ -113,7 +113,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://images.unsplash.com/photo-1505664194309-316f283935bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
+    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/roc-filing-concept-illustration_114360-1777.jpg?w=1200&q=80';
     $caaft_overview_image_alt = 'ROC compliance and filing support services';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

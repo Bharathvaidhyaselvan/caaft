@@ -103,7 +103,7 @@
                             © Copyright 2026 - <a href="#">
                                 CAAFT Consultancy Services Private Limited.</a>
                             All Rights Reserved.
-                            <a class="brevia-credit" href="https://www.builtbybrevia.com" target="_blank" rel="noopener noreferrer">⚡Brevia Tech Solutions</a>
+                            <a class="brevia-credit" href="https://www.builtbybrevia.com" target="_blank" rel="noopener noreferrer">BuiltByBrevia</a>
 
                         </p>
                     </div>

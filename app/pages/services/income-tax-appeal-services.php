@@ -669,7 +669,7 @@
         'Tax assessment support covers a broader range of services — reviewing notices before response, correcting discrepancies in past filings, representing clients at scrutiny hearings, and ensuring the tax position is correctly presented to the department at every stage of proceedings.',
         'Together, these two pillars form the foundation of what CAAFT delivers: protecting taxpayers from incorrect demands and ensuring every tax matter is handled with the precision, documentation, and legal grounding it requires.',
     ];
-    $caaft_overview_image_src = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
+    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/legal-advice-concept-illustration_114360-1819.jpg?w=1200&q=80';
     $caaft_overview_image_alt = 'Income tax appeal and assessment support';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

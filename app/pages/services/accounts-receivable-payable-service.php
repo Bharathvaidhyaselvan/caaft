@@ -183,7 +183,7 @@
         ];
         $caaft_overview_bullets = [];
         $caaft_overview_closing = 'When managed effectively, these two functions work in harmony to strengthen cash flow, reduce payment delays, and ensure complete financial transparency — giving businesses the clarity and control needed to grow with confidence.';
-        $caaft_overview_image_src = 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800';
+        $caaft_overview_image_src = 'https://img.freepik.com/free-vector/receivable-payable-concept-illustration_114360-2005.jpg?w=1200&q=80';
         $caaft_overview_image_alt = 'Accounts receivable and accounts payable management, invoices, and payment tracking';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

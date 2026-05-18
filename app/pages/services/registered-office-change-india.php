@@ -140,7 +140,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://images.unsplash.com/photo-1517245386807-9b4d0a6c4d0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
+    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/registered-office-concept-illustration_114360-1666.jpg?w=1200&q=80';
     $caaft_overview_image_alt = 'Registered office change filing services in India';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

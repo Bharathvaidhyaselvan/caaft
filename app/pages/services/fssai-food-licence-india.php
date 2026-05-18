@@ -194,7 +194,7 @@ declare(strict_types=1);
         ];
         $caaft_overview_bullets = [];
         $caaft_overview_closing = '';
-        $caaft_overview_image_src = 'https://images.pexels.com/photos/6646015/pexels-photo-6646015.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800';
+        $caaft_overview_image_src = 'https://img.freepik.com/free-vector/food-safety-concept-illustration_114360-2100.jpg?w=1200&q=80';
         $caaft_overview_image_alt = 'FSSAI food licence registration services in India';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

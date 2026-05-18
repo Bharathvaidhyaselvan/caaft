@@ -9893,13 +9893,17 @@ body.home-3.page-accounting-reporting li {
 
 .bk-overview-image-wrap {
     min-width: 0;
+    background: #f4f6f9;
+    border-radius: 8px;
+    padding: 12px;
+    box-sizing: border-box;
 }
 
 .bk-overview-image-wrap img {
     width: 100%;
     display: block;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .page-bookkeeping-accounting .bk-overview-card {
@@ -9945,13 +9949,17 @@ body.home-3.page-accounting-reporting li {
 
 .page-bookkeeping-accounting .bk-overview-image-wrap {
     min-width: 0;
+    background: #f4f6f9;
+    border-radius: 8px;
+    padding: 12px;
+    box-sizing: border-box;
 }
 
 .page-bookkeeping-accounting .bk-overview-image-wrap img {
     width: 100%;
     display: block;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 @media (max-width: 991.98px) {

@@ -142,7 +142,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://images.pexels.com/photos/3760069/pexels-photo-3760069.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800';
+    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/export-import-concept-illustration_114360-9500.jpg?w=1200&q=80';
     $caaft_overview_image_alt = 'IEC import export code registration in India';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

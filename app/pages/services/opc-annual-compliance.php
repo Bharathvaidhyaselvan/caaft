@@ -133,7 +133,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = 'https://images.unsplash.com/photo-1560518883-ba43f26d1ca1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
+    $caaft_overview_image_src = 'https://img.freepik.com/free-vector/corporate-governance-concept-illustration_114360-8000.jpg?w=1200&q=80';
     $caaft_overview_image_alt = 'OPC annual compliance services in India';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>
