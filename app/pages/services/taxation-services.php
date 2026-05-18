@@ -203,8 +203,11 @@
         $caaft_hero_lead_paragraphs = [
             "From Income Tax Returns to GST compliance, CAAFT's Chartered Accountants handle every obligation with precision — so you never miss a deadline or face unnecessary tax exposure. Taxation isn't just about filing returns; it's about minimising liability within the law while staying fully compliant. CAAFT delivers reliable, audit-ready tax services for businesses and individuals across Chennai.",
         ];
-        $caaft_hero_primary_cta_label = 'Explore Our Services';
-        $caaft_hero_primary_cta_href = '/contact';
+        $caaft_hero_primary_cta_label = 'Get a Free Tax Consultation';
+        $caaft_hero_primary_cta_href = '/contact.php';
+        $caaft_hero_secondary_cta_label = 'Explore Our Services';
+        $caaft_hero_secondary_cta_href = '/income-tax-filling-services-in-chennai.php';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
                                 $caaft_enquiry_service = 'Taxation Services';
                                 $caaft_enquiry_action = '/incometax-services-mail.php';
