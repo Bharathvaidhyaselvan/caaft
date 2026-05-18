@@ -342,7 +342,7 @@ $caaft_enquiry_action = '/incometax-services-mail.php';
             'The GST law under the CGST Act, 2017 provides for several types of assessments carried out by tax officers at different stages. These assessments may result in demand notices, penalty orders, or both — all of which carry strict deadlines for response and appeal that cannot be missed without serious consequences.',
         ];
         $caaft_overview_bullets = [];
-        $caaft_overview_illustration = 'gst';
+        $caaft_overview_image_src = 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800';
         $caaft_overview_image_alt = 'GST assessment notice and dispute review';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

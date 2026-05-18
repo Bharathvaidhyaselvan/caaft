@@ -148,7 +148,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_illustration = 'registrations';
+    $caaft_overview_image_src = 'https://images.pexels.com/photos/8867244/pexels-photo-8867244.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800';
     $caaft_overview_image_alt = 'Professional tax registration and return filing in India';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-hidden="true">
-  <rect width="480" height="360" rx="28" fill="#f8fafc"/>
-  <rect x="96" y="88" width="288" height="184" rx="16" fill="#fff" stroke="#cbd5e1" stroke-width="3"/>
-  <path fill="#3b82f6" d="M128 260V140h48v120zm72 0V180h48v80zm72 0V120h48v140z" opacity=".35"/>
-  <path fill="#1e40af" d="M128 260V140h48v120zm72 0V180h48v80zm72 0V120h48v140z" opacity=".85"/>
-  <polyline points="120,200 200,160 280,176 360,120" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="360" cy="120" r="10" fill="#f59e0b"/>
-  <ellipse cx="240" cy="300" rx="140" ry="28" fill="#e2e8f0"/>
-</svg>

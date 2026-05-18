@@ -530,7 +530,7 @@
             'GST registration is the process of enrolling a business under the Goods and Services Tax system introduced by the Government of India. Once registered, the business receives a unique GST Identification Number (GSTIN) — allowing it to legally collect tax from customers and claim input tax credit on purchases.',
             'GST registration is mandatory for businesses exceeding the prescribed turnover limit and for specific categories such as e-commerce sellers and interstate suppliers. It ensures transparency in taxation and enables businesses to operate within a structured, compliant tax framework.',
         ];
-        $caaft_overview_illustration = 'gst';
+        $caaft_overview_image_src = 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800';
         $caaft_overview_image_alt = 'Business documents and GST registration paperwork';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

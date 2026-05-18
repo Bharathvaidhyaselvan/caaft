@@ -126,7 +126,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_illustration = 'roc';
+    $caaft_overview_image_src = 'https://images.unsplash.com/photo-1520607960663-4a2bc51225a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
     $caaft_overview_image_alt = 'Winding up and strike off company services';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

@@ -588,7 +588,7 @@
             'PAN details of deductees',
         ];
         $caaft_overview_closing = 'Proper TDS return filing ensures that the deducted tax is reflected in Form 26AS — allowing employees, vendors, and professionals to claim their rightful tax credit without delays or disputes.';
-        $caaft_overview_illustration = 'tax';
+        $caaft_overview_image_src = 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
         $caaft_overview_image_alt = 'TDS return filing documents and tax compliance review';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

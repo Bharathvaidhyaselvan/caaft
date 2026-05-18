@@ -168,7 +168,7 @@
         <?php
         $caaft_overview_heading_id = 'fs-overview-heading';
         $caaft_overview_title = 'What is Financial Statement Analysis?';
-        $caaft_overview_illustration = 'accounting';
+        $caaft_overview_image_src = 'https://images.unsplash.com/photo-1553877522-69ae732aea78?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
         $caaft_overview_image_alt = 'Financial professionals reviewing statements, charts, and performance metrics';
         $caaft_overview_paragraphs = [
             "Financial statement analysis is the process of evaluating financial reports to understand a company's financial performance and position — identifying trends, measuring profitability, and assessing financial stability over time.",

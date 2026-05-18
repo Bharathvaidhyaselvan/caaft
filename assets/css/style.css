@@ -9902,12 +9902,6 @@ body.home-3.page-accounting-reporting li {
     object-fit: cover;
 }
 
-.bk-overview-image-wrap img[src$=".svg"],
-.bk-overview-image-wrap img[src*="overview/"] {
-    object-fit: contain;
-    background: linear-gradient(145deg, #faf5ff 0%, #eff6ff 50%, #fffbeb 100%);
-}
-
 .page-bookkeeping-accounting .bk-overview-card {
     border: 1px solid #d8dde3;
     border-left: 3px solid #33B6FF;

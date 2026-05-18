@@ -217,7 +217,7 @@ $caaft_enquiry_action = '/incometax-services-mail.php';
             'This service goes beyond basic filing by offering strategic insights, tax planning, and risk management. It ensures businesses not only comply with GST laws but also optimize tax efficiency, protect Input Tax Credit entitlements, and avoid the penalties and notices that arise from gaps in compliance management.',
         ];
         $caaft_overview_bullets = [];
-        $caaft_overview_illustration = 'gst';
+        $caaft_overview_image_src = 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
         $caaft_overview_image_alt = 'GST advisory and compliance planning documents';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

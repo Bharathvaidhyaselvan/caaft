@@ -460,7 +460,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             'Suitable for enterprises planning public investment, institutional funding, and long-term large-scale expansion',
         ];
         $caaft_overview_closing = '';
-        $caaft_overview_illustration = 'company';
+        $caaft_overview_image_src = 'https://images.unsplash.com/photo-1507679799987-c7319d796a9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
         $caaft_overview_image_alt = 'Public limited company incorporation and large-scale business registration support';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

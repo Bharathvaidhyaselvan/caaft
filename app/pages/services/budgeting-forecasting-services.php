@@ -127,7 +127,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_illustration = 'advisory';
+    $caaft_overview_image_src = 'https://images.unsplash.com/photo-1559526324-dc0750f237bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
     $caaft_overview_image_alt = 'Budgeting and forecasting services in India';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

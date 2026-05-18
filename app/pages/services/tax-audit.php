@@ -891,7 +891,7 @@
             'A tax audit is an examination of financial records by a Chartered Accountant to verify income, deductions, and tax compliance. In India, it is governed under Section 44AB of the Income Tax Act — which mandates audits for businesses and professionals whose turnover exceeds specified limits.',
             'Beyond regulatory compliance, tax audits help identify financial inconsistencies, ensure accurate tax calculations, and reduce penalty risks — making them essential for SMEs, partnerships, LLPs, and startups to maintain transparency, financial credibility, and regulatory standing.',
         ];
-        $caaft_overview_illustration = 'tax';
+        $caaft_overview_image_src = 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800';
         $caaft_overview_image_alt = 'Tax audit planning and financial document review';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

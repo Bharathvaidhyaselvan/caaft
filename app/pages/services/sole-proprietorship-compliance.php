@@ -159,7 +159,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_illustration = 'compliance';
+    $caaft_overview_image_src = 'https://images.unsplash.com/photo-1504384305987-2b56f68a7f8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
     $caaft_overview_image_alt = 'Sole proprietorship compliance services in India';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

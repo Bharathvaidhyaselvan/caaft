@@ -6,11 +6,7 @@
  *   $caaft_overview_heading_id (string)
  *   $caaft_overview_title (string)
  *   $caaft_overview_image_alt (string)
- *
- * Image (one of):
- *   $caaft_overview_image_src (string) — full URL/path to raster or SVG
- *   $caaft_overview_illustration (string) — slug mapped to /assets/img/overview/{slug}.svg?v=1
- *     Slugs: company, compliance, roc, tax, gst, accounting, advisory, payroll, registrations
+ *   $caaft_overview_image_src (string) — full URL or site path (e.g. Unsplash / Pexels / /assets/...)
  *
  * Optional:
  *   $caaft_overview_paragraphs (string[])  // supports <strong>, <em>, <br>
@@ -26,16 +22,8 @@ $caaft_overview_title = isset($caaft_overview_title) ? (string) $caaft_overview_
 $caaft_overview_image_src = isset($caaft_overview_image_src) ? (string) $caaft_overview_image_src : '';
 $caaft_overview_image_alt = isset($caaft_overview_image_alt) ? (string) $caaft_overview_image_alt : '';
 
-// Optional: flat vector pack under /assets/img/overview/{slug}.svg (Freepik-style palette)
-if (isset($caaft_overview_illustration) && is_string($caaft_overview_illustration) && $caaft_overview_illustration !== '') {
-    $ill = strtolower(preg_replace('/[^a-z0-9-]/', '', $caaft_overview_illustration));
-    if ($ill !== '') {
-        $caaft_overview_image_src = '/assets/img/overview/' . $ill . '.svg?v=1';
-    }
-}
-
 if ($caaft_overview_image_src === '') {
-    trigger_error('caaft-overview-card.php: set $caaft_overview_image_src or $caaft_overview_illustration before including', E_USER_WARNING);
+    trigger_error('caaft-overview-card.php: set $caaft_overview_image_src before including', E_USER_WARNING);
 }
 $caaft_overview_paragraphs = isset($caaft_overview_paragraphs) && is_array($caaft_overview_paragraphs) ? $caaft_overview_paragraphs : [];
 $caaft_overview_bullets = isset($caaft_overview_bullets) && is_array($caaft_overview_bullets) ? $caaft_overview_bullets : [];
@@ -62,10 +50,9 @@ $caaft_overview_closing = isset($caaft_overview_closing) ? (string) $caaft_overv
                     <?php endif; ?>
                 </div>
                 <div class="bk-overview-image-wrap caaft-overview-image-wrap">
-                    <img src="<?php echo htmlspecialchars($caaft_overview_image_src, ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($caaft_overview_image_alt, ENT_QUOTES, 'UTF-8'); ?>" loading="lazy">
+                    <img src="<?php echo htmlspecialchars($caaft_overview_image_src, ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($caaft_overview_image_alt, ENT_QUOTES, 'UTF-8'); ?>" loading="lazy"<?php echo strncmp($caaft_overview_image_src, 'http', 4) === 0 ? ' referrerpolicy="no-referrer"' : ''; ?>>
                 </div>
             </div>
         </div>
     </div>
-    <?php unset($caaft_overview_illustration); ?>
 </section>

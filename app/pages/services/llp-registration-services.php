@@ -600,7 +600,7 @@ declare(strict_types=1);
         ];
         $caaft_overview_bullets = [];
         $caaft_overview_closing = '';
-        $caaft_overview_illustration = 'company';
+        $caaft_overview_image_src = 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
         $caaft_overview_image_alt = 'Limited Liability Partnership registration and incorporation support in India';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

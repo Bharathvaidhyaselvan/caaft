@@ -539,7 +539,7 @@
         ];
         $caaft_overview_bullets = [];
         $caaft_overview_closing = '';
-        $caaft_overview_illustration = 'tax';
+        $caaft_overview_image_src = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
         $caaft_overview_image_alt = 'Tax planning strategy discussion and financial analysis';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

@@ -161,7 +161,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_illustration = 'compliance';
+    $caaft_overview_image_src = 'https://images.unsplash.com/photo-1455849314581-6237e31157a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
     $caaft_overview_image_alt = 'LLP annual compliance and ROC filing services';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>
