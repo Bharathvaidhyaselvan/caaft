@@ -3306,6 +3306,10 @@ a.footer-logo {
     height: 8px
 }
 
+.home-get-quote-wrap {
+    padding-bottom: 60px;
+}
+
 .quote-area {
     position: relative;
     background-image: url(../img/enquiry-background.webp);

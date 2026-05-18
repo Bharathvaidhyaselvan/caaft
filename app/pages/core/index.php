@@ -220,6 +220,47 @@
 
         </div>
         
+        <div class="about-area py-120">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-left wow fadeInLeft" data-wow-delay=".25s">
+                            <div class="about-img">
+                                <img class="img-1" src="assets/img/tax-filling-about.webp" alt="Tax Filling" title="Tax Filling">
+                                <img class="img-2" src="assets/img/indian-currency.webp" alt="Indian Currency" title="Indian Currency">
+                                <div class="about-img-shape">
+                                    <img src="assets/img/shape/06.png" alt="Shape" title="Shape">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-right wow fadeInUp" data-wow-delay=".25s">
+                            <div class="site-heading mb-3">
+
+                                <span class="site-title-tagline "><i>
+                                        <img src="assets/img/trend-img.webp" alt="tread" title="tread"
+                                            class="img-fluid">
+                                    </i> About CAAFT</span>
+                                <h1 class="about site-title">
+                                    Comprehensive Expertise for Efficient Accounting & Reporting, Taxation, Business
+                                    Incorporation, Consultancy and <a href="/compliance-and-regulatory-services">Compliance Services</a>
+                                </h1>
+                            </div>
+                            <p class="about-text">We are more than just service providers, we are your trusted advisors
+                                in growth. We believe that every business deserves customized solutions to excel
+                                in today’s competitive environment. With expertise in <a href="/accounting-and-reporting-services">Accounting & Reporting</a>, <a href="/taxation-services">Taxation</a>,
+                                <a href="/business-setup-and-registration">Business Incorporation</a>, Consultancy and Compliance Services, our team is dedicated to
+                                offering strategic insights and comprehensive support to help clients reach their
+                                objectives.</p>
+
+                            <a href="about.php" class="theme-btn mt-20">Discover More<i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="feature-area pt-80">
             <div class="container">
                 <div class="feature-wrap mt-40">
@@ -280,47 +321,6 @@
                                         quality without compromise.</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="about-area py-120">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-left wow fadeInLeft" data-wow-delay=".25s">
-                            <div class="about-img">
-                                <img class="img-1" src="assets/img/tax-filling-about.webp" alt="Tax Filling" title="Tax Filling">
-                                <img class="img-2" src="assets/img/indian-currency.webp" alt="Indian Currency" title="Indian Currency">
-                                <div class="about-img-shape">
-                                    <img src="assets/img/shape/06.png" alt="Shape" title="Shape">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-right wow fadeInUp" data-wow-delay=".25s">
-                            <div class="site-heading mb-3">
-
-                                <span class="site-title-tagline "><i>
-                                        <img src="assets/img/trend-img.webp" alt="tread" title="tread"
-                                            class="img-fluid">
-                                    </i> About CAAFT</span>
-                                <h1 class="about site-title">
-                                    Comprehensive Expertise for Efficient Accounting & Reporting, Taxation, Business
-                                    Incorporation, Consultancy and <a href="/compliance-and-regulatory-services">Compliance Services</a>
-                                </h1>
-                            </div>
-                            <p class="about-text">We are more than just service providers, we are your trusted advisors
-                                in growth. We believe that every business deserves customized solutions to excel
-                                in today’s competitive environment. With expertise in <a href="/accounting-and-reporting-services">Accounting & Reporting</a>, <a href="/taxation-services">Taxation</a>,
-                                <a href="/business-setup-and-registration">Business Incorporation</a>, Consultancy and Compliance Services, our team is dedicated to
-                                offering strategic insights and comprehensive support to help clients reach their
-                                objectives.</p>
-
-                            <a href="about.php" class="theme-btn mt-20">Discover More<i
-                                    class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -653,91 +653,6 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="quote-area ">
-                <div class="row">
-                    <div class="col-lg-12 backgroun-qetquotes">
-                        <img src="assets/img/enquiry-background.webp" alt="enquiry" title="enquiry" class="img-fluid">
-                    </div>
-                    <div class="col-lg-7 ms-auto">
-                        <div class="quote-content">
-                            <div class="quote-head">
-                                <h3>Get your quote</h3>
-                                <p>Tell us your requirements, and our team will provide a customized quote designed to
-                                    fit your business needs and budget.</p>
-                            </div>
-                            <div class="quote-form">
-                                <div class="alert alert-success automated_msg" style="display: none; font-size: 15px;"
-                                    role="alert">
-                                    <strong>Thank you!</strong> for contacting us.
-                                </div>
-                                <form action="homecontact_mail.php" id="contact" method="POST">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                        <div class="form-group"> 	<input name="firstname" type="text" id="firstname" class="hide-robot" style="display:none;"></div>
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="far fa-user-tie"></i></span>
-                                                    <input type="text" name="name" id="name" class="form-control name-valid" placeholder="Your Name" required>
-
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="far fa-envelope"></i></span>
-                                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
-
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="far fa-phone"></i></span>
-                                                    <input type="text" name="phone" id="phone" class="form-control" maxlength="10" pattern="[0-9]{10}" placeholder="Your Phone" required>
-<input type="text" name="website" style="display:none;">
-
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="far fa-box"></i></span>
-                                                <select class="select form-select form-control" id="service"
-                                                    name="service">
-                                                    <option value="" selected disabled>Choose Service</option>
-                                                    <option value="Accounting & Reporting">Accounting & Reporting </option>
-                                                    <option value="Business Incorporation">Business Incorporation </option>
-                                                    <option value="Management Consultancy">Management Consultancy
-                                                    </option>
-                                                    <option value="ncome Tax Services "> Income Tax Services </option>
-                                                    <option value="GST Services"> GST Services </option>
-                                                    <option value="ROC Filing "> ROC Filing </option>
-                                                    <option value="Other MCA Services"> Other MCA Services </option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="input-group textarea">
-                                                <span class="input-group-text"><i
-                                                        class="far fa-comment-lines"></i></span>
-                                                <textarea class="form-control" cols="30" rows="4"
-                                                    placeholder="Your Message" name="msg" id="msg"></textarea>
-                                                <input type="hidden" name="title" id="title" value="Home">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                        <div class="g-recaptcha" data-sitekey="6LcO3ukrAAAAADerciVZtVVgPZqbR-iH04HfKq-K"></div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <button type="submit" class="theme-btn automated_mail">Submit Now<i
-                                                    class="fas fa-arrow-right"></i></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
         <div class="choose-area py-100">
             <div class="container">
                 <div class="row">
@@ -1069,6 +984,93 @@
                 </div>
             </div>
         </div>
+
+        <div class="container home-get-quote-wrap">
+            <div class="quote-area ">
+                <div class="row">
+                    <div class="col-lg-12 backgroun-qetquotes">
+                        <img src="assets/img/enquiry-background.webp" alt="enquiry" title="enquiry" class="img-fluid">
+                    </div>
+                    <div class="col-lg-7 ms-auto">
+                        <div class="quote-content">
+                            <div class="quote-head">
+                                <h3>Get your quote</h3>
+                                <p>Tell us your requirements, and our team will provide a customized quote designed to
+                                    fit your business needs and budget.</p>
+                            </div>
+                            <div class="quote-form">
+                                <div class="alert alert-success automated_msg" style="display: none; font-size: 15px;"
+                                    role="alert">
+                                    <strong>Thank you!</strong> for contacting us.
+                                </div>
+                                <form action="homecontact_mail.php" id="contact" method="POST">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                        <div class="form-group"> 	<input name="firstname" type="text" id="firstname" class="hide-robot" style="display:none;"></div>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="far fa-user-tie"></i></span>
+                                                    <input type="text" name="name" id="name" class="form-control name-valid" placeholder="Your Name" required>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="far fa-envelope"></i></span>
+                                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="far fa-phone"></i></span>
+                                                    <input type="text" name="phone" id="phone" class="form-control" maxlength="10" pattern="[0-9]{10}" placeholder="Your Phone" required>
+<input type="text" name="website" style="display:none;">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="far fa-box"></i></span>
+                                                <select class="select form-select form-control" id="service"
+                                                    name="service">
+                                                    <option value="" selected disabled>Choose Service</option>
+                                                    <option value="Accounting & Reporting">Accounting & Reporting </option>
+                                                    <option value="Business Incorporation">Business Incorporation </option>
+                                                    <option value="Management Consultancy">Management Consultancy
+                                                    </option>
+                                                    <option value="ncome Tax Services "> Income Tax Services </option>
+                                                    <option value="GST Services"> GST Services </option>
+                                                    <option value="ROC Filing "> ROC Filing </option>
+                                                    <option value="Other MCA Services"> Other MCA Services </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="input-group textarea">
+                                                <span class="input-group-text"><i
+                                                        class="far fa-comment-lines"></i></span>
+                                                <textarea class="form-control" cols="30" rows="4"
+                                                    placeholder="Your Message" name="msg" id="msg"></textarea>
+                                                <input type="hidden" name="title" id="title" value="Home">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                        <div class="g-recaptcha" data-sitekey="6LcO3ukrAAAAADerciVZtVVgPZqbR-iH04HfKq-K"></div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <button type="submit" class="theme-btn automated_mail">Submit Now<i
+                                                    class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
 
     </main>
 
