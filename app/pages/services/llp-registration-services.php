@@ -600,7 +600,7 @@ declare(strict_types=1);
         ];
         $caaft_overview_bullets = [];
         $caaft_overview_closing = '';
-        $caaft_overview_image_src = '/assets/img/gst-registration-overview.jpg';
+        $caaft_overview_illustration = 'company';
         $caaft_overview_image_alt = 'Limited Liability Partnership registration and incorporation support in India';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

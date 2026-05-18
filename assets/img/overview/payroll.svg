@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-hidden="true">
+  <rect width="480" height="360" rx="28" fill="#ecfeff"/>
+  <ellipse cx="240" cy="296" rx="150" ry="30" fill="#a5f3fc" opacity=".5"/>
+  <circle cx="176" cy="148" r="44" fill="#38bdf8" opacity=".45"/>
+  <circle cx="304" cy="148" r="44" fill="#818cf8" opacity=".45"/>
+  <rect x="152" y="208" width="176" height="56" rx="12" fill="#fff" stroke="#22d3ee" stroke-width="3"/>
+  <text x="188" y="246" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#0e7490">PAY</text>
+  <rect x="268" y="220" width="44" height="32" rx="6" fill="#fbbf24"/>
+  <path fill="#0369a1" d="M160 268h160v8H160zm0 20h120v8H160z" opacity=".25"/>
+</svg>

@@ -464,7 +464,7 @@
                             <p class="bk-overview-text">Beyond compliance, ITR filing also helps claim refunds, maintain financial transparency, and support future financial requirements — from loan applications to investor due diligence.</p>
                         </div>
                         <div class="bk-overview-image-wrap">
-                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="Income tax return filing support and compliance guidance" loading="lazy" referrerpolicy="no-referrer">
+                            <img src="/assets/img/overview/tax.svg?v=1" alt="Income tax return filing support and compliance guidance" loading="lazy">
                         </div>
                     </div>
                 </div>

@@ -763,7 +763,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         ];
         $caaft_overview_bullets = [];
         $caaft_overview_closing = '';
-        $caaft_overview_image_src = '/assets/img/gst-registration-overview.jpg';
+        $caaft_overview_illustration = 'company';
         $caaft_overview_image_alt = 'One Person Company registration and OPC incorporation support';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

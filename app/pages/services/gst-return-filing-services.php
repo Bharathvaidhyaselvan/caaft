@@ -491,7 +491,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             'A single lapse — a missed return, an incorrect ITC claim, or a mismatch between GSTR-1 and GSTR-3B — can trigger notices, block credits, or attract penalties. For any GST-registered business, timely and accurate return filing is non-negotiable.',
         ];
         $caaft_overview_bullets = [];
-        $caaft_overview_image_src = '/assets/img/gst-return-overview.jpg';
+        $caaft_overview_illustration = 'gst';
         $caaft_overview_image_alt = 'Business professional reviewing GST return filing documents';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

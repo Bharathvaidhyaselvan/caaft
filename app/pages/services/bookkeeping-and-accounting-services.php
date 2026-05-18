@@ -454,7 +454,7 @@
             'Together, they give businesses complete financial visibility and the compliance foundation needed to operate with confidence.',
         ];
         $caaft_overview_bullets = [];
-        $caaft_overview_image_src = '/assets/img/book-keeping.jpeg';
+        $caaft_overview_illustration = 'accounting';
         $caaft_overview_image_alt = 'Bookkeeping and accounting — financial dashboards, data analysis, and business growth';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

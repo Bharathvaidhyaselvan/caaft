@@ -5,15 +5,19 @@
  * Required:
  *   $caaft_overview_heading_id (string)
  *   $caaft_overview_title (string)
- *   $caaft_overview_image_src (string)
  *   $caaft_overview_image_alt (string)
+ *
+ * Image (one of):
+ *   $caaft_overview_image_src (string) — full URL/path to raster or SVG
+ *   $caaft_overview_illustration (string) — slug mapped to /assets/img/overview/{slug}.svg?v=1
+ *     Slugs: company, compliance, roc, tax, gst, accounting, advisory, payroll, registrations
  *
  * Optional:
  *   $caaft_overview_paragraphs (string[])  // supports <strong>, <em>, <br>
  *   $caaft_overview_bullets (string[])     // supports <strong>, <em>, <br>
  *   $caaft_overview_closing (string)       // supports <strong>, <em>, <br>, shown after bullets
  */
-if (!isset($caaft_overview_heading_id, $caaft_overview_title, $caaft_overview_image_src, $caaft_overview_image_alt)) {
+if (!isset($caaft_overview_heading_id, $caaft_overview_title, $caaft_overview_image_alt)) {
     trigger_error('caaft-overview-card.php: set required $caaft_overview_* variables before including', E_USER_WARNING);
 }
 
@@ -21,6 +25,18 @@ $caaft_overview_heading_id = isset($caaft_overview_heading_id) ? (string) $caaft
 $caaft_overview_title = isset($caaft_overview_title) ? (string) $caaft_overview_title : '';
 $caaft_overview_image_src = isset($caaft_overview_image_src) ? (string) $caaft_overview_image_src : '';
 $caaft_overview_image_alt = isset($caaft_overview_image_alt) ? (string) $caaft_overview_image_alt : '';
+
+// Optional: flat vector pack under /assets/img/overview/{slug}.svg (Freepik-style palette)
+if (isset($caaft_overview_illustration) && is_string($caaft_overview_illustration) && $caaft_overview_illustration !== '') {
+    $ill = strtolower(preg_replace('/[^a-z0-9-]/', '', $caaft_overview_illustration));
+    if ($ill !== '') {
+        $caaft_overview_image_src = '/assets/img/overview/' . $ill . '.svg?v=1';
+    }
+}
+
+if ($caaft_overview_image_src === '') {
+    trigger_error('caaft-overview-card.php: set $caaft_overview_image_src or $caaft_overview_illustration before including', E_USER_WARNING);
+}
 $caaft_overview_paragraphs = isset($caaft_overview_paragraphs) && is_array($caaft_overview_paragraphs) ? $caaft_overview_paragraphs : [];
 $caaft_overview_bullets = isset($caaft_overview_bullets) && is_array($caaft_overview_bullets) ? $caaft_overview_bullets : [];
 $caaft_overview_closing = isset($caaft_overview_closing) ? (string) $caaft_overview_closing : '';
@@ -51,4 +67,5 @@ $caaft_overview_closing = isset($caaft_overview_closing) ? (string) $caaft_overv
             </div>
         </div>
     </div>
+    <?php unset($caaft_overview_illustration); ?>
 </section>

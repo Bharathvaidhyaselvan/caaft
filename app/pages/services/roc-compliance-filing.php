@@ -113,7 +113,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = '/assets/img/gst-registration-overview.jpg';
+    $caaft_overview_illustration = 'roc';
     $caaft_overview_image_alt = 'ROC compliance and filing support services';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>

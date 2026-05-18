@@ -462,7 +462,7 @@ $caaft_enquiry_honeypot_website = false;
             'Startups, SMEs, and growth-stage enterprises use this structure to establish investor readiness and operational credibility',
         ];
         $caaft_overview_closing = '';
-        $caaft_overview_image_src = '/assets/img/gst-registration-overview.jpg';
+        $caaft_overview_illustration = 'company';
         $caaft_overview_image_alt = 'Private limited company incorporation and business registration support';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>
