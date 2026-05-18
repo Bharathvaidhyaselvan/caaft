@@ -1,23 +1,4 @@
-<footer class="footer-area footer-bg">
-        <style>
-            .footer-widget-box.about-us .footer-social {
-                justify-content: flex-start;
-                margin-top: 12px;
-                margin-bottom: 0;
-                padding-left: 0;
-            }
-            .copyright .brevia-credit,
-            .copyright .brevia-credit:visited {
-                color: #ffffff !important;
-                transition: color 0.25s ease;
-                font-size: 16px;
-                white-space: nowrap;
-            }
-            .copyright .brevia-credit:hover,
-            .copyright .brevia-credit:focus {
-                color: #33b6ff !important;
-            }
-        </style>
+﻿<footer class="footer-area footer-bg">
         <div class="footer-widget">
             <div class="container footer_container">
                 <div class="footer-widget-wrap pt-50 pb-30">
@@ -112,12 +93,12 @@
                 <div class="row align-items-center gy-2">
                     <div class="col-12 col-md-8 col-lg-9 align-self-center">
                         <p class="copyright-text mb-0">
-                            © Copyright 2026 - <a href="#">CAAFT Consultancy Services Private Limited.</a>
+                            ┬⌐ Copyright 2026 - <a href="#">CAAFT Consultancy Services Private Limited.</a>
                             All Rights Reserved.
                         </p>
                     </div>
                     <div class="col-12 col-md-4 col-lg-3 align-self-center text-end">
-                        <a class="brevia-credit" href="https://www.builtbybrevia.com" target="_blank" rel="noopener noreferrer">⚡BuiltByBrevia</a>
+                        <a class="brevia-credit" href="https://www.builtbybrevia.com" target="_blank" rel="noopener noreferrer">ΓÜíBuiltByBrevia</a>
                     </div>
                 </div>
             </div>

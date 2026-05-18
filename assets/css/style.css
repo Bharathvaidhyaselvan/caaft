@@ -5066,7 +5066,33 @@ a.footer-logo {
 .footer-social {
     display: flex;
     gap: 15px;
-    justify-content: end
+    justify-content: flex-end
+}
+
+/* Social under tagline (about column); never in copyright bar */
+.copyright .footer-social {
+    display: none !important;
+}
+
+.footer-area .footer-widget-box.about-us .footer-social {
+    display: flex !important;
+    justify-content: flex-start !important;
+    margin-top: 12px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.copyright .brevia-credit,
+.copyright .brevia-credit:visited {
+    color: #ffffff !important;
+    transition: color 0.25s ease;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.copyright .brevia-credit:hover,
+.copyright .brevia-credit:focus {
+    color: #33b6ff !important;
 }
 
 .footer-social li a i {
@@ -5229,9 +5255,9 @@ a.footer-logo {
         padding-bottom: 0
     }
 
-    .footer-social {
-        justify-content: center;
-        margin-top: 20px
+    .footer-area .footer-widget-box.about-us .footer-social {
+        justify-content: flex-start !important;
+        margin-top: 12px
     }
 }
 
