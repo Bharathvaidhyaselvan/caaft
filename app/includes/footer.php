@@ -93,12 +93,12 @@
                 <div class="row align-items-center gy-2">
                     <div class="col-12 col-md-8 col-lg-9 align-self-center">
                         <p class="copyright-text mb-0">
-                            ┬⌐ Copyright 2026 - <a href="#">CAAFT Consultancy Services Private Limited.</a>
+                            &copy; Copyright 2026 - <a href="#">CAAFT Consultancy Services Private Limited.</a>
                             All Rights Reserved.
                         </p>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3 align-self-center text-end">
-                        <a class="brevia-credit" href="https://www.builtbybrevia.com" target="_blank" rel="noopener noreferrer">ΓÜíBuiltByBrevia</a>
+                    <div class="col-12 col-md-4 col-lg-3 align-self-center text-md-end text-center">
+                        <a class="brevia-credit" href="https://www.builtbybrevia.com" target="_blank" rel="noopener noreferrer">&#9889;BuiltByBrevia</a>
                     </div>
                 </div>
             </div>

@@ -5069,12 +5069,12 @@ a.footer-logo {
     justify-content: flex-end
 }
 
-/* Social under tagline (about column); never in copyright bar */
-.copyright .footer-social {
+/* New footer: social under tagline; hide duplicate in copyright bar only when about column has icons */
+.footer-area:has(.footer-widget-box.about-us .footer-social) .copyright .footer-social {
     display: none !important;
 }
 
-.footer-area .footer-widget-box.about-us .footer-social {
+.footer-area:has(.footer-widget-box.about-us .footer-social) .footer-widget-box.about-us .footer-social {
     display: flex !important;
     justify-content: flex-start !important;
     margin-top: 12px;
@@ -5255,7 +5255,7 @@ a.footer-logo {
         padding-bottom: 0
     }
 
-    .footer-area .footer-widget-box.about-us .footer-social {
+    .footer-area:has(.footer-widget-box.about-us .footer-social) .footer-widget-box.about-us .footer-social {
         justify-content: flex-start !important;
         margin-top: 12px
     }
@@ -12137,4 +12137,24 @@ body.home-3 .home3-leader-link a {
 
 body.home-3 .home3-leader-link a:hover {
     text-decoration: underline;
+}
+
+/* Homepage footer: same layout as inner pages (social under tagline, credit on right) */
+body.home-3 .footer-area:has(.footer-widget-box.about-us .footer-social) .footer-widget-box.about-us .footer-social {
+    display: flex !important;
+    justify-content: flex-start !important;
+}
+
+body.home-3 .footer-area:has(.footer-widget-box.about-us .footer-social) .copyright .footer-social {
+    display: none !important;
+}
+
+body.home-3 .copyright .brevia-credit {
+    display: inline-block;
+}
+
+@media (max-width: 767px) {
+    body.home-3 .copyright .col-12.text-end {
+        text-align: center !important;
+    }
 }
