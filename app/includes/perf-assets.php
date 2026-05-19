@@ -10,6 +10,27 @@ if (!function_exists('caaft_asset_version')) {
     }
 }
 
+if (!function_exists('caaft_versioned_asset_url')) {
+    /** Site path or absolute URL with cache-busting query for local files under project root. */
+    function caaft_versioned_asset_url(string $src): string
+    {
+        if (strncmp($src, 'http://', 7) === 0 || strncmp($src, 'https://', 8) === 0) {
+            return $src;
+        }
+
+        $path = parse_url($src, PHP_URL_PATH);
+        if (!is_string($path) || $path === '') {
+            $path = $src;
+        }
+
+        $relative = rawurldecode(ltrim($path, '/'));
+        $version = caaft_asset_version($relative);
+        $separator = str_contains($src, '?') ? '&' : '?';
+
+        return $src . $separator . 'v=' . rawurlencode($version);
+    }
+}
+
 if (!function_exists('caaft_defer_stylesheet')) {
     function caaft_defer_stylesheet(string $href): void
     {

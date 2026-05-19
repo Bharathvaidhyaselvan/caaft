@@ -28,6 +28,12 @@ if ($caaft_overview_image_src === '') {
 $caaft_overview_paragraphs = isset($caaft_overview_paragraphs) && is_array($caaft_overview_paragraphs) ? $caaft_overview_paragraphs : [];
 $caaft_overview_bullets = isset($caaft_overview_bullets) && is_array($caaft_overview_bullets) ? $caaft_overview_bullets : [];
 $caaft_overview_closing = isset($caaft_overview_closing) ? (string) $caaft_overview_closing : '';
+
+if (!function_exists('caaft_versioned_asset_url')) {
+    require_once dirname(__DIR__) . '/perf-assets.php';
+}
+
+$caaft_overview_image_href = caaft_versioned_asset_url($caaft_overview_image_src);
 ?>
 <section class="bk-overview py-90" aria-labelledby="<?php echo htmlspecialchars($caaft_overview_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
@@ -50,7 +56,7 @@ $caaft_overview_closing = isset($caaft_overview_closing) ? (string) $caaft_overv
                     <?php endif; ?>
                 </div>
                 <div class="bk-overview-image-wrap caaft-overview-image-wrap">
-                    <img src="<?php echo htmlspecialchars($caaft_overview_image_src, ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($caaft_overview_image_alt, ENT_QUOTES, 'UTF-8'); ?>" loading="lazy"<?php echo strncmp($caaft_overview_image_src, 'http', 4) === 0 ? ' referrerpolicy="no-referrer"' : ''; ?>>
+                    <img src="<?php echo htmlspecialchars($caaft_overview_image_href, ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($caaft_overview_image_alt, ENT_QUOTES, 'UTF-8'); ?>" loading="lazy"<?php echo strncmp($caaft_overview_image_src, 'http', 4) === 0 ? ' referrerpolicy="no-referrer"' : ''; ?>>
                 </div>
             </div>
         </div>
