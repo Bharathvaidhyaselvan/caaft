@@ -8901,15 +8901,6 @@ body.home-3.page-accounting-reporting li {
     line-height: 1.3;
 }
 
-@media (min-width: 1400px) {
-    .page-accounting-reporting.page-business-setup-registration .caaft-get-in-touch-v1 .caaft-ar-git-ctas,
-    .page-accounting-reporting.page-compliance-regulatory-services .caaft-get-in-touch-v1 .caaft-ar-git-ctas,
-    .page-accounting-reporting.page-taxation-services .caaft-get-in-touch-v1 .caaft-ar-git-ctas,
-    .page-accounting-reporting.page-advisory-cfo-services .caaft-get-in-touch-v1 .caaft-ar-git-ctas {
-        flex-wrap: nowrap;
-    }
-}
-
 .page-accounting-reporting.page-taxation-services .caaft-ar-offer-card-title {
     min-height: calc(1.35em * 2);
 }
