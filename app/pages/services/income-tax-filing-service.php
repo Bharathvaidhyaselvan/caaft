@@ -47,7 +47,7 @@
             display: grid;
             grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
             gap: 2rem;
-            align-items: start;
+            align-items: center;
         }
 
         .page-income-tax-filing-service .bk-overview-card {

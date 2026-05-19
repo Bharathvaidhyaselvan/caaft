@@ -9890,7 +9890,7 @@ body.home-3.page-accounting-reporting li {
     display: grid;
     grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
     gap: 20px;
-    align-items: start;
+    align-items: center;
 }
 
 .bk-overview-content {
@@ -9923,10 +9923,13 @@ body.home-3.page-accounting-reporting li {
 
 .bk-overview-image-wrap {
     min-width: 0;
-    background: #f4f6f9;
     border-radius: 8px;
     padding: 12px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 }
 
 .bk-overview-image-wrap img {
@@ -9948,7 +9951,7 @@ body.home-3.page-accounting-reporting li {
     display: grid;
     grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
     gap: 20px;
-    align-items: start;
+    align-items: center;
 }
 
 .page-bookkeeping-accounting .bk-overview-content {
@@ -9979,10 +9982,13 @@ body.home-3.page-accounting-reporting li {
 
 .page-bookkeeping-accounting .bk-overview-image-wrap {
     min-width: 0;
-    background: #f4f6f9;
     border-radius: 8px;
     padding: 12px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 }
 
 .page-bookkeeping-accounting .bk-overview-image-wrap img {
