@@ -25,12 +25,6 @@ if (!function_exists('caaft_versioned_asset_url')) {
 
         $relative = rawurldecode(ltrim($path, '/'));
 
-        // Removed tax placeholder — always serve Private Limited overview art instead.
-        if (str_contains($relative, 'gst-registration-overview.jpg')) {
-            $src = '/assets/img/services-images/Business%20Set%20up%20%26%20REgistration/Pvt%20ltd.jpg';
-            $relative = 'assets/img/services-images/Business Set up & REgistration/Pvt ltd.jpg';
-        }
-
         $version = caaft_asset_version($relative);
         $separator = str_contains($src, '?') ? '&' : '?';
 
