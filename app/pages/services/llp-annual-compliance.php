@@ -161,7 +161,7 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = '/assets/img/services-images/ROC%20Compliance/Miselleneous%20ROC%20filings.jpg';
+    $caaft_overview_image_src = '/assets/img/services-images/Company%20Compliance/LLP%20Compliance.jpg';
     $caaft_overview_image_alt = 'LLP annual compliance and ROC filing services';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>
