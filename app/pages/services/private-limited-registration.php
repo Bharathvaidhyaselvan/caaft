@@ -50,7 +50,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             color: #2f2f2f;
         }
         .page-private-limited-registration .bk-overview-layout {
-            align-items: center;
+            align-items: stretch;
         }
         .page-private-limited-registration .bk-overview-image-wrap {
             display: flex;
