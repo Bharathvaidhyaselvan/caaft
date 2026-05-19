@@ -162,6 +162,7 @@
     </div>
 
     <main class="main">
+        <!-- caaft-home-layout-v2: about > features > services > video > pricing > process > why-choose > trust > testimonials > achievements > team > quote -->
         <div id="sliders" class=" hero-slider owl-carousel owl-theme hs-3">
             <div class="hero-single">
                 <div class="container">
