@@ -80,21 +80,6 @@
         .page-gst-assessment-appeal .bk-overview .bk-overview-text:last-child {
             margin-bottom: 0;
         }
-        .page-gst-assessment-appeal .bk-overview-layout {
-            align-items: center;
-        }
-        .page-gst-assessment-appeal .bk-overview-image-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            align-self: center;
-        }
-        .page-gst-assessment-appeal .bk-overview-image-wrap img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            min-height: 420px;
-        }
         .page-gst-assessment-appeal .gst-assess-deadline-wrap,
         .page-gst-assessment-appeal .gst-assess-hierarchy-wrap { padding-top: 44px; padding-bottom: 44px; }
         .page-gst-assessment-appeal .gst-assess-title { margin: 0 0 10px; color: #1f2c40; font-size: clamp(1.5rem, 2.2vw, 2.1rem); line-height: 1.2; font-weight: 700; }

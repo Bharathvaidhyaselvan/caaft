@@ -43,13 +43,6 @@
             background: #ffffff !important;
         }
 
-        .page-income-tax-filing-service .bk-overview-layout {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-            gap: 2rem;
-            align-items: center;
-        }
-
         .page-income-tax-filing-service .bk-overview-card {
             background: #ffffff;
             border: 1px solid #e5e8ed;
@@ -57,15 +50,6 @@
             border-radius: 12px;
             padding: clamp(1rem, 2vw, 1.5rem);
             box-shadow: 0 6px 20px rgba(10, 29, 55, 0.04);
-        }
-
-        .page-income-tax-filing-service .bk-overview-image-wrap img {
-            width: 100%;
-            height: 100%;
-            min-height: 420px;
-            object-fit: cover;
-            object-position: center center;
-            border-radius: 10px;
         }
 
         .page-income-tax-filing-service .bk-overview-content h2,

@@ -9921,7 +9921,8 @@ body.home-3.page-accounting-reporting li {
     color: #1f2937;
 }
 
-.bk-overview-image-wrap {
+.bk-overview-image-wrap,
+.caaft-overview-image-wrap {
     min-width: 0;
     border-radius: 8px;
     padding: 0;
@@ -9932,6 +9933,7 @@ body.home-3.page-accounting-reporting li {
     align-self: stretch;
     overflow: hidden;
     min-height: 100%;
+    background: transparent;
 }
 
 .bk-overview-image-wrap img {
@@ -9942,6 +9944,34 @@ body.home-3.page-accounting-reporting li {
     border-radius: 8px;
     object-fit: cover;
     object-position: center center;
+}
+
+/* Service pages: one layout — overrides per-page inline CSS */
+.page-accounting-reporting .bk-overview-layout {
+    align-items: stretch !important;
+}
+
+.page-accounting-reporting .bk-overview-image-wrap,
+.page-accounting-reporting .caaft-overview-image-wrap {
+    background: transparent !important;
+    align-self: stretch !important;
+    align-items: stretch !important;
+}
+
+.page-accounting-reporting .bk-overview-image-wrap img {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.page-bookkeeping-accounting .bk-overview-image-wrap img {
+    border-radius: 16px;
+}
+
+.page-income-tax-filing-service .bk-overview-image-wrap img {
+    border-radius: 10px;
 }
 
 .page-bookkeeping-accounting .bk-overview-card {
@@ -9983,29 +10013,6 @@ body.home-3.page-accounting-reporting li {
 .page-bookkeeping-accounting .bk-overview .bk-section-title {
     font-size: 32px;
     line-height: 1.2;
-}
-
-.page-bookkeeping-accounting .bk-overview-image-wrap {
-    min-width: 0;
-    border-radius: 8px;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    align-self: stretch;
-    overflow: hidden;
-    min-height: 100%;
-}
-
-.page-bookkeeping-accounting .bk-overview-image-wrap img {
-    width: 100%;
-    height: 100%;
-    min-height: 420px;
-    display: block;
-    border-radius: 8px;
-    object-fit: cover;
-    object-position: center center;
 }
 
 @media (max-width: 991.98px) {

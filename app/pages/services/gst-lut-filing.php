@@ -83,19 +83,6 @@
             margin-bottom: 0;
         }
 
-        @media (min-width: 992px) {
-            .page-gst-lut-filing .bk-overview-layout {
-                align-items: stretch;
-            }
-            .page-gst-lut-filing .bk-overview-image-wrap img {
-                width: 100%;
-                height: 100%;
-                min-height: 420px;
-                object-fit: cover;
-                object-position: center center;
-            }
-        }
-
         .page-gst-lut-filing .lut-importance-wrap {
             padding-top: 40px;
             padding-bottom: 44px;

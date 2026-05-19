@@ -83,21 +83,6 @@
         .page-gst-cancellation-services .bk-overview .bk-overview-text:last-child {
             margin-bottom: 0;
         }
-        .page-gst-cancellation-services .bk-overview-layout {
-            align-items: center;
-        }
-        .page-gst-cancellation-services .bk-overview-image-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            align-self: center;
-        }
-        .page-gst-cancellation-services .bk-overview-image-wrap img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            min-height: 420px;
-        }
         .page-gst-cancellation-services .gst-cancel-needs-wrap { padding-top: 44px; padding-bottom: 44px; }
         .page-gst-cancellation-services .gst-cancel-needs-title {
             margin: 0 0 10px;

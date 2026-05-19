@@ -49,21 +49,6 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             margin: 0 0 1.75rem;
             color: #2f2f2f;
         }
-        .page-private-limited-registration .bk-overview-layout {
-            align-items: stretch;
-        }
-        .page-private-limited-registration .bk-overview-image-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            align-self: center;
-        }
-        .page-private-limited-registration .bk-overview-image-wrap img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            min-height: 420px;
-        }
         .page-private-limited-registration .plc-section-lead {
             margin: 0 0 1rem;
             color: #4d5868;

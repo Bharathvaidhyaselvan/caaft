@@ -47,21 +47,6 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             margin: 0 0 1.75rem;
             color: #2f2f2f;
         }
-        .page-opc-registration .bk-overview-layout {
-            align-items: center;
-        }
-        .page-opc-registration .bk-overview-image-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            align-self: center;
-        }
-        .page-opc-registration .bk-overview-image-wrap img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            min-height: 420px;
-        }
         .page-opc-registration .plc-section-lead {
             margin: 0 0 1rem;
             color: #4d5868;

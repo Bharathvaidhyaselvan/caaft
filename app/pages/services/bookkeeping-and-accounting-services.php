@@ -24,13 +24,6 @@
     <meta name="twitter:image" content="https://caaft.com/assets/img/book-keeping.jpeg">
     <?php include "header-top.php"; ?>
     <style>
-        .page-bookkeeping-accounting .bk-overview-layout {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-            gap: 2rem;
-            align-items: center;
-        }
-
         .page-bookkeeping-accounting .caaft-ar-hero-ctas {
             display: flex;
             flex-wrap: wrap;
@@ -47,15 +40,6 @@
             background: transparent !important;
             border: 1px solid #d9e5ff !important;
             color: #ffffff !important;
-        }
-
-        .page-bookkeeping-accounting .bk-overview-image-wrap img {
-            width: 100%;
-            height: 100%;
-            min-height: 420px;
-            object-fit: cover;
-            object-position: center center;
-            border-radius: 16px;
         }
 
         .page-bookkeeping-accounting .main,
