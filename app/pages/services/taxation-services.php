@@ -382,13 +382,8 @@
         $caaft_git_note = 'No commitment required. Just a conversation with a qualified CA who understands your business.';
         $caaft_git_actions = [
             [
-                'href' => '/contact#contact_us',
-                'class' => 'theme-btn caaft-ar-git-btn-call',
-                'label' => 'Start Your Tax Filing',
-            ],
-            [
                 'href' => 'tel:+918870078870',
-                'class' => 'theme-btn',
+                'class' => 'theme-btn caaft-ar-git-btn-call',
                 'label' => 'Call Us: +91 88700 78870',
             ],
             [

@@ -282,8 +282,7 @@
         $caaft_git_eyebrow = 'Get in touch';
         $caaft_git_note = 'No commitment required. Just a conversation with a dedicated expert who understands your registration requirements.';
         $caaft_git_actions = [
-            ['href' => '/contact#contact_us', 'class' => 'theme-btn caaft-ar-git-btn-call', 'label' => 'Start Your Registration'],
-            ['href' => 'tel:+918870078870', 'class' => 'theme-btn', 'label' => 'Call Us: +91 88700 78870'],
+            ['href' => 'tel:+918870078870', 'class' => 'theme-btn caaft-ar-git-btn-call', 'label' => 'Call Us: +91 88700 78870'],
             ['href' => 'https://api.whatsapp.com/send?phone=918870078870', 'class' => 'caaft-ar-git-btn-outline', 'label' => '<i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us', 'target' => '_blank', 'rel' => 'noopener noreferrer'],
             ['href' => '#caaft-bsr-enquiry-form-inner', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Tell Us Your Business Plan'],
         ];

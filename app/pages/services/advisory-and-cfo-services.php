@@ -260,8 +260,7 @@ $caaft_enquiry_input_id_prefix = 'ac';
         $caaft_git_lead = "Whether you need a strategic financial partner, a second opinion on a major decision, or a structured plan for the year ahead - CAAFT's advisory team is ready to engage. We respond within one business day.";
         $caaft_git_eyebrow = 'Get in touch';
         $caaft_git_actions = [
-            ['href' => '/contact#contact_us', 'class' => 'theme-btn caaft-ar-git-btn-call', 'label' => 'Speak With an Advisory Expert'],
-            ['href' => 'tel:+918870078870', 'class' => 'theme-btn', 'label' => 'Call Us: +91 88700 78870'],
+            ['href' => 'tel:+918870078870', 'class' => 'theme-btn caaft-ar-git-btn-call', 'label' => 'Call Us: +91 88700 78870'],
             ['href' => 'https://api.whatsapp.com/send?phone=918870078870', 'class' => 'caaft-ar-git-btn-outline', 'label' => '<i class="fab fa-whatsapp"></i> WhatsApp Us', 'target' => '_blank', 'rel' => 'noopener noreferrer'],
             ['href' => '#caaft-ac-enquiry-form-inner', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Share Your Business Goals'],
         ];

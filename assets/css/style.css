@@ -8884,6 +8884,27 @@ body.home-3.page-accounting-reporting li {
     min-height: calc(1.35em * 2);
 }
 
+.page-accounting-reporting.page-business-setup-registration .caaft-get-in-touch-v1 .caaft-ar-git-ctas,
+.page-accounting-reporting.page-compliance-regulatory-services .caaft-get-in-touch-v1 .caaft-ar-git-ctas {
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.page-accounting-reporting.page-business-setup-registration .caaft-get-in-touch-v1 .caaft-ar-git-ctas .theme-btn,
+.page-accounting-reporting.page-business-setup-registration .caaft-get-in-touch-v1 .caaft-ar-git-btn-outline,
+.page-accounting-reporting.page-compliance-regulatory-services .caaft-get-in-touch-v1 .caaft-ar-git-ctas .theme-btn,
+.page-accounting-reporting.page-compliance-regulatory-services .caaft-get-in-touch-v1 .caaft-ar-git-btn-outline {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+@media (min-width: 576px) {
+    .page-accounting-reporting.page-business-setup-registration .caaft-get-in-touch-v1 .caaft-ar-git-ctas,
+    .page-accounting-reporting.page-compliance-regulatory-services .caaft-get-in-touch-v1 .caaft-ar-git-ctas {
+        flex-direction: row;
+    }
+}
+
 .page-accounting-reporting.page-taxation-services .caaft-ar-offer-card-title {
     min-height: calc(1.35em * 2);
 }
@@ -9740,15 +9761,37 @@ body.home-3.page-accounting-reporting li {
         align-items: stretch;
     }
 
+    .page-accounting-reporting.page-business-setup-registration .caaft-get-in-touch-v1 .caaft-ar-git-ctas,
+    .page-accounting-reporting.page-compliance-regulatory-services .caaft-get-in-touch-v1 .caaft-ar-git-ctas {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 4px;
+    }
+
     .caaft-get-in-touch-v1 .caaft-ar-git-ctas .theme-btn,
     .caaft-get-in-touch-v1 .caaft-ar-git-btn-outline {
         width: 100%;
         justify-content: center;
     }
 
+    .page-accounting-reporting.page-business-setup-registration .caaft-get-in-touch-v1 .caaft-ar-git-ctas .theme-btn,
+    .page-accounting-reporting.page-business-setup-registration .caaft-get-in-touch-v1 .caaft-ar-git-btn-outline,
+    .page-accounting-reporting.page-compliance-regulatory-services .caaft-get-in-touch-v1 .caaft-ar-git-ctas .theme-btn,
+    .page-accounting-reporting.page-compliance-regulatory-services .caaft-get-in-touch-v1 .caaft-ar-git-btn-outline {
+        width: auto;
+    }
+
     .caaft-get-in-touch-v1 .caaft-ar-git-btn-simplify.theme-btn2 {
         width: 100%;
         justify-content: center;
+    }
+
+    .page-accounting-reporting.page-business-setup-registration .caaft-get-in-touch-v1 .caaft-ar-git-btn-simplify.theme-btn2,
+    .page-accounting-reporting.page-compliance-regulatory-services .caaft-get-in-touch-v1 .caaft-ar-git-btn-simplify.theme-btn2 {
+        width: auto;
     }
 }
 
