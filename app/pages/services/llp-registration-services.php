@@ -46,10 +46,10 @@ declare(strict_types=1);
             align-self: center;
         }
         .page-llp-registration .bk-overview-image-wrap img {
-            object-fit: contain;
+            object-fit: cover;
             width: 100%;
-            max-height: min(340px, 50vh);
-            height: auto;
+            height: 100%;
+            min-height: 420px;
         }
         .page-llp-registration .plc-section-lead {
             margin: 0 0 1rem;
@@ -600,7 +600,7 @@ declare(strict_types=1);
         ];
         $caaft_overview_bullets = [];
         $caaft_overview_closing = '';
-        $caaft_overview_image_src = '/assets/img/services-images/Business%20Set%20up%20%26%20REgistration/LLP.jpg';
+        $caaft_overview_image_src = '/assets/img/services-images/Business%20Set%20up%20%26%20REgistration/LLP-image.jpeg';
         $caaft_overview_image_alt = 'Limited Liability Partnership registration and incorporation support in India';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>

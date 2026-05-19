@@ -90,10 +90,10 @@
             align-self: center;
         }
         .page-gst-assessment-appeal .bk-overview-image-wrap img {
-            object-fit: contain;
+            object-fit: cover;
             width: 100%;
-            max-height: min(340px, 50vh);
-            height: auto;
+            height: 100%;
+            min-height: 420px;
         }
         .page-gst-assessment-appeal .gst-assess-deadline-wrap,
         .page-gst-assessment-appeal .gst-assess-hierarchy-wrap { padding-top: 44px; padding-bottom: 44px; }

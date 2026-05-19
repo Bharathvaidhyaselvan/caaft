@@ -61,9 +61,10 @@
 
         .page-income-tax-filing-service .bk-overview-image-wrap img {
             width: 100%;
-            height: auto;
-            max-height: 380px;
-            object-fit: contain;
+            height: 100%;
+            min-height: 420px;
+            object-fit: cover;
+            object-position: center center;
             border-radius: 10px;
         }
 

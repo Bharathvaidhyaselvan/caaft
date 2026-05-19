@@ -85,12 +85,14 @@
 
         @media (min-width: 992px) {
             .page-gst-lut-filing .bk-overview-layout {
-                align-items: center;
+                align-items: stretch;
             }
             .page-gst-lut-filing .bk-overview-image-wrap img {
-                max-height: 360px;
-            width: 100%;
-            object-fit: cover;
+                width: 100%;
+                height: 100%;
+                min-height: 420px;
+                object-fit: cover;
+                object-position: center center;
             }
         }
 

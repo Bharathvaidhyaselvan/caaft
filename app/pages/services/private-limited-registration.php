@@ -59,10 +59,10 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             align-self: center;
         }
         .page-private-limited-registration .bk-overview-image-wrap img {
-            object-fit: contain;
+            object-fit: cover;
             width: 100%;
-            max-height: min(340px, 50vh);
-            height: auto;
+            height: 100%;
+            min-height: 420px;
         }
         .page-private-limited-registration .plc-section-lead {
             margin: 0 0 1rem;

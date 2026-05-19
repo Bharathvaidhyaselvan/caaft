@@ -9888,9 +9888,9 @@ body.home-3.page-accounting-reporting li {
 
 .bk-overview-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 20px;
-    align-items: center;
+    align-items: stretch;
 }
 
 .bk-overview-content {
@@ -9924,19 +9924,24 @@ body.home-3.page-accounting-reporting li {
 .bk-overview-image-wrap {
     min-width: 0;
     border-radius: 8px;
-    padding: 12px;
+    padding: 0;
     box-sizing: border-box;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    align-self: center;
+    align-self: stretch;
+    overflow: hidden;
+    min-height: 100%;
 }
 
 .bk-overview-image-wrap img {
     width: 100%;
+    height: 100%;
+    min-height: 420px;
     display: block;
     border-radius: 8px;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .page-bookkeeping-accounting .bk-overview-card {
@@ -9949,9 +9954,9 @@ body.home-3.page-accounting-reporting li {
 
 .page-bookkeeping-accounting .bk-overview-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 20px;
-    align-items: center;
+    align-items: stretch;
 }
 
 .page-bookkeeping-accounting .bk-overview-content {
@@ -9983,24 +9988,33 @@ body.home-3.page-accounting-reporting li {
 .page-bookkeeping-accounting .bk-overview-image-wrap {
     min-width: 0;
     border-radius: 8px;
-    padding: 12px;
+    padding: 0;
     box-sizing: border-box;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    align-self: center;
+    align-self: stretch;
+    overflow: hidden;
+    min-height: 100%;
 }
 
 .page-bookkeeping-accounting .bk-overview-image-wrap img {
     width: 100%;
+    height: 100%;
+    min-height: 420px;
     display: block;
     border-radius: 8px;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center center;
 }
 
 @media (max-width: 991.98px) {
     .bk-overview-layout {
         grid-template-columns: 1fr;
+    }
+
+    .bk-overview-image-wrap img {
+        min-height: 300px;
     }
 
     .page-bookkeeping-accounting .bk-overview-layout {

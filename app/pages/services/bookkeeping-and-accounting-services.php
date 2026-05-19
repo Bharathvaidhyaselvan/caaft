@@ -52,8 +52,9 @@
         .page-bookkeeping-accounting .bk-overview-image-wrap img {
             width: 100%;
             height: 100%;
-            max-height: 420px;
+            min-height: 420px;
             object-fit: cover;
+            object-position: center center;
             border-radius: 16px;
         }
 
