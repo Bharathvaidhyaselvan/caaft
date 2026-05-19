@@ -26,6 +26,9 @@ RewriteCond %{THE_REQUEST} ^.*/index.php
 RewriteRule ^(.*)index.php$ https://caaft.com/$1 [R=301,L]
 
 
+# Removed tax placeholder — send old links to Private Limited overview art
+Redirect 301 /assets/img/gst-registration-overview.jpg /assets/img/services-images/Business%20Set%20up%20%26%20REgistration/Pvt%20ltd.jpg
+
 RedirectMatch 301 /taxtion.php https://caaft.com/gst-filing-itr-filing-in-chennai.php
 RedirectMatch 301 /management-consultancy-services.php https://caaft.com/management-consultancy-services-in-chennai.php
 RedirectMatch 301 /business-consultancy-services.php https://caaft.com/business-consultancy-company-registration-in-chennai.php
