@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Apply for a Digital Signature Certificate (DSC) quickly with expert assistance. Register your DSC for MCA, GST, IEC, and e-tendering with secure and reliable processing.">
     <meta property="og:url" content="https://caaft.com/digital-signature-certificate-registration/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .plc-needs-wrap { padding-top: 44px; padding-bottom: 44px; }

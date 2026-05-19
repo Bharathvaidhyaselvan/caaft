@@ -29,7 +29,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
     <meta property="og:description" content="Public Limited Company registration in India for enterprises seeking public funding, compliance-led governance, and scalable growth.">
     <meta property="og:url" content="https://caaft.com/public-limited-company-registration/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-public-limited-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-public-limited-registration .bk-overview .bk-section-title {

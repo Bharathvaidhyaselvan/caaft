@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Register your Limited Liability Partnership in India with expert guidance. Get complete support for registration, compliance, and documentation with transparent pricing. Book a free consultation today.">
     <meta property="og:url" content="https://caaft.com/llp-registration-services/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/services-images/Business%20Set%20up%20%26%20REgistration/LLP-image.jpeg">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .bk-overview .bk-section-title {

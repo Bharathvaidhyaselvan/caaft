@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Accurate and compliance-ready business valuation services for fundraising, share transactions, M&A, and strategic planning.">
     <meta property="og:url" content="https://caaft.com/business-valuation-services/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .llp-vs-section { padding-top: 44px; padding-bottom: 48px; background: #ffffff; }

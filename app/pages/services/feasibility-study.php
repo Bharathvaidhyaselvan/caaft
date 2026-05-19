@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="CA-led feasibility study services with market research, financial modelling, risk analysis, and decision-ready reports.">
     <meta property="og:url" content="https://caaft.com/feasibility-study/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
     </style>

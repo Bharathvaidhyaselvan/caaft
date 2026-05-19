@@ -31,7 +31,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
     <meta property="og:description" content="Private Limited Company registration in India — complete incorporation support covering documentation, ROC filing, compliance setup, and long-term statutory management.">
     <meta property="og:url" content="https://caaft.com/private-limited-company-registration/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/services-images/Business%20Set%20up%20%26%20REgistration/Pvt%20ltd.jpg">
     <style>
         .page-private-limited-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-private-limited-registration .bk-overview .bk-section-title {

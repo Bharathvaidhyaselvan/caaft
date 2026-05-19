@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Learn about Food Safety and Standards Authority of India registration, FSSAI food licence types, eligibility, documents, and application process. Ensure legal compliance and smooth food business operations with a complete step-by-step guide.">
     <meta property="og:url" content="https://caaft.com/fssai-food-licence-india">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .plc-needs-wrap { padding-top: 44px; padding-bottom: 44px; }

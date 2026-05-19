@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Professional ROC compliance support including DIR-3 KYC, ADT-1, INC-22, DIR-12, MGT-14, and correction filings.">
     <meta property="og:url" content="https://caaft.com/roc-compliance-filing/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .llp-vs-section { padding-top: 44px; padding-bottom: 48px; background: #ffffff; }

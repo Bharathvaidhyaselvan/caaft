@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="CA-led payroll processing and statutory compliance services for businesses across India.">
     <meta property="og:url" content="https://caaft.com/payroll-management-compliance/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .payroll-docs-section { padding: 46px 0; background: #ffffff; }

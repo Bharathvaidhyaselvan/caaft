@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="CA-led financial assessment services to analyze financial health, improve cash flow, and deliver actionable, audit-ready insights.">
     <meta property="og:url" content="https://caaft.com/financial-assessment-services/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
     </style>

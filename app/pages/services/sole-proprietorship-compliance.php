@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Professional sole proprietorship compliance services including GST compliance for proprietorship, income tax filing for proprietorship, and regulatory support in India.">
     <meta property="og:url" content="https://caaft.com/sole-proprietorship-compliance/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .plc-needs-wrap { padding-top: 44px; padding-bottom: 44px; }

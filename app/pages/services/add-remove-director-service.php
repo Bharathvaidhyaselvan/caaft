@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Professional add remove director service including ROC filing, director appointment, resignation process, and compliance documentation for companies in India.">
     <meta property="og:url" content="https://caaft.com/add-remove-director-service/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .llp-vs-section { padding-top: 44px; padding-bottom: 48px; background: #ffffff; }

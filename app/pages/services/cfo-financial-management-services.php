@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Expert CFO services for budgeting, forecasting, cash flow, reporting, and growth-ready financial management.">
     <meta property="og:url" content="https://caaft.com/cfo-financial-management-services/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
     </style>

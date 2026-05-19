@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Get professional support for 12A and 80G registration for NGOs and trusts. Secure your 80G certificate, enable donor tax benefits, and obtain tax exemption with expert guidance.">
     <meta property="og:url" content="https://caaft.com/12a-80g-registration/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .plc-needs-wrap { padding-top: 44px; padding-bottom: 44px; }

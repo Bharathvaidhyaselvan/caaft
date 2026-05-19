@@ -29,7 +29,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
     <meta property="og:description" content="Apply for one person company registration with an easy step-by-step process. Learn OPC full form, eligibility, benefits, documents required, and registration procedure for starting your OPC in India.">
     <meta property="og:url" content="https://caaft.com/one-person-company-registration/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-opc-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-opc-registration .bk-overview .bk-section-title {

@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Expert support for authorised share capital increase including MOA amendment, SH-7 filing, and ROC compliance.">
     <meta property="og:url" content="https://caaft.com/increase-authorised-share-capital/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .llp-vs-section { padding-top: 44px; padding-bottom: 48px; background: #ffffff; }

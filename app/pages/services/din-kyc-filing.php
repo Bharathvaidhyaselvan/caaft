@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Expert DIR-3 KYC filing and DIN reactivation support to keep directors compliant and DINs active.">
     <meta property="og:url" content="https://caaft.com/din-kyc-filing/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .partnership-mistakes { padding-top: 42px; padding-bottom: 42px; background: #ffffff; }

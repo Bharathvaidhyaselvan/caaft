@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Professional support for MSME / Udyam registration online with end-to-end filing assistance and certificate delivery.">
     <meta property="og:url" content="https://caaft.com/msme-udyam-registration/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .msme-note-wrap { padding-top: 0; padding-bottom: 26px; background: #eaf4ff; }

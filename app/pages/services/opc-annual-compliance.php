@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="Understand OPC compliance requirements including ROC compliance for OPC, financial statement filing, ITR filing, and DIR-3 KYC. Ensure smooth OPC annual compliance and avoid penalties.">
     <meta property="og:url" content="https://caaft.com/opc-annual-compliance/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .plc-needs-wrap { padding-top: 44px; padding-bottom: 44px; }

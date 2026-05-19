@@ -18,7 +18,7 @@ declare(strict_types=1);
     <meta property="og:description" content="End-to-end support for company winding up, strike off, STK-2 filing, and legal closure compliance in India.">
     <meta property="og:url" content="https://caaft.com/winding-up-of-company/">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
-    <meta property="og:image" content="https://caaft.com/assets/img/gst-registration-overview.jpg">
+    <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
         .page-llp-registration .llp-vs-section { padding-top: 44px; padding-bottom: 48px; background: #ffffff; }
