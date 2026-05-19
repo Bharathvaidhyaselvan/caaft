@@ -9890,7 +9890,7 @@ body.home-3.page-accounting-reporting li {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 20px;
-    align-items: stretch;
+    align-items: center;
 }
 
 .bk-overview-content {
@@ -9928,41 +9928,44 @@ body.home-3.page-accounting-reporting li {
     padding: 0;
     box-sizing: border-box;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
-    align-self: stretch;
+    align-self: center;
+    max-height: 420px;
     overflow: hidden;
-    min-height: 100%;
     background: transparent;
 }
 
-.bk-overview-image-wrap img {
+.bk-overview-image-wrap img,
+.caaft-overview-image-wrap img {
     width: 100%;
-    height: 100%;
-    min-height: 420px;
+    max-height: 420px;
+    height: auto;
     display: block;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center center;
 }
 
 /* Service pages: one layout — overrides per-page inline CSS */
 .page-accounting-reporting .bk-overview-layout {
-    align-items: stretch !important;
+    align-items: center !important;
 }
 
 .page-accounting-reporting .bk-overview-image-wrap,
 .page-accounting-reporting .caaft-overview-image-wrap {
     background: transparent !important;
-    align-self: stretch !important;
-    align-items: stretch !important;
+    align-self: center !important;
+    align-items: center !important;
+    max-height: 420px;
 }
 
-.page-accounting-reporting .bk-overview-image-wrap img {
+.page-accounting-reporting .bk-overview-image-wrap img,
+.page-accounting-reporting .caaft-overview-image-wrap img {
     width: 100%;
-    height: 100%;
-    min-height: 420px;
-    object-fit: cover;
+    max-height: 420px;
+    height: auto;
+    object-fit: contain;
     object-position: center center;
 }
 
@@ -9986,7 +9989,7 @@ body.home-3.page-accounting-reporting li {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 20px;
-    align-items: stretch;
+    align-items: center;
 }
 
 .page-bookkeeping-accounting .bk-overview-content {
@@ -10020,8 +10023,14 @@ body.home-3.page-accounting-reporting li {
         grid-template-columns: 1fr;
     }
 
-    .bk-overview-image-wrap img {
-        min-height: 300px;
+    .bk-overview-image-wrap img,
+    .caaft-overview-image-wrap img {
+        max-height: 320px;
+    }
+
+    .bk-overview-image-wrap,
+    .caaft-overview-image-wrap {
+        max-height: 320px;
     }
 
     .page-bookkeeping-accounting .bk-overview-layout {
