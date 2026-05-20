@@ -126,8 +126,8 @@ declare(strict_types=1);
     ];
     $caaft_overview_bullets = [];
     $caaft_overview_closing = '';
-    $caaft_overview_image_src = '/assets/img/services-images/ROC%20Compliance/Company%20Closure_windup.jpg';
-    $caaft_overview_image_alt = 'Winding up and strike off company services';
+    $caaft_overview_image_src = '/assets/img/services-images/Company%20Compliance/Company%20Closure-img.jpeg';
+    $caaft_overview_image_alt = 'Company closure and winding up — business stress and declining performance';
     include __DIR__ . '/../../includes/components/caaft-overview-card.php';
     ?>
 
