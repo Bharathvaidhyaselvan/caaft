@@ -26,9 +26,19 @@ if (!function_exists('caaft_versioned_asset_url')) {
         $relative = rawurldecode(ltrim($path, '/'));
 
         $version = caaft_asset_version($relative);
-        $separator = str_contains($src, '?') ? '&' : '?';
+        $separator = (strpos($src, '?') !== false) ? '&' : '?';
 
         return $src . $separator . 'v=' . rawurlencode($version);
+    }
+}
+
+if (!function_exists('caaft_public_asset_url')) {
+    /** Root-absolute, cache-busted URL for CSS/JS/images under /assets/. */
+    function caaft_public_asset_url(string $relativePath): string
+    {
+        $relativePath = ltrim(str_replace('\\', '/', $relativePath), '/');
+
+        return caaft_versioned_asset_url('/' . $relativePath);
     }
 }
 
