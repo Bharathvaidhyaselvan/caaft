@@ -27,7 +27,8 @@ if ($requestedPath === '/index.php' && $requestedRoute === '') {
 
 $serviceRoutes = require APP_ROOT . '/config/service-routes.php';
 $pageRoutes = require APP_ROOT . '/config/page-routes.php';
-$allRoutes = $serviceRoutes + $pageRoutes;
+// Page routes win over legacy service hub routes when keys overlap.
+$allRoutes = $pageRoutes + $serviceRoutes;
 
 if ($requestedRoute !== '' && isset($allRoutes[$requestedRoute])) {
     $targetFile = $allRoutes[$requestedRoute];

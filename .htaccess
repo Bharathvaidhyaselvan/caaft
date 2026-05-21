@@ -18,6 +18,9 @@ RewriteEngine On
   <FilesMatch "\.(css|js|mjs|webp|png|jpe?g|gif|svg|ico|woff2?|ttf|eot)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
+  # Allow BuiltByBrevia staging preview iframe; keep site embeddable only on approved origins.
+  Header always set Content-Security-Policy "frame-ancestors 'self' https://builtbybrevia.com https://*.builtbybrevia.com https://caaft.com https://www.caaft.com https://*.caaft.com;"
+  Header always unset X-Frame-Options
 </IfModule>
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
@@ -33,10 +36,13 @@ RedirectMatch 301 /taxtion.php https://caaft.com/gst-filing-itr-filing-in-chenna
 RedirectMatch 301 /management-consultancy-services.php https://caaft.com/management-consultancy-services-in-chennai.php
 RedirectMatch 301 /business-consultancy-services.php https://caaft.com/business-consultancy-company-registration-in-chennai.php
 
-php_value upload_max_filesize 256M
-php_value post_max_size 256M
-php_value max_execution_time 300
-php_value max_input_time 300
+# php_value only works on mod_php hosts; on PHP-FPM it can cause HTTP 500 — use .user.ini instead.
+<IfModule mod_php.c>
+  php_value upload_max_filesize 256M
+  php_value post_max_size 256M
+  php_value max_execution_time 300
+  php_value max_input_time 300
+</IfModule>
 Redirect 301 /roc-filing-compliance-services-chennai.php https://caaft.com/roc-compliance-filing.php
 Redirect 301 /gst-consultants-services.php https://caaft.com/gst-return-filing-services.php
 Redirect 301 /business-management-consultancy-services.php https://caaft.com/business-advisory-services.php
@@ -66,7 +72,7 @@ Redirect 301 /company-incorporation/public-limited-company /public-limited-compa
 Redirect 301 /public-limited-company /public-limited-company-registration
 Redirect 301 /company-incorporation/one-person-company-registration /one-person-company-registration
 Redirect 301 /one-person-company-registration-online /one-person-company-registration
-Redirect 301 /msme-udyam-registration.php /business-setup-registration/msme-udyam-registration
+Redirect 301 /msme-udyam-registration.php /msme-udyam-registration
 
 Redirect 301 /roc-compliance-services.php /compliance-regulatory/roc-compliance-services
 Redirect 301 /roc-compliance-filing.php /compliance-regulatory/roc-compliance-filing

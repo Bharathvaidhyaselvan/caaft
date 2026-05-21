@@ -1,41 +1,41 @@
 <?php
 $features = caaft_page_features();
-$v = static function (string $path): string {
-    return caaft_asset_version($path);
+$asset = static function (string $path): string {
+    return htmlspecialchars(caaft_public_asset_url($path), ENT_QUOTES, 'UTF-8');
 };
 ?>
 
-<script src="assets/js/jquery-3.7.1.min.js?v=<?php echo $v('assets/js/jquery-3.7.1.min.js'); ?>" defer></script>
-<script src="assets/js/bootstrap.bundle.min.js?v=<?php echo $v('assets/js/bootstrap.bundle.min.js'); ?>" defer></script>
-<script src="assets/js/perf-image-loading.js?v=<?php echo $v('assets/js/perf-image-loading.js'); ?>" defer></script>
-<script src="assets/js/mega-menu-click.js?v=<?php echo $v('assets/js/mega-menu-click.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/jquery-3.7.1.min.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/bootstrap.bundle.min.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/perf-image-loading.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/mega-menu-click.js'); ?>" defer></script>
 
 <?php if ($features['carousel']) : ?>
-<script src="assets/js/owl.carousel.min.js?v=<?php echo $v('assets/js/owl.carousel.min.js'); ?>" defer></script>
-<script src="assets/js/jquery.appear.min.js?v=<?php echo $v('assets/js/jquery.appear.min.js'); ?>" defer></script>
-<script src="assets/js/jquery.easing.min.js?v=<?php echo $v('assets/js/jquery.easing.min.js'); ?>" defer></script>
-<script src="assets/js/wow.min.js?v=<?php echo $v('assets/js/wow.min.js'); ?>" defer></script>
-<script src="assets/js/counter-up.js?v=<?php echo $v('assets/js/counter-up.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/owl.carousel.min.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/jquery.appear.min.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/jquery.easing.min.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/wow.min.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/counter-up.js'); ?>" defer></script>
 <?php endif; ?>
 
-<script src="assets/js/main.js?v=<?php echo $v('assets/js/main.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/main.js'); ?>" defer></script>
 <?php if ($features['carousel']) : ?>
-<script src="assets/js/hero-slider-init.js?v=<?php echo $v('assets/js/hero-slider-init.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/hero-slider-init.js'); ?>" defer></script>
 <?php endif; ?>
-<script src="assets/js/header-sticky.js?v=<?php echo $v('assets/js/header-sticky.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/header-sticky.js'); ?>" defer></script>
 
 <?php if ($features['gallery']) : ?>
-<script src="assets/js/imagesloaded.pkgd.min.js?v=<?php echo $v('assets/js/imagesloaded.pkgd.min.js'); ?>" defer></script>
-<script src="assets/js/jquery.magnific-popup.min.js?v=<?php echo $v('assets/js/jquery.magnific-popup.min.js'); ?>" defer></script>
-<script src="assets/js/isotope.pkgd.min.js?v=<?php echo $v('assets/js/isotope.pkgd.min.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/imagesloaded.pkgd.min.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/jquery.magnific-popup.min.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/isotope.pkgd.min.js'); ?>" defer></script>
 <?php endif; ?>
 
 <?php if ($features['aos']) : ?>
-<script src="assets/js/aos.js?v=<?php echo $v('assets/js/aos.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/aos.js'); ?>" defer></script>
 <?php endif; ?>
 
-<script src="assets/js/jquery.nice-select.min.js?v=<?php echo $v('assets/js/jquery.nice-select.min.js'); ?>" defer></script>
-<script src="assets/js/easyResponsiveTabs.js?v=<?php echo $v('assets/js/easyResponsiveTabs.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/jquery.nice-select.min.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/easyResponsiveTabs.js'); ?>" defer></script>
 
 <?php include APP_ROOT . '/includes/analytics-deferred.php'; ?>
 

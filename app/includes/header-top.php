@@ -1,6 +1,6 @@
 <meta name="google-site-verification" content="MJT4gBxcLeTzhaKPpQm-4yphgWGBiS_IS_vwJNjtzzA" />
 <base href="/" />
-<link rel="icon" type="image/x-icon" href="assets/img/caaft-icon.webp">
+<link rel="icon" type="image/x-icon" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/img/caaft-icon.webp'), ENT_QUOTES, 'UTF-8'); ?>">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,30 +9,30 @@
 $styleVersion = caaft_asset_version('assets/css/style.css');
 $features = caaft_page_features();
 if ($features['home']) {
-    echo '<link rel="preload" as="image" href="assets/img/support-slider-banner.webp" fetchpriority="high">' . "\n";
+    echo '<link rel="preload" as="image" href="' . htmlspecialchars(caaft_public_asset_url('assets/img/support-slider-banner.webp'), ENT_QUOTES, 'UTF-8') . '" fetchpriority="high">' . "\n";
 }
 ?>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"></noscript>
 
-<link rel="stylesheet" href="assets/css/bootstrap.min.css?v=<?php echo caaft_asset_version('assets/css/bootstrap.min.css'); ?>">
-<link rel="stylesheet" href="assets/css/style.css?v=<?php echo htmlspecialchars($styleVersion, ENT_QUOTES, 'UTF-8'); ?>">
+<link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/bootstrap.min.css'), ENT_QUOTES, 'UTF-8'); ?>">
+<link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/all-fontawesome.min.css'), ENT_QUOTES, 'UTF-8'); ?>">
+<link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/style.css'), ENT_QUOTES, 'UTF-8'); ?>">
 
 <?php
-caaft_defer_stylesheet('assets/css/all-fontawesome.min.css?v=' . caaft_asset_version('assets/css/all-fontawesome.min.css'));
 if ($features['carousel']) {
-    caaft_defer_stylesheet('assets/css/owl.carousel.min.css?v=' . caaft_asset_version('assets/css/owl.carousel.min.css'));
-    caaft_defer_stylesheet('assets/css/animate.min.css?v=' . caaft_asset_version('assets/css/animate.min.css'));
-    caaft_defer_stylesheet('assets/css/animation.min.css?v=' . caaft_asset_version('assets/css/animation.min.css'));
+    caaft_defer_stylesheet(caaft_public_asset_url('assets/css/owl.carousel.min.css'));
+    caaft_defer_stylesheet(caaft_public_asset_url('assets/css/animate.min.css'));
+    caaft_defer_stylesheet(caaft_public_asset_url('assets/css/animation.min.css'));
 }
-caaft_defer_stylesheet('assets/css/aos.css?v=' . caaft_asset_version('assets/css/aos.css'));
+caaft_defer_stylesheet(caaft_public_asset_url('assets/css/aos.css'));
 if ($features['gallery']) {
-    caaft_defer_stylesheet('assets/css/magnific-popup.min.css?v=' . caaft_asset_version('assets/css/magnific-popup.min.css'));
+    caaft_defer_stylesheet(caaft_public_asset_url('assets/css/magnific-popup.min.css'));
 }
-caaft_defer_stylesheet('assets/css/nice-select.min.css?v=' . caaft_asset_version('assets/css/nice-select.min.css'));
+caaft_defer_stylesheet(caaft_public_asset_url('assets/css/nice-select.min.css'));
 if ($features['tabs']) {
-    caaft_defer_stylesheet('assets/css/easy-responsive-tabs.css?v=' . caaft_asset_version('assets/css/easy-responsive-tabs.css'));
+    caaft_defer_stylesheet(caaft_public_asset_url('assets/css/easy-responsive-tabs.css'));
 }
 ?>
 

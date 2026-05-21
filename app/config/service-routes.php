@@ -19,7 +19,7 @@ return [
     'business-setup-registration/new-business-registration' => 'pages/services/business-setup-and-registration.php',
     'business-setup-registration/company-registration' => 'pages/services/business-setup-and-registration.php',
     'business-setup-registration/private-limited-registration' => 'pages/services/business-setup-and-registration.php',
-    'business-setup-registration/msme-udyam-registration' => 'pages/services/business-setup-and-registration.php',
+    'business-setup-registration/msme-udyam-registration' => 'pages/services/msme-udyam-registration.php',
 
     // Compliance legacy routes
     'compliance-regulatory/roc-compliance-services' => 'pages/services/compliance-and-regulatory-services.php',
