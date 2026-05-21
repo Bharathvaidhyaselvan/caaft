@@ -719,13 +719,13 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             'Understanding how to register a One Person Company and navigating the OPC registration process correctly from the start ensures faster incorporation, cleaner compliance, and a stronger legal foundation. CAAFT manages the complete One Person Company registration for individual founders, freelancers, and independent professionals across India — from DSC procurement and name approval through to Certificate of Incorporation and post-registration compliance.',
         ];
         $caaft_hero_primary_cta_label = 'Quick & Easy OPC Registration';
-        $caaft_hero_primary_cta_href = '/contact';
-        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+                $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'One Person Company (OPC) Registration';
         $caaft_enquiry_action = '/business-registration-mail.php';
         $caaft_enquiry_title = 'Let\'s Talk';
-        $caaft_enquiry_recaptcha = false;
         $caaft_enquiry_honeypot_website = false;
+        $caaft_service_cta_label = 'Register Your OPC Today';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -1141,7 +1141,9 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         $why_choose_caaft_heading_id = 'opc-why-caaft-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_link_desc = true;
+
         $why_choose_caaft_intro = 'Solo founders rely on CAAFT for OPC incorporation that is filing-accurate, nominee-ready, and aligned with MCA rules — with post-registration compliance set up from day one.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -1200,7 +1202,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         $caaft_cta_title = 'Register Your One Person Company — Fast, Accurate & Fully Compliant';
         $caaft_cta_text = 'The OPC registration process involves more than filling out a government form — it requires accurate documentation, correctly drafted constitutional documents, and a clear understanding of post-incorporation compliance obligations. Whether a first-time founder, an experienced freelancer formalising operations, or a professional seeking limited liability protection — CAAFT delivers complete One Person Company registration with the legal foundation properly established from the very first day.';
         $caaft_cta_button_label = 'Register Your OPC Today';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

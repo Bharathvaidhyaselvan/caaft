@@ -248,13 +248,13 @@ declare(strict_types=1);
             'For small business owners, traders, family-run enterprises, and startups with two or more founders, a Partnership Firm is one of the most practical and cost-effective business structures in India. While registration is not mandatory under the Indian Partnership Act, 1932, registering a firm provides legal recognition, strengthens credibility with banks and institutions, and protects partners\' rights in the event of disputes.',
         ];
         $caaft_hero_primary_cta_label = 'Hassle-Free Partnership Registration ';
-        $caaft_hero_primary_cta_href = '/contact';
-        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+                $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'Partnership Firm Registration';
         $caaft_enquiry_action = '/business-registration-mail.php';
         $caaft_enquiry_title = 'Let\'s Talk';
-        $caaft_enquiry_recaptcha = false;
         $caaft_enquiry_honeypot_website = false;
+        $caaft_service_cta_label = 'Build Your Business Together';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -521,7 +521,9 @@ declare(strict_types=1);
         $why_choose_caaft_heading_id = 'partnership-why-caaft-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_link_desc = true;
+
         $why_choose_caaft_intro = 'Partnership registration made straightforward: The entire process is handled — from drafting a legally sound Partnership Deed to filing with the Registrar of Firms — ensuring the firm is structured correctly and registered without delays or oversights.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -550,7 +552,7 @@ declare(strict_types=1);
         $caaft_cta_title = 'Ready to Build Your Partnership the Right Way?';
         $caaft_cta_text = 'A written agreement alone is not enough. Legal registration gives a partnership firm the credibility, legal standing, and partner protection needed to operate with confidence — and to resolve disputes, access banking, and meet statutory requirements without limitations. Whether forming a new partnership or formalising an existing arrangement — CAAFT delivers complete, accurate registration built on a deed that protects every partner from day one.';
         $caaft_cta_button_label = 'Build Your Business Together';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

@@ -191,11 +191,12 @@
             'Businesses must understand applicable regulations, maintain accurate records, and implement proper reporting systems — all while keeping pace with evolving tax rules and increasing regulatory scrutiny. CAAFT delivers expert GST advisory and compliance services that help businesses navigate the full complexity of India\'s GST framework, minimise risks, and maintain complete tax efficiency.',
         ];
         $caaft_hero_primary_cta_label = ' Accurate GST Support, Every Month ';
-        $caaft_hero_primary_cta_href = '/contact';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
 $caaft_enquiry_service = 'GST Advisory and Compliance Services';
-$caaft_enquiry_action = '/incometax-services-mail.php';
+$caaft_enquiry_action = '/incometax-services-mail.php';        $caaft_service_cta_label = 'Smart GST Advisory Starts Here';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -364,6 +365,7 @@ $caaft_enquiry_action = '/incometax-services-mail.php';
         $why_choose_caaft_title = 'Why Choose CAAFT';
          $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate GST compliance, timely return filings, and dependable tax support that keeps their business running smoothly.';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             [
@@ -422,7 +424,7 @@ $caaft_enquiry_action = '/incometax-services-mail.php';
         $caaft_cta_title = 'Ready to Simplify Your GST Compliance?';
         $caaft_cta_text = 'GST compliance does not have to be complicated, stressful, or reactive. With the right advisory partner, businesses can streamline processes, protect ITC entitlements, resolve notices efficiently, and focus entirely on growth — knowing every compliance obligation is managed accurately and on time.';
         $caaft_cta_button_label = 'Smart GST Advisory Starts Here';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

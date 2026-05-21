@@ -57,7 +57,7 @@
 
     <main class="main">
 
-        <div class="site-breadcrumb">
+        <div class="site-breadcrumb" style="background: url(assets/img/blog/blogs-img.jpeg);">
             <div class="container">
                 <h1 class="breadcrumb-title">Our Blog</h1>
 

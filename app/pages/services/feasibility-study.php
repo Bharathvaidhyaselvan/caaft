@@ -130,13 +130,13 @@ declare(strict_types=1);
     'CAAFT helps startup founders, expanding businesses, MSME owners, and investors make confident, evidence-backed decisions through rigorous feasibility study services — delivering research-driven analysis, financial projections, and board-ready reports built for every boardroom, bank, and investor meeting.'
     ];
     $caaft_hero_primary_cta_label = 'Test Your Idea Before You Invest';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Feasibility Study Services';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Get Your Feasibility Report Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -394,7 +394,9 @@ Market analysis covers:';
     $why_choose_caaft_heading_id = 'feasibility-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for strategic CFO and advisory services, insightful financial guidance, and dependable support that drives sustainable business growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -424,7 +426,7 @@ Market analysis covers:';
     $caaft_cta_title = 'Ready to Validate Your Business Idea?';
     $caaft_cta_text = 'Stop guessing. Start knowing. A professionally prepared feasibility study delivers the evidence, financial analysis, and strategic clarity needed to move forward with confidence — or to avoid a decision that could cost far more than the study itself.';
     $caaft_cta_button_label = 'Get Your Feasibility Report Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

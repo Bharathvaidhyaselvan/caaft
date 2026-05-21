@@ -412,13 +412,13 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             'This structure restricts share transferability and caps shareholders at a maximum of 200 — making it the preferred choice for startups, growing enterprises, and businesses planning structured investment rounds. CAAFT manages end-to-end Private Limited Company registration and compliance — from name approval and ROC filing through to post-incorporation statutory management.',
         ];
         $caaft_hero_primary_cta_label = 'Incorporate Today';
-        $caaft_hero_primary_cta_href = '/contact';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
-$caaft_enquiry_service = 'Private Limited Company Registration';
-$caaft_enquiry_action = '/business-registration-mail.php';
-$caaft_enquiry_title = 'Let\'s Talk';
-$caaft_enquiry_recaptcha = false;
-$caaft_enquiry_honeypot_website = false;
+        $caaft_enquiry_service = 'Private Limited Company Registration';
+        $caaft_enquiry_action = '/business-registration-mail.php';
+        $caaft_enquiry_title = 'Let\'s Talk';
+        $caaft_enquiry_honeypot_website = false;        $caaft_service_cta_label = 'Start & Scale Your Business Now';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -759,7 +759,9 @@ $caaft_enquiry_honeypot_website = false;
         $why_choose_caaft_heading_id = 'plc-why-caaft-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_link_desc = true;
+
         $why_choose_caaft_intro = 'Founders and growing businesses rely on CAAFT for Pvt Ltd incorporation that is filing-accurate, timeline-clear, and backed by ongoing statutory support.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -818,7 +820,7 @@ $caaft_enquiry_honeypot_website = false;
         $caaft_cta_title = 'Register a Private Limited Company Today';
         $caaft_cta_text = 'Private Limited Company registration builds the legal foundation for credible operations, investor-ready governance, and long-term business growth — whether the goal is raising early-stage funding, securing enterprise contracts, or establishing a structured corporate entity. CAAFT delivers accurate, compliant incorporation with the compliance framework properly established from day one.';
         $caaft_cta_button_label = 'Start & Scale Your Business Now';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

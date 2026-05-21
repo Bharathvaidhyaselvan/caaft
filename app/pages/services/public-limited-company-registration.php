@@ -410,13 +410,13 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             'This business structure allows shares to be offered to the general public and traded on stock exchanges, provides limited liability to shareholders, and operates under the structured governance and disclosure standards of the Companies Act, 2013. CAAFT delivers end-to-end Public Limited Company registration and compliance support — from name approval and ROC filing through to post-incorporation statutory management.',
         ];
         $caaft_hero_primary_cta_label = 'Consult a Registration Expert';
-        $caaft_hero_primary_cta_href = '/contact';
-        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+                $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'Public Limited Company Registration';
         $caaft_enquiry_action = '/business-registration-mail.php';
         $caaft_enquiry_title = 'Let\'s Talk';
-        $caaft_enquiry_recaptcha = false;
         $caaft_enquiry_honeypot_website = false;
+        $caaft_service_cta_label = 'Start & Scale Your Business Now';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -747,7 +747,9 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         $why_choose_caaft_heading_id = 'pub-why-caaft-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_link_desc = true;
+
         $why_choose_caaft_intro = 'Enterprises rely on CAAFT for public limited incorporation that meets MCA and governance expectations — with a compliance foundation suited to post-incorporation reporting, disclosures, and controls.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -806,7 +808,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         $caaft_cta_title = 'Launch Your Public Limited Company Today';
         $caaft_cta_text = 'A Public Limited Company registration opens access to public capital, broader investor credibility, and a governance structure built for large-scale growth. Whether planning an eventual IPO, raising institutional funding, or building the corporate infrastructure for long-term expansion — CAAFT delivers accurate, compliant incorporation with the compliance foundation properly established from day one.';
         $caaft_cta_button_label = 'Start & Scale Your Business Now';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

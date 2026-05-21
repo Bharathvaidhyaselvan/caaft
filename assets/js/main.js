@@ -120,6 +120,23 @@
       autoplay: !0,
       responsive: { 0: { items: 1 }, 600: { items: 2 }, 1e3: { items: 2 } },
     }),
+    a.fn.owlCarousel &&
+      a(".home3-reviews-slider").length &&
+      a(".home3-reviews-slider").owlCarousel({
+        loop: !0,
+        margin: 24,
+        nav: !0,
+        dots: !0,
+        autoplay: !0,
+        autoplayTimeout: 6e3,
+        autoplayHoverPause: !0,
+        smartSpeed: 700,
+        navText: [
+          "<i class='far fa-arrow-left'></i>",
+          "<i class='far fa-arrow-right'></i>",
+        ],
+        responsive: { 0: { items: 1 }, 768: { items: 2 }, 1200: { items: 3 } },
+      }),
     a(".partner-slider").owlCarousel({
       loop: !0,
       margin: 15,
@@ -238,5 +255,55 @@
     }),
     a(".main_mesnus_colorss").click(function (a) {
       return (a.preventDefault(), !1);
-    }));
+    }),
+    (function () {
+      function headerOffset() {
+        var n = document.querySelector(".header-sections .navbar");
+        return n ? n.offsetHeight + 20 : 130;
+      }
+      function scrollToQuoteContent(behavior) {
+        var el = document.getElementById("quote-content");
+        if (!el) return;
+        var top =
+          el.getBoundingClientRect().top +
+          (window.pageYOffset || document.documentElement.scrollTop) -
+          headerOffset();
+        window.scrollTo({
+          top: Math.max(0, top),
+          behavior: behavior || "smooth",
+        });
+      }
+      function isSamePageQuoteHref(href) {
+        if (!href || href.indexOf("#quote-content") === -1) return !1;
+        try {
+          var u = new URL(href, window.location.href);
+          return (
+            u.hash === "#quote-content" &&
+            u.pathname === window.location.pathname
+          );
+        } catch (e) {
+          return href.charAt(0) === "#";
+        }
+      }
+      a(document).on("click", 'a[href*="#quote-content"]', function (e) {
+        var href = a(this).attr("href");
+        if (!isSamePageQuoteHref(href) || !document.getElementById("quote-content"))
+          return;
+        e.preventDefault();
+        scrollToQuoteContent("smooth");
+        if (window.history && history.pushState) {
+          var path = href.split("#")[0] || window.location.pathname;
+          history.replaceState(null, "", path + "#quote-content");
+        }
+      });
+      a(function () {
+        if (window.location.hash !== "#quote-content") return;
+        var run = function () {
+          scrollToQuoteContent("auto");
+        };
+        run();
+        setTimeout(run, 150);
+        setTimeout(run, 500);
+      });
+    })());
 })(jQuery);

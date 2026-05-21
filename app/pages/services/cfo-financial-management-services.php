@@ -79,13 +79,13 @@ declare(strict_types=1);
         'Running a business without financial leadership is like navigating without a map. Whether a startup finding its footing or an SME ready to scale, CAAFT\'s CFO & Financial Management services provide strategic oversight, reporting clarity, and financial discipline to grow with confidence.',
     ];
     $caaft_hero_primary_cta_label = 'Get Financial Clarity Now';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'CFO & Financial Management Services';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Transform Your Financial Strategy Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -168,7 +168,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'cfo-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for strategic CFO and advisory services, insightful financial guidance, and dependable support that drives sustainable business growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -198,7 +200,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Strengthen Your Financial Strategy?';
     $caaft_cta_text = 'Expert CFO support delivers complete visibility over business finances, sharper decision-making, and a clear path to growth. Whether the need is strategic guidance, cash flow management, or investor-ready financials — CAAFT is here to help.';
     $caaft_cta_button_label = 'Transform Your Financial Strategy Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

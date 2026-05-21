@@ -395,12 +395,13 @@
                     <h2 class="caaft-ar-hero-h2">One Filing. Twelve Months of Compliant, GST-Free Exports.</h2>
                     <p class="caaft-ar-hero-lead">Indian exporters — goods, services, or e-commerce — need a compliance partner who gets it done right the first time. CAAFT handles GST LUT filing end-to-end, from eligibility checks and document preparation to submission and annual renewal — so internal teams can focus entirely on growing the export business.</p>
                     <div class="caaft-ar-hero-ctas">
-                        <a href="/contact" class="theme-btn caaft-ar-hero-btn-primary"> Stay Export-Ready With Experts<i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary"> Stay Export-Ready With Experts<i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php
 $caaft_enquiry_service = 'GST LUT Filing Services';
 $caaft_enquiry_action = '/incometax-services-mail.php';
+$caaft_service_cta_label = 'Expert LUT Filing Starts Here';
 include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
 ?></div></div></div></div>
             </div></div></div>
@@ -607,6 +608,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         $why_choose_caaft_heading_id = 'gst-lut-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_intro='Businesses trust CAAFT for accurate GST compliance, timely return filings, and dependable tax support that keeps their business running smoothly';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -665,7 +667,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         $caaft_cta_title = 'Ready to Export Without GST Hassles?';
         $caaft_cta_text = 'A valid GST LUT is the single compliance step that protects every export transaction, preserves working capital, and keeps the business credible in the eyes of customs, buyers, and tax authorities. Whether it is a first-time filing, an annual renewal, or a correction of a rejected application — CAAFT delivers accurate, fast, and fully compliant LUT support for every exporter across India.';
         $caaft_cta_button_label = 'Expert LUT Filing Starts Here';
-        $caaft_cta_button_href = '/contact';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

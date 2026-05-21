@@ -433,11 +433,12 @@
             'Without formal GST cancellation, the obligation to file returns, respond to notices, and maintain compliance continues — regardless of whether the business is operational. CAAFT manages the complete GST registration cancellation process for businesses across India — handling documentation, portal filing, authority queries, and final approval from start to finish.',
         ];
         $caaft_hero_primary_cta_label = 'Simplify Your GST Exit Process';
-        $caaft_hero_primary_cta_href = '/contact';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
         $caaft_enquiry_service = 'GST Cancellation Services';
-        $caaft_enquiry_action = '/incometax-services-mail.php';
+        $caaft_enquiry_action = '/incometax-services-mail.php';        $caaft_service_cta_label = 'Exit GST the Right Way';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -611,6 +612,7 @@
         $why_choose_caaft_heading_id = 'gst-cancel-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_intro = 'From eligibility through final order, CAAFT focuses on compliance-first GST cancellation — so applications are complete, defensible, and processed without avoidable delays.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -670,7 +672,7 @@
         $caaft_cta_title = 'Close Your GST Registration Today — Clean, Compliant & Penalty-Free';
         $caaft_cta_text = 'An active GST registration on a non-operational business is not harmless — it quietly accumulates return filing defaults, late fees, and department notices until formally closed. Whether the business has permanently ceased operations, fallen below the threshold, or simply no longer benefits from active registration — CAAFT handles the complete cancellation process from eligibility check through to final order, with zero residual liability.';
         $caaft_cta_button_label = 'Exit GST the Right Way';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

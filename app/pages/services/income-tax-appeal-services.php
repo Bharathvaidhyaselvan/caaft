@@ -641,12 +641,13 @@
             'Whether a tax notice has been received, an assessment is disputed, or an appeal needs to be filed — navigating income tax authorities is complex, time-sensitive, and high-stakes. CAAFT delivers end-to-end income tax appeal, tax assessment, and dispute resolution services for individuals, businesses, and property owners — ensuring what is actually owed is exactly what gets paid. Nothing more.',
         ];
         $caaft_hero_primary_cta_label = 'Resolve Your Tax Notice ';
-        $caaft_hero_primary_cta_href = '/contact';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_hero_secondary_extra_class = '';
 
         $caaft_enquiry_service = 'Income Tax Appeal Services';
-        $caaft_enquiry_action = '/incometax-services-mail.php';
+        $caaft_enquiry_action = '/incometax-services-mail.php';        $caaft_service_cta_label = 'Appeal Smarter. Win Faster';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -939,6 +940,7 @@
     $why_choose_caaft_heading_id = 'appeal-choose-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_intro='Businesses trust CAAFT for accurate income tax return filing, timely compliance, and dependable tax support tailored to their financial needs.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -997,7 +999,7 @@
     $caaft_cta_title = 'Take the Next Step — Tax Rights Are Worth Defending';
     $caaft_cta_text = 'Incorrect tax demands, disallowed deductions, and unfair assessments have real financial consequences — and the window to contest them is narrow. Expert income tax appeal support ensures every case is handled with the right legal grounding, complete documentation, and professional representation at every stage — from the first notice to the final order.';
     $caaft_cta_button_label = 'Appeal Smarter. Win Faster';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

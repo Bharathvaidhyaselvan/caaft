@@ -301,11 +301,12 @@
             'CAAFT\'s GST Assessment & Appeal Support services are built for businesses, SMEs, exporters, and companies that cannot afford to leave a GST dispute to chance. From reviewing assessment notices to representing clients before the GST Appellate Tribunal — expert support is available at every stage, with legal precision, strategic clarity, and zero confusion.',
         ];
         $caaft_hero_primary_cta_label = 'Handle GST Litigation With Confidence';
-        $caaft_hero_primary_cta_href = '/contact';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
         $caaft_enquiry_service = 'GST Assessment & Appeal Support Services';
-$caaft_enquiry_action = '/incometax-services-mail.php';
+$caaft_enquiry_action = '/incometax-services-mail.php';        $caaft_service_cta_label = 'Schedule a Free Case Review';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -541,6 +542,7 @@ $caaft_enquiry_action = '/incometax-services-mail.php';
         $why_choose_caaft_heading_id = 'gst-assess-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_intro = 'CAAFT combines deep GST dispute experience with hands-on representation — so every notice, hearing, and appeal is handled with clarity, precision, and a strategy built for your business.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -599,7 +601,7 @@ $caaft_enquiry_action = '/incometax-services-mail.php';
         $caaft_cta_title = 'Ready to Resolve Your GST Dispute — The Right Way';
         $caaft_cta_text = 'Whether a first GST assessment notice has just been received or a GST Appellate Tribunal hearing is approaching — the quality of representation at every stage determines the outcome. Expert GST assessment and appeal support delivers legal precision, strategic clarity, and consistent advocacy from the first reply through to final resolution.';
         $caaft_cta_button_label = 'Schedule a Free Case Review';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

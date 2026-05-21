@@ -96,13 +96,13 @@ declare(strict_types=1);
         'Running a business without a financial plan is like setting off without a destination. Whether a startup mapping its first budget or an enterprise managing multi-department projections, CAAFT\'s budgeting and forecasting services provide the financial clarity, planning discipline, and forward visibility needed to grow with confidence.',
     ];
     $caaft_hero_primary_cta_label = 'Build Your Budget Now';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Budgeting & Forecasting Services';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Transform Your Financial Planning Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -205,7 +205,9 @@ include __DIR__ . '/../../includes/components/caaft-benefits.php';
     $why_choose_caaft_heading_id = 'budgeting-forecasting-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for strategic CFO and advisory services, insightful financial guidance, and dependable support that drives sustainable business growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -235,7 +237,7 @@ include __DIR__ . '/../../includes/components/caaft-benefits.php';
     $caaft_cta_title = 'Ready to Take Control of Your Financial Planning?';
     $caaft_cta_text = 'Structured budgeting and forecasting give businesses the financial visibility to plan confidently, manage resources effectively, and grow sustainably. Whether the need is a first-year budget, a rolling forecast, or a full financial planning overhaul — CAAFT delivers the expertise to make it happen.';
     $caaft_cta_button_label = 'Transform Your Financial Planning Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

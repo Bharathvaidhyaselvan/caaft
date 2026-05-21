@@ -187,13 +187,11 @@
             text-justify: auto !important;
         }
 
-        .page-bookkeeping-accounting .bk-cta,
-        .page-bookkeeping-accounting .bk-cta * {
+        .page-bookkeeping-accounting .bk-cta .bk-cta-title {
             text-align: center !important;
-            text-justify: auto !important;
         }
 
-        .page-bookkeeping-accounting .bk-cta-panel {
+        .page-bookkeeping-accounting .bk-cta-panel:not(.caaft-cta-panel) {
             text-align: center !important;
             display: flex;
             flex-direction: column;
@@ -220,7 +218,6 @@
             max-width: 760px;
             line-height: 1.6;
             margin-bottom: 0 !important;
-            text-wrap: balance;
         }
 
         .page-bookkeeping-accounting .bk-cta-button {
@@ -395,11 +392,12 @@
             'Whether a startup finding its footing, a growing SME, or an established enterprise — structured, reliable bookkeeping and accounting services provide the financial clarity, compliance confidence, and decision-ready data needed to grow sustainably.',
         ];
         $caaft_hero_primary_cta_label = 'Expert Bookkeeping Made Simple';
-        $caaft_hero_primary_cta_href = '/contact';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
 
         $caaft_enquiry_service = 'Bookkeeping and Accounting Services';
         $caaft_enquiry_form_id = 'caaft-bk-enquiry-form-inner';
-        $caaft_enquiry_input_id_prefix = 'bk';
+        $caaft_enquiry_input_id_prefix = 'bk';        $caaft_service_cta_label = 'Smarter Finances Start Here';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -439,7 +437,7 @@
             'Together, they give businesses complete financial visibility and the compliance foundation needed to operate with confidence.',
         ];
         $caaft_overview_bullets = [];
-        $caaft_overview_image_src = '/assets/img/services-images/Accounting%26Reporting/Financial%20Statement.jpg';
+        $caaft_overview_image_src = '/assets/img/book-keeping.jpeg';
         $caaft_overview_image_alt = 'Bookkeeping and accounting — financial dashboards, data analysis, and business growth';
         include __DIR__ . '/../../includes/components/caaft-overview-card.php';
         ?>
@@ -601,7 +599,7 @@
         $caaft_cta_title = 'Ready to Simplify Your Bookkeeping and Accounting?';
         $caaft_cta_text = 'Accurate books, timely compliance, and clear financial visibility — delivered consistently, every month. Whether the need is daily transaction recording, GST reconciliation, or investor-ready financial statements — CAAFT ensures finances are always accurate, organised, and audit-ready.';
         $caaft_cta_button_label = 'Smarter Finances Start Here';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

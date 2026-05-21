@@ -538,8 +538,7 @@
             'CAAFT offers expert TDS return filing for Private Limited Companies, LLPs, Partnership Firms, Proprietorships, Startups, and Employers — handled by experienced tax professionals to keep every business fully compliant, penalty-free, and audit-ready.',
         ];
         $caaft_hero_primary_cta_label = 'Explore Smart Tax Solutions ';
-        $caaft_hero_primary_cta_href = '/contact';
-        $caaft_hero_secondary_cta_label = ' Start Your TDS Filing Today ';
+                $caaft_hero_secondary_cta_label = ' Start Your TDS Filing Today ';
         $caaft_hero_secondary_cta_href = '#tds-services-heading';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-down';
 
@@ -548,6 +547,8 @@
         $caaft_enquiry_title = 'Start Your TDS Filing';
         $caaft_enquiry_form_id = 'caaft-tds-enquiry-form-inner';
         $caaft_enquiry_input_id_prefix = 'tds';
+        $caaft_service_cta_label = 'Hassle-Free TDS Filing';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -838,6 +839,7 @@
         $why_choose_caaft_title = 'Why Choose CAAFT';
          $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate income tax return filing, timely compliance, and dependable tax support tailored to their financial needs.';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             [
@@ -895,7 +897,7 @@
         $caaft_cta_title = 'Ready to File Your TDS Returns on Time?';
         $caaft_cta_text = 'Non-compliance in TDS is one of the most common — and most avoidable — sources of penalties, notices, and audit risk for Indian businesses. Professional TDS return filing ensures every quarter is filed accurately, every challan is reconciled, and every deductee receives their rightful tax credit — without exception.';
         $caaft_cta_button_label = 'Hassle-Free TDS Filing';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

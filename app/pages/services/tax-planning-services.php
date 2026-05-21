@@ -508,14 +508,15 @@
             'CAAFT specialises in advanced, personalised tax strategies for high-income earners, business owners, startups, and professionals — helping preserve wealth, reduce tax exposure legally, and build a financial structure that works across every stage of growth.',
         ];
         $caaft_hero_primary_cta_label = 'Complete Tax & Compliance Support  ';
-        $caaft_hero_primary_cta_href = '/contact';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-down';
 
         $caaft_enquiry_service = 'Tax Planning Services';
         $caaft_enquiry_action = '/incometax-services-mail.php';
         $caaft_enquiry_title = 'Free 15-Min Tax Strategy Call';
         $caaft_enquiry_form_id = 'caaft-tax-planning-enquiry-form-inner';
-        $caaft_enquiry_input_id_prefix = 'taxplanning';
+        $caaft_enquiry_input_id_prefix = 'taxplanning';        $caaft_service_cta_label = 'Talk to a Tax Expert';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -785,6 +786,7 @@
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate income tax return filing, timely compliance, and dependable tax support tailored to their financial needs.';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             [
@@ -842,7 +844,7 @@
         $caaft_cta_title = 'Take Control of Your Taxes — Before This Financial Year Ends';
         $caaft_cta_text = 'Every month without proper planning has a cost. A well-structured tax strategy — built around specific income, business, and financial goals — reduces liability legally, improves cash flow, and compounds in value over time. Whether the need is individual tax saving, business tax structuring, or long-term wealth planning — CAAFT delivers the expertise to make every rupee work harder.';
         $caaft_cta_button_label = 'Talk to a Tax Expert';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

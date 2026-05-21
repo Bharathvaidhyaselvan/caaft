@@ -227,13 +227,11 @@
             text-justify: auto !important;
         }
 
-        .page-bookkeeping-accounting .bk-cta,
-        .page-bookkeeping-accounting .bk-cta * {
+        .page-bookkeeping-accounting .bk-cta .bk-cta-title {
             text-align: center !important;
-            text-justify: auto !important;
         }
 
-        .page-bookkeeping-accounting .bk-cta-panel {
+        .page-bookkeeping-accounting .bk-cta-panel:not(.caaft-cta-panel) {
             text-align: center !important;
             display: flex;
             flex-direction: column;
@@ -260,7 +258,6 @@
             max-width: 760px;
             line-height: 1.6;
             margin-bottom: 0 !important;
-            text-wrap: balance;
         }
 
         .page-bookkeeping-accounting .bk-cta-button {
@@ -520,10 +517,11 @@
             'Financial analysis and MIS reporting give startups, SMEs, and growing businesses the financial discipline, trend visibility, and decision-ready data needed to control expenses, track profitability, and identify growth opportunities — turning raw financial data into a genuine strategic advantage.',
         ];
         $caaft_hero_primary_cta_label = 'Smarter Business Support for Growth ';
-        $caaft_hero_primary_cta_href = '/contact';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_enquiry_service = 'Financial Analysis & MIS Reporting Services';
         $caaft_enquiry_form_id = 'caaft-mis-enquiry-form-inner';
-        $caaft_enquiry_input_id_prefix = 'mis';
+        $caaft_enquiry_input_id_prefix = 'mis';        $caaft_service_cta_label = 'Analyze Smarter. Grow Faster';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -742,7 +740,7 @@
         $caaft_cta_title = 'Ready to Strengthen Your Financial Decisions?';
         $caaft_cta_text = 'Clear financial insights are the foundation of smart business decisions. Without structured reporting, businesses risk missing trends, overlooking risks, and losing control of growth. Professional financial analysis and MIS reporting keep data accurate, organised, and ready for action — so performance, profitability, and cash flow can be managed with confidence every month.';
         $caaft_cta_button_label = 'Analyze Smarter. Grow Faster';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

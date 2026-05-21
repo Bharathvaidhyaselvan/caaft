@@ -191,13 +191,13 @@ declare(strict_types=1);
             'While the setup is straightforward, proper registration is essential — without the right licences and registrations, banking hurdles, GST complications, and legal setbacks can follow. CAAFT delivers complete sole proprietorship registration support — covering every required licence, registration, and compliance obligation in one place.',
         ];
         $caaft_hero_primary_cta_label = 'Build Your Business the Right Way';
-        $caaft_hero_primary_cta_href = '/contact';
-        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+                $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'Sole Proprietorship Registration';
         $caaft_enquiry_action = '/business-registration-mail.php';
         $caaft_enquiry_title = 'Let\'s Talk';
-        $caaft_enquiry_recaptcha = false;
         $caaft_enquiry_honeypot_website = false;
+        $caaft_service_cta_label = 'Launch Your Business Fast';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -399,7 +399,9 @@ declare(strict_types=1);
         $why_choose_caaft_heading_id = 'proprietorship-why-caaft-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_link_desc = true;
+
         $why_choose_caaft_intro = 'Simple, guided registration process: Sole proprietorship registration involves multiple licences and registrations across different departments. CAAFT simplifies the entire process — from Udyam registration and GST enrolment to Shop & Establishment licences — with a single point of contact managing everything.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -428,7 +430,7 @@ declare(strict_types=1);
         $caaft_cta_title = 'Ready to Start Your Business the Right Way?';
         $caaft_cta_text = 'A sole proprietorship is simple — but doing it correctly from day one matters. Avoiding registration delays, documentation errors, and early compliance mistakes creates a stronger foundation for everything that follows. Whether starting a retail shop, going online, or formalising an existing business — CAAFT delivers complete sole proprietorship registration with every licence, every registration, and every compliance obligation properly in place from the start.';
         $caaft_cta_button_label = 'Launch Your Business Fast';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

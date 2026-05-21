@@ -848,7 +848,7 @@
             'For growing businesses, startups, and professionals, maintaining accurate financial records and complying with tax regulations is not optional — it is the foundation of financial credibility. CAAFT delivers structured tax audit services under Section 44AB, helping businesses review financial records, ensure timely report filing, and stay fully compliant without the last-minute scramble.',
         ];
         $caaft_hero_primary_cta_label = 'Audit Ready? Let’s Go';
-        $caaft_hero_primary_cta_href = '#audit-services-heading';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_primary_cta_icon = 'fas fa-arrow-down';
         $caaft_hero_secondary_cta_label = '';
 
@@ -856,7 +856,8 @@
         $caaft_enquiry_action = '/incometax-services-mail.php';
         $caaft_enquiry_title = 'Start Your Audit';
         $caaft_enquiry_form_id = 'caaft-tax-audit-enquiry-form-inner';
-        $caaft_enquiry_input_id_prefix = 'taxaudit';
+        $caaft_enquiry_input_id_prefix = 'taxaudit';        $caaft_service_cta_label = 'Get Expert Tax Audit Support';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -1268,6 +1269,7 @@
         $why_choose_caaft_title = 'Why Choose CAAFT';
          $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate income tax return filing, timely compliance, and dependable tax support tailored to their financial needs.';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             [
@@ -1325,7 +1327,7 @@
         $caaft_cta_title = 'Ready to File Your Tax Audit With Complete Confidence?';
         $caaft_cta_text = 'Businesses that plan ahead do not just avoid penalties — they build credibility, strengthen their financials, and walk into every assessment with nothing to worry about. Expert CA-led audits, timely filing, and zero compliance gaps — delivered every financial year without exception.';
         $caaft_cta_button_label = 'Get Expert Tax Audit Support';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

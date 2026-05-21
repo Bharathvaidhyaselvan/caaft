@@ -83,14 +83,14 @@ declare(strict_types=1);
         'ROC compliance is a continuous legal obligation for every registered company in India — covering both annual filings and event-based submissions that must be completed accurately and within prescribed timelines. Missing deadlines or filing incorrect forms attracts heavy penalties, triggers compliance notices, and can affect a company\'s active status with the MCA. CAAFT delivers accurate, timely miscellaneous ROC filing support for Private Limited Companies, One Person Companies, and LLPs across India.'
     ];
     $caaft_hero_primary_cta_label = 'File ROC Forms Hassle-Free';
-    $caaft_hero_primary_cta_href = '/contact';
+    $caaft_hero_primary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Miscellaneous ROC Filings';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
-    $caaft_enquiry_honeypot_website = false;
-    include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+    $caaft_enquiry_honeypot_website = false;        $caaft_service_cta_label = 'Complete ROC Filing Today';
+
+        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
     <?php
@@ -214,7 +214,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'roc-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -244,7 +246,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Manage ROC Filings the Right Way?';
     $caaft_cta_text = 'Unmanaged ROC compliance creates penalties that compound daily and compliance gaps that affect a company\'s standing with the MCA. CAAFT delivers accurate, fast, and fully compliant miscellaneous ROC filing support for companies across India — from routine event-based filings to urgent regularisation of missed submissions.';
     $caaft_cta_button_label = 'Complete ROC Filing Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

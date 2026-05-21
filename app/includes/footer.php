@@ -5,7 +5,7 @@
                     <div class="row g-5">
                         <div class="col-md-6 col-lg-3" style="    padding: 0;">
                             <div class="footer-widget-box about-us">
-                                <a href="index.php" class="footer-logo">
+                                <a href="/" class="footer-logo">
 
                                     <img src="assets/img/caaft-logo-header.webp" alt="CAAFT Consultancy Services Private Limited" title="CAAFT Consultancy Services Private Limited" class="img-fluid">
                                 </a>

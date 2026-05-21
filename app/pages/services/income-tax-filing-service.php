@@ -186,23 +186,16 @@
             color: #4d5868;
         }
 
-        .page-income-tax-filing-service .bk-cta,
-        .page-income-tax-filing-service .bk-cta * {
+        .page-income-tax-filing-service .bk-cta .bk-cta-title {
             text-align: center !important;
-            text-justify: auto !important;
         }
 
-        .page-income-tax-filing-service .bk-cta-panel {
-            text-align: center !important;
+        .page-income-tax-filing-service .bk-cta-panel.caaft-cta-panel {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 1rem;
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/3.jpg") !important;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
             border-radius: 14px;
             padding: clamp(2rem, 6vw, 4rem) clamp(1.2rem, 4vw, 3rem);
             box-shadow: 0 14px 36px rgba(10, 36, 88, 0.28);
@@ -230,7 +223,8 @@
             max-width: 760px;
             line-height: 1.6;
             margin-bottom: 0 !important;
-            text-wrap: balance;
+            text-align: justify !important;
+            text-justify: inter-word !important;
             color: rgba(255, 255, 255, 0.92) !important;
             font-size: clamp(1rem, 1.7vw, 1.18rem);
         }
@@ -383,7 +377,7 @@
                                 For startups, SMEs, freelancers, exporters, and NRIs, structured and accurate filing builds credibility with banks, investors, and institutions — while protecting against penalties, notices, and compliance risk. CAAFT delivers professionally managed, end-to-end income tax filing services designed for precision, transparency, and strategic tax efficiency.
                             </p>
                             <div class="caaft-ar-hero-ctas">
-                                <a href="/contact" class="theme-btn caaft-ar-hero-btn-primary">Start Filing Now<i class="fas fa-arrow-right"></i></a>
+                                <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Start Filing Now<i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6">
@@ -391,7 +385,7 @@
                                 <?php
                                 $caaft_enquiry_service = 'Income Tax Filing Services';
                                 $caaft_enquiry_action = '/incometax-services-mail.php';
-                                $caaft_enquiry_title = 'Start Filing Now';
+                                $caaft_service_cta_label = 'File Smart. Save More';
                                 $caaft_enquiry_form_id = 'caaft-itr-enquiry-form-inner';
                                 $caaft_enquiry_input_id_prefix = 'itr';
                                 include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
@@ -601,6 +595,7 @@
         $why_choose_caaft_heading_id = 'itr-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_intro='Businesses trust CAAFT for accurate income tax return filing, timely compliance, and dependable tax support tailored to their financial needs.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -659,7 +654,7 @@
         $caaft_cta_title = 'Ready to File Smart — Not Just On Time?';
         $caaft_cta_text = 'Tax filing is not just compliance — it is protecting what has been built. Every missed deduction, misreported income, or delayed filing has a cost. Professional income tax filing ensures every return is accurate, every deduction is claimed, and every deadline is met — with expert support available at every step.';
         $caaft_cta_button_label = 'File Smart. Save More';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

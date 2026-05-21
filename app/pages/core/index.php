@@ -162,7 +162,7 @@
     </div>
 
     <main class="main">
-        <!-- caaft-home-layout-v2: about > features > services > video > pricing > process > why-choose > trust > testimonials > achievements > team > quote -->
+        <!-- Home: Hero → trust strip (overlaps hero) → About CAAFT → features → Our Services → trust pills → … -->
         <div id="sliders" class=" hero-slider owl-carousel owl-theme hs-3">
             <div class="hero-single">
                 <div class="container">
@@ -220,8 +220,18 @@
             </div>
 
         </div>
-        
-        <div class="about-area py-120">
+
+        <?php
+        $caaft_home_trust_items = [
+            ['icon_class' => 'fas fa-building', 'title' => '500+', 'description' => 'Businesses Served'],
+            ['icon_class' => 'fas fa-smile', 'title' => '98%', 'description' => 'Client Satisfaction'],
+            ['icon_class' => 'fas fa-award', 'title' => '10+', 'description' => 'Years of Expertise'],
+            ['icon_class' => 'fas fa-star', 'title' => '4.9/5', 'description' => 'Google Rating'],
+        ];
+        include dirname(__DIR__, 2) . '/includes/components/home-hero-trust-indicators.php';
+        ?>
+
+        <div class="about-area pt-120 pb-60">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -262,7 +272,8 @@
                 </div>
             </div>
         </div>
-        <div class="feature-area pt-80">
+
+        <div class="feature-area pt-80 pb-60">
             <div class="container">
                 <div class="feature-wrap mt-40">
                     <div class="row g-4">
@@ -502,9 +513,16 @@
             </div>
         </div>
 
-
-
-
+        <div class="home3-offer-trust-strip pt-50 pb-50">
+            <div class="container">
+                <div class="home3-trust-pills wow fadeInUp" data-wow-delay=".2s">
+                    <div class="home3-pill"><i class="fas fa-lock" aria-hidden="true"></i><span>100% Data Confidential</span></div>
+                    <div class="home3-pill"><i class="fas fa-bolt" aria-hidden="true"></i><span>Fast Turnaround Time</span></div>
+                    <div class="home3-pill"><i class="fas fa-user-check" aria-hidden="true"></i><span>CA &amp; CS Verified Services</span></div>
+                    <div class="home3-pill"><i class="fas fa-headset" aria-hidden="true"></i><span>Dedicated Account Manager</span></div>
+                </div>
+            </div>
+        </div>
 
         <div class="video-area" style="    background: #eaf8ff;">
             <div class="container-fluid px-0">
@@ -526,62 +544,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- ===== PRICING PLANS SECTION ===== -->
-        <div class="home3-plans-area py-100">
-            <div class="container">
-                <div class="site-heading text-center mb-40 wow fadeInUp" data-wow-delay=".1s">
-                    <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="" class="img-fluid" width="30" height="30"></i> Pricing Plans</span>
-                    <h2 class="site-title mt-2">Transparent <span>Service Packages</span></h2>
-                    <p class="home3-section-lead">Choose a plan that fits your business size. All plans include dedicated support and guaranteed compliance.</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="home3-plan wow fadeInUp" data-wow-delay=".15s">
-                            <div class="home3-plan-name">Starter</div>
-                            <div class="home3-plan-price">₹4,999<small>/year</small></div>
-                            <p class="home3-plan-desc">Ideal for freelancers &amp; sole proprietors</p>
-                            <ul class="home3-plan-features">
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>ITR Filing (1 return)</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>GST Return Filing (Monthly)</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Basic Bookkeeping</span></li>
-                                <li class="is-muted"><i class="fas fa-times" aria-hidden="true"></i><span>ROC / MCA Compliance</span></li>
-                            </ul>
-                            <a href="contact.php#contact_us" class="theme-btn theme-btn2">Get Started<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="home3-plan home3-plan--featured wow fadeInUp" data-wow-delay=".2s">
-                            <div class="home3-plan-badge">Most Popular</div>
-                            <div class="home3-plan-name">Growth</div>
-                            <div class="home3-plan-price">₹14,999<small>/year</small></div>
-                            <p class="home3-plan-desc">Perfect for small &amp; growing businesses</p>
-                            <ul class="home3-plan-features">
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>ITR Filing (Company / Firm)</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>GST Filing + Advisory</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Full Bookkeeping &amp; Reports</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>ROC Annual Compliance</span></li>
-                            </ul>
-                            <a href="contact.php#contact_us" class="theme-btn">Get Started<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="home3-plan wow fadeInUp" data-wow-delay=".25s">
-                            <div class="home3-plan-name">Enterprise</div>
-                            <div class="home3-plan-price">Custom</div>
-                            <p class="home3-plan-desc">Tailored for mid-size &amp; growing companies</p>
-                            <ul class="home3-plan-features">
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Everything in Growth</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Virtual CFO Services</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>MIS &amp; Financial Analysis</span></li>
-                                <li><i class="fas fa-check" aria-hidden="true"></i><span>Dedicated Account Manager</span></li>
-                            </ul>
-                            <a href="contact.php#contact_us" class="theme-btn theme-btn2">Contact Us<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-center home3-plan-footnote">* Prices are indicative. Final pricing depends on scope. <a href="contact.php#contact_us">Get a custom quote &rarr;</a></p>
             </div>
         </div>
 
@@ -654,131 +616,7 @@
             </div>
         </div>
 
-        <div class="choose-area py-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="choose-content wow fadeInUp" data-wow-delay=".25s">
-                            <div class="site-heading mb-0">
-                                <span class="site-title-tagline"><i>
-                                        <img src="assets/img/trend-img.webp" alt="Why Choose Us" title="Why Choose Us"
-                                            class="img-fluid">
-                                    </i> Why Choose Us</span>
-                                <h3 class="site-title">Your trusted advisor for customized services, <span> driving
-                                        success </span> through expertise and reliability.</h3>
-                                <p>
-                                    At CAAFT, we prioritize your business's needs through expertise, customization, and
-                                    proactive support:
-                                </p>
-                            </div>
-                            <div class="hidesphones choose-img wow fadeInRight" data-wow-delay=".25s">
-                                <img class="img-1" src="assets/img/why-chooseus-img1.webp" alt="Why Choose Us" title="Why Choose Us">
-                                <img class="img-2" src="assets/img/caaft-why-chooseus.webp" alt="Why Choose Us" title="Why Choose Us">
-                                <img class="img-shape" src="assets/img/shape/10.png" alt="Why Choose Us" title="Why Choose Us">
-                            </div>
-                            <div class="choose-content-wrap">
-                                <div class="choose-item">
-                                    <div class="choose-item-icon">
-                                        <img src="assets/img/icon/money.svg" alt="Customized Services" title="Customized Services">
-                                    </div>
-                                    <div class="choose-item-info">
-                                        <h4>Customized Services</h4>
-                                        <p>We tailor our services to fit your unique requirements, providing
-                                            personalized strategies that align with your goals and objectives.</p>
-                                    </div>
-                                </div>
-                                <div class="choose-item">
-                                    <div class="choose-item-icon">
-                                        <img src="assets/img/icon/investment.svg" alt="Commitment to Compliance" title="Commitment to Compliance">
-                                    </div>
-                                    <div class="choose-item-info">
-                                        <h4>Commitment to Compliance</h4>
-                                        <p>With our compliance-focused approach, we are helping you avoid risks and
-                                            ensure adherence to regulations.</p>
-                                    </div>
-                                </div>
-                                <div class="choose-item">
-                                    <div class="choose-item-icon">
-                                        <img src="assets/img/icon/money-2.svg" alt="Proactive Support" title="Proactive Support">
-                                    </div>
-                                    <div class="choose-item-info">
-                                        <h4>Proactive Support</h4>
-                                        <p>Our proactive support ensures timely assistance and anticipates your needs,
-                                            keeping your operations running smoothly without disruptions.</p>
-                                    </div>
-                                </div>
-                                <div class="choose-item">
-                                    <div class="choose-item-icon">
-                                        <img src="assets/img/icon/support.svg" alt="Timely and Efficient Service" title="Timely and Efficient Service">
-                                    </div>
-                                    <div class="choose-item-info">
-                                        <h4>Timely and Efficient Service</h4>
-                                        <p>We prioritize timely delivery and efficient processes, ensuring your work
-                                            stay on schedule without compromising on quality.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 fadeout_lis">
-                        <div class="choose-img wow fadeInRight" data-wow-delay=".25s">
-                            <img class="img-1" src="assets/img/why-chooseus-img1.webp" alt="Why Choose Us" title="Why Choose Us">
-                            <img class="img-2" src="assets/img/caaft-why-chooseus.webp" alt="Why Choose Us" title="Why Choose Us">
-                            <img class="img-shape" src="assets/img/shape/10.png" alt="Why Choose Us" title="Why Choose Us">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-        <!-- ===== 1. TRUST & SOCIAL PROOF SECTION ===== -->
-        <div class="home3-trust-area py-90">
-            <div class="container">
-                <div class="site-heading text-center mb-40 wow fadeInUp" data-wow-delay=".1s">
-                    <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="" class="img-fluid" width="30" height="30"></i> Trusted By Businesses</span>
-                    <h2 class="site-title mt-2">Why Clients <span>Choose CAAFT</span></h2>
-                </div>
-                <div class="row g-4 justify-content-center text-center">
-                    <div class="col-6 col-md-3">
-                        <div class="home3-stat-card wow fadeInUp" data-wow-delay=".15s">
-                            <div class="home3-stat-value">500+</div>
-                            <div class="home3-stat-label">Businesses Served</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="home3-stat-card wow fadeInUp" data-wow-delay=".2s">
-                            <div class="home3-stat-value">98%</div>
-                            <div class="home3-stat-label">Client Satisfaction Rate</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="home3-stat-card wow fadeInUp" data-wow-delay=".25s">
-                            <div class="home3-stat-value">10+</div>
-                            <div class="home3-stat-label">Years of Expertise</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="home3-stat-card wow fadeInUp" data-wow-delay=".3s">
-                            <div class="home3-stat-stars" aria-label="Rated 5 out of 5 on Google"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
-                            <div class="home3-stat-label">Google Rated 5.0</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="home3-trust-pills mt-40 wow fadeInUp" data-wow-delay=".35s">
-                    <div class="home3-pill"><i class="fas fa-lock" aria-hidden="true"></i><span>100% Data Confidential</span></div>
-                    <div class="home3-pill"><i class="fas fa-bolt" aria-hidden="true"></i><span>Fast Turnaround Time</span></div>
-                    <div class="home3-pill"><i class="fas fa-user-check" aria-hidden="true"></i><span>CA &amp; CS Verified Services</span></div>
-                    <div class="home3-pill"><i class="fas fa-headset" aria-hidden="true"></i><span>Dedicated Account Manager</span></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ===== 2. RECOGNITION & TRUST (CREDENTIALS) ===== -->
+        <!-- ===== 1. RECOGNITION & TRUST (CREDENTIALS) ===== -->
         <div class="home3-cred-area py-90">
             <div class="container">
                 <div class="site-heading text-center mb-40 wow fadeInUp" data-wow-delay=".1s">
@@ -815,77 +653,8 @@
             </div>
         </div>
 
-        <!-- ===== 3. TESTIMONIALS SECTION ===== -->
-        <div class="home3-reviews-area py-100">
-            <div class="container">
-                <div class="home3-reviews-head text-center wow fadeInUp" data-wow-delay=".1s">
-                    <p class="home3-reviews-eyebrow"><span class="home3-reviews-eyebrow__line" aria-hidden="true"></span><span>Our Testimonials</span><span class="home3-reviews-eyebrow__line" aria-hidden="true"></span></p>
-                    <h2 class="home3-reviews-title">What our <span class="home3-reviews-title-accent">Clients</span> Say</h2>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4">
-                        <article class="home3-review-card wow fadeInUp" data-wow-delay=".15s">
-                            <header class="home3-review-card__head">
-                                <div class="home3-review-card__intro">
-
-<div class="home3-review-avatar home3-review-avatar--a" aria-hidden="true">M</div>
-                                    <div class="home3-review-card__identity">
-                                        <p class="home3-review-name">Mr. Murali Krishnan</p>
-                                        <div class="home3-review-stars" aria-label="5 out of 5 stars"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
-                                        <p class="home3-review-role">Director - Focused Corporate Solutions</p>                            </div>
-                                </div>
-                                <div class="home3-review-google" title="Google review" aria-label="Google review">
-                                    <svg class="home3-review-google__mark" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                                </div>
-                            </header>
-<p class="home3-review-quote">Recently, I availed accounting services from CAAFT Consultancy Services, and the experience was excellent. The team was highly professional, responsive, and extremely knowledgeable in handling compliance and accounting matters. The service quality was outstanding, timelines were strictly followed, and the pricing was very budget-friendly compared to the market. I would definitely recommend CAAFT Consultancy Services to anyone looking for reliable, efficient, and cost-effective accounting and compliance solutions.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="home3-review-card wow fadeInUp" data-wow-delay=".2s">
-                            <header class="home3-review-card__head">
-                                <div class="home3-review-card__intro">
-                                    <div class="home3-review-avatar home3-review-avatar--b" aria-hidden="true">P</div>
-                                    <div class="home3-review-card__identity">
-                                        <p class="home3-review-name">Mr. Padmakumar</p>
-                                        <div class="home3-review-stars" aria-label="5 out of 5 stars"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
-                                        <p class="home3-review-role">Director - E Sollutions Consultancy</p>
-                                    </div>
-                                </div>
-                                <div class="home3-review-google" title="Google review" aria-label="Google review">
-                                    <svg class="home3-review-google__mark" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                                </div>
-                            </header>
-<p class="home3-review-quote">We have been associated with CAAFT for more than six months and I am sure that they are meeting our expectations and look forward for more value addition into the system.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="home3-review-card wow fadeInUp" data-wow-delay=".25s">
-                            <header class="home3-review-card__head">
-                                <div class="home3-review-card__intro">
-<div class="home3-review-avatar home3-review-avatar--c" aria-hidden="true">S</div>
-                                    <div class="home3-review-card__identity">
-                                        <p class="home3-review-name">Mrs. Sharmila Venkat</p>
-                                        <div class="home3-review-stars" aria-label="5 out of 5 stars"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
-                                        <p class="home3-review-role">Partner - Trust Infosys Incorporation</p>
-                            </div>
-                                </div>
-                                <div class="home3-review-google" title="Google review" aria-label="Google review">
-                                    <svg class="home3-review-google__mark" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                                </div>
-                            </header>
-<p class="home3-review-quote">A highly professional and dependable company with excellent service quality. My experience has been smooth, efficient, and consistently satisfying.</p>
-                        </article>
-                    </div>
-                </div>
-                <div class="text-center mt-40 wow fadeInUp" data-wow-delay=".3s">
-                    <a href="contact.php#contact_us" class="theme-btn">Share Your Experience<i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- ===== 5. OUR ACHIEVEMENTS SECTION ===== -->
-        <div class="home3-stats-area py-100">
+        <!-- ===== 2. OUR ACHIEVEMENTS SECTION ===== -->
+        <div class="home3-stats-area home3-stats-area--hero-bg py-100">
             <div class="container">
                 <div class="site-heading text-center mb-40 wow fadeInUp" data-wow-delay=".1s">
                     <span class="site-title-tagline light"><i><img src="assets/img/trend-img.webp" alt="" class="img-fluid" width="30" height="30"></i> Our Achievements</span>
@@ -921,7 +690,7 @@
                     <div class="col-md-4">
                         <article class="home3-stats-highlight wow fadeInUp" data-wow-delay=".15s">
                             <div class="home3-stats-highlight-icon" aria-hidden="true"><i class="fas fa-trophy"></i></div>
-                            <h3>Top-Rated CA Firm in Chennai</h3>
+                            <h3>Top-Rated Consultancy in Chennai</h3>
                             <p>Consistently rated 5★ on Google by clients across Tamil Nadu.</p>
                         </article>
                     </div>
@@ -936,52 +705,9 @@
                         <article class="home3-stats-highlight wow fadeInUp" data-wow-delay=".25s">
                             <div class="home3-stats-highlight-icon" aria-hidden="true"><i class="fas fa-handshake"></i></div>
                             <h3>Long-Term Client Retention</h3>
-                            <p>Over 80% of our clients have been with us for 3+ years — a testament to trust and results.</p>
+                            <p>Over 80% of our clients have been with us for 2+ years — a testament to trust and results.</p>
                         </article>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ===== 6. TEAM / FOUNDER SECTION ===== -->
-        <div class="home3-leaders-area py-100">
-            <div class="container">
-                <div class="site-heading text-center mb-40 wow fadeInUp" data-wow-delay=".1s">
-                    <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="" class="img-fluid" width="30" height="30"></i> Meet The Team</span>
-                    <h2 class="site-title mt-2">The Experts <span>Behind CAAFT</span></h2>
-                    <p class="home3-section-lead">People trust people. Our leadership team brings decades of combined experience in accounting, taxation, and business advisory.</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4">
-                        <article class="home3-leader-card wow fadeInUp" data-wow-delay=".15s">
-                            <div class="home3-leader-avatar home3-leader-avatar--a" aria-hidden="true">C</div>
-                            <h3 class="home3-leader-title">Founder &amp; Managing Director</h3>
-                            <div class="home3-leader-sub">CAAFT Consultancy Services Pvt. Ltd.</div>
-                            <p class="home3-leader-bio">Chartered Accountant with 10+ years of experience in corporate taxation, business structuring, and compliance advisory. Passionate about helping businesses grow with clarity and confidence.</p>
-                            <div class="home3-leader-link"><a href="about.php">Read Full Story &rarr;</a></div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="home3-leader-card wow fadeInUp" data-wow-delay=".2s">
-                            <div class="home3-leader-avatar home3-leader-avatar--b" aria-hidden="true">T</div>
-                            <h3 class="home3-leader-title">Head of Taxation</h3>
-                            <div class="home3-leader-sub">Income Tax &amp; GST Division</div>
-                            <p class="home3-leader-bio">Specialist in GST advisory, income tax litigation, and tax planning strategies. Known for translating complex tax law into practical, cost-saving decisions for clients.</p>
-                            <div class="home3-leader-link"><a href="about.php">Read Full Story &rarr;</a></div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <article class="home3-leader-card wow fadeInUp" data-wow-delay=".25s">
-                            <div class="home3-leader-avatar home3-leader-avatar--c" aria-hidden="true">C</div>
-                            <h3 class="home3-leader-title">Head of Compliance</h3>
-                            <div class="home3-leader-sub">ROC &amp; Regulatory Services</div>
-                            <p class="home3-leader-bio">Company Secretary with expertise in ROC filings, MCA compliance, and corporate governance. Ensures all clients remain legally compliant without operational disruption.</p>
-                            <div class="home3-leader-link"><a href="about.php">Read Full Story &rarr;</a></div>
-                        </article>
-                    </div>
-                </div>
-                <div class="text-center mt-40 wow fadeInUp" data-wow-delay=".3s">
-                    <a href="about.php" class="theme-btn theme-btn2">Meet The Full Team<i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -1071,8 +797,158 @@
                 </div>
             </div>
         </div>
-        
 
+        <div class="choose-area py-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="choose-content wow fadeInUp" data-wow-delay=".25s">
+                            <div class="site-heading mb-0">
+                                <span class="site-title-tagline"><i>
+                                        <img src="assets/img/trend-img.webp" alt="Why Choose Us" title="Why Choose Us"
+                                            class="img-fluid">
+                                    </i> Why Choose Us</span>
+                                <h3 class="site-title">Your trusted advisor for customized services, <span> driving
+                                        success </span> through expertise and reliability.</h3>
+                                <p>
+                                    At CAAFT, we prioritize your business's needs through expertise, customization, and
+                                    proactive support:
+                                </p>
+                            </div>
+                            <div class="hidesphones choose-img wow fadeInRight" data-wow-delay=".25s">
+                                <img class="img-1" src="assets/img/why-chooseus-img1.webp" alt="Why Choose Us" title="Why Choose Us">
+                                <img class="img-2" src="assets/img/caaft-why-chooseus.webp" alt="Why Choose Us" title="Why Choose Us">
+                                <img class="img-shape" src="assets/img/shape/10.png" alt="Why Choose Us" title="Why Choose Us">
+                            </div>
+                            <div class="choose-content-wrap">
+                                <div class="choose-item">
+                                    <div class="choose-item-icon">
+                                        <img src="assets/img/icon/money.svg" alt="Customized Services" title="Customized Services">
+                                    </div>
+                                    <div class="choose-item-info">
+                                        <h4>Customized Services</h4>
+                                        <p>We tailor our services to fit your unique requirements, providing
+                                            personalized strategies that align with your goals and objectives.</p>
+                                    </div>
+                                </div>
+                                <div class="choose-item">
+                                    <div class="choose-item-icon">
+                                        <img src="assets/img/icon/investment.svg" alt="Commitment to Compliance" title="Commitment to Compliance">
+                                    </div>
+                                    <div class="choose-item-info">
+                                        <h4>Commitment to Compliance</h4>
+                                        <p>With our compliance-focused approach, we are helping you avoid risks and
+                                            ensure adherence to regulations.</p>
+                                    </div>
+                                </div>
+                                <div class="choose-item">
+                                    <div class="choose-item-icon">
+                                        <img src="assets/img/icon/money-2.svg" alt="Proactive Support" title="Proactive Support">
+                                    </div>
+                                    <div class="choose-item-info">
+                                        <h4>Proactive Support</h4>
+                                        <p>Our proactive support ensures timely assistance and anticipates your needs,
+                                            keeping your operations running smoothly without disruptions.</p>
+                                    </div>
+                                </div>
+                                <div class="choose-item">
+                                    <div class="choose-item-icon">
+                                        <img src="assets/img/icon/support.svg" alt="Timely and Efficient Service" title="Timely and Efficient Service">
+                                    </div>
+                                    <div class="choose-item-info">
+                                        <h4>Timely and Efficient Service</h4>
+                                        <p>We prioritize timely delivery and efficient processes, ensuring your work
+                                            stay on schedule without compromising on quality.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 fadeout_lis">
+                        <div class="choose-img wow fadeInRight" data-wow-delay=".25s">
+                            <img class="img-1" src="assets/img/why-chooseus-img1.webp" alt="Why Choose Us" title="Why Choose Us">
+                            <img class="img-2" src="assets/img/caaft-why-chooseus.webp" alt="Why Choose Us" title="Why Choose Us">
+                            <img class="img-shape" src="assets/img/shape/10.png" alt="Why Choose Us" title="Why Choose Us">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 3. TESTIMONIALS SECTION ===== -->
+        <div class="home3-reviews-area py-100">
+            <div class="container">
+                <div class="home3-reviews-head text-center wow fadeInUp" data-wow-delay=".1s">
+                    <p class="home3-reviews-eyebrow"><span class="home3-reviews-eyebrow__line" aria-hidden="true"></span><span>Our Testimonials</span><span class="home3-reviews-eyebrow__line" aria-hidden="true"></span></p>
+                    <h2 class="home3-reviews-title">What our <span class="home3-reviews-title-accent">Clients</span> Say</h2>
+                </div>
+                <?php
+                $home3_reviews = [
+                    [
+                        'initial' => 'M',
+                        'avatar' => 'a',
+                        'name' => 'Mr. Murali Krishnan',
+                        'role' => 'Director - Focused Corporate Solutions',
+                        'quote' => 'Recently, I availed accounting services from CAAFT Consultancy Services, and the experience was excellent. The team was highly professional, responsive, and extremely knowledgeable in handling compliance and accounting matters. The service quality was outstanding, timelines were strictly followed, and the pricing was very budget-friendly compared to the market. I would definitely recommend CAAFT Consultancy Services to anyone looking for reliable, efficient, and cost-effective accounting and compliance solutions.',
+                    ],
+                    [
+                        'initial' => 'P',
+                        'avatar' => 'b',
+                        'name' => 'Mr. Padmakumar',
+                        'role' => 'Director - E Sollutions Consultancy',
+                        'quote' => 'We have been associated with CAAFT for more than six months and I am sure that they are meeting our expectations and look forward for more value addition into the system.',
+                    ],
+                    [
+                        'initial' => 'S',
+                        'avatar' => 'c',
+                        'name' => 'Mrs. Sharmila Venkat',
+                        'role' => 'Partner - Trust Infosys Incorporation',
+                        'quote' => 'A highly professional and dependable company with excellent service quality. My experience has been smooth, efficient, and consistently satisfying.',
+                    ],
+                    [
+                        'initial' => 'B',
+                        'avatar' => 'd',
+                        'name' => 'Bharath Vaidhyaselvan',
+                        'role' => 'Founder & Director - Brevia Tech Solutions',
+                        'quote' => 'Recently, we consulted CAAFT for business consultation and compliance support, and the overall experience was really good. Initially, I was looking for a reliable team who could guide us properly, and CAAFT handled everything in a very professional and smooth manner. Their team was responsive, knowledgeable, and explained things clearly whenever we had doubts. The process was simple, timelines were maintained properly, and the support provided was genuinely helpful for our business. I would definitely recommend CAAFT Consultancy Services for startups and businesses looking for reliable consultation and compliance support.',
+                    ],
+                    [
+                        'initial' => 'A',
+                        'avatar' => 'e',
+                        'name' => 'Arjun',
+                        'role' => 'Managing Director - DJ Dancing Club',
+                        'quote' => 'CAAFT made our registration and ongoing compliance straightforward. The team answered every question patiently and kept us updated at each step. We now have clear books, timely filings, and peace of mind to focus on growing the business. Highly recommended for owners who want dependable support without the usual runaround.',
+                    ],
+                    [
+                        'initial' => 'V',
+                        'avatar' => 'f',
+                        'name' => 'Vikas Narasimman',
+                        'role' => 'Founder - Vexla Digital Solutions',
+                        'quote' => 'As a growing digital agency, we needed a partner who understood both tax and company compliance. CAAFT delivered exactly that — practical advice, fast responses, and accurate filings. Their proactive reminders and clear documentation have saved us time and helped us stay fully compliant.',
+                    ],
+                    [
+                        'initial' => 'D',
+                        'avatar' => 'g',
+                        'name' => 'Deva Sathish Kumar',
+                        'role' => 'Proprietor - Deva Digital Marketing',
+                        'quote' => 'From GST registration to monthly returns, CAAFT has been consistent and professional. Pricing was transparent, communication was excellent, and any doubts were resolved quickly. I am glad we chose them for our proprietorship needs and would recommend them to fellow entrepreneurs.',
+                    ],
+                ];
+                ?>
+                <div class="home3-reviews-slider owl-carousel owl-theme">
+                    <?php foreach ($home3_reviews as $home3_review) : ?>
+                        <div class="home3-reviews-slide">
+                            <?php include dirname(__DIR__, 2) . '/includes/components/home3-review-card.php'; ?>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                <div class="text-center mt-40 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="https://maps.app.goo.gl/goUaG1agn2Fo4PKRA" target="_blank" rel="noopener noreferrer" class="theme-btn">Share Your Experience<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        
     </main>
 
     <?php include "footer.php";?>

@@ -123,13 +123,13 @@ declare(strict_types=1);
         'From ROC filings and board meetings to SEBI disclosures and financial statement preparation, public limited company compliance is broader, stricter, and more consequential than for private entities. CAAFT manages the complete compliance calendar for public limited companies — so leadership stays focused on the business while every regulatory obligation is met accurately and on time.',
     ];
     $caaft_hero_primary_cta_label = 'File ROC & SEBI Now';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Public Limited Company Compliance';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Get Fully Compliant — Starting Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -427,7 +427,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'public-ltd-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -457,7 +459,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Take Compliance Off the Plate — Permanently';
     $caaft_cta_text = 'Public Limited Company compliance covers more ground, carries heavier penalties, and demands greater precision than any other corporate structure. Whether managing routine ROC filings, SEBI disclosures for a listed entity, FEMA obligations with foreign investment, or preparing for an IPO — CAAFT delivers the full spectrum of annual compliance with the precision of a CA firm and the responsiveness of a dedicated partner.';
     $caaft_cta_button_label = 'Get Fully Compliant — Starting Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

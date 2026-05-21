@@ -110,13 +110,13 @@ declare(strict_types=1);
     $caaft_hero_lead_paragraphs = [
 'The registered office is the official address recorded with the MCA for all legal and statutory communications. Any change must be filed with the Registrar of Companies within the prescribed timeline. Delays can lead to penalties, missed notices, and compliance gaps. CAAFT ensures accurate, timely registered office change filings across India.'    ];
     $caaft_hero_primary_cta_label = 'File INC-22 Instantly';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Registered Office Change';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Complete Address Change Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -276,7 +276,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'registered-office-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -306,7 +308,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Complete the Registered Office Change the Right Way?';
     $caaft_cta_text = 'An outdated registered address creates compliance risks that compound over time — from missed government notices to ROC scrutiny and cascading record mismatches across GST, tax, and banking. CAAFT delivers accurate, fast, and fully compliant registered office change support for companies across India.';
     $caaft_cta_button_label = 'Complete Address Change Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

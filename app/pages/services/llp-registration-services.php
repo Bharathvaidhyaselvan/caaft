@@ -405,8 +405,6 @@ declare(strict_types=1);
             padding-bottom: 46px;
         }
         .page-llp-registration .bk-cta-panel.caaft-cta-panel {
-            max-width: 980px;
-            margin: 0 auto;
             border-radius: 14px;
             padding: clamp(28px, 4vw, 40px) 24px clamp(30px, 4.2vw, 44px);
         }
@@ -556,13 +554,13 @@ declare(strict_types=1);
             'Registered under the LLP Act, 2008, an LLP holds a separate legal identity, can own assets, enter contracts, and sue or be sued in its own name. CAAFT handles end-to-end LLP registration across India — from name reservation and FiLLiP filing to LLP Agreement drafting, Certificate of Incorporation, and post-registration compliance.',
         ];
         $caaft_hero_primary_cta_label = 'Register Your LLP Now';
-        $caaft_hero_primary_cta_href = '/contact';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'LLP Registration';
         $caaft_enquiry_action = '/business-registration-mail.php';
         $caaft_enquiry_title = 'Let\'s Talk';
-        $caaft_enquiry_recaptcha = false;
-        $caaft_enquiry_honeypot_website = false;
+        $caaft_enquiry_honeypot_website = false;        $caaft_service_cta_label = 'Build Your Business with LLP';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -828,7 +826,9 @@ declare(strict_types=1);
         $why_choose_caaft_heading_id = 'llp-why-caaft-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_link_desc = true;
+
         $why_choose_caaft_intro = 'Businesses rely on CAAFT for LLP incorporation that is filing-accurate, agreement-ready, and aligned with MCA requirements from day one.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -887,7 +887,7 @@ declare(strict_types=1);
         $caaft_cta_title = 'Register Your Limited Liability Partnership Today — Structured, Protected & Fully Compliant';
         $caaft_cta_text = 'A Limited Liability Partnership provides legal identity, partner protection, and operational flexibility — but only if it is registered correctly from the start, with a well-drafted LLP Agreement and a clear compliance framework in place from day one. Whether forming a new LLP, converting an existing partnership, or structuring a professional services firm — CAAFT delivers complete, accurate LLP registration built on a foundation that holds.';
         $caaft_cta_button_label = 'Build Your Business with LLP';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

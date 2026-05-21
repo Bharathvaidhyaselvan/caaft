@@ -21,10 +21,19 @@
  *
  * Enquiry form options (passed through):
  *   $caaft_enquiry_* variables from enquiry-hero-form.php
+ *
+ * Optional pricing strip below primary/secondary CTAs (left column, dark hero):
+ *   $caaft_hero_pricing_disable (bool) — when true, no strip is shown
+ *   $caaft_hero_pricing_amount (string) — if omitted, looked up from includes/data/caaft-hero-service-pricing.php by service page
+ *   $caaft_hero_pricing_label (string) — default "Price starts from" when amount is set
+ *   $caaft_hero_pricing_suffix (string) — default "+ GST"
+ *   $caaft_hero_pricing_extra (string) — e.g. "Govt. Fee"; empty hides the "| …" segment
  */
-if (!isset($caaft_hero_id, $caaft_hero_h1, $caaft_hero_h2_before, $caaft_hero_h2_highlight, $caaft_hero_h2_after, $caaft_hero_lead_paragraphs, $caaft_hero_primary_cta_label, $caaft_hero_primary_cta_href)) {
+if (!isset($caaft_hero_id, $caaft_hero_h1, $caaft_hero_h2_before, $caaft_hero_h2_highlight, $caaft_hero_h2_after, $caaft_hero_lead_paragraphs)) {
     trigger_error('service-hero-with-enquiry.php: set required $caaft_hero_* variables before including', E_USER_WARNING);
 }
+
+require_once __DIR__ . '/../caaft-url-helpers.php';
 
 $caaft_hero_id = isset($caaft_hero_id) ? (string) $caaft_hero_id : 'service-hero-h1';
 $caaft_hero_h1 = isset($caaft_hero_h1) ? (string) $caaft_hero_h1 : '';
@@ -33,7 +42,14 @@ $caaft_hero_h2_highlight = isset($caaft_hero_h2_highlight) ? (string) $caaft_her
 $caaft_hero_h2_after = isset($caaft_hero_h2_after) ? (string) $caaft_hero_h2_after : '';
 $caaft_hero_lead_paragraphs = isset($caaft_hero_lead_paragraphs) && is_array($caaft_hero_lead_paragraphs) ? $caaft_hero_lead_paragraphs : [];
 $caaft_hero_primary_cta_label = isset($caaft_hero_primary_cta_label) ? (string) $caaft_hero_primary_cta_label : '';
-$caaft_hero_primary_cta_href = isset($caaft_hero_primary_cta_href) ? (string) $caaft_hero_primary_cta_href : '#';
+$caaft_hero_primary_cta_href = caaft_normalize_hero_contact_href(
+    isset($caaft_hero_primary_cta_href) ? (string) $caaft_hero_primary_cta_href : ''
+);
+
+// Enquiry form heading: use bottom CTA label when set on the page before include.
+if (isset($caaft_service_cta_label) && trim((string) $caaft_service_cta_label) !== '') {
+    $caaft_enquiry_title = (string) $caaft_service_cta_label;
+}
 $caaft_hero_secondary_cta_label = isset($caaft_hero_secondary_cta_label) ? (string) $caaft_hero_secondary_cta_label : '';
 $caaft_hero_secondary_cta_href = isset($caaft_hero_secondary_cta_href) ? (string) $caaft_hero_secondary_cta_href : '#';
 $caaft_hero_primary_cta_icon = isset($caaft_hero_primary_cta_icon) ? (string) $caaft_hero_primary_cta_icon : 'fas fa-arrow-right';
@@ -61,6 +77,49 @@ if (trim($caaft_hero_h2_highlight) === '' && trim($caaft_hero_h2_after) === '' &
         $caaft_hero_h2_highlight = trim(substr($caaft_h2_source, $caaft_h2_split_pos + $caaft_h2_separator_len));
     }
 }
+
+$caaft_hero_pricing_disable = isset($caaft_hero_pricing_disable) && $caaft_hero_pricing_disable;
+$caaft_hero_pricing_extra_from_page = isset($caaft_hero_pricing_extra);
+
+require_once __DIR__ . '/../caaft-resolve-service-pricing.php';
+
+if (!$caaft_hero_pricing_disable && !isset($caaft_hero_pricing_amount)) {
+    $caaft_hero_pricing_row = caaft_resolve_service_page_pricing();
+    if ($caaft_hero_pricing_row !== null) {
+        $caaft_hero_pricing_amount = $caaft_hero_pricing_row['amount'];
+        if (!$caaft_hero_pricing_extra_from_page) {
+            $caaft_hero_pricing_extra = $caaft_hero_pricing_row['govt_fee'] ? 'Govt. Fee' : '';
+        }
+    }
+}
+
+$caaft_hero_pricing_amount = isset($caaft_hero_pricing_amount) ? trim((string) $caaft_hero_pricing_amount) : '';
+$caaft_hero_pricing_label = isset($caaft_hero_pricing_label) ? trim((string) $caaft_hero_pricing_label) : '';
+$caaft_hero_pricing_suffix = isset($caaft_hero_pricing_suffix) ? trim((string) $caaft_hero_pricing_suffix) : '+ GST';
+$caaft_hero_pricing_extra = isset($caaft_hero_pricing_extra) ? trim((string) $caaft_hero_pricing_extra) : '';
+$caaft_hero_show_pricing = $caaft_hero_pricing_amount !== '';
+if ($caaft_hero_show_pricing && $caaft_hero_pricing_label === '') {
+    $caaft_hero_pricing_label = 'Price starts from';
+}
+if ($caaft_hero_pricing_suffix === '') {
+    $caaft_hero_pricing_suffix = '+ GST';
+}
+
+if (!isset($caaft_enquiry_pricing_amount) || trim((string) $caaft_enquiry_pricing_amount) === '') {
+    if ($caaft_hero_show_pricing) {
+        $caaft_enquiry_pricing_amount = $caaft_hero_pricing_amount;
+        if (!isset($caaft_enquiry_pricing_label) || trim((string) $caaft_enquiry_pricing_label) === '') {
+            $caaft_enquiry_pricing_label = $caaft_hero_pricing_label;
+        }
+        if (!isset($caaft_enquiry_pricing_suffix) || trim((string) $caaft_enquiry_pricing_suffix) === '') {
+            $caaft_enquiry_pricing_suffix = $caaft_hero_pricing_suffix;
+        }
+        if (!isset($caaft_enquiry_pricing_extra) || trim((string) $caaft_enquiry_pricing_extra) === '') {
+            $caaft_enquiry_pricing_extra = $caaft_hero_pricing_extra;
+        }
+    }
+}
+
 ?>
 <section class="hero-section hs-3 caaft-ar-hero" aria-labelledby="<?php echo htmlspecialchars($caaft_hero_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="hero-single singles_forms_frames caaft-ar-hero-single">
@@ -88,6 +147,21 @@ if (trim($caaft_hero_h2_highlight) === '' && trim($caaft_hero_h2_after) === '' &
                             </a>
                         <?php endif; ?>
                     </div>
+                    <?php if ($caaft_hero_show_pricing) : ?>
+                        <div class="caaft-hero-cta-pricing-banner" role="note">
+                            <span class="caaft-hero-cta-pricing-label"><?php echo htmlspecialchars($caaft_hero_pricing_label, ENT_QUOTES, 'UTF-8'); ?></span>
+                            <div class="caaft-hero-cta-pricing-line">
+                                <span class="caaft-hero-cta-pricing-amount-wrap">
+                                    <span class="caaft-hero-cta-pricing-rupee">₹</span><strong class="caaft-hero-cta-pricing-amount"><?php echo htmlspecialchars($caaft_hero_pricing_amount, ENT_QUOTES, 'UTF-8'); ?></strong>
+                                </span>
+                                <span class="caaft-hero-cta-pricing-suffix"><?php echo htmlspecialchars($caaft_hero_pricing_suffix, ENT_QUOTES, 'UTF-8'); ?></span>
+                                <?php if ($caaft_hero_pricing_extra !== '') : ?>
+                                    <span class="caaft-hero-cta-pricing-sep" aria-hidden="true">|</span>
+                                    <span class="caaft-hero-cta-pricing-extra"><?php echo htmlspecialchars($caaft_hero_pricing_extra, ENT_QUOTES, 'UTF-8'); ?></span>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <div class="col-md-12 col-lg-6">
                     <div class="hero-img-wrap caaft-ar-hero-img-wrap">

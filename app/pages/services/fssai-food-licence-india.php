@@ -165,13 +165,13 @@ declare(strict_types=1);
             'Whether a home baker, cloud kitchen, restaurant, food manufacturer, or e-commerce food seller — any business involved in the manufacturing, processing, storage, distribution, or sale of food products requires valid FSSAI registration under the Food Safety and Standards Act, 2006. CAAFT delivers complete FSSAI food licence services — from determining the correct licence category and preparing documents through to portal submission, approval, and ongoing renewal.',
         ];
         $caaft_hero_primary_cta_label = 'Apply for FSSAI Licence Now';
-        $caaft_hero_primary_cta_href = '/contact';
-        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+                $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'FSSAI Registration';
         $caaft_enquiry_action = '/business-registration-mail.php';
         $caaft_enquiry_title = 'Let\'s Talk';
-        $caaft_enquiry_recaptcha = false;
         $caaft_enquiry_honeypot_website = false;
+        $caaft_service_cta_label = 'Launch Your Food Business Legally';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -390,7 +390,9 @@ declare(strict_types=1);
         $why_choose_caaft_heading_id = 'fssai-why-caaft-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_link_desc = true;
+
         $why_choose_caaft_intro = 'Businesses trust CAAFT for seamless business incorporation, timely registrations, and dependable compliance support that scales with their growth.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -420,7 +422,7 @@ declare(strict_types=1);
         $caaft_cta_title = 'Start Your FSSAI Registration Today';
         $caaft_cta_text = 'A valid FSSAI food licence is the foundation of every legally compliant food business in India — enabling operations, building consumer trust, and protecting the business from penalties and regulatory action. Whether starting a new food venture, formalising an existing operation, or managing renewal for an active licence — CAAFT delivers accurate, fast, and fully compliant FSSAI registration support for every food business category across India.';
         $caaft_cta_button_label = 'Launch Your Food Business Legally';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

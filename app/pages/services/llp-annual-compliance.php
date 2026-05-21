@@ -132,13 +132,13 @@ declare(strict_types=1);
         'Whether a startup, a professional firm, or a growing SME structured as an LLP — every Limited Liability Partnership registered in India carries mandatory annual compliance obligations under the LLP Act, 2008 and MCA regulations. CAAFT delivers complete LLP annual compliance management — from Form 8 and Form 11 filings and financial statements to statutory records and partner-level advisory.',
     ];
     $caaft_hero_primary_cta_label = 'Keep Your LLP Legally Active';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'LLP Annual Compliance';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Get Your LLP Fully Compliant Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -372,7 +372,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'llp-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -402,7 +404,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Do Not Let Compliance Deadlines Define the Business';
     $caaft_cta_text = 'LLP annual filings, statutory records, and partner-level advisory — managed completely and consistently so the LLP stays protected, stays credible, and stays focused on what it was built to do. Whether starting fresh, catching up on missed filings, or looking for a reliable long-term compliance partner — CAAFT delivers zero-missed-deadline LLP compliance management every financial year.';
     $caaft_cta_button_label = 'Get Your LLP Fully Compliant Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

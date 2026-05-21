@@ -3307,6 +3307,7 @@ a.footer-logo {
 }
 
 .home-get-quote-wrap {
+    margin-top: 120px;
     padding-bottom: 60px;
 }
 
@@ -7671,6 +7672,27 @@ td.cal-info {
     padding: 12px 14px;
 }
 
+/* Hero enquiry form anchor — offset fixed/sticky navbar (<base href="/"> same-page links) */
+#quote-content {
+    scroll-margin-top: 130px;
+}
+
+@media (max-width: 991.98px) {
+    #quote-content {
+        scroll-margin-top: 110px;
+    }
+}
+
+html:has(#quote-content) {
+    scroll-padding-top: 130px;
+}
+
+@media (max-width: 991.98px) {
+    html:has(#quote-content) {
+        scroll-padding-top: 110px;
+    }
+}
+
 .caaft-ar-hero-img-wrap .quote-head {
     margin-bottom: 6px;
 }
@@ -7711,6 +7733,153 @@ td.cal-info {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 14px;
+}
+
+/* Hero enquiry form — indicative pricing strip (optional per page via $caaft_enquiry_pricing_*) */
+.caaft-ar-hero-img-wrap .caaft-enquiry-pricing-banner {
+    margin-top: 14px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(51, 182, 255, 0.12) 0%, rgba(15, 65, 120, 0.08) 100%);
+    border: 1px solid rgba(51, 182, 255, 0.28);
+    text-align: center;
+}
+
+.caaft-ar-hero-img-wrap .caaft-enquiry-pricing-label {
+    display: block;
+    font-family: var(--body-font);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(10, 29, 55, 0.72);
+    margin-bottom: 6px;
+}
+
+.caaft-ar-hero-img-wrap .caaft-enquiry-pricing-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 6px 10px;
+    font-family: var(--body-font);
+    line-height: 1.2;
+}
+
+.caaft-ar-hero-img-wrap .caaft-enquiry-pricing-amount-wrap {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0;
+}
+
+.caaft-ar-hero-img-wrap .caaft-enquiry-pricing-rupee {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-right: 1px;
+}
+
+.caaft-ar-hero-img-wrap .caaft-enquiry-pricing-amount {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: var(--color-dark);
+    letter-spacing: -0.02em;
+}
+
+.caaft-ar-hero-img-wrap .caaft-enquiry-pricing-suffix {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0a4d7a;
+}
+
+.caaft-ar-hero-img-wrap .caaft-enquiry-pricing-sep {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(10, 29, 55, 0.35);
+}
+
+.caaft-ar-hero-img-wrap .caaft-enquiry-pricing-extra {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: rgba(10, 29, 55, 0.78);
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.72);
+}
+
+/* Hero left column — pricing below primary CTA (service-hero-with-enquiry.php: $caaft_hero_pricing_*) */
+.caaft-ar-hero-inner > .caaft-hero-cta-pricing-banner {
+    margin-top: 18px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid rgba(120, 210, 255, 0.65);
+    text-align: left;
+    width: fit-content;
+    max-width: min(300px, 100%);
+    box-sizing: border-box;
+}
+
+.caaft-ar-hero-inner > .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-label {
+    display: block;
+    font-family: var(--body-font);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.78);
+    margin-bottom: 6px;
+}
+
+.caaft-ar-hero-inner > .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 6px 10px;
+    font-family: var(--body-font);
+    line-height: 1.2;
+}
+
+.caaft-ar-hero-inner > .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-amount-wrap {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0;
+}
+
+.caaft-ar-hero-inner > .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-rupee {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 1px;
+}
+
+.caaft-ar-hero-inner > .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-amount {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.02em;
+}
+
+.caaft-ar-hero-inner > .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-suffix {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: rgba(144, 222, 255, 0.98);
+}
+
+.caaft-ar-hero-inner > .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-sep {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.caaft-ar-hero-inner > .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-extra {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.92);
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.14);
 }
 
 .why_us_sections {
@@ -9059,7 +9228,7 @@ body.home-3.page-accounting-reporting li {
 .page-accounting-reporting .caaft-ar-offer-h2,
 .page-accounting-reporting .caaft-ar-how-h2,
 .page-accounting-reporting .why-choose-caaft-title,
-.page-accounting-reporting .bk-cta-title,
+.page-accounting-reporting .bk-cta-panel:not(.caaft-cta-panel) .bk-cta-title,
 .page-accounting-reporting .caaft-ar-faq-wrap .site-heading .site-title {
     font-size: 32px;
     line-height: 1.2;
@@ -10055,8 +10224,12 @@ body.home-3.page-accounting-reporting li {
     .page-accounting-reporting .caaft-ar-offer-h2,
     .page-accounting-reporting .caaft-ar-how-h2,
     .page-accounting-reporting .why-choose-caaft-title,
-    .page-accounting-reporting .bk-cta-title,
+    .page-accounting-reporting .bk-cta-panel:not(.caaft-cta-panel) .bk-cta-title,
     .page-accounting-reporting .caaft-ar-faq-wrap .site-heading .site-title {
+        font-size: 28px;
+    }
+
+    .bk-cta-panel.caaft-cta-panel .bk-cta-title {
         font-size: 28px;
     }
 }
@@ -10592,6 +10765,10 @@ body.home-3.page-accounting-reporting li {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .bk-cta-panel.caaft-cta-panel .bk-cta-title {
+        max-width: min(920px, 94vw);
+    }
 }
 
 .bk-cta-text {
@@ -10736,16 +10913,16 @@ body.home-3.page-accounting-reporting li {
     max-width: 42ch;
 }
 
-.page-bookkeeping-accounting .bk-cta-panel {
+.page-bookkeeping-accounting .bk-cta-panel:not(.caaft-cta-panel) {
     background: linear-gradient(155deg, #07132e 0%, #0f2a56 35%, #1b4f9e 62%, #0A1D43 100%);
     border-radius: 14px;
     padding: clamp(36px, 6vw, 56px) 20px;
     text-align: center;
 }
 
-/* Financial Statement Analysis + AR/AP — extra breathing room in bottom CTA */
-.page-bookkeeping-accounting.page-financial-statement-analysis .bk-cta-panel,
-.page-bookkeeping-accounting.page-ar-ap-services .bk-cta-panel {
+/* Financial Statement Analysis + AR/AP — extra breathing room in bottom CTA (non-image panels only) */
+.page-bookkeeping-accounting.page-financial-statement-analysis .bk-cta-panel:not(.caaft-cta-panel),
+.page-bookkeeping-accounting.page-ar-ap-services .bk-cta-panel:not(.caaft-cta-panel) {
     padding: clamp(48px, 8vw, 88px) clamp(22px, 4.5vw, 48px);
 }
 
@@ -10762,28 +10939,12 @@ body.home-3.page-accounting-reporting li {
     font-weight: 700;
 }
 
-.page-bookkeeping-accounting .bk-cta-title {
-    margin: 0 0 14px;
-    font-family: var(--heading-font);
-    font-size: clamp(1.9rem, 4vw, 2.7rem);
-    line-height: 1.2;
+.page-bookkeeping-accounting .bk-cta-panel.caaft-cta-panel .bk-cta-title,
+.page-accounting-reporting .bk-cta-panel.caaft-cta-panel .bk-cta-title {
+    font-size: 32px;
     font-weight: 700;
-    color: #fff;
-    text-align: center;
-}
-
-.page-bookkeeping-accounting.page-ar-ap-services .bk-cta-title {
-    padding-left: clamp(20px, 6vw, 72px);
-    padding-right: clamp(20px, 6vw, 72px);
-    box-sizing: border-box;
-}
-
-@media (min-width: 992px) {
-    .page-bookkeeping-accounting .bk-cta-title {
-        max-width: 50vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    line-height: 1.25;
+    max-width: min(920px, 94vw);
 }
 
 .page-bookkeeping-accounting .bk-cta-text {
@@ -11260,28 +11421,61 @@ body.home-3.page-accounting-reporting li {
     text-justify: auto !important;
 }
 
-/* Reusable caaft-cta.php — dark image panel, centered copy, theme button */
+/* Reusable caaft-cta.php — dark image panel, centered headline & button, justified body copy */
 .bk-cta-panel.caaft-cta-panel {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
     box-shadow: 0 14px 36px rgba(10, 36, 88, 0.22);
     background-color: #0a1020;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/3.jpg") !important;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    min-height: clamp(304px, 42vw, 416px);
+    box-sizing: border-box;
+    justify-content: center;
 }
 
+/* Shared bottom CTA heading — same size/weight/width on all service pages */
 .bk-cta-panel.caaft-cta-panel .bk-cta-title {
-    max-width: 760px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-wrap: balance;
+    max-width: min(920px, 94vw);
+    margin: 0 auto 14px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: var(--heading-font);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #fff;
+    text-align: center;
+    text-wrap: normal;
+}
+
+.bk-cta-panel.caaft-cta-panel .bk-cta-title .bk-cta-title-line {
+    display: block;
+    white-space: nowrap;
+}
+
+@media (max-width: 767.98px) {
+    .bk-cta-panel.caaft-cta-panel .bk-cta-title {
+        font-size: 28px;
+        max-width: 100%;
+    }
+
+    .bk-cta-panel.caaft-cta-panel .bk-cta-title .bk-cta-title-line {
+        white-space: normal;
+    }
+}
+
+@media (min-width: 992px) {
+    .bk-cta-panel.caaft-cta-panel .bk-cta-title {
+        max-width: min(920px, 94vw);
+    }
 }
 
 .bk-cta-panel.caaft-cta-panel .bk-cta-text {
@@ -11289,7 +11483,14 @@ body.home-3.page-accounting-reporting li {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    text-wrap: balance;
+    text-align: justify !important;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+
+.bk-cta-panel.caaft-cta-panel .bk-cta-actions {
+    justify-content: center;
+    width: 100%;
 }
 
 .bk-cta-panel.caaft-cta-panel .bk-cta-actions .bk-cta-button.theme-btn {
@@ -11309,13 +11510,6 @@ body.home-3.page-accounting-reporting li {
     text-decoration: none;
     transform: translateY(-1px);
     box-shadow: 0 12px 28px rgba(51, 182, 255, 0.44);
-}
-
-.page-bookkeeping-accounting .bk-cta-panel.caaft-cta-panel {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/3.jpg") !important;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 @media (max-width: 991.98px) {
@@ -11582,13 +11776,220 @@ body.home-3.page-accounting-reporting li {
     color: #4a5568;
 }
 
-/* ----- Homepage (home-3): trust, credentials, reviews, plans, stats, team ----- */
-body.home-3 .home3-trust-area {
-    background: var(--theme-bg-light, #f4fbff);
-    border-top: 1px solid #e8edf2;
-    border-bottom: 1px solid #e8edf2;
+/* ----- Homepage (home-3): hero trust strip — boxed stat cards + decorative shapes ----- */
+body.home-3 .caaft-home-trust-strip {
+    position: relative;
+    z-index: 4;
+    margin-top: 0;
+    padding: 12px 0 20px;
+    background: transparent;
 }
 
+body.home-3 .caaft-home-trust-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: -40px;
+}
+
+body.home-3 .caaft-home-trust-card {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 22px 14px 18px;
+    min-height: 132px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e8edf2;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(20, 35, 55, 0.04);
+    overflow: hidden;
+    isolation: isolate;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.home-3 .caaft-home-trust-card:hover {
+    border-color: rgba(51, 182, 255, 0.28);
+    box-shadow: 0 8px 24px rgba(51, 182, 255, 0.1);
+}
+
+body.home-3 .caaft-home-trust-shape {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease;
+}
+
+body.home-3 .caaft-home-trust-shape--a {
+    width: 72px;
+    height: 72px;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    border-radius: 50%;
+    background: rgba(51, 182, 255, 0.1);
+    transform: scale(0.45);
+    transform-origin: 100% 100%;
+    opacity: 0.55;
+}
+
+body.home-3 .caaft-home-trust-shape--b {
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    border-radius: 10px;
+    background: rgba(51, 182, 255, 0.08);
+    transform: rotate(14deg) scale(0.45);
+    transform-origin: 0% 0%;
+    opacity: 0.55;
+}
+
+body.home-3 .caaft-home-trust-card:hover .caaft-home-trust-shape--a {
+    transform: scale(1);
+    opacity: 0.12;
+}
+
+body.home-3 .caaft-home-trust-card:hover .caaft-home-trust-shape--b {
+    transform: rotate(14deg) scale(1);
+    opacity: 0.1;
+}
+
+body.home-3 .caaft-home-trust-icon,
+body.home-3 .caaft-home-trust-body {
+    position: relative;
+    z-index: 1;
+}
+
+body.home-3 .caaft-home-trust-icon {
+    flex: 0 0 auto;
+    width: 52px;
+    height: 52px;
+    margin: 0 0 14px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--theme-color);
+    color: #ffffff;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(51, 182, 255, 0.28);
+}
+
+body.home-3 .caaft-home-trust-icon i {
+    display: block;
+    line-height: 1;
+    font-style: normal;
+}
+
+body.home-3 .caaft-home-trust-body {
+    width: 100%;
+    min-width: 0;
+    flex: 0 0 auto;
+}
+
+body.home-3 .caaft-home-trust-value {
+    margin: 0 0 6px;
+    font-family: var(--heading-font);
+    font-size: clamp(1.38rem, 1.9vw, 1.6rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: #1e1f30;
+}
+
+body.home-3 .caaft-home-trust-label {
+    margin: 0;
+    font-size: clamp(0.92rem, 1.08vw, 1rem);
+    font-weight: 500;
+    line-height: 1.4;
+    color: #6b7a90;
+}
+
+body.home-3 .caaft-home-trust-card:nth-child(4) .caaft-home-trust-icon {
+    background: linear-gradient(135deg, #f0a020 0%, #f5c842 100%);
+    box-shadow: 0 4px 12px rgba(240, 160, 32, 0.28);
+}
+
+@media (max-width: 1199px) {
+    body.home-3 .caaft-home-trust-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 991px) {
+    body.home-3 .caaft-home-trust-grid {
+        margin-top: -40px;
+    }
+
+    body.home-3 .caaft-home-trust-strip {
+        padding-top: 8px;
+    }
+
+    body.home-3 .caaft-home-trust-card {
+        min-height: 118px;
+        padding: 18px 12px 16px;
+    }
+
+    body.home-3 .caaft-home-trust-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 12px;
+        font-size: 1rem;
+    }
+
+    body.home-3 .caaft-home-trust-value {
+        font-size: 1.28rem;
+    }
+
+    body.home-3 .caaft-home-trust-label {
+        font-size: 0.88rem;
+    }
+}
+
+@media (max-width: 575px) {
+    body.home-3 .caaft-home-trust-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        margin-top: -24px;
+    }
+
+    body.home-3 .caaft-home-trust-card {
+        min-height: 118px;
+        padding: 18px 10px 14px;
+    }
+
+    body.home-3 .caaft-home-trust-icon {
+        width: 46px;
+        height: 46px;
+        margin-bottom: 10px;
+        font-size: 1.05rem;
+    }
+
+    body.home-3 .caaft-home-trust-value {
+        font-size: 1.22rem;
+    }
+
+    body.home-3 .caaft-home-trust-label {
+        font-size: 0.86rem;
+    }
+}
+
+/* ----- Homepage (home-3): offer follow-up trust pills (below Our Services grid) ----- */
+body.home-3 .home3-offer-trust-strip {
+    background: #ffffff;
+    border-top: 1px solid #e8edf2;
+}
+
+/* ----- Homepage (home-3): trust, credentials, reviews, plans, stats, team ----- */
 body.home-3 .home3-cred-area {
     background: #ffffff;
 }
@@ -11739,6 +12140,85 @@ body.home-3 .home3-review-avatar--c {
     background: linear-gradient(145deg, #f59e0b, #d97706);
 }
 
+body.home-3 .home3-review-avatar--d {
+    background: linear-gradient(145deg, #6366f1, #4f46e5);
+}
+
+body.home-3 .home3-review-avatar--e {
+    background: linear-gradient(145deg, #ec4899, #db2777);
+}
+
+body.home-3 .home3-review-avatar--f {
+    background: linear-gradient(145deg, #14b8a6, #0d9488);
+}
+
+body.home-3 .home3-review-avatar--g {
+    background: linear-gradient(145deg, #8b5cf6, #7c3aed);
+}
+
+body.home-3 .home3-reviews-slider {
+    position: relative;
+    margin-top: 8px;
+}
+
+body.home-3 .home3-reviews-slider .home3-reviews-slide {
+    padding: 6px 8px 12px;
+    height: 100%;
+}
+
+body.home-3 .home3-reviews-slider.owl-carousel .owl-stage {
+    display: flex;
+    align-items: stretch;
+}
+
+body.home-3 .home3-reviews-slider.owl-carousel .owl-item {
+    display: flex;
+    align-items: stretch;
+}
+
+body.home-3 .home3-reviews-slider .owl-nav {
+    margin-top: 28px;
+    text-align: center;
+}
+
+body.home-3 .home3-reviews-slider .owl-nav button.owl-prev,
+body.home-3 .home3-reviews-slider .owl-nav button.owl-next {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background: var(--theme-color) !important;
+    color: #fff !important;
+    font-size: 1rem;
+    transition: opacity 0.2s ease;
+}
+
+body.home-3 .home3-reviews-slider .owl-nav button.owl-prev:hover,
+body.home-3 .home3-reviews-slider .owl-nav button.owl-next:hover {
+    opacity: 0.88;
+}
+
+body.home-3 .home3-reviews-slider .owl-dots {
+    text-align: center;
+    margin-top: 18px;
+}
+
+body.home-3 .home3-reviews-slider .owl-dots .owl-dot span {
+    background: #c5d4e3;
+    margin: 4px;
+    border-radius: 10px;
+    width: 14px;
+    height: 7px;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+body.home-3 .home3-reviews-slider .owl-dots .owl-dot.active span {
+    background: var(--theme-color);
+    width: 22px;
+}
+
 body.home-3 .home3-review-name {
     font-weight: 800;
     font-size: 1.02rem;
@@ -11757,6 +12237,73 @@ body.home-3 .home3-review-role {
 
 body.home-3 .home3-plans-area {
     background: #ffffff;
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg {
+    position: relative;
+    background: url('../img/caaft-why-choose-us.png') center / cover no-repeat;
+    color: #fff;
+    z-index: 1;
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg > .container {
+    position: relative;
+    z-index: 1;
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg .site-title {
+    color: #ffffff;
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg .site-title span {
+    color: var(--theme-color, #33b6ff);
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg .site-title-tagline.light {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg .home3-stats-figure {
+    color: #ffffff;
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg .home3-stats-figure span {
+    color: var(--theme-color, #33b6ff);
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg .home3-stats-caption {
+    color: #ffffff;
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg .home3-stats-highlight {
+    background: #fff;
+    border: 1px solid #e8edf2;
+    box-shadow: 0 4px 24px rgba(15, 35, 60, 0.06);
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg .home3-stats-highlight-icon {
+    background: rgba(51, 182, 255, 0.12);
+    color: var(--theme-color);
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg .home3-stats-highlight h3 {
+    color: #1f2c40;
+}
+
+body.home-3 .home3-stats-area.home3-stats-area--hero-bg .home3-stats-highlight p {
+    color: #4a5568;
 }
 
 body.home-3 .home3-stats-area {

@@ -145,13 +145,13 @@ declare(strict_types=1);
         'CAAFT manages the complete annual compliance cycle for private limited companies — so businesses stay clean, credible, and confidently on track.',
     ];
     $caaft_hero_primary_cta_label = 'File Your ROC Returns Now';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Private Limited Company Annual Compliance';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Get Fully Compliant Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -431,7 +431,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'plc-compliance-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -461,7 +463,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Get Compliant — and Stay That Way?';
     $caaft_cta_text = 'Compliance deadlines do not pause for business priorities. Every missed filing adds penalties, every missed meeting creates liability, and every year of non-compliance compounds the risk to directors and the company alike. Whether starting fresh, catching up on missed filings, or looking for a reliable annual compliance partner — CAAFT handles everything from filings and meetings to records and renewals, so no deadline is ever missed.';
     $caaft_cta_button_label = 'Get Fully Compliant Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

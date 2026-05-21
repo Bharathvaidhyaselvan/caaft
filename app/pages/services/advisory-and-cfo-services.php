@@ -181,7 +181,7 @@
             "From virtual CFO support to investment-grade valuations, CAAFT gives your business the financial expertise to make better decisions, plan ahead, and grow with confidence. Every business reaches a point where bookkeeping isn't enough — you need senior financial thinking, not just numbers. CAAFT delivers CFO-level expertise on a flexible, engagement-based model that fits your business and your budget.",
         ];
         $caaft_hero_primary_cta_label = 'Book a Free Advisory Consultation';
-        $caaft_hero_primary_cta_href = '/contact.php';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
         $caaft_hero_secondary_cta_href = '/cfo-financial-management-services';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
@@ -226,6 +226,7 @@ $caaft_enquiry_input_id_prefix = 'ac';
         $why_choose_caaft_title = 'WHY CHOOSE CAAFT';
         $why_choose_caaft_intro = 'Businesses trust CAAFT for strategic CFO and advisory services, insightful financial guidance, and dependable support that drives sustainable business growth.';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             ['icon_class' => 'fas fa-user-check', 'title' => 'CA-Led, Not Consultant-Led', 'text' => 'Every engagement is led by a Chartered Accountant with hands-on experience — not a generalist working from a template.'],

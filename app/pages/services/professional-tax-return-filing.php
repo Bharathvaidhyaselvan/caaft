@@ -119,13 +119,13 @@ declare(strict_types=1);
         'Employers must deduct and deposit professional tax on behalf of their workforce, while eligible individuals must register and pay independently. Accurate and timely professional tax return filing helps businesses avoid penalties, maintain payroll compliance, and meet state-specific regulatory requirements without disruption. CAAFT delivers complete professional tax registration and return filing services — across all applicable states, for every business type and professional category.',
     ];
     $caaft_hero_primary_cta_label = 'Stay PT Compliant Without Stress ';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Professional Tax Return Filing';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Complete Your PT Registration Now';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -343,7 +343,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'pt-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for seamless business incorporation, timely registrations, and dependable compliance support that scales with their growth';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -373,7 +375,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Get Your Professional Tax Certificate Today — Fast, Accurate & Fully Compliant';
     $caaft_cta_text = 'Professional tax registration, return filing, and ongoing compliance managed accurately across every applicable state — so businesses can focus on operations without regulatory risk or missed deadlines. Whether registering for the first time, managing multi-state PT obligations, or regularising past defaults — CAAFT delivers complete professional tax compliance from the first registration through to every subsequent return.';
     $caaft_cta_button_label = 'Complete Your PT Registration Now';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

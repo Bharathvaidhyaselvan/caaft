@@ -96,14 +96,14 @@ declare(strict_types=1);
 'Closing a company is not just about stopping operations—it is a structured legal process under the Companies Act, 2013 and the Insolvency and Bankruptcy Code, 2016. It involves ROC filings, liability clearance, and strict compliance procedures. Delays can lead to penalties, director disqualification, and higher costs. CAAFT provides end-to-end support for smooth company closure and strike off for Private Limited Companies, dormant startups, and foreign subsidiaries in India.',
     ];
     $caaft_hero_primary_cta_label = 'Apply for Strike Off Now';
-    $caaft_hero_primary_cta_href = '/contact';
+    $caaft_hero_primary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Winding Up of Company';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
-    $caaft_enquiry_honeypot_website = false;
-    include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+    $caaft_enquiry_honeypot_website = false;        $caaft_service_cta_label = 'Complete Company Closure Today';
+
+        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
     <?php
@@ -298,7 +298,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'winding-up-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -328,7 +330,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Close the Company the Right Way?';
     $caaft_cta_text = 'Every month an inactive company remains open without filing, penalties compound and director risk increases. CAAFT delivers accurate, legally complete company closure support — from pre-closure compliance audit to final dissolution certificate — for Private Limited Companies, dormant startups, and foreign subsidiaries across India.';
     $caaft_cta_button_label = 'Complete Company Closure Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

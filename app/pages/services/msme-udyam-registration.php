@@ -92,17 +92,15 @@ declare(strict_types=1);
         'MSME registration is an official process introduced by the Ministry of Micro, Small, and Medium Enterprises in India. This registration formally recognizes your business as a micro, small, or medium enterprise and provides access to various government benefits, including subsidies, schemes, and priority sector lending from banks.',
         'The process, also called MSME Udyog Aadhaar registration or Aadhaar Udyog online registration, is now simplified through Udyam Registration, allowing entrepreneurs to complete the entire process online quickly and efficiently.',
     ];
-    $caaft_hero_primary_cta_label = 'Enquire Now';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_label = 'Start Udyam Registration';
-    $caaft_hero_secondary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+    $caaft_hero_primary_cta_label = 'Start Udyam Registration';
+    $caaft_hero_primary_cta_href = '/contact#contact_us';
+    $caaft_hero_secondary_cta_label = '';
     $caaft_enquiry_service = 'MSME / Udyam Registration';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
-    $caaft_enquiry_honeypot_website = false;
-    include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+    $caaft_enquiry_honeypot_website = false;        $caaft_service_cta_label = 'Start Your MSME Registration Now';
+
+        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
     <?php
@@ -196,7 +194,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'msme-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for seamless business incorporation, timely registrations, and dependable compliance support that scales with their growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -214,7 +214,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Start Your MSME / Udyam Registration Today';
     $caaft_cta_text = 'Get your business officially recognized as a micro, small, or medium enterprise with MSME registration. Complete your Udyam / Udyog Aadhaar online registration accurately and quickly to unlock government benefits, better financing options, and increased credibility in the market.';
     $caaft_cta_button_label = 'Start Your MSME Registration Now';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

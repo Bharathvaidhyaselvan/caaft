@@ -358,13 +358,13 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         <nav class="navbar navbar-expand-lg">
             <div class="container position-relative">
 
-                    <a class="navbar-brand static-logo" id="manimaenu" href="https://caaft.builtbybrevia.com/">
+                    <a class="navbar-brand static-logo" id="manimaenu" href="/">
                     <img src="assets/img/caaft-logo-header.webp" alt="CAAFT Consultancy Services" class="img-fluid" width="150" height="132" decoding="async">
                 </a>
-                <a class="navbar-brand reaming-logo" id="submenu" href="https://caaft.builtbybrevia.com/">
+                <a class="navbar-brand reaming-logo" id="submenu" href="/">
                     <img src="assets/img/caaft-static-logo.webp" alt="CAAFT Consultancy Services" class="img-fluid" width="150" height="132" decoding="async">
                 </a>
-                <a class="navbar-brand fixed_logo" href="https://caaft.builtbybrevia.com/">
+                <a class="navbar-brand fixed_logo" href="/">
                     <img src="assets/img/static-logos.webp" alt="CAAFT Consultancy Services" class="img-fluid" width="160" height="62" decoding="async">
                 </a>
 
@@ -388,7 +388,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a class="nav-link <?= ($activePage == 'index') ? 'active' : ''; ?>" href="index.php">Home</a>
+                            <a class="nav-link <?= ($activePage == 'index') ? 'active' : ''; ?>" href="/">Home</a>
                         </li>
 
                         <li class="nav-item">

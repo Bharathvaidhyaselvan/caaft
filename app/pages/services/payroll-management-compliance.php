@@ -144,13 +144,13 @@ declare(strict_types=1);
 'CAAFT delivers end-to-end payroll management services for startups, SMEs, large enterprises, and MNCs operating in India. From accurate salary processing to statutory compliance — every layer of complexity is handled so internal teams can focus on what matters most.',
     ];
     $caaft_hero_primary_cta_label = 'Stay Payroll Compliant Every Month';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Payroll Management & Compliance';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Outsource Payroll with Confidence';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -465,7 +465,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'payroll-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for strategic CFO and advisory services, insightful financial guidance, and dependable support that drives sustainable business growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -496,7 +498,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Take Payroll Off Your Plate?';
     $caaft_cta_text = 'Expert payroll management delivers accurate processing, full statutory compliance, and complete peace of mind — every month, without exception. Whether the need is a first payroll setup, outsourced processing, or multi-state compliance management — CAAFT handles every layer so internal teams can focus entirely on building the business.';
     $caaft_cta_button_label = 'Outsource Payroll with Confidence';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

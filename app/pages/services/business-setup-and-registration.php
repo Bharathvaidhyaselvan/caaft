@@ -246,7 +246,7 @@
         <?php
         $why_choose_caaft_heading_id = 'bsr-why-heading';
         $why_choose_caaft_title = 'WHY CHOOSE CAAFT';
-        $why_choose_caaft_intro = '';
+        $why_choose_caaft_intro = 'Founders and growing businesses rely on CAAFT for Pvt Ltd incorporation that is filing-accurate, timeline-clear, and backed by ongoing statutory support.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             ['icon_class' => 'fas fa-layer-group', 'title' => 'End-to-End Support', 'text' => 'From structure advice to document preparation, query handling, and certificate delivery — everything is managed in one place.'],

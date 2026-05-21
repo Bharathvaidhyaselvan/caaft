@@ -445,12 +445,13 @@
                     <p class="caaft-ar-hero-lead">GST return filing is not a routine administrative task — it is a legal obligation with direct consequences for Input Tax Credit, business credibility, and GSTIN status.</p>
                     <p class="caaft-ar-hero-lead">For growing businesses dealing with multiple return types, strict deadlines, and evolving compliance requirements, even small errors affect tax records and ITC claims. CAAFT delivers professional GST return filing services — structured, accurate, and on time — for startups, SMEs, and professionals across India.</p>
                     <div class="caaft-ar-hero-ctas">
-                        <a href="/contact" class="theme-btn caaft-ar-hero-btn-primary"> File GST Returns Without Stress<i class="fas fa-arrow-right"></i></a>
+                        <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary"> File GST Returns Without Stress<i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php
 $caaft_enquiry_service = 'GST Return Filing Services';
 $caaft_enquiry_action = '/incometax-services-mail.php';
+$caaft_service_cta_label = 'Your Custom Plan Starts Here';
 include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
 ?></div></div></div></div>
             </div></div></div>
@@ -660,6 +661,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         $why_choose_caaft_heading_id = 'gst-return-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_intro='Businesses trust CAAFT for accurate GST compliance, timely return filings, and dependable tax support that keeps their business running smoothly';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -717,7 +719,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         $caaft_cta_title = 'Ready to File Without the Stress?';
         $caaft_cta_text = 'Every day of delay is a late fee accumulating — and every ITC mismatch is working capital sitting blocked. Professional GST return filing ensures every return is accurate, every deadline is met, and every ITC claim is protected — with expert support available at every step of the compliance cycle.';
         $caaft_cta_button_label = 'Your Custom Plan Starts Here';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

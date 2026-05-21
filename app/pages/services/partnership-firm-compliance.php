@@ -103,13 +103,13 @@ declare(strict_types=1);
         'Proper partnership firm compliance ensures smooth operations, accurate financial reporting, and full regulatory adherence under Indian law. Without structured compliance management, partnership firms face penalties, legal notices, banking complications, and operational challenges that are entirely avoidable. CAAFT delivers complete partnership firm compliance services — from income tax filing and GST returns to deed amendments, bookkeeping, and ongoing statutory monitoring.',
     ];
     $caaft_hero_primary_cta_label = ' File GST & Tax Returns With Experts ';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Partnership Firm Compliance';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Get Your Firm Fully Compliant Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -236,7 +236,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'partnership-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -266,7 +268,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Manage Partnership Firm Compliance the Right Way?';
     $caaft_cta_text = 'Timely income tax filings, accurate GST returns, up-to-date partnership deeds, and clean financial records — managed consistently throughout the year so the firm remains legally protected, penalty-free, and credible with every bank, authority, and business partner it interacts with. Whether starting fresh, regularising past compliance gaps, or looking for a reliable annual compliance partner — CAAFT delivers complete partnership firm compliance management built around every firm\'s specific needs.';
     $caaft_cta_button_label = 'Get Your Firm Fully Compliant Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

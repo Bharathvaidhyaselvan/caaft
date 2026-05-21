@@ -129,13 +129,13 @@ declare(strict_types=1);
         'CAAFT helps startups, SMEs, manufacturers, and HR teams get EPF and ESI registered correctly and stay compliant every single month — without the confusion, the chase, or the regulatory risk that comes from managing it without dedicated expert support.',
     ];
     $caaft_hero_primary_cta_label = 'Fast & Accurate PF & ESI Registration ';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'EPF & ESI Registration';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Get Fully Compliant Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -433,7 +433,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'epfesi-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for seamless business incorporation, timely registrations, and dependable compliance support that scales with their growth';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -463,7 +465,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Get Compliant? Start Today.';
     $caaft_cta_text = 'Whether registering for the first time, resolving a compliance backlog, or looking for a reliable monthly EPF and ESI filing partner — CAAFT makes it straightforward. Complete registration, accurate monthly filings, proactive notice handling, and ongoing compliance management — all delivered without the confusion, the missed deadlines, or the regulatory risk that comes from managing it without dedicated expert support.';
     $caaft_cta_button_label = 'Get Fully Compliant Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

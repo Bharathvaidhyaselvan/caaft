@@ -104,14 +104,14 @@ declare(strict_types=1);
         'Staying compliant keeps the OPC legally active, protects the director from personal liability, avoids accumulating penalties, and builds credibility with banks, investors, and regulatory authorities. CAAFT delivers complete OPC annual compliance management — from financial statement preparation and ROC filings through to director KYC and income tax returns.',
     ];
     $caaft_hero_primary_cta_label = 'Keep Your OPC Legally Active ';
-    $caaft_hero_primary_cta_href = '/contact';
+    $caaft_hero_primary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'OPC Annual Compliance';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
-    $caaft_enquiry_honeypot_website = false;
-    include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+    $caaft_enquiry_honeypot_website = false;        $caaft_service_cta_label = 'Get OPC Compliant Today';
+
+        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
     <?php
@@ -249,35 +249,13 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
-    <section class="plc-docs-section" aria-labelledby="opc-docs-heading">
-        <div class="container">
-            <h2 id="opc-docs-heading" class="plc-docs-title">Documents Required for OPC Annual Compliance</h2>
-            <article class="plc-docs-card">
-                <div class="plc-docs-card-head">
-                    <span class="plc-docs-card-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></span>
-                    <h3>Required Documents</h3>
-                </div>
-                <ul class="plc-docs-card-list">
-                    <li>Certificate of Incorporation and CIN</li>
-                    <li>MOA and AOA of the OPC</li>
-                    <li>PAN and DSC of the director</li>
-                    <li>Aadhaar and PAN of the director (for DIR-3 KYC)</li>
-                    <li>Bank account statements for the financial year</li>
-                    <li>Books of accounts — cash book, ledger, and supporting vouchers</li>
-                    <li>Previous year audited financial statements</li>
-                    <li>Auditor appointment details and consent letter</li>
-                    <li>Previous year AOC-4 and MGT-7A acknowledgements</li>
-                    <li>Details of any changes to nominee, director, or registered office during the year</li>
-                </ul>
-            </article>
-        </div>
-    </section>
-
     <?php
     $why_choose_caaft_heading_id = 'opc-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -307,7 +285,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Manage OPC Compliance the Right Way?';
     $caaft_cta_text = 'Timely ROC filings, accurate financial reporting, director KYC, and income tax compliance — managed consistently throughout the year so the OPC remains legally active, penalty-free, and credible with every bank, investor, and authority it interacts with. Whether starting fresh, catching up on missed filings, or looking for a reliable annual compliance partner — CAAFT delivers complete OPC compliance management so the focus stays on building the business.';
     $caaft_cta_button_label = 'Get OPC Compliant Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

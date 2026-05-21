@@ -156,10 +156,13 @@
             'Whether an SME managing multiple vendors, a startup building financial discipline, or an established business dealing with high transaction volumes — structured receivable and payable management provides the financial control, payment visibility, and working capital efficiency needed to operate and grow with confidence.',
         ];
         $caaft_hero_primary_cta_label = 'Expert Cash Flow Control';
-        $caaft_hero_primary_cta_href = '/contact';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'Receivable & Payable Management Services';
         $caaft_enquiry_form_id = 'caaft-arap-enquiry-form-inner';
         $caaft_enquiry_input_id_prefix = 'arap';
+        $caaft_service_cta_label = 'Manage Your Receivables & Payables Today';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -283,6 +286,7 @@
         $why_choose_caaft_heading_id = 'arap-why-caaft-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_intro = '';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -318,13 +322,14 @@
         <?php
         $caaft_cta_section_id = 'get-in-touch';
         $caaft_cta_heading_id = 'arap-cta-heading';
-        $caaft_cta_title = 'Ready to Manage Your Receivables & Payables the Right Way?';
+        $caaft_cta_title_lines = [
+            'Ready to Manage Your Receivables & Payables',
+            'the Right Way?',
+        ];
         $caaft_cta_text = 'Accurate invoice tracking, timely collections, and structured vendor payments — delivered consistently so businesses can maintain healthy cash flow and organised financial records at every stage of growth. Whether the need is receivable monitoring, payable management, or complete AR and AP outsourcing — CAAFT delivers the structure, precision, and financial discipline to make it happen.';
         $caaft_cta_button_label = 'Manage Your Receivables & Payables Today';
-        $caaft_cta_button_href = '/contact#contact_us';
-        $caaft_cta_secondary_button_label = 'Get Expert Assistance!';
-        $caaft_cta_secondary_button_href = '/contact#contact_us';
-        include __DIR__ . '/../../includes/components/caaft-cta.php';
+        $caaft_cta_button_href = '#quote-content';
+include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 
         <?php

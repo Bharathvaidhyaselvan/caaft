@@ -129,13 +129,13 @@ declare(strict_types=1);
         'CAAFT handles the complete compliance calendar for sole proprietors — accurately, on time, and without the stress. Freelancers, retailers, e-commerce sellers, and independent professionals across India rely on structured compliance management to stay clean, credible, and penalty-free throughout the year.',
     ];
     $caaft_hero_primary_cta_label = 'Stay Compliant Without the Stress';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Sole Proprietorship Compliance';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Get Fully Compliant Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -399,7 +399,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'sole-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -429,7 +431,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Complete Compliance Filing — Focus on Growth';
     $caaft_cta_text = 'From GST filing and income tax returns to TDS compliance and tax audits — CAAFT manages the complete sole proprietorship compliance calendar so no deadline is missed and no avoidable penalty is ever paid. Whether starting fresh, catching up on overdue filings, or looking for a reliable year-round compliance partner — CAAFT delivers accurate, timely, CA-led compliance for every sole proprietor across India.';
     $caaft_cta_button_label = 'Get Fully Compliant Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

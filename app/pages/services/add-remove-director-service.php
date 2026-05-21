@@ -98,13 +98,13 @@ declare(strict_types=1);
         'Non-compliance triggers Rs. 200 per day in penalties with no upper cap and can escalate to director disqualification and company strike-off. CAAFT delivers accurate, timely director appointment and removal filings for companies across India.',
     ];
     $caaft_hero_primary_cta_label = 'Fast & Accurate Director Filing';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Add / Remove Director Service';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Complete Director Update Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -306,7 +306,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'director-change-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -336,7 +338,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Complete the Director Change the Right Way?';
     $caaft_cta_text = 'Missing the 30-day filing deadline triggers penalties that accrue daily with no ceiling — and unresolved non-compliance can escalate to NCLT proceedings and director disqualification. CAAFT delivers accurate, fast, and fully compliant director change support for companies across India.';
     $caaft_cta_button_label = 'Complete Director Update Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

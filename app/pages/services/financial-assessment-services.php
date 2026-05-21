@@ -119,13 +119,13 @@ declare(strict_types=1);
 
     ];
     $caaft_hero_primary_cta_label = 'Financial Clarity Starts Here';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Financial Assessment Services';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Get Your Financial Report Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -264,7 +264,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'financial-assessment-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for strategic CFO and advisory services, insightful financial guidance, and dependable support that drives sustainable business growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -294,7 +296,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Take Control of Your Financial Future?';
     $caaft_cta_text = 'A professional financial assessment provides the clarity needed to understand financial status, identify risks, and make confident business decisions. Whether the goal is improving cash flow, preparing for a funding round, or strengthening overall financial strategy — CAAFT delivers the expertise to make it happen.';
     $caaft_cta_button_label = 'Get Your Financial Report Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

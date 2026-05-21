@@ -96,13 +96,13 @@ declare(strict_types=1);
         'Every director of a Private Limited Company, LLP, or registered entity must complete the DIR-3 KYC filing annually by 30 September. Non-compliance leads to automatic DIN deactivation — restricting the director from filing company forms, signing statutory documents, or participating in any compliance activity — until the KYC is filed and the DIN is reactivated with a ₹5,000 penalty. CAAFT delivers accurate, timely DIR-3 KYC filing and DIN reactivation support for directors across India.',
     ];
     $caaft_hero_primary_cta_label = 'Avoid DIN Deactivation & Penalties';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'Director KYC (DIN KYC)';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Reactivate Your DIN Today';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -260,7 +260,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'din-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -290,7 +292,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Complete Director KYC the Right Way?';
     $caaft_cta_text = 'An active DIN is the foundation of every director\'s ability to participate in company compliance — from signing MCA forms to approving annual returns. Missing the 30 September deadline costs ₹5,000 in penalty and blocks all company filings until reactivation is complete. Whether filing on time, updating contact details, or reactivating a deactivated DIN — CAAFT delivers accurate, fast, and fully compliant Director KYC support for every director across India.';
     $caaft_cta_button_label = 'Reactivate Your DIN Today';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

@@ -148,10 +148,11 @@
             'Whether a startup tracking early-stage finances, an SME evaluating growth, or an established company maintaining investor transparency — structured, professionally prepared financial statements provide the clarity, control, and credibility needed to manage performance and plan with confidence.',
         ];
         $caaft_hero_primary_cta_label = 'Get Expert Assistance Today!';
-        $caaft_hero_primary_cta_href = '/contact';
-                                $caaft_enquiry_service = 'Financial Statement Analysis Services';
+                                        $caaft_enquiry_service = 'Financial Statement Analysis Services';
                                 $caaft_enquiry_form_id = 'caaft-fs-enquiry-form-inner';
                                 $caaft_enquiry_input_id_prefix = 'fs';
+        $caaft_service_cta_label = 'Get Your Numbers Right';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -277,6 +278,7 @@
         $why_choose_caaft_heading_id = 'fs-why-caaft-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate, compliant, and timely financial statement preparation that strengthens reporting quality and decision-making.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -315,7 +317,7 @@
         $caaft_cta_title = 'Ready to Prepare Your Financial Statements the Right Way?';
         $caaft_cta_text = 'Accurate financial statements give businesses the clarity, credibility, and compliance foundation needed to grow with confidence. Whether the need is monthly reporting, audit preparation, investor-ready financials, or regulatory compliance — CAAFT delivers professionally prepared statements that are accurate, structured, and always on time.';
         $caaft_cta_button_label = 'Get Your Numbers Right';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 

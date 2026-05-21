@@ -116,13 +116,13 @@ declare(strict_types=1);
         'A DSC acts as a secure electronic signature that verifies identity, keeps submitted data tamper-proof, and ensures legal validity across official government portals. Whether registering a company, filing GST returns, applying for an IEC, or participating in government tenders — a valid DSC is a mandatory requirement. CAAFT delivers fast, accurate DSC registration for individuals, directors, and businesses across India — with technical setup support included.',
     ];
     $caaft_hero_primary_cta_label = 'Fast & Easy DSC Registration';
-    $caaft_hero_primary_cta_href = '/contact';
-    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'DSC Registration';
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_recaptcha = false;
     $caaft_enquiry_honeypot_website = false;
+    $caaft_service_cta_label = 'Start Your DSC Registration Now';
+
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
@@ -295,7 +295,9 @@ declare(strict_types=1);
     $why_choose_caaft_heading_id = 'dsc-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
+
     $why_choose_caaft_link_desc = true;
+
     $why_choose_caaft_intro = 'Businesses trust CAAFT for seamless business incorporation, timely registrations, and dependable compliance support that scales with their growth.';
     $why_choose_caaft_section_class = 'why-choose-caaft py-90';
     $why_choose_caaft_items = [
@@ -325,7 +327,7 @@ declare(strict_types=1);
     $caaft_cta_title = 'Ready to Secure Your Digital Transactions the Right Way?';
     $caaft_cta_text = 'A Digital Signature Certificate ensures that electronic documents remain authentic, legally valid, and protected from unauthorised changes — across every government portal and compliance submission. Whether registering for the first time, renewing an expiring certificate, or resolving a USB token issue — CAAFT delivers fast, accurate, and fully compliant DSC services for every individual and business type across India.';
     $caaft_cta_button_label = 'Start Your DSC Registration Now';
-    $caaft_cta_button_href = '/contact#contact_us';
+    $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
     ?>
 

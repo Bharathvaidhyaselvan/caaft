@@ -508,11 +508,12 @@
             'GST registration is not just a compliance requirement — it is the legal foundation every Indian business needs to operate, collect tax, and claim input tax credit with confidence. Whether a startup completing its first registration, an SME expanding into new states, or an e-commerce seller navigating platform-specific requirements — CAAFT delivers accurate, fast, and hassle-free GST registration services that get businesses compliant from day one.',
         ];
         $caaft_hero_primary_cta_label = 'Quick & Hassle-Free Setup';
-        $caaft_hero_primary_cta_href = '/contact';
-        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+                $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
         $caaft_enquiry_service = 'GST Registration Services';
         $caaft_enquiry_action = '/incometax-services-mail.php';
+        $caaft_service_cta_label = 'Go GST Live Today';
+
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>
 
@@ -625,6 +626,7 @@
         $why_choose_caaft_heading_id = 'gst-reg-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT';
         $why_choose_caaft_show_intro = true;
+
         $why_choose_caaft_intro='Businesses trust CAAFT for accurate GST compliance, timely return filings, and dependable tax support that keeps their business running smoothly';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
@@ -682,7 +684,7 @@
         $caaft_cta_title = 'Ready to Register for GST?';
         $caaft_cta_text = 'A valid GSTIN is the starting point for legal tax collection, input tax credit claims, and structured business operations across India. Whether the need is a first-time registration, a multi-state expansion, or restoration of a cancelled GSTIN — CAAFT delivers accurate, fast, and fully compliant GST registration support every time.';
         $caaft_cta_button_label = 'Go GST Live Today';
-        $caaft_cta_button_href = '/contact#contact_us';
+        $caaft_cta_button_href = '#quote-content';
         include __DIR__ . '/../../includes/components/caaft-cta.php';
         ?>
 
