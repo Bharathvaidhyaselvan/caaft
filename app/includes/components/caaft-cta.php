@@ -65,7 +65,7 @@ $caaft_cta_secondary_button_icon_class = isset($caaft_cta_secondary_button_icon_
 ?>
 <section<?php echo $caaft_cta_section_id !== '' ? ' id="' . htmlspecialchars($caaft_cta_section_id, ENT_QUOTES, 'UTF-8') . '"' : ''; ?> class="<?php echo htmlspecialchars($caaft_cta_section_class, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars((string) $caaft_cta_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
-        <div class="bk-cta-panel caaft-cta-panel">
+        <div class="bk-cta-panel caaft-cta-panel caaft-cta-panel--stacked">
             <h2 id="<?php echo htmlspecialchars((string) $caaft_cta_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="bk-cta-title">
                 <?php if ($caaft_cta_title_lines !== []) : ?>
                     <?php foreach ($caaft_cta_title_lines as $caaft_cta_title_line) : ?>

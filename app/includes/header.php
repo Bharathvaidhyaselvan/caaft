@@ -1,10 +1,16 @@
 <?php
-$activePage = basename($_SERVER['PHP_SELF'], ".php");
-$GLOBALS['caaft_active_page'] = $activePage;
+if (!empty($GLOBALS['caaft_active_page'])) {
+    $activePage = (string) $GLOBALS['caaft_active_page'];
+} else {
+    $activePage = basename($_SERVER['PHP_SELF'] ?? '', '.php');
+    $GLOBALS['caaft_active_page'] = $activePage;
+}
 
 // Helper: check if current page matches any of the given slugs
-function isServiceActive($activePage, $slugs) {
-    return in_array($activePage, $slugs) ? 'active' : '';
+if (!function_exists('isServiceActive')) {
+    function isServiceActive($activePage, $slugs) {
+        return in_array($activePage, $slugs, true) ? 'active' : '';
+    }
 }
 
 $allServiceSlugs = [

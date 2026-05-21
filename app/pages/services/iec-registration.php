@@ -113,12 +113,11 @@ declare(strict_types=1);
         'The IEC is the official identification number for all international trade transactions — required by customs authorities, banks, shipping companies, and global marketplaces before any cross-border activity can begin. CAAFT delivers complete IEC registration services across India — handling documentation, DGFT portal filing, and compliance so businesses can focus on expanding globally.',
     ];
     $caaft_hero_primary_cta_label = 'IEC Registration Made Simple';
-        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+    $caaft_hero_primary_cta_href = '/contact#contact_us';
+    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'IEC Registration';
     $caaft_enquiry_action = '/business-registration-mail.php';
-    $caaft_enquiry_title = 'Let\'s Talk';
     $caaft_enquiry_honeypot_website = false;
-    $caaft_service_cta_label = 'Launch Your Global Trade Journey';
 
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>

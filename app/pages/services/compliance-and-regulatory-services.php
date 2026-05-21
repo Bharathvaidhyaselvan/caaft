@@ -201,7 +201,7 @@
         $caaft_hero_primary_cta_label = 'Get a Free Compliance Review';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
-        $caaft_hero_secondary_cta_href = '/roc-compliance-services.php#parentVerticalTab1';
+        $caaft_hero_secondary_cta_href = '#parentVerticalTab1';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
                                 $caaft_enquiry_service = 'Compliance and Regulatory Services';
@@ -305,7 +305,7 @@
         $caaft_git_actions = [
             ['href' => 'tel:+918870078870', 'class' => 'theme-btn caaft-ar-git-btn-call', 'label' => 'Call Us: +91 88700 78870'],
             ['href' => 'https://api.whatsapp.com/send?phone=918870078870', 'class' => 'caaft-ar-git-btn-outline', 'label' => '<i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us', 'target' => '_blank', 'rel' => 'noopener noreferrer'],
-            ['href' => '#caaft-cr-enquiry-form-inner', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Clear Your Pending Filings'],
+            ['href' => '#quote-content', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Clear Your Pending Filings'],
         ];
         $caaft_git_cards = [
             ['icon_class' => 'fas fa-phone', 'label' => 'Call us', 'values' => [['href' => 'tel:+918870078870', 'text' => '+91 88700 78870'], ['href' => 'tel:+919944617891', 'text' => '+91 88700 02354']]],

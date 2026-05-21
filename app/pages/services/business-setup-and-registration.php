@@ -189,7 +189,7 @@
         $caaft_hero_primary_cta_label = 'Get a Free Registration Consultation';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
-        $caaft_hero_secondary_cta_href = '/private-limited-company-registration';
+        $caaft_hero_secondary_cta_href = '/business-setup-and-registration#bsr-company-heading';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
                                 $caaft_enquiry_service = 'Business Setup & Registration Services';
@@ -216,12 +216,12 @@
         $caaft_card_section_intro = 'Choosing the right business structure is one of the most important decisions you will make. CAAFT advises on the best fit for your goals - and handles the complete incorporation process from document preparation to certificate of registration.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-rocket', 'title' => 'Private Limited Company', 'text' => 'The most preferred structure for funded startups and growing businesses - incorporated under the Companies Act with limited liability and separate legal identity.'],
-            ['icon_class' => 'fas fa-landmark', 'title' => 'Public Limited Company', 'text' => 'For businesses planning to raise capital from the public - incorporated with the governance and compliance framework required for larger-scale operations.'],
-            ['icon_class' => 'fas fa-user', 'title' => 'One Person Company (OPC)', 'text' => 'The ideal structure for solo entrepreneurs who want the credibility and limited liability of a company without the need for co-founders or partners.'],
-            ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Registration', 'text' => 'A flexible structure that combines the benefits of a partnership with limited liability protection - suited for professionals, consultants, and service businesses.'],
-            ['icon_class' => 'fas fa-users', 'title' => 'Partnership Firm Registration', 'text' => 'A straightforward structure for two or more individuals running a business together - registered under the Indian Partnership Act with a defined partnership deed.'],
-            ['icon_class' => 'fas fa-store', 'title' => 'Sole Proprietorship Registration', 'text' => 'The simplest business structure for individual operators - quick to set up, easy to manage, and ideal for freelancers and small business owners starting out.'],
+            ['icon_class' => 'fas fa-rocket', 'title' => 'Private Limited Company', 'text' => 'The most preferred structure for funded startups and growing businesses - incorporated under the Companies Act with limited liability and separate legal identity.', 'href' => '/private-limited-company-registration'],
+            ['icon_class' => 'fas fa-landmark', 'title' => 'Public Limited Company', 'text' => 'For businesses planning to raise capital from the public - incorporated with the governance and compliance framework required for larger-scale operations.', 'href' => '/public-limited-company-registration'],
+            ['icon_class' => 'fas fa-user', 'title' => 'One Person Company (OPC)', 'text' => 'The ideal structure for solo entrepreneurs who want the credibility and limited liability of a company without the need for co-founders or partners.', 'href' => '/one-person-company-registration'],
+            ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Registration', 'text' => 'A flexible structure that combines the benefits of a partnership with limited liability protection - suited for professionals, consultants, and service businesses.', 'href' => '/llp-registration-services'],
+            ['icon_class' => 'fas fa-users', 'title' => 'Partnership Firm Registration', 'text' => 'A straightforward structure for two or more individuals running a business together - registered under the Indian Partnership Act with a defined partnership deed.', 'href' => '/register-partnership-firm'],
+            ['icon_class' => 'fas fa-store', 'title' => 'Sole Proprietorship Registration', 'text' => 'The simplest business structure for individual operators - quick to set up, easy to manage, and ideal for freelancers and small business owners starting out.', 'href' => '/register-sole-proprietorship'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
@@ -232,13 +232,13 @@
         $caaft_card_section_intro = 'Beyond incorporation, every business needs the right licences and registrations to operate legally, access government benefits, and build credibility with customers and partners.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-certificate', 'title' => 'MSME / Udyam Registration', 'text' => 'Register your business as a Micro, Small, or Medium Enterprise to access government schemes, priority lending, and statutory protections available to MSMEs.'],
-            ['icon_class' => 'fas fa-utensils', 'title' => 'FSSAI Registration', 'text' => 'Mandatory food business licence for anyone involved in the manufacture, storage, distribution, or sale of food products - issued by the Food Safety and Standards Authority of India.'],
-            ['icon_class' => 'fas fa-file-signature', 'title' => 'Professional Tax Registration', 'text' => 'State-level registration required for employers and self-employed professionals to comply with professional tax deduction and payment obligations.'],
-            ['icon_class' => 'fas fa-user-shield', 'title' => 'EPF & ESI Registration & Compliance', 'text' => 'End-to-end support for Provident Fund and Employee State Insurance registration, monthly contribution filings, and ongoing compliance - ensuring your business meets all statutory employer obligations under labour law.'],
-            ['icon_class' => 'fas fa-globe', 'title' => 'Import Export Code (IEC)', 'text' => 'The 10-digit code issued by DGFT that is mandatory for any business engaged in importing or exporting goods and services from India.'],
-            ['icon_class' => 'fas fa-key', 'title' => 'Digital Signature Certificate (DSC)', 'text' => 'An electronically issued certificate used for secure online filings with MCA, Income Tax, GST, and other government portals - required for authorised signatories.'],
-            ['icon_class' => 'fas fa-hand-holding-heart', 'title' => '12A & 80G Registration', 'text' => 'For non-profit organisations and NGOs - 12A grants income tax exemption to the trust or society, while 80G enables donors to claim deductions on their contributions.'],
+            ['icon_class' => 'fas fa-certificate', 'title' => 'MSME / Udyam Registration', 'text' => 'Register your business as a Micro, Small, or Medium Enterprise to access government schemes, priority lending, and statutory protections available to MSMEs.', 'href' => '/msme-udyam-registration'],
+            ['icon_class' => 'fas fa-utensils', 'title' => 'FSSAI Registration', 'text' => 'Mandatory food business licence for anyone involved in the manufacture, storage, distribution, or sale of food products - issued by the Food Safety and Standards Authority of India.', 'href' => '/fssai-food-licence-india'],
+            ['icon_class' => 'fas fa-file-signature', 'title' => 'Professional Tax Registration', 'text' => 'State-level registration required for employers and self-employed professionals to comply with professional tax deduction and payment obligations.', 'href' => '/professional-tax-return-filing'],
+            ['icon_class' => 'fas fa-user-shield', 'title' => 'EPF & ESI Registration & Compliance', 'text' => 'End-to-end support for Provident Fund and Employee State Insurance registration, monthly contribution filings, and ongoing compliance - ensuring your business meets all statutory employer obligations under labour law.', 'href' => '/epf-esi-registration-compliance'],
+            ['icon_class' => 'fas fa-globe', 'title' => 'Import Export Code (IEC)', 'text' => 'The 10-digit code issued by DGFT that is mandatory for any business engaged in importing or exporting goods and services from India.', 'href' => '/iec-registration'],
+            ['icon_class' => 'fas fa-key', 'title' => 'Digital Signature Certificate (DSC)', 'text' => 'An electronically issued certificate used for secure online filings with MCA, Income Tax, GST, and other government portals - required for authorised signatories.', 'href' => '/digital-signature-certificate-registration'],
+            ['icon_class' => 'fas fa-hand-holding-heart', 'title' => '12A & 80G Registration', 'text' => 'For non-profit organisations and NGOs - 12A grants income tax exemption to the trust or society, while 80G enables donors to claim deductions on their contributions.', 'href' => '/12a-80g-registration'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
@@ -284,7 +284,7 @@
         $caaft_git_actions = [
             ['href' => 'tel:+918870078870', 'class' => 'theme-btn caaft-ar-git-btn-call', 'label' => 'Call Us: +91 88700 78870'],
             ['href' => 'https://api.whatsapp.com/send?phone=918870078870', 'class' => 'caaft-ar-git-btn-outline', 'label' => '<i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us', 'target' => '_blank', 'rel' => 'noopener noreferrer'],
-            ['href' => '#caaft-bsr-enquiry-form-inner', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Tell Us Your Business Plan'],
+            ['href' => '#quote-content', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Tell Us Your Business Plan'],
         ];
         $caaft_git_cards = [
             ['icon_class' => 'fas fa-phone', 'label' => 'Call us', 'values' => [['href' => 'tel:+918870078870', 'text' => '+91 88700 78870'], ['href' => 'tel:+919944617891', 'text' => '+91 88700 02354']]],

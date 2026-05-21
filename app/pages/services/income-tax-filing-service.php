@@ -379,6 +379,7 @@
                             <div class="caaft-ar-hero-ctas">
                                 <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Start Filing Now<i class="fas fa-arrow-right"></i></a>
                             </div>
+                            <?php include __DIR__ . '/../../includes/components/caaft-hero-pricing-dual.php'; ?>
                         </div>
                         <div class="col-md-12 col-lg-6">
                             <div class="hero-img-wrap caaft-ar-hero-img-wrap" id="itr-enquiry-form">

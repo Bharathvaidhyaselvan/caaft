@@ -187,46 +187,6 @@
             text-justify: auto !important;
         }
 
-        .page-bookkeeping-accounting .bk-cta .bk-cta-title {
-            text-align: center !important;
-        }
-
-        .page-bookkeeping-accounting .bk-cta-panel:not(.caaft-cta-panel) {
-            text-align: center !important;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .page-bookkeeping-accounting .bk-cta-title,
-        .page-bookkeeping-accounting .bk-cta-text,
-        .page-bookkeeping-accounting .bk-cta-button {
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-
-        .page-bookkeeping-accounting .bk-cta-title {
-            max-width: 760px;
-            margin-bottom: 0 !important;
-            text-align: center !important;
-            text-wrap: balance;
-        }
-
-        .page-bookkeeping-accounting .bk-cta-text {
-            max-width: 760px;
-            line-height: 1.6;
-            margin-bottom: 0 !important;
-        }
-
-        .page-bookkeeping-accounting .bk-cta-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 210px;
-        }
-
         .page-bookkeeping-accounting #bk-faq-heading {
             text-align: center !important;
         }

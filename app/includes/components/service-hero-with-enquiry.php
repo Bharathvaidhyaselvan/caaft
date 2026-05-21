@@ -46,12 +46,16 @@ $caaft_hero_primary_cta_href = caaft_normalize_hero_contact_href(
     isset($caaft_hero_primary_cta_href) ? (string) $caaft_hero_primary_cta_href : ''
 );
 
-// Enquiry form heading: use bottom CTA label when set on the page before include.
+// Enquiry form heading: match hero primary CTA label (optional $caaft_service_cta_label override).
 if (isset($caaft_service_cta_label) && trim((string) $caaft_service_cta_label) !== '') {
-    $caaft_enquiry_title = (string) $caaft_service_cta_label;
+    $caaft_enquiry_title = trim((string) $caaft_service_cta_label);
+} elseif (trim($caaft_hero_primary_cta_label) !== '') {
+    $caaft_enquiry_title = trim($caaft_hero_primary_cta_label);
 }
 $caaft_hero_secondary_cta_label = isset($caaft_hero_secondary_cta_label) ? (string) $caaft_hero_secondary_cta_label : '';
-$caaft_hero_secondary_cta_href = isset($caaft_hero_secondary_cta_href) ? (string) $caaft_hero_secondary_cta_href : '#';
+$caaft_hero_secondary_cta_href = caaft_resolve_page_anchor_href(
+    isset($caaft_hero_secondary_cta_href) ? (string) $caaft_hero_secondary_cta_href : '#'
+);
 $caaft_hero_primary_cta_icon = isset($caaft_hero_primary_cta_icon) ? (string) $caaft_hero_primary_cta_icon : 'fas fa-arrow-right';
 $caaft_hero_secondary_cta_icon = isset($caaft_hero_secondary_cta_icon) ? (string) $caaft_hero_secondary_cta_icon : 'fas fa-arrow-down';
 $caaft_hero_secondary_extra_class = isset($caaft_hero_secondary_extra_class) ? (string) $caaft_hero_secondary_extra_class : '';

@@ -19,6 +19,8 @@ if (!isset($caaft_git_heading_id, $caaft_git_title, $caaft_git_lead, $caaft_git_
     trigger_error('caaft-get-in-touch.php: set required get-in-touch variables before including', E_USER_WARNING);
 }
 
+require_once __DIR__ . '/../caaft-url-helpers.php';
+
 $caaft_git_section_id = isset($caaft_git_section_id) && $caaft_git_section_id !== '' ? (string) $caaft_git_section_id : 'get-in-touch';
 $caaft_git_section_class = isset($caaft_git_section_class) && $caaft_git_section_class !== ''
     ? (string) $caaft_git_section_class
@@ -40,8 +42,10 @@ $caaft_git_note = isset($caaft_git_note) ? (string) $caaft_git_note : '';
                 <h2 id="<?php echo htmlspecialchars((string) $caaft_git_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="caaft-ar-git-h2"><?php echo strip_tags((string) $caaft_git_title, '<em><strong><br>'); ?></h2>
                 <p class="caaft-ar-git-lead"><?php echo htmlspecialchars((string) $caaft_git_lead, ENT_QUOTES, 'UTF-8'); ?></p>
                 <div class="caaft-ar-git-ctas">
-                    <?php foreach ($caaft_git_actions as $caaft_git_action) : ?>
-                        <a href="<?php echo htmlspecialchars((string) ($caaft_git_action['href'] ?? '#'), ENT_QUOTES, 'UTF-8'); ?>" class="<?php echo htmlspecialchars((string) ($caaft_git_action['class'] ?? ''), ENT_QUOTES, 'UTF-8'); ?>"<?php echo !empty($caaft_git_action['target']) ? ' target="' . htmlspecialchars((string) $caaft_git_action['target'], ENT_QUOTES, 'UTF-8') . '"' : ''; ?><?php echo !empty($caaft_git_action['rel']) ? ' rel="' . htmlspecialchars((string) $caaft_git_action['rel'], ENT_QUOTES, 'UTF-8') . '"' : ''; ?>><?php echo strip_tags((string) ($caaft_git_action['label'] ?? ''), '<i><em><strong><br>'); ?></a>
+                    <?php foreach ($caaft_git_actions as $caaft_git_action) :
+                        $caaft_git_action_href = caaft_resolve_page_anchor_href((string) ($caaft_git_action['href'] ?? '#'));
+                        ?>
+                        <a href="<?php echo htmlspecialchars($caaft_git_action_href, ENT_QUOTES, 'UTF-8'); ?>" class="<?php echo htmlspecialchars((string) ($caaft_git_action['class'] ?? ''), ENT_QUOTES, 'UTF-8'); ?>"<?php echo !empty($caaft_git_action['target']) ? ' target="' . htmlspecialchars((string) $caaft_git_action['target'], ENT_QUOTES, 'UTF-8') . '"' : ''; ?><?php echo !empty($caaft_git_action['rel']) ? ' rel="' . htmlspecialchars((string) $caaft_git_action['rel'], ENT_QUOTES, 'UTF-8') . '"' : ''; ?>><?php echo strip_tags((string) ($caaft_git_action['label'] ?? ''), '<i><em><strong><br>'); ?></a>
                     <?php endforeach; ?>
                 </div>
                 <?php if ($caaft_git_note !== '') : ?>

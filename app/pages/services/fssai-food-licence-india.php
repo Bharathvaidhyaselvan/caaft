@@ -165,12 +165,11 @@ declare(strict_types=1);
             'Whether a home baker, cloud kitchen, restaurant, food manufacturer, or e-commerce food seller — any business involved in the manufacturing, processing, storage, distribution, or sale of food products requires valid FSSAI registration under the Food Safety and Standards Act, 2006. CAAFT delivers complete FSSAI food licence services — from determining the correct licence category and preparing documents through to portal submission, approval, and ongoing renewal.',
         ];
         $caaft_hero_primary_cta_label = 'Apply for FSSAI Licence Now';
-                $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'FSSAI Registration';
         $caaft_enquiry_action = '/business-registration-mail.php';
-        $caaft_enquiry_title = 'Let\'s Talk';
         $caaft_enquiry_honeypot_website = false;
-        $caaft_service_cta_label = 'Launch Your Food Business Legally';
 
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
         ?>

@@ -206,7 +206,7 @@
         $caaft_hero_primary_cta_label = 'Get a Free Tax Consultation';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
-        $caaft_hero_secondary_cta_href = '/income-tax-filling-services-in-chennai.php';
+        $caaft_hero_secondary_cta_href = '#tax-income-services-heading';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
                                 $caaft_enquiry_service = 'Taxation Services';
@@ -394,7 +394,7 @@
                 'rel' => 'noopener noreferrer',
             ],
             [
-                'href' => '#caaft-tax-enquiry-form-inner',
+                'href' => '#quote-content',
                 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify',
                 'label' => 'Tell Us Your Tax Needs',
             ],

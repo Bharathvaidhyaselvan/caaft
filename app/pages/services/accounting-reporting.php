@@ -170,15 +170,16 @@
             "From bookkeeping to boardroom-ready MIS reports, CAAFT gives your business the financial clarity to operate efficiently, stay audit-ready, and grow with confidence. Accurate financials aren't optional — they're the foundation every sound business decision is built on. Our qualified professionals handle every detail with precision, so you always know where your business stands and what it takes to move forward.",
         ];
         $caaft_hero_primary_cta_label = 'Get a Free Accounting Consultation';
-                $caaft_hero_secondary_cta_label = 'Explore Our Services';
-        $caaft_hero_secondary_cta_href = '/accounting-and-reporting/bookkeeping-and-accounting';
+        $caaft_hero_primary_cta_href = '/contact#contact_us';
+        $caaft_hero_secondary_cta_label = 'Explore Our Services';
+        $caaft_hero_secondary_cta_href = '#ar-offer-heading';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
 
                                 $caaft_enquiry_service = 'Accounting & Reporting Services';
                                 $caaft_enquiry_form_id = 'caaft-ar-enquiry-form';
                                 $caaft_enquiry_input_id_prefix = 'ar';
 
-        $caaft_service_cta_label = 'Get a Free Accounting Consultation';
+        $caaft_service_cta_label = 'Get a Free Accounting Consultation';    
 
 
         include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
@@ -354,7 +355,7 @@
                 'rel' => 'noopener noreferrer',
             ],
             [
-                'href' => '/contact#contact_us',
+                'href' => '#quote-content',
                 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify',
                 'label' => "Let's Simplify Your Accounting",
             ],

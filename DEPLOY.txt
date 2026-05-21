@@ -1,0 +1,33 @@
+CAAFT — full site upload (staging / production)
+=============================================
+
+1. BACK UP the current site on the server first.
+
+2. Upload the ZIP to your hosting file manager (or FTP).
+
+3. Extract the ZIP into the WEB ROOT folder — the same folder that contains index.php
+   (often public_html, www, or htdocs). Extract so files sit at the root, not inside an extra "caaft" folder.
+
+4. After extract, confirm these exist in the web root:
+   - index.php
+   - .htaccess
+   - app/bootstrap.php
+   - assets/css/style.css
+
+5. Open in the browser (then delete the file):
+   https://YOUR-DOMAIN/deploy-check.php
+   It must report "OK: All checked files and route targets are present."
+
+6. Test pages:
+   - /
+   - /public-limited-company-registration
+   - /private-limited-company-registration
+   - /epf-esi-registration-compliance
+   - /msme-udyam-registration
+
+7. If deploy-check.php is OK but a page still shows HTTP 500, check the host PHP error log
+   for that URL (missing file uploads are the most common cause).
+
+8. Delete deploy-check.php from the server when finished.
+
+Do not upload only changed PHP files — partial uploads leave missing route files and cause HTTP 500.

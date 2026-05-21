@@ -23,11 +23,13 @@ if (!isset($caaft_enquiry_service) || $caaft_enquiry_service === '') {
 $caaft_enquiry_service = isset($caaft_enquiry_service) ? (string) $caaft_enquiry_service : '';
 $caaft_enquiry_action = $caaft_enquiry_action ?? '/account-services-mail.php';
 if (isset($caaft_service_cta_label) && trim((string) $caaft_service_cta_label) !== '') {
-    $caaft_enquiry_title = (string) $caaft_service_cta_label;
+    $caaft_enquiry_title = trim((string) $caaft_service_cta_label);
+} elseif (isset($caaft_enquiry_title) && trim((string) $caaft_enquiry_title) !== '' && strcasecmp(trim((string) $caaft_enquiry_title), "Let's Talk") !== 0) {
+    $caaft_enquiry_title = trim((string) $caaft_enquiry_title);
+} elseif (isset($caaft_hero_primary_cta_label) && trim((string) $caaft_hero_primary_cta_label) !== '') {
+    $caaft_enquiry_title = trim((string) $caaft_hero_primary_cta_label);
 } else {
-    $caaft_enquiry_title = isset($caaft_enquiry_title) && trim((string) $caaft_enquiry_title) !== ''
-        ? (string) $caaft_enquiry_title
-        : 'Enquire Now';
+    $caaft_enquiry_title = 'Enquire Now';
 }
 $caaft_enquiry_recaptcha = $caaft_enquiry_recaptcha ?? true;
 $caaft_enquiry_recaptcha_sitekey = $caaft_enquiry_recaptcha_sitekey ?? '6LcO3ukrAAAAADerciVZtVVgPZqbR-iH04HfKq-K';

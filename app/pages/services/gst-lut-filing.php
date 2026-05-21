@@ -397,6 +397,7 @@
                     <div class="caaft-ar-hero-ctas">
                         <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary"> Stay Export-Ready With Experts<i class="fas fa-arrow-right"></i></a>
                     </div>
+                    <?php include __DIR__ . '/../../includes/components/caaft-hero-pricing-banner.php'; ?>
                 </div>
                 <div class="col-md-12 col-lg-6"><div class="hero-img-wrap caaft-ar-hero-img-wrap"><?php
 $caaft_enquiry_service = 'GST LUT Filing Services';

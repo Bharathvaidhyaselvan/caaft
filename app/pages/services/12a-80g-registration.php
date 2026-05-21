@@ -117,12 +117,11 @@ declare(strict_types=1);
         'CAAFT helps NGOs, public charitable trusts, and Section 8 companies secure their 12A and 80G registrations with end-to-end document support, application filing, and post-registration compliance — so the focus stays on the mission, not the paperwork.',
     ];
     $caaft_hero_primary_cta_label = 'Secure Tax Exemptions';
-        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+    $caaft_hero_primary_cta_href = '/contact#contact_us';
+    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = '12A and 80G Registration';
     $caaft_enquiry_action = '/business-registration-mail.php';
-    $caaft_enquiry_title = 'Let\'s Talk';
     $caaft_enquiry_honeypot_website = false;
-    $caaft_service_cta_label = 'Start Your NGO Registration Now';
 
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>

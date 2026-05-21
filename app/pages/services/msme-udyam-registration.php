@@ -97,10 +97,9 @@ declare(strict_types=1);
     $caaft_hero_secondary_cta_label = '';
     $caaft_enquiry_service = 'MSME / Udyam Registration';
     $caaft_enquiry_action = '/business-registration-mail.php';
-    $caaft_enquiry_title = 'Let\'s Talk';
-    $caaft_enquiry_honeypot_website = false;        $caaft_service_cta_label = 'Start Your MSME Registration Now';
+    $caaft_enquiry_honeypot_website = false;
 
-        include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
+    include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>
 
     <?php

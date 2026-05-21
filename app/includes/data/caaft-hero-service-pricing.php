@@ -24,7 +24,7 @@ return [
     'professional-tax-return-filing.php' => ['amount' => '2,999', 'govt_fee' => false],
     'epf-esi-registration-compliance.php' => ['amount' => '5,999', 'govt_fee' => false],
     'iec-registration.php' => ['amount' => '2,999', 'govt_fee' => true],
-    'digital-signature-certificate-registration.php' => ['amount' => '2,999', 'govt_fee' => false],
+    'digital-signature-certificate-registration.php' => ['amount' => '2,499', 'govt_fee' => false],
     '12a-80g-registration.php' => ['amount' => '34,999', 'govt_fee' => true],
 
     // --- Compliance & regulatory: company compliance ---
@@ -45,6 +45,7 @@ return [
 
     // --- Taxation: income tax ---
     'tax-planning-services.php' => ['amount' => '999', 'govt_fee' => false],
+    // Business ITR; individual ₹2,499 shown as second strip on income-tax-filing-service.php hero.
     'income-tax-filing-service.php' => ['amount' => '5,999', 'govt_fee' => false],
     'tds-return-filing-services.php' => ['amount' => '2,499', 'govt_fee' => false],
     'tax-audit.php' => ['amount' => '4,999', 'govt_fee' => false],

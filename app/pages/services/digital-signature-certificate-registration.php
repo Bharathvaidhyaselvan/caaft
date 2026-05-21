@@ -116,12 +116,11 @@ declare(strict_types=1);
         'A DSC acts as a secure electronic signature that verifies identity, keeps submitted data tamper-proof, and ensures legal validity across official government portals. Whether registering a company, filing GST returns, applying for an IEC, or participating in government tenders — a valid DSC is a mandatory requirement. CAAFT delivers fast, accurate DSC registration for individuals, directors, and businesses across India — with technical setup support included.',
     ];
     $caaft_hero_primary_cta_label = 'Fast & Easy DSC Registration';
-        $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
+    $caaft_hero_primary_cta_href = '/contact#contact_us';
+    $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
     $caaft_enquiry_service = 'DSC Registration';
     $caaft_enquiry_action = '/business-registration-mail.php';
-    $caaft_enquiry_title = 'Let\'s Talk';
     $caaft_enquiry_honeypot_website = false;
-    $caaft_service_cta_label = 'Start Your DSC Registration Now';
 
     include __DIR__ . '/../../includes/components/service-hero-with-enquiry.php';
     ?>

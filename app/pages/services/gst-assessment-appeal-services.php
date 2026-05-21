@@ -580,16 +580,16 @@ $caaft_enquiry_action = '/incometax-services-mail.php';        $caaft_service_ct
         $caaft_key_facts_title = 'Key Facts & Figures';
         $caaft_key_facts_items = [
             [
-                'stat' => '',
-                'text' => 'The CBIC issued over ₹1.5 lakh crore in GST demand notices to businesses across India in FY 2023-24 — making GST assessment disputes one of the most significant financial risks facing Indian businesses today',
+                'stat' => '₹1.5L Cr+',
+                'text' => 'In GST demand notices issued by CBIC to businesses across India in FY 2023-24 — making assessment disputes one of the most significant financial risks Indian businesses face today.',
             ],
             [
-                'stat' => '',
-                'text' => 'Professionally represented GST appeals achieve significantly better outcomes at the Commissioner (Appeals) level — particularly in ITC disputes where documentation quality and legal framing directly determine the result',
+                'stat' => 'CIT(A)',
+                'text' => 'Professionally represented GST appeals achieve significantly better outcomes at the Commissioner (Appeals) level — particularly in ITC disputes where documentation quality and legal framing directly determine the result.',
             ],
             [
-                'stat' => '',
-                'text' => 'With the GST Appellate Tribunal now operational, thousands of pending cases are shifting to GSTAT — making experienced tribunal representation an essential capability for businesses with unresolved GST disputes',
+                'stat' => '1000s+',
+                'text' => 'Pending GST cases are shifting to the GST Appellate Tribunal (GSTAT) now that it is operational — making experienced tribunal representation essential for unresolved disputes.',
             ],
         ];
         include __DIR__ . '/../../includes/components/caaft-key-facts.php';
