@@ -15,11 +15,7 @@
  *   $caaft_enquiry_textarea_rows (int) — default 5
  *   $caaft_enquiry_input_id_prefix (string) — optional prefix for field ids (e.g. ar → id ar-enquiry-name, ar-firstname-honeypot)
  *
- * Optional pricing strip (shown below submit, inside .quote-content):
- *   $caaft_enquiry_pricing_amount (string) — e.g. "14,999"; if empty, strip is omitted
- *   $caaft_enquiry_pricing_label (string) — default "Price starts from" when amount is set
- *   $caaft_enquiry_pricing_suffix (string) — default "+ GST"
- *   $caaft_enquiry_pricing_extra (string) — e.g. "Govt. Fee"; empty hides the "| …" segment
+ * Pricing is shown in the hero column (below primary CTA), not in this form.
  */
 if (!isset($caaft_enquiry_service) || $caaft_enquiry_service === '') {
     trigger_error('enquiry-hero-form.php: set $caaft_enquiry_service before including', E_USER_WARNING);
@@ -53,30 +49,6 @@ $caaft_enquiry_field_id_attr = function (string $suffix) use ($caaft_enquiry_inp
     }
     return ' id="' . htmlspecialchars($caaft_enquiry_input_id_prefix . $suffix, ENT_QUOTES, 'UTF-8') . '"';
 };
-
-require_once __DIR__ . '/../caaft-resolve-service-pricing.php';
-
-if (!isset($caaft_enquiry_pricing_amount) || trim((string) $caaft_enquiry_pricing_amount) === '') {
-    $caaft_enquiry_pricing_row = caaft_resolve_service_page_pricing();
-    if ($caaft_enquiry_pricing_row !== null) {
-        $caaft_enquiry_pricing_amount = $caaft_enquiry_pricing_row['amount'];
-        if (!isset($caaft_enquiry_pricing_extra) || trim((string) $caaft_enquiry_pricing_extra) === '') {
-            $caaft_enquiry_pricing_extra = $caaft_enquiry_pricing_row['govt_fee'] ? 'Govt. Fee' : '';
-        }
-    }
-}
-
-$caaft_enquiry_pricing_amount = isset($caaft_enquiry_pricing_amount) ? trim((string) $caaft_enquiry_pricing_amount) : '';
-$caaft_enquiry_pricing_label = isset($caaft_enquiry_pricing_label) ? trim((string) $caaft_enquiry_pricing_label) : '';
-$caaft_enquiry_pricing_suffix = isset($caaft_enquiry_pricing_suffix) ? trim((string) $caaft_enquiry_pricing_suffix) : '+ GST';
-$caaft_enquiry_pricing_extra = isset($caaft_enquiry_pricing_extra) ? trim((string) $caaft_enquiry_pricing_extra) : '';
-$caaft_enquiry_show_pricing = $caaft_enquiry_pricing_amount !== '';
-if ($caaft_enquiry_show_pricing && $caaft_enquiry_pricing_label === '') {
-    $caaft_enquiry_pricing_label = 'Price starts from';
-}
-if ($caaft_enquiry_pricing_suffix === '') {
-    $caaft_enquiry_pricing_suffix = '+ GST';
-}
 
 // Load Google's reCAPTCHA script once per request when the widget is shown.
 if ($caaft_enquiry_recaptcha && !\defined('CAAFT_ENQUIRY_RECAPTCHA_JS_PRINTED')) {
@@ -129,19 +101,4 @@ if ($caaft_enquiry_recaptcha && !\defined('CAAFT_ENQUIRY_RECAPTCHA_JS_PRINTED'))
             </div>
         </form>
     </div>
-    <?php if ($caaft_enquiry_show_pricing) : ?>
-        <div class="caaft-enquiry-pricing-banner" role="note">
-            <span class="caaft-enquiry-pricing-label"><?php echo htmlspecialchars($caaft_enquiry_pricing_label, ENT_QUOTES, 'UTF-8'); ?></span>
-            <div class="caaft-enquiry-pricing-line">
-                <span class="caaft-enquiry-pricing-amount-wrap">
-                    <span class="caaft-enquiry-pricing-rupee">₹</span><strong class="caaft-enquiry-pricing-amount"><?php echo htmlspecialchars($caaft_enquiry_pricing_amount, ENT_QUOTES, 'UTF-8'); ?></strong>
-                </span>
-                <span class="caaft-enquiry-pricing-suffix"><?php echo htmlspecialchars($caaft_enquiry_pricing_suffix, ENT_QUOTES, 'UTF-8'); ?></span>
-                <?php if ($caaft_enquiry_pricing_extra !== '') : ?>
-                    <span class="caaft-enquiry-pricing-sep" aria-hidden="true">|</span>
-                    <span class="caaft-enquiry-pricing-extra"><?php echo htmlspecialchars($caaft_enquiry_pricing_extra, ENT_QUOTES, 'UTF-8'); ?></span>
-                <?php endif; ?>
-            </div>
-        </div>
-    <?php endif; ?>
 </div>

@@ -105,21 +105,6 @@ if ($caaft_hero_pricing_suffix === '') {
     $caaft_hero_pricing_suffix = '+ GST';
 }
 
-if (!isset($caaft_enquiry_pricing_amount) || trim((string) $caaft_enquiry_pricing_amount) === '') {
-    if ($caaft_hero_show_pricing) {
-        $caaft_enquiry_pricing_amount = $caaft_hero_pricing_amount;
-        if (!isset($caaft_enquiry_pricing_label) || trim((string) $caaft_enquiry_pricing_label) === '') {
-            $caaft_enquiry_pricing_label = $caaft_hero_pricing_label;
-        }
-        if (!isset($caaft_enquiry_pricing_suffix) || trim((string) $caaft_enquiry_pricing_suffix) === '') {
-            $caaft_enquiry_pricing_suffix = $caaft_hero_pricing_suffix;
-        }
-        if (!isset($caaft_enquiry_pricing_extra) || trim((string) $caaft_enquiry_pricing_extra) === '') {
-            $caaft_enquiry_pricing_extra = $caaft_hero_pricing_extra;
-        }
-    }
-}
-
 ?>
 <section class="hero-section hs-3 caaft-ar-hero" aria-labelledby="<?php echo htmlspecialchars($caaft_hero_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="hero-single singles_forms_frames caaft-ar-hero-single">

@@ -1,7 +1,7 @@
 <?php
 /**
  * Hero indicative pricing by service page basename (app/pages/services/*.php).
- * Keys match basename only. Used when $caaft_hero_pricing_amount / $caaft_enquiry_pricing_amount
+ * Keys match basename only. Used when $caaft_hero_pricing_amount is not set on the page.
  * are not set and pricing is not disabled.
  *
  * 'govt_fee' => true shows "| Govt. Fee" after the + GST segment.
