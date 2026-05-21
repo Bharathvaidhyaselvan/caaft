@@ -222,13 +222,14 @@
         </div>
 
         <?php
+        // Homepage-only trust strip (home-hero-trust-indicators.php — not service-trust-indicators.php).
         $caaft_home_trust_items = [
             ['icon_class' => 'fas fa-building', 'title' => '500+', 'description' => 'Businesses Served'],
-            ['icon_class' => 'fas fa-smile', 'title' => '98%', 'description' => 'Client Satisfaction'],
+            ['icon_class' => 'fas fa-smile', 'title' => '98%', 'description' => 'Client Satisfaction Rate'],
             ['icon_class' => 'fas fa-award', 'title' => '10+', 'description' => 'Years of Expertise'],
-            ['icon_class' => 'fas fa-star', 'title' => '4.9/5', 'description' => 'Google Rating'],
+            ['icon_class' => 'fas fa-star', 'title' => '4.9/5', 'description' => 'Google rating on Google'],
         ];
-        include dirname(__DIR__, 2) . '/includes/components/home-hero-trust-indicators.php';
+        include APP_ROOT . '/includes/components/home-hero-trust-indicators.php';
         ?>
 
         <div class="about-area pt-120 pb-60">
@@ -878,9 +879,9 @@
         <!-- ===== 3. TESTIMONIALS SECTION ===== -->
         <div class="home3-reviews-area py-100">
             <div class="container">
-                <div class="home3-reviews-head text-center wow fadeInUp" data-wow-delay=".1s">
-                    <p class="home3-reviews-eyebrow"><span class="home3-reviews-eyebrow__line" aria-hidden="true"></span><span>Our Testimonials</span><span class="home3-reviews-eyebrow__line" aria-hidden="true"></span></p>
-                    <h2 class="home3-reviews-title">What our <span class="home3-reviews-title-accent">Clients</span> Say</h2>
+                <div class="site-heading text-center mb-40 wow fadeInUp" data-wow-delay=".1s">
+                    <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="" class="img-fluid" width="30" height="30"></i> Our Testimonials</span>
+                    <h2 class="site-title mt-2">What our <span>Clients</span> Say</h2>
                 </div>
                 <?php
                 $home3_reviews = [

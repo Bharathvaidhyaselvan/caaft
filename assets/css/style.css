@@ -11776,7 +11776,8 @@ body.home-3.page-accounting-reporting li {
     color: #4a5568;
 }
 
-/* ----- Homepage (home-3): hero trust strip — boxed stat cards + decorative shapes ----- */
+/* ----- Homepage (home-3): hero trust strip — separate stat cards (not service-trust-indicators) ----- */
+body.home-3 #caaft-home-hero-trust.caaft-home-trust-strip,
 body.home-3 .caaft-home-trust-strip {
     position: relative;
     z-index: 4;
@@ -11998,47 +11999,18 @@ body.home-3 .home3-reviews-area {
     background: #f4f6f8;
 }
 
-body.home-3 .home3-reviews-head {
+body.home-3 .home3-reviews-area .site-heading {
     margin-bottom: 40px;
 }
 
-body.home-3 .home3-reviews-eyebrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    margin: 0 0 14px;
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--color-dark, #0a1d43);
-    letter-spacing: 0.02em;
-}
-
-body.home-3 .home3-reviews-eyebrow__line {
-    flex: 0 1 56px;
-    height: 2px;
-    border-radius: 2px;
-    background: linear-gradient(90deg, transparent, var(--color-dark, #0a1d43));
-    opacity: 0.85;
-}
-
-body.home-3 .home3-reviews-eyebrow__line:last-of-type {
-    background: linear-gradient(90deg, var(--color-dark, #0a1d43), transparent);
-}
-
-body.home-3 .home3-reviews-title {
-    margin: 0;
-    font-family: var(--heading-font, "Plus Jakarta Sans", sans-serif);
-    font-size: clamp(1.55rem, 2.8vw, 2.05rem);
+body.home-3 .home3-reviews-area .site-heading .site-title {
+    font-size: clamp(1.65rem, 2.8vw, 2.15rem);
     font-weight: 800;
-    color: var(--color-dark, #0a1d43);
-    line-height: 1.25;
-    text-transform: none;
-    letter-spacing: -0.02em;
+    text-transform: capitalize;
 }
 
-body.home-3 .home3-reviews-title-accent {
-    color: var(--color-dark, #0a1d43);
+body.home-3 .home3-reviews-area .site-heading .site-title span {
+    color: var(--theme-color, #33b6ff);
     font-weight: 800;
 }
 

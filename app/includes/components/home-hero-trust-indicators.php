@@ -17,7 +17,7 @@ if (!isset($caaft_home_trust_items) || !is_array($caaft_home_trust_items) || $ca
 
 $caaft_home_trust_aria_label = isset($caaft_home_trust_aria_label) ? (string) $caaft_home_trust_aria_label : 'Why businesses trust CAAFT';
 ?>
-<section class="caaft-home-trust-strip" aria-label="<?php echo htmlspecialchars($caaft_home_trust_aria_label, ENT_QUOTES, 'UTF-8'); ?>">
+<section id="caaft-home-hero-trust" class="caaft-home-trust-strip" aria-label="<?php echo htmlspecialchars($caaft_home_trust_aria_label, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
         <div class="caaft-home-trust-grid">
             <?php foreach ($caaft_home_trust_items as $caaft_home_trust_item) : ?>
