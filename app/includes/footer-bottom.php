@@ -19,6 +19,7 @@ $asset = static function (string $path): string {
 <?php endif; ?>
 
 <script src="<?php echo $asset('assets/js/main.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/form-hash-focus.js'); ?>" defer></script>
 <?php if ($features['carousel']) : ?>
 <script src="<?php echo $asset('assets/js/hero-slider-init.js'); ?>" defer></script>
 <?php endif; ?>

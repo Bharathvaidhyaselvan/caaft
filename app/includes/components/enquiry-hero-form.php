@@ -67,7 +67,7 @@ if ($caaft_enquiry_recaptcha && !\defined('CAAFT_ENQUIRY_RECAPTCHA_JS_PRINTED'))
                     <div class="form-group"><input name="firstname" type="text" class="hide-robot" style="display:none;" autocomplete="off" tabindex="-1" aria-hidden="true"<?php echo $caaft_enquiry_field_id_attr('-firstname-honeypot'); ?>></div>
                     <div class="input-group">
                         <span class="input-group-text"><i class="far fa-user-tie" aria-hidden="true"></i></span>
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required autocomplete="name"<?php echo $caaft_enquiry_field_id_attr('-enquiry-name'); ?>>
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required autocomplete="name" data-caaft-focus="name"<?php echo $caaft_enquiry_field_id_attr('-enquiry-name'); ?>>
                     </div>
                 </div>
                 <div class="col-lg-12">

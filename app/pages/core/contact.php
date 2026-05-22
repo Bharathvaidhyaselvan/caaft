@@ -139,7 +139,7 @@
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="far fa-user-tie"></i></span>
                                                 <input type="text" class="form-control name-valid" name="name" id="name"
-                                                    placeholder="Your Name" required>
+                                                    placeholder="Your Name" required autocomplete="name" data-caaft-focus="name">
                                             </div>
                                         </div>
                                         <div class="col-md-6">

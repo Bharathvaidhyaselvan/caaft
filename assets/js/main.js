@@ -88,38 +88,42 @@
     a.fn.owlCarousel &&
       a(".service-slider").length &&
       a(".service-slider").owlCarousel({
-      loop: !0,
-      margin: 30,
-      nav: !0,
-      dots: !0,
-      autoplay: !0,
-      navText: [
-        "<i class='far fa-arrow-left'></i>",
-        "<i class='far fa-arrow-right'></i>",
-      ],
-      responsive: { 0: { items: 1 }, 600: { items: 2 }, 1e3: { items: 3 } },
-    }),
-    a(".case-slider").owlCarousel({
-      loop: !0,
-      margin: 30,
-      nav: !0,
-      dots: !1,
-      autoplayHoverPause: !0,
-      autoplay: !0,
-      navText: [
-        "<i class='far fa-arrow-left'></i>",
-        "<i class='far fa-arrow-right'></i>",
-      ],
-      responsive: { 0: { items: 1 }, 600: { items: 2 }, 1e3: { items: 3 } },
-    }),
-    a(".testimonial-slider").owlCarousel({
-      loop: !0,
-      margin: 30,
-      nav: !1,
-      dots: !0,
-      autoplay: !0,
-      responsive: { 0: { items: 1 }, 600: { items: 2 }, 1e3: { items: 2 } },
-    }),
+        loop: !0,
+        margin: 30,
+        nav: !0,
+        dots: !0,
+        autoplay: !0,
+        navText: [
+          "<i class='far fa-arrow-left'></i>",
+          "<i class='far fa-arrow-right'></i>",
+        ],
+        responsive: { 0: { items: 1 }, 600: { items: 2 }, 1e3: { items: 3 } },
+      }),
+    a.fn.owlCarousel &&
+      a(".case-slider").length &&
+      a(".case-slider").owlCarousel({
+        loop: !0,
+        margin: 30,
+        nav: !0,
+        dots: !1,
+        autoplayHoverPause: !0,
+        autoplay: !0,
+        navText: [
+          "<i class='far fa-arrow-left'></i>",
+          "<i class='far fa-arrow-right'></i>",
+        ],
+        responsive: { 0: { items: 1 }, 600: { items: 2 }, 1e3: { items: 3 } },
+      }),
+    a.fn.owlCarousel &&
+      a(".testimonial-slider").length &&
+      a(".testimonial-slider").owlCarousel({
+        loop: !0,
+        margin: 30,
+        nav: !1,
+        dots: !0,
+        autoplay: !0,
+        responsive: { 0: { items: 1 }, 600: { items: 2 }, 1e3: { items: 2 } },
+      }),
     a.fn.owlCarousel &&
       a(".home3-reviews-slider").length &&
       a(".home3-reviews-slider").owlCarousel({
@@ -137,51 +141,55 @@
         ],
         responsive: { 0: { items: 1 }, 768: { items: 2 }, 1200: { items: 3 } },
       }),
-    a(".partner-slider").owlCarousel({
-      loop: !0,
-      margin: 15,
-      nav: !1,
-      navText: [
-        "<i class='icofont-long-arrow-left'></i>",
-        "<i class='icofont-long-arrow-right'></i>",
-      ],
-      dots: !1,
-      autoplay: !0,
-      responsive: { 0: { items: 2 }, 600: { items: 3 }, 1e3: { items: 6 } },
-    }),
-    a(".instagram-slider").owlCarousel({
-      loop: !0,
-      margin: 20,
-      nav: !1,
-      dots: !1,
-      autoplay: !0,
-      responsive: { 0: { items: 2 }, 600: { items: 3 }, 1e3: { items: 5 } },
-    }),
+    a.fn.owlCarousel &&
+      a(".partner-slider").length &&
+      a(".partner-slider").owlCarousel({
+        loop: !0,
+        margin: 15,
+        nav: !1,
+        navText: [
+          "<i class='icofont-long-arrow-left'></i>",
+          "<i class='icofont-long-arrow-right'></i>",
+        ],
+        dots: !1,
+        autoplay: !0,
+        responsive: { 0: { items: 2 }, 600: { items: 3 }, 1e3: { items: 6 } },
+      }),
+    a.fn.owlCarousel &&
+      a(".instagram-slider").length &&
+      a(".instagram-slider").owlCarousel({
+        loop: !0,
+        margin: 20,
+        nav: !1,
+        dots: !1,
+        autoplay: !0,
+        responsive: { 0: { items: 2 }, 600: { items: 3 }, 1e3: { items: 5 } },
+      }),
     a(window).on("load", function () {
       a(".preloader").fadeOut("slow");
     }),
     a.fn.countTo && a(".counter").countTo(),
     a.fn.appear &&
       a(".counter-box").appear(
-      function () {
-        a(".counter").countTo();
-      },
-      { accY: -100 },
-    ),
+        function () {
+          a(".counter").countTo();
+        },
+        { accY: -100 },
+      ),
     a.fn.magnificPopup &&
       a(".popup-gallery").magnificPopup({
-      delegate: ".popup-img",
-      type: "image",
-      gallery: { enabled: !0 },
-    }),
+        delegate: ".popup-img",
+        type: "image",
+        gallery: { enabled: !0 },
+      }),
     a.fn.magnificPopup &&
       a(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
-      type: "iframe",
-      mainClass: "mfp-fade",
-      removalDelay: 160,
-      preloader: !1,
-      fixedContentPos: !1,
-    }),
+        type: "iframe",
+        mainClass: "mfp-fade",
+        removalDelay: 160,
+        preloader: !1,
+        fixedContentPos: !1,
+      }),
     a(window).on("load", function () {
       a(".filter-box").children().length > 0 &&
         (a(".filter-box").isotope({
@@ -274,12 +282,21 @@
         });
         return !0;
       }
+      function normalizePath(path) {
+        if (!path) return "/";
+        var p = path.replace(/\.php$/i, "");
+        if (p.length > 1 && p.charAt(p.length - 1) === "/") {
+          p = p.slice(0, -1);
+        }
+        return p || "/";
+      }
       function samePageHashId(href) {
         if (!href || href.indexOf("#") === -1) return null;
         try {
           var u = new URL(href, window.location.href);
           if (
-            u.pathname !== window.location.pathname ||
+            normalizePath(u.pathname) !==
+              normalizePath(window.location.pathname) ||
             !u.hash ||
             u.hash.length < 2
           )
@@ -297,7 +314,8 @@
         e.preventDefault();
         scrollToElementId(id, "smooth");
         if (window.history && history.replaceState) {
-          var path = (href.split("#")[0] || "").trim() || window.location.pathname;
+          var path =
+            (href.split("#")[0] || "").trim() || window.location.pathname;
           history.replaceState(null, "", path + "#" + id);
         }
       });
@@ -311,6 +329,13 @@
         run();
         setTimeout(run, 150);
         setTimeout(run, 500);
+      });
+      window.addEventListener("hashchange", function () {
+        var hash = window.location.hash;
+        if (!hash || hash.length < 2) return;
+        var id = hash.slice(1);
+        if (!document.getElementById(id)) return;
+        scrollToElementId(id, "auto");
       });
     })());
 })(jQuery);
