@@ -54,7 +54,24 @@ declare(strict_types=1);
         .page-llp-registration .plc-docs-card-icon--amber { background: #f59e0b; }
         .page-llp-registration .plc-docs-card h3 { margin: 0; font-size: 1.08rem; font-weight: 700; color: #1a202c; line-height: 1.35; }
         .page-llp-registration .plc-docs-card-list { margin: 0; padding: 0; list-style: none; }
-        .page-llp-registration .plc-docs-card-list li { padding: 6px 0; font-size: 0.97rem; line-height: 1.55; font-weight: 500; color: #4a5568; }
+        .page-llp-registration .plc-docs-card-list li {
+            position: relative;
+            padding: 6px 0 6px 16px;
+            font-size: 0.97rem;
+            line-height: 1.55;
+            font-weight: 500;
+            color: #4a5568;
+        }
+        .page-llp-registration .plc-docs-card-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.92em;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--theme-color, #33b6ff);
+        }
         .page-llp-registration .llp-vs-section { padding-top: 44px; padding-bottom: 48px; background: #ffffff; }
         .page-llp-registration .llp-vs-intro { margin: 0 0 16px; max-width: 900px; color: #4b5563; font-size: 1rem; line-height: 1.6; font-weight: 500; }
         .page-llp-registration .llp-vs-compare-wrap { border-radius: 8px; overflow: hidden; }

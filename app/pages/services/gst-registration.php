@@ -71,7 +71,7 @@
         .page-gst-registration .caaft-who-needs-list-title,
         .page-gst-registration .caaft-get-delivered .bk-section-title,
         .page-gst-registration .caaft-ar-how-h2,
-        .page-gst-registration .gst-reg-docs-title,
+        .page-gst-registration .caaft-documents-title,
         .page-gst-registration .gst-reg-challenges-title,
         .page-gst-registration .gst-reg-why-title,
         .page-gst-registration .gst-reg-facts-title,
@@ -87,52 +87,6 @@
             background: #e8f4fb;
         }
 
-        .gst-reg-docs-wrap {
-            padding-top: 42px;
-            padding-bottom: 42px;
-        }
-
-        .gst-reg-docs-card {
-            background: transparent;
-            border: 0;
-            border-radius: 2px;
-        }
-
-        .gst-reg-docs-title {
-            margin: 0;
-            padding: 10px 12px 8px;
-            color: #2f2f2f;
-            font-size: clamp(1.35rem, 2vw, 2rem);
-            line-height: 1.2;
-            font-weight: 700;
-        }
-
-        .gst-reg-docs-intro {
-            margin: 0;
-            padding: 8px 12px 10px;
-            border-bottom: 1px solid #d1d1d1;
-            color: #4a4a4a;
-            line-height: 1.55;
-            font-weight: 600;
-        }
-
-        .gst-reg-docs-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .gst-reg-docs-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            min-height: 36px;
-            padding: 7px 10px;
-            border-bottom: 1px solid #d1d1d1;
-            color: #3a3a3a;
-            line-height: 1.45;
-            font-weight: 600;
-            font-size: 0.98rem;
-        }
         @media (max-width: 991.98px) {
             .page-gst-registration .caaft-ar-trust-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -144,24 +98,6 @@
             .page-gst-registration .caaft-ar-hero-ctas .theme-btn {
                 white-space: normal;
             }
-        }
-
-        .gst-reg-docs-item:nth-child(odd) {
-            border-right: 1px solid #d1d1d1;
-        }
-
-        .gst-reg-docs-item:nth-last-child(-n + 2) {
-            border-bottom: 0;
-        }
-
-        .gst-reg-docs-checkbox {
-            flex: 0 0 13px;
-            width: 13px;
-            height: 13px;
-            border: 1px solid #bcbcbc;
-            border-radius: 2px;
-            background: #f9f9f9;
-            margin-top: 1px;
         }
 
         .gst-reg-challenges-wrap {
@@ -375,22 +311,6 @@
         }
 
         @media (max-width: 575.98px) {
-            .gst-reg-docs-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .gst-reg-docs-item:nth-child(odd) {
-                border-right: 0;
-            }
-
-            .gst-reg-docs-item:nth-last-child(-n + 2) {
-                border-bottom: 1px solid #d1d1d1;
-            }
-
-            .gst-reg-docs-item:last-child {
-                border-bottom: 0;
-            }
-
             .gst-reg-why-grid {
                 grid-template-columns: 1fr;
             }
@@ -603,16 +523,23 @@
         include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
         ?>
 
-        <section class="gst-reg-docs-wrap"><div class="container"><div class="gst-reg-docs-card"><h2 class="gst-reg-docs-title">Documents Required for GST Registration</h2><p class="gst-reg-docs-intro">Accurate documentation ensures faster approval and zero rejection risk:</p><div class="gst-reg-docs-grid">
-            <div class="gst-reg-docs-item"><span class="gst-reg-docs-checkbox" aria-hidden="true"></span><span>PAN Card</span></div>
-            <div class="gst-reg-docs-item"><span class="gst-reg-docs-checkbox" aria-hidden="true"></span><span>Aadhaar Card</span></div>
-            <div class="gst-reg-docs-item"><span class="gst-reg-docs-checkbox" aria-hidden="true"></span><span>Business Address Proof (utility bill / rent agreement / NOC)</span></div>
-            <div class="gst-reg-docs-item"><span class="gst-reg-docs-checkbox" aria-hidden="true"></span><span>Bank Details (cancelled cheque / statement)</span></div>
-            <div class="gst-reg-docs-item"><span class="gst-reg-docs-checkbox" aria-hidden="true"></span><span>Photographs (owner/partners/directors)</span></div>
-            <div class="gst-reg-docs-item"><span class="gst-reg-docs-checkbox" aria-hidden="true"></span><span>Business Registration Proof (COI / Partnership Deed / LLP Agreement)</span></div>
-            <div class="gst-reg-docs-item"><span class="gst-reg-docs-checkbox" aria-hidden="true"></span><span>DSC (for companies/LLPs)</span></div>
-            <div class="gst-reg-docs-item"><span class="gst-reg-docs-checkbox" aria-hidden="true"></span><span>Additional documents may be required based on business type.</span></div>
-        </div></div></div></section>
+        <?php
+        $caaft_docs_heading_id = 'gst-reg-docs-heading';
+        $caaft_docs_title = 'Documents Required for GST Registration';
+        $caaft_docs_intro = 'Accurate documentation ensures faster approval and zero rejection risk:';
+        $caaft_docs_items = [
+            'PAN Card',
+            'Aadhaar Card',
+            'Business Address Proof (utility bill / rent agreement / NOC)',
+            'Bank Details (cancelled cheque / statement)',
+            'Photographs (owner/partners/directors)',
+            'Business Registration Proof (COI / Partnership Deed / LLP Agreement)',
+            'DSC (for companies/LLPs)',
+            'Additional documents may be required based on business type.',
+        ];
+        $caaft_docs_section_class = 'caaft-documents py-90';
+        include __DIR__ . '/../../includes/components/caaft-documents.php';
+        ?>
         <section class="gst-reg-challenges-wrap"><div class="container"><h2 class="gst-reg-challenges-title">Common GST Registration Challenges CAAFT Solves</h2><p class="gst-reg-challenges-intro">Most businesses face one or more of these issues during the GST registration process:</p><div class="gst-reg-challenges-list">
             <article class="gst-reg-challenge-item"><h3>Incorrect or mismatched details in the application causing rejection or delays</h3></article>
             <article class="gst-reg-challenge-item"><h3>Document upload errors on the GST portal leading to incomplete submissions</h3></article>

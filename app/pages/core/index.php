@@ -162,7 +162,7 @@
     </div>
 
     <main class="main">
-        <!-- Home: Hero → trust strip (overlaps hero) → About CAAFT → features → Our Services → trust pills → … -->
+        <!-- Home: Hero → trust strip → About → features → Our Services → trust pills → video → process → … -->
         <div id="sliders" class=" hero-slider owl-carousel owl-theme hs-3">
             <div class="hero-single">
                 <div class="container">
@@ -255,14 +255,12 @@
                                             class="img-fluid">
                                     </i> About CAAFT</span>
                                 <h1 class="about site-title">
-                                    Comprehensive Expertise for Efficient Accounting & Reporting, Taxation, Business
-                                    Incorporation, Consultancy and <a href="/compliance-and-regulatory-services">Compliance Services</a>
+                                    End-to-End Business Incorporation, Compliance, Taxation, Accounting &amp; Advisory Solutions
                                 </h1>
                             </div>
                             <p class="about-text">We are more than just service providers, we are your trusted advisors
                                 in growth. We believe that every business deserves customized solutions to excel
-                                in today’s competitive environment. With expertise in <a href="/accounting-and-reporting-services">Accounting & Reporting</a>, <a href="/taxation-services">Taxation</a>,
-                                <a href="/business-setup-and-registration">Business Incorporation</a>, Consultancy and Compliance Services, our team is dedicated to
+                                in today’s competitive environment. With expertise in <a href="/business-setup-and-registration">Business Incorporation</a>, <a href="/compliance-and-regulatory-services">Compliance</a>, <a href="/taxation-services">Taxation</a>, and <a href="/accounting-reporting">Accounting &amp; Advisory Solutions</a>, our team is dedicated to
                                 offering strategic insights and comprehensive support to help clients reach their
                                 objectives.</p>
 
@@ -355,161 +353,97 @@
                         </div> -->
                     </div>
                 </div>
+                <?php
+                // Order and labels match header mega menu (mm-tabs).
+                $caaft_home_services = [
+                    [
+                        'title' => 'Business Setup & Registration',
+                        'href' => '/business-setup-and-registration',
+                        'cta' => 'Explore Business Setup',
+                        'icon' => 'assets/img/caaft/discussion.png',
+                        'icon_alt' => 'Business Setup and Registration',
+                        'thumb' => 'assets/img/busniess-accounting.webp',
+                        'thumb_alt' => 'Business Setup and Registration',
+                        'text' => 'Company incorporation, MSME, FSSAI, IEC, DSC, professional tax, EPF & ESI, and 12A & 80G registrations.',
+                    ],
+                    [
+                        'title' => 'Compliance & Regulatory',
+                        'href' => '/compliance-and-regulatory-services',
+                        'cta' => 'Explore Compliance',
+                        'icon' => 'assets/img/complience-file.webp',
+                        'icon_alt' => 'Compliance and Regulatory Services',
+                        'thumb' => 'assets/img/compliance.webp',
+                        'thumb_alt' => 'Compliance and Regulatory Services',
+                        'text' => 'Private, LLP, OPC, partnership, and public company compliance plus ROC filings, DIR-3 KYC, and company closure.',
+                    ],
+                    [
+                        'title' => 'Taxation',
+                        'href' => '/taxation-services',
+                        'cta' => 'Explore Taxation',
+                        'icon' => 'assets/img/icon/tax-2.svg',
+                        'icon_alt' => 'Taxation Services',
+                        'thumb' => 'assets/img/income-tax.webp',
+                        'thumb_alt' => 'Income Tax Services',
+                        'text' => 'Income tax planning, ITR and TDS filing, tax audit assistance, and tax assessment & appeal support.',
+                    ],
+                    [
+                        'title' => 'GST',
+                        'href' => '/gst/gst-registration',
+                        'cta' => 'Explore GST',
+                        'icon' => 'assets/img/icon/tax-4.svg',
+                        'icon_alt' => 'GST Services',
+                        'thumb' => 'assets/img/gst-services.webp',
+                        'thumb_alt' => 'GST Services',
+                        'text' => 'GST registration, returns filing, LUT filing, advisory & compliance, assessment & appeal support, and registration cancellation.',
+                    ],
+                    [
+                        'title' => 'Accounting & Reporting',
+                        'href' => '/accounting-and-reporting-services',
+                        'cta' => 'Explore Accounting',
+                        'icon' => 'assets/img/accounts-icon.webp',
+                        'icon_alt' => 'Accounting and Reporting',
+                        'thumb' => 'assets/img/accounting-services.webp',
+                        'thumb_alt' => 'Accounting and Reporting Services',
+                        'text' => 'General accounting & bookkeeping, financial analysis & MIS, financial statements, and receivable & payable management.',
+                    ],
+                    [
+                        'title' => 'Advisory & CFO Services',
+                        'href' => '/advisory-and-cfo-services',
+                        'cta' => 'Explore Advisory',
+                        'icon' => 'assets/img/caaft/consultant.png',
+                        'icon_alt' => 'Advisory and CFO Services',
+                        'thumb' => 'assets/img/mangement-consulting.webp',
+                        'thumb_alt' => 'Advisory and CFO Services',
+                        'text' => 'Budgeting & forecasting, business valuation, financial assessment, feasibility studies, and CFO & financial management.',
+                    ],
+                ];
+                ?>
                 <div class="row g-4">
+                    <?php foreach ($caaft_home_services as $caaft_home_service) : ?>
                     <div class="col-md-6 col-lg-4">
                         <div class="services-item wow fadeInUp" data-wow-delay=".25s">
                             <div class="services-content">
                                 <div class="content-top">
                                     <div class="icon">
-                                        <i> <img src="assets/img/accounts-icon.webp" alt="Accounting & Reporting Services"
-                                                title="Accounting & Reporting Services"></i>
+                                        <i><img src="<?php echo htmlspecialchars($caaft_home_service['icon'], ENT_QUOTES, 'UTF-8'); ?>"
+                                                alt="<?php echo htmlspecialchars($caaft_home_service['icon_alt'], ENT_QUOTES, 'UTF-8'); ?>"
+                                                title="<?php echo htmlspecialchars($caaft_home_service['title'], ENT_QUOTES, 'UTF-8'); ?>"></i>
                                     </div>
-                                    <h3 class="title">Accounting & Reporting Services</h3>
+                                    <h3 class="title"><?php echo htmlspecialchars($caaft_home_service['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
                                 </div>
                                 <div class="services-thumb">
-                                    <img src="assets/img/accounting-services.webp" class="img-fluid" alt="accounting company"
-                                        title="Accounting">
-                                    <a href="/accounting-and-reporting-services" class="btn transparent-btn" tabindex="0"
-                                        contenteditable="false" style="cursor: pointer;">Get Accounting Help</a>
+                                    <img src="<?php echo htmlspecialchars($caaft_home_service['thumb'], ENT_QUOTES, 'UTF-8'); ?>" class="img-fluid"
+                                        alt="<?php echo htmlspecialchars($caaft_home_service['thumb_alt'], ENT_QUOTES, 'UTF-8'); ?>"
+                                        title="<?php echo htmlspecialchars($caaft_home_service['title'], ENT_QUOTES, 'UTF-8'); ?>">
+                                    <a href="<?php echo htmlspecialchars($caaft_home_service['href'], ENT_QUOTES, 'UTF-8'); ?>" class="btn transparent-btn"><?php echo htmlspecialchars($caaft_home_service['cta'], ENT_QUOTES, 'UTF-8'); ?></a>
                                 </div>
                                 <ul class="list-wrap">
-                                    <li> Custom Accounting Solutions for Bookkeeping, Receivables & Payables Management,
-                                        and Reporting, keeping your business compliant while you focus on growth.
-                                    </li>
-
+                                    <li><?php echo htmlspecialchars($caaft_home_service['text'], ENT_QUOTES, 'UTF-8'); ?></li>
                                 </ul>
                             </div>
                         </div>
-
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="services-item wow fadeInUp" data-wow-delay=".25s">
-                            <div class="services-content">
-                                <div class="content-top">
-                                    <div class="icon">
-                                        <i> <img src="assets/img/icon/tax-2.svg" alt="Income Tax Services"
-                                                title="Income Tax Services"></i>
-                                    </div>
-                                    <h3 class="title">Income Tax Services</h3>
-                                </div>
-                                <div class="services-thumb">
-                                    <img src="assets/img/income-tax.webp" alt="Income Tax Services"
-                                        title="Income Tax Services">
-                                    <a href="/taxation-services" class="btn transparent-btn" tabindex="0"
-                                        contenteditable="false" style="cursor: pointer;">File Taxes Now</a>
-                                </div>
-                                <ul class="list-wrap">
-                                    <li> Complete tax planning, filing, and compliance services to reduce your tax
-                                        burden and ensure full legal compliance. </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="services-item wow fadeInUp" data-wow-delay=".25s">
-                            <div class="services-content">
-                                <div class="content-top">
-                                    <div class="icon">
-                                        <i> <img src="assets/img/icon/tax-4.svg" alt="GST Services" title="GST Services"></i>
-                                    </div>
-                                    <h3 class="title">GST Services</h3>
-                                </div>
-                                <div class="services-thumb">
-                                    <img src="assets/img/gst-services.webp" class="img-fluid" alt="GST Services" title="GST Services">
-                                    <a href="/taxation-services" class="btn transparent-btn" tabindex="0"
-                                        contenteditable="false" style="cursor: pointer;">Start GST Filing</a>
-                                </div>
-                                <ul class="list-wrap">
-                                    <li> Comprehensive GST services, including registration, filing, and compliance, to
-                                        keep your business on track and up to date. </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="services-item wow fadeInUp" data-wow-delay=".25s">
-                            <div class="services-content">
-                                <div class="content-top">
-                                    <div class="icon">
-                                        <i> <img src="assets/img/caaft/discussion.png" alt="Business Consultancy"
-                                                title="Business Consultancy"></i>
-                                    </div>
-                                    <h3 class="title">Business Consultancy</h3>
-                                </div>
-                                <div class="services-thumb">
-                                    <img src="assets/img/busniess-accounting.webp" class="img-fluid"
-                                        alt="Business Consultancy" title="Business Consultancy">
-                                    <a href="/business-setup-and-registration" class="btn transparent-btn" tabindex="0"
-                                        contenteditable="false" style="cursor: pointer;">Get Business Consulting</a>
-                                </div>
-                                <ul class="list-wrap">
-                                    <li> Expert support with business planning, structure setup, and required
-                                        registrations to turn your ideas into a successful business.
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="services-item wow fadeInUp" data-wow-delay=".25s">
-                            <div class="services-content">
-                                <div class="content-top">
-                                    <div class="icon">
-                                        <i> <img src="assets/img/caaft/consultant.png" alt="Management Consultancy"
-                                                title="Management Consultancy"></i>
-                                    </div>
-                                    <h3 class="title">Management Consultancy</h3>
-                                </div>
-                                <div class="services-thumb">
-                                    <img src="assets/img/mangement-consulting.webp" class="img-fluid"
-                                        alt="Management Consultancy" title="Management Consultancy">
-                                    <a href="/advisory-and-cfo-services" class="btn transparent-btn"
-                                        tabindex="0" contenteditable="false" style="cursor: pointer;">Management Consultancy</a>
-                                </div>
-                                <ul class="list-wrap">
-                                    <li>Optimize performance and efficiency with our strategic insights and workable
-                                        solutions.</li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="services-item wow fadeInUp" data-wow-delay=".25s">
-                            <div class="services-content">
-                                <div class="content-top">
-                                    <div class="icon">
-                                        <i> <img src="assets/img/complience-file.webp" alt="Compliance Services"
-                                                title="Compliance Services"></i>
-                                    </div>
-                                    <h3 class="title">Compliance Services</h3>
-                                </div>
-                                <div class="services-thumb">
-                                    <img src="assets/img/compliance.webp" class="img-fluid" alt="Compliance Services"
-                                        title="Compliance Services">
-                                    <a href="/compliance-and-regulatory-services" class="btn transparent-btn" tabindex="0"
-                                        contenteditable="false" style="cursor: pointer;">Compliance Services</a>
-                                </div>
-                                <ul class="list-wrap">
-                                    <li> Ensure your business meets all legal and regulatory requirements, avoiding
-                                        risks and penalties. </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
@@ -617,44 +551,7 @@
             </div>
         </div>
 
-        <!-- ===== 1. RECOGNITION & TRUST (CREDENTIALS) ===== -->
-        <div class="home3-cred-area py-90">
-            <div class="container">
-                <div class="site-heading text-center mb-40 wow fadeInUp" data-wow-delay=".1s">
-                    <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="" class="img-fluid" width="30" height="30"></i> Recognition &amp; Trust</span>
-                    <h2 class="site-title mt-2">Authorised, Recognised &amp; <span>Compliant</span></h2>
-                    <p class="home3-section-lead">Our credentials and affiliations ensure that every service we deliver meets the highest standards of accuracy and legal compliance.</p>
-                </div>
-                <div class="home3-cred-grid">
-                    <article class="home3-cred-card wow fadeInUp" data-wow-delay=".1s">
-                        <div class="home3-cred-icon" aria-hidden="true"><i class="fas fa-landmark"></i></div>
-                        <h3 class="home3-cred-title">MCA Registered</h3>
-                    </article>
-                    <article class="home3-cred-card wow fadeInUp" data-wow-delay=".15s">
-                        <div class="home3-cred-icon" aria-hidden="true"><i class="fas fa-file-invoice-dollar"></i></div>
-                        <h3 class="home3-cred-title">GST Practitioner</h3>
-                    </article>
-                    <article class="home3-cred-card wow fadeInUp" data-wow-delay=".2s">
-                        <div class="home3-cred-icon" aria-hidden="true"><i class="fas fa-balance-scale"></i></div>
-                        <h3 class="home3-cred-title">ICAI Affiliated</h3>
-                    </article>
-                    <article class="home3-cred-card wow fadeInUp" data-wow-delay=".25s">
-                        <div class="home3-cred-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></div>
-                        <h3 class="home3-cred-title">ISO Compliant Process</h3>
-                    </article>
-                    <article class="home3-cred-card wow fadeInUp" data-wow-delay=".3s">
-                        <div class="home3-cred-icon" aria-hidden="true"><i class="fas fa-building"></i></div>
-                        <h3 class="home3-cred-title">MSME Registered</h3>
-                    </article>
-                    <article class="home3-cred-card wow fadeInUp" data-wow-delay=".35s">
-                        <div class="home3-cred-icon" aria-hidden="true"><i class="fas fa-certificate"></i></div>
-                        <h3 class="home3-cred-title">FSSAI Authorised</h3>
-                    </article>
-                </div>
-            </div>
-        </div>
-
-        <!-- ===== 2. OUR ACHIEVEMENTS SECTION ===== -->
+        <!-- ===== OUR ACHIEVEMENTS SECTION ===== -->
         <div class="home3-stats-area home3-stats-area--hero-bg py-100">
             <div class="container">
                 <div class="site-heading text-center mb-40 wow fadeInUp" data-wow-delay=".1s">

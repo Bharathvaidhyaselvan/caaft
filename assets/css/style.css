@@ -10601,6 +10601,9 @@ body.home-3.page-accounting-reporting li {
 .caaft-documents-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
 }
 
 .caaft-documents-item {
@@ -10610,17 +10613,28 @@ body.home-3.page-accounting-reporting li {
     min-height: 36px;
     padding: 7px 10px;
     border-bottom: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
     color: #3a3a3a;
     line-height: 1.45;
     font-weight: 600;
+    font-size: 0.98rem;
 }
 
-.caaft-documents-item:nth-child(odd) {
-    border-right: 1px solid #d1d1d1;
+.caaft-documents-item:nth-child(2n) {
+    border-right: none;
 }
 
-.caaft-documents-item:nth-last-child(-n + 2) {
-    border-bottom: 0;
+.caaft-documents-item:nth-last-child(2):nth-child(odd) {
+    border-bottom: none;
+}
+
+.caaft-documents-item:last-child {
+    border-bottom: none;
+}
+
+.caaft-documents-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    border-right: none;
 }
 
 .caaft-documents-checkbox {
@@ -10646,15 +10660,19 @@ body.home-3.page-accounting-reporting li {
     }
 
     .caaft-documents-item {
-        border-right: 0 !important;
+        border-right: none !important;
     }
 
-    .caaft-documents-item:nth-last-child(-n + 2) {
+    .caaft-documents-item:last-child:nth-child(odd) {
+        grid-column: auto;
+    }
+
+    .caaft-documents-item:nth-last-child(2):nth-child(odd) {
         border-bottom: 1px solid #d1d1d1;
     }
 
     .caaft-documents-item:last-child {
-        border-bottom: 0;
+        border-bottom: none;
     }
 }
 
@@ -12421,7 +12439,8 @@ body.home-3 .home3-cred-grid {
 
 @media (min-width: 992px) {
     body.home-3 .home3-cred-grid {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
     }
 }
 
@@ -12454,11 +12473,20 @@ body.home-3 .home3-cred-icon {
 }
 
 body.home-3 .home3-cred-title {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 700;
     color: #1f2c40;
-    line-height: 1.35;
+    line-height: 1.4;
     margin: 0;
+}
+
+body.home-3 .home3-cred-area .site-heading .site-title {
+    font-size: clamp(1.65rem, 2.8vw, 2.15rem);
+    font-weight: 800;
+}
+
+body.home-3 .home3-cred-area .site-heading .site-title span {
+    color: var(--theme-color, #33b6ff);
 }
 
 body.home-3 .home3-plan {

@@ -76,12 +76,10 @@
                         <div class="about-content-sixteen wow fadeInRight" data-wow-delay=".25s">
                             <div class="section-title-four mb-20 tg-heading-subheading animation-style2">
                                 <span class="sub-title tg-element-title">Company Overview</span>
-                                <h2 class="title tg-element-title">Comprehensive Expertise for Efficient Accounting &
-                                    Reporting, Taxation, Business Incorporation and Compliance Services</h2>
+                                <h2 class="title tg-element-title">End-to-End Business Incorporation, Compliance, Taxation, Accounting &amp; Advisory Solutions</h2>
                             </div>
                             <p>We believe that every business deserves customized solutions to excel in today’s
-                                competitive environment. With expertise in Accounting & Reporting, Taxation, Business
-                                Incorporation, Consultancy and Compliance Services, our team is dedicated to offering
+                                competitive environment. With expertise in Business Incorporation, Compliance, Taxation, and Accounting &amp; Advisory Solutions, our team is dedicated to offering
                                 strategic insights and
                                 comprehensive support to help clients reach their objectives. Our mission is to empower
                                 businesses by delivering services that enhance financial performance, foster growth, and

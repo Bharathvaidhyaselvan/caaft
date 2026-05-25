@@ -233,11 +233,21 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         }
         .page-public-limited-registration .plc-docs-card-list li {
             position: relative;
-            padding: 6px 0 6px 0;
+            padding: 6px 0 6px 16px;
             font-size: 0.97rem;
             line-height: 1.55;
             font-weight: 500;
             color: #4a5568;
+        }
+        .page-public-limited-registration .plc-docs-card-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.92em;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--theme-color, #33b6ff);
         }
         .page-public-limited-registration .plc-docs-card-list li + li {
             margin-top: 2px;

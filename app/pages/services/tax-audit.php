@@ -849,7 +849,7 @@
         ];
         $caaft_hero_primary_cta_label = 'Audit Ready? Let’s Go';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
-        $caaft_hero_primary_cta_icon = 'fas fa-arrow-down';
+        $caaft_hero_primary_cta_icon = 'fas fa-arrow-right';
         $caaft_hero_secondary_cta_label = '';
 
         $caaft_enquiry_service = 'Tax Audit Services';
