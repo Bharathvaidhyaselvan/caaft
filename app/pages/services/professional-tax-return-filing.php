@@ -295,6 +295,8 @@ declare(strict_types=1);
         </div>
     </section>
 
+    <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
+
     <section class="partnership-mistakes" aria-labelledby="pt-mistakes-heading">
         <div class="container">
             <h2 id="pt-mistakes-heading" class="partnership-mistakes-title">Common Professional Tax Compliance Mistakes CAAFT Solves</h2>

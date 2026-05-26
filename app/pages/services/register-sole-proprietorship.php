@@ -353,6 +353,8 @@ declare(strict_types=1);
             </div>
         </section>
 
+        <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
+
         <section class="llp-vs-section" aria-labelledby="proprietorship-vs-heading">
             <div class="container">
                 <h2 id="proprietorship-vs-heading" class="plc-section-h2">Sole Proprietorship vs Other Business Structures</h2>

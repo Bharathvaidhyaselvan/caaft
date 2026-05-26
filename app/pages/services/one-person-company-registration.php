@@ -926,6 +926,8 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             </div>
         </section>
 
+        <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
+
         <section class="opc-compliance-rows" aria-labelledby="opc-compliance-heading">
             <div class="container">
                 <h2 id="opc-compliance-heading" class="opc-compliance-title">Compliance Requirements After <em class="opc-compliance-title-em">OPC Registration</em></h2>

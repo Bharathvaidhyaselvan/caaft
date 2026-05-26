@@ -251,6 +251,8 @@ declare(strict_types=1);
         </div>
     </section>
 
+    <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
+
     <section class="partnership-mistakes" aria-labelledby="dsc-validity-heading">
         <div class="container">
             <h2 id="dsc-validity-heading" class="partnership-mistakes-title">Digital Signature Certificate Validity and Renewal</h2>

@@ -171,6 +171,8 @@ declare(strict_types=1);
         </div>
     </section>
 
+    <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
+
     <?php
     $caaft_benefits_heading_id = 'msme-pro-assist-heading';
     $caaft_benefits_title = 'Benefits of Professional Assistance for MSME Registration';

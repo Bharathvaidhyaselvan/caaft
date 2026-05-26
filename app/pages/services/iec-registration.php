@@ -236,6 +236,8 @@ declare(strict_types=1);
         </div>
     </section>
 
+    <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
+
     <section class="partnership-mistakes" aria-labelledby="iec-challenges-heading">
         <div class="container">
             <h2 id="iec-challenges-heading" class="partnership-mistakes-title">Common IEC Registration Challenges CAAFT Solves</h2>

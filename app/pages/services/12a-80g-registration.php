@@ -316,6 +316,8 @@ declare(strict_types=1);
         </div>
     </section>
 
+    <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
+
     <?php
     $caaft_steps_heading_id = '12a80g-steps-heading';
     $caaft_steps_title = 'Step-by-Step Process';

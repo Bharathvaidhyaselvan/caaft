@@ -346,6 +346,8 @@ declare(strict_types=1);
         </div>
     </section>
 
+    <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
+
     <section class="llp-vs-section" aria-labelledby="epfesi-contribution-heading">
         <div class="container">
             <h2 id="epfesi-contribution-heading" class="plc-section-h2">EPF & ESI Contribution Structure</h2>

@@ -673,6 +673,8 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
             </div>
         </section>
 
+        <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
+
         <?php
         $caaft_llc_heading_id = 'plc-post-heading';
         $caaft_llc_title = 'Post-Registration Compliance for Private Limited Companies';

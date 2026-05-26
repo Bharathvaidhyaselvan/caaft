@@ -336,6 +336,8 @@ declare(strict_types=1);
             </div>
         </section>
 
+        <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
+
         <section class="partnership-compliance" aria-labelledby="fssai-compliance-heading">
             <div class="container">
                 <h2 id="fssai-compliance-heading" class="partnership-compliance-title">Compliance Rules Under FSSAI</h2>

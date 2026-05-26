@@ -721,6 +721,8 @@ declare(strict_types=1);
             </div>
         </section>
 
+        <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
+
         <section class="llp-vs-section" aria-labelledby="llp-vs-heading">
             <div class="container">
                 <h2 id="llp-vs-heading" class="plc-section-h2">LLP vs Traditional Partnership Firm — Key Differences</h2>

@@ -66,7 +66,7 @@
                     <div class="col-lg-6 col-md-9 wow fadeInLeft" data-wow-delay=".25s">
                         <div class="about-img-sixteen">
                             <img src="assets/img/busniess-img1.webp" alt="Business Incorporation and Compliance Services" title="Business Incorporation and Compliance Services">
-                            <img src="assets/img/busniess-img2.webp" alt="Taxation" title="Taxation">
+                            <img src="assets/img/busniess-img2.webp" alt="Income Tax" title="Income Tax">
                             <img src="assets/img/accounting-ser.webp" alt="Efficient Accounting & Reporting" title="Efficient Accounting & Reporting">
                             <img src="assets/img/h10_about_shape.png" alt="Business Incorporation" title="Business Incorporation" class="shape">
 
@@ -76,10 +76,10 @@
                         <div class="about-content-sixteen wow fadeInRight" data-wow-delay=".25s">
                             <div class="section-title-four mb-20 tg-heading-subheading animation-style2">
                                 <span class="sub-title tg-element-title">Company Overview</span>
-                                <h2 class="title tg-element-title">End-to-End Business Incorporation, Compliance, Taxation, Accounting &amp; Advisory Solutions</h2>
+                                <h2 class="title tg-element-title">End-to-End Business Incorporation, Compliance, Income Tax, Accounting &amp; Advisory Solutions</h2>
                             </div>
                             <p>We believe that every business deserves customized solutions to excel in today’s
-                                competitive environment. With expertise in Business Incorporation, Compliance, Taxation, and Accounting &amp; Advisory Solutions, our team is dedicated to offering
+                                competitive environment. With expertise in Business Incorporation, Compliance, Income Tax, and Accounting &amp; Advisory Solutions, our team is dedicated to offering
                                 strategic insights and
                                 comprehensive support to help clients reach their objectives. Our mission is to empower
                                 businesses by delivering services that enhance financial performance, foster growth, and

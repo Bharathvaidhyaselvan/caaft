@@ -25,7 +25,7 @@
                                 <ul class="footer-list">
                                     <li><a href="/business-setup-and-registration"><i class="far fa-arrow-right"></i>Business Setup &amp; Registration</a></li>
                                     <li><a href="/compliance-and-regulatory-services"><i class="far fa-arrow-right"></i>Compliance &amp; Regulatory</a></li>
-                                    <li><a href="/taxation-services"><i class="far fa-arrow-right"></i>Taxation</a></li>
+                                    <li><a href="/income-tax"><i class="far fa-arrow-right"></i>Income Tax</a></li>
                                     <li><a href="/accounting-and-reporting-services"><i class="far fa-arrow-right"></i>Accounting &amp; Reporting</a></li>
                                     <li><a href="/advisory-and-cfo-services"><i class="far fa-arrow-right"></i>Advisory &amp; CFO Services</a></li>
                                     <li><a href="/payroll-management-compliance"><i class="far fa-arrow-right"></i>Payroll</a></li>

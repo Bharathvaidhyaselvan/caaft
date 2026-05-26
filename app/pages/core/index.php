@@ -255,12 +255,12 @@
                                             class="img-fluid">
                                     </i> About CAAFT</span>
                                 <h1 class="about site-title">
-                                    End-to-End Business Incorporation, Compliance, Taxation, Accounting &amp; Advisory Solutions
+                                    End-to-End Business Incorporation, Compliance, Income Tax, Accounting &amp; Advisory Solutions
                                 </h1>
                             </div>
                             <p class="about-text">We are more than just service providers, we are your trusted advisors
                                 in growth. We believe that every business deserves customized solutions to excel
-                                in today’s competitive environment. With expertise in <a href="/business-setup-and-registration">Business Incorporation</a>, <a href="/compliance-and-regulatory-services">Compliance</a>, <a href="/taxation-services">Taxation</a>, and <a href="/accounting-reporting">Accounting &amp; Advisory Solutions</a>, our team is dedicated to
+                                in today’s competitive environment. With expertise in <a href="/business-setup-and-registration">Business Incorporation</a>, <a href="/compliance-and-regulatory-services">Compliance</a>, <a href="/income-tax">Income Tax</a>, and <a href="/accounting-reporting">Accounting &amp; Advisory Solutions</a>, our team is dedicated to
                                 offering strategic insights and comprehensive support to help clients reach their
                                 objectives.</p>
 
@@ -377,11 +377,11 @@
                         'text' => 'Private, LLP, OPC, partnership, and public company compliance plus ROC filings, DIR-3 KYC, and company closure.',
                     ],
                     [
-                        'title' => 'Taxation',
-                        'href' => '/taxation-services',
-                        'cta' => 'Explore Taxation',
+                        'title' => 'Income Tax',
+                        'href' => '/income-tax',
+                        'cta' => 'Explore Income Tax',
                         'icon' => 'assets/img/icon/tax-2.svg',
-                        'icon_alt' => 'Taxation Services',
+                        'icon_alt' => 'Income Tax Services',
                         'thumb' => 'assets/img/income-tax.webp',
                         'thumb_alt' => 'Income Tax Services',
                         'text' => 'Income tax planning, ITR and TDS filing, tax audit assistance, and tax assessment & appeal support.',
@@ -459,6 +459,8 @@
             </div>
         </div>
 
+        <?php include APP_ROOT . '/includes/components/home-pricing-plans.php'; ?>
+
         <div class="video-area" style="    background: #eaf8ff;">
             <div class="container-fluid px-0">
                 <div class="video-content">
@@ -468,7 +470,7 @@
                     <div class="video-img" style="background-image: url('assets/img/tax-filling-bg.webp');">
                         <div class="col-lg-8 mx-auto wow fadeInUp" data-wow-delay=".25s">
                             <div class="video-info">
-                                <h2 class="text-white">Need support with Accounting & Reporting, Taxation, Business
+                                <h2 class="text-white">Need support with Accounting & Reporting, Income Tax, Business
                                     Incorporation, Consultancy and Compliance Services?</h2>
                                 <p>Let us help you streamline your Accounting and Reporting processes, optimize your
                                     business setup, and ensure full compliance with tax and regulatory requirements. Our
@@ -508,7 +510,7 @@
                                     <img src="assets/img/process/01.jpg" alt="Choose Your Service" title="Choose Your Service"> 
                                 </div>
                                 <h4>Choose Your Service</h4>
-                                <p>Select from our range of services in Accounting & Reporting, Taxation, Business
+                                <p>Select from our range of services in Accounting & Reporting, Income Tax, Business
                                     Incorporation , Consultancy and Compliance Services to meet your unique business
                                     needs.</p>
                             </div>
