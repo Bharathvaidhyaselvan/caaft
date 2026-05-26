@@ -7,6 +7,7 @@
  *   $caaft_hero_pricing_label (string) — default "Price starts from"
  *   $caaft_hero_pricing_suffix (string) — default "+ GST"
  *   $caaft_hero_pricing_extra (string) — e.g. "Govt. Fee"
+ *   $caaft_hero_pricing_href (string) — e.g. #pricing-plans for clickable strip
  *   $caaft_hero_pricing_disable (bool)
  *
  * When amount is omitted, loads from includes/data/caaft-hero-service-pricing.php for the caller page.
@@ -25,6 +26,9 @@ if (!$caaft_hero_pricing_disable && !isset($caaft_hero_pricing_amount)) {
         if (!$caaft_hero_pricing_extra_from_page) {
             $caaft_hero_pricing_extra = $caaft_hero_pricing_row['govt_fee'] ? 'Govt. Fee' : '';
         }
+        if (!isset($caaft_hero_pricing_href) && ($caaft_hero_pricing_row['packages_href'] ?? '') !== '') {
+            $caaft_hero_pricing_href = $caaft_hero_pricing_row['packages_href'];
+        }
     }
 }
 
@@ -32,6 +36,7 @@ $caaft_hero_pricing_amount = isset($caaft_hero_pricing_amount) ? trim((string) $
 $caaft_hero_pricing_label = isset($caaft_hero_pricing_label) ? trim((string) $caaft_hero_pricing_label) : '';
 $caaft_hero_pricing_suffix = isset($caaft_hero_pricing_suffix) ? trim((string) $caaft_hero_pricing_suffix) : '+ GST';
 $caaft_hero_pricing_extra = isset($caaft_hero_pricing_extra) ? trim((string) $caaft_hero_pricing_extra) : '';
+$caaft_hero_pricing_href = isset($caaft_hero_pricing_href) ? trim((string) $caaft_hero_pricing_href) : '';
 $caaft_hero_show_pricing = $caaft_hero_pricing_amount !== '';
 
 if (!$caaft_hero_show_pricing) {
@@ -44,17 +49,5 @@ if ($caaft_hero_pricing_label === '') {
 if ($caaft_hero_pricing_suffix === '') {
     $caaft_hero_pricing_suffix = '+ GST';
 }
-?>
-<div class="caaft-hero-cta-pricing-banner" role="note">
-    <span class="caaft-hero-cta-pricing-label"><?php echo htmlspecialchars($caaft_hero_pricing_label, ENT_QUOTES, 'UTF-8'); ?></span>
-    <div class="caaft-hero-cta-pricing-line">
-        <span class="caaft-hero-cta-pricing-amount-wrap">
-            <span class="caaft-hero-cta-pricing-rupee">₹</span><strong class="caaft-hero-cta-pricing-amount"><?php echo htmlspecialchars($caaft_hero_pricing_amount, ENT_QUOTES, 'UTF-8'); ?></strong>
-        </span>
-        <span class="caaft-hero-cta-pricing-suffix"><?php echo htmlspecialchars($caaft_hero_pricing_suffix, ENT_QUOTES, 'UTF-8'); ?></span>
-        <?php if ($caaft_hero_pricing_extra !== '') : ?>
-            <span class="caaft-hero-cta-pricing-sep" aria-hidden="true">|</span>
-            <span class="caaft-hero-cta-pricing-extra"><?php echo htmlspecialchars($caaft_hero_pricing_extra, ENT_QUOTES, 'UTF-8'); ?></span>
-        <?php endif; ?>
-    </div>
-</div>
+
+include __DIR__ . '/caaft-hero-pricing-strip.php';

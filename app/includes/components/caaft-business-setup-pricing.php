@@ -9,15 +9,16 @@
 declare(strict_types=1);
 
 $caaft_bsr_pricing_data = require dirname(__DIR__) . '/data/caaft-business-setup-pricing.php';
+$caaft_pricing_defaults = $caaft_bsr_pricing_data['section_defaults'];
 
 if (($caaft_bsr_pricing_mode ?? '') === 'hub') {
     ?>
     <section class="home3-plans-area py-90 caaft-pricing-hub-intro" id="bsr-pricing-plans" aria-labelledby="bsr-pricing-plans-heading">
         <div class="container">
             <div class="site-heading text-center mb-10 wow fadeInUp" data-wow-delay=".1s">
-                <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="" class="img-fluid" width="30" height="30"></i> Pricing Plan</span>
-                <h2 id="bsr-pricing-plans-heading" class="site-title mt-2">Let&rsquo;s Check Our <span>Pricing</span> Plan For You</h2>
-                <p class="caaft-pricing-subtitle mt-2">Transparent packages for company incorporation and essential business registrations.</p>
+                <span class="site-title-tagline"><i><img src="assets/img/trend-img.webp" alt="" class="img-fluid" width="30" height="30"></i> <?php echo htmlspecialchars($caaft_pricing_defaults['eyebrow'], ENT_QUOTES, 'UTF-8'); ?></span>
+                <h2 id="bsr-pricing-plans-heading" class="site-title mt-2"><?php echo $caaft_pricing_defaults['title']; ?></h2>
+                <p class="home3-section-lead mt-2"><?php echo htmlspecialchars($caaft_pricing_defaults['subtitle'], ENT_QUOTES, 'UTF-8'); ?></p>
             </div>
         </div>
     </section>
@@ -32,6 +33,7 @@ if (($caaft_bsr_pricing_mode ?? '') === 'hub') {
         $caaft_pricing_col_class = $caaft_bsr_hub_section['col_class'];
         $caaft_pricing_is_subsection = true;
         $caaft_pricing_section_class = 'home3-plans-area py-50 caaft-pricing-hub-group';
+        $caaft_pricing_cta_label = $caaft_pricing_defaults['cta_label'];
         include __DIR__ . '/caaft-pricing-plans.php';
     }
 
@@ -58,10 +60,12 @@ $caaft_pricing_plans = array_map(static function (array $plan): array {
 $caaft_pricing_col_class = $caaft_bsr_page_pricing['col_class'] ?? 'col-md-6 col-lg-4';
 $caaft_pricing_section_id = 'pricing-plans';
 $caaft_pricing_heading_id = 'service-pricing-plans-heading';
-$caaft_pricing_title = 'Let&rsquo;s Check Our <span>Pricing</span> Plan For You';
+$caaft_pricing_eyebrow = $caaft_pricing_defaults['eyebrow'];
+$caaft_pricing_title = $caaft_pricing_defaults['title'];
 $caaft_pricing_subtitle = count($caaft_pricing_plans) > 1
-    ? 'Choose incorporation only or a bundled incorporation + compliance package.'
-    : '';
+    ? $caaft_pricing_defaults['service_subtitle_multi']
+    : $caaft_pricing_defaults['service_subtitle_single'];
 $caaft_pricing_is_subsection = false;
 $caaft_pricing_section_class = 'home3-plans-area py-90';
+$caaft_pricing_cta_label = $caaft_pricing_defaults['cta_label'];
 include __DIR__ . '/caaft-pricing-plans.php';

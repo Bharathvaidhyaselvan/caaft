@@ -244,11 +244,6 @@
         ?>
 
         <?php
-        $caaft_bsr_pricing_mode = 'hub';
-        include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php';
-        ?>
-
-        <?php
         $why_choose_caaft_heading_id = 'bsr-why-heading';
         $why_choose_caaft_title = 'WHY CHOOSE CAAFT';
         $why_choose_caaft_intro = 'Founders and growing businesses rely on CAAFT for Pvt Ltd incorporation that is filing-accurate, timeline-clear, and backed by ongoing statutory support.';
@@ -277,6 +272,11 @@
             ['title' => 'Certificate Delivery', 'text' => 'The registration certificate is delivered along with a briefing on compliance obligations and next steps.'],
         ];
         include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+        ?>
+
+        <?php
+        $caaft_bsr_pricing_mode = 'hub';
+        include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php';
         ?>
 
         <?php

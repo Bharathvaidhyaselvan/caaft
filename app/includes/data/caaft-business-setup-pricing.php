@@ -141,7 +141,7 @@ $llp_partnership_plans = [
     ],
     [
         'badge' => 'Partnership',
-        'tier' => 'Incorporation',
+        'tier' => 'Registration',
         'title' => 'Partnership Firm Registration',
         'price' => '11,999',
         'price_note' => $govt_note,
@@ -156,7 +156,7 @@ $llp_partnership_plans = [
     ],
     [
         'badge' => 'Partnership',
-        'tier' => 'Incorporation + Compliance',
+        'tier' => 'Registration + Compliance',
         'title' => 'Partnership Firm Registration',
         'price' => '19,999',
         'price_note' => $govt_note,
@@ -177,7 +177,7 @@ $llp_partnership_plans = [
 $sole_opc_plans = [
     [
         'badge' => 'Sole Prop',
-        'tier' => 'Incorporation',
+        'tier' => 'Registration',
         'title' => 'Sole Proprietorship Registration',
         'price' => '9,999',
         'price_note' => $govt_note,
@@ -191,7 +191,7 @@ $sole_opc_plans = [
     ],
     [
         'badge' => 'Sole Prop',
-        'tier' => 'Incorporation + Compliance',
+        'tier' => 'Registration + Compliance',
         'title' => 'Sole Proprietorship Registration',
         'price' => '14,999',
         'price_note' => $govt_note,
@@ -349,33 +349,61 @@ $other_registration_plans = [
 ];
 
 return [
+    'section_defaults' => [
+        'eyebrow' => 'Pricing Plans',
+        'title' => 'Transparent <span>Service Packages</span>',
+        'subtitle' => 'Choose a plan that fits your business size. All plans include dedicated support and guaranteed compliance.',
+        'service_subtitle_multi' => 'Choose incorporation only or a bundled incorporation + compliance package.',
+        'service_subtitle_single' => 'Transparent pricing with dedicated support and guaranteed compliance.',
+        'cta_label' => 'Get Started',
+    ],
     'home_plans' => [
         [
-            'badge' => 'Pvt Ltd',
             'title' => 'Private Limited Registration',
             'price' => '14,999',
-            'price_note' => $govt_note,
-            'href' => '/private-limited-company-registration#quote-content',
+            'href' => '/private-limited-company-registration',
             'featured' => false,
-            'features' => $company_ltd_plans[0]['features'],
+            'features' => [
+                'Name Reservation',
+                'DIN',
+                'DSC×2',
+                'MOA & AOA',
+                'Certificate',
+                'PAN & TAN',
+                'ESI & EPF',
+                'MSME',
+                'Current Account',
+            ],
         ],
         [
-            'badge' => 'LLP',
+            'badge' => 'Most Popular',
             'title' => 'LLP Registration',
             'price' => '11,999',
-            'price_note' => $govt_note,
-            'href' => '/llp-registration-services#quote-content',
+            'href' => '/llp-registration-services',
             'featured' => true,
-            'features' => $llp_partnership_plans[0]['features'],
+            'features' => [
+                'Name Approval',
+                'LLP Agreement',
+                'DPINs',
+                'Incorporation',
+                'PAN & TAN',
+                'Current Account',
+            ],
         ],
         [
-            'badge' => 'OPC',
             'title' => 'One Person Company Registration',
             'price' => '11,999',
-            'price_note' => $govt_note,
-            'href' => '/one-person-company-registration#quote-content',
+            'href' => '/one-person-company-registration',
             'featured' => false,
-            'features' => $sole_opc_plans[2]['features'],
+            'features' => [
+                'Name Reservation',
+                'incorporation',
+                'MOA & AOA',
+                'DIN',
+                'PAN & TAN',
+                'ESI & EPF',
+                'Current Account',
+            ],
         ],
     ],
     'hub_sections' => [
