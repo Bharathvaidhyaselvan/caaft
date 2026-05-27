@@ -7879,6 +7879,10 @@ main h2[id][class*="heading"] {
     box-sizing: border-box;
 }
 
+.caaft-ar-hero-inner > .caaft-hero-cta-pricing-banner.caaft-hero-cta-pricing-banner--has-details {
+    max-width: min(520px, 100%);
+}
+
 a.caaft-hero-cta-pricing-banner.caaft-hero-cta-pricing-banner--link {
     display: block;
     text-decoration: none;
@@ -7914,11 +7918,46 @@ a.caaft-hero-cta-pricing-banner.caaft-hero-cta-pricing-banner--link:focus-visibl
 .caaft-ar-hero-inner .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-line {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: flex-start;
     gap: 6px 10px;
     font-family: var(--body-font);
     line-height: 1.2;
+}
+
+.caaft-ar-hero-inner .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-details-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: #fff;
+    font-family: var(--body-font);
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.caaft-ar-hero-inner .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-details-btn:hover,
+.caaft-ar-hero-inner .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-details-btn:focus-visible {
+    background: rgba(255, 255, 255, 0.24);
+    border-color: rgba(160, 230, 255, 0.85);
+    color: #fff;
+    outline: none;
+}
+
+.caaft-ar-hero-inner .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-details-btn:focus-visible {
+    outline: 2px solid rgba(160, 230, 255, 0.95);
+    outline-offset: 2px;
+}
+
+.caaft-ar-hero-inner .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-details-btn i {
+    font-size: 0.72rem;
 }
 
 .caaft-ar-hero-inner .caaft-hero-cta-pricing-banner .caaft-hero-cta-pricing-amount-wrap {
@@ -8924,12 +8963,12 @@ a.caaft-hero-cta-pricing-banner.caaft-hero-cta-pricing-banner--link:focus-visibl
 }
 
 .pricing-items {
-    background: var(--color-white);
+    background: transparent;
     border-radius: 15px;
     position: relative;
     padding: 20px;
     overflow: hidden;
-    box-shadow: var(--box-shadow);
+    box-shadow: none;
     transition: all .5s ease-in-out;
     z-index: 1;
 }
@@ -12327,6 +12366,17 @@ body.home-3 .home3-plans-area#pricing-plans {
 body.home-3 .home3-plans-area .site-heading .site-title {
     font-size: clamp(1.65rem, 2.8vw, 2.15rem);
     font-weight: 800;
+    text-align: center;
+}
+
+body.home-3 .home3-plans-area .site-heading {
+    text-align: center;
+}
+
+body.home-3 .home3-plans-area .site-heading .site-title-tagline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body.home-3 .home3-plans-area .site-heading .site-title span {
@@ -12434,6 +12484,20 @@ body.home-3 .home3-plans-area .site-heading .caaft-pricing-subtitle {
     line-height: 1.65;
     font-weight: 500;
     text-align: center;
+}
+
+body.home-3 .home3-plans-area .site-heading .home3-section-lead.mt-2,
+body.home-3 .home3-plans-area .site-heading .caaft-pricing-subtitle.mt-2 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+body.home-3 .home3-plans-area .site-heading .home3-section-lead,
+body.home-3 .home3-plans-area .site-heading .caaft-pricing-subtitle {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 body.home-3 .home3-stat-card {

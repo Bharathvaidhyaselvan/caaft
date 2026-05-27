@@ -52,16 +52,28 @@ if ($caaft_bsr_page_key === '' || !isset($caaft_bsr_pricing_data['by_page'][$caa
 }
 
 $caaft_bsr_page_pricing = $caaft_bsr_pricing_data['by_page'][$caaft_bsr_page_key];
-$caaft_pricing_plans = array_map(static function (array $plan): array {
+$caaft_bsr_tier_badge_pages = [
+    'private-limited-registration.php',
+    'public-limited-company-registration.php',
+    'one-person-company-registration.php',
+    'llp-registration-services.php',
+    'register-partnership-firm.php',
+    'register-sole-proprietorship.php',
+];
+$caaft_bsr_use_tier_badges = in_array($caaft_bsr_page_key, $caaft_bsr_tier_badge_pages, true);
+$caaft_pricing_plans = array_map(static function (array $plan, int $index) use ($caaft_bsr_use_tier_badges): array {
     $plan['href'] = '#quote-content';
+    if ($caaft_bsr_use_tier_badges) {
+        $plan['badge'] = $index === 0 ? 'Standard' : 'Premium';
+    }
 
     return $plan;
-}, $caaft_bsr_page_pricing['plans']);
+}, $caaft_bsr_page_pricing['plans'], array_keys($caaft_bsr_page_pricing['plans']));
 $caaft_pricing_col_class = $caaft_bsr_page_pricing['col_class'] ?? 'col-md-6 col-lg-4';
 $caaft_pricing_section_id = 'pricing-plans';
 $caaft_pricing_heading_id = 'service-pricing-plans-heading';
 $caaft_pricing_eyebrow = $caaft_pricing_defaults['eyebrow'];
-$caaft_pricing_title = $caaft_pricing_defaults['title'];
+$caaft_pricing_title = $caaft_pricing_defaults['service_title'] ?? $caaft_pricing_defaults['title'];
 $caaft_pricing_subtitle = count($caaft_pricing_plans) > 1
     ? $caaft_pricing_defaults['service_subtitle_multi']
     : $caaft_pricing_defaults['service_subtitle_single'];

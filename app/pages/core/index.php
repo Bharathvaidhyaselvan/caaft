@@ -377,13 +377,13 @@
                         'text' => 'Private, LLP, OPC, partnership, and public company compliance plus ROC filings, DIR-3 KYC, and company closure.',
                     ],
                     [
-                        'title' => 'Taxation',
+                        'title' => 'Income Tax',
                         'href' => '/taxation',
-                        'cta' => 'Explore Taxation',
+                        'cta' => 'Explore Income Tax',
                         'icon' => 'assets/img/icon/tax-2.svg',
-                        'icon_alt' => 'Taxation Services',
+                        'icon_alt' => 'Income Tax Services',
                         'thumb' => 'assets/img/income-tax.webp',
-                        'thumb_alt' => 'Taxation Services',
+                        'thumb_alt' => 'Income Tax Services',
                         'text' => 'Income tax planning, ITR and TDS filing, tax audit assistance, GST compliance, and tax assessment & appeal support.',
                     ],
                     [

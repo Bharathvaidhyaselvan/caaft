@@ -352,6 +352,7 @@ return [
     'section_defaults' => [
         'eyebrow' => 'Pricing Plans',
         'title' => 'Transparent <span>Service Packages</span>',
+        'service_title' => 'Flexible <span>Registration Packages</span>',
         'subtitle' => 'Choose a plan that fits your business size. All plans include dedicated support and guaranteed compliance.',
         'service_subtitle_multi' => 'Choose incorporation only or a bundled incorporation + compliance package.',
         'service_subtitle_single' => 'Transparent pricing with dedicated support and guaranteed compliance.',

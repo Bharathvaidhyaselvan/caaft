@@ -275,11 +275,6 @@
         ?>
 
         <?php
-        $caaft_bsr_pricing_mode = 'hub';
-        include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php';
-        ?>
-
-        <?php
         $caaft_git_section_id = 'get-in-touch';
         $caaft_git_heading_id = 'bsr-git-heading';
         $caaft_git_title = 'Your Business, Officially and Correctly Registered.';

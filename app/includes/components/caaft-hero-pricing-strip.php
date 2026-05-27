@@ -1,9 +1,10 @@
 <?php
 /**
- * Hero "Price starts from" strip (div or link to #pricing-plans).
+ * Hero "Price starts from" strip with optional View Details button inside the card.
  *
  * Requires: $caaft_hero_pricing_label, $caaft_hero_pricing_amount, $caaft_hero_pricing_suffix
- * Optional: $caaft_hero_pricing_extra, $caaft_hero_pricing_href
+ * Optional: $caaft_hero_pricing_extra, $caaft_hero_pricing_href (targets #pricing-plans on same page)
+ * Optional: $caaft_hero_pricing_details_label (default "View Details")
  */
 declare(strict_types=1);
 
@@ -13,18 +14,12 @@ $caaft_hero_pricing_href = isset($caaft_hero_pricing_href) ? trim((string) $caaf
 if ($caaft_hero_pricing_href !== '') {
     $caaft_hero_pricing_href = caaft_resolve_page_anchor_href($caaft_hero_pricing_href);
 }
-$caaft_hero_pricing_is_link = $caaft_hero_pricing_href !== '';
-$caaft_hero_pricing_tag = $caaft_hero_pricing_is_link ? 'a' : 'div';
-$caaft_hero_pricing_class = 'caaft-hero-cta-pricing-banner' . ($caaft_hero_pricing_is_link ? ' caaft-hero-cta-pricing-banner--link' : '');
+$caaft_hero_pricing_details_label = isset($caaft_hero_pricing_details_label) && trim((string) $caaft_hero_pricing_details_label) !== ''
+    ? trim((string) $caaft_hero_pricing_details_label)
+    : 'View Details';
+$caaft_hero_pricing_show_details = $caaft_hero_pricing_href !== '';
 ?>
-<<?php echo $caaft_hero_pricing_tag; ?>
-    class="<?php echo htmlspecialchars($caaft_hero_pricing_class, ENT_QUOTES, 'UTF-8'); ?>"
-    <?php if ($caaft_hero_pricing_is_link) : ?>
-        href="<?php echo htmlspecialchars($caaft_hero_pricing_href, ENT_QUOTES, 'UTF-8'); ?>"
-        aria-label="View Transparent Service Packages pricing"
-    <?php else : ?>
-        role="note"
-    <?php endif; ?>>
+<div class="caaft-hero-cta-pricing-banner<?php echo $caaft_hero_pricing_show_details ? ' caaft-hero-cta-pricing-banner--has-details' : ''; ?>" role="note">
     <span class="caaft-hero-cta-pricing-label"><?php echo htmlspecialchars($caaft_hero_pricing_label, ENT_QUOTES, 'UTF-8'); ?></span>
     <div class="caaft-hero-cta-pricing-line">
         <span class="caaft-hero-cta-pricing-amount-wrap">
@@ -35,5 +30,15 @@ $caaft_hero_pricing_class = 'caaft-hero-cta-pricing-banner' . ($caaft_hero_prici
             <span class="caaft-hero-cta-pricing-sep" aria-hidden="true">|</span>
             <span class="caaft-hero-cta-pricing-extra"><?php echo htmlspecialchars($caaft_hero_pricing_extra, ENT_QUOTES, 'UTF-8'); ?></span>
         <?php endif; ?>
+        <?php if ($caaft_hero_pricing_show_details) : ?>
+            <span class="caaft-hero-cta-pricing-sep" aria-hidden="true">|</span>
+            <a
+                href="<?php echo htmlspecialchars($caaft_hero_pricing_href, ENT_QUOTES, 'UTF-8'); ?>"
+                class="caaft-hero-cta-pricing-details-btn"
+                aria-label="<?php echo htmlspecialchars($caaft_hero_pricing_details_label . ' — pricing packages on this page', ENT_QUOTES, 'UTF-8'); ?>">
+                <?php echo htmlspecialchars($caaft_hero_pricing_details_label, ENT_QUOTES, 'UTF-8'); ?>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+        <?php endif; ?>
     </div>
-</<?php echo $caaft_hero_pricing_tag; ?>>
+</div>

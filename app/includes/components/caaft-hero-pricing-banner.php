@@ -7,7 +7,7 @@
  *   $caaft_hero_pricing_label (string) — default "Price starts from"
  *   $caaft_hero_pricing_suffix (string) — default "+ GST"
  *   $caaft_hero_pricing_extra (string) — e.g. "Govt. Fee"
- *   $caaft_hero_pricing_href (string) — e.g. #pricing-plans for clickable strip
+ *   $caaft_hero_pricing_href (string) — e.g. #pricing-plans for View Details button
  *   $caaft_hero_pricing_disable (bool)
  *
  * When amount is omitted, loads from includes/data/caaft-hero-service-pricing.php for the caller page.

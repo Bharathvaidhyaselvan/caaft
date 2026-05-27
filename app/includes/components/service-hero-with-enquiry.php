@@ -28,7 +28,8 @@
  *   $caaft_hero_pricing_label (string) — default "Price starts from" when amount is set
  *   $caaft_hero_pricing_suffix (string) — default "+ GST"
  *   $caaft_hero_pricing_extra (string) — e.g. "Govt. Fee"; empty hides the "| …" segment
- *   $caaft_hero_pricing_href (string) — when set (e.g. #pricing-plans), strip is a clickable button
+ *   $caaft_hero_pricing_href (string) — when set (e.g. #pricing-plans), shows a View Details button
+ *   $caaft_hero_pricing_details_label (string) — default "View Details"
  */
 if (!isset($caaft_hero_id, $caaft_hero_h1, $caaft_hero_h2_before, $caaft_hero_h2_highlight, $caaft_hero_h2_after, $caaft_hero_lead_paragraphs)) {
     trigger_error('service-hero-with-enquiry.php: set required $caaft_hero_* variables before including', E_USER_WARNING);

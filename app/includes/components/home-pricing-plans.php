@@ -7,8 +7,14 @@ declare(strict_types=1);
 $caaft_bsr_pricing_data = require dirname(__DIR__) . '/data/caaft-business-setup-pricing.php';
 $caaft_pricing_defaults = $caaft_bsr_pricing_data['section_defaults'];
 
-$caaft_pricing_plans = $caaft_bsr_pricing_data['home_plans'];
-$caaft_pricing_layout = 'simple';
+$caaft_pricing_plans = array_map(
+    static function (array $plan): array {
+        $plan['show_card_title'] = true;
+        return $plan;
+    },
+    $caaft_bsr_pricing_data['home_plans']
+);
+$caaft_pricing_layout = 'tiered';
 $caaft_pricing_section_id = 'pricing-plans';
 $caaft_pricing_heading_id = 'home-pricing-plans-heading';
 $caaft_pricing_eyebrow = $caaft_pricing_defaults['eyebrow'];
