@@ -108,7 +108,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-chart-line', 'title' => '500+ Capital Increase Filings', 'description' => 'Across India'],
+        ['icon_class' => 'fas fa-chart-line', 'title' => '100+ Capital Increase Filings', 'description' => 'Across India'],
         ['icon_class' => 'fas fa-file-signature', 'title' => 'MOA Amendment & ROC Filing', 'description' => 'SH-7, MGT-14 Compliance'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];

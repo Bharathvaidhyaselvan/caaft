@@ -25,7 +25,7 @@
                                 <ul class="footer-list">
                                     <li><a href="/business-setup-and-registration"><i class="far fa-arrow-right"></i>Business Setup &amp; Registration</a></li>
                                     <li><a href="/compliance-and-regulatory-services"><i class="far fa-arrow-right"></i>Compliance &amp; Regulatory</a></li>
-                                    <li><a href="/income-tax"><i class="far fa-arrow-right"></i>Income Tax</a></li>
+                                    <li><a href="/taxation"><i class="far fa-arrow-right"></i>Taxation</a></li>
                                     <li><a href="/accounting-and-reporting-services"><i class="far fa-arrow-right"></i>Accounting &amp; Reporting</a></li>
                                     <li><a href="/advisory-and-cfo-services"><i class="far fa-arrow-right"></i>Advisory &amp; CFO Services</a></li>
                                     <li><a href="/payroll-management-compliance"><i class="far fa-arrow-right"></i>Payroll</a></li>
@@ -91,14 +91,20 @@
         <div class="container">
             <div class="copyright">
                 <div class="row align-items-center gy-2">
-                    <div class="col-12 col-md-8 col-lg-9 align-self-center">
+                    <div class="col-12 col-md-7 col-lg-8 align-self-center">
                         <p class="copyright-text mb-0">
-                            &copy; Copyright 2026 - <a href="#">CAAFT Consultancy Services Private Limited.</a>
+                            &copy; Copyright 2026 - <a href="/">CAAFT Consultancy Services Private Limited.</a>
                             All Rights Reserved.
                         </p>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3 align-self-center text-md-end text-center">
-                        <a class="brevia-credit" href="https://www.builtbybrevia.com" target="_blank" rel="noopener noreferrer">&#9889;BuiltByBrevia</a>
+                    <div class="col-12 col-md-5 col-lg-4 align-self-center text-md-end text-center">
+                        <nav class="caaft-footer-legal-links" aria-label="Legal">
+                            <a href="/privacy-policy">Privacy Policy</a>
+                            <span aria-hidden="true">&middot;</span>
+                            <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+                            <span aria-hidden="true">&middot;</span>
+                            <a href="/disclaimer">Disclaimer</a>
+                        </nav>
                     </div>
                 </div>
             </div>

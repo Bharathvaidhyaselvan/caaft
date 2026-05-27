@@ -370,7 +370,7 @@
             ],
             [
                 'icon_class' => 'fas fa-briefcase',
-                'title' => '500+',
+                'title' => '300+',
                 'description' => 'Businesses Served',
             ],
             [

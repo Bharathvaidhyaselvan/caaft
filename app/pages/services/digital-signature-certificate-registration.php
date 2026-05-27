@@ -128,7 +128,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-key', 'title' => '500+ DSCs Issued', 'description' => 'Across India'],
+        ['icon_class' => 'fas fa-key', 'title' => '300+ DSCs Issued', 'description' => 'Across India'],
         ['icon_class' => 'fas fa-network-wired', 'title' => 'All Portals Covered', 'description' => 'MCA, GST, DGFT & More'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Secure & Confidential', 'description' => 'Strictly Protected'],
     ];

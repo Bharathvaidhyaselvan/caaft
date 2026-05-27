@@ -494,7 +494,7 @@
             ],
             [
                 'icon_class' => 'fas fa-briefcase',
-                'title' => '500+',
+                'title' => '200+',
                 'description' => 'Businesses Served',
             ],
             [

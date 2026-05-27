@@ -732,7 +732,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         <?php
         $caaft_trust_items = [
             ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-            ['icon_class' => 'fas fa-building', 'title' => '500+', 'description' => 'OPCs Registered'],
+            ['icon_class' => 'fas fa-building', 'title' => '200+', 'description' => 'OPCs Registered'],
             ['icon_class' => 'fas fa-bolt', 'title' => 'Fast', 'description' => 'Hassle-Free Process'],
             ['icon_class' => 'fas fa-lock', 'title' => '100%', 'description' => 'Data Confidentiality'],
         ];

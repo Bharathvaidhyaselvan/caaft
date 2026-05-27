@@ -255,12 +255,12 @@
                                             class="img-fluid">
                                     </i> About CAAFT</span>
                                 <h1 class="about site-title">
-                                    End-to-End Business Incorporation, Compliance, Income Tax, Accounting &amp; Advisory Solutions
+                                    End-to-End Business Incorporation, Compliance, Taxation, Accounting &amp; Advisory Solutions
                                 </h1>
                             </div>
                             <p class="about-text">We are more than just service providers, we are your trusted advisors
                                 in growth. We believe that every business deserves customized solutions to excel
-                                in today’s competitive environment. With expertise in <a href="/business-setup-and-registration">Business Incorporation</a>, <a href="/compliance-and-regulatory-services">Compliance</a>, <a href="/income-tax">Income Tax</a>, and <a href="/accounting-reporting">Accounting &amp; Advisory Solutions</a>, our team is dedicated to
+                                in today’s competitive environment. With expertise in <a href="/business-setup-and-registration">Business Incorporation</a>, <a href="/compliance-and-regulatory-services">Compliance</a>, <a href="/taxation">Taxation</a>, and <a href="/accounting-reporting">Accounting &amp; Advisory Solutions</a>, our team is dedicated to
                                 offering strategic insights and comprehensive support to help clients reach their
                                 objectives.</p>
 
@@ -377,14 +377,14 @@
                         'text' => 'Private, LLP, OPC, partnership, and public company compliance plus ROC filings, DIR-3 KYC, and company closure.',
                     ],
                     [
-                        'title' => 'Income Tax',
-                        'href' => '/income-tax',
-                        'cta' => 'Explore Income Tax',
+                        'title' => 'Taxation',
+                        'href' => '/taxation',
+                        'cta' => 'Explore Taxation',
                         'icon' => 'assets/img/icon/tax-2.svg',
-                        'icon_alt' => 'Income Tax Services',
+                        'icon_alt' => 'Taxation Services',
                         'thumb' => 'assets/img/income-tax.webp',
-                        'thumb_alt' => 'Income Tax Services',
-                        'text' => 'Income tax planning, ITR and TDS filing, tax audit assistance, and tax assessment & appeal support.',
+                        'thumb_alt' => 'Taxation Services',
+                        'text' => 'Income tax planning, ITR and TDS filing, tax audit assistance, GST compliance, and tax assessment & appeal support.',
                     ],
                     [
                         'title' => 'GST',

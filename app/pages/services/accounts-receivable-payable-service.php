@@ -169,7 +169,7 @@
         <?php
         $caaft_trust_items = [
             ['icon_class' => 'far fa-check-circle', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-            ['icon_class' => 'fas fa-briefcase', 'title' => '500+', 'description' => 'Businesses Served'],
+            ['icon_class' => 'fas fa-briefcase', 'title' => '200+', 'description' => 'Businesses Served'],
             ['icon_class' => 'fas fa-file-invoice', 'title' => '10,000+', 'description' => 'Invoices Managed'],
             ['icon_class' => 'fas fa-shield-alt', 'title' => '100%', 'description' => 'Data Confidentiality'],
         ];

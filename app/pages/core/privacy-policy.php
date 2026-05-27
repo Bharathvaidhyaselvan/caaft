@@ -1,381 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="robots" content="all, index, follow" >
-      <title>Privacy Policy | Business Consultancy Services in Chennai</title>
-      <meta name="Description" content="" >
-      <link rel="canonical" href="https://caaft.com/privacy-policy.php" >
-      <meta property="og:locale" content="en_US">
-      <meta property="og:type" content="article" >
-      <meta property="og:title" content="Privacy Policy | Business Consultancy Services in Chennai" >
-      <meta property="og:description" content="" >
-      <meta property="og:url" content="https://caaft.com/privacy-policy.php" >
-      <meta property="og:site_name" content="CAAFT Consultancy Services" >
-      <meta property="og:image" content="https://caaft.com/assets/img/contact-form.webp" >
-      <!--<meta property="fb:app_id" content="kpwebtechcom" >-->
-      <meta name="twitter:card" content="summary_large_image" >
-      <meta name="twitter:title" content="Privacy Policy | Business Consultancy Services in Chennai" >
-      <meta name="twitter:creator" content="@CaaftServices">
-      <meta name="twitter:site" content="@CaaftServices">
-      <meta name="twitter:image" content="https://caaft.com/assets/img/contact-form.webp">
-
+    <meta name="robots" content="noindex, follow">
+    <title>Privacy Policy | CAAFT Consultancy Services Private Limited</title>
+    <meta name="description" content="Read the Privacy Policy of CAAFT Consultancy Services Private Limited — covering how we collect, use, protect, and retain your personal and business data.">
+    <link rel="canonical" href="https://caaft.com/privacy-policy">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Privacy Policy | CAAFT Consultancy Services Private Limited">
+    <meta property="og:description" content="Read the Privacy Policy of CAAFT Consultancy Services Private Limited — covering how we collect, use, protect, and retain your personal and business data.">
+    <meta property="og:url" content="https://caaft.com/privacy-policy">
+    <meta property="og:site_name" content="CAAFT Consultancy Services">
+    <meta property="og:image" content="https://caaft.com/assets/img/contact-form.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Privacy Policy | CAAFT Consultancy Services Private Limited">
+    <meta name="twitter:creator" content="@CaaftServices">
+    <meta name="twitter:site" content="@CaaftServices">
+    <meta name="twitter:image" content="https://caaft.com/assets/img/contact-form.webp">
     <?php include "header-top.php"; ?>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+    <style>
+        .caaft-legal-wrap { padding: 70px 0 80px; }
+        .caaft-legal-inner { max-width: 860px; margin: 0 auto; }
+        .caaft-legal-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; margin-bottom: 36px; }
+        .caaft-legal-badge { display: inline-block; background: var(--theme-bg-light, #e8f7ff); color: var(--theme-color, #33b6ff); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; padding: 4px 14px; border-radius: 999px; }
+        .caaft-legal-effective { font-size: 0.9rem; color: #6b7280; font-weight: 500; }
+        .caaft-legal-h1 { font-size: clamp(1.9rem, 3.5vw, 2.7rem); font-weight: 800; color: #1f2c40; line-height: 1.18; margin: 0 0 18px; }
+        .caaft-legal-intro { font-size: 1.05rem; line-height: 1.72; color: #4a5568; margin-bottom: 44px; padding-bottom: 36px; border-bottom: 1px solid #e8edf2; }
+        .caaft-legal-section { margin-bottom: 44px; }
+        .caaft-legal-section:last-child { margin-bottom: 0; }
+        .caaft-legal-section-num { display: inline-block; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: var(--theme-color, #33b6ff); margin-bottom: 8px; }
+        .caaft-legal-section-title { font-size: 1.22rem; font-weight: 800; color: #1f2c40; margin: 0 0 14px; }
+        .caaft-legal-section p { font-size: 0.98rem; line-height: 1.72; color: #4a5568; margin: 0 0 12px; }
+        .caaft-legal-section p:last-child { margin-bottom: 0; }
+        .caaft-legal-section ul, .caaft-legal-section ol { padding-left: 0; list-style: none; margin: 10px 0 16px; }
+        .caaft-legal-section ul li, .caaft-legal-section ol li { position: relative; padding: 6px 0 6px 22px; font-size: 0.97rem; line-height: 1.62; color: #4a5568; }
+        .caaft-legal-section ul li::before { content: ""; position: absolute; left: 0; top: 14px; width: 7px; height: 7px; border-radius: 50%; background: var(--theme-color, #33b6ff); }
+        .caaft-legal-section ol { counter-reset: legal-ol; }
+        .caaft-legal-section ol li { counter-increment: legal-ol; }
+        .caaft-legal-section ol li::before { content: counter(legal-ol) "."; position: absolute; left: 0; top: 6px; font-size: 0.88rem; font-weight: 700; color: var(--theme-color, #33b6ff); }
+        .caaft-legal-subsection { margin: 18px 0 6px; }
+        .caaft-legal-subsection-title { font-size: 1rem; font-weight: 700; color: #1f2c40; margin: 0 0 8px; }
+        .caaft-legal-contact-box { background: #f4fbff; border: 1px solid #d1eeff; border-radius: 12px; padding: 24px 28px; margin-top: 16px; }
+        .caaft-legal-contact-box p { margin: 0 0 6px; font-size: 0.97rem; color: #1f2c40; font-weight: 500; }
+        .caaft-legal-contact-box p:last-child { margin-bottom: 0; }
+        .caaft-legal-contact-box a { color: var(--theme-color, #33b6ff); font-weight: 600; text-decoration: none; }
+        .caaft-legal-divider { border: none; border-top: 1px solid #e8edf2; margin: 44px 0; }
+        @media (max-width: 767px) {
+            .caaft-legal-wrap { padding: 44px 0 60px; }
+        }
+    </style>
 </head>
-
 <body class="home-3">
 <?php include dirname(__DIR__, 2) . '/includes/gtm-noscript.php'; ?>
-   <!-- <div class="preloader">
-        <div class="loader-ripple">
-            <div>
-                <a>
-                    <img src="assets/img/caaft-logo-header.webp" alt="caaft" title="caaft" class="img-fluid">
-                </a>
-            </div>
+<div class="header-sections">
+    <?php include "header.php"; ?>
+</div>
+<div class="search-popup">
+    <button class="close-search"><span class="far fa-times"></span></button>
+    <form action="#">
+        <div class="form-group">
+            <input type="search" name="search-field" class="form-control" placeholder="Search Here..." required>
+            <button type="submit"><i class="far fa-search"></i></button>
         </div>
-    </div>-->
+    </form>
+</div>
 
-    <div class="header-sections">
-        <?php include "header.php"; ?>
+<main class="main">
+    <div class="site-breadcrumb" style="background: url(assets/img/contact-us-banner-new.webp)">
+        <div class="container">
+            <h1 class="breadcrumb-title">Privacy Policy</h1>
+        </div>
     </div>
 
+    <section class="caaft-legal-wrap">
+        <div class="container">
+            <div class="caaft-legal-inner">
 
-    <div class="search-popup">
-        <button class="close-search"><span class="far fa-times"></span></button>
-        <form action="#">
-            <div class="form-group">
-                <input type="search" name="search-field" class="form-control" placeholder="Search Here..." required>
-                <button type="submit"><i class="far fa-search"></i></button>
-            </div>
-        </form>
-    </div>
+                <div class="caaft-legal-meta">
+                    <span class="caaft-legal-badge">Legal</span>
+                    <span class="caaft-legal-effective">Effective Date: 27 May 2026</span>
+                </div>
 
-    <main class="main">
+                <h2 class="caaft-legal-h1">Privacy Policy</h2>
 
-        <div class="site-breadcrumb" style="background: url(assets/img/contact-us-banner-new.webp)">
-            <div class="container">
-                <h1 class="breadcrumb-title">Privacy Policy</h1>
+                <p class="caaft-legal-intro">
+                    CAAFT Consultancy Services Private Limited (&ldquo;CAAFT&rdquo;, &ldquo;Company&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is committed to
+                    protecting the privacy and security of personal information entrusted to us by clients, users, and
+                    visitors who access or use our platforms and professional services — including the CAAFT Official Website,
+                    the CAAFTS Platform, FCS Filings, and any related applications, software, or compliance tools
+                    (collectively, the &ldquo;Services&rdquo;). This Privacy Policy sets out, in clear and accessible terms, the
+                    categories of information we collect, the lawful purposes for which we process that information, the
+                    safeguards we apply to protect it, and the rights available to you as a data principal. By accessing
+                    or using our Services, you acknowledge that you have read, understood, and consented to the practices
+                    described in this Policy.
+                </p>
+
+                <div class="caaft-legal-section">
+                    <span class="caaft-legal-section-num">Section 1</span>
+                    <h3 class="caaft-legal-section-title">Information We Collect</h3>
+                    <p>We collect information that is necessary, proportionate, and relevant to the provision of our services and the fulfilment of our legal and regulatory obligations. The categories of information we may collect include:</p>
+
+                    <div class="caaft-legal-subsection">
+                        <p class="caaft-legal-subsection-title">Personal Identification Information</p>
+                        <ul>
+                            <li>Full legal name and designation</li>
+                            <li>Email address and contact telephone numbers</li>
+                            <li>Business or trade name</li>
+                            <li>Mailing and registered office addresses</li>
+                            <li>Government-issued identifiers, including PAN, Aadhaar, GSTIN, CIN, LLPIN, and similar statutory references</li>
+                            <li>Billing details and payment instrument information</li>
+                        </ul>
+                    </div>
+
+                    <div class="caaft-legal-subsection">
+                        <p class="caaft-legal-subsection-title">Business, Compliance, and Financial Data</p>
+                        <ul>
+                            <li>ROC and MCA filing documents and corporate records</li>
+                            <li>Financial statements, balance sheets, and profit &amp; loss accounts</li>
+                            <li>Taxation documents, assessment orders, and GST returns</li>
+                            <li>Government registration certificates and statutory filings</li>
+                            <li>Uploaded compliance documents submitted for processing</li>
+                        </ul>
+                    </div>
+
+                    <div class="caaft-legal-subsection">
+                        <p class="caaft-legal-subsection-title">Technical and Usage Information</p>
+                        <ul>
+                            <li>Internet Protocol (IP) address and geolocation data</li>
+                            <li>Browser type, version, and operating system</li>
+                            <li>Device identifiers and screen resolution</li>
+                            <li>Cookies, session identifiers, and analytics data</li>
+                            <li>Login activity, access timestamps, and usage logs</li>
+                            <li>Referring URLs and navigation patterns within our platforms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="caaft-legal-divider">
+
+                <div class="caaft-legal-section">
+                    <span class="caaft-legal-section-num">Section 2</span>
+                    <h3 class="caaft-legal-section-title">Purposes for Which We Use Your Information</h3>
+                    <p>We process personal information solely for specified, legitimate, and disclosed purposes. We use your information to:</p>
+                    <ul>
+                        <li>Deliver, manage, and improve our compliance, filing, and advisory services</li>
+                        <li>Process statutory registrations, government filings, and related documentation</li>
+                        <li>Create, authenticate, and administer user accounts</li>
+                        <li>Communicate service updates, reminders, renewal notices, and compliance alerts</li>
+                        <li>Issue invoices, process payments, and maintain financial records</li>
+                        <li>Perform internal analytics, quality assurance, and platform enhancement</li>
+                        <li>Detect, investigate, and prevent fraudulent, unauthorised, or unlawful activity</li>
+                        <li>Comply with applicable laws, regulatory requirements, and court orders</li>
+                        <li>Respond to enquiries, service requests, and support communications</li>
+                    </ul>
+                    <p>We do not use personal information for automated profiling or algorithmic decision-making that produces legal or similarly significant effects on individuals without appropriate safeguards.</p>
+                </div>
+
+                <hr class="caaft-legal-divider">
+
+                <div class="caaft-legal-section">
+                    <span class="caaft-legal-section-num">Section 3</span>
+                    <h3 class="caaft-legal-section-title">Data Sharing and Disclosure</h3>
+                    <p>We do not sell, rent, or commercially exploit your personal information. We may share information with third parties only in the following limited and lawful circumstances:</p>
+                    <ul>
+                        <li><strong>Government portals and statutory authorities</strong> — including the Ministry of Corporate Affairs (MCA), Income Tax Department, GST Network, DGFT, FSSAI, and other regulatory bodies, solely to the extent required to perform filings or registrations on your behalf</li>
+                        <li><strong>Payment service providers</strong> — for the purpose of processing and securing transactions</li>
+                        <li><strong>Technology and infrastructure partners</strong> — service providers who support platform hosting, data storage, email delivery, and analytics, bound by confidentiality and data processing obligations</li>
+                        <li><strong>Professional advisers</strong> — including legal counsel, auditors, and chartered accountants engaged by the Company under confidentiality obligations</li>
+                        <li><strong>Law enforcement and regulators</strong> — where disclosure is required by applicable law, a valid court order, or regulatory directive</li>
+                    </ul>
+                    <p>All third-party partners with whom we share personal information are required to implement and maintain appropriate technical and organisational data security measures consistent with applicable law.</p>
+                </div>
+
+                <hr class="caaft-legal-divider">
+
+                <div class="caaft-legal-section">
+                    <span class="caaft-legal-section-num">Section 4</span>
+                    <h3 class="caaft-legal-section-title">Data Security</h3>
+                    <p>We implement commercially reasonable and industry-standard technical and organisational security measures designed to protect personal information from unauthorised access, accidental loss, misuse, disclosure, alteration, or destruction. These measures include, but are not limited to, encryption of data in transit, access controls, authentication protocols, and periodic security reviews.</p>
+                    <p>Notwithstanding the above, no method of electronic transmission or storage is completely secure. We cannot guarantee absolute security of information transmitted to or stored on our platforms, and users transmit data at their own risk. In the event of a material data security incident that is likely to affect your rights or interests, we will endeavour to notify you in accordance with applicable legal requirements.</p>
+                </div>
+
+                <hr class="caaft-legal-divider">
+
+                <div class="caaft-legal-section">
+                    <span class="caaft-legal-section-num">Section 5</span>
+                    <h3 class="caaft-legal-section-title">Cookies and Tracking Technologies</h3>
+                    <p>Our platforms use cookies — small text files stored on your device — and similar tracking technologies for the following purposes:</p>
+                    <ul>
+                        <li>Maintaining login sessions and user preferences</li>
+                        <li>Analysing website traffic and usage patterns for performance improvement</li>
+                        <li>Enabling certain platform functionalities that require session continuity</li>
+                        <li>Delivering relevant content and communication based on usage behaviour</li>
+                    </ul>
+                    <p>You may manage or disable cookies through your browser settings at any time. Please note that disabling certain cookies may affect the functionality and user experience of our platforms. We do not use cookies to serve third-party advertising or track users across unaffiliated websites.</p>
+                </div>
+
+                <hr class="caaft-legal-divider">
+
+                <div class="caaft-legal-section">
+                    <span class="caaft-legal-section-num">Section 6</span>
+                    <h3 class="caaft-legal-section-title">Data Retention</h3>
+                    <p>We retain personal information for as long as is necessary to fulfil the purposes for which it was collected, including to provide the requested services, maintain accurate records, and satisfy our legal, regulatory, tax, audit, and compliance obligations. The specific retention period for any category of data is determined by reference to applicable law, the nature of the engagement, and the reasonable operational requirements of the Company.</p>
+                    <p>Where retention is no longer necessary and no statutory obligation requires continued storage, we take reasonable steps to securely delete, anonymise, or aggregate the information concerned.</p>
+                </div>
+
+                <hr class="caaft-legal-divider">
+
+                <div class="caaft-legal-section">
+                    <span class="caaft-legal-section-num">Section 7</span>
+                    <h3 class="caaft-legal-section-title">Your Rights as a Data Principal</h3>
+                    <p>Subject to applicable law and legitimate processing grounds, you have the right to:</p>
+                    <ul>
+                        <li>Request access to the personal information we hold about you</li>
+                        <li>Request correction of inaccurate or incomplete information</li>
+                        <li>Request deletion or anonymisation of information, subject to statutory retention requirements</li>
+                        <li>Withdraw consent to the processing of information for non-essential or marketing communications</li>
+                        <li>Raise a grievance or complaint regarding the processing of your personal data</li>
+                    </ul>
+                    <p>Requests may be submitted by email to <a href="mailto:info@caaft.com">info@caaft.com</a>. We will endeavour to respond within a reasonable time and in accordance with applicable law. Please note that certain requests may be limited by legal obligations, statutory record-keeping requirements, or the nature of the services being provided.</p>
+                </div>
+
+                <hr class="caaft-legal-divider">
+
+                <div class="caaft-legal-section">
+                    <span class="caaft-legal-section-num">Section 8</span>
+                    <h3 class="caaft-legal-section-title">Third-Party Links and Government Portals</h3>
+                    <p>Our platforms may contain hyperlinks to third-party websites, government portals (including MCA21, GST Portal, the Income Tax e-Filing portal, and DGFT), or external resources. These links are provided for convenience and reference only. CAAFT does not control and is not responsible for the privacy practices, content, security, or data handling policies of any third-party platform. We encourage you to review the privacy policies of any external platforms before submitting personal information to them.</p>
+                </div>
+
+                <hr class="caaft-legal-divider">
+
+                <div class="caaft-legal-section">
+                    <span class="caaft-legal-section-num">Section 9</span>
+                    <h3 class="caaft-legal-section-title">Minors</h3>
+                    <p>Our Services are designed for use by businesses and professionals and are not directed at individuals below 18 years of age. We do not knowingly collect personal information from minors. If we become aware that personal information has been provided by a person below the age of 18 without appropriate parental or guardian consent, we will take reasonable steps to delete such information promptly.</p>
+                </div>
+
+                <hr class="caaft-legal-divider">
+
+                <div class="caaft-legal-section">
+                    <span class="caaft-legal-section-num">Section 10</span>
+                    <h3 class="caaft-legal-section-title">Amendments to This Policy</h3>
+                    <p>We reserve the right to revise this Privacy Policy at any time to reflect changes in our practices, technology, legal requirements, or business operations. The revised Policy will be published on our website with an updated effective date. Continued use of our Services following notification or publication of any revision constitutes your acceptance of the updated Policy. We encourage you to review this page periodically to remain informed of any changes.</p>
+                </div>
+
+                <hr class="caaft-legal-divider">
+
+                <div class="caaft-legal-section">
+                    <span class="caaft-legal-section-num">Section 11</span>
+                    <h3 class="caaft-legal-section-title">Contact and Grievance Redressal</h3>
+                    <p>For any questions, concerns, requests, or grievances relating to this Privacy Policy or the handling of your personal information, please contact us at:</p>
+                    <div class="caaft-legal-contact-box">
+                        <p><strong>CAAFT Consultancy Services Private Limited</strong></p>
+                        <p>Office No. C304, 3rd Floor, Apeejay House, 39/12, Haddows Road,<br>Nungambakkam, Chennai &ndash; 600006, Tamil Nadu, India</p>
+                        <p>Email: <a href="mailto:info@caaft.com">info@caaft.com</a></p>
+                        <p>Phone: <a href="tel:+918870078870">+91 88700 78870</a></p>
+                    </div>
+                </div>
 
             </div>
         </div>
-<section class="about-area-sixteen section-py-70">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                
-                    <div class="col-lg-12">
-                        <div class="about-content-sixteen wow fadeInRight" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInRight;">
-                            <div class="section-title-four mb-20 tg-heading-subheading animation-style2">
-                                <span class="sub-title tg-element-title">Company Overview</span>
-                                <h2 class="title tg-element-title">Comprehensive Expertise for Efficient Accounting &amp;
-                                    Reporting, Taxation, Business Incorporation and Compliance Services</h2>
-                            </div>
-                            <p>We believe that every business deserves customized solutions to excel in today’s
-                                competitive environment. With expertise in Accounting &amp; Reporting, Taxation, Business
-                                Incorporation, Consultancy and Compliance Services, our team is dedicated to offering
-                                strategic insights and
-                                comprehensive support to help clients reach their objectives. Our mission is to empower
-                                businesses by delivering services that enhance financial performance, foster growth, and
-                                ensure compliance. We guide businesses through complex challenges with clarity and
-                                confidence, ensuring sustainable success.</p>
-                            <p>We provide extensive range of services designed to enhance your business. By gaining a
-                                clear understanding of your specific requirements, we work alongside you to develop
-                                practical solutions, ensuring steady long-term progress.</p>
-                            <p>We continuously evolve with the ever-changing business landscape, staying ahead of
-                                industry trends and regulatory updates. This ensures that we provide our clients with
-                                the most relevant and forward-thinking advice. By combining innovation with practical
-                                expertise, we deliver solutions that not only address immediate needs but also position
-                                businesses for long-term success.</p>
-                        </div>
-                    </div>
+    </section>
+</main>
 
-
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- about-area -->
-
-        <div class="contact-area py-120">
-            <div class="container">
-                <div class="contact-content">
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <div class="contact-info">
-                                <div class="contact-info-icon">
-                                    <i class="fal fa-phone-volume"></i>
-                                </div>
-                                <div class="contact-info-content">
-                                    <span>Call Us</span>
-                                    <p><a href="tel:918870078870">+91 8870 07 8870</a> <br>
-                                        <a href="tel:919944617891">+91 9944 61 7891</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="contact-info">
-                                <div class="contact-info-icon">
-                                    <i class="fal fa-map-location-dot"></i>
-                                </div>
-                                <div class="contact-info-content">
-                                    <span>Reach Us</span>
-                                    <p>No: C105, 1st Floor, Apeejay House, 39/12, Haddows Road,
-                                        Nungambakkam, Chennai-600006.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="contact-info">
-                                <div class="contact-info-icon">
-                                    <i class="fal fa-envelopes"></i>
-                                </div>
-                                <div class="contact-info-content">
-                                    <span>Email Us</span>
-                                    <p><a href="info@caaft.com" class="__cf_email__"
-                                            data-cfemail="01686f676e416479606c716d642f626e6c">info@caaft.com</a>
-                                        <br>
-                                        <br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="contact-wrapper pt-60" id="contact_us">
-                    <div class="row g-4">
-                        <div class="col-lg-4">
-                            <div class="about-img-sixteen contact-img">
-                                <img src="assets/img/contact-form.webp" alt>
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="contact-form">
-                                <div class="contact-form-header">
-                                    <h2>Get In Touch</h2>
-                                    <p>Start your journey to seamless Accounting & Reporting, Taxation, Business
-                                        Incorporation, Consultancy and Compliance Services by reaching out to us. </p>
-                                </div>
-                                <div class="alert alert-success automated_msg" style="display: none; font-size: 15px;"
-                                    role="alert">
-                                    <strong>Thank you!</strong> for contacting us.
-                                </div>
-                                <form method="post" action="#" class="contact" id="contact-form">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="far fa-user-tie"></i></span>
-                                                <input type="text" class="form-control name-valid" name="name" id="name"
-                                                    placeholder="Your Name" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="far fa-envelope"></i></span>
-                                                <input type="email" id="email" class="form-control" name="email"
-                                                    placeholder="Your Email" required>
-                                                <input type="hidden" name="title" id="title" value="Contact">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="far fa-phone"></i></span>
-                                                <input type="text" name="phone" id="phone" maxlength="10"
-                                                    class="form-control" placeholder="Your Phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-group" id="select-group">
-                                                <span class="input-group-text"><i class="far fa-box"></i></span>
-                                                <select class="select form-select form-control" id="about" name="about">
-                                                    <option value="" selected disabled>How did you hear about us?
-                                                    </option>
-                                                    <option value="Social Media">Social Media</option>
-                                                    <option value="Email">Email</option>
-                                                    <option value="Word of mouth">Word of mouth</option>
-                                                    <option value="Google Search">Google Search</option>
-                                                    <option value="Others">Others (Please mention)</option>
-                                                </select>
-                                            </div>
-
-
-                                        </div class="col-lg-12">
-                                        <div>
-                                            <div id="other-input" class="input-group" style="display: none;">
-                                                <span class="input-group-text"><i class="far fa-box"></i></span>
-                                                <input type="text" id="other-text" class="form-control"
-                                                    placeholder="How did you hear about us? Please mention">
-                                            </div>
-                                        </div><!-- Hidden input field for 'Others' -->
-
-
-                                    </div>
-                                    <div class="input-group textarea">
-                                        <span class="input-group-text"><i class="far fa-comment-lines"></i></span>
-                                        <textarea name="msg" id="msg" cols="30" rows="5" class="form-control"
-                                            placeholder="Write Your Message"></textarea>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="cf-turnstile" data-sitekey="0x4AAAAAABAFmUa21KaOmcJD"></div>
-                                        </div>
-                                    <button type="submit" class="theme-btn automated_mail">Send
-                                        Message <i class="far fa-paper-plane"></i></button>
-                                    <div class="col-md-12 mt-3">
-                                        <div class="form-messege text-success"></div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.8100944915877!2d80.24793179999999!3d13.063175500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6f2acdad0067548f%3A0x4db0a8a19ea99861!2sCAAFT%20Consultancy%20Services!5e1!3m2!1sen!2sin!4v1738825482908!5m2!1sen!2sin"
-         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           <!-- <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7773.137959101068!2d80.247945!3d13.063085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267869930183d%3A0xd55a3127e2b87405!2sApeejay%20House!5e0!3m2!1sen!2sin!4v1732277904412!5m2!1sen!2sin"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>-->
-        </div>
-
-
-
-
-
-
-
-    </main>
-
-    <?php include "footer.php";?>
-    <a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a>
-
-
-    <?php include "footer-bottom.php"; ?>
-    <script>
-    $(document).ready(function() {
-        $('#about').change(function() {
-            if ($(this).val() === "Others") {
-                //$('#select-group').hide(); // Hide select dropdown
-                $('#other-input').show(); // Show input field
-                $('#other-text').attr('name', 'about'); // Set same name as select
-                $('#about').removeAttr('name'); // Remove name from select
-            } else {
-                $('#select-group').show(); // Show select dropdown
-                $('#other-input').hide(); // Hide input field
-                $('#other-text').removeAttr('name'); // Remove name from input field
-                $('#about').attr('name', 'about'); // Restore name to select
-            }
-        });
-
-        $('.name-valid').on('keypress', function(e) {
-            var regex = new RegExp("^[a-zA-Z ]*$");
-            var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
-            if (!regex.test(str)) {
-                e.preventDefault();
-                return false;
-            }
-        });
-
-        $('#phone').on('input', function() {
-            var sanitized = $(this).val().replace(/[^0-9]/g, '');
-            $(this).val(sanitized);
-        });
-
-        $('.automated_mail').click(function(e) {
-            e.preventDefault(); // Prevent default form submission
-            var valid = true; // Initialize valid to true
-            var name = $('#name').val().trim();
-            var email = $('#email').val();
-            var phone = $('#phone').val().trim();
-            var about = $('#about').val(); // Selected dropdown value
-            var otherAbout = $('#other-text').val().trim(); // Value from input field
-            var msg = $('#msg').val().trim();
-            var title = $('#title').val().trim();
-
-            if (name === '') {
-                alert('Please enter your name');
-                valid = false;
-            } else if (email === '') {
-                alert('Please enter your email id');
-                valid = false;
-            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                alert('Please enter a valid email id');
-                valid = false;
-            } else if (phone === '') {
-                alert('Please enter your phone number');
-                valid = false;
-            } else if (phone.length < 10) {
-                alert('Please enter a valid mobile number');
-                valid = false;
-            } else if ($('#other-input').is(':visible') && otherAbout === '') {
-                alert('How did you hear about us? please mension');
-                valid = false;
-            } else if (!$('#other-input').is(':visible') && about == null) {
-                alert('Please select "How did you hear about us?"');
-                valid = false;
-            } else if (msg === '') {
-                alert('Please enter your message');
-                valid = false;
-            } else if (!validateInput(msg)) {
-                alert('Please enter a valid message');
-                valid = false;
-            }
-
-            if (valid) {
-                var selectedAbout = $('#other-input').is(':visible') ? otherAbout :
-                about; // Get correct value for 'about'
-
-                var actual_link = (window.location.protocol == 'https:' ? 'https://' : 'http://') +
-                    window.location.host;
-                var redirectUrl = actual_link + '/contact_mail.php' +
-                    '?name=' + encodeURIComponent(name) +
-                    '&email=' + encodeURIComponent(email) +
-                    '&phone=' + encodeURIComponent(phone) +
-                    '&about=' + encodeURIComponent(selectedAbout) +
-                    '&msg=' + encodeURIComponent(msg) +
-                    '&title=' + encodeURIComponent(title);
-
-                window.location.href = redirectUrl;
-
-                // Display success message
-                $('.contact').fadeOut('fast');
-                $('.automated_msg').fadeIn('fast');
-
-                // Prevent reloading the page
-                return false;
-            }
-
-            function validateInput(input) {
-                var regex = /^[\x00-\x7F]+$/; // ASCII validation
-                return regex.test(input);
-            }
-        });
-    });
-    </script>
-
+<?php include "footer.php"; ?>
+<a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a>
+<?php include "footer-bottom.php"; ?>
 </body>
-
 </html>

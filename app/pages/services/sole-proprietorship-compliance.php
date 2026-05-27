@@ -142,7 +142,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-user-check', 'title' => '500+ Proprietors Served', 'description' => 'Across India'],
+        ['icon_class' => 'fas fa-user-check', 'title' => '100+ Proprietors Served', 'description' => 'Across India'],
         ['icon_class' => 'fas fa-file-invoice', 'title' => 'GST, ITR & TDS Covered', 'description' => 'End-to-End Compliance'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];

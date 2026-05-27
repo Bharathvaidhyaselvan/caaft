@@ -123,7 +123,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-map-marker-alt', 'title' => '500+ Office Changes Completed', 'description' => 'Across India'],
+        ['icon_class' => 'fas fa-map-marker-alt', 'title' => '100+ Office Changes Completed', 'description' => 'Across India'],
         ['icon_class' => 'fas fa-file-signature', 'title' => 'INC-22 & ROC Filing Support', 'description' => 'End-to-End Compliance'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];

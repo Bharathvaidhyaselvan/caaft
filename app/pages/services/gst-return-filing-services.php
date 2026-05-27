@@ -467,7 +467,7 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
             ],
             [
                 'icon_class' => 'fas fa-file-invoice',
-                'title' => '1000+',
+                'title' => '300+',
                 'description' => 'Returns Filed Monthly',
             ],
             [

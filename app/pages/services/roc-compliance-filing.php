@@ -96,7 +96,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-file-signature', 'title' => '500+ ROC Filings Completed', 'description' => 'Across India'],
+        ['icon_class' => 'fas fa-file-signature', 'title' => '300+ ROC Filings Completed', 'description' => 'Across India'],
         ['icon_class' => 'fas fa-sitemap', 'title' => 'MCA Forms & Compliance Support', 'description' => 'End-to-End Filing'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];

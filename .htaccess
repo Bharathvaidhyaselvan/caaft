@@ -85,6 +85,10 @@ Redirect 301 /cfo-services.php /advisory-cfo/cfo-services
 
 Redirect 301 /consultancy-services-offers-end-to-end-filing-support-for-busy-entrepreneurs.php /business-consultancy/end-to-end-filing-support
 
+# Taxation hub — canonical URL (sub-paths under /income-tax/ still work)
+RewriteRule ^income-tax/?$ /taxation [R=301,L]
+Redirect 301 /taxation-services /taxation
+
 # Rewrite clean URLs to front controller
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

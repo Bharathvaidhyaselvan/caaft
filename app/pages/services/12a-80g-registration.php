@@ -129,7 +129,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-hands-helping', 'title' => '500+ NGOs Registered', 'description' => 'Across India'],
+        ['icon_class' => 'fas fa-hands-helping', 'title' => '100+ NGOs Registered', 'description' => 'Across India'],
         ['icon_class' => 'fas fa-check-circle', 'title' => 'High Approval Rate', 'description' => 'Expert Filing Support'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];

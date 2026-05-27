@@ -8,12 +8,12 @@
     <meta name="robots" content="all, index, follow">
     <title>Expert Taxation Services in Chennai | CAAFT</title>
     <meta name="description" content="From Income Tax &amp; TDS to GST compliance, CAAFT's Chartered Accountants handle every obligation with precision — deadline-driven, audit-ready, and penalty-free">
-    <link rel="canonical" href="https://caaft.com/taxation-services/">
+    <link rel="canonical" href="https://caaft.com/taxation">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Expert Taxation Services in Chennai | CAAFT">
     <meta property="og:description" content="From Income Tax &amp; TDS to GST compliance, CAAFT's Chartered Accountants handle every obligation with precision — deadline-driven, audit-ready, and penalty-free">
-    <meta property="og:url" content="https://caaft.com/taxation-services/">
+    <meta property="og:url" content="https://caaft.com/taxation">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/tax-planning-management.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -116,10 +116,10 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/taxation-services/#service-income-tax",
+          "@id": "https://caaft.com/taxation/#service-income-tax",
           "name": "Income Tax Services",
           "alternateName": "Income Tax Filing Services Chennai",
-          "url": "https://caaft.com/taxation-services/",
+          "url": "https://caaft.com/taxation",
           "description": "Comprehensive income tax support — from routine return filing to complex audits and strategic planning — ensuring full compliance while identifying every legitimate saving.",
           "provider": {"@id": "https://caaft.com/#organization"},
           "areaServed": {"@type": "Country", "name": "India"},
@@ -137,10 +137,10 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/taxation-services/#service-gst",
+          "@id": "https://caaft.com/taxation/#service-gst",
           "name": "GST Services",
           "alternateName": "GST Registration and Filing Services Chennai",
-          "url": "https://caaft.com/taxation-services/",
+          "url": "https://caaft.com/taxation",
           "description": "End-to-end GST management — from registration and monthly filings to LUT submissions and cancellation — keeping your GST standing compliant at every stage.",
           "provider": {"@id": "https://caaft.com/#organization"},
           "areaServed": {"@type": "Country", "name": "India"},
@@ -158,7 +158,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/taxation-services/#faq",
+          "@id": "https://caaft.com/taxation/#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -179,10 +179,10 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/taxation-services/#breadcrumb",
+          "@id": "https://caaft.com/taxation/#breadcrumb",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com"},
-            {"@type": "ListItem", "position": 2, "name": "Taxation Services", "item": "https://caaft.com/taxation-services/"}
+            {"@type": "ListItem", "position": 2, "name": "Taxation Services", "item": "https://caaft.com/taxation"}
           ]
         }
       ]
@@ -268,11 +268,11 @@
                         $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
                         $caaft_card_section_embedded = true;
                         $caaft_card_section_cards = [
-                            ['icon_class' => 'fas fa-file-invoice-dollar', 'title' => 'Income Tax Filing', 'text' => 'Accurate, timely ITR filing for individuals, firms, and companies - with maximum deductions claimed and zero errors.'],
-                            ['icon_class' => 'fas fa-receipt', 'title' => 'TDS Return Filing', 'text' => 'End-to-end quarterly TDS compliance - from challan payment to Form 24Q/26Q filing and TDS certificate issuance.'],
-                            ['icon_class' => 'fas fa-search-dollar', 'title' => 'Tax Audit', 'text' => 'Thorough Section 44AB tax audits conducted by experienced CAs, with complete Form 3CA/3CB and 3CD preparation.'],
-                            ['icon_class' => 'fas fa-chart-pie', 'title' => 'Tax Planning', 'text' => 'Forward-looking, legally sound tax planning that reduces your annual liability through smart structuring and timely investments.'],
-                            ['icon_class' => 'fas fa-balance-scale', 'title' => 'Tax Assessment & Appeal Support', 'text' => 'End-to-end support for income tax assessments, scrutiny notices, and appeals - with expert representation before CIT(A) and ITAT.'],
+                            ['icon_class' => 'fas fa-file-invoice-dollar', 'title' => 'Income Tax Filing', 'text' => 'Accurate, timely ITR filing for individuals, firms, and companies - with maximum deductions claimed and zero errors.', 'href' => '/taxation/income-tax-filing-service'],
+                            ['icon_class' => 'fas fa-receipt', 'title' => 'TDS Return Filing', 'text' => 'End-to-end quarterly TDS compliance - from challan payment to Form 24Q/26Q filing and TDS certificate issuance.', 'href' => '/taxation/tds-return-filing-services'],
+                            ['icon_class' => 'fas fa-search-dollar', 'title' => 'Tax Audit', 'text' => 'Thorough Section 44AB tax audits conducted by experienced CAs, with complete Form 3CA/3CB and 3CD preparation.', 'href' => '/taxation/tax-audit'],
+                            ['icon_class' => 'fas fa-chart-pie', 'title' => 'Tax Planning', 'text' => 'Forward-looking, legally sound tax planning that reduces your annual liability through smart structuring and timely investments.', 'href' => '/taxation/tax-planning-services'],
+                            ['icon_class' => 'fas fa-balance-scale', 'title' => 'Tax Assessment & Appeal Support', 'text' => 'End-to-end support for income tax assessments, scrutiny notices, and appeals - with expert representation before CIT(A) and ITAT.', 'href' => '/taxation/income-tax-appeal-services'],
                         ];
                         include __DIR__ . '/../../includes/components/caaft-card-section.php';
                         ?>
@@ -286,12 +286,12 @@
                         $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
                         $caaft_card_section_embedded = true;
                         $caaft_card_section_cards = [
-                            ['icon_class' => 'fas fa-id-card', 'title' => 'GST Registration', 'text' => 'Fast, accurate GSTIN registration for new businesses - with the right category, HSN/SAC codes, and zero back-and-forth with the portal.'],
-                            ['icon_class' => 'fas fa-file-invoice', 'title' => 'GST Returns', 'text' => 'On-time GSTR-1, GSTR-3B, and GSTR-9 filing with ITC reconciliation - so you never attract late fees or lose eligible credits.'],
-                            ['icon_class' => 'fas fa-plane-departure', 'title' => 'GST LUT Filing', 'text' => 'Annual Letter of Undertaking filed before the financial year begins, so your exports stay IGST-free and cash-flow efficient.'],
-                            ['icon_class' => 'fas fa-ban', 'title' => 'GST Cancellation', 'text' => 'Clean, complete GST deregistration - pending returns cleared, ITC reversed, and GSTR-10 filed, with no loose ends left behind.'],
-                            ['icon_class' => 'fas fa-lightbulb', 'title' => 'GST Advisory & Compliance', 'text' => 'Practical, up-to-date GST guidance on input tax credit, reverse charge, e-invoicing, and sector-specific compliance - so your business stays audit-ready at all times.'],
-                            ['icon_class' => 'fas fa-gavel', 'title' => 'GST Assessment & Appeal Support', 'text' => 'End-to-end support for GST scrutiny, demand notices, and appeals - with expert representation before the GST authorities and Appellate Authority.'],
+                            ['icon_class' => 'fas fa-id-card', 'title' => 'GST Registration', 'text' => 'Fast, accurate GSTIN registration for new businesses - with the right category, HSN/SAC codes, and zero back-and-forth with the portal.', 'href' => '/gst/gst-registration'],
+                            ['icon_class' => 'fas fa-file-invoice', 'title' => 'GST Returns', 'text' => 'On-time GSTR-1, GSTR-3B, and GSTR-9 filing with ITC reconciliation - so you never attract late fees or lose eligible credits.', 'href' => '/gst/gst-return-filing-services'],
+                            ['icon_class' => 'fas fa-plane-departure', 'title' => 'GST LUT Filing', 'text' => 'Annual Letter of Undertaking filed before the financial year begins, so your exports stay IGST-free and cash-flow efficient.', 'href' => '/gst/gst-lut-filing'],
+                            ['icon_class' => 'fas fa-ban', 'title' => 'GST Cancellation', 'text' => 'Clean, complete GST deregistration - pending returns cleared, ITC reversed, and GSTR-10 filed, with no loose ends left behind.', 'href' => '/gst/gst-cancellation-services'],
+                            ['icon_class' => 'fas fa-lightbulb', 'title' => 'GST Advisory & Compliance', 'text' => 'Practical, up-to-date GST guidance on input tax credit, reverse charge, e-invoicing, and sector-specific compliance - so your business stays audit-ready at all times.', 'href' => '/gst/gst-advisory'],
+                            ['icon_class' => 'fas fa-gavel', 'title' => 'GST Assessment & Appeal Support', 'text' => 'End-to-end support for GST scrutiny, demand notices, and appeals - with expert representation before the GST authorities and Appellate Authority.', 'href' => '/gst/gst-assessment-appeal-services'],
                         ];
                         include __DIR__ . '/../../includes/components/caaft-card-section.php';
                         ?>

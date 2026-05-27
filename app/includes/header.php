@@ -434,7 +434,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                         <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM9 13h2v2H9v-2zm4 0h2v2h-2v-2zm-4 4h2v2H9v-2zm4 0h2v2h-2v-2z"/></svg>
                                         </span>
-                                        <a class="mm-tab-link" href="/income-tax">Income Tax</a>
+                                        <a class="mm-tab-link" href="/taxation">Taxation</a>
                                         <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
                                     </div>
 
@@ -632,11 +632,11 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                     </ul>
                                 </li>
 
-                                <!-- Income Tax -->
+                                <!-- Taxation -->
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle main_mesnus_colors" href="/income-tax">Income Tax</a>
+                                    <a class="dropdown-item dropdown-toggle main_mesnus_colors" href="/taxation">Taxation</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item link-extend" href="/income-tax">Income Tax</a></li>
+                                        <li><a class="dropdown-item link-extend" href="/taxation">Taxation</a></li>
                                         <li><a class="dropdown-item" href="/income-tax/tax-planning-services">Tax Planning &amp; Advisory</a></li>
                                         <li><a class="dropdown-item" href="/income-tax/income-tax-filing-service">Income Tax Return (ITR) Filing</a></li>
                                         <li><a class="dropdown-item" href="/income-tax/tds-return-filing-services">TDS Return Filing</a></li>

@@ -194,7 +194,7 @@ declare(strict_types=1);
         <?php
         $caaft_trust_items = [
             ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-            ['icon_class' => 'fas fa-utensils', 'title' => '500+ Food Businesses Licensed', 'description' => 'Across India'],
+            ['icon_class' => 'fas fa-utensils', 'title' => '100+ Food Businesses Licensed', 'description' => 'Across India'],
             ['icon_class' => 'fas fa-bolt', 'title' => 'Fast Approval Support', 'description' => 'Expert Managed'],
             ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
         ];

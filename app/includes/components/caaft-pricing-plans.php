@@ -56,6 +56,7 @@ $caaft_pricing_wow_base = $caaft_pricing_is_subsection ? 0.05 : 0.15;
                         <?php
                         $caaft_simple_badge = (string) ($caaft_plan['badge'] ?? '');
                         $caaft_simple_cta_class = 'home3-plan-cta theme-btn' . ($caaft_plan_is_featured ? '' : ' theme-btn2');
+                        $caaft_simple_price_note = (string) ($caaft_plan['price_note'] ?? '');
                         ?>
                         <div class="<?php echo htmlspecialchars($caaft_plan_class, ENT_QUOTES, 'UTF-8'); ?> wow fadeInUp" data-wow-delay="<?php echo $caaft_plan_wow_delay; ?>s">
                             <?php if ($caaft_simple_badge !== '') : ?>
@@ -64,7 +65,12 @@ $caaft_pricing_wow_base = $caaft_pricing_is_subsection ? 0.05 : 0.15;
                             <?php if (!empty($caaft_plan['title'])) : ?>
                                 <div class="home3-plan-name"><?php echo htmlspecialchars((string) $caaft_plan['title'], ENT_QUOTES, 'UTF-8'); ?></div>
                             <?php endif; ?>
-                            <div class="home3-plan-price">&#8377;<?php echo htmlspecialchars((string) $caaft_plan['price'], ENT_QUOTES, 'UTF-8'); ?></div>
+                            <div class="home3-plan-price">
+                                <span class="home3-plan-amount"><span class="home3-plan-rupee" aria-hidden="true">&#8377;</span><?php echo htmlspecialchars((string) $caaft_plan['price'], ENT_QUOTES, 'UTF-8'); ?></span>
+                                <?php if ($caaft_simple_price_note !== '') : ?>
+                                    <span class="home3-plan-price-suffix"><?php echo htmlspecialchars($caaft_simple_price_note, ENT_QUOTES, 'UTF-8'); ?></span>
+                                <?php endif; ?>
+                            </div>
                             <a href="<?php echo htmlspecialchars($caaft_plan_href, ENT_QUOTES, 'UTF-8'); ?>" class="<?php echo htmlspecialchars($caaft_simple_cta_class, ENT_QUOTES, 'UTF-8'); ?>">
                                 <?php echo htmlspecialchars($caaft_plan_cta, ENT_QUOTES, 'UTF-8'); ?> <i class="fas fa-arrow-right" aria-hidden="true"></i>
                             </a>
