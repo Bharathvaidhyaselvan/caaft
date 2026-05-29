@@ -132,7 +132,7 @@ declare(strict_types=1);
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
         ['icon_class' => 'fas fa-briefcase', 'title' => '200+ Businesses Registered', 'description' => 'PT Compliant'],
-        ['icon_class' => 'fas fa-globe-india', 'title' => 'Multi-State PT Expertise', 'description' => 'State-Specific Support'],
+        ['icon_class' => 'fas fa-map-location-dot', 'title' => 'Multi-State PT Expertise', 'description' => 'State-Specific Support'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
     include __DIR__ . '/../../includes/components/service-trust-indicators.php';
@@ -322,7 +322,7 @@ declare(strict_types=1);
         ['lead' => 'Stronger financial credibility', 'text' => 'A clean professional tax compliance record improves standing with banks, auditors, and state regulators during assessments and inspections.', 'icon_class' => 'fas fa-chart-line', 'tone' => 'amber'],
         ['lead' => 'Simplified audits and inspections', 'text' => 'Well-maintained return records reduce documentation burden and make statutory audits faster and less disruptive.', 'icon_class' => 'fas fa-search-dollar', 'tone' => 'blue'],
         ['lead' => 'Consistent compliance documentation', 'text' => 'Regular return submissions create a reliable filing trail supporting broader statutory compliance across financial years.', 'icon_class' => 'fas fa-folder-open', 'tone' => 'pink'],
-        ['lead' => 'Multi-state compliance readiness', 'text' => 'Structured return filing ensures each business location meets its unique state-specific obligations without gaps or missed deadlines.', 'icon_class' => 'fas fa-globe-india', 'tone' => 'green'],
+        ['lead' => 'Multi-state compliance readiness', 'text' => 'Structured return filing ensures each business location meets its unique state-specific obligations without gaps or missed deadlines.', 'icon_class' => 'fas fa-map-location-dot', 'tone' => 'green'],
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>

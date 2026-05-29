@@ -20,7 +20,18 @@ function caaft_resolve_service_page_pricing(): ?array
     if ($bsrPackagePages === null) {
         $bsrPath = __DIR__ . '/data/caaft-business-setup-pricing.php';
         $bsrData = is_file($bsrPath) ? require $bsrPath : [];
-        $bsrPackagePages = array_keys($bsrData['by_page'] ?? []);
+        $bsrAllPackagePages = array_keys($bsrData['by_page'] ?? []);
+        // Other registration pages: show hero price only, no "View Details" link.
+        $bsrNoHeroPackagesLink = [
+            'msme-udyam-registration.php',
+            'fssai-food-licence-india.php',
+            'professional-tax-return-filing.php',
+            'epf-esi-registration-compliance.php',
+            'iec-registration.php',
+            'digital-signature-certificate-registration.php',
+            '12a-80g-registration.php',
+        ];
+        $bsrPackagePages = array_values(array_diff($bsrAllPackagePages, $bsrNoHeroPackagesLink));
     }
 
     $callerKey = caaft_resolve_service_page_basename();
