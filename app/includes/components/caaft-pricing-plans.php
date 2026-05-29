@@ -27,6 +27,8 @@ $caaft_pricing_cta_label = $caaft_pricing_cta_label ?? 'Get Started';
 $caaft_pricing_row_class = count($caaft_pricing_plans) === 2 ? 'justify-content-center' : '';
 $caaft_pricing_subtitle_class = $caaft_pricing_is_subsection ? 'caaft-pricing-subtitle' : 'home3-section-lead';
 $caaft_pricing_wow_base = $caaft_pricing_is_subsection ? 0.05 : 0.15;
+$caaft_pricing_plan_count = count($caaft_pricing_plans);
+$caaft_pricing_accent_second = $caaft_pricing_plan_count >= 2;
 ?>
 <section class="<?php echo htmlspecialchars($caaft_pricing_section_class, ENT_QUOTES, 'UTF-8'); ?>" id="<?php echo htmlspecialchars($caaft_pricing_section_id, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars($caaft_pricing_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
@@ -43,19 +45,19 @@ $caaft_pricing_wow_base = $caaft_pricing_is_subsection ? 0.05 : 0.15;
             <?php foreach ($caaft_pricing_plans as $caaft_plan_index => $caaft_plan) : ?>
                 <?php
                 $caaft_plan_class = 'home3-plan';
-                if (!empty($caaft_plan['featured'])) {
+                $caaft_plan_is_accent = $caaft_pricing_accent_second && $caaft_plan_index === 1;
+                if ($caaft_plan_is_accent) {
                     $caaft_plan_class .= ' home3-plan--featured';
                 }
                 $caaft_plan_href = (string) ($caaft_plan['href'] ?? '#quote-content');
                 $caaft_plan_cta = (string) ($caaft_plan['cta_label'] ?? $caaft_pricing_cta_label);
-                $caaft_plan_is_featured = !empty($caaft_plan['featured']);
                 $caaft_plan_wow_delay = number_format($caaft_pricing_wow_base + ($caaft_plan_index * 0.05), 2, '.', '');
                 ?>
                 <div class="<?php echo htmlspecialchars($caaft_pricing_col_class, ENT_QUOTES, 'UTF-8'); ?>">
                     <?php if ($caaft_pricing_layout === 'simple') : ?>
                         <?php
                         $caaft_simple_badge = (string) ($caaft_plan['badge'] ?? '');
-                        $caaft_simple_cta_class = 'home3-plan-cta theme-btn' . ($caaft_plan_is_featured ? '' : ' theme-btn2');
+                        $caaft_simple_cta_class = 'home3-plan-cta theme-btn' . ($caaft_plan_is_accent ? '' : ' theme-btn2');
                         $caaft_simple_price_note = (string) ($caaft_plan['price_note'] ?? '');
                         ?>
                         <div class="<?php echo htmlspecialchars($caaft_plan_class, ENT_QUOTES, 'UTF-8'); ?> wow fadeInUp" data-wow-delay="<?php echo $caaft_plan_wow_delay; ?>s">
@@ -109,7 +111,7 @@ $caaft_pricing_wow_base = $caaft_pricing_is_subsection ? 0.05 : 0.15;
                         $caaft_plan_show_title = !empty($caaft_plan['show_card_title']) && !empty($caaft_plan['title']);
                         $caaft_plan_price_note = $caaft_plan['price_note'] ?? '+ GST';
                         ?>
-                        <article class="pricing-item<?php echo $caaft_plan_is_featured ? ' active' : ''; ?> wow fadeInUp" data-wow-delay="<?php echo $caaft_plan_wow_delay; ?>s">
+                        <article class="pricing-item<?php echo $caaft_plan_is_accent ? ' active' : ''; ?> wow fadeInUp" data-wow-delay="<?php echo $caaft_plan_wow_delay; ?>s">
                             <?php if ($caaft_plan_badge !== '') : ?>
                                 <div class="pricing-header"><h5><?php echo htmlspecialchars($caaft_plan_badge, ENT_QUOTES, 'UTF-8'); ?></h5></div>
                             <?php endif; ?>

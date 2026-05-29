@@ -2792,6 +2792,7 @@ a.footer-logo {
 
 .pricing-item {
     background: var(--color-white);
+    border: 2px solid transparent;
     border-radius: 15px;
     position: relative;
     padding: 40px;
@@ -2886,12 +2887,71 @@ a.footer-logo {
     color: #f76464
 }
 
+/* Home + service pricing plans — circular tick icons (theme pricing layout) */
+body.home-3 .home3-plans-area .pricing-feature li {
+    align-items: flex-start;
+    gap: 0;
+}
+
+body.home-3 .home3-plans-area .pricing-feature li i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    margin-right: 12px;
+    margin-top: 3px;
+    border-radius: 50%;
+    font-size: 9px;
+    line-height: 1;
+    color: #fff !important;
+}
+
+body.home-3 .home3-plans-area .pricing-feature li i.fa-check {
+    background: var(--theme-color, #33b6ff);
+}
+
+body.home-3 .home3-plans-area .pricing-feature li i.fa-times {
+    background: #f76464;
+}
+
+body.home-3 .home3-plans-area .pricing-feature li .not-include {
+    color: #595b62;
+}
+
+body.home-3 .home3-plans-area .home3-plan-features li > i.fas {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    margin-top: 2px;
+    border-radius: 50%;
+    font-size: 9px;
+    line-height: 1;
+    color: #fff !important;
+}
+
+body.home-3 .home3-plans-area .home3-plan-features li > i.fa-check {
+    background: var(--theme-color, #33b6ff);
+}
+
+body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
+    background: #f76464;
+}
+
 .pricing-item .theme-btn {
     width: 100%
 }
 
 .pricing-item.active {
-    outline: 3px solid var(--theme-color)
+    border-color: var(--theme-color, #33b6ff);
+    outline: none;
+    box-shadow: 0 12px 40px rgba(51, 182, 255, 0.15);
 }
 
 @media all and (max-width:991px) {
@@ -4485,6 +4545,20 @@ a.footer-logo {
     z-index: 1
 }
 
+.site-breadcrumb.caaft-legal-breadcrumb {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    min-height: 280px;
+}
+
+@media (max-width: 767px) {
+    .site-breadcrumb.caaft-legal-breadcrumb {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        min-height: 220px;
+    }
+}
+
 .site-breadcrumb::before {
     content: "";
     position: absolute;
@@ -5094,40 +5168,6 @@ a.footer-logo {
 .copyright .brevia-credit:hover,
 .copyright .brevia-credit:focus {
     color: #33b6ff !important;
-}
-
-.caaft-footer-legal-links {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 4px 10px;
-    font-size: 0.82rem;
-}
-
-.caaft-footer-legal-links a,
-.caaft-footer-legal-links a:visited {
-    color: rgba(255, 255, 255, 0.72);
-    text-decoration: none;
-    transition: color 0.2s ease;
-    white-space: nowrap;
-}
-
-.caaft-footer-legal-links a:hover,
-.caaft-footer-legal-links a:focus {
-    color: #33b6ff;
-}
-
-.caaft-footer-legal-links span {
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 0.75rem;
-}
-
-@media (max-width: 767px) {
-    .caaft-footer-legal-links {
-        justify-content: center;
-        margin-top: 6px;
-    }
 }
 
 .footer-social li a i {

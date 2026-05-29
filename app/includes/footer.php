@@ -40,8 +40,10 @@
 
                                     <li><a href="contact.php"><i class="far fa-arrow-right"></i>Contact Us</a>
                                     </li>
-                                    <li><a href="compliance-calendar.php"><i class="far fa-arrow-right"></i>Compliance Calendar</a>
-                                    </li>
+                                    <li><a href="compliance-calendar.php"><i class="far fa-arrow-right"></i>Compliance Calendar</a></li>
+                                    <li><a href="/privacy-policy"><i class="far fa-arrow-right"></i>Privacy Policy</a></li>
+                                    <li><a href="/terms-and-conditions"><i class="far fa-arrow-right"></i>Terms &amp; Conditions</a></li>
+                                    <li><a href="/disclaimer"><i class="far fa-arrow-right"></i>Disclaimer</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -98,13 +100,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-5 col-lg-4 align-self-center text-md-end text-center">
-                        <nav class="caaft-footer-legal-links" aria-label="Legal">
-                            <a href="/privacy-policy">Privacy Policy</a>
-                            <span aria-hidden="true">&middot;</span>
-                            <a href="/terms-and-conditions">Terms &amp; Conditions</a>
-                            <span aria-hidden="true">&middot;</span>
-                            <a href="/disclaimer">Disclaimer</a>
-                        </nav>
+                        <a class="brevia-credit" href="https://www.breviatech.io" target="_blank" rel="noopener noreferrer">&#9889;BuiltByBrevia</a>
                     </div>
                 </div>
             </div>
