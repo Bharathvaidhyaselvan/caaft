@@ -76,23 +76,11 @@
                         <div class="about-content-sixteen wow fadeInRight" data-wow-delay=".25s">
                             <div class="section-title-four mb-20 tg-heading-subheading animation-style2">
                                 <span class="sub-title tg-element-title">Company Overview</span>
-                                <h2 class="title tg-element-title">End-to-End Business Incorporation, Compliance, Taxation, Accounting &amp; Advisory Solutions</h2>
+                                <h2 class="title tg-element-title">End-to-End Business Incorporation, Compliance, Taxation, Startup Funding, Accounting &amp; Advisory Solutions</h2>
                             </div>
-                            <p>We believe that every business deserves customized solutions to excel in today’s
-                                competitive environment. With expertise in Business Incorporation, Compliance, Taxation, and Accounting &amp; Advisory Solutions, our team is dedicated to offering
-                                strategic insights and
-                                comprehensive support to help clients reach their objectives. Our mission is to empower
-                                businesses by delivering services that enhance financial performance, foster growth, and
-                                ensure compliance. We guide businesses through complex challenges with clarity and
-                                confidence, ensuring sustainable success.</p>
-                            <p>We provide extensive range of services designed to enhance your business. By gaining a
-                                clear understanding of your specific requirements, we work alongside you to develop
-                                practical solutions, ensuring steady long-term progress.</p>
-                            <p>We continuously evolve with the ever-changing business landscape, staying ahead of
-                                industry trends and regulatory updates. This ensures that we provide our clients with
-                                the most relevant and forward-thinking advice. By combining innovation with practical
-                                expertise, we deliver solutions that not only address immediate needs but also position
-                                businesses for long-term success.</p>
+                            <p>We believe that every business, from emerging startups to established enterprises, requires personalized solutions to succeed in today&apos;s dynamic and competitive marketplace. Our team brings together extensive expertise in Business Incorporation, Regulatory Compliance, Taxation, Accounting &amp; Advisory, and Startup &amp; Funding Advisory Services, enabling us to provide comprehensive support tailored to each client&apos;s unique needs and aspirations.</p>
+                            <p>Whether it is establishing a strong legal and financial foundation, ensuring ongoing compliance, optimizing tax strategies, managing financial operations, or guiding startups through fundraising and investor engagement, we deliver practical, results-driven solutions that support long-term success. Our startup and funding advisory services help entrepreneurs navigate critical growth stages, prepare for investment opportunities, and build scalable business models.</p>
+                            <p>Our mission is to empower businesses with strategic insights, financial expertise, and proactive guidance that drive growth, strengthen performance, and ensure regulatory compliance. By simplifying complex business challenges and identifying new opportunities, we help our clients make informed decisions with confidence and achieve sustainable success in an ever-changing business environment.</p>
                         </div>
                     </div>
 

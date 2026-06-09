@@ -255,14 +255,11 @@
                                             class="img-fluid">
                                     </i> About CAAFT</span>
                                 <h1 class="about site-title">
-                                    End-to-End Business Incorporation, Compliance, Taxation, Accounting &amp; Advisory Solutions
+                                    End-to-End Business Incorporation, Compliance, Taxation, Startup Funding, Accounting &amp; Advisory Solutions
                                 </h1>
                             </div>
-                            <p class="about-text">We are more than just service providers, we are your trusted advisors
-                                in growth. We believe that every business deserves customized solutions to excel
-                                in today’s competitive environment. With expertise in <a href="/business-setup-and-registration">Business Incorporation</a>, <a href="/compliance-and-regulatory-services">Compliance</a>, <a href="/taxation">Taxation</a>, and <a href="/accounting-reporting">Accounting &amp; Advisory Solutions</a>, our team is dedicated to
-                                offering strategic insights and comprehensive support to help clients reach their
-                                objectives.</p>
+                            <p class="about-text">We believe that every business, from emerging startups to established enterprises, requires personalized solutions to succeed in today&apos;s dynamic and competitive marketplace. Our team brings together extensive expertise in Business Incorporation, Regulatory Compliance, Taxation, Accounting &amp; Advisory, and Startup &amp; Funding Advisory Services, enabling us to provide comprehensive support tailored to each client&apos;s unique needs and aspirations.</p>
+                            <p class="about-text mt-20">Whether it is establishing a strong legal and financial foundation, ensuring ongoing compliance, optimizing tax strategies, managing financial operations, or guiding startups through fundraising and investor engagement, we deliver practical, results-driven solutions that support long-term success. Our startup and funding advisory services help entrepreneurs navigate critical growth stages, prepare for investment opportunities, and build scalable business models.</p>
 
                             <a href="about.php" class="theme-btn mt-20">Discover More<i
                                     class="fas fa-arrow-right"></i></a>
