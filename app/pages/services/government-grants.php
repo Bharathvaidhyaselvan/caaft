@@ -43,7 +43,23 @@ declare(strict_types=1);
         .page-llp-registration .partnership-mistakes-item h3 { margin: 0 0 6px; color: #1f2c40; font-size: 1.05rem; line-height: 1.35; font-weight: 700; }
         .page-llp-registration .partnership-mistakes-item p { margin: 0 0 8px; color: #4b5563; font-size: 0.97rem; line-height: 1.6; font-weight: 500; }
         .page-llp-registration .partnership-mistakes-item p:last-child { margin-bottom: 0; }
-        .page-llp-registration .partnership-mistakes-item ul { margin: 8px 0 0; padding: 0 0 0 16px; color: #4b5563; font-size: 0.96rem; line-height: 1.55; font-weight: 500; }
+        .page-llp-registration .partnership-mistakes-item > ul {
+            margin: 10px 0 0;
+            padding: 0 0 0 18px;
+            list-style: disc;
+        }
+        .page-llp-registration .partnership-mistakes-item > ul > li {
+            list-style: disc;
+            color: #374151;
+            font-size: 0.96rem;
+            line-height: 1.55;
+            font-weight: 500;
+            padding: 4px 0;
+            text-align: left !important;
+        }
+        .page-llp-registration .partnership-mistakes-item > ul > li::marker {
+            color: var(--theme-color, #33b6ff);
+        }
         .page-llp-registration .partnership-mistakes-list .partnership-mistakes-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
         .page-llp-registration .llp-vs-section { padding-top: 44px; padding-bottom: 48px; background: #ffffff; }
         .page-llp-registration .llp-vs-intro { margin: 0 0 16px; max-width: 950px; color: #4b5563; font-size: 1rem; line-height: 1.6; font-weight: 500; }
