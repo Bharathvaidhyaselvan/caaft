@@ -109,7 +109,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-user-check', 'title' => '200+ Directors Served', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-user-check', 'title' => 'Expert Director KYC Assistance', 'description' => 'Annual Filing Support'],
         ['icon_class' => 'fas fa-file-signature', 'title' => 'DIR-3 KYC & DIN Reactivation', 'description' => 'End-to-End Support'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -151,7 +151,7 @@ declare(strict_types=1);
     $caaft_benefits_title = 'Types of Director KYC Filing';
     $caaft_benefits_intro = 'The MCA provides two methods for completing Director KYC. Selecting the correct method is essential to avoid rejection:';
     $caaft_benefits_items = [
-        ['lead' => 'DIR-3 KYC Form Filing', 'text' => ' Required when a director is filing KYC for the first time or updating specific information such as contact details. The form must be digitally signed by the director and certified by a practising Chartered Accountant, Company Secretary, or Cost Accountant. This method requires full document submission and professional attestation.', 'icon_class' => 'fas fa-file-signature', 'tone' => 'blue'],
+        ['lead' => 'DIR-3 KYC E Form filing', 'text' => ' Required when a director is filing KYC for the first time or updating specific information such as contact details. The form must be digitally signed by the director and certified by a practising Chartered Accountant, Company Secretary, or Cost Accountant. This method requires full document submission and professional attestation.', 'icon_class' => 'fas fa-file-signature', 'tone' => 'blue'],
         ['lead' => 'DIR-3 KYC Web Filing', 'text' => 'A simplified method available for directors who have already filed KYC previously and only need to confirm existing details without changes. The process involves OTP verification through the registered email and mobile number — no professional certification required for the web-based confirmation.', 'icon_class' => 'fas fa-globe', 'tone' => 'violet'],
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';

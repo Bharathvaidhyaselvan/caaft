@@ -172,18 +172,6 @@ declare(strict_types=1);
     ?>
 
     <?php
-    $caaft_benefits_heading_id = 'financial-assessment-fy-ay-heading';
-    $caaft_benefits_title = 'What are Assessment Year and Financial Year?';
-    $caaft_benefits_intro = 'Understanding the difference between the assessment year and financial year is essential for proper financial planning and tax compliance in India.';
-    $caaft_benefits_items = [
-        ['lead' => 'Financial Year (FY)', 'text' => 'The period in which income is earned. In India, it runs from April 1 to March 31.', 'icon_class' => 'fas fa-calendar-alt', 'tone' => 'blue'],
-        ['lead' => 'Assessment Year (AY)', 'text' => 'The year following the financial year in which income is assessed and taxed.', 'icon_class' => 'fas fa-file-invoice-dollar', 'tone' => 'violet'],
-        ['lead' => 'Example', 'text' => 'For example, income earned in FY 2024–25 is assessed in AY 2025–26. Getting this distinction right is fundamental to accurate tax planning and regulatory compliance.', 'icon_class' => 'fas fa-lightbulb', 'tone' => 'green'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-benefits.php';
-    ?>
-
-    <?php
     $caaft_benefits_heading_id = 'financial-assessment-importance-heading';
     $caaft_benefits_title = 'Why Financial Assessment is Important';
     $caaft_benefits_intro = 'A comprehensive financial assessment provides clarity and control over business finances. Key reasons it matters:';

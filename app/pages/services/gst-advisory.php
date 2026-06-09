@@ -260,7 +260,6 @@ $caaft_enquiry_action = '/incometax-services-mail.php';        $caaft_service_ct
         $caaft_delivered_title = 'GST Advisory & Compliance Services — What Gets Delivered';
         $caaft_delivered_items = [
             ['name' => 'GST Registration & Migration', 'text' => 'End-to-end assistance with new GST registrations, amendments, and seamless migration — ensuring all documentation is accurate, complete, and submitted without delays or rejections.'],
-            ['name' => 'GST Return Filing', 'text' => 'Accurate and timely filing of GSTR-1, GSTR-3B, and annual returns — keeping every business fully compliant and eliminating the risk of penalties due to late or incorrect submissions.'],
             ['name' => 'GST Advisory & Consultation', 'text' => 'Clear, practical guidance on GST implications across business transactions — helping management make informed decisions on structuring, invoicing, and compliance at every stage of operations.'],
             ['name' => 'Input Tax Credit (ITC) Optimisation', 'text' => 'Identification and maximisation of all eligible ITC claims — carefully avoiding mismatches and errors to ensure the full benefit is realised without any compliance risk or credit reversal.'],
             ['name' => 'GST Compliance Review', 'text' => 'Detailed compliance reviews that proactively identify risks, gaps, and irregularities in GST processes — delivering the clarity needed to address issues before they escalate into notices or penalties.'],

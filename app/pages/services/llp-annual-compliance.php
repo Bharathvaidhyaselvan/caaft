@@ -145,7 +145,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-building', 'title' => '300+ LLPs Managed', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-building', 'title' => 'LLP Compliance Services', 'description' => 'Across India'],
         ['icon_class' => 'fas fa-file-signature', 'title' => 'Form 8 & Form 11 Experts', 'description' => 'End-to-End Filing'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -278,27 +278,11 @@ declare(strict_types=1);
         </div>
     </section>
 
-    <section class="llp-vs-section" aria-labelledby="llp-calendar-heading">
-        <div class="container">
-            <h2 id="llp-calendar-heading" class="compliance-calendar-title">Annual compliance calendar</h2>
-            <p class="compliance-calendar-intro">Missing deadlines is the single biggest compliance risk for Indian companies. Use this calendar to stay ahead.</p>
-            <div class="table-responsive compliance-calendar-wrap">
-                <table class="compliance-calendar-table">
-                    <thead><tr><th>Month</th><th>Compliance Activity</th><th>Form / Return</th><th>Deadline</th></tr></thead>
-                    <tbody>
-                        <tr><td><span class="calendar-chip calendar-chip--month">May</span></td><td>Annual Return Filing</td><td><span class="calendar-chip calendar-chip--form">Form 11</span></td><td><span class="calendar-chip calendar-chip--deadline-red">30th May</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">July</span></td><td>Income Tax Return (non-audit cases)</td><td><span class="calendar-chip calendar-chip--form">ITR-5</span></td><td><span class="calendar-chip calendar-chip--deadline-red">31st July</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">September</span></td><td>Tax Audit Report (audit cases)</td><td><span class="calendar-chip calendar-chip--form">Form 3CD</span></td><td><span class="calendar-chip calendar-chip--deadline-red">30th September</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">October</span></td><td>Statement of Accounts &amp; Solvency</td><td><span class="calendar-chip calendar-chip--form">Form 8</span></td><td><span class="calendar-chip calendar-chip--deadline-red">30th October</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">October</span></td><td>Income Tax Return (audit cases)</td><td><span class="calendar-chip calendar-chip--form">ITR-5</span></td><td><span class="calendar-chip calendar-chip--deadline-red">31st October</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">Monthly</span></td><td>GST Returns (if registered)</td><td><span class="calendar-chip calendar-chip--form">GSTR-1</span><span class="calendar-chip calendar-chip--form">GSTR-3B</span></td><td><span class="calendar-chip calendar-chip--deadline-soft">As per GST calendar</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">Quarterly</span></td><td>TDS Returns (if applicable)</td><td><span class="calendar-chip calendar-chip--form">Form 24Q</span><span class="calendar-chip calendar-chip--form">Form 26Q</span></td><td><span class="calendar-chip calendar-chip--deadline-soft">Last day after quarter end</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">Within 30 Days</span></td><td>Change in Partners / Agreement</td><td><span class="calendar-chip calendar-chip--form">Form 3</span><span class="calendar-chip calendar-chip--form">Form 4</span></td><td><span class="calendar-chip calendar-chip--deadline-soft">30 days from event date</span></td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
+    <?php
+    $caaft_annual_compliance_calendar_key = 'llp';
+    $caaft_annual_compliance_calendar_heading_id = 'llp-calendar-heading';
+    include __DIR__ . '/../../includes/components/caaft-annual-compliance-calendar.php';
+    ?>
 
     <?php
     $caaft_challenges_heading_id = 'llp-checklist-heading';

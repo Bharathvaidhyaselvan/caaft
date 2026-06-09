@@ -154,15 +154,29 @@
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="far fa-phone"></i></span>
                                                 <input type="text" name="phone" id="phone" maxlength="10"
-                                                    class="form-control" placeholder="Your Phone">
+                                                    class="form-control" placeholder="Your Phone" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="far fa-box"></i></span>
+                                                <select class="select form-select form-control" id="service" name="service" required>
+                                                    <option value="" selected disabled>Choose Service</option>
+                                                    <option value="Accounting & Reporting">Accounting & Reporting</option>
+                                                    <option value="Business Incorporation">Business Incorporation</option>
+                                                    <option value="Management Consultancy">Management Consultancy</option>
+                                                    <option value="Income Tax Services">Income Tax Services</option>
+                                                    <option value="GST Services">GST Services</option>
+                                                    <option value="ROC Filing">ROC Filing</option>
+                                                    <option value="Other MCA Services">Other MCA Services</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
                                             <div class="input-group" id="select-group">
                                                 <span class="input-group-text"><i class="far fa-box"></i></span>
-                                                <select class="select form-select form-control" id="about" name="about">
-                                                    <option value="" selected disabled>How did you hear about us?
-                                                    </option>
+                                                <select class="select form-select form-control" id="about" name="about" required>
+                                                    <option value="" selected disabled>How did you hear about us?</option>
                                                     <option value="Social Media">Social Media</option>
                                                     <option value="Email">Email</option>
                                                     <option value="Word of mouth">Word of mouth</option>
@@ -170,18 +184,14 @@
                                                     <option value="Others">Others (Please mention)</option>
                                                 </select>
                                             </div>
-
-
-                                        </div class="col-lg-12">
-                                        <div>
+                                        </div>
+                                        <div class="col-lg-12">
                                             <div id="other-input" class="input-group" style="display: none;">
                                                 <span class="input-group-text"><i class="far fa-box"></i></span>
                                                 <input type="text" id="other-text" class="form-control"
                                                     placeholder="How did you hear about us? Please mention">
                                             </div>
-                                        </div><!-- Hidden input field for 'Others' -->
-
-
+                                        </div>
                                     </div>
                                     <div class="input-group textarea">
                                         <span class="input-group-text"><i class="far fa-comment-lines"></i></span>
@@ -254,6 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
         const phone = document.getElementById('phone').value.trim();
+        const service = document.getElementById('service').value;
         const about = aboutSelect.value;
         const msg = document.getElementById('msg').value.trim();
 
@@ -283,19 +294,25 @@ document.addEventListener('DOMContentLoaded', function() {
             return false;
         }
 
-        // 5. About source validation
+        // 5. Service validation
+        if (service === '' || service === null) {
+            alert('Please choose a service.');
+            return false;
+        }
+
+        // 6. About source validation
         if (about === '' || about === null) {
             alert('Please select how you heard about us.');
             return false;
         }
 
-        // 6. Message check
+        // 7. Message check
         if (msg === '') {
             alert('Please enter your message.');
             return false;
         }
 
-        // 7. reCAPTCHA validation
+        // 8. reCAPTCHA validation
         if (typeof grecaptcha !== 'undefined') {
             const recaptchaResponse = grecaptcha.getResponse();
             if (recaptchaResponse.length === 0) {

@@ -278,7 +278,7 @@ declare(strict_types=1);
         <?php
         $caaft_trust_items = [
             ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-            ['icon_class' => 'fas fa-handshake', 'title' => '100+ Firms Registered', 'description' => 'Across India'],
+                        ['icon_class' => 'fas fa-handshake', 'title' => 'Hassle-Free Incorporation', 'description' => 'From Start to Finish'],
             ['icon_class' => 'fas fa-file-contract', 'title' => 'Expert Deed Drafting', 'description' => 'Legally Sound'],
             ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
         ];

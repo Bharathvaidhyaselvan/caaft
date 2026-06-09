@@ -56,7 +56,7 @@
 </div>
 
 <main class="main">
-    <div class="site-breadcrumb caaft-legal-breadcrumb" style="background: url(assets/img/legal/privacy-img.jpeg)">
+    <div class="site-breadcrumb" style="background: url(assets/img/legal/privacy-img.jpeg)">
         <div class="container">
             <h1 class="breadcrumb-title">Disclaimer</h1>
         </div>

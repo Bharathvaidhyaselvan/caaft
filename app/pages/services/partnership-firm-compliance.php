@@ -116,7 +116,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-users', 'title' => '200+ Firms Managed', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-users', 'title' => 'Helping Partnership Firms', 'description' => 'Stay Compliant Nationwide'],
         ['icon_class' => 'fas fa-check-circle', 'title' => 'Zero Missed Deadlines', 'description' => 'Calendar-Driven Execution'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -173,7 +173,7 @@ declare(strict_types=1);
     $caaft_delivered_items = [
         ['name' => 'Income Tax Return Filing', 'text' => 'Annual income tax return filed for the partnership firm — covering preparation of financial statements, calculation of taxable income, partner remuneration and interest deductions, and filing within prescribed deadlines.'],
         ['name' => 'GST Registration and Return Filing', 'text' => 'GST registration obtained where turnover exceeds the prescribed threshold. Monthly or quarterly GSTR-1 and GSTR-3B filings managed accurately — along with annual GSTR-9 and compliance monitoring.'],
-        ['name' => 'TDS Compliance', 'text' => 'TDS deducted on applicable payments, deposited monthly by the 7th, and quarterly returns filed through Form 26Q and 24Q — with Form 16A issued to deductees.'],
+        ['name' => 'TDS Compliance', 'text' => 'TDS deducted on applicable payments, deposited monthly by the 7th, and quarterly returns filed through Form 26Q and 24Q, 27Q & 27EQ — with Form 16A issued to deductees.'],
         ['name' => 'Accounting and Bookkeeping', 'text' => 'Daily financial transactions recorded, financial statements prepared, expense records managed, and complete financial documentation maintained — ensuring audit-ready books throughout the year.'],
         ['name' => 'PAN and TAN Application', 'text' => 'PAN obtained for the firm for tax identification. TAN applied for where the firm has TDS deduction obligations — with accurate documentation prepared for both applications.'],
         ['name' => 'Partnership Deed Drafting and Amendments', 'text' => 'Partnership deed drafted to define partner rights, profit-sharing ratios, capital contributions, and dispute resolution terms. Amendments executed and documented where partners change, capital is revised, or profit-sharing arrangements are updated.'],
@@ -198,6 +198,12 @@ declare(strict_types=1);
         ['title' => 'Advisory and Compliance Updates', 'text' => 'Regular updates on regulatory changes are provided and expert advice on tax efficiency, compliance structuring, and financial planning is delivered as the firm evolves.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+    ?>
+
+    <?php
+    $caaft_annual_compliance_calendar_key = 'partnership';
+    $caaft_annual_compliance_calendar_heading_id = 'partnership-calendar-heading';
+    include __DIR__ . '/../../includes/components/caaft-annual-compliance-calendar.php';
     ?>
 
     <?php

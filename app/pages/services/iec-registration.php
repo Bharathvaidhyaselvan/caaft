@@ -125,7 +125,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-briefcase', 'title' => '100+ Businesses Registered', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-briefcase', 'title' => 'Reliable IEC Services', 'description' => 'Nationwide'],
         ['icon_class' => 'fas fa-bolt', 'title' => 'Fast DGFT Approval', 'description' => 'Expert Support'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -235,8 +235,6 @@ declare(strict_types=1);
             <p class="plc-needs-note">Accurate and complete documentation is the most important factor in securing fast, rejection-free IEC approval from DGFT.</p>
         </div>
     </section>
-
-    <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
 
     <section class="partnership-mistakes" aria-labelledby="iec-challenges-heading">
         <div class="container">

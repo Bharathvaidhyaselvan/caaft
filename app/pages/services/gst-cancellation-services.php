@@ -445,7 +445,7 @@
         <?php
         $caaft_trust_items = [
             ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-            ['icon_class' => 'fas fa-shield-check', 'title' => 'Zero Residual Liability', 'description' => 'Record'],
+                        ['icon_class' => 'fas fa-shield-check', 'title' => 'End-to-End GST Surrender', 'description' => 'Registration Cancellation Support'],
             ['icon_class' => 'fas fa-bolt', 'title' => 'Fast & Hassle-Free', 'description' => 'Process'],
             ['icon_class' => 'fas fa-shield-alt', 'title' => '100%', 'description' => 'Data Confidentiality'],
         ];

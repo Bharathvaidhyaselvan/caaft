@@ -577,7 +577,7 @@ declare(strict_types=1);
         <?php
         $caaft_trust_items = [
             ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-            ['icon_class' => 'fas fa-handshake', 'title' => '200+', 'description' => 'LLPs Registered'],
+                        ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Registration Experts', 'description' => 'Professional Guidance'],
             ['icon_class' => 'fas fa-file-contract', 'title' => 'Expert LLP Agreement', 'description' => 'Drafting'],
             ['icon_class' => 'fas fa-lock', 'title' => '100%', 'description' => 'Data Confidentiality'],
         ];

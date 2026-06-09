@@ -558,7 +558,7 @@
                     </article>
                     <article class="caaft-ar-trust-item">
                         <span class="caaft-ar-trust-icon"><i class="fas fa-file-alt"></i></span>
-                        <div class="caaft-ar-trust-content"><h3>500+</h3><p>TDS Returns Filed</p></div>
+                        <div class="caaft-ar-trust-content"><h3>TDS Return Filing Services</h3><p>Across India</p></div>
                     </article>
                     <article class="caaft-ar-trust-item">
                         <span class="caaft-ar-trust-icon"><i class="fas fa-shield-check"></i></span>

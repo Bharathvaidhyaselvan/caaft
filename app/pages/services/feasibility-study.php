@@ -143,7 +143,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-user-tie', 'title' => 'CA-Led Feasibility Studies', 'description' => 'Structured Financial and Market Analysis'],
+                ['icon_class' => 'fas fa-user-tie', 'title' => 'CA-Led Feasibility Studies', 'description' => 'Data-Driven Financial & Market Viability Analysis'],
         ['icon_class' => 'fas fa-university', 'title' => 'Banks & Investors Ready', 'description' => 'Submission-Friendly Formats'],
         ['icon_class' => 'fas fa-globe', 'title' => 'Pan-India Service', 'description' => 'Across Sectors and Locations'],
     ];
@@ -235,24 +235,6 @@ declare(strict_types=1);
     ?>
 
     <?php
-    $caaft_delivered_heading_id = 'feasibility-includes-heading';
-    $caaft_delivered_title = 'What Does a Feasibility Study Include?';
-    $caaft_delivered_intro ='Every CAAFT feasibility study is built specifically for the business, the industry, and the intended audience. A comprehensive report typically cover';                  
-    $caaft_delivered_items = [
-        ['name' => 'Executive Summary', 'text' => ' Key findings and the overall recommendation in a concise, decision-ready format'],
-        ['name' => 'Business Description', 'text' => 'Nature of the business, value proposition, and the problem being solved'],
-        ['name' => 'Market & Demand Analysis', 'text' => 'Total addressable market, target segments, growth drivers, and demand estimation'],
-        ['name' => 'Competitor Analysis', 'text' => 'Mapping of key competitors, their strengths and weaknesses, and differentiation strategy'],
-        ['name' => 'Technical & Operational Plan', 'text' => 'Infrastructure, technology, processes, and resource requirements at scale'],
-        ['name' => 'Financial Projections', 'text' => 'Revenue model, cost estimates, P&L forecast, cash flow statement, and break-even analysis'],
-        ['name' => 'Risk Assessment', 'text' => ' Identification of business, financial, market, and regulatory risks with mitigation strategies'],
-        ['name' => 'Implementation Timeline', 'text' => ' Phased milestones from concept to operational launch'],
-        ['name' => 'Conclusion & Recommendation', 'text' => ' A clear advisory opinion on viability and the conditions under which the business can succeed'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
-    ?>
-
-    <?php
     $caaft_steps_heading_id = 'feasibility-steps-heading';
     $caaft_steps_title = 'Step-by-Step Process';
     $caaft_steps_numbered = true;
@@ -267,21 +249,6 @@ declare(strict_types=1);
         ['title' => 'Final Delivery & Briefing', 'text' => 'The final report is delivered with a walkthrough of key insights, models, and recommendations for decision-making.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
-    ?>
-
-    <?php
-    $caaft_benefits_heading_id = 'feasibility-methods-heading';
-    $caaft_benefits_title = 'Valuation Methods Used in Financial Feasibility';
-    $caaft_benefits_intro = 'Depending on business type and stage, appropriate valuation and projection methodologies are applied to ensure every number in the feasibility study is credible and decision-ready:';
-    $caaft_benefits_items = [
-        ['lead' => 'Discounted Cash Flow (DCF)', 'text' => 'Best suited for businesses with predictable future cash flows. Measures the present value of projected future earnings', 'icon_class' => 'fas fa-calculator', 'tone' => 'blue'],
-        ['lead' => 'Break-Even Analysis', 'text' => ' Best suited for startups and new product launches. Measures the revenue volume needed to cover all fixed and variable costs', 'icon_class' => 'fas fa-balance-scale-right', 'tone' => 'violet'],
-        ['lead' => 'Return on Investment (ROI)', 'text' => ' Best suited for capital investment and expansion decisions. Measures net gain relative to total investment cost', 'icon_class' => 'fas fa-percentage', 'tone' => 'green'],
-        ['lead' => 'Internal Rate of Return (IRR)', 'text' => 'Best suited for investor-facing reports and project finance. Measures the effective annualised return rate of the project', 'icon_class' => 'fas fa-chart-area', 'tone' => 'orange'],
-        ['lead' => 'Comparable Market Analysis', 'text' => 'Best suited for market-entry studies and competitor benchmarking. Measures value derived from pricing of comparable industry players', 'icon_class' => 'fas fa-project-diagram', 'tone' => 'blue'],
-        ['lead' => 'Payback Period Analysis', 'text' => 'Best suited for bank loan applications and MSME project reports. Measures the time required to recover the initial capital investment', 'icon_class' => 'fas fa-hourglass-half', 'tone' => 'violet'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
 
     <?php

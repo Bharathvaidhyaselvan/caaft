@@ -25,13 +25,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name    = htmlspecialchars(trim($_POST['name']));
     $email   = htmlspecialchars(trim($_POST['email']));
     $phone   = htmlspecialchars(trim($_POST['phone']));
+    $service = htmlspecialchars(trim($_POST['service'] ?? ''));
     $about   = htmlspecialchars(trim($_POST['about']));
     $about_other = isset($_POST['about_other']) ? htmlspecialchars(trim($_POST['about_other'])) : '';
     $msg     = htmlspecialchars(trim($_POST['msg']));
     $title   = htmlspecialchars(trim($_POST['title']));
 
     // 🧩 Validate required fields
-    if (empty($name) || empty($email) || empty($phone) || empty($about) || empty($msg)) {
+    if (empty($name) || empty($email) || empty($phone) || empty($service) || empty($about) || empty($msg)) {
         exit("All fields are required.");
     }
 
@@ -51,6 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <p><strong>Name:</strong> {$name}</p>
     <p><strong>Email:</strong> {$email}</p>
     <p><strong>Phone:</strong> {$phone}</p>
+    <p><strong>Service:</strong> {$service}</p>
     <p><strong>Heard About Us:</strong> {$about}</p>";
 
     if (!empty($about_other)) {

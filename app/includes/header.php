@@ -40,6 +40,14 @@ $allServiceSlugs = [
     'advisory-and-cfo-services','budgeting-forecasting-services','business-valuation-services',
     'financial-assessment-services','feasibility-study','cfo-financial-management-services',
     'payroll-management-compliance',
+    'startup-funding-advisory-services',
+    'startup-india-registration',
+    'seed-funding-support',
+    'government-grants',
+    'pitch-deck-services',
+    'business-loan-assistance',
+    'detailed-project-report',
+    'credit-monitoring-arrangement',
 ];
 $servicesActive = isServiceActive($activePage, $allServiceSlugs);
 ?>
@@ -255,6 +263,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
     .mm-panel--compliance { grid-template-columns: 1fr 1fr; gap: 28px; }
     .mm-panel--advisory { grid-template-columns: 1fr; }
     .mm-panel--payroll { grid-template-columns: 1fr; }
+    .mm-panel--startup { grid-template-columns: 1fr 1fr; gap: 28px; }
 
     .mm-group-title {
         font-size: 11px;
@@ -454,6 +463,14 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                         <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
                                     </div>
 
+                                    <div class="mm-tab" data-panel="startup" role="tab" tabindex="0" aria-selected="false">
+                                        <span class="mm-tab-icon" aria-hidden="true">
+                                            <i class="fas fa-rocket"></i>
+                                        </span>
+                                        <a class="mm-tab-link" href="/startup-funding-advisory-services">Startup &amp; Funding Advisory</a>
+                                        <i class="fas fa-chevron-right mm-tab-chevron" aria-hidden="true"></i>
+                                    </div>
+
                                     <div class="mm-tab" data-panel="payroll" role="tab" tabindex="0" aria-selected="false">
                                         <span class="mm-tab-icon" aria-hidden="true">
                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
@@ -568,7 +585,27 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                         </div>
                                     </div>
 
-                                    <!-- ⑥ PAYROLL MANAGEMENT & COMPLIANCE -->
+                                    <!-- ⑥ STARTUP & FUNDING ADVISORY -->
+                                    <div class="mm-panel mm-panel--startup" id="panel-startup" role="tabpanel">
+                                        <div>
+                                            <div class="mm-group-title">Fundraising</div>
+                                            <ul class="mm-links">
+                                                <li><a href="/startup-india-registration">Startup India Registration</a></li>
+                                                <li><a href="/seed-funding-support">Seed Funding Support</a></li>
+                                                <li><a href="/government-grants">Government Grants</a></li>
+                                                <li><a href="/pitch-deck-services">Pitch Deck Preparation</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <div class="mm-group-title">Project Reports</div>
+                                            <ul class="mm-links">
+                                                <li><a href="/detailed-project-report">Detailed Project Report (DPR)</a></li>
+                                                <li><a href="/credit-monitoring-arrangement">CMA Report</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- ⑦ PAYROLL MANAGEMENT & COMPLIANCE -->
                                     <div class="mm-panel mm-panel--payroll" id="panel-payroll" role="tabpanel">
                                         <div class="mm-group-title">Payroll Management &amp; Compliance</div>
                                         <div class="mm-grid-flat">
@@ -673,6 +710,21 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                         <li><a class="dropdown-item" href="/financial-assessment-services">Financial Assessment</a></li>
                                         <li><a class="dropdown-item" href="/feasibility-study">Feasibility Study</a></li>
                                         <li><a class="dropdown-item" href="/cfo-financial-management-services">CFO &amp; Financial Management</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Startup & Funding Advisory -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle main_mesnus_colors" href="/startup-funding-advisory-services">Startup &amp; Funding Advisory</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item link-extend" href="/startup-funding-advisory-services#sfa-fundraising-heading">Fundraising</a></li>
+                                        <li><a class="dropdown-item" href="/startup-india-registration">Startup India Registration</a></li>
+                                        <li><a class="dropdown-item" href="/seed-funding-support">Seed Funding Support</a></li>
+                                        <li><a class="dropdown-item" href="/government-grants">Government Grants</a></li>
+                                        <li><a class="dropdown-item" href="/pitch-deck-services">Pitch Deck Preparation</a></li>
+                                        <li><a class="dropdown-item link-extend" href="/startup-funding-advisory-services#sfa-loan-heading">Project Reports</a></li>
+                                        <li><a class="dropdown-item" href="/detailed-project-report">Detailed Project Report (DPR)</a></li>
+                                        <li><a class="dropdown-item" href="/credit-monitoring-arrangement">CMA Report</a></li>
                                     </ul>
                                 </li>
 

@@ -57,7 +57,7 @@
 </div>
 
 <main class="main">
-    <div class="site-breadcrumb caaft-legal-breadcrumb" style="background: url(assets/img/legal/privacy-img.jpeg)">
+    <div class="site-breadcrumb" style="background: url(assets/img/legal/privacy-img.jpeg)">
         <div class="container">
             <h1 class="breadcrumb-title">Privacy Policy</h1>
         </div>

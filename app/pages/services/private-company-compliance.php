@@ -158,7 +158,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-building', 'title' => '300+ Companies Managed', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-building', 'title' => 'Pvt Ltd Compliance', 'description' => 'Filing Services Across India'],
         ['icon_class' => 'fas fa-check-circle', 'title' => 'Zero Missed Deadlines', 'description' => 'Calendar-Driven Execution'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -199,7 +199,7 @@ declare(strict_types=1);
         <div class="container">
             <h2 id="plc-compliance-types-heading" class="plc-section-h2">Types of Private Limited Company Compliance</h2>
             <p class="llp-vs-intro">Company compliance obligations fall into two categories — filings with the Registrar of Companies and obligations under tax, labour, and other laws:</p>
-            <h3 class="partnership-mistakes-title">Registrar Related Compliance for Private Limited Company</h3>
+            <h3 class="partnership-mistakes-title">ROC Related Compliance for Private Limited Company</h3>
             <p class="llp-vs-intro">These are mandatory annual filings with the Ministry of Corporate Affairs (MCA) portal:</p>
             <div class="table-responsive llp-vs-compare-wrap">
                 <table class="llp-vs-table">
@@ -207,14 +207,14 @@ declare(strict_types=1);
                     <tbody>
                         <tr><td>AOC-4</td><td>Filing of Financial Statements with Balance Sheet and P&amp;L</td><td>Within 30 days of AGM</td><td>All Pvt Ltd Companies</td></tr>
                         <tr><td>MGT-7 / MGT-7A</td><td>Annual Return filing with shareholder and director details</td><td>Within 60 days of AGM</td><td>All Pvt Ltd Companies</td></tr>
-                        <tr><td>ADT-1</td><td>Appointment / reappointment of Auditor</td><td>Within 15 days of AGM</td><td>Mandatory in first year and every 5 years</td></tr>
-                        <tr><td>DIR-3 KYC</td><td>Annual KYC update for every Director holding DIN</td><td>30 September each year</td><td>All Directors</td></tr>
-                        <tr><td>MBP-1 / MBP-2</td><td>Disclosure of Directors' interests</td><td>At first Board Meeting of FY</td><td>All Directors</td></tr>
+                        <tr><td>ADT-1</td><td>Appointment / reappointment of Auditor</td><td>Within 15 days of appointment of auditor</td><td>Mandatory in first year and every 5 years</td></tr>
+                        <tr><td>DIR-3 KYC</td><td>KYC Update for every director holding DIN once in three years</td><td>30th June of Third Financial Year</td><td>All Directors</td></tr>
+                        <tr><td>MBP-1 / MBP-2</td><td>Disclosure of Directors' interests / Register of the Directors' Interest</td><td>At first Board Meeting of FY</td><td>All Directors</td></tr>
                         <tr><td>BEN-2</td><td>Declaration of Significant Beneficial Ownership</td><td>Within 30 days of declaration</td><td>Companies with SBO</td></tr>
                     </tbody>
                 </table>
             </div>
-            <h3 class="partnership-mistakes-title" style="margin-top: 26px;">Non-Registrar Related Compliance for Private Limited Company</h3>
+            <h3 class="partnership-mistakes-title" style="margin-top: 26px;">Other than ROC Related Compliance for Private Limited Company</h3>
             <p class="llp-vs-intro">Beyond ROC filings, every company must also meet obligations under tax, labour, and other laws:</p>
             <div class="table-responsive llp-vs-compare-wrap">
                 <table class="llp-vs-table">
@@ -222,7 +222,7 @@ declare(strict_types=1);
                     <tbody>
                         <tr><td>Income Tax Filing</td><td>ITR-6 filing for company income, tax audit if turnover exceeds threshold</td><td>Annual</td></tr>
                         <tr><td>GST Returns</td><td>GSTR-1, GSTR-3B, annual GSTR-9 if registered under GST</td><td>Monthly / Quarterly / Annual</td></tr>
-                        <tr><td>TDS Compliance</td><td>Deduct, deposit, and file TDS returns (Form 24Q / 26Q)</td><td>Monthly deposit, Quarterly filing</td></tr>
+                        <tr><td>TDS Compliance</td><td>Deduct, deposit, and file TDS returns (Form 24Q / 26Q, 27Q, 27EQ)</td><td>Monthly deposit, Quarterly filing</td></tr>
                         <tr><td>Statutory Audit</td><td>Appointment of statutory auditor; audit of financial statements</td><td>Annual</td></tr>
                         <tr><td>PF / ESIC Filing</td><td>Monthly PF and ESI contributions and returns where applicable</td><td>Monthly</td></tr>
                         <tr><td>Shops &amp; Establishment</td><td>Renewal of registration under state-specific Acts</td><td>Annual (varies by state)</td></tr>
@@ -266,29 +266,11 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
     ?>
 
-    <section class="llp-vs-section" aria-labelledby="plc-compliance-calendar-heading">
-        <div class="container">
-            <h2 id="plc-compliance-calendar-heading" class="compliance-calendar-title">Annual compliance calendar</h2>
-            <p class="compliance-calendar-intro">Missing deadlines is the single biggest compliance risk for Indian companies. Use this calendar to stay ahead.</p>
-            <div class="table-responsive compliance-calendar-wrap">
-                <table class="compliance-calendar-table">
-                    <thead><tr><th>Month</th><th>Activity</th><th>Form / Action</th><th>Deadline</th></tr></thead>
-                    <tbody>
-                        <tr><td><span class="calendar-chip calendar-chip--month">April</span></td><td>First Board Meeting of FY; collect MBP-1 from directors</td><td><span class="calendar-chip calendar-chip--form">MBP-1</span><span class="calendar-chip calendar-chip--form">Board Minutes</span></td><td><span class="calendar-chip calendar-chip--deadline-soft">Within 30 days of FY start</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">Apr – Jun</span></td><td>TDS deposit and quarterly return</td><td><span class="calendar-chip calendar-chip--form">Form 26Q</span><span class="calendar-chip calendar-chip--form">24Q</span></td><td><span class="calendar-chip calendar-chip--deadline-red">7th of each month</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">July</span></td><td>TDS return Q1 (Apr–Jun)</td><td><span class="calendar-chip calendar-chip--form">Form 26Q</span><span class="calendar-chip calendar-chip--form">24Q</span></td><td><span class="calendar-chip calendar-chip--deadline-red">31st July</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">Aug – Sep</span></td><td>Statutory audit completion; financials finalised</td><td><span class="calendar-chip calendar-chip--form">Audit Report</span></td><td><span class="calendar-chip calendar-chip--deadline-soft">Before AGM</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">September</span></td><td>AGM to be held; DIR-3 KYC for all directors</td><td><span class="calendar-chip calendar-chip--form">AGM</span><span class="calendar-chip calendar-chip--form">DIR-3 KYC</span></td><td><span class="calendar-chip calendar-chip--deadline-red">30th September</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">October</span></td><td>AOC-4 filing (Financial Statements)</td><td><span class="calendar-chip calendar-chip--form">AOC-4</span></td><td><span class="calendar-chip calendar-chip--deadline-soft">Within 30 days of AGM</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">November</span></td><td>MGT-7 / MGT-7A filing (Annual Return)</td><td><span class="calendar-chip calendar-chip--form">MGT-7</span><span class="calendar-chip calendar-chip--form">MGT-7A</span></td><td><span class="calendar-chip calendar-chip--deadline-soft">Within 60 days of AGM</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">Oct / Nov</span></td><td>Income Tax Return filing</td><td><span class="calendar-chip calendar-chip--form">ITR-6</span></td><td><span class="calendar-chip calendar-chip--deadline-red">31 October (audit cases)</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">Oct – Mar</span></td><td>GST annual return (if applicable)</td><td><span class="calendar-chip calendar-chip--form">GSTR-9</span></td><td><span class="calendar-chip calendar-chip--deadline-red">31st December</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">Ongoing</span></td><td>Monthly GST returns</td><td><span class="calendar-chip calendar-chip--form">GSTR-1</span><span class="calendar-chip calendar-chip--form">GSTR-3B</span></td><td><span class="calendar-chip calendar-chip--deadline-red">11th &amp; 20th each month</span></td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
+    <?php
+    $caaft_annual_compliance_calendar_key = 'private_limited';
+    $caaft_annual_compliance_calendar_heading_id = 'plc-compliance-calendar-heading';
+    include __DIR__ . '/../../includes/components/caaft-annual-compliance-calendar.php';
+    ?>
 
     <section class="partnership-mistakes" aria-labelledby="plc-compliance-checklist-heading">
         <div class="container">

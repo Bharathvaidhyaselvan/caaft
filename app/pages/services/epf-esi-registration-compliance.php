@@ -141,7 +141,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-building', 'title' => '100+ Businesses Registered', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-building', 'title' => 'ESI & EPF Support', 'description' => 'Registration & Compliance Across India'],
         ['icon_class' => 'fas fa-calendar-check', 'title' => 'Zero Missed Deadlines', 'description' => 'Compliance Managed'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -178,26 +178,6 @@ declare(strict_types=1);
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
-
-    <?php
-    $caaft_delivered_heading_id = 'epfesi-needs-heading';
-    $caaft_delivered_title = 'Who Needs EPF & ESI Registration?';
-    $caaft_delivered_items = [
-        ['name' => 'Startups (20+ employees)', 'text' => 'EPF: yes. ESI: yes (for employees earning ₹21,000 or less per month).'],
-        ['name' => 'SMEs and trading companies', 'text' => 'EPF: yes. ESI: yes.'],
-        ['name' => 'Manufacturing units (10+ employees)', 'text' => 'EPF: yes. ESI: yes.'],
-        ['name' => 'Contractors and sub-contractors', 'text' => 'EPF: yes. ESI: yes.'],
-        ['name' => 'NGOs and societies (20+ employees)', 'text' => 'EPF: yes. ESI: where applicable.'],
-        ['name' => 'IT and service companies', 'text' => 'EPF: yes. ESI: yes.'],
-        ['name' => 'HR outsourcing and staffing firms', 'text' => 'EPF: yes. ESI: yes.'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
-    ?>
-    <section class="partnership-mistakes" style="padding-top:0;">
-        <div class="container">
-            <p class="partnership-mistakes-intro">Principal employers are responsible for ensuring contract workers employed through contractors are also covered — if the contractor fails to comply, the liability falls on the principal employer.</p>
-        </div>
-    </section>
 
     <section class="partnership-mistakes" aria-labelledby="epfesi-applicability-heading">
         <div class="container">
@@ -345,8 +325,6 @@ declare(strict_types=1);
             </div>
         </div>
     </section>
-
-    <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
 
     <section class="llp-vs-section" aria-labelledby="epfesi-contribution-heading">
         <div class="container">

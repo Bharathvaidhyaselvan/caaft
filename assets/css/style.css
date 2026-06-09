@@ -4545,20 +4545,6 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
     z-index: 1
 }
 
-.site-breadcrumb.caaft-legal-breadcrumb {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    min-height: 280px;
-}
-
-@media (max-width: 767px) {
-    .site-breadcrumb.caaft-legal-breadcrumb {
-        padding-top: 90px;
-        padding-bottom: 90px;
-        min-height: 220px;
-    }
-}
-
 .site-breadcrumb::before {
     content: "";
     position: absolute;
@@ -6477,8 +6463,34 @@ h2.about.site-title {
 }
 
 @media(min-width:991px) {
+    .service-area2 .row > [class*="col-"] {
+        display: flex;
+    }
+
+    .service-area2 .services-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
     .service-area2 .services-content {
-        height: 455px;
+        height: auto;
+        min-height: 455px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .service-area2 .services-thumb img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .service-area2 .services-content .list-wrap {
+        margin-top: auto;
     }
 }
 
@@ -13031,4 +13043,89 @@ body.home-3 .copyright .brevia-credit {
     body.home-3 .copyright .col-12.text-end {
         text-align: center !important;
     }
+}
+
+/* Annual compliance calendar (service pages) */
+.caaft-annual-compliance-calendar .compliance-calendar-wrap {
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.caaft-annual-compliance-calendar .compliance-calendar-title {
+    margin: 0 0 8px;
+    color: #1f2c40;
+    font-size: clamp(1.45rem, 2vw, 2rem);
+    line-height: 1.25;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.caaft-annual-compliance-calendar .compliance-calendar-intro {
+    margin: 0 0 18px;
+    color: #5f6b7a;
+    font-size: 1rem;
+    line-height: 1.55;
+    font-weight: 500;
+}
+
+.caaft-annual-compliance-calendar .compliance-calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.caaft-annual-compliance-calendar .compliance-calendar-table thead th {
+    padding: 0 4px 12px;
+    border: 0;
+    border-bottom: 1px solid #e6eaef;
+    text-transform: uppercase;
+    font-size: 0.76rem;
+    letter-spacing: 0.04em;
+    color: #7b8794;
+    font-weight: 700;
+    text-align: left;
+}
+
+.caaft-annual-compliance-calendar .compliance-calendar-table tbody td {
+    padding: 12px 4px;
+    border: 0;
+    border-bottom: 1px solid #edf1f5;
+    vertical-align: middle;
+    color: #2f3c4c;
+    font-size: 0.96rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.caaft-annual-compliance-calendar .calendar-chip {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.caaft-annual-compliance-calendar .calendar-chip--month {
+    background: #f1efe9;
+    color: #6d665a;
+}
+
+.caaft-annual-compliance-calendar .calendar-chip--form {
+    background: #f3f5f8;
+    color: #6c7787;
+    margin-right: 6px;
+    margin-bottom: 4px;
+}
+
+.caaft-annual-compliance-calendar .calendar-chip--deadline-soft {
+    background: #f4efdf;
+    color: #8a7443;
+}
+
+.caaft-annual-compliance-calendar .calendar-chip--deadline-red {
+    background: #f9e7e7;
+    color: #b55f5f;
 }

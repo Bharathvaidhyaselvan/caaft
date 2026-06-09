@@ -368,10 +368,10 @@
                 'title' => 'Rated 4.8/5 ⭐',
                 'description' => 'on Google',
             ],
-            [
+                        [
                 'icon_class' => 'fas fa-briefcase',
-                'title' => '300+',
-                'description' => 'Businesses Served',
+                'title' => 'Trusted Accounting Partner',
+                'description' => 'Business Accounting & Financial Management',
             ],
             [
                 'icon_class' => 'fas fa-bullseye',

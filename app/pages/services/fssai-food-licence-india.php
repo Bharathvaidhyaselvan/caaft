@@ -194,7 +194,7 @@ declare(strict_types=1);
         <?php
         $caaft_trust_items = [
             ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-            ['icon_class' => 'fas fa-utensils', 'title' => '100+ Food Businesses Licensed', 'description' => 'Across India'],
+                        ['icon_class' => 'fas fa-utensils', 'title' => 'Expert FSSAI Support', 'description' => 'Registration & Renewals'],
             ['icon_class' => 'fas fa-bolt', 'title' => 'Fast Approval Support', 'description' => 'Expert Managed'],
             ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
         ];
@@ -335,8 +335,6 @@ declare(strict_types=1);
                 </div>
             </div>
         </section>
-
-        <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
 
         <section class="partnership-compliance" aria-labelledby="fssai-compliance-heading">
             <div class="container">

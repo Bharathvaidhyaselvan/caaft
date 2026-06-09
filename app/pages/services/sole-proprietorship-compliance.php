@@ -142,7 +142,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-user-check', 'title' => '100+ Proprietors Served', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-user-check', 'title' => 'Proprietorship Compliance', 'description' => 'End-to-End Support'],
         ['icon_class' => 'fas fa-file-invoice', 'title' => 'GST, ITR & TDS Covered', 'description' => 'End-to-End Compliance'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -318,31 +318,11 @@ declare(strict_types=1);
         </div>
     </section>
 
-    <section class="llp-vs-section" aria-labelledby="sole-calendar-heading">
-        <div class="container">
-            <h2 id="sole-calendar-heading" class="compliance-calendar-title">Annual compliance calendar</h2>
-            <p class="compliance-calendar-intro">Missing deadlines is the single biggest compliance risk for Indian companies. Use this calendar to stay ahead.</p>
-            <div class="table-responsive compliance-calendar-wrap">
-                <table class="compliance-calendar-table">
-                    <thead><tr><th>Month</th><th>Compliance Activity</th><th>Form / Return</th><th>Deadline</th></tr></thead>
-                    <tbody>
-                        <tr><td><span class="calendar-chip calendar-chip--month">April</span></td><td>First advance tax instalment (15%). Professional Tax payment</td><td><span class="calendar-chip calendar-chip--form">Advance Tax</span><span class="calendar-chip calendar-chip--form">Professional Tax</span></td><td><span class="calendar-chip calendar-chip--deadline-soft">15th April cycle</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">May</span></td><td>TDS Return Q4</td><td><span class="calendar-chip calendar-chip--form">Form 26Q</span></td><td><span class="calendar-chip calendar-chip--deadline-red">31st May</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">June</span></td><td>Advance tax second instalment (45%)</td><td><span class="calendar-chip calendar-chip--form">Advance Tax</span></td><td><span class="calendar-chip calendar-chip--deadline-red">15th June</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">July</span></td><td>ITR for non-audit cases. TDS Return Q1</td><td><span class="calendar-chip calendar-chip--form">ITR-3 / ITR-4</span><span class="calendar-chip calendar-chip--form">TDS Q1</span></td><td><span class="calendar-chip calendar-chip--deadline-red">31st July</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">August</span></td><td>GSTR-9 where applicable. Monthly GST returns</td><td><span class="calendar-chip calendar-chip--form">GSTR-9</span><span class="calendar-chip calendar-chip--form">GSTR-1 / 3B</span></td><td><span class="calendar-chip calendar-chip--deadline-soft">As per GST calendar</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">September</span></td><td>Advance tax third instalment (75%). Tax Audit</td><td><span class="calendar-chip calendar-chip--form">Advance Tax</span><span class="calendar-chip calendar-chip--form">Tax Audit</span></td><td><span class="calendar-chip calendar-chip--deadline-red">15th / 30th September</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">October</span></td><td>Tax Audit ITR. TDS Return Q2. GST returns</td><td><span class="calendar-chip calendar-chip--form">ITR</span><span class="calendar-chip calendar-chip--form">TDS Q2</span><span class="calendar-chip calendar-chip--form">GST</span></td><td><span class="calendar-chip calendar-chip--deadline-red">31st October</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">November</span></td><td>GST monthly returns. Professional Tax where applicable</td><td><span class="calendar-chip calendar-chip--form">GSTR-1 / 3B</span><span class="calendar-chip calendar-chip--form">Professional Tax</span></td><td><span class="calendar-chip calendar-chip--deadline-soft">As applicable</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">December</span></td><td>Advance tax final instalment (100%). TDS Return Q3</td><td><span class="calendar-chip calendar-chip--form">Advance Tax</span><span class="calendar-chip calendar-chip--form">TDS Q3</span></td><td><span class="calendar-chip calendar-chip--deadline-red">15th / 31st December</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">January</span></td><td>TDS Return Q3. GST returns. Shop licence renewal</td><td><span class="calendar-chip calendar-chip--form">TDS Q3</span><span class="calendar-chip calendar-chip--form">GST</span><span class="calendar-chip calendar-chip--form">Shop Licence</span></td><td><span class="calendar-chip calendar-chip--deadline-soft">As applicable</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">February</span></td><td>GSTR-9 annual return. Financial statement preparation begins</td><td><span class="calendar-chip calendar-chip--form">GSTR-9</span><span class="calendar-chip calendar-chip--form">Financials</span></td><td><span class="calendar-chip calendar-chip--deadline-soft">As per GST timeline</span></td></tr>
-                        <tr><td><span class="calendar-chip calendar-chip--month">March</span></td><td>Advance tax final payment. Year-end audit and compliance review</td><td><span class="calendar-chip calendar-chip--form">Advance Tax</span><span class="calendar-chip calendar-chip--form">Year-end Review</span></td><td><span class="calendar-chip calendar-chip--deadline-red">15th / 31st March</span></td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
+    <?php
+    $caaft_annual_compliance_calendar_key = 'sole_proprietorship';
+    $caaft_annual_compliance_calendar_heading_id = 'sole-calendar-heading';
+    include __DIR__ . '/../../includes/components/caaft-annual-compliance-calendar.php';
+    ?>
 
     <section class="penalty-section" aria-labelledby="sole-penalties-heading">
         <div class="container">

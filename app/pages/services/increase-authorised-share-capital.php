@@ -21,11 +21,6 @@ declare(strict_types=1);
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
         .page-llp-registration .caaft-ar-trust-indicators { background: #ffffff !important; }
-        .page-llp-registration .llp-vs-section { padding-top: 44px; padding-bottom: 48px; background: #ffffff; }
-        .page-llp-registration .llp-vs-intro { margin: 0 0 16px; max-width: 980px; color: #4b5563; font-size: 1rem; line-height: 1.6; font-weight: 500; }
-        .page-llp-registration .llp-vs-table { width: 100%; border-collapse: collapse; font-size: 0.98rem; background: #ffffff; }
-        .page-llp-registration .llp-vs-table th, .page-llp-registration .llp-vs-table td { border: 1px solid #dfe5ec; padding: 12px 14px; vertical-align: top; line-height: 1.5; text-align: left; }
-        .page-llp-registration .llp-vs-table thead th { background: #f6f8fb; color: #1f2c40; font-weight: 700; }
         .page-llp-registration .plc-docs-section { padding-top: 44px; padding-bottom: 44px; background: #ffffff; }
         .page-llp-registration .plc-docs-title { margin: 0 0 22px; color: #1f2c40; font-size: clamp(1.5rem, 2.2vw, 2.1rem); line-height: 1.2; font-weight: 700; }
         .page-llp-registration .plc-docs-cards-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
@@ -108,7 +103,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-chart-line', 'title' => '100+ Capital Increase Filings', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-chart-line', 'title' => 'Authorized Capital Increase', 'description' => 'End-to-End Support'],
         ['icon_class' => 'fas fa-file-signature', 'title' => 'MOA Amendment & ROC Filing', 'description' => 'SH-7, MGT-14 Compliance'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -180,6 +175,7 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
 
+    <?php /*
     <section class="llp-vs-section" aria-labelledby="authorized-capital-forms-heading">
         <div class="container">
             <h2 id="authorized-capital-forms-heading" class="plc-docs-title"> Forms Required for Director Changes</h2>
@@ -193,12 +189,12 @@ declare(strict_types=1);
                         <tr><td>DIR-11</td><td>Intimation of resignation by director</td><td>Resigning director</td><td>Within 30 days of resignation</td></tr>
                         <tr><td>DIR-12</td><td>Intimation of appointment / resignation / removal to ROC</td><td>Company</td><td>Within 30 days of event</td></tr>
                         <tr><td>MGT-14</td><td>Filing of Board / Special Resolution with ROC</td><td>Company</td><td>Within 30 days of resolution</td></tr>
-
                     </tbody>
                 </table>
             </div>
         </div>
     </section>
+    */ ?>
 
     <?php
     $caaft_delivered_heading_id = 'authorized-capital-delivered-heading';

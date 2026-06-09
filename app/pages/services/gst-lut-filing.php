@@ -519,17 +519,6 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
         include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
         ?>
 
-        <section class="lut-docs-wrap"><div class="container"><h2 class="lut-docs-title">Documents Required for GST LUT Filing</h2><p class="lut-docs-intro">The exact documents vary slightly by entity type — but the standard checklist includes:</p><div class="lut-docs-grid">
-            <div class="lut-docs-item"><span class="lut-docs-checkbox" aria-hidden="true"></span><span>GST Registration Certificate (GSTIN)</span></div>
-            <div class="lut-docs-item"><span class="lut-docs-checkbox" aria-hidden="true"></span><span>PAN Card of the business, proprietor, or authorised signatory</span></div>
-            <div class="lut-docs-item"><span class="lut-docs-checkbox" aria-hidden="true"></span><span>IEC Code (Importer Exporter Code) — for goods exporters</span></div>
-            <div class="lut-docs-item"><span class="lut-docs-checkbox" aria-hidden="true"></span><span>Copy of previous LUT (for renewal cases)</span></div>
-            <div class="lut-docs-item"><span class="lut-docs-checkbox" aria-hidden="true"></span><span>Board Resolution or Authorisation Letter (for companies and LLPs)</span></div>
-            <div class="lut-docs-item"><span class="lut-docs-checkbox" aria-hidden="true"></span><span>Cancelled cheque or bank account proof</span></div>
-            <div class="lut-docs-item"><span class="lut-docs-checkbox" aria-hidden="true"></span><span>List of authorised signatories with their designations</span></div>
-            <div class="lut-docs-item"><span class="lut-docs-checkbox" aria-hidden="true"></span><span>GST return filing status screenshot — GSTR-1 and GSTR-3B</span></div>
-        </div><p class="lut-docs-intro">Every document is verified before submission. One missing or incorrect document is enough to delay or reject a LUT application — thorough pre-submission verification eliminates this risk entirely.</p></div></section>
-
         <section class="lut-vs-wrap"><div class="container"><h2 class="lut-vs-title">GST LUT vs Bond — Key Differences</h2><p class="lut-vs-intro">Exporters who do not qualify for a LUT must furnish a Bond.</p><div class="lut-vs-table">
             <div class="lut-vs-head"><div>Criteria</div><div>LUT (Letter of Undertaking) <span class="lut-vs-tag">Preferred</span></div><div>Bond</div></div>
             <div class="lut-vs-row"><div>Who can use</div><div>Exporters with clean GST compliance history</div><div>Exporters with pending demands or defaults</div></div>

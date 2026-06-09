@@ -465,10 +465,10 @@ include __DIR__ . '/../../includes/components/enquiry-hero-form.php';
                 'title' => 'Rated 4.8/5 ⭐',
                 'description' => 'on Google',
             ],
-            [
+                        [
                 'icon_class' => 'fas fa-file-invoice',
-                'title' => '300+',
-                'description' => 'Returns Filed Monthly',
+                'title' => 'GST Return Filing Services',
+                'description' => 'Across India',
             ],
             [
                 'icon_class' => 'fas fa-clock',

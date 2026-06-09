@@ -105,7 +105,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-building', 'title' => '200+ MSME Filings', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-building', 'title' => 'MSME Registration Support', 'description' => 'Across India'],
         ['icon_class' => 'fas fa-check-circle', 'title' => 'Fast Udyam Processing', 'description' => 'Error-Free Filing'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -170,8 +170,6 @@ declare(strict_types=1);
             <p class="msme-note">No additional fees are required for registration on the official portal.</p>
         </div>
     </section>
-
-    <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
 
     <?php
     $caaft_benefits_heading_id = 'msme-pro-assist-heading';

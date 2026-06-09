@@ -117,7 +117,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-building', 'title' => '100+ OPCs Managed', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-building', 'title' => 'End-to-End OPC Support', 'description' => 'Annual Filing'],
         ['icon_class' => 'fas fa-check-circle', 'title' => 'Zero Missed Deadlines', 'description' => 'Calendar-Driven Execution'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -175,9 +175,9 @@ declare(strict_types=1);
         $caaft_delivered_items = [
             ['name' => 'Financial Statement Preparation', 'text' => 'Accurate financial statements prepared at the end of each financial year — including Balance Sheet, Profit and Loss Statement, Cash Flow Statement (where applicable), and Director\'s Report — ready for MCA filing and audit.'],
             ['name' => 'AOC-4 Filing — Financial Statements with ROC', 'text' => 'Financial statements filed with the MCA within 180 days from the end of the financial year — ensuring the OPC\'s financial records are accurately submitted and available for regulatory review.'],
-            ['name' => 'MGT-7A Filing — Annual Return', 'text' => 'Annual Return filed within 60 days from the AOC-4 due date — covering director details, company activities, and other statutory information required by the MCA.'],
+            ['name' => 'MGT-7A Filing — Annual Return', 'text' => 'Annual Return filed within 60 days from the date of AGM — covering director details, company activities, and other statutory information required by the MCA.'],
             ['name' => 'Income Tax Return Filing', 'text' => 'Corporate income tax return filed by 31 October — covering business income, expenses, deductions, and applicable corporate tax — with proper accounting records maintained throughout the year.'],
-            ['name' => 'Director KYC — DIR-3 KYC', 'text' => 'Annual KYC filing completed for the director by 30 September — maintaining an active DIN and ensuring all personal and contact details remain current in the MCA database.'],
+            ['name' => 'Director KYC — DIR-3 KYC', 'text' => 'KYC filing completed for the director once in every three financial year by 30th June of third year — maintaining an active DIN and ensuring all personal and contact details remain current in the MCA database.'],
             ['name' => 'Board Resolution and Documentation', 'text' => 'Board resolutions, director decisions, compliance records, and statutory registers prepared and maintained — ensuring proper corporate documentation for regulatory reviews and financial audits'],
         ];
         include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
@@ -216,6 +216,12 @@ declare(strict_types=1);
         ['title' => 'Income tax return filing', 'text' => 'Corporate ITR is filed by 31 October — with all income, expenses, deductions, and tax liability computed accurately and submitted on time.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
+    ?>
+
+    <?php
+    $caaft_annual_compliance_calendar_key = 'opc';
+    $caaft_annual_compliance_calendar_heading_id = 'opc-calendar-heading';
+    include __DIR__ . '/../../includes/components/caaft-annual-compliance-calendar.php';
     ?>
 
     <section class="penalty-section" aria-labelledby="opc-penalties-heading">

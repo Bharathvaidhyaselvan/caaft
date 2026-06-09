@@ -216,7 +216,6 @@ $caaft_enquiry_input_id_prefix = 'ac';
             ['icon_class' => 'fas fa-stethoscope', 'title' => 'Financial Assessment', 'text' => "A thorough diagnostic of your business's financial health - identifying strengths, gaps, inefficiencies, and risks across your P&L, balance sheet, and cash flow.", 'href' => '/financial-assessment-services'],
             ['icon_class' => 'fas fa-search', 'title' => 'Feasibility Study', 'text' => 'Structured analysis of a new business, project, or investment - assessing market viability, financial projections, risk factors, and whether the opportunity is worth pursuing.', 'href' => '/feasibility-study'],
             ['icon_class' => 'fas fa-file-invoice-dollar', 'title' => 'CFO & Financial Management', 'text' => 'Ongoing financial leadership for growing businesses - covering month-end reporting, KPI tracking, and board-ready management accounts to keep your finances sharp and decision-ready.', 'href' => '/cfo-financial-management-services'],
-            ['icon_class' => 'fas fa-money-check-alt', 'title' => 'Payroll Management & Compliance', 'text' => 'End-to-end payroll processing - from salary computation and TDS deductions to PF/ESI contributions and statutory compliance - so your team gets paid accurately and on time, every time.', 'href' => '/payroll-management-compliance'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>

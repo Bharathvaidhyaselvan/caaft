@@ -30,7 +30,7 @@ $caaft_hero_pricing_dual_left_amount = isset($caaft_hero_pricing_dual_left_amoun
     : '';
 $caaft_hero_pricing_dual_right_amount = isset($caaft_hero_pricing_dual_right_amount)
     ? trim((string) $caaft_hero_pricing_dual_right_amount)
-    : '2,499';
+    : '1,499';
 
 if ($caaft_hero_pricing_dual_left_amount === '') {
     $caaft_hero_pricing_row = caaft_resolve_service_page_pricing();

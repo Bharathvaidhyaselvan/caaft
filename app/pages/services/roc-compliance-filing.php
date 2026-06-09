@@ -96,7 +96,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-file-signature', 'title' => '300+ ROC Filings Completed', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-file-signature', 'title' => 'ROC Compliance & Filing Services', 'description' => 'Across India'],
         ['icon_class' => 'fas fa-sitemap', 'title' => 'MCA Forms & Compliance Support', 'description' => 'End-to-End Filing'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -151,11 +151,11 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/caaft-challenges.php';
     ?>
 
-    <?php
+    <?php /*
     $caaft_delivered_heading_id = 'roc-delivered-heading';
     $caaft_delivered_title = 'Miscellaneous ROC Filing Services — What Gets Delivered';
     $caaft_delivered_items = [
-        ['name' => 'DIR-3 KYC Filing', 'text' => 'Annual KYC compliance for every director holding a DIN — filed before the 30 September deadline to prevent DIN deactivation and the ₹5,000 reactivation penalty.'],
+        ['name' => 'DIR-3 KYC Filing', 'text' => 'KYC Compliance for every director holding a DIN — prevent DIN deactivation and the ₹5,000 reactivation penalty.'],
         ['name' => 'ADT-1 Filing', 'text' => 'Filing for the appointment of auditors — mandatory after incorporation and during every auditor change — submitted within 15 days of the AGM or board meeting approving the appointment.'],
         ['name' => 'INC-22 Filing', 'text' => 'Filing for updating or changing the registered office address of the company — prepared with accurate address proof, NOC, and supporting documents and submitted within the prescribed timeline.'],
         ['name' => 'DIR-12 Filing', 'text' => 'Filing for the appointment, resignation, or change in designation of directors — prepared with board resolution, consent letters, and all required documentation and submitted within 30 days of the triggering event.'],
@@ -163,7 +163,7 @@ declare(strict_types=1);
         ['name' => 'AOC-4 and MGT-7 Corrections', 'text' => 'Rectification and revision of financial statements and annual returns — managed to ensure accurate company records are maintained in the MCA database and compliance gaps are resolved without delay.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
-    ?>
+    */ ?>
 
     <?php
     $caaft_steps_heading_id = 'roc-steps-heading';

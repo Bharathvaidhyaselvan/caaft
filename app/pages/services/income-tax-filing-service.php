@@ -411,8 +411,8 @@
                     <article class="caaft-ar-trust-item">
                         <span class="caaft-ar-trust-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></span>
                         <div class="caaft-ar-trust-content">
-                            <h3>500+</h3>
-                            <p>Returns Filed</p>
+                            <h3>End-to-End ITR Filing Support</h3>
+                            <p>for Individuals & Businesses</p>
                         </div>
                     </article>
                     <article class="caaft-ar-trust-item">

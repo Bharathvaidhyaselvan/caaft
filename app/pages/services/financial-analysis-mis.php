@@ -492,10 +492,10 @@
                 'title' => 'Rated 4.8/5 ⭐',
                 'description' => 'on Google',
             ],
-            [
+                        [
                 'icon_class' => 'fas fa-briefcase',
-                'title' => '200+',
-                'description' => 'Businesses Served',
+                'title' => 'End-to-End MIS Reporting',
+                'description' => 'Analysis Support',
             ],
             [
                 'icon_class' => 'fas fa-file-alt',

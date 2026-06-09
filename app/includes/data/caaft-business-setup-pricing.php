@@ -20,7 +20,7 @@ $company_ltd_plans = [
         'features' => [
             'Name Reservation',
             'DIN for Directors',
-            'DSC for 2 Directors',
+            'Company Incorporation',
             'MOA & AOA',
             'Certificate of incorporation',
             'PAN & TAN',
@@ -42,7 +42,7 @@ $company_ltd_plans = [
             'Company incorporation',
             'MOA & AOA',
             'DIN for Directors',
-            'DSC for 2 Directors',
+            'Company Incorporation',
             'Certificate of incorporation',
             'PAN & TAN',
             'ESI & EPF',
@@ -369,7 +369,7 @@ return [
             'features' => [
                 'Name Reservation',
                 'DIN for Directors',
-                'DSC for 2 Directors',
+                'Company Incorporation',
                 'MOA & AOA',
                 'Certificate of incorporation',
                 'PAN & TAN',

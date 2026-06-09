@@ -136,7 +136,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-building', 'title' => '100+ Companies Managed', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-building', 'title' => 'Trusted Compliance Partner', 'description' => 'for Public Limited Companies'],
         ['icon_class' => 'fas fa-clipboard-check', 'title' => 'SEBI & ROC Compliance Covered', 'description' => 'Listed & Unlisted'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -183,7 +183,7 @@ declare(strict_types=1);
                     <tbody>
                         <tr><td>MGT-7A / MGT-7</td><td>Annual Return of the Company</td><td>Within 60 days of AGM</td></tr>
                         <tr><td>AOC-4 / AOC-4 XBRL</td><td>Filing of Financial Statements</td><td>Within 30 days of AGM</td></tr>
-                        <tr><td>ADT-1</td><td>Appointment of Auditor</td><td>Within 15 days of AGM</td></tr>
+                        <tr><td>ADT-1</td><td>Appointment of Auditor</td><td>Within 15 days of appointment of auditors</td></tr>
                         <tr><td>DIR-12</td><td>Changes in Directors / KMP</td><td>Within 30 days of change</td></tr>
                         <tr><td>MGT-14</td><td>Filing of Board / Special Resolutions</td><td>Within 30 days of passing resolution</td></tr>
                         <tr><td>PAS-3</td><td>Return of Allotment (if shares issued)</td><td>Within 30 days of allotment</td></tr>
@@ -345,30 +345,11 @@ declare(strict_types=1);
         </div>
     </section>
 
-    <section class="llp-vs-section" aria-labelledby="public-ltd-calendar-heading">
-        <div class="container">
-            <h2 id="public-ltd-calendar-heading" class="plc-section-h2">Public Limited Company Compliance Calendar</h2>
-            <div class="table-responsive llp-vs-compare-wrap">
-                <table class="llp-vs-table">
-                    <thead><tr><th>Month</th><th>Key Compliance Activity</th><th>Applicable Form / Regulation</th></tr></thead>
-                    <tbody>
-                        <tr><td>April</td><td>TDS Return for Q4 (Jan–Mar) of previous year</td><td>Form 26Q / 24Q</td></tr>
-                        <tr><td>May</td><td>Annual Auditor Appointment confirmation</td><td>ADT-1 (if AGM held)</td></tr>
-                        <tr><td>June</td><td>AGM (for companies with Dec year-end) | TDS Return Q1 due</td><td>Sec. 96 / Form 26Q</td></tr>
-                        <tr><td>July</td><td>TDS Return for Q1 (Apr–Jun) | GST Annual Return (prev year)</td><td>Form 26Q / GSTR-9</td></tr>
-                        <tr><td>September</td><td>AGM (for companies with Mar 31 year-end)</td><td>Sec. 96, Companies Act</td></tr>
-                        <tr><td>October</td><td>Income Tax Return Filing | Tax Audit | AOC-4 Filing (within 30 days of AGM)</td><td>ITR-6 / AOC-4</td></tr>
-                        <tr><td>November</td><td>MGT-7 Annual Return Filing (within 60 days of AGM)</td><td>MGT-7 / MGT-7A</td></tr>
-                        <tr><td>December</td><td>Director KYC (DIR-3 KYC) | TDS Return Q2 | Board Meeting</td><td>DIR-3 KYC / 26Q</td></tr>
-                        <tr><td>January</td><td>TDS Return for Q3 (Oct–Dec)</td><td>Form 26Q / 24Q</td></tr>
-                        <tr><td>February</td><td>Review of Statutory Registers | Preliminary audit discussions</td><td>Companies Act, 2013</td></tr>
-                        <tr><td>March</td><td>Advance Tax Payment | Year-end Board Meeting | Pre-AGM planning</td><td>Sec. 208 IT Act</td></tr>
-                        <tr><td>All Year</td><td>Monthly GST Returns (GSTR-1 + GSTR-3B) | EPF / ESI | TDS deposits</td><td>Ongoing</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
+    <?php
+    $caaft_annual_compliance_calendar_key = 'public_limited';
+    $caaft_annual_compliance_calendar_heading_id = 'public-ltd-calendar-heading';
+    include __DIR__ . '/../../includes/components/caaft-annual-compliance-calendar.php';
+    ?>
 
     <section class="penalty-section" aria-labelledby="public-ltd-penalties-heading">
         <div class="container">

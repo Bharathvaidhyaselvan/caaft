@@ -129,7 +129,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-hands-helping', 'title' => '100+ NGOs Registered', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-hands-helping', 'title' => '12A & 80G Registration Support', 'description' => 'Across India'],
         ['icon_class' => 'fas fa-check-circle', 'title' => 'High Approval Rate', 'description' => 'Expert Filing Support'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];
@@ -315,8 +315,6 @@ declare(strict_types=1);
             </div>
         </div>
     </section>
-
-    <?php include __DIR__ . '/../../includes/components/caaft-business-setup-pricing.php'; ?>
 
     <?php
     $caaft_steps_heading_id = '12a80g-steps-heading';

@@ -224,9 +224,9 @@
         <?php
         // Homepage-only trust strip (home-hero-trust-indicators.php — not service-trust-indicators.php).
         $caaft_home_trust_items = [
-            ['icon_class' => 'fas fa-building', 'title' => '500+', 'description' => 'Businesses Served'],
+            ['icon_class' => 'fas fa-building', 'title' => '200+', 'description' => 'Businesses Served'],
             ['icon_class' => 'fas fa-smile', 'title' => '98%', 'description' => 'Client Satisfaction Rate'],
-            ['icon_class' => 'fas fa-award', 'title' => '10+', 'description' => 'Years of Expertise'],
+            ['icon_class' => 'fas fa-award', 'title' => '5+', 'description' => 'Years of Expertise'],
             ['icon_class' => 'fas fa-star', 'title' => '4.9/5', 'description' => 'Google rating on Google'],
         ];
         include APP_ROOT . '/includes/components/home-hero-trust-indicators.php';
@@ -374,7 +374,7 @@
                         'icon_alt' => 'Compliance and Regulatory Services',
                         'thumb' => 'assets/img/compliance.webp',
                         'thumb_alt' => 'Compliance and Regulatory Services',
-                        'text' => 'Private, LLP, OPC, partnership, and public company compliance plus ROC filings, DIR-3 KYC, and company closure.',
+                        'text' => 'Private, LLP, OPC, partnership, and public company compliance including ROC filings, DIR-3 KYC, and company closure.',
                     ],
                     [
                         'title' => 'Income Tax',
@@ -384,7 +384,7 @@
                         'icon_alt' => 'Income Tax Services',
                         'thumb' => 'assets/img/income-tax.webp',
                         'thumb_alt' => 'Income Tax Services',
-                        'text' => 'Income tax planning, ITR and TDS filing, tax audit assistance, GST compliance, and tax assessment & appeal support.',
+                        'text' => 'Income tax planning, ITR and TDS filing, tax audit assistance, and tax assessment & appeal support.',
                     ],
                     [
                         'title' => 'GST',
@@ -414,7 +414,17 @@
                         'icon_alt' => 'Advisory and CFO Services',
                         'thumb' => 'assets/img/mangement-consulting.webp',
                         'thumb_alt' => 'Advisory and CFO Services',
-                        'text' => 'Budgeting & forecasting, business valuation, financial assessment, feasibility studies, and CFO & financial management.',
+                        'text' => 'Fractional CFO Services, Budgeting & Forecasting, Business Valuation, Financial Assessment and Feasibility Study Reports',
+                    ],
+                    [
+                        'title' => 'Startup & Funding Advisory',
+                        'href' => '/startup-funding-advisory-services',
+                        'cta' => 'Explore Startup Advisory',
+                        'icon' => 'assets/img/caaft/consultant.png',
+                        'icon_alt' => 'Startup and Funding Advisory Services',
+                        'thumb' => 'assets/img/services-images/Startup%20%26%20Funding%20Advisory/startup2.jpeg',
+                        'thumb_alt' => 'Startup and Funding Advisory Services',
+                        'text' => 'Startup India registration, seed funding support, government grants, pitch decks, project reports, DPR, and CMA reports for bank loans.',
                     ],
                 ];
                 ?>
@@ -560,27 +570,33 @@
                     <span class="site-title-tagline light"><i><img src="assets/img/trend-img.webp" alt="" class="img-fluid" width="30" height="30"></i> Our Achievements</span>
                     <h2 class="site-title mt-2">Numbers That <span>Speak For Us</span></h2>
                 </div>
-                <div class="row g-4 text-center">
-                    <div class="col-6 col-md-3">
+                <div class="row g-4 text-center justify-content-center">
+                    <div class="col-6 col-md-4 col-lg">
                         <div class="wow fadeInUp" data-wow-delay=".1s">
-                            <div class="home3-stats-figure">500<span>+</span></div>
+                            <div class="home3-stats-figure">200<span>+</span></div>
                             <div class="home3-stats-caption">Businesses Registered</div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3">
+                    <div class="col-6 col-md-4 col-lg">
                         <div class="wow fadeInUp" data-wow-delay=".15s">
-                            <div class="home3-stats-figure">2,000<span>+</span></div>
-                            <div class="home3-stats-caption">ITR &amp; GST Returns Filed</div>
+                            <div class="home3-stats-figure">500<span>+</span></div>
+                            <div class="home3-stats-caption">IT Returns Filed</div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3">
+                    <div class="col-6 col-md-4 col-lg">
                         <div class="wow fadeInUp" data-wow-delay=".2s">
-                            <div class="home3-stats-figure">10<span>+</span></div>
+                            <div class="home3-stats-figure">200<span>+</span></div>
+                            <div class="home3-stats-caption">GSTNs&rsquo; Compliances Handled</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg">
+                        <div class="wow fadeInUp" data-wow-delay=".25s">
+                            <div class="home3-stats-figure">5<span>+</span></div>
                             <div class="home3-stats-caption">Years in Practice</div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3">
-                        <div class="wow fadeInUp" data-wow-delay=".25s">
+                    <div class="col-6 col-md-4 col-lg">
+                        <div class="wow fadeInUp" data-wow-delay=".3s">
                             <div class="home3-stats-figure">15<span>+</span></div>
                             <div class="home3-stats-caption">Industries Served</div>
                         </div>
@@ -597,8 +613,8 @@
                     <div class="col-md-4">
                         <article class="home3-stats-highlight wow fadeInUp" data-wow-delay=".2s">
                             <div class="home3-stats-highlight-icon" aria-hidden="true"><i class="fas fa-chart-line"></i></div>
-                            <h3>Zero Penalty Track Record</h3>
-                            <p>Our compliance-first approach means clients have never faced avoidable GST or MCA penalties.</p>
+                            <h3>Strong Compliance Track Record</h3>
+                            <p>Our compliance-first approach helps clients stay on top of GST and MCA requirements, minimizing the risk of penalties.</p>
                         </article>
                     </div>
                     <div class="col-md-4">

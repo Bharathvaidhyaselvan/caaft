@@ -169,7 +169,7 @@
         <?php
         $caaft_trust_items = [
             ['icon_class' => 'far fa-check-circle', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-            ['icon_class' => 'fas fa-briefcase', 'title' => '200+', 'description' => 'Businesses Served'],
+                        ['icon_class' => 'fas fa-briefcase', 'title' => 'AR & AP Management Services', 'description' => 'Across India'],
             ['icon_class' => 'fas fa-file-invoice', 'title' => '10,000+', 'description' => 'Invoices Managed'],
             ['icon_class' => 'fas fa-shield-alt', 'title' => '100%', 'description' => 'Data Confidentiality'],
         ];
@@ -210,7 +210,7 @@
         $caaft_delivered_heading_id = 'arap-services-heading';
         $caaft_delivered_title = 'Receivable & Payable Management Services — What Gets Delivered';
         $caaft_delivered_items = [
-            ['name' => 'Accounts Receivable Tracking and Management', 'text' => 'Every invoice issued is properly tracked, monitored, and followed up within agreed payment timelines — ensuring receivables are collected efficiently and outstanding balances are minimised. Services include tracking customer invoices and payment schedules, monitoring outstanding receivables, maintaining organised financial records, generating receivable aging reports, supporting collection processes, identifying overdue payments, and improving customer payment cycles.'],
+            ['name' => 'Accounts Receivable Tracking and Management', 'text' => 'Every invoice issued is properly tracked, monitored, and reported within agreed payment timelines — ensuring receivables are collected efficiently and outstanding balances are minimised. Services include tracking customer invoices and payment schedules, monitoring outstanding receivables, maintaining organised financial records, generating receivable aging reports, supporting collection processes, identifying overdue payments, and improving customer payment cycles.'],
             ['name' => 'Accounts Payable Tracking and Management', 'text' => 'All vendor and supplier obligations are monitored and settled on time — ensuring payment commitments are met, penalties are avoided, and vendor relationships remain strong. Services include tracking vendor invoices and due dates, monitoring payment obligations, maintaining payable aging reports, reconciling vendor statements, and ensuring timely settlement of all outstanding payables.'],
             ['name' => 'Invoice Generation and Billing Management', 'text' => 'Accurate, timely invoicing is critical to maintaining consistent revenue flow. Errors in billing or delayed invoices lead to revenue loss and payment delays — both of which are eliminated through structured billing management. Services include professional invoice preparation, billing system management, customer invoice tracking, payment status monitoring, invoice reconciliation, and financial documentation maintenance.'],
             ['name' => 'Receivable Aging Analysis', 'text' => 'Detailed aging reports are prepared to categorise outstanding receivables by overdue period — giving management clear visibility over which balances require immediate follow-up and which are on track.'],

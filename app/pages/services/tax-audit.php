@@ -870,7 +870,7 @@
                     </article>
                     <article class="caaft-ar-trust-item">
                         <span class="caaft-ar-trust-icon"><i class="fas fa-clock"></i></span>
-                        <div class="caaft-ar-trust-content"><h3>100%</h3><p>On-Time Filing</p></div>
+                        <div class="caaft-ar-trust-content"><h3>Income Tax Audits &amp; Assistance</h3><p>Expert Assistance</p></div>
                     </article>
                     <article class="caaft-ar-trust-item">
                         <span class="caaft-ar-trust-icon"><i class="fas fa-shield-check"></i></span>
@@ -1172,16 +1172,6 @@
                         <div class="audit-due-left">
                             <span class="audit-due-label">92E</span>
                             <span class="audit-due-period">Entities requiring transfer pricing report</span>
-                        </div>
-                        <div class="audit-due-right">
-                            <span class="audit-due-arrow">— Due by</span>
-                            <span>31 October</span>
-                        </div>
-                    </article>
-                    <article class="audit-due-item">
-                        <div class="audit-due-left">
-                            <span class="audit-due-label">ITR</span>
-                            <span class="audit-due-period">ITR filing for audited entities after audit report upload</span>
                         </div>
                         <div class="audit-due-right">
                             <span class="audit-due-arrow">— Due by</span>

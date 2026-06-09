@@ -109,7 +109,7 @@ declare(strict_types=1);
     <?php
     $caaft_trust_items = [
         ['icon_class' => 'fas fa-star', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-        ['icon_class' => 'fas fa-building-slash', 'title' => '100+ Company Closures Completed', 'description' => 'Across India'],
+                ['icon_class' => 'fas fa-building-slash', 'title' => 'Simplifying Company Closure', 'description' => 'MCA Winding Up Process'],
         ['icon_class' => 'fas fa-file-signature', 'title' => 'Strike Off & Winding Up Support', 'description' => 'STK-2 and ROC Compliance'],
         ['icon_class' => 'fas fa-lock', 'title' => '100% Data Confidentiality', 'description' => 'Strictly Protected'],
     ];

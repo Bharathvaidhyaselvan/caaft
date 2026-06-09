@@ -630,11 +630,6 @@
                     </article>
                     <article class="tax-delivered-row">
                         <div class="tax-delivered-num">7.</div>
-                        <h3 class="tax-delivered-title">GST &amp; Compliance Planning</h3>
-                        <div class="tax-delivered-text"><p>GST optimisation and regulatory compliance support to avoid penalties and ensure accuracy.</p></div>
-                    </article>
-                    <article class="tax-delivered-row">
-                        <div class="tax-delivered-num">8.</div>
                         <h3 class="tax-delivered-title">International Tax Planning</h3>
                         <div class="tax-delivered-text"><p>Cross-border tax strategy and compliance to reduce double taxation risks for NRIs and global businesses.</p></div>
                     </article>
