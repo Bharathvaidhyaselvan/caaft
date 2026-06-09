@@ -286,20 +286,7 @@ declare(strict_types=1);
                 </li>
             </ul>
         </div>
-    </section>
-
-    <?php
-    $caaft_key_facts_heading_id = 'cma-facts-heading';
-    $caaft_key_facts_title = 'Key Facts & Figures';
-    $caaft_key_facts_items = [
-        ['stat' => '₹5 Cr+', 'text' => 'Working capital limits above this typically require mandatory CMA data.'],
-        ['stat' => '₹2 Cr+', 'text' => 'Term loans above this threshold require CMA report submission.'],
-        ['stat' => '7', 'text' => 'Financial statements — a standard CMA report includes seven mandatory statements for bank evaluation.'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
-    ?>
-
-    <?php
+    </section><?php
     $why_choose_caaft_heading_id = 'cma-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
@@ -315,6 +302,19 @@ declare(strict_types=1);
         ['icon_class' => 'fas fa-university', 'title' => 'Wide Bank Coverage', 'text' => 'CMA reports aligned with requirements of SBI, HDFC, ICICI, BoB, Canara Bank, Axis Bank, and more.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+    ?>
+
+
+
+    <?php
+    $caaft_key_facts_heading_id = 'cma-facts-heading';
+    $caaft_key_facts_title = 'Key Facts & Figures';
+    $caaft_key_facts_items = [
+        ['stat' => '₹5 Cr+', 'text' => 'Working capital limits above this typically require mandatory CMA data.'],
+        ['stat' => '₹2 Cr+', 'text' => 'Term loans above this threshold require CMA report submission.'],
+        ['stat' => '7', 'text' => 'Financial statements — a standard CMA report includes seven mandatory statements for bank evaluation.'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
 
     <?php

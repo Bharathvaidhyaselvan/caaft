@@ -164,7 +164,8 @@
                                                     <option value="" selected disabled>Choose Service</option>
                                                     <option value="Accounting & Reporting">Accounting & Reporting</option>
                                                     <option value="Business Incorporation">Business Incorporation</option>
-                                                    <option value="Management Consultancy">Management Consultancy</option>
+                                                    <option value="Advisory and CFO Services">Advisory and CFO Services</option>
+                                                    <option value="Startup & Funding Advisory">Startup &amp; Funding Advisory</option>
                                                     <option value="Income Tax Services">Income Tax Services</option>
                                                     <option value="GST Services">GST Services</option>
                                                     <option value="ROC Filing">ROC Filing</option>

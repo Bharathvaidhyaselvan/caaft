@@ -183,12 +183,13 @@ declare(strict_types=1);
         'A pitch deck is a concise visual presentation — typically 10 to 15 slides — that communicates your business to potential investors. It covers who you are, what problem you solve, how your product addresses it, how large the market is, how you make money, and how much capital you need and why.',
         'Investors do not read business plans at the first meeting. They review pitch decks. The deck earns the conversation. The conversation earns due diligence. The due diligence earns the term sheet.',
         'A well-structured pitch deck compresses your entire business case into a format investors can assess quickly — and leaves them with enough conviction to take the next step.',
+        'A pitch deck serves four clear purposes:',
     ];
     $caaft_overview_bullets = [
-        'Tell the story before the meeting — Give investors enough context to understand the business, the opportunity, and the team before a single word is spoken in the room.',
-        'Establish credibility fast — Demonstrate that the founding team understands the market, has done the work, and can be trusted with capital.',
-        'Make the investment case clear — Lay out the problem, the solution, the market size, and the financial logic so investors can evaluate the opportunity on its merits.',
-        'Drive the next step — Move the investor from interest to action — a follow-up meeting, a due diligence request, or a term sheet conversation.',
+        '<strong>Tell the story before the meeting</strong> — Give investors enough context to understand the business, the opportunity, and the team before a single word is spoken in the room.',
+        '<strong>Establish credibility fast</strong> — Demonstrate that the founding team understands the market, has done the work, and can be trusted with capital.',
+        '<strong>Make the investment case clear</strong> — Lay out the problem, the solution, the market size, and the financial logic so investors can evaluate the opportunity on its merits.',
+        '<strong>Drive the next step</strong> — Move the investor from interest to action — a follow-up meeting, a due diligence request, or a term sheet conversation.',
     ];
     $caaft_overview_closing = '';
     $caaft_overview_image_src = '/assets/img/services-images/Startup%20%26%20Funding%20Advisory/Pitch%20deck.jpg';
@@ -429,21 +430,7 @@ declare(strict_types=1);
                 </li>
             </ul>
         </div>
-    </section>
-
-    <?php
-    $caaft_key_facts_heading_id = 'pd-facts-heading';
-    $caaft_key_facts_title = 'Key Facts & Figures';
-    $caaft_key_facts_items = [
-        ['stat' => '10–15', 'text' => 'Slides — the proven range for a pitch deck that holds investor attention without losing essential content.'],
-        ['stat' => '3 min', 'text' => 'The average time an investor spends on a pitch deck before deciding whether to continue.'],
-        ['stat' => 'Problem · Market · Team', 'text' => 'The three slides investors consistently identify as most important in early-stage evaluation.'],
-        ['stat' => '₹945 Cr', 'text' => 'Allocated under the Startup India Seed Fund Scheme for 2021–2025 — accessible only to startups with investor-ready documentation, including a structured pitch deck.'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
-    ?>
-
-    <?php
+    </section><?php
     $why_choose_caaft_heading_id = 'pd-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
@@ -458,6 +445,20 @@ declare(strict_types=1);
         ['icon_class' => 'fas fa-route', 'title' => 'Full journey support', 'text' => 'From discovery call to investor meeting, every step gets handled so founders stay focused on building the business.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+    ?>
+
+
+
+    <?php
+    $caaft_key_facts_heading_id = 'pd-facts-heading';
+    $caaft_key_facts_title = 'Key Facts & Figures';
+    $caaft_key_facts_items = [
+        ['stat' => '10–15', 'text' => 'Slides — the proven range for a pitch deck that holds investor attention without losing essential content.'],
+        ['stat' => '3 min', 'text' => 'The average time an investor spends on a pitch deck before deciding whether to continue.'],
+        ['stat' => 'Problem · Market · Team', 'text' => 'The three slides investors consistently identify as most important in early-stage evaluation.'],
+        ['stat' => '₹945 Cr', 'text' => 'Allocated under the Startup India Seed Fund Scheme for 2021–2025 — accessible only to startups with investor-ready documentation, including a structured pitch deck.'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
 
     <?php

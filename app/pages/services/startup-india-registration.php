@@ -43,6 +43,9 @@ declare(strict_types=1);
         .page-llp-registration .partnership-mistakes-item h3 { margin: 0 0 6px; color: #1f2c40; font-size: 1.05rem; line-height: 1.35; font-weight: 700; }
         .page-llp-registration .partnership-mistakes-item p { margin: 0; color: #4b5563; font-size: 0.97rem; line-height: 1.6; font-weight: 500; }
         .page-llp-registration .partnership-mistakes-list .partnership-mistakes-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
+        .page-startup-india-registration .caaft-get-delivered { padding-bottom: 12px; }
+        .page-startup-india-registration .caaft-get-delivered .bk-delivered-table { margin-bottom: 0; }
+        .page-startup-india-registration .caaft-get-delivered .bk-overview-text.mt-3 { margin-top: 0.75rem !important; margin-bottom: 0; }
         @media (max-width: 991px) {
             .page-llp-registration .plc-docs-cards-grid,
             .page-llp-registration .partnership-mistakes-list { grid-template-columns: 1fr; }
@@ -339,13 +342,10 @@ declare(strict_types=1);
         ['name' => 'Register on the Government e-Marketplace (GeM)', 'text' => 'Access public procurement opportunities without prior turnover or experience requirements.'],
         ['name' => 'Explore Fund of Funds Access', 'text' => 'Connect with SEBI-registered AIFs backed by SIDBI\'s Fund of Funds that actively invest in DPIIT-recognised startups.'],
     ];
+    $caaft_delivered_section_class = 'bk-delivered pt-90 pb-40 caaft-get-delivered';
+    $caaft_delivered_outro = 'Each step carries its own process, documentation, and timeline. A clear post-registration roadmap ensures no benefit gets missed.';
     include __DIR__ . '/../../includes/components/caaft-get-delivered.php';
     ?>
-    <div style="background:#ffffff;padding:0 0 40px;">
-        <div class="container">
-            <p style="margin:0;font-size:1.02rem;line-height:1.65;font-weight:500;color:#4d5868;">Each step carries its own process, documentation, and timeline. A clear post-registration roadmap ensures no benefit gets missed.</p>
-        </div>
-    </div>
 
     <section class="partnership-mistakes" aria-labelledby="sir-challenges-heading">
         <div class="container">
@@ -375,20 +375,7 @@ declare(strict_types=1);
             </ul>
             <p class="sir-note">A structured approach eliminates each of these risks — moving founders from confusion to a clean, recognised entity ready to access the benefits they actually came for.</p>
         </div>
-    </section>
-
-    <?php
-    $caaft_key_facts_heading_id = 'sir-facts-heading';
-    $caaft_key_facts_title = 'Key Facts & Figures';
-    $caaft_key_facts_items = [
-        ['stat' => '1.57L+', 'text' => 'Startups have received DPIIT recognition under Startup India as of 2024 — making India the third-largest startup ecosystem in the world.'],
-        ['stat' => '3 Years', 'text' => 'Income tax holiday on profits available to eligible startups under Section 80IAC — one of the most valuable financial benefits an early-stage business can access.'],
-        ['stat' => '80%', 'text' => 'Rebate on patent filing fees for every DPIIT-recognised startup — cutting the cost of intellectual property protection from day one.'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
-    ?>
-
-    <?php
+    </section><?php
     $why_choose_caaft_heading_id = 'sir-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
@@ -403,6 +390,19 @@ declare(strict_types=1);
         ['icon_class' => 'fas fa-industry', 'title' => 'Sector-Specific Expertise', 'text' => 'Whether a technology startup, manufacturing venture, agritech firm, or social enterprise — sector-specific expertise shapes every registration, tailored to the compliance and documentation needs of each profile.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+    ?>
+
+
+
+    <?php
+    $caaft_key_facts_heading_id = 'sir-facts-heading';
+    $caaft_key_facts_title = 'Key Facts & Figures';
+    $caaft_key_facts_items = [
+        ['stat' => '1.57L+', 'text' => 'Startups have received DPIIT recognition under Startup India as of 2024 — making India the third-largest startup ecosystem in the world.'],
+        ['stat' => '3 Years', 'text' => 'Income tax holiday on profits available to eligible startups under Section 80IAC — one of the most valuable financial benefits an early-stage business can access.'],
+        ['stat' => '80%', 'text' => 'Rebate on patent filing fees for every DPIIT-recognised startup — cutting the cost of intellectual property protection from day one.'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
 
     <?php

@@ -35,7 +35,7 @@
           "logo": {"@type": "ImageObject", "url": "https://caaft.com/assets/img/caaft-logo-header.webp"},
           "description": "CAAFT Consultancy Services provides expert Accounting & Reporting, Taxation, Business Incorporation, Management Consultancy, and Compliance Services to businesses across India.",
           "email": "info@caaft.com",
-          "telephone": ["+91-8870078870", "+91-9944617891"],
+          "telephone": ["+91-8870078870", "+91-8870002354"],
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Office No: C304, 3rd Floor, Apeejay House, 39/12, Haddows Road, Nungambakkam",
@@ -163,23 +163,23 @@
         $caaft_card_section_heading_id = 'sfa-fundraising-heading';
         $caaft_card_section_title = 'FUNDRAISING SERVICES';
         $caaft_card_section_intro = 'End-to-end fundraising support — from government recognition and grant identification to investor-ready pitch materials — built to give startups the credibility and documentation to raise capital at every stage.';
-        $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
+        $caaft_card_grid_col_class = 'col-md-6 col-lg-4';
         $caaft_card_section_cards = [
             ['icon_class' => 'fas fa-certificate', 'title' => 'Startup India Registration', 'text' => 'Full DPIIT recognition under Startup India — eligibility review, entity check, document preparation, and portal submission — handled end-to-end, so the startup unlocks every tax benefit and scheme it qualifies for.', 'href' => '/startup-india-registration', 'cta_label' => 'Get Started'],
             ['icon_class' => 'fas fa-seedling', 'title' => 'Seed Funding Support', 'text' => 'The right early-stage investors get identified, financial models get built, term sheet guidance gets provided, and investor-ready documentation gets prepared — aligned with what seed-stage investors actually look for before committing.', 'href' => '/seed-funding-support', 'cta_label' => 'Get Started'],
             ['icon_class' => 'fas fa-landmark', 'title' => 'Government Grants', 'text' => 'Applicable central and state grant schemes — SIDBI, DPIIT, and sector-specific programmes — get identified, assessed, and applied for, with documentation and submission handled end-to-end.', 'href' => '/government-grants', 'cta_label' => 'Get Started'],
             ['icon_class' => 'fas fa-file-powerpoint', 'title' => 'Pitch Deck Preparation', 'text' => 'Investor-grade decks built around the business model, financials, and market opportunity — structured to answer the questions investors ask first, and get the startup to the next conversation.', 'href' => '/pitch-deck-services', 'cta_label' => 'Get Started'],
+            ['icon_class' => 'fas fa-hand-holding-usd', 'title' => 'Business Loan Assistance', 'text' => 'End-to-end business loan assistance — lender identification, government scheme mapping, project reports, and application support from first assessment to sanction.', 'href' => '/business-loan-assistance', 'cta_label' => 'Get Started'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
 
         <?php
-        $caaft_card_section_heading_id = 'sfa-loan-heading';
-        $caaft_card_section_title = 'BUSINESS LOAN ASSISTANCE';
-        $caaft_card_section_intro = 'Complete loan documentation — from project reports to full bank-submission packages — prepared to the standard lenders expect, so every application lands right the first time.';
-        $caaft_card_grid_col_class = 'col-md-6 col-lg-4';
+        $caaft_card_section_heading_id = 'sfa-project-reports-heading';
+        $caaft_card_section_title = 'PROJECT REPORTS';
+        $caaft_card_section_intro = 'Lender-ready project documentation — DPR and CMA reports prepared to the standard banks and financial institutions expect, so every application lands right the first time.';
+        $caaft_card_grid_col_class = 'col-md-6 col-lg-6';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-file-alt', 'title' => 'Project Reports', 'text' => 'Structured project reports covering business background, operational plan, market analysis, and financial projections — built to the appraisal standards of banks and financial institutions.', 'href' => '/business-loan-assistance', 'cta_label' => 'Get Started'],
             ['icon_class' => 'fas fa-project-diagram', 'title' => 'Detailed Project Report (DPR)', 'text' => 'Comprehensive DPRs for capital-intensive and infrastructure projects — technical feasibility, cost estimates, implementation schedules, and projected returns — prepared to the standards SIDBI, NABARD, and commercial banks require.', 'href' => '/detailed-project-report', 'cta_label' => 'Get Started'],
             ['icon_class' => 'fas fa-table', 'title' => 'CMA Report', 'text' => 'CMA data prepared in the exact format bank credit departments require — past financials, projected statements, fund flow, and working capital analysis — ready for appraisal on first submission, with no revision requests.', 'href' => '/credit-monitoring-arrangement', 'cta_label' => 'Get Started'],
         ];
@@ -230,7 +230,7 @@
             ['href' => '#quote-content', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Tell Us About Your Funding Needs'],
         ];
         $caaft_git_cards = [
-            ['icon_class' => 'fas fa-phone', 'label' => 'Call us', 'values' => [['href' => 'tel:+918870078870', 'text' => '+91 88700 78870'], ['href' => 'tel:+919944617891', 'text' => '+91 9944 61 7891']]],
+            ['icon_class' => 'fas fa-phone', 'label' => 'Call us', 'values' => [['href' => 'tel:+918870078870', 'text' => '+91 88700 78870'], ['href' => 'tel:+918870002354', 'text' => '+91 88700 02354']]],
             ['icon_class' => 'fab fa-whatsapp', 'label' => 'WhatsApp us', 'values' => [['href' => 'https://api.whatsapp.com/send?phone=918870078870', 'text' => '+91 88700 78870', 'target' => '_blank', 'rel' => 'noopener noreferrer']], 'hint' => 'Usually responds within the hour'],
             ['icon_class' => 'fas fa-envelope', 'label' => 'Email us', 'values' => [['href' => 'mailto:info@caaft.com', 'text' => 'info@caaft.com'], ['href' => 'mailto:services@caaft.com', 'text' => 'services@caaft.com']]],
         ];

@@ -390,20 +390,7 @@ declare(strict_types=1);
                 </li>
             </ul>
         </div>
-    </section>
-
-    <?php
-    $caaft_key_facts_heading_id = 'sfs-facts-heading';
-    $caaft_key_facts_title = 'Key Facts & Figures';
-    $caaft_key_facts_items = [
-        ['stat' => '₹945 Cr', 'text' => 'Total government allocation to SISFS for 2021–2025.'],
-        ['stat' => '₹50L', 'text' => 'Maximum funding a startup can receive under SISFS, combining grants and convertible debentures.'],
-        ['stat' => '300+', 'text' => 'Incubators empanelled under SISFS across India, covering startups in every major sector and geography.'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
-    ?>
-
-    <?php
+    </section><?php
     $why_choose_caaft_heading_id = 'sfs-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
@@ -418,6 +405,19 @@ declare(strict_types=1);
         ['icon_class' => 'fas fa-route', 'title' => 'Full journey support — from eligibility to disbursement', 'text' => 'Post-approval milestone documentation, tranche management, and reporting obligations all get handled so the startup receives every rupee it qualifies for.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+    ?>
+
+
+
+    <?php
+    $caaft_key_facts_heading_id = 'sfs-facts-heading';
+    $caaft_key_facts_title = 'Key Facts & Figures';
+    $caaft_key_facts_items = [
+        ['stat' => '₹945 Cr', 'text' => 'Total government allocation to SISFS for 2021–2025.'],
+        ['stat' => '₹50L', 'text' => 'Maximum funding a startup can receive under SISFS, combining grants and convertible debentures.'],
+        ['stat' => '300+', 'text' => 'Incubators empanelled under SISFS across India, covering startups in every major sector and geography.'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
 
     <?php

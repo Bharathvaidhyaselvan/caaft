@@ -356,20 +356,7 @@ declare(strict_types=1);
                 </li>
             </ul>
         </div>
-    </section>
-
-    <?php
-    $caaft_key_facts_heading_id = 'dpr-facts-heading';
-    $caaft_key_facts_title = 'Key Facts & Figures';
-    $caaft_key_facts_items = [
-        ['stat' => '₹10 Cr+', 'text' => 'Typical project cost threshold above which commercial banks mandate a full DPR for term loan appraisal — though many lenders require it for smaller projects too.'],
-        ['stat' => '5–7 Yrs', 'text' => 'The standard financial projection period a well-prepared DPR covers, giving lenders visibility across the full loan repayment tenure.'],
-        ['stat' => '1.25+', 'text' => 'The minimum Debt Service Coverage Ratio most lenders require a project to demonstrate across the projection period before sanctioning term finance.'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
-    ?>
-
-    <?php
+    </section><?php
     $why_choose_caaft_heading_id = 'dpr-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
@@ -384,6 +371,19 @@ declare(strict_types=1);
         ['icon_class' => 'fas fa-route', 'title' => 'End-to-end support — from preparation to sanction', 'text' => 'Document preparation, submission, and post-submission query management all get handled completely — so the promoter stays focused on the project while the appraisal moves forward.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+    ?>
+
+
+
+    <?php
+    $caaft_key_facts_heading_id = 'dpr-facts-heading';
+    $caaft_key_facts_title = 'Key Facts & Figures';
+    $caaft_key_facts_items = [
+        ['stat' => '₹10 Cr+', 'text' => 'Typical project cost threshold above which commercial banks mandate a full DPR for term loan appraisal — though many lenders require it for smaller projects too.'],
+        ['stat' => '5–7 Yrs', 'text' => 'The standard financial projection period a well-prepared DPR covers, giving lenders visibility across the full loan repayment tenure.'],
+        ['stat' => '1.25+', 'text' => 'The minimum Debt Service Coverage Ratio most lenders require a project to demonstrate across the projection period before sanctioning term finance.'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
 
     <?php

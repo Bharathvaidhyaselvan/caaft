@@ -436,20 +436,7 @@ declare(strict_types=1);
                 </li>
             </ul>
         </div>
-    </section>
-
-    <?php
-    $caaft_key_facts_heading_id = 'bla-facts-heading';
-    $caaft_key_facts_title = 'Key Facts & Figures';
-    $caaft_key_facts_items = [
-        ['stat' => '₹5 Cr', 'text' => 'Maximum collateral-free loan available to MSMEs under the CGTMSE guarantee scheme.'],
-        ['stat' => '₹10L', 'text' => 'Maximum loan amount under MUDRA\'s Tarun tier, accessible to micro and small businesses without collateral.'],
-        ['stat' => '2–3 Yrs', 'text' => 'The typical business vintage most lenders require for conventional term loan eligibility — government schemes accept newer businesses.'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
-    ?>
-
-    <?php
+    </section><?php
     $why_choose_caaft_heading_id = 'bla-why-caaft-heading';
     $why_choose_caaft_title = 'Why Choose CAAFT';
     $why_choose_caaft_show_intro = true;
@@ -464,6 +451,19 @@ declare(strict_types=1);
         ['icon_class' => 'fas fa-industry', 'title' => 'Specialists across loan types and business profiles', 'text' => 'Whether a startup seeking MUDRA finance, an MSME applying for a CGTMSE-backed term loan, or a manufacturer pursuing project finance — sector-specific and loan-specific expertise shapes every engagement.'],
     ];
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
+    ?>
+
+
+
+    <?php
+    $caaft_key_facts_heading_id = 'bla-facts-heading';
+    $caaft_key_facts_title = 'Key Facts & Figures';
+    $caaft_key_facts_items = [
+        ['stat' => '₹5 Cr', 'text' => 'Maximum collateral-free loan available to MSMEs under the CGTMSE guarantee scheme.'],
+        ['stat' => '₹10L', 'text' => 'Maximum loan amount under MUDRA\'s Tarun tier, accessible to micro and small businesses without collateral.'],
+        ['stat' => '2–3 Yrs', 'text' => 'The typical business vintage most lenders require for conventional term loan eligibility — government schemes accept newer businesses.'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
     ?>
 
     <?php

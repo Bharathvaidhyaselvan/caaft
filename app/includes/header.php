@@ -594,6 +594,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                                 <li><a href="/seed-funding-support">Seed Funding Support</a></li>
                                                 <li><a href="/government-grants">Government Grants</a></li>
                                                 <li><a href="/pitch-deck-services">Pitch Deck Preparation</a></li>
+                                                <li><a href="/business-loan-assistance">Business Loan Assistance</a></li>
                                             </ul>
                                         </div>
                                         <div>
@@ -722,7 +723,8 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                         <li><a class="dropdown-item" href="/seed-funding-support">Seed Funding Support</a></li>
                                         <li><a class="dropdown-item" href="/government-grants">Government Grants</a></li>
                                         <li><a class="dropdown-item" href="/pitch-deck-services">Pitch Deck Preparation</a></li>
-                                        <li><a class="dropdown-item link-extend" href="/startup-funding-advisory-services#sfa-loan-heading">Project Reports</a></li>
+                                        <li><a class="dropdown-item" href="/business-loan-assistance">Business Loan Assistance</a></li>
+                                        <li><a class="dropdown-item link-extend" href="/startup-funding-advisory-services#sfa-project-reports-heading">Project Reports</a></li>
                                         <li><a class="dropdown-item" href="/detailed-project-report">Detailed Project Report (DPR)</a></li>
                                         <li><a class="dropdown-item" href="/credit-monitoring-arrangement">CMA Report</a></li>
                                     </ul>

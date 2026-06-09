@@ -241,7 +241,7 @@ declare(strict_types=1);
             <ul class="partnership-mistakes-list">
                 <li class="partnership-mistakes-item">
                     <h3>Startup India Seed Fund Scheme (SISFS)</h3>
-                    <p>SISFS provides early-stage capital to DPIIT-recognised startups through approved incubators. Grants of up to ₹20 lakh support proof-of-concept and prototype development. Convertible instruments of up to ₹50 lakh support market entry.</p>
+                    <p>SISFS provides early-stage capital to DPIIT-recognised startups through approved incubators. Grants of up to ₹20 lakh support proof-of-concept and prototype development. Convertible instruments of up to ₹50 lakh support market entry. Startups must be incorporated within two years of applying, hold at least 51% Indian promoter equity, and must not have received more than ₹10 lakh from any other government scheme.</p>
                     <ul>
                         <li>Up to ₹20 lakh (grant) for proof of concept and prototype</li>
                         <li>Up to ₹50 lakh (convertible instruments) for market entry</li>
@@ -251,7 +251,7 @@ declare(strict_types=1);
                 </li>
                 <li class="partnership-mistakes-item">
                     <h3>SIDBI Fund of Funds Scheme (FFS)</h3>
-                    <p>The Fund of Funds for Startups, managed by SIDBI with a ₹10,000 crore corpus, channels capital through SEBI-registered AIFs into DPIIT-recognised startups. Over ₹21,276 crore had been committed to 1,173 startups by December 2024.</p>
+                    <p>The Fund of Funds for Startups, managed by SIDBI with a ₹10,000 crore corpus, channels capital through SEBI-registered AIFs into DPIIT-recognised startups. Startups cannot apply directly — DPIIT recognition makes a startup eligible to receive AIF investment under the scheme. Over ₹21,276 crore had been committed to 1,173 startups by December 2024.</p>
                     <ul>
                         <li>No direct application — access through SEBI-registered AIFs</li>
                         <li>DPIIT recognition is the prerequisite</li>
@@ -277,7 +277,7 @@ declare(strict_types=1);
                 </li>
                 <li class="partnership-mistakes-item">
                     <h3>MUDRA Loan Scheme (PMMY)</h3>
-                    <p>While technically a loan scheme, MUDRA provides collateral-free funding to micro and small enterprises under three tiers: Shishu (up to ₹50,000), Kishor (up to ₹5 lakh), and Tarun (up to ₹10 lakh).</p>
+                    <p>While technically a loan scheme, MUDRA provides collateral-free funding to micro and small enterprises under three tiers: Shishu (up to ₹50,000), Kishor (up to ₹5 lakh), and Tarun (up to ₹10 lakh). Below-market interest rates and no collateral requirement make it a practical early-stage option.</p>
                     <ul>
                         <li>No collateral required</li>
                         <li>Available through banks, NBFCs, and MFIs</li>
@@ -295,10 +295,10 @@ declare(strict_types=1);
     $caaft_benefits_items = [
         ['lead' => 'No Repayment — Ever', 'text' => 'Government grants are non-repayable. There is no principal to return, no interest to service, and no EMI schedule to manage. Capital received stays in the business.', 'icon_class' => 'fas fa-hand-holding-usd', 'tone' => 'blue'],
         ['lead' => 'Zero Equity Dilution', 'text' => 'Grants require no shareholding in return. Founders retain full ownership and decision-making control — unlike equity investment, which transfers a percentage of the company to an investor.', 'icon_class' => 'fas fa-chart-pie', 'tone' => 'violet'],
-        ['lead' => 'Extended Runway Without Debt', 'text' => 'Grant capital extends a startup\'s operational runway without creating liability on the balance sheet — particularly valuable at the pre-revenue and early-revenue stage.', 'icon_class' => 'fas fa-road', 'tone' => 'green'],
-        ['lead' => 'Product Validation and Credibility', 'text' => 'Receiving a government grant — particularly from schemes like SISFS or BIRAC BIG — serves as third-party validation of the startup\'s innovation and viability.', 'icon_class' => 'fas fa-certificate', 'tone' => 'orange'],
-        ['lead' => 'Access to Broader Ecosystem Support', 'text' => 'Many grant schemes come bundled with incubation support, mentoring, infrastructure access, and connections to investors and accelerators.', 'icon_class' => 'fas fa-network-wired', 'tone' => 'blue'],
-        ['lead' => 'Stronger Position for Private Investment', 'text' => 'A startup that has received grant funding and met compliance milestones enters equity fundraising from a stronger position — with higher valuation and lower dilution.', 'icon_class' => 'fas fa-chart-line', 'tone' => 'violet'],
+        ['lead' => 'Extended Runway Without Debt', 'text' => 'Grant capital extends a startup\'s operational runway without creating liability on the balance sheet. This is particularly valuable at the pre-revenue and early-revenue stage, when every rupee of non-dilutive funding directly reduces how much equity needs to be raised later.', 'icon_class' => 'fas fa-road', 'tone' => 'green'],
+        ['lead' => 'Product Validation and Credibility', 'text' => 'Receiving a government grant — particularly from schemes like SISFS or BIRAC BIG — serves as third-party validation of the startup\'s innovation and viability. This credibility supports subsequent fundraising conversations with private investors.', 'icon_class' => 'fas fa-certificate', 'tone' => 'orange'],
+        ['lead' => 'Access to Broader Ecosystem Support', 'text' => 'Many grant schemes come bundled with incubation support, mentoring, infrastructure access, and connections to investors and accelerators — benefits that extend well beyond the capital itself.', 'icon_class' => 'fas fa-network-wired', 'tone' => 'blue'],
+        ['lead' => 'Stronger Position for Private Investment', 'text' => 'A startup that has received grant funding, completed a proof-of-concept, and met compliance milestones enters equity fundraising from a stronger position — with a higher valuation, lower dilution, and a demonstrable track record.', 'icon_class' => 'fas fa-chart-line', 'tone' => 'violet'],
     ];
     include __DIR__ . '/../../includes/components/caaft-benefits.php';
     ?>
@@ -344,7 +344,12 @@ declare(strict_types=1);
             <ul class="partnership-mistakes-list">
                 <li class="partnership-mistakes-item">
                     <h3>EU–India R&D Collaboration</h3>
-                    <p>The EU–India bilateral S&T Agreement, renewed to 2030, enables joint funding calls. The EIC Accelerator offers up to €2.5 million in grants plus optional equity up to €15 million. Eurostars funds bilateral R&D for startups collaborating with at least one European partner.</p>
+                    <p>The EU–India bilateral S&amp;T Agreement, renewed to 2030, enables joint funding calls. In early 2026, the EU and India launched exploratory talks on India&apos;s association to Horizon Europe. If confirmed, Indian startups could receive Horizon Europe funding directly.</p>
+                    <ul>
+                        <li>The EIC Accelerator offers up to €2.5 million in grants plus optional equity up to €15 million</li>
+                        <li>Eurostars funds bilateral R&amp;D for startups collaborating with at least one European partner</li>
+                        <li>Horizon Europe association talks could expand direct funding access for Indian startups</li>
+                    </ul>
                 </li>
                 <li class="partnership-mistakes-item">
                     <h3>USAID and US–India Programmes</h3>
@@ -542,22 +547,11 @@ declare(strict_types=1);
                 </li>
                 <li class="partnership-mistakes-item">
                     <h3>The right capital stack</h3>
-                    <p>Grants, loans, and equity are not mutually exclusive. CAAFT helps founders sequence capital sources to minimise dilution and maximise non-dilutive funding.</p>
+                    <p>Grants, loans, and equity are not mutually exclusive. The strategic approach for most early-stage startups is to use grants to extend runway and validate before raising equity — so investment is raised at a higher valuation with a stronger proof of concept. CAAFT helps founders sequence capital sources to minimise dilution and maximise non-dilutive funding.</p>
                 </li>
             </ul>
         </div>
     </section>
-
-    <?php
-    $caaft_key_facts_heading_id = 'gg-facts-heading';
-    $caaft_key_facts_title = 'Key Facts & Figures';
-    $caaft_key_facts_items = [
-        ['stat' => '₹945 Cr', 'text' => 'Total corpus of the Startup India Seed Fund Scheme, supporting 3,600 startups through 300 DPIIT-recognised incubators.'],
-        ['stat' => '₹10,000 Cr', 'text' => 'Government corpus of SIDBI\'s Fund of Funds for Startups.'],
-        ['stat' => '400+', 'text' => 'Active government grants, schemes, accelerators, and incubation programmes available to Indian startups as of 2025.'],
-    ];
-    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
-    ?>
 
     <?php
     $why_choose_caaft_heading_id = 'gg-why-caaft-heading';
@@ -577,11 +571,25 @@ declare(strict_types=1);
     include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>
 
+
+
+    <?php
+    $caaft_key_facts_heading_id = 'gg-facts-heading';
+    $caaft_key_facts_title = 'Key Facts & Figures';
+    $caaft_key_facts_items = [
+        ['stat' => '₹945 Cr', 'text' => 'Total corpus of the Startup India Seed Fund Scheme, supporting 3,600 startups through 300 DPIIT-recognised incubators.'],
+        ['stat' => '₹10,000 Cr', 'text' => 'Government corpus of SIDBI\'s Fund of Funds for Startups.'],
+        ['stat' => '₹21,276 Cr+', 'text' => 'Total investment committed to 1,173 startups under FFS as of December 2024.'],
+        ['stat' => '400+', 'text' => 'Active government grants, schemes, accelerators, and incubation programmes available to Indian startups as of 2025.'],
+    ];
+    include __DIR__ . '/../../includes/components/caaft-key-facts.php';
+    ?>
+
     <?php
     $caaft_cta_section_id = 'get-in-touch';
     $caaft_cta_heading_id = 'gg-cta-heading';
     $caaft_cta_title = 'Ready to Unlock Government Funding?';
-    $caaft_cta_text = 'Government grants are among the most valuable and most underutilised sources of capital available to Indian startups. Non-repayable, non-dilutive, and backed by significant government corpus — the right grant at the right stage can change the trajectory of an early-stage business. Every day without a grant application in motion is a day of potential funding left unclaimed.';
+    $caaft_cta_text = 'Government grants are among the most valuable and most underutilised sources of capital available to Indian startups. Non-repayable, non-dilutive, and backed by significant government corpus — the right grant at the right stage can change the trajectory of an early-stage business. Every day without a grant application in motion is a day of potential funding left unclaimed. The process is straightforward when handled correctly — and the capital requires nothing in return.';
     $caaft_cta_button_label = 'Book Your Grant Eligibility Review';
     $caaft_cta_button_href = '#quote-content';
     include __DIR__ . '/../../includes/components/caaft-cta.php';
