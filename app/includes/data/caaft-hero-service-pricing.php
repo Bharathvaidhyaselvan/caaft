@@ -18,7 +18,14 @@ return [
     'register-partnership-firm.php' => ['amount' => '11,999', 'govt_fee' => true],
     'register-sole-proprietorship.php' => ['amount' => '9,999', 'govt_fee' => true],
 
-    // --- Other registrations (no hero pricing — enquiry only) ---
+    // --- Other registrations & licences (hero pricing only; no mid-page pricing cards) ---
+    'msme-udyam-registration.php' => ['amount' => '1,999', 'govt_fee' => false],
+    'fssai-food-licence-india.php' => ['amount' => '2,999', 'govt_fee' => true],
+    'professional-tax-return-filing.php' => ['amount' => '2,999', 'govt_fee' => false],
+    'epf-esi-registration-compliance.php' => ['amount' => '5,999', 'govt_fee' => false],
+    'iec-registration.php' => ['amount' => '2,999', 'govt_fee' => true],
+    'digital-signature-certificate-registration.php' => ['amount' => '2,499', 'govt_fee' => false],
+    '12a-80g-registration.php' => ['amount' => '34,999', 'govt_fee' => true],
 
     // --- Compliance & regulatory: company compliance ---
     'private-company-compliance.php' => ['amount' => '14,999', 'govt_fee' => true],

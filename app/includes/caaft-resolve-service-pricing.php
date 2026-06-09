@@ -21,7 +21,7 @@ function caaft_resolve_service_page_pricing(): ?array
         $bsrPath = __DIR__ . '/data/caaft-business-setup-pricing.php';
         $bsrData = is_file($bsrPath) ? require $bsrPath : [];
         $bsrAllPackagePages = array_keys($bsrData['by_page'] ?? []);
-        // Other registration pages: no hero pricing and no mid-page pricing cards.
+        // Other registration pages: hero pricing only — no mid-page pricing cards or View Details link.
         $bsrNoHeroPackagesLink = [
             'msme-udyam-registration.php',
             'fssai-food-licence-india.php',
