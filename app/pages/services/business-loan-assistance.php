@@ -218,7 +218,7 @@ declare(strict_types=1);
                 </li>
                 <li class="partnership-mistakes-item">
                     <h3>MSME &amp; Government-Backed Loans</h3>
-                    <p>Government support for small business loans is facilitated through programs such as CGTMSE, MUDRA, Stand-Up India, and PM SVANidhi — offering collateral-free or partially guaranteed funding to MSMEs, startups, and underserved business segments.</p>
+                    <p>Government support for small business loans is facilitated through programs such as CGTMSE, MUDRA, Stand-Up India, and PM SVANidhi — offering collateral-free or partially guaranteed funding to MSMEs, startups, and underserved business segments. Eligibility, documentation, and application processes vary by scheme.</p>
                 </li>
                 <li class="partnership-mistakes-item">
                     <h3>Machinery &amp; Equipment Loans</h3>
@@ -387,7 +387,7 @@ declare(strict_types=1);
     $caaft_delivered_items = [
         ['name' => 'Project Reports', 'text' => 'Structured project reports covering business background, operational plan, market analysis, and financial projections — built to the appraisal standards of banks and financial institutions.'],
         ['name' => 'Detailed Project Report (DPR)', 'text' => 'Comprehensive DPRs for capital-intensive and infrastructure projects — technical feasibility, cost estimates, implementation schedules, and projected returns — prepared to the standards SIDBI, NABARD, and commercial banks require.'],
-        ['name' => 'CMA Report', 'text' => 'CMA data prepared in the exact format bank credit departments require — past financials, projected statements, fund flow, and working capital analysis — ready for appraisal on first submission.'],
+        ['name' => 'CMA Report', 'text' => 'CMA data prepared in the exact format bank credit departments require — past financials, projected statements, fund flow, and working capital analysis — ready for appraisal on first submission, with no revision requests.'],
         ['name' => 'Lender Identification & Scheme Mapping', 'text' => 'The right lender and loan product get identified for the business\'s profile — including government assistance schemes for small business loans that the business qualifies for but may not be aware of.'],
         ['name' => 'Application Preparation & Submission Support', 'text' => 'The complete loan application gets prepared and submitted — with all supporting documentation structured to meet the lender\'s credit checklist from the outset.'],
         ['name' => 'Post-Submission Query Management', 'text' => 'Queries from the lender\'s credit team get addressed promptly and accurately — so nothing delays the sanction after submission.'],
@@ -436,24 +436,7 @@ declare(strict_types=1);
                 </li>
             </ul>
         </div>
-    </section><?php
-    $why_choose_caaft_heading_id = 'bla-why-caaft-heading';
-    $why_choose_caaft_title = 'Why Choose CAAFT';
-    $why_choose_caaft_show_intro = true;
-    $why_choose_caaft_link_desc = true;
-    $why_choose_caaft_intro = 'Businesses trust CAAFT for business loan assistance — lender-ready project reports, CMA data, and DPRs, with government scheme mapping and end-to-end application support from first assessment to sanction.';
-    $why_choose_caaft_section_class = 'why-choose-caaft py-90';
-    $why_choose_caaft_items = [
-        ['icon_class' => 'fas fa-file-alt', 'title' => 'Documentation built to lender standards — not generic templates', 'text' => 'Every project report, CMA, and DPR gets prepared to the exact format and standard the specific lender or scheme requires.'],
-        ['icon_class' => 'fas fa-landmark', 'title' => 'Government scheme eligibility mapped upfront', 'text' => 'Applicable government assistance for small business loans — CGTMSE, MUDRA, Stand-Up India, SIDBI — gets identified and assessed before any application work begins.'],
-        ['icon_class' => 'fas fa-chart-bar', 'title' => 'Financial projections that hold up under scrutiny', 'text' => 'Realistic, defensible projections get built for every application — grounded in the business\'s actual financial position and structured to answer the questions credit teams ask first.'],
-        ['icon_class' => 'fas fa-laptop', 'title' => 'End-to-end handling — zero lender back-and-forth', 'text' => 'Document preparation, application submission, and post-submission query management all get handled completely — so the business owner never has to navigate bank processes independently.'],
-        ['icon_class' => 'fas fa-industry', 'title' => 'Specialists across loan types and business profiles', 'text' => 'Whether a startup seeking MUDRA finance, an MSME applying for a CGTMSE-backed term loan, or a manufacturer pursuing project finance — sector-specific and loan-specific expertise shapes every engagement.'],
-    ];
-    include __DIR__ . '/../../includes/components/why-choose-caaft.php';
-    ?>
-
-
+    </section>
 
     <?php
     $caaft_key_facts_heading_id = 'bla-facts-heading';
@@ -464,6 +447,23 @@ declare(strict_types=1);
         ['stat' => '2–3 Yrs', 'text' => 'The typical business vintage most lenders require for conventional term loan eligibility — government schemes accept newer businesses.'],
     ];
     include __DIR__ . '/../../includes/components/caaft-key-facts.php';
+    ?>
+
+    <?php
+    $why_choose_caaft_heading_id = 'bla-why-caaft-heading';
+    $why_choose_caaft_title = 'Why Choose CAAFT';
+    $why_choose_caaft_show_intro = true;
+    $why_choose_caaft_link_desc = true;
+    $why_choose_caaft_intro = 'Businesses trust CAAFT for business loan assistance — lender-ready project reports, CMA data, and DPRs, with government scheme mapping and end-to-end application support from first assessment to sanction.';
+    $why_choose_caaft_section_class = 'why-choose-caaft py-90';
+    $why_choose_caaft_items = [
+        ['icon_class' => 'fas fa-file-alt', 'title' => 'Documentation built to lender standards — not generic templates', 'text' => 'Every project report, CMA, and DPR gets prepared to the exact format and standard the specific lender or scheme requires — not a one-size-fits-all document that triggers revision requests.'],
+        ['icon_class' => 'fas fa-landmark', 'title' => 'Government scheme eligibility mapped upfront', 'text' => 'Applicable government assistance for small business loans — CGTMSE, MUDRA, Stand-Up India, SIDBI — gets identified and assessed before any application work begins, so no eligible scheme gets missed.'],
+        ['icon_class' => 'fas fa-chart-bar', 'title' => 'Financial projections that hold up under scrutiny', 'text' => 'Realistic, defensible projections get built for every application — grounded in the business\'s actual financial position and structured to answer the questions credit teams ask first.'],
+        ['icon_class' => 'fas fa-laptop', 'title' => 'End-to-end handling — zero lender back-and-forth', 'text' => 'Document preparation, application submission, and post-submission query management all get handled completely — so the business owner never has to navigate bank processes or chase approvals independently.'],
+        ['icon_class' => 'fas fa-industry', 'title' => 'Specialists across loan types and business profiles', 'text' => 'Whether a startup seeking MUDRA finance, an MSME applying for a CGTMSE-backed term loan, or a manufacturer pursuing project finance — sector-specific and loan-specific expertise shapes every engagement.'],
+    ];
+    include __DIR__ . '/../../includes/components/why-choose-caaft.php';
     ?>
 
     <?php
