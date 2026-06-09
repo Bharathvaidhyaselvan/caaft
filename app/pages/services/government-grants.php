@@ -360,12 +360,7 @@ declare(strict_types=1);
             <ul class="partnership-mistakes-list">
                 <li class="partnership-mistakes-item">
                     <h3>EU–India R&D Collaboration</h3>
-                    <p>The EU–India bilateral S&amp;T Agreement, renewed to 2030, enables joint funding calls. In early 2026, the EU and India launched exploratory talks on India&apos;s association to Horizon Europe. If confirmed, Indian startups could receive Horizon Europe funding directly.</p>
-                    <ul>
-                        <li>The EIC Accelerator offers up to €2.5 million in grants plus optional equity up to €15 million</li>
-                        <li>Eurostars funds bilateral R&amp;D for startups collaborating with at least one European partner</li>
-                        <li>Horizon Europe association talks could expand direct funding access for Indian startups</li>
-                    </ul>
+                    <p>The EU–India bilateral S&amp;T Agreement, renewed to 2030, enables joint funding calls. In early 2026, the EU and India launched exploratory talks on India&apos;s association to Horizon Europe. If confirmed, Indian startups could receive Horizon Europe funding directly. The EIC Accelerator offers up to €2.5 million in grants plus optional equity up to €15 million (for startups establishing EU presence). Eurostars funds bilateral R&amp;D for startups collaborating with at least one European partner.</p>
                 </li>
                 <li class="partnership-mistakes-item">
                     <h3>USAID and US–India Programmes</h3>
@@ -373,10 +368,13 @@ declare(strict_types=1);
                 </li>
                 <li class="partnership-mistakes-item">
                     <h3>World Bank and IFC</h3>
-                    <p>The IFC's Startup Catalyst initiative and sector-specific challenge funds — particularly in climate and healthcare — are relevant for startups with measurable development impact.</p>
+                    <p>The IFC&apos;s Startup Catalyst initiative and sector-specific challenge funds — particularly in climate and healthcare — are relevant for startups with measurable development impact.</p>
+                </li>
+                <li class="partnership-mistakes-item">
+                    <h3>What Global Grants Require</h3>
+                    <p>Access typically requires English-language business plans, international-standard financial projections, and demonstrated product or market traction. DPIIT recognition and prior domestic grant receipt serve as credibility signals. CAAFT advises on global grant opportunities for startups at the right stage to pursue them.</p>
                 </li>
             </ul>
-            <p class="gg-note">Access typically requires English-language business plans, international-standard financial projections, and demonstrated product or market traction. DPIIT recognition and prior domestic grant receipt serve as credibility signals. CAAFT advises on global grant opportunities for startups at the right stage to pursue them.</p>
         </div>
     </section>
 
