@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // 3. Collect and sanitize inputs
     $name     = htmlspecialchars(trim($_POST['name']));
-    $email    = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+    $email    = caaft_sanitize_mail_address((string) ($_POST['email'] ?? ''));
     $phone    = htmlspecialchars(trim($_POST['phone']));
     $service  = htmlspecialchars(trim($_POST['service']));
     $message  = htmlspecialchars(trim($_POST['message']));
@@ -35,22 +35,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit("Invalid email format.");
     }
 
-    // 5. Email setup
-    $to = "services@caaft.com";
+    $to = caaft_form_recipient_email();
     $subject = "GST Return Filing Inquiry from " . $name;
-
-    // 6. Email headers
-    $headers  = "From: {$name} <{$email}>\r\n";
-    $headers .= "Reply-To: {$email}\r\n";
-    $headers .= caaft_form_cc_header();
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-
-    // 7. Email body
     $body = "
     <h2>GST Return Filing Inquiry</h2>
     <p><strong>Name:</strong> {$name}</p>
-    <p><strong>Email:</strong> {$email}</p>
+    <p><strong>Email:</strong> " . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . "</p>
     <p><strong>Phone:</strong> {$phone}</p>
     <p><strong>Service:</strong> {$service}</p>
     <p><strong>Message:</strong><br>" . nl2br($message) . "</p>
@@ -58,8 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <p><small>Submitted via website form.</small></p>
     ";
 
-    // 8. Send mail
-    if (mail($to, $subject, $body, $headers)) {
+    if (caaft_try_send_mail($to, $subject, $body, $name, $email)) {
         echo "<script>
                 alert('Thanks for reaching us. Our team will contact you shortly.');
                 window.location.href='thankyou.php';

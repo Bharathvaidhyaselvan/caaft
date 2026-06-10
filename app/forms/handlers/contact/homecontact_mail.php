@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Collect form data safely
     $name    = htmlspecialchars(trim($_POST['name']));
-    $email   = htmlspecialchars(trim($_POST['email']));
+    $email   = caaft_sanitize_mail_address((string) ($_POST['email'] ?? ''));
     $phone   = htmlspecialchars(trim($_POST['phone']));
     $service = htmlspecialchars(trim($_POST['service']));
     $msg     = htmlspecialchars(trim($_POST['msg']));
@@ -35,27 +35,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit("Please fill all required fields.");
     }
 
-    // Email setup
-    $to = "services@caaft.com";
+    $to = caaft_form_recipient_email();
     $subject = "Contact Form Submission: $title";
-
-    // Email headers
-    $headers = "From: $name <$email>\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= caaft_form_cc_header();
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-
-    // Email body
     $body = "<h2>Contact Form Submission</h2>
             <p><strong>Name:</strong> {$name}</p>
-            <p><strong>Email:</strong> {$email}</p>
+            <p><strong>Email:</strong> " . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . "</p>
             <p><strong>Phone:</strong> {$phone}</p>
             <p><strong>Service:</strong> {$service}</p>
             <p><strong>Message:</strong><br>".nl2br($msg)."</p>";
 
-    // Send email
-    if (mail($to, $subject, $body, $headers)) {
+    if (caaft_try_send_mail($to, $subject, $body, $name, $email)) {
         echo "<script>alert('Thanks for reaching us you will get notified by our advisory team shortly'); window.location.href='thankyou.php' </script>";
     } else {
         echo "Oops! Something went wrong. Please try again.";
