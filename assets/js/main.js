@@ -252,7 +252,6 @@
     }));
   let o = new Date().getFullYear();
   (a("#date").html(o),
-    a(".select").niceSelect(),
     [].slice
       .call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
       .map(function (a) {

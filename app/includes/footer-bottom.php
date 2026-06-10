@@ -18,14 +18,6 @@ $asset = static function (string $path): string {
 <script src="<?php echo $asset('assets/js/counter-up.js'); ?>" defer></script>
 <?php endif; ?>
 
-<script src="<?php echo $asset('assets/js/main.js'); ?>" defer></script>
-<script src="<?php echo $asset('assets/js/form-hash-focus.js'); ?>" defer></script>
-<script src="<?php echo $asset('assets/js/form-page-url.js'); ?>" defer></script>
-<?php if ($features['carousel']) : ?>
-<script src="<?php echo $asset('assets/js/hero-slider-init.js'); ?>" defer></script>
-<?php endif; ?>
-<script src="<?php echo $asset('assets/js/header-sticky.js'); ?>" defer></script>
-
 <?php if ($features['gallery']) : ?>
 <script src="<?php echo $asset('assets/js/imagesloaded.pkgd.min.js'); ?>" defer></script>
 <script src="<?php echo $asset('assets/js/jquery.magnific-popup.min.js'); ?>" defer></script>
@@ -37,7 +29,18 @@ $asset = static function (string $path): string {
 <?php endif; ?>
 
 <script src="<?php echo $asset('assets/js/jquery.nice-select.min.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/nice-select-init.js'); ?>" defer></script>
+<?php if ($features['tabs']) : ?>
 <script src="<?php echo $asset('assets/js/easyResponsiveTabs.js'); ?>" defer></script>
+<?php endif; ?>
+
+<script src="<?php echo $asset('assets/js/main.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/form-hash-focus.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/form-page-url.js'); ?>" defer></script>
+<?php if ($features['carousel']) : ?>
+<script src="<?php echo $asset('assets/js/hero-slider-init.js'); ?>" defer></script>
+<?php endif; ?>
+<script src="<?php echo $asset('assets/js/header-sticky.js'); ?>" defer></script>
 
 <?php include APP_ROOT . '/includes/analytics-deferred.php'; ?>
 

@@ -77,9 +77,9 @@ if (!function_exists('caaft_page_features')) {
         $features = [
             'home' => $home,
             'carousel' => $home,
-            'aos' => true,
-            'gallery' => $home || in_array($slug, $gallerySlugs, true),
-            'tabs' => true,
+            'aos' => false,
+            'gallery' => in_array($slug, $gallerySlugs, true),
+            'tabs' => false,
         ];
 
         return $features;

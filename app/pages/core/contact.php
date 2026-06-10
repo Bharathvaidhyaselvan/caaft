@@ -25,7 +25,6 @@
       <meta name="twitter:image" content="https://caaft.com/assets/img/contact-form.webp">
 
     <?php include "header-top.php"; ?>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 </head>
 
 <body class="home-3">

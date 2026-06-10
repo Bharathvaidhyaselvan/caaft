@@ -25,7 +25,6 @@
       <meta name="twitter:image" content="https://caaft.com/assets/img/static-logos.webp">
 
     <?php include "header-top.php"; ?>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -351,7 +350,7 @@
                         'icon_alt' => 'Business Setup and Registration',
                         'thumb' => 'assets/img/busniess-accounting.webp',
                         'thumb_alt' => 'Business Setup and Registration',
-                        'text' => 'Company incorporation, MSME, FSSAI, IEC, DSC, professional tax, EPF & ESI, and 12A & 80G registrations.',
+                        'text' => 'Company Incorporation, MSME, FSSAI, IEC, DSC, Professional Tax, EPF & ESI, and 12A & 80G Registrations.',
                     ],
                     [
                         'title' => 'Compliance & Regulatory',
@@ -361,7 +360,7 @@
                         'icon_alt' => 'Compliance and Regulatory Services',
                         'thumb' => 'assets/img/compliance.webp',
                         'thumb_alt' => 'Compliance and Regulatory Services',
-                        'text' => 'Private, LLP, OPC, partnership, and public company compliance including ROC filings, DIR-3 KYC, and company closure.',
+                        'text' => 'Private, LLP, OPC, Partnership, and Public Company Compliance including ROC Filings, DIR-3 KYC, and Company Closure.',
                     ],
                     [
                         'title' => 'Income Tax',
@@ -371,7 +370,7 @@
                         'icon_alt' => 'Income Tax Services',
                         'thumb' => 'assets/img/income-tax.webp',
                         'thumb_alt' => 'Income Tax Services',
-                        'text' => 'Income tax planning, ITR and TDS filing, tax audit assistance, and tax assessment & appeal support.',
+                        'text' => 'Income Tax Planning, ITR and TDS Filing, Tax Audit Assistance, and Tax Assessment & Appeal Support.',
                     ],
                     [
                         'title' => 'GST',
@@ -381,7 +380,7 @@
                         'icon_alt' => 'GST Services',
                         'thumb' => 'assets/img/gst-services.webp',
                         'thumb_alt' => 'GST Services',
-                        'text' => 'GST registration, returns filing, LUT filing, advisory & compliance, assessment & appeal support, and registration cancellation.',
+                        'text' => 'GST Registration, Returns Filing, LUT Filing, Advisory & Compliance, Assessment & Appeal Support, and Registration Cancellation.',
                     ],
                     [
                         'title' => 'Accounting & Reporting',
@@ -391,7 +390,7 @@
                         'icon_alt' => 'Accounting and Reporting',
                         'thumb' => 'assets/img/accounting-services.webp',
                         'thumb_alt' => 'Accounting and Reporting Services',
-                        'text' => 'General accounting & bookkeeping, financial analysis & MIS, financial statements, and receivable & payable management.',
+                        'text' => 'General Accounting & Bookkeeping, Financial Analysis & MIS, Financial Statements, and Receivable & Payable Management.',
                     ],
                     [
                         'title' => 'Advisory & CFO Services',
@@ -409,9 +408,9 @@
                         'cta' => 'Explore Startup Advisory',
                         'icon' => 'assets/img/caaft/consultant.png',
                         'icon_alt' => 'Startup and Funding Advisory Services',
-                        'thumb' => 'assets/img/services-images/Startup%20%26%20Funding%20Advisory/startup2.jpeg',
+                        'thumb' => 'assets/img/services-images/Startup%20%26%20Funding%20Advisory/startup2.webp',
                         'thumb_alt' => 'Startup and Funding Advisory Services',
-                        'text' => 'Startup India registration, seed funding support, government grants, pitch decks, project reports, DPR, and CMA reports for bank loans.',
+                        'text' => 'Startup India Registration, Seed Funding Support, Government Grants, Pitch Decks, Project Reports, DPR, and CMA Reports for Bank Loans.',
                     ],
                 ];
                 ?>
@@ -922,22 +921,15 @@ document.getElementById('contact').addEventListener('submit', function(e) {
 });
 </script>
 
-<script src='https://www.google.com/recaptcha/api.js'></script>	  
-
-</body>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
-$(document).ready(function() {
-    $("#submenu").attr("class", function(i, hide) {
-        return hide + " show";
-
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    var submenu = document.getElementById('submenu');
+    if (submenu) {
+        submenu.className += ' show';
+    }
 });
-// $(document).ready(function(){
-//     $(".nav-link").click(function(){
-//         $("#static-logo").addClass("hide");
-//     });
-
-// })
 </script>
 
+</body>
 </html>
