@@ -16,6 +16,7 @@ $critical = [
     'homecontact_mail.php',
     'app/bootstrap.php',
     'app/config/mail.php',
+    'app/includes/caaft-smtp-mail.php',
     'app/includes/perf-assets.php',
     'app/includes/caaft-url-helpers.php',
     'app/includes/caaft-resolve-service-pricing.php',
@@ -80,8 +81,24 @@ if ($missingTargets !== []) {
 }
 
 $mailConfig = is_file($appRoot . '/config/mail.php') ? require $appRoot . '/config/mail.php' : [];
+if (is_file($appRoot . '/config/mail.local.php')) {
+    $localMail = require $appRoot . '/config/mail.local.php';
+    if (is_array($localMail)) {
+        $mailConfig = array_merge($mailConfig, $localMail);
+    }
+}
 $formRecipient = trim((string) ($mailConfig['form_recipient'] ?? 'services@caaft.com'));
+$smtpReady = trim((string) ($mailConfig['smtp_host'] ?? '')) !== ''
+    && trim((string) ($mailConfig['smtp_user'] ?? '')) !== ''
+    && (string) ($mailConfig['smtp_password'] ?? '') !== ''
+    && (string) ($mailConfig['smtp_password'] ?? '') !== 'PASTE_YOUR_MICROSOFT_PASSWORD_HERE';
+
 echo "\nForm mail recipient: {$formRecipient}\n";
+echo 'Microsoft 365 SMTP: ' . ($smtpReady ? "configured\n" : "NOT configured — add password to app/config/mail.local.php\n");
+if (!$smtpReady) {
+    echo "  Enable Authenticated SMTP for services@caaft.com in Microsoft 365 admin.\n";
+    echo "  Use an app password if the account has MFA.\n";
+}
 
 if ($missing === [] && $missingTargets === []) {
     echo "\nOK: All checked files and route targets are present.\n";

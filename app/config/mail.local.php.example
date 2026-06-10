@@ -1,0 +1,10 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * Copy to mail.local.php on the server (not committed to git).
+ * Use the password or app password for services@caaft.com.
+ */
+return [
+    'smtp_password' => 'your-microsoft-365-password-or-app-password',
+];

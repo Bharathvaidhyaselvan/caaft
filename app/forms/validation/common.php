@@ -39,10 +39,20 @@ if (!function_exists('caaft_mail_config')) {
             return $config;
         }
 
-        $configPath = (defined('APP_ROOT') ? APP_ROOT : dirname(__DIR__, 2)) . '/config/mail.php';
-        $config = is_file($configPath) ? require $configPath : [];
+        $configDir = (defined('APP_ROOT') ? APP_ROOT : dirname(__DIR__, 2)) . '/config';
+        $config = is_file($configDir . '/mail.php') ? require $configDir . '/mail.php' : [];
+        if (!is_array($config)) {
+            $config = [];
+        }
 
-        return is_array($config) ? $config : [];
+        if (is_file($configDir . '/mail.local.php')) {
+            $local = require $configDir . '/mail.local.php';
+            if (is_array($local)) {
+                $config = array_merge($config, $local);
+            }
+        }
+
+        return $config;
     }
 }
 
@@ -99,8 +109,7 @@ if (!function_exists('caaft_sanitize_mail_name')) {
 
 if (!function_exists('caaft_try_send_mail')) {
     /**
-     * Hostinger shared hosting often rejects mail() with CC or display-name From.
-     * Tries several header combinations, then sends CC as a separate message if needed.
+     * Prefer Microsoft 365 SMTP when configured; otherwise fall back to Hostinger PHP mail().
      */
     function caaft_try_send_mail(
         string $to,
@@ -116,6 +125,21 @@ if (!function_exists('caaft_try_send_mail')) {
         }
 
         $fromName = caaft_sanitize_mail_name($fromName);
+
+        if (!function_exists('caaft_smtp_is_configured')) {
+            require_once (defined('APP_ROOT') ? APP_ROOT : dirname(__DIR__, 2)) . '/includes/caaft-smtp-mail.php';
+        }
+
+        if (caaft_smtp_is_configured()) {
+            return caaft_smtp_send_mail(
+                $to,
+                $subject,
+                $htmlBody,
+                $fromEmail,
+                $fromName,
+                caaft_form_cc_emails(),
+            );
+        }
         $ccHeader = caaft_form_cc_header();
         $contentHeaders = "MIME-Version: 1.0\r\nContent-Type: text/html; charset=UTF-8\r\n";
 
