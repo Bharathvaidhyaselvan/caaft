@@ -83,6 +83,21 @@ body.navbar-is-sticky {
   padding-top: var(--caaft-navbar-height, 72px);
 }
 
+form.contact .caaft-field-error {
+  color: #dc3545;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 0.35rem 0 0.75rem;
+}
+form.contact .form-control.is-invalid,
+form.contact .form-select.is-invalid {
+  border-color: #dc3545;
+}
+form.contact .g-recaptcha.caaft-is-invalid {
+  outline: 2px solid #dc3545;
+  outline-offset: 2px;
+}
+
 /* hs-3 in style.css uses margin-top:-6rem — OK for home carousel only */
 .hero-section.hs-3.caaft-ar-hero,
 .hs-3.caaft-ar-hero:not(.hero-slider) {

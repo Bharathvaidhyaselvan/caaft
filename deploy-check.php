@@ -12,7 +12,10 @@ $appRoot = $projectRoot . '/app';
 $critical = [
     'index.php',
     '.htaccess',
+    'contact_mail.php',
+    'homecontact_mail.php',
     'app/bootstrap.php',
+    'app/config/mail.php',
     'app/includes/perf-assets.php',
     'app/includes/caaft-url-helpers.php',
     'app/includes/caaft-resolve-service-pricing.php',
@@ -75,6 +78,10 @@ if ($missingTargets !== []) {
         }
     }
 }
+
+$mailConfig = is_file($appRoot . '/config/mail.php') ? require $appRoot . '/config/mail.php' : [];
+$formRecipient = trim((string) ($mailConfig['form_recipient'] ?? 'services@caaft.com'));
+echo "\nForm mail recipient: {$formRecipient}\n";
 
 if ($missing === [] && $missingTargets === []) {
     echo "\nOK: All checked files and route targets are present.\n";

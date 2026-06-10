@@ -14,7 +14,7 @@ $about = $_POST['about'];
 $title = $_POST['title'];
 $msg = $_POST['msg'];
 
-$to = caaft_form_recipient_email();
+$to = 'services@caaft.com';
 $subject ="Contact mail from CAAFT Consultancy Services Private Limited";
 
 
@@ -23,6 +23,7 @@ $headers  .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $headers   = "From: " . $email . "\r\n";
 $headers  .= "Return-Path: " . $email . "\r\n";
 $headers  .= "Reply-To: ". $email . "\r\n";
+$headers  .= caaft_form_cc_header();
 $headers  .= "MIME-Version: 1.0\r\n";
 $headers  .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
@@ -36,7 +37,6 @@ $body     .= "<tr><td>Service</td><td> <strong>".$service."</strong></td></tr>";
 $body     .= "<tr><td>About </td><td> <strong>".$about."</strong></td></tr>";
 $body     .= "<tr><td>Title </td><td> <strong>".$title."</strong></td></tr>";
 $body     .= "<tr><td>Message </td><td> <strong>".$msg."</strong></td></tr>";
-$body     .= "<tr><td>Site URL </td><td> <strong>".htmlspecialchars(caaft_form_source_url(), ENT_QUOTES, 'UTF-8')."</strong></td></tr>";
 $body   .= "</table>";
 $body   .= "</body></html>";
 

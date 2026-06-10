@@ -2,6 +2,8 @@
 .env
 .env.*
 !.env.example
+app/config/mail.local.php
+storage/mail-outbox/*.html
 
 # OS
 Thumbs.db

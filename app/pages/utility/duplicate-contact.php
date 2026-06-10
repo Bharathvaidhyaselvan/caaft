@@ -204,104 +204,16 @@
 
     <?php include "footer-bottom.php"; ?>
 	<script>
-    $(document).ready(function () {
-        $('#about').change(function () {
-            if ($(this).val() === "Others") {
-                //$('#select-group').hide(); 
-                $('#other-input').show(); 
-                $('#other-text').attr('name', 'about'); 
-                $('#about').removeAttr('name'); 
-            } else {
-                $('#select-group').show(); 
-                $('#other-input').hide(); 
-                $('#other-text').removeAttr('name'); 
-                $('#about').attr('name', 'about'); 
-            }
-        });
-
-        $('.name-valid').on('keypress', function (e) {
-            var regex = new RegExp("^[a-zA-Z ]*$");
-            var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
-            if (!regex.test(str)) {
-                e.preventDefault();
-                return false;
-            }
-        });
-
-        $('#phone').on('input', function () {
-            var sanitized = $(this).val().replace(/[^0-9]/g, '');
-            $(this).val(sanitized);
-        });
-
-        $('.automated_mail').click(function (e) {
-            e.preventDefault(); 
-            var valid = true; 
-            var name = $('#name').val().trim();
-            var email = $('#email').val();
-            var phone = $('#phone').val().trim(); 
-            var about = $('#about').val(); 
-            var otherAbout = $('#other-text').val().trim(); 
-            var msg = $('#msg').val().trim();
-            var title = $('#title').val().trim();
-
-            if (name === '') {
-                alert('Please enter your name');
-                valid = false;
-            } else if (email === '') {
-                alert('Please enter your email id');
-                valid = false;
-            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                alert('Please enter a valid email id');
-                valid = false;
-            } else if (phone === '') {
-                alert('Please enter your phone number');
-                valid = false;
-            } else if (phone.length < 10) {
-                alert('Please enter a valid mobile number');
-                valid = false;
-            } else if ($('#other-input').is(':visible') && otherAbout === '') {
-                alert('How did you hear about us? please mension');
-                valid = false;
-            } else if (!$('#other-input').is(':visible') && about == null) {
-                alert('Please select "How did you hear about us?"');
-                valid = false;
-            } else if (msg === '') {
-                alert('Please enter your message');
-                valid = false;
-            } else if (!validateInput(msg)) {
-                alert('Please enter a valid message');
-                valid = false;
-            }
-
-            if (valid) {
-                var selectedAbout = $('#other-input').is(':visible') ? otherAbout : about; // Get correct value for 'about'
-                
-                var actual_link = (window.location.protocol == 'https:' ? 'https://' : 'http://') + window.location.host;
-                var redirectUrl = actual_link + '/contact_mail.php' + 
-                    '?name=' + encodeURIComponent(name) + 
-                    '&email=' + encodeURIComponent(email) + 
-                    '&phone=' + encodeURIComponent(phone) + 
-                    '&about=' + encodeURIComponent(selectedAbout) + 
-                    '&msg=' + encodeURIComponent(msg) + 
-                    '&title=' + encodeURIComponent(title);
-
-                window.location.href = redirectUrl;
-
-                // Display success message
-                $('.contact').fadeOut('fast');
-                $('.automated_msg').fadeIn('fast');
-
-                
-                return false;
-            }
-
-            function validateInput(input) {
-                var regex = /^[\x00-\x7F]+$/; // ASCII validation
-                return regex.test(input);
-            }
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.name-valid').forEach(function (field) {
+            field.addEventListener('keypress', function (e) {
+                if (!/^[a-zA-Z ]$/.test(String.fromCharCode(e.charCode || e.which))) {
+                    e.preventDefault();
+                }
+            });
         });
     });
-</script>
+    </script>
 
 </body>
 

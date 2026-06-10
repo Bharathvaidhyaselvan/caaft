@@ -632,7 +632,7 @@
                                     role="alert">
                                     <strong>Thank you!</strong> for contacting us.
                                 </div>
-                                <form action="homecontact_mail.php" id="contact" method="POST">
+                                <form action="/homecontact_mail.php" id="contact" method="POST" class="contact">
                                     <?php include dirname(__DIR__, 2) . '/includes/components/caaft-form-page-url-field.php'; ?>
                                     <div class="row">
                                         <div class="col-lg-6">
@@ -859,68 +859,6 @@
 
 
     <?php include "footer-bottom.php"; ?>
-    <script>
-document.getElementById('contact').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent default submission
-
-    // Get form values
-    const firstname = document.getElementById('firstname').value.trim(); // Honeypot
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const service = document.getElementById('service').value;
-    const msg = document.getElementById('msg').value.trim();
-
-    //  Check honeypot (bot check)
-    if (firstname !== '') {
-        alert("Bot submission detected!");
-        return false;
-    }
-
-    //  Validate name
-    if (name === '') {
-        alert("Please enter your name.");
-        return false;
-    }
-
-    //  Validate email
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email === '' || !emailPattern.test(email)) {
-        alert("Please enter a valid email address.");
-        return false;
-    }
-
-    //  Validate phone (10-digit number)
-    const phonePattern = /^[0-9]{10}$/;
-    if (phone === '' || !phonePattern.test(phone)) {
-        alert("Please enter a valid 10-digit phone number.");
-        return false;
-    }
-
-    // Validate service selection
-    if (service === '' || service === null) {
-        alert("Please select a service.");
-        return false;
-    }
-
-    // Validate message
-    if (msg === '') {
-        alert("Please enter your message.");
-        return false;
-    }
-
-    // 7Validate reCAPTCHA
-    if (typeof grecaptcha !== 'undefined') {
-        const response = grecaptcha.getResponse();
-        if (response.length === 0) {
-            alert("Please verify that you are not a robot.");
-            return false;
-        }
-    }
-    this.submit();
-});
-</script>
-
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {

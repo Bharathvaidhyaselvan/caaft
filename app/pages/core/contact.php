@@ -25,6 +25,7 @@
       <meta name="twitter:image" content="https://caaft.com/assets/img/contact-form.webp">
 
     <?php include "header-top.php"; ?>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body class="home-3">
@@ -131,7 +132,7 @@
                                     role="alert">
                                     <strong>Thank you!</strong> for contacting us.
                                 </div>
-                                <form method="post" action="contact_mail.php" class="contact" id="contact-form">
+                                <form method="post" action="/contact_mail.php" class="contact" id="contact-form">
                                     <?php include dirname(__DIR__, 2) . '/includes/components/caaft-form-page-url-field.php'; ?>
                                     <div class="row">
                                         <div class="col-md-6">
@@ -201,7 +202,7 @@
                                     </div>
                                     <div class="col-lg-12">
                                        <div class="g-recaptcha" data-sitekey="6LcO3ukrAAAAADerciVZtVVgPZqbR-iH04HfKq-K"></div>
-                                        </div>
+                                    </div>
                                     <button type="submit" class="theme-btn automated_mail">Send
                                         Message <i class="far fa-paper-plane"></i></button>
                                     <div class="col-md-12 mt-3">
@@ -238,99 +239,7 @@
 
 
     <?php include "footer-bottom.php"; ?>
-   <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contact-form');
-    const aboutSelect = document.getElementById('about');
-    const otherInputGroup = document.getElementById('other-input');
-    const otherText = document.getElementById('other-text');
-
-    // Show/Hide "Other" text box dynamically
-    aboutSelect.addEventListener('change', function() {
-        if (aboutSelect.value === 'Others') {
-            otherInputGroup.style.display = 'flex';
-            otherText.setAttribute('name', 'about_other');
-        } else {
-            otherInputGroup.style.display = 'none';
-            otherText.removeAttribute('name');
-            otherText.value = '';
-        }
-    });
-
-    // Validation on submit
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        const firstname = document.getElementById('firstname').value.trim(); // honeypot
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const phone = document.getElementById('phone').value.trim();
-        const service = document.getElementById('service').value;
-        const about = aboutSelect.value;
-        const msg = document.getElementById('msg').value.trim();
-
-        // 1. Honeypot bot check
-        if (firstname !== '') {
-            alert('Bot detected. Submission blocked.');
-            return false;
-        }
-
-        // 2. Name check
-        if (name === '') {
-            alert('Please enter your name.');
-            return false;
-        }
-
-        // 3. Email validation
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(email)) {
-            alert('Please enter a valid email address.');
-            return false;
-        }
-
-        // 4. Phone validation
-        const phonePattern = /^[0-9]{10}$/;
-        if (phone === '' || !phonePattern.test(phone)) {
-            alert('Please enter a valid 10-digit phone number.');
-            return false;
-        }
-
-        // 5. Service validation
-        if (service === '' || service === null) {
-            alert('Please choose a service.');
-            return false;
-        }
-
-        // 6. About source validation
-        if (about === '' || about === null) {
-            alert('Please select how you heard about us.');
-            return false;
-        }
-
-        // 7. Message check
-        if (msg === '') {
-            alert('Please enter your message.');
-            return false;
-        }
-
-        // 8. reCAPTCHA validation
-        if (typeof grecaptcha !== 'undefined') {
-            const recaptchaResponse = grecaptcha.getResponse();
-            if (recaptchaResponse.length === 0) {
-                alert('Please verify that you are not a robot.');
-                return false;
-            }
-        }
-
-        // ✅ If all checks pass, submit
-        form.submit();
-    });
-});
-</script>
 
 
 </body>
-
-<script src='https://www.google.com/recaptcha/api.js'></script>	  
-
 </html>

@@ -36,12 +36,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // 5. Email setup
-    $to = caaft_form_recipient_email();
+    $to = "services@caaft.com";
     $subject = "Income Tax Services Inquiry from " . $name;
 
     // 6. Email headers
     $headers  = "From: {$name} <{$email}>\r\n";
     $headers .= "Reply-To: {$email}\r\n";
+    $headers .= caaft_form_cc_header();
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
@@ -56,7 +57,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <hr>
     <p><small>Submitted via website form.</small></p>
     ";
-    $body .= caaft_form_source_url_html();
 
     // 8. Send mail
     if (mail($to, $subject, $body, $headers)) {

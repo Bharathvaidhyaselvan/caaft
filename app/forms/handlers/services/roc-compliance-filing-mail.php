@@ -39,7 +39,7 @@ if (empty($name) || empty($email) || empty($phone) || empty($service) || empty($
 }
 
 // Email settings
-$to = caaft_form_recipient_email();
+$to = "services@caaft.com";
 $subject = "ROC Compliance Filing Enquiry from " . $name;
 
 $body = "
@@ -50,12 +50,12 @@ $body = "
 <p><strong>Service:</strong> $service</p>
 <p><strong>Message:</strong><br>$message</p>
 ";
-$body .= caaft_form_source_url_html();
 
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8\r\n";
 $headers .= "From: $name <$email>\r\n";
 $headers .= "Reply-To: $email\r\n";
+$headers .= caaft_form_cc_header();
 
 // Send mail
 if (mail($to, $subject, $body, $headers)) {
