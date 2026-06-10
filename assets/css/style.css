@@ -4053,6 +4053,55 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
     position: relative
 }
 
+#contact_us {
+    scroll-margin-top: 130px;
+}
+
+@media (max-width: 991.98px) {
+    #contact_us {
+        scroll-margin-top: 110px;
+    }
+
+    .contact-wrapper .contact-form-row {
+        --bs-gutter-y: 1.75rem;
+    }
+
+    .contact-wrapper .about-img-sixteen.contact-img {
+        padding: 10px 0 0;
+        margin-top: 0.5rem;
+    }
+
+    .contact-wrapper .about-img-sixteen.contact-img::before {
+        left: 0;
+        width: 52%;
+    }
+
+    .contact-wrapper .contact-form {
+        width: 100%;
+    }
+
+    .contact-wrapper .contact-form .input-group {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .contact-wrapper .contact-form .input-group .form-control,
+    .contact-wrapper .contact-form .input-group .form-select {
+        min-width: 0;
+        flex: 1 1 auto;
+        width: 1%;
+    }
+
+    .contact-wrapper .contact-form .input-group .input-group-text {
+        flex-shrink: 0;
+    }
+
+    .contact-wrapper .contact-form .theme-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 .contact-img img {
     width: 100%;
     border-radius: 15px
@@ -6753,6 +6802,12 @@ a.slide_btn {
     margin-bottom: 30px;
     font-weight: 500;
     text-align: justify;
+}
+
+.about-content-sixteen p strong,
+.about-text strong {
+    font-weight: 800;
+    color: var(--color-dark, #00194c);
 }
 
 .mega-menu a.link-extend.extends_links {
@@ -12435,6 +12490,48 @@ body.home-3 .home3-plans-area .site-heading .site-title span {
     color: var(--theme-color, #33b6ff);
     font-size: inherit;
     line-height: inherit;
+}
+
+body.home-3 .service-area2#services .site-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+body.home-3 .service-area2#services .site-heading .site-title-tagline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0;
+}
+
+body.home-3 .service-area2#services .site-heading .site-title-tagline i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+}
+
+body.home-3 .service-area2#services .site-heading .site-title {
+    font-size: clamp(1.65rem, 2.8vw, 2.15rem);
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.3;
+}
+
+body.home-3 .service-area2#services .site-heading .site-title span {
+    color: var(--theme-color, #33b6ff);
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 800;
 }
 
 body.home-3 .home3-plans-grid {

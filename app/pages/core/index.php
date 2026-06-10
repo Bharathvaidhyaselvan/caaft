@@ -258,7 +258,7 @@
                                     End-to-End Business Incorporation, Compliance, Taxation, Startup Funding, Accounting &amp; Advisory Solutions
                                 </h1>
                             </div>
-                            <p class="about-text">We believe that every business, from emerging startups to established enterprises, requires personalized solutions to succeed in today&apos;s dynamic and competitive marketplace. Our team brings together extensive expertise in Business Incorporation, Regulatory Compliance, Taxation, Accounting &amp; Advisory, and Startup &amp; Funding Advisory Services, enabling us to provide comprehensive support tailored to each client&apos;s unique needs and aspirations.</p>
+                            <p class="about-text">We believe that every business, from emerging startups to established enterprises, requires personalized solutions to succeed in today&apos;s dynamic and competitive marketplace. Our team brings together extensive expertise in <strong>Business Incorporation, Regulatory Compliance, Taxation, Accounting &amp; Advisory, and Startup &amp; Funding</strong> Advisory Services, enabling us to provide comprehensive support tailored to each client&apos;s unique needs and aspirations.</p>
                             <p class="about-text mt-20">Whether it is establishing a strong legal and financial foundation, ensuring ongoing compliance, optimizing tax strategies, managing financial operations, or guiding startups through fundraising and investor engagement, we deliver practical, results-driven solutions that support long-term success. Our startup and funding advisory services help entrepreneurs navigate critical growth stages, prepare for investment opportunities, and build scalable business models.</p>
 
                             <a href="about.php" class="theme-btn mt-20">Discover More<i
@@ -336,19 +336,9 @@
         </div>
         <div class="service-area2 bg py-90" id="services">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 mx-auto">
-                        <div class="site-heading text-center wow fadeInDown" data-wow-delay=".25s"
-                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInDown;">
-                            <span class="site-title-tagline light"><i>
-                                    <img src="assets/img/trend-img.webp" alt="tread" title="tread" class="img-fluid">
-                                </i> Our Services</span>
-                            <h2 class="site-title">What We Offer To Our <br><span>Clients</span></h2>
-                        </div>
-                        <!-- <div class="site-heading text-center wow fadeInDown" data-wow-delay=".25s">
-                            <h2 class="site-title">Explore our digital <span>services stack</span></h2>
-                        </div> -->
-                    </div>
+                <div class="site-heading text-center mb-40 wow fadeInDown" data-wow-delay=".25s">
+                    <span class="site-title-tagline light"><i><img src="assets/img/trend-img.webp" alt="" class="img-fluid" width="30" height="30"></i> Our Services</span>
+                    <h2 class="site-title mt-2">What We Offer To Our <span>Clients</span></h2>
                 </div>
                 <?php
                 // Order and labels match header mega menu (mm-tabs).
@@ -644,6 +634,7 @@
                                     <strong>Thank you!</strong> for contacting us.
                                 </div>
                                 <form action="homecontact_mail.php" id="contact" method="POST">
+                                    <?php include dirname(__DIR__, 2) . '/includes/components/caaft-form-page-url-field.php'; ?>
                                     <div class="row">
                                         <div class="col-lg-6">
                                         <div class="form-group"> 	<input name="firstname" type="text" id="firstname" class="hide-robot" style="display:none;"></div>

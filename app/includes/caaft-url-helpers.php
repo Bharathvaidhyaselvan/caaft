@@ -75,3 +75,30 @@ function caaft_normalize_hero_contact_href(string $href): string
 
     return $href;
 }
+
+/** Full URL of the current page (for form source tracking). */
+function caaft_current_page_url(): string
+{
+    $host = trim((string) ($_SERVER['HTTP_HOST'] ?? ''));
+    if ($host === '') {
+        return '';
+    }
+
+    $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+    $uri = (string) ($_SERVER['REQUEST_URI'] ?? '/');
+    if ($uri === '' || $uri[0] !== '/') {
+        $uri = '/' . ltrim($uri, '/');
+    }
+
+    return $scheme . '://' . $host . $uri;
+}
+
+/** Hidden input posted with forms so emails include the submission source page. */
+function caaft_form_page_url_hidden_input(): string
+{
+    $url = caaft_current_page_url();
+
+    return '<input type="hidden" name="page_url" value="'
+        . htmlspecialchars($url, ENT_QUOTES, 'UTF-8')
+        . '">';
+}

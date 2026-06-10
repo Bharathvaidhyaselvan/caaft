@@ -92,6 +92,7 @@ if ($caaft_enquiry_recaptcha && !\defined('CAAFT_ENQUIRY_RECAPTCHA_JS_PRINTED'))
                     </div>
                 </div>
                 <input type="hidden" name="service" value="<?php echo htmlspecialchars($caaft_enquiry_service, ENT_QUOTES, 'UTF-8'); ?>">
+                <?php include __DIR__ . '/caaft-form-page-url-field.php'; ?>
                 <?php if ($caaft_enquiry_recaptcha) : ?>
                     <div class="col-lg-12">
                         <div class="g-recaptcha" data-sitekey="<?php echo htmlspecialchars((string) $caaft_enquiry_recaptcha_sitekey, ENT_QUOTES, 'UTF-8'); ?>"></div>

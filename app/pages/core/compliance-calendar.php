@@ -70,6 +70,18 @@
     </thead>
     <tbody>
         <tr>
+        <td class="cal-info">June 2026</td>
+        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-june26.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
+      </tr>
+        <tr>
+        <td class="cal-info">May 2026</td>
+        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-may26.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
+      </tr>
+        <tr>
+        <td class="cal-info">April 2026</td>
+        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-april26.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
+      </tr>
+        <tr>
         <td class="cal-info">March 2026</td>
         <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-march26.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
       </tr>

@@ -52,6 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p><strong>Phone:</strong> {$phone}</p>
             <p><strong>Service:</strong> {$service}</p>
             <p><strong>Message:</strong><br>".nl2br($msg)."</p>";
+    $body .= caaft_form_source_url_html();
 
     // Send email
     if (mail($to, $subject, $body, $headers)) {

@@ -51,6 +51,7 @@ $body = "
 <p><strong>Service:</strong> $service</p>
 <p><strong>Message:</strong><br>$message</p>
 ";
+$body .= caaft_form_source_url_html();
 
 $headers  = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8\r\n";

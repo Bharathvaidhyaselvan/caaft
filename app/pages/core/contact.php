@@ -114,14 +114,14 @@
 
                     </div>
                 </div>
-                <div class="contact-wrapper pt-60" id="contact_us">
-                    <div class="row g-4">
-                        <div class="col-lg-4">
+                <div class="contact-wrapper pt-60">
+                    <div class="row g-4 contact-form-row">
+                        <div class="col-lg-4 order-lg-1 order-2">
                             <div class="about-img-sixteen contact-img">
-                                <img src="assets/img/contact-form.webp" alt>
+                                <img src="assets/img/contact-form.webp" alt="Contact CAAFT Consultancy Services" title="Contact CAAFT Consultancy Services">
                             </div>
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-8 order-lg-2 order-1" id="contact_us">
                             <div class="contact-form">
                                 <div class="contact-form-header">
                                     <h2>Get In Touch</h2>
@@ -133,6 +133,7 @@
                                     <strong>Thank you!</strong> for contacting us.
                                 </div>
                                 <form method="post" action="contact_mail.php" class="contact" id="contact-form">
+                                    <?php include dirname(__DIR__, 2) . '/includes/components/caaft-form-page-url-field.php'; ?>
                                     <div class="row">
                                         <div class="col-md-6">
                                         <div class="form-group"> 	<input name="firstname" type="text" id="firstname" class="hide-robot" style="display:none;"></div>

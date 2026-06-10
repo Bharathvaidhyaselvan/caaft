@@ -60,6 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $body .= "<p><strong>Message:</strong><br>" . nl2br($msg) . "</p>";
+    $body .= caaft_form_source_url_html();
 
     // Send the mail
     if (mail($to, $subject, $body, $headers)) {

@@ -36,6 +36,7 @@ $body     .= "<tr><td>Service</td><td> <strong>".$service."</strong></td></tr>";
 $body     .= "<tr><td>About </td><td> <strong>".$about."</strong></td></tr>";
 $body     .= "<tr><td>Title </td><td> <strong>".$title."</strong></td></tr>";
 $body     .= "<tr><td>Message </td><td> <strong>".$msg."</strong></td></tr>";
+$body     .= "<tr><td>Site URL </td><td> <strong>".htmlspecialchars(caaft_form_source_url(), ENT_QUOTES, 'UTF-8')."</strong></td></tr>";
 $body   .= "</table>";
 $body   .= "</body></html>";
 
