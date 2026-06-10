@@ -50,13 +50,14 @@ def format_deadline(raw: object, activity: str, form: str) -> str:
         return override
     if isinstance(raw, datetime):
         day = raw.day
-        suffix = "th"
         if day % 10 == 1 and day != 11:
             suffix = "st"
         elif day % 10 == 2 and day != 12:
             suffix = "nd"
         elif day % 10 == 3 and day != 13:
             suffix = "rd"
+        else:
+            suffix = "th"
         return f"{day}{suffix} {raw.strftime('%B')}"
     return str(raw).strip()
 
