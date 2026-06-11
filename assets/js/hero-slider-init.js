@@ -31,9 +31,24 @@
     slider.classList.add("hero-slider-fallback");
   }
 
+  function scheduleHeroSlider() {
+    var isMobile = window.matchMedia("(max-width: 767px)").matches;
+    if (isMobile) {
+      window.addEventListener(
+        "load",
+        function () {
+          window.setTimeout(initHeroSlider, 800);
+        },
+        { once: true },
+      );
+      return;
+    }
+    initHeroSlider();
+  }
+
   $(document).ready(function () {
     try {
-      initHeroSlider();
+      scheduleHeroSlider();
     } catch (err) {
       showHeroFallback();
     }

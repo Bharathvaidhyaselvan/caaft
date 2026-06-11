@@ -1,0 +1,50 @@
+/* Above-the-fold homepage styles — keeps layout stable while full style.css loads async. */
+:root {
+  --body-font: "Roboto", system-ui, sans-serif;
+  --heading-font: "Plus Jakarta Sans", system-ui, sans-serif;
+  --theme-color: #33b6ff;
+  --theme-color2: #3dcab1;
+  --body-text-color: #757f95;
+  --color-white: #fff;
+  --color-dark: #0a1d43;
+  --box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+  --box-shadow2: 0 0 15px rgba(0, 0, 0, 0.17);
+  --transition: all 0.5s ease-in-out;
+  --transition2: all 0.3s ease-in-out;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0;overflow-x:hidden}
+body{font-family:var(--body-font);font-size:16px;font-weight:400;color:var(--body-text-color);line-height:1.8;background:#fff}
+a{color:var(--color-dark);text-decoration:none}
+h1,h2,h3,h4,h5,h6{margin:0;font-weight:600;font-family:var(--heading-font);line-height:1.2;color:var(--color-dark)}
+p{margin:0}
+img{max-width:100%;height:auto}
+.home-3{--footer-bg:#101010}
+.theme-btn{font-size:16px;color:var(--color-white);padding:10px 24px;text-transform:capitalize;border-radius:10px;font-weight:500;border:none;background:var(--theme-color);box-shadow:var(--box-shadow);display:inline-flex;align-items:center}
+.theme-btn2{background:var(--theme-color2);color:var(--color-white)}
+.theme-btn i{margin-left:8px}
+.hero-single .hero-content .hero-title{color:var(--color-white);font-size:32px;font-weight:800;margin:20px 0;text-transform:capitalize}
+.hero-single .hero-content .hero-title span{color:var(--theme-color)}
+.hero-single .hero-content .hero-btn{display:flex;margin-top:35px;gap:1rem}
+.hs-3 .hero-single{background-color:#0a1020}
+.hs-3 .hero-img img{border-radius:50px}
+@media (max-width:991px){
+  .hero-single .hero-content .hero-title{font-size:22px}
+  .hs-3 .hero-img-wrap{margin-top:80px}
+  .hs-3 .hero-img{margin-left:0;padding-right:0}
+  div#sliders .order-2s{order:2}
+  div#sliders .order-1s{order:1}
+  body.home-3:not(.page-accounting-reporting) .main-navigation .navbar.navbar-expand-lg{background:#101010!important}
+}
+body.home-3 #caaft-home-hero-trust.caaft-home-trust-strip,body.home-3 .caaft-home-trust-strip{position:relative;z-index:4;margin-top:0;padding:12px 0 20px;background:transparent}
+body.home-3 .caaft-home-trust-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:-40px}
+body.home-3 .caaft-home-trust-card{display:flex;flex-direction:column;align-items:center;padding:18px 12px 16px;min-height:118px;text-align:center;background:#fff;border:1px solid #e8edf2;border-radius:14px;box-shadow:0 4px 18px rgba(20,35,55,.04)}
+body.home-3 .caaft-home-trust-icon{width:44px;height:44px;margin:0 0 12px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;background:var(--theme-color);color:#fff;font-size:1rem}
+body.home-3 .caaft-home-trust-value{margin:0 0 6px;font-family:var(--heading-font);font-size:1.38rem;font-weight:700;line-height:1.15;color:#1e1f30}
+body.home-3 .caaft-home-trust-label{margin:0;font-size:.92rem;font-weight:500;line-height:1.4;color:#6b7a90}
+@media (max-width:575px){
+  body.home-3 .caaft-home-trust-grid{grid-template-columns:1fr 1fr;gap:10px}
+}
+@media (max-width:991.98px){
+  .about-area,.feature-area,.service-area,.home3-stats-area,.choose-area,.home3-reviews-area{content-visibility:auto;contain-intrinsic-size:auto 480px}
+}

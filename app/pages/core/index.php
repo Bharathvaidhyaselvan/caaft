@@ -183,7 +183,10 @@
                         <div class="order-1s col-md-12 col-lg-6">
                             <div class="hero-img-wrap wow fadeInRight" data-wow-delay=".50s">
                                 <div class="hero-img">
-                                    <img src="assets/img/support-slider-banner.webp" class="img-fluid" alt="Business Consultancy Services" title="Business Consultancy Services" width="600" height="500" fetchpriority="high" decoding="async">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="assets/img/support-slider-banner-mobile.webp" width="480" height="560">
+                                        <img src="assets/img/support-slider-banner.webp" class="img-fluid" alt="Business Consultancy Services" title="Business Consultancy Services" width="600" height="500" fetchpriority="high">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +213,10 @@
                         <div class="order-1s col-md-12 col-lg-6">
                             <div class="hero-img-wrap wow fadeInRight" data-wow-delay=".50s">
                                 <div class="hero-img">
-                                    <img src="assets/img/provide-slider-banner.webp" class="img-fluid" alt="Business Consultancy Services" title="Business Consultancy Services" width="600" height="500" loading="lazy" decoding="async">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="assets/img/provide-slider-banner-mobile.webp" width="480" height="560">
+                                        <img src="assets/img/provide-slider-banner.webp" class="img-fluid" alt="Business Consultancy Services" title="Business Consultancy Services" width="600" height="500" loading="lazy">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -237,10 +243,10 @@
                     <div class="col-lg-6">
                         <div class="about-left wow fadeInLeft" data-wow-delay=".25s">
                             <div class="about-img">
-                                <img class="img-1" src="assets/img/tax-filling-about.webp" alt="Tax Filling" title="Tax Filling">
-                                <img class="img-2" src="assets/img/indian-currency.webp" alt="Indian Currency" title="Indian Currency">
+                                <img class="img-1" src="assets/img/tax-filling-about.webp" alt="Tax Filling" title="Tax Filling" width="600" height="600">
+                                <img class="img-2" src="assets/img/indian-currency.webp" alt="Indian Currency" title="Indian Currency" width="600" height="600">
                                 <div class="about-img-shape">
-                                    <img src="assets/img/shape/06.png" alt="Shape" title="Shape">
+                                    <img src="assets/img/shape/06.png" alt="Shape" title="Shape" width="485" height="568">
                                 </div>
                             </div>
                         </div>
@@ -251,7 +257,7 @@
 
                                 <span class="site-title-tagline "><i>
                                         <img src="assets/img/trend-img.webp" alt="tread" title="tread"
-                                            class="img-fluid">
+                                            class="img-fluid" width="80" height="75">
                                     </i> About CAAFT</span>
                                 <h1 class="about site-title">
                                     End-to-End Business Incorporation, Compliance, Taxation, Startup Funding, Accounting &amp; Advisory Solutions
@@ -277,7 +283,7 @@
 
                                 <div class="feature-icon">
                                     <img src="assets/img/quality-service.webp" alt="Quality Service"
-                                        title="Quality Service" class="img-fluid">
+                                        title="Quality Service" class="img-fluid" width="64" height="64">
                                 </div>
                                 <div class="feature-content">
                                     <span>Quality Service</span>
@@ -291,7 +297,7 @@
 
                                 <div class="feature-icon">
                                     <img src="assets/img/experts-team.webp" alt="Expert Team" title="Expert Team"
-                                        class="img-fluid">
+                                        class="img-fluid" width="64" height="64">
                                 </div>
                                 <div class="feature-content">
                                     <span>Expert Team</span>
@@ -306,7 +312,7 @@
 
                                 <div class="feature-icon">
                                     <img src="assets/img/trusted-support.webp" alt="Dedicated Support"
-                                        title="Dedicated Support" class="img-fluid">
+                                        title="Dedicated Support" class="img-fluid" width="64" height="64">
                                 </div>
                                 <div class="feature-content">
                                     <span> Dedicated Support</span>
@@ -320,7 +326,7 @@
 
                                 <div class="feature-icon">
                                     <img src="assets/img/affordable-services.webp" alt="Competitive Pricing"
-                                        title="Competitive Pricing" class="img-fluid">
+                                        title="Competitive Pricing" class="img-fluid" width="64" height="64">
                                 </div>
                                 <div class="feature-content">
                                     <span>Competitive Pricing</span>

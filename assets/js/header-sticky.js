@@ -39,7 +39,10 @@
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
-    var isSticky = scrollTop > 50;
+    var isHomeMobile =
+      document.body.classList.contains("home-3") &&
+      window.matchMedia("(max-width: 991.98px)").matches;
+    var isSticky = isHomeMobile || scrollTop > 50;
     $nav.toggleClass("fixed-top", isSticky);
     document.body.classList.toggle("navbar-is-sticky", isSticky);
   }

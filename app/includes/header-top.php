@@ -8,13 +8,16 @@
 <?php
 $styleVersion = caaft_asset_version('assets/css/style.css');
 $features = caaft_page_features();
+$fontDisplay = $features['home'] ? 'optional' : 'swap';
+$fontCss = 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=' . $fontDisplay;
 if ($features['home']) {
-    echo '<link rel="preload" as="image" href="' . htmlspecialchars(caaft_public_asset_url('assets/img/support-slider-banner.webp'), ENT_QUOTES, 'UTF-8') . '" fetchpriority="high">' . "\n";
+    echo '<link rel="preload" as="image" href="' . htmlspecialchars(caaft_public_asset_url('assets/img/support-slider-banner-mobile.webp'), ENT_QUOTES, 'UTF-8') . '" fetchpriority="high" media="(max-width: 767px)">' . "\n";
+    echo '<link rel="preload" as="image" href="' . htmlspecialchars(caaft_public_asset_url('assets/img/support-slider-banner.webp'), ENT_QUOTES, 'UTF-8') . '" fetchpriority="high" media="(min-width: 768px)">' . "\n";
 }
 ?>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"></noscript>
+<link rel="stylesheet" href="<?php echo htmlspecialchars($fontCss, ENT_QUOTES, 'UTF-8'); ?>" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="<?php echo htmlspecialchars($fontCss, ENT_QUOTES, 'UTF-8'); ?>"></noscript>
 
 <link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/critical-shell.css'), ENT_QUOTES, 'UTF-8'); ?>">
 <?php caaft_defer_stylesheet(caaft_public_asset_url('assets/css/bootstrap.min.css')); ?>
@@ -24,7 +27,12 @@ $faStylesheet = is_file(PROJECT_ROOT . '/assets/css/fa-subset.min.css')
     : 'assets/css/all-fontawesome.min.css';
 caaft_defer_stylesheet(caaft_public_asset_url($faStylesheet));
 ?>
+<?php if ($features['home']) : ?>
+<link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/home-critical.css'), ENT_QUOTES, 'UTF-8'); ?>">
+<?php caaft_defer_stylesheet(caaft_public_asset_url('assets/css/style.css')); ?>
+<?php else : ?>
 <link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/style.css'), ENT_QUOTES, 'UTF-8'); ?>">
+<?php endif; ?>
 
 <?php
 if ($features['carousel']) {
@@ -158,9 +166,24 @@ form.contact .g-recaptcha.caaft-is-invalid {
 }
 
 @media (max-width: 991.98px) {
-  /* style.css sets navbar position:absolute — overlaps hero; relative until sticky */
   .main-navigation {
-    min-height: 0;
+    min-height: var(--caaft-navbar-height, 72px);
+  }
+
+  /* Home mobile: fixed nav from first paint — avoids sticky scroll CLS */
+  body.home-3:not(.page-accounting-reporting) {
+    padding-top: var(--caaft-navbar-height, 72px);
+  }
+
+  body.home-3:not(.page-accounting-reporting) .main-navigation .navbar.navbar-expand-lg {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1030;
+    background: #101010 !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   }
 
   .main-navigation .navbar.navbar-expand-lg:not(.fixed-top) {
@@ -169,6 +192,11 @@ form.contact .g-recaptcha.caaft-is-invalid {
     left: auto !important;
     right: auto !important;
     width: 100%;
+  }
+
+  body.home-3:not(.page-accounting-reporting) .main-navigation .navbar.navbar-expand-lg:not(.fixed-top) {
+    position: fixed !important;
+    top: 0;
   }
 
   .main-navigation .navbar.navbar-expand-lg.fixed-top {
@@ -181,14 +209,9 @@ form.contact .g-recaptcha.caaft-is-invalid {
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   }
 
-  /* Homepage mobile: dark nav; service pages stay white (rule above) */
-  body.home-3:not(.page-accounting-reporting) .main-navigation .navbar.navbar-expand-lg {
-    background: #101010 !important;
-  }
-
   .navbar-brand img { max-width: 130px; max-height: 72px; }
   .navbar.fixed-top .navbar-brand.fixed_logo img { max-width: 140px; max-height: 44px; }
-  body.navbar-is-sticky { padding-top: var(--caaft-navbar-height, 64px); }
+  body.navbar-is-sticky:not(.home-3) { padding-top: var(--caaft-navbar-height, 64px); }
 
   .home-3 .hero-slider.hs-3 {
     margin-top: 0;

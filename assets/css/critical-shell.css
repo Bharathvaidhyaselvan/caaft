@@ -27,3 +27,7 @@ img,svg{display:block;max-width:100%;height:auto}
 .site-heading{margin-bottom:1.5rem}
 .wow{visibility:visible}
 .home-3 .hero-slider .hero-img-wrap.wow{visibility:visible!important}
+/* Prevent WOW/animate from hiding content on mobile (major CLS source). */
+@media (max-width:991.98px){
+  .wow,.wow.animated,[class*=fadeIn],[class*=fadeOut]{visibility:visible!important;animation:none!important;transform:none!important;opacity:1!important}
+}

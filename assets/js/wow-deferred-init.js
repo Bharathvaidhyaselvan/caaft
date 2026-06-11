@@ -9,6 +9,10 @@
   }
   window.__caaftWowDeferred = true;
 
+  if (window.matchMedia("(max-width: 991.98px)").matches) {
+    return;
+  }
+
   function initWow() {
     if (window.__caaftWowStarted) {
       return;
@@ -19,7 +23,7 @@
         boxClass: "wow",
         animateClass: "animated",
         offset: 0,
-        mobile: true,
+        mobile: false,
         live: false,
       }).init();
     } catch (err) {
