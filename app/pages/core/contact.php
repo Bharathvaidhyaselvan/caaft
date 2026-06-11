@@ -135,7 +135,7 @@
                                 <form method="post" action="/contact_mail.php" class="contact" id="contact-form">
                                     <?php include dirname(__DIR__, 2) . '/includes/components/caaft-form-page-url-field.php'; ?>
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                         <div class="form-group"> 	<input name="firstname" type="text" id="firstname" class="hide-robot" style="display:none;"></div>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="far fa-user-tie"></i></span>
@@ -143,7 +143,7 @@
                                                     placeholder="Your Name" required autocomplete="name" data-caaft-focus="name">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="far fa-envelope"></i></span>
                                                 <input type="email" id="email" class="form-control" name="email"
@@ -197,8 +197,8 @@
                                     </div>
                                     <div class="input-group textarea">
                                         <span class="input-group-text"><i class="far fa-comment-lines"></i></span>
-                                        <textarea name="msg" id="msg" cols="30" rows="5" class="form-control"
-                                            placeholder="Write Your Message"></textarea>
+                                        <textarea name="msg" id="msg" cols="30" rows="4" class="form-control"
+                                            placeholder="Your Message"></textarea>
                                     </div>
                                     <div class="col-lg-12">
                                        <div class="g-recaptcha" data-sitekey="6LcO3ukrAAAAADerciVZtVVgPZqbR-iH04HfKq-K"></div>

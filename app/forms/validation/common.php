@@ -172,6 +172,90 @@ if (!function_exists('caaft_form_source_url_html')) {
     }
 }
 
+if (!function_exists('caaft_form_enquiry_categories')) {
+    function caaft_form_enquiry_categories(): array
+    {
+        return [
+            'Business Setup & Registration',
+            'Compliance & Regulatory',
+            'Taxation',
+            'Accounting & Reporting',
+            'Advisory & CFO Services',
+            'Startup & Funding Advisory',
+            'Payroll',
+        ];
+    }
+}
+
+if (!function_exists('caaft_form_enquiry_category')) {
+    function caaft_form_enquiry_category(string $handlerDefault): string
+    {
+        $allowed = caaft_form_enquiry_categories();
+        $posted = trim((string) ($_POST['enquiry_category'] ?? ''));
+        if (in_array($posted, $allowed, true)) {
+            return $posted;
+        }
+
+        $service = strtolower((string) ($_POST['service'] ?? ''));
+        $pageUrl = strtolower(caaft_form_source_url());
+
+        if (preg_match('~/payroll-management|/payroll(?:/|$|[?#])~', $pageUrl)
+            || (str_contains($service, 'payroll') && !str_contains($service, 'registration'))) {
+            return 'Payroll';
+        }
+
+        if (preg_match(
+            '~/startup-funding|/seed-funding|/government-grant|/pitch-deck|/business-loan|/startup-india|/credit-monitoring|/detailed-project-report|/cma~',
+            $pageUrl,
+        ) || preg_match('/startup|funding|grant|pitch deck|seed|business loan|cma/i', $service)) {
+            return 'Startup & Funding Advisory';
+        }
+
+        if (preg_match('~/advisory-and-cfo|/feasibility-study|/business-valuation|/budgeting|/cfo-financial~', $pageUrl)
+            || preg_match('/cfo|feasibility|valuation|budgeting|financial assessment/i', $service)) {
+            return 'Advisory & CFO Services';
+        }
+
+        if (preg_match(
+            '~/compliance-and-regulatory|(?:^|/)[^/]*-compliance(?:/|$|[?#])|/roc-compliance|/winding-up|/din-kyc|/add-remove-director|/registered-office-change|/increase-authorised-share-capital|/epf-esi-registration-compliance~',
+            $pageUrl,
+        ) || preg_match(
+            '/annual compliance|roc (?:compliance|filing)|winding up|director kyc|din kyc|add.?remove director|registered office change|authorised share capital|epf.*esi/i',
+            $service,
+        )) {
+            return 'Compliance & Regulatory';
+        }
+
+        if (preg_match('~/professional-tax|/income-tax|/gst-|/tax-|/tds-return~', $pageUrl)
+            || preg_match('/income tax|gst |tds |tax (audit|planning)|professional tax/i', $service)) {
+            return 'Taxation';
+        }
+
+        if (preg_match('~/accounting-reporting|/bookkeeping|receivable|financial-analysis-mis|financial-statement~', $pageUrl)
+            || preg_match('/bookkeeping|accounting|receivable|payable|financial (analysis|statement)/i', $service)) {
+            return 'Accounting & Reporting';
+        }
+
+        return in_array($handlerDefault, $allowed, true) ? $handlerDefault : $handlerDefault;
+    }
+}
+
+if (!function_exists('caaft_form_enquiry_subject')) {
+    function caaft_form_enquiry_subject(string $category, string $name): string
+    {
+        return $category . ' Enquiry from ' . $name;
+    }
+}
+
+if (!function_exists('caaft_form_enquiry_heading_html')) {
+    function caaft_form_enquiry_heading_html(string $category): string
+    {
+        $safe = htmlspecialchars($category, ENT_QUOTES, 'UTF-8');
+
+        return '<h3>' . $safe . ' Enquiry</h3>';
+    }
+}
+
 if (!function_exists('caaft_try_send_mail')) {
     /**
      * Prefer Microsoft 365 SMTP when configured; otherwise fall back to Hostinger PHP mail().

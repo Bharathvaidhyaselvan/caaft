@@ -36,9 +36,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $to = caaft_form_recipient_email();
-    $subject = "Income Tax Services Inquiry from " . $name;
+    $category = caaft_form_enquiry_category('Taxation');
+    $subject = caaft_form_enquiry_subject($category, $name);
     $body = "
-    <h2>Income Tax Services Inquiry</h2>
+    " . caaft_form_enquiry_heading_html($category) . "
     <p><strong>Name:</strong> {$name}</p>
     <p><strong>Email:</strong> " . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . "</p>
     <p><strong>Phone:</strong> {$phone}</p>

@@ -653,10 +653,9 @@
                                         <div class="col-lg-6">
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="far fa-phone"></i></span>
-                                                    <input type="text" name="phone" id="phone" class="form-control" maxlength="10" pattern="[0-9]{10}" placeholder="Your Phone" required>
-<input type="text" name="website" style="display:none;">
-
+                                                <input type="text" name="phone" id="phone" class="form-control" maxlength="10" pattern="[0-9]{10}" placeholder="Your Phone" required>
                                             </div>
+                                            <input type="text" name="website" class="hide-robot" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true">
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="input-group">

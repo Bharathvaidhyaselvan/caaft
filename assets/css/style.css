@@ -3413,12 +3413,15 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
     border-radius: 30px
 }
 
-.quote-form .input-group .form-control {
-    padding: 15px 25px 15px 0;
+.quote-form .input-group .form-control,
+.quote-form .input-group .form-select {
+    padding: 15px 2.5rem 15px 0;
     border-radius: 50px;
     border: none;
     box-shadow: none;
-    background: var(--color-white)
+    background: var(--color-white);
+    line-height: 1.5;
+    min-height: calc(1.5em + 30px);
 }
 
 .quote-form .input-group .nice-select {
@@ -4109,8 +4112,8 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
 
 .contact-form {
     background: var(--theme-bg-light);
-    padding: 20px 25px;
-    border-radius: 15px
+    padding: 18px;
+    border-radius: 20px
 }
 
 .contact-form-header {
@@ -4125,7 +4128,7 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
 }
 
 .contact-form .input-group {
-    margin-bottom: 22px
+    margin-bottom: 10px
 }
 
 .contact-form .input-group:focus-within {
@@ -4137,12 +4140,15 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
     border-radius: 30px
 }
 
-.contact-form .input-group .form-control {
-    padding: 15px 25px 15px 0;
+.contact-form .input-group .form-control,
+.contact-form .input-group .form-select {
+    padding: 15px 2.5rem 15px 0;
     border-radius: 50px;
     border: none;
     box-shadow: none;
-    background: var(--color-white)
+    background: var(--color-white);
+    line-height: 1.5;
+    min-height: calc(1.5em + 30px);
 }
 
 .contact-form .input-group .nice-select {
@@ -7669,14 +7675,24 @@ li.sections_wights.resp-tab-item.hor_1.resp-tab-active h4.widget-title.title_sec
     }
 }
 
-.quote-form .input-group textarea {
+.quote-form .input-group textarea,
+.contact-form .input-group textarea {
     border-top-right-radius: 30px !important;
     border-bottom-right-radius: 30px !important;
 }
 
-.contact-form .input-group input#email {
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+.quote-form .input-group .form-select,
+.contact-form .input-group .form-select {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-position: right 1.25rem center;
+}
+
+.quote-form .input-group input[name="phone"],
+.contact-form .input-group input[name="phone"],
+form.contact .input-group input[name="phone"] {
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
 }
 
 .feature-content span {

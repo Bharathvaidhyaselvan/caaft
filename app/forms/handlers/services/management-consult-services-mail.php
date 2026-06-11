@@ -40,9 +40,10 @@ if (empty($name) || empty($email) || empty($phone) || empty($service) || empty($
 }
 
 $to = caaft_form_recipient_email();
-$subject = "Management Consult Services Enquiry from " . $name;
+$category = caaft_form_enquiry_category('Advisory & CFO Services');
+$subject = caaft_form_enquiry_subject($category, $name);
 $body = "
-<h3>Management Consult Services Enquiry</h3>
+" . caaft_form_enquiry_heading_html($category) . "
 <p><strong>Name:</strong> $name</p>
 <p><strong>Email:</strong> " . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . "</p>
 <p><strong>Phone:</strong> $phone</p>

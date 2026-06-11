@@ -6,6 +6,7 @@
  *   $caaft_enquiry_service (string) — value for hidden input "service" (required)
  *
  * Optional:
+ *   $caaft_enquiry_category (string) — hub label for email subject (e.g. Taxation)
  *   $caaft_enquiry_action (string) — form action, default /account-services-mail.php
  *   $caaft_enquiry_title (string) — heading, default "Enquire Now"
  *   $caaft_enquiry_recaptcha (bool) — show g-recaptcha, default true
@@ -21,6 +22,7 @@ if (!isset($caaft_enquiry_service) || $caaft_enquiry_service === '') {
     trigger_error('enquiry-hero-form.php: set $caaft_enquiry_service before including', E_USER_WARNING);
 }
 $caaft_enquiry_service = isset($caaft_enquiry_service) ? (string) $caaft_enquiry_service : '';
+$caaft_enquiry_category = isset($caaft_enquiry_category) ? trim((string) $caaft_enquiry_category) : '';
 $caaft_enquiry_action = $caaft_enquiry_action ?? '/account-services-mail.php';
 if (isset($caaft_service_cta_label) && trim((string) $caaft_service_cta_label) !== '') {
     $caaft_enquiry_title = trim((string) $caaft_service_cta_label);
@@ -80,10 +82,10 @@ if ($caaft_enquiry_recaptcha && !\defined('CAAFT_ENQUIRY_RECAPTCHA_JS_PRINTED'))
                     <div class="input-group">
                         <span class="input-group-text"><i class="far fa-phone" aria-hidden="true"></i></span>
                         <input type="text" name="phone" class="form-control" placeholder="Your Phone" required autocomplete="tel"<?php echo $caaft_enquiry_field_id_attr('-enquiry-phone'); ?>>
-                        <?php if ($caaft_enquiry_honeypot_website) : ?>
-                            <input type="text" name="website" class="hide-robot" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true"<?php echo $caaft_enquiry_field_id_attr('-enquiry-website'); ?>>
-                        <?php endif; ?>
                     </div>
+                    <?php if ($caaft_enquiry_honeypot_website) : ?>
+                        <input type="text" name="website" class="hide-robot" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true"<?php echo $caaft_enquiry_field_id_attr('-enquiry-website'); ?>>
+                    <?php endif; ?>
                 </div>
                 <div class="col-lg-12">
                     <div class="input-group textarea">
@@ -92,6 +94,17 @@ if ($caaft_enquiry_recaptcha && !\defined('CAAFT_ENQUIRY_RECAPTCHA_JS_PRINTED'))
                     </div>
                 </div>
                 <input type="hidden" name="service" value="<?php echo htmlspecialchars($caaft_enquiry_service, ENT_QUOTES, 'UTF-8'); ?>">
+                <?php
+                if ($caaft_enquiry_category !== '') {
+                    if (!function_exists('caaft_form_enquiry_categories')) {
+                        require_once dirname(__DIR__, 2) . '/forms/validation/common.php';
+                    }
+                    if (in_array($caaft_enquiry_category, caaft_form_enquiry_categories(), true)) {
+                        echo '<input type="hidden" name="enquiry_category" value="'
+                            . htmlspecialchars($caaft_enquiry_category, ENT_QUOTES, 'UTF-8') . '">';
+                    }
+                }
+                ?>
                 <?php include __DIR__ . '/caaft-form-page-url-field.php'; ?>
                 <?php if ($caaft_enquiry_recaptcha) : ?>
                     <div class="col-lg-12">
