@@ -226,9 +226,6 @@ if (!function_exists('caaft_smtp_send_mail')) {
         if ($cc !== []) {
             $message .= 'Cc: ' . implode(', ', $cc) . "\r\n";
         }
-        if ($replyHeader !== '') {
-            $message .= 'Reply-To: ' . $replyHeader . "\r\n";
-        }
         $message .= 'MIME-Version: 1.0' . "\r\n";
         $message .= 'Content-Type: text/html; charset=UTF-8' . "\r\n";
         $message .= 'Subject: ' . $encodedSubject . "\r\n";

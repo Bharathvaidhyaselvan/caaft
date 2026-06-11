@@ -145,10 +145,10 @@ if (!function_exists('caaft_try_send_mail')) {
 
         // Try without CC first — Hostinger often rejects Cc to external Gmail.
         $headerSets = [
-            "From: {$fromName} <{$fromEmail}>\r\nReply-To: {$fromEmail}\r\n{$contentHeaders}",
-            "From: {$fromEmail}\r\nReply-To: {$fromEmail}\r\n{$contentHeaders}",
-            "From: {$fromName} <{$fromEmail}>\r\nReply-To: {$fromEmail}\r\n{$ccHeader}{$contentHeaders}",
-            "From: {$fromEmail}\r\nReply-To: {$fromEmail}\r\n{$ccHeader}{$contentHeaders}",
+            "From: {$fromName} <{$fromEmail}>\r\n{$contentHeaders}",
+            "From: {$fromEmail}\r\n{$contentHeaders}",
+            "From: {$fromName} <{$fromEmail}>\r\n{$ccHeader}{$contentHeaders}",
+            "From: {$fromEmail}\r\n{$ccHeader}{$contentHeaders}",
         ];
 
         foreach ($headerSets as $headers) {
@@ -192,7 +192,7 @@ if (!function_exists('caaft_send_cc_copy_if_needed')) {
             $copySubject = '[CC] ' . $subject;
             $copyBody = '<p><em>CC copy of a form sent to '
                 . htmlspecialchars($primaryTo, ENT_QUOTES, 'UTF-8') . '.</em></p>' . $htmlBody;
-            $headers = "From: {$fromEmail}\r\nReply-To: {$fromEmail}\r\n{$contentHeaders}";
+            $headers = "From: {$fromEmail}\r\n{$contentHeaders}";
             @mail($ccEmail, $copySubject, $copyBody, $headers);
         }
     }
