@@ -46,5 +46,5 @@ body.home-3 .caaft-home-trust-label{margin:0;font-size:.92rem;font-weight:500;li
   body.home-3 .caaft-home-trust-grid{grid-template-columns:1fr 1fr;gap:10px}
 }
 @media (max-width:991.98px){
-  .about-area,.feature-area,.service-area,.home3-stats-area,.choose-area,.home3-reviews-area{content-visibility:auto;contain-intrinsic-size:auto 480px}
+  .about-area,.service-area,.home3-stats-area,.choose-area,.home3-reviews-area{content-visibility:auto;contain-intrinsic-size:auto 480px}
 }
