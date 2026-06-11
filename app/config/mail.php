@@ -2,24 +2,26 @@
 declare(strict_types=1);
 
 return [
-    /** All website form submissions (CTA, Contact us, enquiries) */
+    /**
+     * Lead capture only — notify your team. Customers do not receive email.
+     */
     'form_recipient' => 'services@caaft.com',
-    /** Authenticated sender for Microsoft 365 SMTP */
     'form_sender' => 'services@caaft.com',
     'form_sender_name' => 'CAAFT Website',
-    /** CC on every form submission */
     'form_cc' => [
         'bharathvaidhyaselvan@gmail.com',
     ],
 
     /**
-     * Microsoft 365 SMTP — set smtp_password in app/config/mail.local.php on the server.
-     * Admin: enable "Authenticated SMTP" for services@caaft.com.
-     * If MFA is on, use an app password from https://account.microsoft.com/security
+     * ZeptoMail SMTP (https://zeptomail.zoho.in/)
+     * Put the Send Mail token in app/config/mail.local.php on the server.
+     * From address must be verified in your ZeptoMail Mail Agent for caaft.com.
+     *
+     * @see https://www.zoho.com/zeptomail/help/smtp-home.html
      */
-    'smtp_host' => 'smtp.office365.com',
+    'smtp_host' => 'smtp.zeptomail.in',
     'smtp_port' => 587,
     'smtp_encryption' => 'tls',
-    'smtp_user' => 'services@caaft.com',
+    'smtp_user' => 'emailapikey',
     'smtp_password' => '',
 ];

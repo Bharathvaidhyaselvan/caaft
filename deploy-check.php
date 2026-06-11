@@ -88,16 +88,17 @@ if (is_file($appRoot . '/config/mail.local.php')) {
     }
 }
 $formRecipient = trim((string) ($mailConfig['form_recipient'] ?? 'services@caaft.com'));
+$smtpPassword = (string) ($mailConfig['smtp_password'] ?? '');
 $smtpReady = trim((string) ($mailConfig['smtp_host'] ?? '')) !== ''
     && trim((string) ($mailConfig['smtp_user'] ?? '')) !== ''
-    && (string) ($mailConfig['smtp_password'] ?? '') !== ''
-    && (string) ($mailConfig['smtp_password'] ?? '') !== 'PASTE_YOUR_MICROSOFT_PASSWORD_HERE';
+    && $smtpPassword !== ''
+    && !str_starts_with($smtpPassword, 'your-');
 
 echo "\nForm mail recipient: {$formRecipient}\n";
-echo 'Microsoft 365 SMTP: ' . ($smtpReady ? "configured\n" : "NOT configured — add password to app/config/mail.local.php\n");
+echo 'ZeptoMail SMTP: ' . ($smtpReady ? "configured\n" : "NOT configured — add Send Mail token to app/config/mail.local.php\n");
 if (!$smtpReady) {
-    echo "  Enable Authenticated SMTP for services@caaft.com in Microsoft 365 admin.\n";
-    echo "  Use an app password if the account has MFA.\n";
+    echo "  ZeptoMail → Mail Agent → SMTP → copy token into mail.local.php\n";
+    echo "  Verify services@caaft.com (caaft.com) as sender in ZeptoMail.\n";
 }
 
 if ($missing === [] && $missingTargets === []) {
