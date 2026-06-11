@@ -107,6 +107,71 @@ if (!function_exists('caaft_sanitize_mail_name')) {
     }
 }
 
+if (!function_exists('caaft_form_sanitize_source_url')) {
+    function caaft_form_sanitize_source_url(string $url): string
+    {
+        $url = trim($url);
+        if ($url === '') {
+            return '';
+        }
+
+        if (preg_match('~/(?:contact_mail|homecontact_mail|[a-z0-9-]+-mail)\.php(?:\?|$)~i', $url)) {
+            return '';
+        }
+
+        if (filter_var($url, FILTER_VALIDATE_URL)) {
+            return $url;
+        }
+
+        if ($url[0] === '/') {
+            $host = trim((string) ($_SERVER['HTTP_HOST'] ?? ''));
+            if ($host === '') {
+                return '';
+            }
+            $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+
+            return $scheme . '://' . $host . $url;
+        }
+
+        return '';
+    }
+}
+
+if (!function_exists('caaft_form_source_url')) {
+    function caaft_form_source_url(): string
+    {
+        $candidates = [
+            $_POST['page_url'] ?? '',
+            $_POST['site_url'] ?? '',
+            $_GET['page_url'] ?? '',
+            $_SERVER['HTTP_REFERER'] ?? '',
+        ];
+
+        foreach ($candidates as $candidate) {
+            $normalized = caaft_form_sanitize_source_url((string) $candidate);
+            if ($normalized !== '') {
+                return $normalized;
+            }
+        }
+
+        return 'Unknown';
+    }
+}
+
+if (!function_exists('caaft_form_source_url_html')) {
+    function caaft_form_source_url_html(): string
+    {
+        $url = caaft_form_source_url();
+        if ($url === 'Unknown') {
+            return '<p><strong>Page URL:</strong> Unknown</p>';
+        }
+
+        $safe = htmlspecialchars($url, ENT_QUOTES, 'UTF-8');
+
+        return '<p><strong>Page URL:</strong> <a href="' . $safe . '">' . $safe . '</a></p>';
+    }
+}
+
 if (!function_exists('caaft_try_send_mail')) {
     /**
      * Prefer Microsoft 365 SMTP when configured; otherwise fall back to Hostinger PHP mail().

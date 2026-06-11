@@ -48,6 +48,7 @@ $body = "
 <p><strong>Service:</strong> $service</p>
 <p><strong>Message:</strong><br>$message</p>
 ";
+$body .= caaft_form_source_url_html();
 
 if (caaft_try_send_mail($to, $subject, $body, $name, $email)) {
     echo "<script>alert('Your message has been sent successfully!'); window.location.href='thankyou.php';</script>";

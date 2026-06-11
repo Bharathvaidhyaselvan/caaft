@@ -43,6 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p><strong>Phone:</strong> {$phone}</p>
             <p><strong>Service:</strong> {$service}</p>
             <p><strong>Message:</strong><br>".nl2br($msg)."</p>";
+    $body .= caaft_form_source_url_html();
 
     if (caaft_try_send_mail($to, $subject, $body, $name, $email)) {
         echo "<script>alert('Thanks for reaching us you will get notified by our advisory team shortly'); window.location.href='thankyou.php' </script>";

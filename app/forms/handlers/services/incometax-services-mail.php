@@ -47,6 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <hr>
     <p><small>Submitted via website form.</small></p>
     ";
+    $body .= caaft_form_source_url_html();
 
     if (caaft_try_send_mail($to, $subject, $body, $name, $email)) {
         echo "<script>

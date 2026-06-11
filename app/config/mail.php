@@ -6,16 +6,14 @@ return [
      * Lead capture only — notify your team. Customers do not receive email.
      */
     'form_recipient' => 'services@caaft.com',
-    'form_sender' => 'services@caaft.com',
+    'form_sender' => 'enquiry@caaft.com',
     'form_sender_name' => 'CAAFT Website',
-    'form_cc' => [
-        'bharathvaidhyaselvan@gmail.com',
-    ],
+    'form_cc' => [],
 
     /**
      * ZeptoMail SMTP (https://zeptomail.zoho.in/)
      * Put the Send Mail token in app/config/mail.local.php on the server.
-     * From address must be verified in your ZeptoMail Mail Agent for caaft.com.
+     * From address (enquiry@caaft.com) must be verified in your ZeptoMail Mail Agent.
      *
      * @see https://www.zoho.com/zeptomail/help/smtp-home.html
      */

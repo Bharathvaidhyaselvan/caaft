@@ -47,6 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <p>-----------------------------<br>
     <small>Submitted via website form.</small></p>
     ";
+    $body .= caaft_form_source_url_html();
 
     if (caaft_try_send_mail($to, $subject, $body, $name, $email)) {
         echo "<script>alert('Thanks for reaching us. You will get notified by our advisory team shortly.'); window.location.href='thankyou.php';</script>";
