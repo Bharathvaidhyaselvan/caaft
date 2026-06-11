@@ -54,11 +54,7 @@ $caaft_enquiry_field_id_attr = function (string $suffix) use ($caaft_enquiry_inp
     return ' id="' . htmlspecialchars($caaft_enquiry_input_id_prefix . $suffix, ENT_QUOTES, 'UTF-8') . '"';
 };
 
-// Load Google's reCAPTCHA script once per request when the widget is shown.
-if ($caaft_enquiry_recaptcha && !\defined('CAAFT_ENQUIRY_RECAPTCHA_JS_PRINTED')) {
-    \define('CAAFT_ENQUIRY_RECAPTCHA_JS_PRINTED', true);
-    echo '<script src="https://www.google.com/recaptcha/api.js" async defer></script>' . "\n";
-}
+// reCAPTCHA is loaded on demand via assets/js/lazy-recaptcha.js when the widget nears the viewport.
 ?>
 <div class="quote-content" id="quote-content">
     <div class="quote-head"><span><?php echo htmlspecialchars($caaft_enquiry_title, ENT_QUOTES, 'UTF-8'); ?></span></div>

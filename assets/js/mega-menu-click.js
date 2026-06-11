@@ -88,6 +88,8 @@
 
 
 
+  var megaPosFrame = 0;
+
   function updateMegaMenuPosition() {
 
     if (!isDesktop()) return;
@@ -140,13 +142,29 @@
 
 
 
+  function scheduleMegaMenuPosition() {
+
+    if (megaPosFrame) return;
+
+    megaPosFrame = window.requestAnimationFrame(function () {
+
+      megaPosFrame = 0;
+
+      updateMegaMenuPosition();
+
+    });
+
+  }
+
+
+
   if (document.readyState === "loading") {
 
-    document.addEventListener("DOMContentLoaded", updateMegaMenuPosition);
+    document.addEventListener("DOMContentLoaded", scheduleMegaMenuPosition);
 
   } else {
 
-    updateMegaMenuPosition();
+    scheduleMegaMenuPosition();
 
   }
 
@@ -154,7 +172,7 @@
 
   window.addEventListener("resize", function () {
 
-    updateMegaMenuPosition();
+    scheduleMegaMenuPosition();
 
     if (!isDesktop()) {
 
@@ -164,7 +182,7 @@
 
   });
 
-  window.addEventListener("scroll", updateMegaMenuPosition, { passive: true });
+  window.addEventListener("scroll", scheduleMegaMenuPosition, { passive: true });
 
 
 
@@ -172,7 +190,7 @@
 
   if (navbar && typeof MutationObserver !== "undefined") {
 
-    new MutationObserver(updateMegaMenuPosition).observe(navbar, {
+    new MutationObserver(scheduleMegaMenuPosition).observe(navbar, {
 
       attributes: true,
 

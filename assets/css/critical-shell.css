@@ -1,0 +1,29 @@
+/* Minimal above-the-fold shell — keeps layout stable while Bootstrap loads async. */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Roboto,"Plus Jakarta Sans",system-ui,sans-serif;line-height:1.5;color:#212529;background:#fff}
+img,svg{display:block;max-width:100%;height:auto}
+.container,.container-fluid{width:100%;padding-right:calc(var(--bs-gutter-x, .75rem)*.5);padding-left:calc(var(--bs-gutter-x, .75rem)*.5);margin-right:auto;margin-left:auto}
+@media (min-width:1200px){.container{max-width:1140px}}
+@media (min-width:1400px){.container{max-width:1320px}}
+.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1*var(--bs-gutter-y));margin-right:calc(-.5*var(--bs-gutter-x));margin-left:calc(-.5*var(--bs-gutter-x))}
+.row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x)*.5);padding-left:calc(var(--bs-gutter-x)*.5);margin-top:var(--bs-gutter-y)}
+[class*="col-"]{flex:0 0 auto}
+.col-12{width:100%}
+@media (min-width:768px){.col-md-12{width:100%}.col-md-6{width:50%}}
+@media (min-width:992px){.col-lg-4{width:33.333333%}.col-lg-6{width:50%}.col-lg-8{width:66.666667%}.col-lg-12{width:100%}}
+.d-flex{display:flex!important}
+.align-items-center{align-items:center!important}
+.justify-content-between{justify-content:space-between!important}
+.text-center{text-align:center!important}
+.navbar{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.navbar-expand-lg{flex-wrap:nowrap;justify-content:flex-start}
+.main-navigation .navbar{width:100%}
+.hero-single,.hero-slider .hero-single{position:relative;display:flex;align-items:center}
+.hero-img img,.hero-img-wrap img{width:100%;height:auto;object-fit:contain}
+.img-fluid{max-width:100%;height:auto}
+.theme-btn,.theme-btn2{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
+.list-wrap,.list-unstyled{padding-left:0;list-style:none;margin:0}
+.site-heading{margin-bottom:1.5rem}
+.wow{visibility:visible}
+.home-3 .hero-slider .hero-img-wrap.wow{visibility:visible!important}

@@ -25,7 +25,6 @@
       <meta name="twitter:image" content="https://caaft.com/assets/img/contact-form.webp">
 
     <?php include "header-top.php"; ?>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body class="home-3">
@@ -134,6 +133,7 @@
                                 </div>
                                 <form method="post" action="/contact_mail.php" class="contact" id="contact-form">
                                     <?php include dirname(__DIR__, 2) . '/includes/components/caaft-form-page-url-field.php'; ?>
+                                    <input type="hidden" name="title" id="title" value="Contact">
                                     <div class="row">
                                         <div class="col-lg-6">
                                         <div class="form-group"> 	<input name="firstname" type="text" id="firstname" class="hide-robot" style="display:none;"></div>
@@ -148,7 +148,6 @@
                                                 <span class="input-group-text"><i class="far fa-envelope"></i></span>
                                                 <input type="email" id="email" class="form-control" name="email"
                                                     placeholder="Your Email" required>
-                                                <input type="hidden" name="title" id="title" value="Contact">
                                             </div>
                                         </div>
                                         <div class="col-lg-6">

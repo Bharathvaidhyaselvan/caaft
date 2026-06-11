@@ -346,7 +346,7 @@
                         'title' => 'Business Setup & Registration',
                         'href' => '/business-setup-and-registration',
                         'cta' => 'Explore Business Setup',
-                        'icon' => 'assets/img/caaft/discussion.png',
+                        'icon' => 'assets/img/caaft/discussion.webp',
                         'icon_alt' => 'Business Setup and Registration',
                         'thumb' => 'assets/img/busniess-accounting.webp',
                         'thumb_alt' => 'Business Setup and Registration',
@@ -396,7 +396,7 @@
                         'title' => 'Advisory & CFO Services',
                         'href' => '/advisory-and-cfo-services',
                         'cta' => 'Explore Advisory',
-                        'icon' => 'assets/img/caaft/consultant.png',
+                        'icon' => 'assets/img/caaft/consultant.webp',
                         'icon_alt' => 'Advisory and CFO Services',
                         'thumb' => 'assets/img/mangement-consulting.webp',
                         'thumb_alt' => 'Advisory and CFO Services',
@@ -406,7 +406,7 @@
                         'title' => 'Startup & Funding Advisory',
                         'href' => '/startup-funding-advisory-services',
                         'cta' => 'Explore Startup Advisory',
-                        'icon' => 'assets/img/caaft/consultant.png',
+                        'icon' => 'assets/img/caaft/consultant.webp',
                         'icon_alt' => 'Startup and Funding Advisory Services',
                         'thumb' => 'assets/img/services-images/Startup%20%26%20Funding%20Advisory/startup2.webp',
                         'thumb_alt' => 'Startup and Funding Advisory Services',
@@ -423,14 +423,16 @@
                                     <div class="icon">
                                         <i><img src="<?php echo htmlspecialchars($caaft_home_service['icon'], ENT_QUOTES, 'UTF-8'); ?>"
                                                 alt="<?php echo htmlspecialchars($caaft_home_service['icon_alt'], ENT_QUOTES, 'UTF-8'); ?>"
-                                                title="<?php echo htmlspecialchars($caaft_home_service['title'], ENT_QUOTES, 'UTF-8'); ?>"></i>
+                                                title="<?php echo htmlspecialchars($caaft_home_service['title'], ENT_QUOTES, 'UTF-8'); ?>"
+                                                width="35" height="35" decoding="async" loading="lazy"></i>
                                     </div>
                                     <h3 class="title"><?php echo htmlspecialchars($caaft_home_service['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
                                 </div>
                                 <div class="services-thumb">
                                     <img src="<?php echo htmlspecialchars($caaft_home_service['thumb'], ENT_QUOTES, 'UTF-8'); ?>" class="img-fluid"
                                         alt="<?php echo htmlspecialchars($caaft_home_service['thumb_alt'], ENT_QUOTES, 'UTF-8'); ?>"
-                                        title="<?php echo htmlspecialchars($caaft_home_service['title'], ENT_QUOTES, 'UTF-8'); ?>">
+                                        title="<?php echo htmlspecialchars($caaft_home_service['title'], ENT_QUOTES, 'UTF-8'); ?>"
+                                        width="366" height="244" sizes="(max-width: 767px) 100vw, 366px" decoding="async" loading="lazy">
                                     <a href="<?php echo htmlspecialchars($caaft_home_service['href'], ENT_QUOTES, 'UTF-8'); ?>" class="btn transparent-btn"><?php echo htmlspecialchars($caaft_home_service['cta'], ENT_QUOTES, 'UTF-8'); ?></a>
                                 </div>
                                 <ul class="list-wrap">
@@ -858,7 +860,6 @@
 
 
     <?php include "footer-bottom.php"; ?>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var submenu = document.getElementById('submenu');

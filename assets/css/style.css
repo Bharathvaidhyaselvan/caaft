@@ -7689,8 +7689,11 @@ li.sections_wights.resp-tab-item.hor_1.resp-tab-active h4.widget-title.title_sec
 }
 
 .quote-form .input-group input[name="phone"],
+.quote-form .input-group input[name="email"],
 .contact-form .input-group input[name="phone"],
-form.contact .input-group input[name="phone"] {
+.contact-form .input-group input[name="email"],
+form.contact .input-group input[name="phone"],
+form.contact .input-group input[name="email"] {
     border-top-right-radius: 50px !important;
     border-bottom-right-radius: 50px !important;
 }
@@ -11584,7 +11587,7 @@ body.home-3.page-accounting-reporting li {
 
 /* Reusable Why Choose CAAFT component */
 .why-choose-caaft {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/caaft-why-choose-us.png");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/caaft-why-choose-us.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12556,7 +12559,7 @@ body.home-3 .home3-plans-grid {
 
 body.home-3 .home3-stats-area.home3-stats-area--hero-bg {
     position: relative;
-    background: url('../img/caaft-why-choose-us.png') center / cover no-repeat;
+    background: url('../img/caaft-why-choose-us.webp') center / cover no-repeat;
     color: #fff;
     z-index: 1;
 }

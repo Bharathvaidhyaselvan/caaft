@@ -16,8 +16,14 @@ if ($features['home']) {
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"></noscript>
 
-<link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/bootstrap.min.css'), ENT_QUOTES, 'UTF-8'); ?>">
-<link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/all-fontawesome.min.css'), ENT_QUOTES, 'UTF-8'); ?>">
+<link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/critical-shell.css'), ENT_QUOTES, 'UTF-8'); ?>">
+<?php caaft_defer_stylesheet(caaft_public_asset_url('assets/css/bootstrap.min.css')); ?>
+<?php
+$faStylesheet = is_file(PROJECT_ROOT . '/assets/css/fa-subset.min.css')
+    ? 'assets/css/fa-subset.min.css'
+    : 'assets/css/all-fontawesome.min.css';
+caaft_defer_stylesheet(caaft_public_asset_url($faStylesheet));
+?>
 <link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/style.css'), ENT_QUOTES, 'UTF-8'); ?>">
 
 <?php

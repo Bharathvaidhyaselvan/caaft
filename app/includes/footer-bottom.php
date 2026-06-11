@@ -15,6 +15,7 @@ $asset = static function (string $path): string {
 <script src="<?php echo $asset('assets/js/jquery.appear.min.js'); ?>" defer></script>
 <script src="<?php echo $asset('assets/js/jquery.easing.min.js'); ?>" defer></script>
 <script src="<?php echo $asset('assets/js/wow.min.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/wow-deferred-init.js'); ?>" defer></script>
 <script src="<?php echo $asset('assets/js/counter-up.js'); ?>" defer></script>
 <?php endif; ?>
 
@@ -35,8 +36,10 @@ $asset = static function (string $path): string {
 <?php endif; ?>
 
 <script src="<?php echo $asset('assets/js/main.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/accessibility-enhancements.js'); ?>" defer></script>
 <script src="<?php echo $asset('assets/js/form-hash-focus.js'); ?>" defer></script>
 <script src="<?php echo $asset('assets/js/form-page-url.js'); ?>" defer></script>
+<script src="<?php echo $asset('assets/js/lazy-recaptcha.js'); ?>" defer></script>
 <script src="<?php echo $asset('assets/js/form-inline-validation.js'); ?>" defer></script>
 <?php if ($features['carousel']) : ?>
 <script src="<?php echo $asset('assets/js/hero-slider-init.js'); ?>" defer></script>

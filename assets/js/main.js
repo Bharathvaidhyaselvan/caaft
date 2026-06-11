@@ -84,7 +84,7 @@
           n(a(".owl-item").eq(o.item.index).find("[data-animation]"));
         },
       }),
-    window.WOW && new WOW().init(),
+    /* WOW initialized in assets/js/wow-deferred-init.js */
     a.fn.owlCarousel &&
       a(".service-slider").length &&
       a(".service-slider").owlCarousel({
@@ -140,6 +140,12 @@
           "<i class='far fa-arrow-right'></i>",
         ],
         responsive: { 0: { items: 1 }, 768: { items: 2 }, 1200: { items: 3 } },
+        onInitialized: function (e) {
+          a(e.target).trigger("initialized.owl.carousel");
+        },
+        onRefreshed: function (e) {
+          a(e.target).trigger("refreshed.owl.carousel");
+        },
       }),
     a.fn.owlCarousel &&
       a(".partner-slider").length &&

@@ -294,7 +294,6 @@ $caaft_enquiry_input_id_prefix = 'ac';
     </main>
     <?php include "footer.php"; ?>
     <a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <?php include "footer-bottom.php"; ?>
+<?php include "footer-bottom.php"; ?>
 </body>
 </html>

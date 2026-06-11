@@ -52,7 +52,7 @@
                             <div class="footer-widget-box">
                                 <h4 class="footer-widget-title">Get In Touch</h4>
                                 <ul class="footer-contact">
-                                    <li><a href="https://www.google.com/maps/place/CAAFT+Consultancy+Services/@13.0631755,80.2479318,897m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6f2acdad0067548f:0x4db0a8a19ea99861!8m2!3d13.0631755!4d80.2479318!16s%2Fg%2F11x256gywz?entry=ttu&g_ep=EgoyMDI1MDIwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                    <li><a href="https://www.google.com/maps/place/CAAFT+Consultancy+Services/@13.0631755,80.2479318,897m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6f2acdad0067548f:0x4db0a8a19ea99861!8m2!3d13.0631755!4d80.2479318!16s%2Fg%2F11x256gywz?entry=ttu&g_ep=EgoyMDI1MDIwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="View CAAFT office location on Google Maps">
                                     <div class="icon">
                                             <i class="far fa-location-dot text-white"></i>
                                         </div>

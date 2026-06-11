@@ -37,7 +37,7 @@ $why_choose_caaft_section_class = isset($why_choose_caaft_section_class) && $why
     : 'why-choose-caaft py-90';
 $why_choose_caaft_section_style = isset($why_choose_caaft_section_style) && $why_choose_caaft_section_style !== ''
     ? (string) $why_choose_caaft_section_style
-    : 'background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/caaft-why-choose-us.png") !important;';
+    : 'background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/caaft-why-choose-us.webp") !important;';
 $why_choose_caaft_sticky_main = isset($why_choose_caaft_sticky_main) ? (bool) $why_choose_caaft_sticky_main : true;
 $why_choose_caaft_desc_id = $why_choose_caaft_heading_id . '-desc';
 ?>
