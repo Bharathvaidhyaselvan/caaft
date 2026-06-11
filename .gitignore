@@ -3,7 +3,11 @@
 .env.*
 !.env.example
 app/config/mail.local.php
-storage/mail-outbox/*.html
+
+# Local dev (not deployed)
+tools/
+storage/
+deploy-check.php
 
 # OS
 Thumbs.db
