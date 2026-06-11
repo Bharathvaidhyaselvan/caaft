@@ -499,9 +499,8 @@
                             <div class="site-heading text-center wow fadeInDown" data-wow-delay=".25s">
                                 <span class="site-title-tagline light"><i>
                                         <img src="assets/img/trend-img.webp" alt="CAAFT works" title="CAAFT works"
-                                            class="img-fluid">
-                                    </i> Our
-                                    Approach</span>
+                                            class="img-fluid" width="30" height="30">
+                                    </i> Our Approach</span>
                                 <h3 class="site-title">How CAAFT works</h3>
                             </div>
                         </div>
