@@ -1178,11 +1178,13 @@ a.footer-logo {
     .nav-right .call-wrap .icon {
         width: 45px;
         height: 45px;
-        line-height: 46px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
         border-radius: 50px;
         background: var(--theme-color);
         color: var(--color-white);
-        text-align: center;
         font-size: 18px;
         margin-top: 5px
     }
@@ -2365,11 +2367,13 @@ a.footer-logo {
 .service-icon {
     width: 90px;
     height: 90px;
-    line-height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     background: var(--theme-color);
     font-size: 50px;
     color: var(--theme-color);
-    text-align: center;
     border-radius: 50%;
     position: relative
 }
@@ -2392,7 +2396,10 @@ a.footer-logo {
 }
 
 .service-icon img {
-    width: 55px;
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    display: block;
     filter: brightness(0) invert(1)
 }
 
@@ -2502,10 +2509,12 @@ a.footer-logo {
     position: absolute;
     width: 55px;
     height: 55px;
-    line-height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     color: var(--theme-color) !important;
     background: var(--color-white);
-    text-align: center;
     border-radius: 50px;
     left: 50%;
     top: 50%;
@@ -2560,11 +2569,13 @@ a.footer-logo {
 .case-btn a {
     width: 50px;
     height: 50px;
-    line-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     background: var(--theme-color);
     color: var(--color-white);
     border-radius: 50%;
-    text-align: center;
     font-size: 18px
 }
 
@@ -2765,16 +2776,21 @@ a.footer-logo {
 .counter-box .icon {
     width: 80px;
     height: 80px;
-    line-height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     font-size: 35px;
     border-radius: 50px;
-    text-align: center;
     color: var(--color-white);
     background: var(--color-white)
 }
 
 .counter-box .icon img {
-    width: 45px
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    display: block
 }
 
 .counter-box .info {
@@ -3025,9 +3041,11 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
     position: absolute;
     height: 85px;
     width: 85px;
-    line-height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     padding-left: 2px;
-    text-align: center;
     font-size: 25px;
     border-radius: 50%;
     top: 0;
@@ -3185,19 +3203,27 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
 .process-item .icon {
     height: 130px;
     width: 130px;
-    line-height: 80px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     position: relative;
     border-radius: 50%;
     font-size: 40px;
     border: 2px dashed var(--color-white);
     padding: 8px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    box-sizing: border-box
 }
 
 .process-item .icon img {
-    width: 120px;
-    border-radius: 50%
+    width: 100%;
+    height: 100%;
+    max-width: 112px;
+    max-height: 112px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block
 }
 
 .process-item span {
@@ -3361,11 +3387,13 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
     top: 0;
     width: 40px;
     height: 40px;
-    line-height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     background: var(--theme-color);
     color: var(--color-white);
     border-radius: 50px;
-    text-align: center;
     font-size: 30px
 }
 
@@ -4247,8 +4275,10 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
     color: var(--color-white);
     width: 70px;
     height: 70px;
-    line-height: 70px;
-    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     border-radius: 50px;
     background: var(--theme-color)
 }
@@ -5267,10 +5297,22 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
 .footer-contact .icon {
     width: 35px;
     height: 35px;
-    line-height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 1;
     background: var(--theme-color);
-    border-radius: 50px;
-    text-align: center
+    border-radius: 50px
+}
+
+.footer-contact .icon i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    line-height: 1
 }
 
 .footer-contact .content {
@@ -6196,11 +6238,20 @@ nav.navbar.navbar-expand-lg .fixed_logo {
     }
 
     .service-icon {
-        width: 40px;
-        height: 40px;
-        line-height: 33px;
+        width: 52px;
+        height: 52px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
         font-size: 13px;
         padding: 4px;
+    }
+
+    .service-icon img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
     }
 
     .service-area2 .service-info p.service-text {
@@ -6310,16 +6361,27 @@ h2.about.site-title {
     background: #33b6ff;
     font-size: 30px;
     color: #33b6ff;
-    line-height: 0;
+    line-height: 1;
     margin-right: 15px;
     transition: .3s ease-in;
+    flex-shrink: 0;
+}
+
+.services-content .content-top .icon i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    line-height: 1;
 }
 
 .services-content .content-top .icon i img {
     width: 35px;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
+    height: 35px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
     filter: brightness(8.5);
 }
 
@@ -12938,6 +13000,12 @@ body.home-3 .home3-plan-watermark {
 body.home-3 .home3-plan-features .home3-plan-feature-icon {
     flex-shrink: 0;
     margin-top: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1;
 }
 
 body.home-3 .home3-plan-features .home3-plan-feature-icon--yes {
@@ -13078,13 +13146,21 @@ body.home-3 .home3-stats-highlight-icon {
     width: 44px;
     height: 44px;
     border-radius: 12px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    line-height: 1;
     background: rgba(51, 182, 255, 0.25);
     color: #7dd3fc;
     font-size: 1.1rem;
     margin-bottom: 12px;
+}
+
+body.home-3 .home3-stats-highlight-icon i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }
 
 body.home-3 .home3-stats-highlight h3 {
@@ -13284,4 +13360,27 @@ body.home-3 .copyright .brevia-credit {
 .caaft-annual-compliance-calendar .calendar-chip--deadline-red {
     background: #f9e7e7;
     color: #b55f5f;
+}
+
+/* Site-wide: center icons inside circular / badge containers */
+[class*="-icon"] i[class*="fa-"],
+.site-title-tagline i,
+.caaft-home-trust-icon i,
+.caaft-ar-trust-icon i,
+.caaft-ar-offer-icon i,
+.caaft-benefit-icon i,
+.caaft-ar-git-card-icon i,
+.mis-why-core-icon i,
+.bk-facts-stat--with-icon > i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.whys_gst_chooses .choose-item-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }
