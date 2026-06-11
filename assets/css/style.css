@@ -3068,9 +3068,12 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
     position: relative;
     width: 60px;
     height: 60px;
-    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 1;
     background: var(--theme-color);
-    text-align: center;
     border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
 }
 
@@ -3079,11 +3082,17 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
     position: absolute;
     inset: -5px;
     border: 2px solid var(--theme-color);
-    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    pointer-events: none
 }
 
 .choose-item-icon img {
-    width: 38px;
+    position: relative;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
     filter: brightness(0) invert(1)
 }
 
@@ -7484,14 +7493,23 @@ a.slide_btn {
     }
 
     .choose-item-icon {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
+        width: 52px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
     }
 
     .choose-item-icon img {
-        width: 25px;
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    .choose-item {
+        gap: 14px;
+        margin: 22px 0;
     }
 
     .choose-area {
