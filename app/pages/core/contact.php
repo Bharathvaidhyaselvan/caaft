@@ -124,8 +124,7 @@
                             <div class="contact-form">
                                 <div class="contact-form-header">
                                     <h2>Get In Touch</h2>
-                                    <p>Start your journey to seamless Accounting & Reporting, Taxation, Business
-                                        Incorporation, Consultancy and Compliance Services by reaching out to us. </p>
+                                    <p>Start your journey toward seamless Business Incorporation, Startup Funding, Compliance, Accounting &amp; Reporting, Taxation, and Consultancy Services by connecting with our experts today.</p>
                                 </div>
                                 <div class="alert alert-success automated_msg" style="display: none; font-size: 15px;"
                                     role="alert">
