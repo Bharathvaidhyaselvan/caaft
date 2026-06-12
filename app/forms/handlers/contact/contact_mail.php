@@ -52,9 +52,11 @@ if ($about_other !== '') {
 $body .= '<p><strong>Message:</strong><br>' . nl2br($msg) . '</p>';
 $body .= caaft_form_source_url_html();
 
-if (caaft_try_send_mail($to, $subject, $body, $name, $email)) {
-    echo "<script>alert('Thanks for reaching us you will get notified by our advisory team shortly'); window.location.href='thankyou.php' </script>";
-    exit;
-}
-
-echo 'Something went wrong. Please try again later.';
+caaft_form_complete_submission(
+    caaft_form_build_lead_data('contact', ''),
+    $to,
+    $subject,
+    $body,
+    $name,
+    $email,
+);

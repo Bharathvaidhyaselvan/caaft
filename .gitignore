@@ -3,6 +3,8 @@
 .env.*
 !.env.example
 app/config/mail.local.php
+app/config/zoho.local.php
+storage/zoho-token.json
 
 # Local dev (not deployed)
 tools/

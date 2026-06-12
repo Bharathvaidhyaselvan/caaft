@@ -346,3 +346,97 @@ if (!function_exists('caaft_send_cc_copy_if_needed')) {
         }
     }
 }
+
+if (!function_exists('caaft_form_build_lead_data')) {
+    /**
+     * @return array<string, string>
+     */
+    function caaft_form_build_lead_data(string $formType = 'enquiry', string $enquiryCategory = ''): array
+    {
+        $about = trim((string) ($_POST['about'] ?? ''));
+        $aboutOther = trim((string) ($_POST['about_other'] ?? ''));
+        if ($about === 'Others' && $aboutOther !== '') {
+            $about = $aboutOther;
+        }
+
+        return [
+            'name' => trim((string) ($_POST['name'] ?? '')),
+            'email' => caaft_sanitize_mail_address((string) ($_POST['email'] ?? '')),
+            'phone' => trim((string) ($_POST['phone'] ?? '')),
+            'service' => trim((string) ($_POST['service'] ?? '')),
+            'message' => trim((string) ($_POST['message'] ?? $_POST['msg'] ?? '')),
+            'about' => $about,
+            'about_other' => $aboutOther,
+            'title' => trim((string) ($_POST['title'] ?? '')),
+            'page_url' => caaft_form_source_url(),
+            'form_type' => $formType,
+            'enquiry_category' => $enquiryCategory !== ''
+                ? $enquiryCategory
+                : trim((string) ($_POST['enquiry_category'] ?? '')),
+        ];
+    }
+}
+
+if (!function_exists('caaft_form_redirect_thankyou')) {
+    function caaft_form_redirect_thankyou(
+        ?string $message = null,
+        bool $useHistoryBackOnFailure = false,
+    ): void {
+        $defaultMessage = 'Thanks for reaching us. You will get notified by our advisory team shortly.';
+        $alertMessage = json_encode(
+            $message ?? $defaultMessage,
+            JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE,
+        );
+
+        if ($useHistoryBackOnFailure) {
+            echo "<script>alert({$alertMessage}); window.location.href='thankyou.php';</script>";
+        } else {
+            echo "<script>alert({$alertMessage}); window.location.href='thankyou.php';</script>";
+        }
+        exit;
+    }
+}
+
+if (!function_exists('caaft_form_complete_submission')) {
+    /**
+     * Push lead to Zoho CRM, send notification email, then redirect to thank-you page.
+     *
+     * @param array<string, string> $leadData
+     */
+    function caaft_form_complete_submission(
+        array $leadData,
+        string $to,
+        string $subject,
+        string $body,
+        string $fromName,
+        string $fromEmail,
+        ?string $successMessage = null,
+        bool $useHistoryBackOnFailure = false,
+    ): void {
+        if (!function_exists('caaft_zoho_push_lead')) {
+            require_once (defined('APP_ROOT') ? APP_ROOT : dirname(__DIR__, 2)) . '/includes/caaft-zoho-crm.php';
+        }
+
+        $zohoConfigured = caaft_zoho_is_configured();
+        $zohoOk = $zohoConfigured ? caaft_zoho_push_lead($leadData) : false;
+        $mailOk = caaft_try_send_mail($to, $subject, $body, $fromName, $fromEmail);
+
+        $success = $zohoConfigured ? ($zohoOk || $mailOk) : $mailOk;
+
+        if ($success) {
+            caaft_form_redirect_thankyou($successMessage, $useHistoryBackOnFailure);
+        }
+
+        if ($useHistoryBackOnFailure) {
+            $errorMessage = json_encode(
+                'There was an error sending your message. Please try again later.',
+                JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE,
+            );
+            echo "<script>alert({$errorMessage}); history.back();</script>";
+            exit;
+        }
+
+        echo 'Something went wrong. Please try again later.';
+        exit;
+    }
+}

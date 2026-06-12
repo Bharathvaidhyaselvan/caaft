@@ -50,15 +50,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ";
     $body .= caaft_form_source_url_html();
 
-    if (caaft_try_send_mail($to, $subject, $body, $name, $email)) {
-        echo "<script>
-                alert('Thanks for reaching us. Our team will contact you shortly.');
-                window.location.href='thankyou.php';
-              </script>";
-        exit;
-    } else {
-        echo "Something went wrong. Please try again.";
-    }
+    caaft_form_complete_submission(
+        caaft_form_build_lead_data('enquiry', $category),
+        $to,
+        $subject,
+        $body,
+        $name,
+        $email,
+        'Thanks for reaching us. Our team will contact you shortly.',
+    );
 
 } else {
     echo "Invalid request.";

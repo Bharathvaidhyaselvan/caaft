@@ -52,9 +52,14 @@ $body = "
 ";
 $body .= caaft_form_source_url_html();
 
-if (caaft_try_send_mail($to, $subject, $body, $name, $email)) {
-    echo "<script>alert('Your message has been sent successfully!'); window.location.href='thankyou.php';</script>";
-} else {
-    echo "<script>alert('There was an error sending your message. Please try again later.'); history.back();</script>";
-}
+caaft_form_complete_submission(
+    caaft_form_build_lead_data('enquiry', $category),
+    $to,
+    $subject,
+    $body,
+    $name,
+    $email,
+    'Your message has been sent successfully!',
+    true,
+);
 ?>
