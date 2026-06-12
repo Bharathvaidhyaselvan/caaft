@@ -23,12 +23,4 @@ return [
 
     /** Zoho Leads API name for the form "service" field (Setup → Modules → Leads → Fields) */
     'service_field' => 'Required_Service',
-
-    /**
-     * Only for Server-based OAuth (optional). Self Client setup does not need this.
-     * @see https://caaft.com/zoho-oauth.php
-     */
-    'redirect_uri' => 'https://caaft.com/zoho-oauth.php',
-
-    'oauth_scopes' => 'ZohoCRM.modules.leads.CREATE,ZohoCRM.modules.leads.UPDATE,ZohoCRM.settings.ALL',
 ];

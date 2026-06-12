@@ -112,6 +112,5 @@ return [
     'insights/simplifying-financial-reporting-and-audits-for-growing-businesses' => 'pages/blog/simplifying-financial-reporting-and-audits-for-growing-businesses.php',
     'insights/how-caaft-consultancy-services-simplifies-income-tax-returns-for-salaried-professionals-in-chennai' => 'pages/blog/how-caaft-consultancy-services-simplifies-income-tax-returns-for-salaried-professionals-in-chennai.php',
     'insights/how-caaft-consultancy-services-supports-small-businesses-with-gst-compliance-in-chennai' => 'pages/blog/how-caaft-consultancy-services-supports-small-businesses-with-gst-compliance-in-chennai.php',
-    'duplicate-contact' => 'pages/utility/duplicate-contact.php',
     'default' => 'pages/utility/default.php',
 ];

@@ -8,8 +8,11 @@ storage/zoho-token.json
 
 # Local dev (not deployed)
 tools/
-storage/
 deploy-check.php
+
+# Runtime cache (folder kept via storage/.gitkeep)
+storage/*
+!storage/.gitkeep
 
 # OS
 Thumbs.db
