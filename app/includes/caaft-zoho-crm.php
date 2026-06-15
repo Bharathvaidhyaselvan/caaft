@@ -176,7 +176,70 @@ if (!function_exists('caaft_zoho_http_json')) {
     }
 }
 
-if (!function_exists('caaft_zoho_read_token_cache')) {
+if (!function_exists('caaft_zoho_log')) {
+    function caaft_zoho_log(string $message): void
+    {
+        $path = caaft_zoho_storage_dir() . '/zoho.log';
+        @file_put_contents($path, gmdate('c') . ' ' . $message . "\n", FILE_APPEND | LOCK_EX);
+    }
+}
+
+if (!function_exists('caaft_zoho_response_error')) {
+    /**
+     * @param array<string, mixed>|null $response
+     */
+    function caaft_zoho_response_error(?array $response): string
+    {
+        if (!is_array($response)) {
+            return 'empty response';
+        }
+
+        if (!empty($response['message'])) {
+            return (string) $response['message'];
+        }
+
+        $row = $response['data'][0] ?? null;
+        if (is_array($row)) {
+            $parts = array_filter([
+                isset($row['code']) ? (string) $row['code'] : '',
+                isset($row['message']) ? (string) $row['message'] : '',
+                isset($row['details']['api_name']) ? 'field=' . (string) $row['details']['api_name'] : '',
+            ]);
+
+            if ($parts !== []) {
+                return implode(' | ', $parts);
+            }
+        }
+
+        $httpCode = (int) ($response['_http_code'] ?? 0);
+
+        return $httpCode > 0 ? 'HTTP ' . $httpCode : 'unknown error';
+    }
+}
+
+if (!function_exists('caaft_zoho_lead_created')) {
+    /**
+     * @param array<string, mixed>|null $response
+     */
+    function caaft_zoho_lead_created(?array $response): bool
+    {
+        if (!is_array($response)) {
+            return false;
+        }
+
+        $row = $response['data'][0] ?? null;
+        if (!is_array($row)) {
+            return false;
+        }
+
+        if (($row['status'] ?? '') === 'error') {
+            return false;
+        }
+
+        return !empty($row['details']['id']);
+    }
+}
+
     function caaft_zoho_read_token_cache(): ?array
     {
         $path = caaft_zoho_token_cache_path();
@@ -234,6 +297,8 @@ if (!function_exists('caaft_zoho_refresh_access_token')) {
         ]);
 
         if (!is_array($response) || empty($response['access_token'])) {
+            caaft_zoho_log('Token refresh failed: ' . caaft_zoho_response_error($response));
+
             return null;
         }
 
@@ -324,6 +389,21 @@ if (!function_exists('caaft_zoho_build_lead_record')) {
     }
 }
 
+if (!function_exists('caaft_zoho_create_lead')) {
+    /**
+     * @param array<string, string> $record
+     */
+    function caaft_zoho_create_lead(array $record, string $accessToken): ?array
+    {
+        $config = caaft_zoho_config();
+        $apiDomain = trim((string) ($config['api_domain'] ?? 'www.zohoapis.in'));
+        $module = trim((string) ($config['lead_module'] ?? 'Leads'));
+        $url = 'https://' . $apiDomain . '/crm/v2/' . rawurlencode($module);
+
+        return caaft_zoho_http_json('POST', $url, ['data' => [$record]], $accessToken);
+    }
+}
+
 if (!function_exists('caaft_zoho_push_lead')) {
     /**
      * @param array<string, string> $lead
@@ -331,6 +411,8 @@ if (!function_exists('caaft_zoho_push_lead')) {
     function caaft_zoho_push_lead(array $lead): bool
     {
         if (!caaft_zoho_is_configured()) {
+            caaft_zoho_log('Push skipped: missing client_id, client_secret, or refresh_token in zoho.local.php');
+
             return false;
         }
 
@@ -340,28 +422,50 @@ if (!function_exists('caaft_zoho_push_lead')) {
         }
 
         $config = caaft_zoho_config();
-        $apiDomain = trim((string) ($config['api_domain'] ?? 'www.zohoapis.in'));
-        $module = trim((string) ($config['lead_module'] ?? 'Leads'));
-        $url = 'https://' . $apiDomain . '/crm/v2/' . rawurlencode($module);
-
         $record = caaft_zoho_build_lead_record($lead);
-        $response = caaft_zoho_http_json('POST', $url, ['data' => [$record]], $accessToken);
+        $response = caaft_zoho_create_lead($record, $accessToken);
 
-        if (is_array($response) && !empty($response['data'][0]['details']['id'])) {
+        if (caaft_zoho_lead_created($response)) {
             return true;
         }
 
-        // Retry once if token expired.
         if (is_array($response) && (int) ($response['_http_code'] ?? 0) === 401) {
             $accessToken = caaft_zoho_refresh_access_token(true);
             if ($accessToken === null) {
+                caaft_zoho_log('Lead create failed after 401: could not refresh access token');
+
                 return false;
             }
 
-            $response = caaft_zoho_http_json('POST', $url, ['data' => [$record]], $accessToken);
-
-            return is_array($response) && !empty($response['data'][0]['details']['id']);
+            $response = caaft_zoho_create_lead($record, $accessToken);
+            if (caaft_zoho_lead_created($response)) {
+                return true;
+            }
         }
+
+        $serviceField = trim((string) ($config['service_field'] ?? 'Required_Service'));
+        if ($serviceField !== '' && isset($record[$serviceField])) {
+            $serviceValue = (string) $record[$serviceField];
+            unset($record[$serviceField]);
+            $prefix = 'Required Service: ' . $serviceValue;
+            $record['Description'] = ($record['Description'] ?? '') !== ''
+                ? $prefix . "\n" . (string) $record['Description']
+                : $prefix;
+
+            $response = caaft_zoho_create_lead($record, $accessToken);
+            if (caaft_zoho_lead_created($response)) {
+                caaft_zoho_log('Lead created after retry without ' . $serviceField . ' (value moved to Description)');
+
+                return true;
+            }
+        }
+
+        caaft_zoho_log(
+            'Lead create failed for '
+            . ($lead['email'] ?? 'unknown')
+            . ': '
+            . caaft_zoho_response_error($response),
+        );
 
         return false;
     }

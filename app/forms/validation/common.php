@@ -421,6 +421,10 @@ if (!function_exists('caaft_form_complete_submission')) {
         $zohoOk = $zohoConfigured ? caaft_zoho_push_lead($leadData) : false;
         $mailOk = caaft_try_send_mail($to, $subject, $body, $fromName, $fromEmail);
 
+        if ($zohoConfigured && !$zohoOk && $mailOk && function_exists('caaft_zoho_log')) {
+            caaft_zoho_log('Form saved via email only; Zoho push failed for ' . ($leadData['email'] ?? 'unknown'));
+        }
+
         $success = $zohoConfigured ? ($zohoOk || $mailOk) : $mailOk;
 
         if ($success) {
