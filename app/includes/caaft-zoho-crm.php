@@ -82,8 +82,13 @@ if (!function_exists('caaft_zoho_http_post')) {
             }
 
             $decoded = json_decode((string) $response, true);
+            if (!is_array($decoded)) {
+                return ['_http_code' => $httpCode, 'error' => 'invalid_response', 'message' => trim((string) $response)];
+            }
 
-            return is_array($decoded) ? $decoded : null;
+            $decoded['_http_code'] = $httpCode;
+
+            return $decoded;
         }
 
         $headerLines = "Content-Type: application/x-www-form-urlencoded\r\n";
@@ -191,7 +196,16 @@ if (!function_exists('caaft_zoho_response_error')) {
     function caaft_zoho_response_error(?array $response): string
     {
         if (!is_array($response)) {
-            return 'empty response';
+            return 'empty response (check PHP curl extension and outbound HTTPS)';
+        }
+
+        if (!empty($response['error'])) {
+            $error = (string) $response['error'];
+            if (!empty($response['error_description'])) {
+                $error .= ': ' . (string) $response['error_description'];
+            }
+
+            return $error;
         }
 
         if (!empty($response['message'])) {

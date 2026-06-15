@@ -62,10 +62,14 @@ echo '</body></html>';
 function render_zoho_result(?array $tokens): void
 {
     if (!is_array($tokens) || empty($tokens['refresh_token'])) {
+        $config = caaft_zoho_config();
+        $clientId = (string) ($config['client_id'] ?? '');
         echo '<h1>Authorization failed</h1>';
-        echo '<p>' . htmlspecialchars(caaft_zoho_response_error($tokens), ENT_QUOTES, 'UTF-8') . '</p>';
-        echo '<p>Check that app/config/zoho.local.php has the <strong>CAAFT</strong> client secret.</p>';
-        echo '<p><a href="">Try again</a></p>';
+        echo '<p><strong>Zoho says:</strong> ' . htmlspecialchars(caaft_zoho_response_error($tokens), ENT_QUOTES, 'UTF-8') . '</p>';
+        echo '<p>Using client ID: <code>' . htmlspecialchars($clientId, ENT_QUOTES, 'UTF-8') . '</code></p>';
+        echo '<p><strong>Fix:</strong> In <code>app/config/zoho.local.php</code>, set <code>client_secret</code> from the <strong>CAAFT</strong> app → Client Secret tab (not Self Client).</p>';
+        echo '<p>If you already used this authorize link, click <strong>Authorize with Zoho</strong> again — codes expire and are one-time use.</p>';
+        echo '<p><a href="zoho-oauth.php">Try again</a></p>';
         exit;
     }
 
