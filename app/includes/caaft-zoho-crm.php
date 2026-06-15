@@ -351,10 +351,32 @@ if (!function_exists('caaft_zoho_split_name')) {
     }
 }
 
+if (!function_exists('caaft_zoho_lead_owner_payload')) {
+    /**
+     * @return array<string, string>|null
+     */
+    function caaft_zoho_lead_owner_payload(): ?array
+    {
+        $config = caaft_zoho_config();
+        $ownerId = trim((string) ($config['lead_owner_id'] ?? ''));
+        if ($ownerId !== '') {
+            return ['id' => $ownerId];
+        }
+
+        $ownerEmail = trim(str_replace(["\r", "\n"], '', (string) ($config['lead_owner_email'] ?? '')));
+        $ownerEmail = filter_var($ownerEmail, FILTER_VALIDATE_EMAIL);
+        if (is_string($ownerEmail)) {
+            return ['email' => $ownerEmail];
+        }
+
+        return null;
+    }
+}
+
 if (!function_exists('caaft_zoho_build_lead_record')) {
     /**
      * @param array<string, string> $lead
-     * @return array<string, string>
+     * @return array<string, mixed>
      */
     function caaft_zoho_build_lead_record(array $lead): array
     {
@@ -400,13 +422,24 @@ if (!function_exists('caaft_zoho_build_lead_record')) {
             }
         }
 
-        return array_filter($record, static fn ($value) => $value !== '');
+        $owner = caaft_zoho_lead_owner_payload();
+        if ($owner !== null) {
+            $record['Owner'] = $owner;
+        }
+
+        return array_filter($record, static function ($value): bool {
+            if (is_array($value)) {
+                return $value !== [];
+            }
+
+            return $value !== '';
+        });
     }
 }
 
 if (!function_exists('caaft_zoho_create_lead')) {
     /**
-     * @param array<string, string> $record
+     * @param array<string, mixed> $record
      */
     function caaft_zoho_create_lead(array $record, string $accessToken): ?array
     {

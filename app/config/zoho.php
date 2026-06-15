@@ -27,4 +27,12 @@ return [
 
     /** Zoho Leads API name for the form "service" field (Setup → Modules → Leads → Fields) */
     'service_field' => 'Required_Service',
+
+    /**
+     * Default Lead Owner for website leads (otherwise Zoho uses the OAuth authorizer).
+     * Set one of these in app/config/zoho.local.php — id is most reliable.
+     * Find user id: Zoho CRM → Setup → Users → open user → id in the URL.
+     */
+    'lead_owner_id' => '',
+    'lead_owner_email' => '',
 ];
