@@ -240,6 +240,7 @@ if (!function_exists('caaft_zoho_lead_created')) {
     }
 }
 
+if (!function_exists('caaft_zoho_read_token_cache')) {
     function caaft_zoho_read_token_cache(): ?array
     {
         $path = caaft_zoho_token_cache_path();
