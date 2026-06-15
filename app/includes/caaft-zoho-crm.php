@@ -351,11 +351,129 @@ if (!function_exists('caaft_zoho_split_name')) {
     }
 }
 
+        return is_array($decoded) ? $decoded : null;
+    }
+}
+
+if (!function_exists('caaft_zoho_http_get')) {
+    function caaft_zoho_http_get(string $url, string $accessToken): ?array
+    {
+        $headers = [
+            'Authorization: Zoho-oauthtoken ' . $accessToken,
+        ];
+
+        if (function_exists('curl_init')) {
+            $ch = curl_init($url);
+            curl_setopt_array($ch, [
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_TIMEOUT => 30,
+                CURLOPT_HTTPHEADER => $headers,
+            ]);
+            $response = curl_exec($ch);
+            $httpCode = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            curl_close($ch);
+
+            if ($response === false) {
+                return null;
+            }
+
+            $decoded = json_decode((string) $response, true);
+            if (!is_array($decoded)) {
+                return null;
+            }
+
+            $decoded['_http_code'] = $httpCode;
+
+            return $decoded;
+        }
+
+        $context = stream_context_create([
+            'http' => [
+                'method' => 'GET',
+                'header' => implode("\r\n", $headers) . "\r\n",
+                'timeout' => 30,
+                'ignore_errors' => true,
+            ],
+        ]);
+
+        $response = @file_get_contents($url, false, $context);
+        if ($response === false) {
+            return null;
+        }
+
+        $decoded = json_decode($response, true);
+
+        return is_array($decoded) ? $decoded : null;
+    }
+}
+
+if (!function_exists('caaft_zoho_owner_cache_path')) {
+    function caaft_zoho_owner_cache_path(): string
+    {
+        return caaft_zoho_storage_dir() . '/zoho-owner-cache.json';
+    }
+}
+
+if (!function_exists('caaft_zoho_find_user_id_by_name')) {
+    function caaft_zoho_find_user_id_by_name(string $name, string $accessToken): string
+    {
+        $name = trim($name);
+        if ($name === '') {
+            return '';
+        }
+
+        $cachePath = caaft_zoho_owner_cache_path();
+        if (is_file($cachePath)) {
+            $cache = json_decode((string) file_get_contents($cachePath), true);
+            if (is_array($cache) && !empty($cache[$name])) {
+                return (string) $cache[$name];
+            }
+        }
+
+        $config = caaft_zoho_config();
+        $apiDomain = trim((string) ($config['api_domain'] ?? 'www.zohoapis.in'));
+        $url = 'https://' . $apiDomain . '/crm/v2/users?type=ActiveUsers';
+        $response = caaft_zoho_http_get($url, $accessToken);
+        $users = is_array($response) ? ($response['users'] ?? []) : [];
+
+        if (!is_array($users)) {
+            caaft_zoho_log('Lead owner lookup failed: ' . caaft_zoho_response_error($response));
+
+            return '';
+        }
+
+        $target = strtolower($name);
+        foreach ($users as $user) {
+            if (!is_array($user) || empty($user['id'])) {
+                continue;
+            }
+
+            $fullName = strtolower(trim((string) ($user['full_name'] ?? '')));
+            $firstLast = strtolower(trim((string) ($user['first_name'] ?? '') . ' ' . (string) ($user['last_name'] ?? '')));
+            if ($fullName === $target || trim($firstLast) === $target) {
+                $id = (string) $user['id'];
+                $cache = is_file($cachePath) ? json_decode((string) file_get_contents($cachePath), true) : [];
+                if (!is_array($cache)) {
+                    $cache = [];
+                }
+                $cache[$name] = $id;
+                @file_put_contents($cachePath, json_encode($cache, JSON_PRETTY_PRINT), LOCK_EX);
+
+                return $id;
+            }
+        }
+
+        caaft_zoho_log('Lead owner not found in Zoho users: ' . $name);
+
+        return '';
+    }
+}
+
 if (!function_exists('caaft_zoho_lead_owner_payload')) {
     /**
      * @return array<string, string>|null
      */
-    function caaft_zoho_lead_owner_payload(): ?array
+    function caaft_zoho_lead_owner_payload(?string $accessToken = null): ?array
     {
         $config = caaft_zoho_config();
         $ownerId = trim((string) ($config['lead_owner_id'] ?? ''));
@@ -369,7 +487,28 @@ if (!function_exists('caaft_zoho_lead_owner_payload')) {
             return ['email' => $ownerEmail];
         }
 
+        $ownerName = trim((string) ($config['lead_owner_name'] ?? ''));
+        if ($ownerName !== '' && $accessToken !== null && $accessToken !== '') {
+            $resolvedId = caaft_zoho_find_user_id_by_name($ownerName, $accessToken);
+            if ($resolvedId !== '') {
+                return ['id' => $resolvedId];
+            }
+        }
+
         return null;
+    }
+}
+
+if (!function_exists('caaft_zoho_apply_lead_owner')) {
+    /**
+     * @param array<string, mixed> $record
+     */
+    function caaft_zoho_apply_lead_owner(array &$record, string $accessToken): void
+    {
+        $owner = caaft_zoho_lead_owner_payload($accessToken);
+        if ($owner !== null) {
+            $record['Owner'] = $owner;
+        }
     }
 }
 
@@ -422,11 +561,6 @@ if (!function_exists('caaft_zoho_build_lead_record')) {
             }
         }
 
-        $owner = caaft_zoho_lead_owner_payload();
-        if ($owner !== null) {
-            $record['Owner'] = $owner;
-        }
-
         return array_filter($record, static function ($value): bool {
             if (is_array($value)) {
                 return $value !== [];
@@ -471,6 +605,7 @@ if (!function_exists('caaft_zoho_push_lead')) {
 
         $config = caaft_zoho_config();
         $record = caaft_zoho_build_lead_record($lead);
+        caaft_zoho_apply_lead_owner($record, $accessToken);
         $response = caaft_zoho_create_lead($record, $accessToken);
 
         if (caaft_zoho_lead_created($response)) {
@@ -500,6 +635,7 @@ if (!function_exists('caaft_zoho_push_lead')) {
                 ? $prefix . "\n" . (string) $record['Description']
                 : $prefix;
 
+            caaft_zoho_apply_lead_owner($record, $accessToken);
             $response = caaft_zoho_create_lead($record, $accessToken);
             if (caaft_zoho_lead_created($response)) {
                 caaft_zoho_log('Lead created after retry without ' . $serviceField . ' (value moved to Description)');

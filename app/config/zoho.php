@@ -17,7 +17,7 @@ return [
 
     /** Must match Authorized Redirect URI in Zoho API Console (CAAFT client). */
     'redirect_uri' => 'https://caaft.com/zoho-oauth.php',
-    'oauth_scopes' => 'ZohoCRM.modules.leads.CREATE,ZohoCRM.modules.leads.UPDATE,ZohoCRM.settings.ALL',
+    'oauth_scopes' => 'ZohoCRM.modules.leads.CREATE,ZohoCRM.modules.leads.UPDATE,ZohoCRM.settings.ALL,ZohoCRM.users.READ',
 
     /** CRM module to create records in */
     'lead_module' => 'Leads',
@@ -35,4 +35,6 @@ return [
      */
     'lead_owner_id' => '',
     'lead_owner_email' => '',
+    /** Resolved via Zoho Users API when id/email not set (website API leads). */
+    'lead_owner_name' => 'Pooja K',
 ];
