@@ -471,3 +471,88 @@ if (!function_exists('caaft_zoho_push_lead')) {
         return false;
     }
 }
+
+if (!function_exists('caaft_zoho_authorization_url')) {
+    function caaft_zoho_authorization_url(): string
+    {
+        $config = caaft_zoho_config();
+        $accountsDomain = trim((string) ($config['accounts_domain'] ?? 'accounts.zoho.in'));
+        $redirectUri = trim((string) ($config['redirect_uri'] ?? ''));
+        if ($redirectUri === '') {
+            return '';
+        }
+
+        $params = [
+            'scope' => (string) ($config['oauth_scopes'] ?? 'ZohoCRM.modules.leads.CREATE'),
+            'client_id' => (string) ($config['client_id'] ?? ''),
+            'response_type' => 'code',
+            'access_type' => 'offline',
+            'prompt' => 'consent',
+            'redirect_uri' => $redirectUri,
+        ];
+
+        return 'https://' . $accountsDomain . '/oauth/v2/auth?' . http_build_query($params);
+    }
+}
+
+if (!function_exists('caaft_zoho_exchange_code')) {
+    /**
+     * Exchange authorization code (browser OAuth or Self Client grant code).
+     *
+     * @return array<string, mixed>|null
+     */
+    function caaft_zoho_exchange_code(string $code, bool $useRedirectUri = true): ?array
+    {
+        $config = caaft_zoho_config();
+        $clientId = trim((string) ($config['client_id'] ?? ''));
+        $clientSecret = trim((string) ($config['client_secret'] ?? ''));
+        if ($clientId === '' || $clientSecret === '' || trim($code) === '') {
+            return null;
+        }
+
+        $accountsDomain = trim((string) ($config['accounts_domain'] ?? 'accounts.zoho.in'));
+        $fields = [
+            'grant_type' => 'authorization_code',
+            'client_id' => $clientId,
+            'client_secret' => $clientSecret,
+            'code' => trim($code),
+        ];
+
+        $redirectUri = trim((string) ($config['redirect_uri'] ?? ''));
+        if ($useRedirectUri && $redirectUri !== '') {
+            $fields['redirect_uri'] = $redirectUri;
+        }
+
+        return caaft_zoho_http_post('https://' . $accountsDomain . '/oauth/v2/token', $fields);
+    }
+}
+
+if (!function_exists('caaft_zoho_save_refresh_token')) {
+    function caaft_zoho_save_refresh_token(string $refreshToken, ?array $tokens = null): bool
+    {
+        $localPath = (defined('APP_ROOT') ? APP_ROOT : dirname(__DIR__)) . '/config/zoho.local.php';
+        $local = is_file($localPath) ? require $localPath : [];
+        if (!is_array($local)) {
+            $local = [];
+        }
+
+        $local['refresh_token'] = $refreshToken;
+        $written = file_put_contents(
+            $localPath,
+            "<?php\ndeclare(strict_types=1);\n\nreturn " . var_export($local, true) . ";\n",
+        );
+
+        if ($written === false) {
+            return false;
+        }
+
+        if (is_array($tokens) && !empty($tokens['access_token'])) {
+            caaft_zoho_write_token_cache([
+                'access_token' => (string) $tokens['access_token'],
+                'expires_at' => time() + max(300, (int) ($tokens['expires_in'] ?? 3600) - 120),
+            ]);
+        }
+
+        return true;
+    }
+}
