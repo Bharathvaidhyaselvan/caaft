@@ -35,5 +35,6 @@ return [
      */
     'lead_owner_id' => '1186726000000927014',
     'lead_owner_email' => 'pooja@caaft.com',
-    'lead_owner_name' => '',
+  /** Fallback if id/email lookup fails — resolved via Zoho Users API */
+    'lead_owner_name' => 'Pooja K',
 ];
