@@ -347,6 +347,48 @@ if (!function_exists('caaft_send_cc_copy_if_needed')) {
     }
 }
 
+if (!function_exists('caaft_form_company_html')) {
+    function caaft_form_company_html(string $company): string
+    {
+        if ($company === '') {
+            return '';
+        }
+
+        return '<p><strong>Company:</strong> ' . $company . '</p>';
+    }
+}
+
+if (!function_exists('caaft_form_message_html')) {
+    function caaft_form_message_html(string $message): string
+    {
+        if ($message === '') {
+            return '';
+        }
+
+        return '<p><strong>Message:</strong><br>' . nl2br($message) . '</p>';
+    }
+}
+
+if (!function_exists('caaft_form_validate_enquiry_post')) {
+    function caaft_form_validate_enquiry_post(bool $requireService = true): ?string
+    {
+        $name = post_clean('name');
+        $email = caaft_sanitize_mail_address((string) ($_POST['email'] ?? ''));
+        $phone = post_clean('phone');
+        $service = post_clean('service');
+
+        if ($name === '' || $email === '' || $phone === '' || ($requireService && $service === '')) {
+            return 'Please fill all required fields.';
+        }
+
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return 'Invalid email format.';
+        }
+
+        return null;
+    }
+}
+
 if (!function_exists('caaft_form_build_lead_data')) {
     /**
      * @return array<string, string>
@@ -361,6 +403,7 @@ if (!function_exists('caaft_form_build_lead_data')) {
 
         return [
             'name' => trim((string) ($_POST['name'] ?? '')),
+            'company' => trim((string) ($_POST['company'] ?? '')),
             'email' => caaft_sanitize_mail_address((string) ($_POST['email'] ?? '')),
             'phone' => trim((string) ($_POST['phone'] ?? '')),
             'service' => trim((string) ($_POST['service'] ?? '')),

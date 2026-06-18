@@ -33,8 +33,7 @@ return [
      * Set one of these in app/config/zoho.local.php — id is most reliable.
      * Find user id: Zoho CRM → Setup → Users → open user → id in the URL.
      */
-    'lead_owner_id' => '',
-    'lead_owner_email' => '',
-    /** Resolved via Zoho Users API when id/email not set (website API leads). */
-    'lead_owner_name' => 'Pooja K',
+    'lead_owner_id' => '1186726000000927014',
+    'lead_owner_email' => 'pooja@caaft.com',
+    'lead_owner_name' => '',
 ];

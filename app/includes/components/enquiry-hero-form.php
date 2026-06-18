@@ -15,6 +15,7 @@
  *   $caaft_enquiry_form_id (string) — optional id on <form>
  *   $caaft_enquiry_textarea_rows (int) — default 5
  *   $caaft_enquiry_input_id_prefix (string) — optional prefix for field ids (e.g. ar → id ar-enquiry-name, ar-firstname-honeypot)
+ *   $caaft_enquiry_show_company (bool) — show Company field after name, default true
  *
  * Pricing is shown in the hero column (below primary CTA), not in this form.
  */
@@ -36,6 +37,7 @@ if (isset($caaft_service_cta_label) && trim((string) $caaft_service_cta_label) !
 $caaft_enquiry_recaptcha = $caaft_enquiry_recaptcha ?? true;
 $caaft_enquiry_recaptcha_sitekey = $caaft_enquiry_recaptcha_sitekey ?? '6LcO3ukrAAAAADerciVZtVVgPZqbR-iH04HfKq-K';
 $caaft_enquiry_honeypot_website = $caaft_enquiry_honeypot_website ?? true;
+$caaft_enquiry_show_company = $caaft_enquiry_show_company ?? true;
 $caaft_enquiry_form_id = isset($caaft_enquiry_form_id) ? (string) $caaft_enquiry_form_id : '';
 $caaft_enquiry_textarea_rows = isset($caaft_enquiry_textarea_rows) ? (int) $caaft_enquiry_textarea_rows : 5;
 if ($caaft_enquiry_textarea_rows < 2) {
@@ -68,6 +70,14 @@ $caaft_enquiry_field_id_attr = function (string $suffix) use ($caaft_enquiry_inp
                         <input type="text" name="name" class="form-control" placeholder="Your Name" required autocomplete="name" data-caaft-focus="name"<?php echo $caaft_enquiry_field_id_attr('-enquiry-name'); ?>>
                     </div>
                 </div>
+                <?php if ($caaft_enquiry_show_company) : ?>
+                <div class="col-lg-12">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="far fa-building" aria-hidden="true"></i></span>
+                        <input type="text" name="company" class="form-control" placeholder="Company" autocomplete="organization"<?php echo $caaft_enquiry_field_id_attr('-enquiry-company'); ?>>
+                    </div>
+                </div>
+                <?php endif; ?>
                 <div class="col-lg-12">
                     <div class="input-group">
                         <span class="input-group-text"><i class="far fa-envelope" aria-hidden="true"></i></span>
@@ -86,7 +96,7 @@ $caaft_enquiry_field_id_attr = function (string $suffix) use ($caaft_enquiry_inp
                 <div class="col-lg-12">
                     <div class="input-group textarea">
                         <span class="input-group-text"><i class="far fa-comment-lines" aria-hidden="true"></i></span>
-                        <textarea name="message" class="form-control" rows="<?php echo (int) $caaft_enquiry_textarea_rows; ?>" placeholder="Your Message" required<?php echo $caaft_enquiry_field_id_attr('-enquiry-message'); ?>></textarea>
+                        <textarea name="message" class="form-control" rows="<?php echo (int) $caaft_enquiry_textarea_rows; ?>" placeholder="Your Message"<?php echo $caaft_enquiry_field_id_attr('-enquiry-message'); ?>></textarea>
                     </div>
                 </div>
                 <input type="hidden" name="service" value="<?php echo htmlspecialchars($caaft_enquiry_service, ENT_QUOTES, 'UTF-8'); ?>">

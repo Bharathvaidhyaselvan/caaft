@@ -567,6 +567,7 @@ declare(strict_types=1);
         $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_icon = 'fas fa-arrow-right';
         $caaft_enquiry_service = 'LLP Registration';
+        $caaft_enquiry_show_company = false;
         $caaft_enquiry_action = '/business-registration-mail.php';
         $caaft_enquiry_title = 'Let\'s Talk';
         $caaft_enquiry_honeypot_website = false;        $caaft_service_cta_label = 'Build Your Business with LLP';

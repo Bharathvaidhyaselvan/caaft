@@ -96,6 +96,7 @@ declare(strict_types=1);
     $caaft_hero_primary_cta_href = '/contact#contact_us';
     $caaft_hero_secondary_cta_label = '';
     $caaft_enquiry_service = 'MSME / Udyam Registration';
+    $caaft_enquiry_show_company = false;
     $caaft_enquiry_action = '/business-registration-mail.php';
     $caaft_enquiry_honeypot_website = false;
 

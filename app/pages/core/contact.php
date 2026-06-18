@@ -144,6 +144,13 @@
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="input-group">
+                                                <span class="input-group-text"><i class="far fa-building"></i></span>
+                                                <input type="text" class="form-control" name="company" id="company"
+                                                    placeholder="Company" autocomplete="organization">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-group">
                                                 <span class="input-group-text"><i class="far fa-envelope"></i></span>
                                                 <input type="email" id="email" class="form-control" name="email"
                                                     placeholder="Your Email" required>

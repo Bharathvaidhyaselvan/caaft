@@ -560,6 +560,10 @@ if (!function_exists('caaft_zoho_build_lead_record')) {
                 $record[$serviceField] = $service;
             }
         }
+        $company = trim((string) ($lead['company'] ?? ''));
+        if ($company !== '') {
+            $record['Company'] = $company;
+        }
 
         return array_filter($record, static function ($value): bool {
             if (is_array($value)) {

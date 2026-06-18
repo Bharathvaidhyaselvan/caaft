@@ -156,9 +156,7 @@
     }
 
     var message = getField(form, ["msg", "message"]);
-    if (message && message.value.trim() === "") {
-      addError(message, "Please enter your message.");
-    } else if (message && message.value.trim() !== "" && !/^[\x00-\x7F]+$/.test(message.value)) {
+    if (message && message.value.trim() !== "" && !/^[\x00-\x7F]+$/.test(message.value)) {
       addError(message, "Please enter a valid message.");
     }
 
