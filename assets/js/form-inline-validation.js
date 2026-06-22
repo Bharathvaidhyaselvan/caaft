@@ -141,13 +141,22 @@
     var service = getField(form, ["service"]);
     if (service && isEmptySelect(service)) {
       addError(service, "Please choose a service.");
+    } else if (service && service.value === "Other MCA Services") {
+      var serviceOther = form.querySelector("#service-other-text");
+      if (serviceOther && serviceOther.value.trim() === "") {
+        addError(serviceOther, "Please specify which service you need.");
+      }
     }
 
     var aboutSelect = form.querySelector('#about, select[name="about"]');
     var otherAbout = form.querySelector("#other-text");
-    if (aboutSelect && aboutSelect.name === "about") {
+    if (aboutSelect) {
       if (isEmptySelect(aboutSelect)) {
         addError(aboutSelect, "Please select how you heard about us.");
+      } else if (aboutSelect.value === "Others") {
+        if (!otherAbout || otherAbout.value.trim() === "") {
+          addError(otherAbout || aboutSelect, "Please mention how you heard about us.");
+        }
       }
     } else if (otherAbout && otherAbout.offsetParent !== null) {
       if (otherAbout.value.trim() === "") {
@@ -254,7 +263,7 @@
 
     var form = aboutSelect.closest("form");
 
-    aboutSelect.addEventListener("change", function () {
+    function syncAboutOther() {
       if (aboutSelect.value === "Others") {
         otherInputGroup.style.display = "flex";
         if (form && form.id === "contact-form") {
@@ -271,12 +280,41 @@
         clearFieldError(otherText);
       }
       clearFieldError(aboutSelect);
-    });
+    }
+
+    aboutSelect.addEventListener("change", syncAboutOther);
+    syncAboutOther();
+  }
+
+  function initServiceOtherToggle() {
+    var serviceSelect = document.getElementById("service");
+    var serviceWrap = document.getElementById("service-other-wrap");
+    var serviceOther = document.getElementById("service-other-text");
+    if (!serviceSelect || !serviceWrap || !serviceOther) {
+      return;
+    }
+
+    function syncServiceOther() {
+      if (serviceSelect.value === "Other MCA Services") {
+        serviceWrap.style.display = "block";
+        serviceOther.setAttribute("name", "service_other");
+      } else {
+        serviceWrap.style.display = "none";
+        serviceOther.removeAttribute("name");
+        serviceOther.value = "";
+        clearFieldError(serviceOther);
+      }
+      clearFieldError(serviceSelect);
+    }
+
+    serviceSelect.addEventListener("change", syncServiceOther);
+    syncServiceOther();
   }
 
   function init() {
     document.querySelectorAll("form.contact").forEach(bindForm);
     initAboutToggle();
+    initServiceOtherToggle();
   }
 
   window.CaaftFormValidate = validateAndShow;

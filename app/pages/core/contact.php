@@ -179,6 +179,13 @@
                                                 </select>
                                             </div>
                                         </div>
+                                        <div class="col-lg-12" id="service-other-wrap" style="display: none;">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="far fa-pen"></i></span>
+                                                <input type="text" id="service-other-text" class="form-control"
+                                                    placeholder="Please specify which service you need" autocomplete="off">
+                                            </div>
+                                        </div>
                                         <div class="col-lg-12">
                                             <div class="input-group" id="select-group">
                                                 <span class="input-group-text"><i class="far fa-box"></i></span>
@@ -196,7 +203,7 @@
                                             <div id="other-input" class="input-group" style="display: none;">
                                                 <span class="input-group-text"><i class="far fa-box"></i></span>
                                                 <input type="text" id="other-text" class="form-control"
-                                                    placeholder="How did you hear about us? Please mention">
+                                                    placeholder="Please mention how you heard about us">
                                             </div>
                                         </div>
                                     </div>
