@@ -20,11 +20,11 @@ if ($features['home']) {
 <noscript><link rel="stylesheet" href="<?php echo htmlspecialchars($fontCss, ENT_QUOTES, 'UTF-8'); ?>"></noscript>
 
 <link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/critical-shell.css'), ENT_QUOTES, 'UTF-8'); ?>">
-<?php caaft_defer_stylesheet(caaft_public_asset_url('assets/css/bootstrap.min.css')); ?>
+<link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/bootstrap.min.css'), ENT_QUOTES, 'UTF-8'); ?>">
 <link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/all-fontawesome.min.css'), ENT_QUOTES, 'UTF-8'); ?>">
 <?php if ($features['home']) : ?>
 <link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/home-critical.css'), ENT_QUOTES, 'UTF-8'); ?>">
-<?php caaft_defer_stylesheet(caaft_public_asset_url('assets/css/style.css')); ?>
+<link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/style.css'), ENT_QUOTES, 'UTF-8'); ?>">
 <?php else : ?>
 <link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/style.css'), ENT_QUOTES, 'UTF-8'); ?>">
 <?php endif; ?>

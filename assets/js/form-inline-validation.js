@@ -44,9 +44,11 @@
       node.classList.remove("is-invalid");
       node.removeAttribute("aria-invalid");
     });
-    form.querySelectorAll(".g-recaptcha.caaft-is-invalid").forEach(function (node) {
-      node.classList.remove("caaft-is-invalid");
-    });
+    form
+      .querySelectorAll(".g-recaptcha.caaft-is-invalid")
+      .forEach(function (node) {
+        node.classList.remove("caaft-is-invalid");
+      });
     var summary = form.querySelector(".caaft-form-errors");
     if (summary) {
       summary.textContent = "";
@@ -109,7 +111,10 @@
 
     var honeypot = getField(form, ["firstname"]);
     if (honeypot && honeypot.value.trim() !== "") {
-      addError(getField(form, ["name", "email"]) || honeypot, "Unable to submit this form. Please try again.");
+      addError(
+        getField(form, ["name", "email"]) || honeypot,
+        "Unable to submit this form. Please try again.",
+      );
       return errors;
     }
 
@@ -155,7 +160,10 @@
         addError(aboutSelect, "Please select how you heard about us.");
       } else if (aboutSelect.value === "Others") {
         if (!otherAbout || otherAbout.value.trim() === "") {
-          addError(otherAbout || aboutSelect, "Please mention how you heard about us.");
+          addError(
+            otherAbout || aboutSelect,
+            "Please mention how you heard about us.",
+          );
         }
       }
     } else if (otherAbout && otherAbout.offsetParent !== null) {
@@ -165,14 +173,25 @@
     }
 
     var message = getField(form, ["msg", "message"]);
-    if (message && message.value.trim() !== "" && !/^[\x00-\x7F]+$/.test(message.value)) {
+    if (
+      message &&
+      message.value.trim() !== "" &&
+      !/^[\x00-\x7F]+$/.test(message.value)
+    ) {
       addError(message, "Please enter a valid message.");
     }
 
-    if (typeof window.grecaptcha !== "undefined" && form.querySelector(".g-recaptcha")) {
+    if (
+      typeof window.grecaptcha !== "undefined" &&
+      form.querySelector(".g-recaptcha")
+    ) {
       var recaptchaResponse = window.grecaptcha.getResponse();
       if (!recaptchaResponse || recaptchaResponse.length === 0) {
-        errors.push({ field: null, message: "Please verify that you are not a robot.", recaptcha: true });
+        errors.push({
+          field: null,
+          message: "Please verify that you are not a robot.",
+          recaptcha: true,
+        });
       }
     }
 
@@ -253,11 +272,37 @@
     });
   }
 
+  function showConditionalField(wrap, display) {
+    if (!wrap) {
+      return;
+    }
+    wrap.hidden = false;
+    wrap.style.display = display || "block";
+  }
+
+  function hideConditionalField(wrap) {
+    if (!wrap) {
+      return;
+    }
+    wrap.hidden = true;
+    wrap.style.display = "none";
+  }
+
+  function bindSelectChange(select, handler) {
+    if (!select) {
+      return;
+    }
+    select.addEventListener("change", handler);
+    if (window.jQuery) {
+      window.jQuery(select).on("change.caaftToggle", handler);
+    }
+  }
+
   function initAboutToggle() {
     var aboutSelect = document.getElementById("about");
-    var otherInputGroup = document.getElementById("other-input");
+    var otherInputWrap = document.getElementById("other-input-wrap");
     var otherText = document.getElementById("other-text");
-    if (!aboutSelect || !otherInputGroup || !otherText) {
+    if (!aboutSelect || !otherInputWrap || !otherText) {
       return;
     }
 
@@ -265,7 +310,8 @@
 
     function syncAboutOther() {
       if (aboutSelect.value === "Others") {
-        otherInputGroup.style.display = "flex";
+        showConditionalField(otherInputWrap, "block");
+        otherText.setAttribute("required", "required");
         if (form && form.id === "contact-form") {
           otherText.setAttribute("name", "about_other");
         } else {
@@ -273,8 +319,9 @@
           aboutSelect.removeAttribute("name");
         }
       } else {
-        otherInputGroup.style.display = "none";
+        hideConditionalField(otherInputWrap);
         otherText.removeAttribute("name");
+        otherText.removeAttribute("required");
         otherText.value = "";
         aboutSelect.setAttribute("name", "about");
         clearFieldError(otherText);
@@ -282,7 +329,8 @@
       clearFieldError(aboutSelect);
     }
 
-    aboutSelect.addEventListener("change", syncAboutOther);
+    bindSelectChange(aboutSelect, syncAboutOther);
+    window.__caaftSyncAboutOther = syncAboutOther;
     syncAboutOther();
   }
 
@@ -296,18 +344,21 @@
 
     function syncServiceOther() {
       if (serviceSelect.value === "Other MCA Services") {
-        serviceWrap.style.display = "block";
+        showConditionalField(serviceWrap, "block");
         serviceOther.setAttribute("name", "service_other");
+        serviceOther.setAttribute("required", "required");
       } else {
-        serviceWrap.style.display = "none";
+        hideConditionalField(serviceWrap);
         serviceOther.removeAttribute("name");
+        serviceOther.removeAttribute("required");
         serviceOther.value = "";
         clearFieldError(serviceOther);
       }
       clearFieldError(serviceSelect);
     }
 
-    serviceSelect.addEventListener("change", syncServiceOther);
+    bindSelectChange(serviceSelect, syncServiceOther);
+    window.__caaftSyncServiceOther = syncServiceOther;
     syncServiceOther();
   }
 
@@ -317,6 +368,15 @@
     initServiceOtherToggle();
   }
 
+  function resyncConditionalFields() {
+    if (typeof window.__caaftSyncAboutOther === "function") {
+      window.__caaftSyncAboutOther();
+    }
+    if (typeof window.__caaftSyncServiceOther === "function") {
+      window.__caaftSyncServiceOther();
+    }
+  }
+
   window.CaaftFormValidate = validateAndShow;
 
   if (document.readyState === "loading") {
@@ -324,4 +384,6 @@
   } else {
     init();
   }
+
+  window.addEventListener("load", resyncConditionalFields);
 })();

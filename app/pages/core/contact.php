@@ -179,11 +179,12 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12" id="service-other-wrap" style="display: none;">
+                                        <div class="col-lg-12 caaft-conditional-field" id="service-other-wrap" hidden>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="far fa-pen"></i></span>
                                                 <input type="text" id="service-other-text" class="form-control"
-                                                    placeholder="Please specify which service you need" autocomplete="off">
+                                                    placeholder="Please specify which service you need" autocomplete="off"
+                                                    aria-label="Specify which service you need">
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
@@ -199,11 +200,12 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12">
-                                            <div id="other-input" class="input-group" style="display: none;">
-                                                <span class="input-group-text"><i class="far fa-box"></i></span>
+                                        <div class="col-lg-12 caaft-conditional-field" id="other-input-wrap" hidden>
+                                            <div id="other-input" class="input-group">
+                                                <span class="input-group-text"><i class="far fa-pen"></i></span>
                                                 <input type="text" id="other-text" class="form-control"
-                                                    placeholder="Please mention how you heard about us">
+                                                    placeholder="Please mention how you heard about us"
+                                                    aria-label="How you heard about us">
                                             </div>
                                         </div>
                                     </div>

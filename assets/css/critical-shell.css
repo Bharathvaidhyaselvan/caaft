@@ -1,4 +1,4 @@
-/* Minimal above-the-fold shell — keeps layout stable while Bootstrap loads async. */
+/* Minimal above-the-fold shell — stable layout before / if async CSS is slow. */
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;font-family:Roboto,"Plus Jakarta Sans",system-ui,sans-serif;line-height:1.5;color:#212529;background:#fff}
@@ -27,6 +27,28 @@ img,svg{display:block;max-width:100%;height:auto}
 .site-heading{margin-bottom:1.5rem}
 .wow{visibility:visible}
 .home-3 .hero-slider .hero-img-wrap.wow{visibility:visible!important}
+
+/* Header — prevent bullet-list / expanded-menu flash on first paint */
+.collapse:not(.show){display:none}
+.navbar-nav,.header-top-contact ul{list-style:none;margin:0;padding:0}
+.header-top{background:#101010;color:#fff;padding:1px 0}
+.header-top a{color:#fff;text-decoration:none}
+.header-top-wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.header-top-contact ul{display:flex;flex-wrap:wrap;gap:12px}
+.navbar{background:#101010}
+.mega-menu-new,.search-popup{display:none!important}
+.dispaly_desktop{display:none!important}
+.display_mobiles{display:block!important}
+.mobile-menu-right{display:flex;align-items:center;gap:8px}
+.navbar-brand img{max-width:150px;height:auto}
+@media (min-width:992px){
+  .navbar-expand-lg .navbar-collapse{display:flex!important;flex-basis:auto;align-items:center}
+  .navbar-expand-lg .navbar-nav{flex-direction:row;align-items:center}
+  .dispaly_desktop{display:block!important}
+  .display_mobiles{display:none!important}
+  .collapse:not(.show){display:flex!important}
+}
+
 /* Prevent WOW/animate from hiding content on mobile (major CLS source). */
 @media (max-width:991.98px){
   .wow,.wow.animated,[class*=fadeIn],[class*=fadeOut]{visibility:visible!important;animation:none!important;transform:none!important;opacity:1!important}
