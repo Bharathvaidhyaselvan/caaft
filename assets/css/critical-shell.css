@@ -36,7 +36,7 @@ img,svg{display:block;max-width:100%;height:auto}
 .header-top-wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .header-top-contact ul{display:flex;flex-wrap:wrap;gap:12px}
 .navbar{background:#101010}
-.mega-menu-new,.search-popup{display:none!important}
+.nav-item.mega-services-item:not(.is-open) .mega-menu-new{display:none!important}
 .dispaly_desktop{display:none!important}
 .display_mobiles{display:block!important}
 .mobile-menu-right{display:flex;align-items:center;gap:8px}
