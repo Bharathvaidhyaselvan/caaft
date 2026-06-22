@@ -200,7 +200,7 @@ if (!function_exists('caaft_form_enquiry_category')) {
         $pageUrl = strtolower(caaft_form_source_url());
 
         if (preg_match('~/payroll-management|/payroll(?:/|$|[?#])~', $pageUrl)
-            || (str_contains($service, 'payroll') && !str_contains($service, 'registration'))) {
+            || (strpos($service, 'payroll') !== false && strpos($service, 'registration') === false)) {
             return 'Payroll';
         }
 
@@ -265,7 +265,7 @@ if (!function_exists('caaft_try_send_mail')) {
         string $subject,
         string $htmlBody,
         string $fromName,
-        string $fromEmail,
+        string $fromEmail
     ): bool {
         $to = caaft_sanitize_mail_address($to);
         $fromEmail = caaft_sanitize_mail_address($fromEmail);
@@ -325,9 +325,9 @@ if (!function_exists('caaft_send_cc_copy_if_needed')) {
         string $htmlBody,
         string $fromName,
         string $fromEmail,
-        string $usedHeaders,
+        string $usedHeaders
     ): void {
-        if (str_contains($usedHeaders, "Cc:")) {
+        if (strpos($usedHeaders, 'Cc:') !== false) {
             return;
         }
 
@@ -423,7 +423,7 @@ if (!function_exists('caaft_form_build_lead_data')) {
 if (!function_exists('caaft_form_redirect_thankyou')) {
     function caaft_form_redirect_thankyou(
         ?string $message = null,
-        bool $useHistoryBackOnFailure = false,
+        bool $useHistoryBackOnFailure = false
     ): void {
         $defaultMessage = 'Thanks for reaching us. You will get notified by our advisory team shortly.';
         $alertMessage = json_encode(
@@ -454,14 +454,28 @@ if (!function_exists('caaft_form_complete_submission')) {
         string $fromName,
         string $fromEmail,
         ?string $successMessage = null,
-        bool $useHistoryBackOnFailure = false,
+        bool $useHistoryBackOnFailure = false
     ): void {
-        if (!function_exists('caaft_zoho_push_lead')) {
-            require_once (defined('APP_ROOT') ? APP_ROOT : dirname(__DIR__, 2)) . '/includes/caaft-zoho-crm.php';
+        $zohoConfigured = false;
+        $zohoOk = false;
+
+        try {
+            if (!function_exists('caaft_zoho_push_lead')) {
+                require_once (defined('APP_ROOT') ? APP_ROOT : dirname(__DIR__, 2)) . '/includes/caaft-zoho-crm.php';
+            }
+
+            $zohoConfigured = caaft_zoho_is_configured();
+            if ($zohoConfigured) {
+                $zohoOk = caaft_zoho_push_lead($leadData);
+            } elseif (function_exists('caaft_zoho_log')) {
+                caaft_zoho_log('Form submission skipped Zoho: refresh_token missing in zoho.local.php');
+            }
+        } catch (Throwable $e) {
+            if (function_exists('caaft_zoho_log')) {
+                caaft_zoho_log('Form Zoho exception: ' . $e->getMessage());
+            }
         }
 
-        $zohoConfigured = caaft_zoho_is_configured();
-        $zohoOk = $zohoConfigured ? caaft_zoho_push_lead($leadData) : false;
         $mailOk = caaft_try_send_mail($to, $subject, $body, $fromName, $fromEmail);
 
         if ($zohoConfigured && !$zohoOk && $mailOk && function_exists('caaft_zoho_log')) {

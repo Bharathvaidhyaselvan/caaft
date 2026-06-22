@@ -29,12 +29,17 @@ return [
     'service_field' => 'Required_Service',
 
     /**
-     * Default Lead Owner for website leads (otherwise Zoho uses the OAuth authorizer).
-     * Set one of these in app/config/zoho.local.php — id is most reliable.
-     * Find user id: Zoho CRM → Setup → Users → open user → id in the URL.
+     * Primary owner (Pooja K). Email is tried before id — ids are sometimes confused with assignment-rule ids.
      */
-    'lead_owner_id' => '1186726000000927014',
     'lead_owner_email' => 'pooja@caaft.com',
-  /** Fallback if id/email lookup fails — resolved via Zoho Users API */
     'lead_owner_name' => 'Pooja K',
+    'lead_owner_id' => '1186726000000927014',
+
+    /**
+     * Fallback owner if primary assignment makes Zoho reject the lead (Vasanth = OAuth user).
+     * Omitting Owner on the last retry also defaults to the OAuth user.
+     */
+    'lead_owner_fallback_email' => '',
+    'lead_owner_fallback_name' => 'Vasanth R',
+    'lead_owner_fallback_id' => '',
 ];

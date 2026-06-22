@@ -871,14 +871,6 @@
 
 
     <?php include "footer-bottom.php"; ?>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    var submenu = document.getElementById('submenu');
-    if (submenu) {
-        submenu.className += ' show';
-    }
-});
-</script>
 
 </body>
 </html>

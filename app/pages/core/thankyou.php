@@ -79,7 +79,7 @@
             <center>
             <img src="assets/img/thank.webp" />
             
-            <h3 class="title tg-element-title">Our executive will contact you shortly.</h3></center>
+            <h3 class="title tg-element-title">Our team will review your submission and get in touch within one business day.</h3></center>
                
             </div>
         </section>
