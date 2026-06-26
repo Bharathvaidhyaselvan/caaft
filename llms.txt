@@ -1,0 +1,56 @@
+# caaft.com
+
+URL: https://caaft.com/llms.txt
+
+> CAAFT is a professional accounting and business consultancy firm helping organisations manage compliance, taxation, and financial operations efficiently.
+
+CAAFT is an India-based consultancy specialising in accounting, taxation, statutory compliance, and financial advisory services. The firm supports startups, SMEs, and established organisations with reliable, compliant, and practical finance solutions to meet regulatory requirements and support sustainable business growth.
+
+Core Services:
+
+- Accounting, bookkeeping, and financial reporting
+- GST registration, returns, and compliance management
+- Income tax planning, filing, and advisory
+- Business incorporation and statutory registrations
+- Payroll processing and labour law compliance
+- Audit support and regulatory compliance advisory
+- Management consultancy and financial advisory services
+- Ongoing accounting and compliance support
+
+## Business Use cases
+
+- Setting up accounting and tax structures for new businesses
+- Managing GST, income tax, and statutory filings
+- Ensuring audit readiness and accurate financial reporting
+- Outsourcing accounting, payroll, and compliance functions
+- Maintaining ongoing regulatory and statutory compliance
+
+## Clients and users
+
+- Business owners and entrepreneurs
+- Startups and growing businesses
+- Small and medium enterprises (SMEs)
+- Finance and accounts teams
+- Compliance and operations managers
+
+## Key pages
+
+- [About](https://caaft.com/about): Introduces CAAFT as a firm providing accounting, taxation, compliance, and advisory services.
+
+- [Accounting Services](https://caaft.com/accounting-reporting/accounting-company): Accounting and bookkeeping services in Chennai for accurate financial records and reporting.
+
+- [Bookkeeping Services](https://caaft.com/accounting-reporting/bookkeeping-services): Bookkeeping services for maintaining accurate financial records and transaction tracking for businesses.
+
+- [Income tax filing Services](https://caaft.com/taxation/income-tax-filing-services): Income tax filing services in Chennai, including preparation and submission of returns for individuals and businesses.
+
+- [GST return filing Services](https://caaft.com/taxation/gst-return-filing): GST return filing services including preparation and submission of GST returns to ensure tax compliance for businesses.
+
+- [GST registration Services](https://caaft.com/taxation/gst-registration): GST registration services to help businesses obtain and manage GST registration and compliance.
+
+- [Business registration Services](https://caaft.com/business-setup-registration/new-business-registration): Business registration services in Chennai, including company setup and statutory registrations for new businesses.
+
+- [Business Advisory Services](https://caaft.com/advisory-cfo/business-advisory-services): Business advisory services offering strategic guidance on financial, compliance, and operational matters to support business growth.
+
+- [ROC Compliance](https://caaft.com/compliance-regulatory/roc-compliance-filing): ROC compliance filing services to manage statutory filings and regulatory compliance with the Registrar of Companies for businesses.
+
+- [Contact](https://caaft.com/contact): Contact page providing ways to get in touch with CAAFT for enquiries and service support.
