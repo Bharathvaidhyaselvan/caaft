@@ -7885,6 +7885,18 @@ td.cal-info {
     border-color: transparent;
 }
 
+.compliance-year-accordion .accordion-collapse:not(.show) {
+    display: none !important;
+}
+
+.compliance-year-accordion .accordion-collapse.show {
+    display: block;
+}
+
+.compliance-year-accordion .accordion-collapse.collapsing {
+    overflow: hidden;
+}
+
 .compliance-year-accordion .accordion-body {
     padding: 1.25rem;
     background: #fff;
@@ -7892,15 +7904,19 @@ td.cal-info {
 
 .compliance-month-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 12px;
+    width: 100%;
 }
 
-.compliance-month-tile {
+.compliance-month-grid .compliance-month-tile {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     min-height: 88px;
     padding: 14px 10px;
     border: 1px solid #dbe3ea;
@@ -7911,12 +7927,38 @@ td.cal-info {
     transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-.compliance-month-tile:hover,
-.compliance-month-tile:focus {
+.compliance-month-grid .compliance-month-tile:hover,
+.compliance-month-grid .compliance-month-tile:focus {
     background: #2e7aa1;
     border-color: #2e7aa1;
     color: #fff;
     transform: translateY(-2px);
+}
+
+.compliance-month-grid .compliance-month-tile--unavailable {
+    background: #e2e6ec;
+    border-color: #d5dbe3;
+    color: #9aa5b1;
+    cursor: default;
+    pointer-events: none;
+}
+
+.compliance-month-grid .compliance-month-tile--unavailable:hover,
+.compliance-month-grid .compliance-month-tile--unavailable:focus {
+    background: #e2e6ec;
+    border-color: #d5dbe3;
+    color: #9aa5b1;
+    transform: none;
+}
+
+.compliance-month-grid .compliance-month-tile--unavailable .compliance-month-tile__name {
+    color: #9aa5b1;
+    font-weight: 600;
+}
+
+.compliance-month-grid .compliance-month-tile--unavailable .compliance-month-tile__year {
+    color: #b0bac5;
+    opacity: 1;
 }
 
 .compliance-month-tile__name {
@@ -7940,7 +7982,13 @@ td.cal-info {
     }
 
     .compliance-month-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .compliance-month-grid .compliance-month-tile {
+        min-height: 76px;
+        padding: 12px 8px;
     }
 
     .compliance-year-accordion .accordion-button {
@@ -7951,7 +7999,7 @@ td.cal-info {
 
 @media(min-width:681px) and (max-width:991px) {
     .compliance-month-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
 

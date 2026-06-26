@@ -30,6 +30,7 @@ img,svg{display:block;max-width:100%;height:auto}
 
 /* Header — prevent bullet-list / expanded-menu flash on first paint */
 .collapse:not(.show){display:none}
+.compliance-year-accordion .accordion-collapse:not(.show){display:none!important}
 .navbar-nav,.header-top-contact ul{list-style:none;margin:0;padding:0}
 .header-top{background:#101010;color:#fff;padding:1px 0}
 .header-top a{color:#fff;text-decoration:none}
@@ -46,7 +47,6 @@ img,svg{display:block;max-width:100%;height:auto}
   .navbar-expand-lg .navbar-nav{flex-direction:row;align-items:center}
   .dispaly_desktop{display:block!important}
   .display_mobiles{display:none!important}
-  .collapse:not(.show){display:flex!important}
 }
 
 /* Prevent WOW/animate from hiding content on mobile (major CLS source). */

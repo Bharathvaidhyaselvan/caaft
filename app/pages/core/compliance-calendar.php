@@ -58,37 +58,46 @@
 
          <!--start-->
          <?php
-         $compliance_calendars_by_year = [
+         $compliance_calendar_months = [
+             'January', 'February', 'March', 'April', 'May', 'June',
+             'July', 'August', 'September', 'October', 'November', 'December',
+         ];
+
+         $compliance_calendar_pdfs = [
              2026 => [
-                 ['month' => 'June', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-june26.pdf'],
-                 ['month' => 'May', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-may26.pdf'],
-                 ['month' => 'April', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-april26.pdf'],
-                 ['month' => 'March', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-march26.pdf'],
-                 ['month' => 'February', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-feb26.pdf'],
-                 ['month' => 'January', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-jan26.pdf'],
+                 'January' => 'assets/img/pdf/monthly-compliance-calendar-jan26.pdf',
+                 'February' => 'assets/img/pdf/monthly-compliance-calendar-feb26.pdf',
+                 'March' => 'assets/img/pdf/monthly-compliance-calendar-march26.pdf',
+                 'April' => 'assets/img/pdf/monthly-compliance-calendar-april26.pdf',
+                 'May' => 'assets/img/pdf/monthly-compliance-calendar-may26.pdf',
+                 'June' => 'assets/img/pdf/monthly-compliance-calendar-june26.pdf',
              ],
              2025 => [
-                 ['month' => 'December', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-december-25.pdf'],
-                 ['month' => 'November', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-november-25.pdf'],
-                 ['month' => 'October', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-october-25.pdf'],
-                 ['month' => 'September', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-september-25.pdf'],
-                 ['month' => 'August', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-august-25.pdf'],
-                 ['month' => 'July', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-july-25.pdf'],
-                 ['month' => 'June', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-june-25.pdf'],
-                 ['month' => 'May', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-may-25.pdf'],
+                 'May' => 'assets/img/pdf/monthly-compliance-calendar-may-25.pdf',
+                 'June' => 'assets/img/pdf/monthly-compliance-calendar-june-25.pdf',
+                 'July' => 'assets/img/pdf/monthly-compliance-calendar-july-25.pdf',
+                 'August' => 'assets/img/pdf/monthly-compliance-calendar-august-25.pdf',
+                 'September' => 'assets/img/pdf/monthly-compliance-calendar-september-25.pdf',
+                 'October' => 'assets/img/pdf/monthly-compliance-calendar-october-25.pdf',
+                 'November' => 'assets/img/pdf/monthly-compliance-calendar-november-25.pdf',
+                 'December' => 'assets/img/pdf/monthly-compliance-calendar-december-25.pdf',
              ],
          ];
+
+         $compliance_calendar_years = array_keys($compliance_calendar_pdfs);
+         rsort($compliance_calendar_years, SORT_NUMERIC);
          ?>
          <section class="calendar-new">
          <div class="cal-caft container">
   <h2 class="head-com">Compliance Calendar</h2>
   <div class="accordion compliance-year-accordion" id="complianceCalendarAccordion">
-    <?php $year_index = 0; foreach ($compliance_calendars_by_year as $year => $months) : ?>
+    <?php $year_index = 0; foreach ($compliance_calendar_years as $year) : ?>
     <?php
         $year_index++;
         $is_first_year = $year_index === 1;
         $heading_id = 'complianceYear' . $year . 'Heading';
         $collapse_id = 'complianceYear' . $year . 'Collapse';
+        $year_pdfs = $compliance_calendar_pdfs[$year] ?? [];
     ?>
     <div class="accordion-item">
       <h3 class="accordion-header" id="<?php echo htmlspecialchars($heading_id, ENT_QUOTES, 'UTF-8'); ?>">
@@ -99,11 +108,22 @@
       <div id="<?php echo htmlspecialchars($collapse_id, ENT_QUOTES, 'UTF-8'); ?>" class="accordion-collapse collapse<?php echo $is_first_year ? ' show' : ''; ?>" aria-labelledby="<?php echo htmlspecialchars($heading_id, ENT_QUOTES, 'UTF-8'); ?>" data-bs-parent="#complianceCalendarAccordion">
         <div class="accordion-body">
           <div class="compliance-month-grid" role="list">
-            <?php foreach ($months as $entry) : ?>
-            <a href="<?php echo htmlspecialchars($entry['pdf'], ENT_QUOTES, 'UTF-8'); ?>" target="_blank" rel="noopener noreferrer" class="compliance-month-tile" role="listitem" title="<?php echo htmlspecialchars($entry['month'] . ' ' . $year . ' compliance calendar (PDF)', ENT_QUOTES, 'UTF-8'); ?>">
-              <span class="compliance-month-tile__name"><?php echo htmlspecialchars($entry['month'], ENT_QUOTES, 'UTF-8'); ?></span>
+            <?php foreach ($compliance_calendar_months as $month_name) : ?>
+            <?php
+                $pdf = $year_pdfs[$month_name] ?? null;
+                $tile_label = $month_name . ' ' . $year;
+            ?>
+            <?php if ($pdf) : ?>
+            <a href="<?php echo htmlspecialchars($pdf, ENT_QUOTES, 'UTF-8'); ?>" target="_blank" rel="noopener noreferrer" class="compliance-month-tile" role="listitem" title="<?php echo htmlspecialchars($tile_label . ' compliance calendar (PDF)', ENT_QUOTES, 'UTF-8'); ?>">
+              <span class="compliance-month-tile__name"><?php echo htmlspecialchars($month_name, ENT_QUOTES, 'UTF-8'); ?></span>
               <span class="compliance-month-tile__year"><?php echo (int) $year; ?></span>
             </a>
+            <?php else : ?>
+            <span class="compliance-month-tile compliance-month-tile--unavailable" role="listitem" aria-disabled="true" title="<?php echo htmlspecialchars($tile_label . ' calendar not available yet', ENT_QUOTES, 'UTF-8'); ?>">
+              <span class="compliance-month-tile__name"><?php echo htmlspecialchars($month_name, ENT_QUOTES, 'UTF-8'); ?></span>
+              <span class="compliance-month-tile__year"><?php echo (int) $year; ?></span>
+            </span>
+            <?php endif; ?>
             <?php endforeach; ?>
           </div>
         </div>
