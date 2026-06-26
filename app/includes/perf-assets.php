@@ -42,6 +42,14 @@ if (!function_exists('caaft_public_asset_url')) {
     }
 }
 
+if (!function_exists('caaft_preload_font')) {
+    function caaft_preload_font(string $relativePath): void
+    {
+        $href = htmlspecialchars(caaft_public_asset_url($relativePath), ENT_QUOTES, 'UTF-8');
+        echo '<link rel="preload" as="font" type="font/woff2" href="' . $href . '" crossorigin>' . "\n";
+    }
+}
+
 if (!function_exists('caaft_defer_stylesheet')) {
     function caaft_defer_stylesheet(string $href): void
     {

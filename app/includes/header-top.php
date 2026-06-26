@@ -6,6 +6,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <?php
+caaft_preload_font('assets/fonts/fa-solid-900.subset.woff2');
+caaft_preload_font('assets/fonts/fa-regular-400.subset.woff2');
+caaft_preload_font('assets/fonts/fa-brands-400.subset.woff2');
 $styleVersion = caaft_asset_version('assets/css/style.css');
 $features = caaft_page_features();
 $fontDisplay = $features['home'] ? 'optional' : 'swap';
@@ -20,6 +23,7 @@ if ($features['home']) {
 <noscript><link rel="stylesheet" href="<?php echo htmlspecialchars($fontCss, ENT_QUOTES, 'UTF-8'); ?>"></noscript>
 
 <link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/critical-shell.css'), ENT_QUOTES, 'UTF-8'); ?>">
+<link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/fontawesome-critical.css'), ENT_QUOTES, 'UTF-8'); ?>">
 <link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/bootstrap.min.css'), ENT_QUOTES, 'UTF-8'); ?>">
 <link rel="stylesheet" href="<?php echo htmlspecialchars(caaft_public_asset_url('assets/css/all-fontawesome.min.css'), ENT_QUOTES, 'UTF-8'); ?>">
 <?php if ($features['home']) : ?>
