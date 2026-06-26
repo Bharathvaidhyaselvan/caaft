@@ -57,78 +57,60 @@
         </div>
 
          <!--start-->
+         <?php
+         $compliance_calendars_by_year = [
+             2026 => [
+                 ['month' => 'June', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-june26.pdf'],
+                 ['month' => 'May', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-may26.pdf'],
+                 ['month' => 'April', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-april26.pdf'],
+                 ['month' => 'March', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-march26.pdf'],
+                 ['month' => 'February', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-feb26.pdf'],
+                 ['month' => 'January', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-jan26.pdf'],
+             ],
+             2025 => [
+                 ['month' => 'December', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-december-25.pdf'],
+                 ['month' => 'November', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-november-25.pdf'],
+                 ['month' => 'October', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-october-25.pdf'],
+                 ['month' => 'September', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-september-25.pdf'],
+                 ['month' => 'August', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-august-25.pdf'],
+                 ['month' => 'July', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-july-25.pdf'],
+                 ['month' => 'June', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-june-25.pdf'],
+                 ['month' => 'May', 'pdf' => 'assets/img/pdf/monthly-compliance-calendar-may-25.pdf'],
+             ],
+         ];
+         ?>
          <section class="calendar-new">
          <div class="cal-caft container">
-  <h2 class="head-com">Compliance Calendar 2025</h2>
- <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th class="month">Month</th>
-        <th class="month">Calendar</th>
-
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-        <td class="cal-info">June 2026</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-june26.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr>
-        <tr>
-        <td class="cal-info">May 2026</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-may26.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr>
-        <tr>
-        <td class="cal-info">April 2026</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-april26.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr>
-        <tr>
-        <td class="cal-info">March 2026</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-march26.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr>
-     <tr>
-        <td class="cal-info">February 2026</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-feb26.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr>
-    <tr>
-        <td class="cal-info">January 2026</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-jan26.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr>
-     <tr>
-        <td class="cal-info">December 2025</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-december-25.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr> 
-     <tr>
-        <td class="cal-info">November 2025</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-november-25.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr> 
-    <tr>
-        <td class="cal-info">October 2025</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-october-25.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr> 
-     <tr>
-        <td class="cal-info">September 2025</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-september-25.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr> 
-    <tr>
-        <td class="cal-info">August 2025</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-august-25.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr> 
-    <tr>
-        <td class="cal-info">July 2025</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-july-25.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr>  
-    <tr>
-        <td class="cal-info">June 2025</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-june-25.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr>  
-      <tr>
-        <td class="cal-info">May 2025</td>
-        <td class="cal-info" ><a href="assets/img/pdf/monthly-compliance-calendar-may-25.pdf" target="_blank" class="view theme-btn mt-20">View</a></td>
-      </tr>  
-         
-      
-    </tbody>
-  </table>
+  <h2 class="head-com">Compliance Calendar</h2>
+  <div class="accordion compliance-year-accordion" id="complianceCalendarAccordion">
+    <?php $year_index = 0; foreach ($compliance_calendars_by_year as $year => $months) : ?>
+    <?php
+        $year_index++;
+        $is_first_year = $year_index === 1;
+        $heading_id = 'complianceYear' . $year . 'Heading';
+        $collapse_id = 'complianceYear' . $year . 'Collapse';
+    ?>
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="<?php echo htmlspecialchars($heading_id, ENT_QUOTES, 'UTF-8'); ?>">
+        <button class="accordion-button<?php echo $is_first_year ? '' : ' collapsed'; ?>" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo htmlspecialchars($collapse_id, ENT_QUOTES, 'UTF-8'); ?>" aria-expanded="<?php echo $is_first_year ? 'true' : 'false'; ?>" aria-controls="<?php echo htmlspecialchars($collapse_id, ENT_QUOTES, 'UTF-8'); ?>">
+          <?php echo (int) $year; ?>
+        </button>
+      </h3>
+      <div id="<?php echo htmlspecialchars($collapse_id, ENT_QUOTES, 'UTF-8'); ?>" class="accordion-collapse collapse<?php echo $is_first_year ? ' show' : ''; ?>" aria-labelledby="<?php echo htmlspecialchars($heading_id, ENT_QUOTES, 'UTF-8'); ?>" data-bs-parent="#complianceCalendarAccordion">
+        <div class="accordion-body">
+          <div class="compliance-month-grid" role="list">
+            <?php foreach ($months as $entry) : ?>
+            <a href="<?php echo htmlspecialchars($entry['pdf'], ENT_QUOTES, 'UTF-8'); ?>" target="_blank" rel="noopener noreferrer" class="compliance-month-tile" role="listitem" title="<?php echo htmlspecialchars($entry['month'] . ' ' . $year . ' compliance calendar (PDF)', ENT_QUOTES, 'UTF-8'); ?>">
+              <span class="compliance-month-tile__name"><?php echo htmlspecialchars($entry['month'], ENT_QUOTES, 'UTF-8'); ?></span>
+              <span class="compliance-month-tile__year"><?php echo (int) $year; ?></span>
+            </a>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php endforeach; ?>
+  </div>
 </div>
 
 
