@@ -8,7 +8,7 @@ $plcLegacyPaths = [
 ];
 if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
     $plcQs = isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] !== '' ? '?' . $_SERVER['QUERY_STRING'] : '';
-    header('Location: /' . $plcCanonicalSlug . '/' . $plcQs, true, 301);
+    header('Location: /' . $plcCanonicalSlug . $plcQs, true, 301);
     exit;
 }
 ?>
@@ -22,12 +22,12 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
     <title>Public Limited Company Registration in India for Large-Scale Business Growth</title>
     <meta name="description" content="Public Limited Company registration in India for enterprises seeking public funding, compliance-led governance, and scalable growth.">
     <meta name="keywords" content="Public Limited Company, Public Limited Company Registration, PLC registration India, public company incorporation, ROC filing">
-    <link rel="canonical" href="https://caaft.com/public-limited-company-registration/">
+    <link rel="canonical" href="https://caaft.com/public-limited-company-registration">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Public Limited Company Registration in India for Large-Scale Business Growth">
     <meta property="og:description" content="Public Limited Company registration in India for enterprises seeking public funding, compliance-led governance, and scalable growth.">
-    <meta property="og:url" content="https://caaft.com/public-limited-company-registration/">
+    <meta property="og:url" content="https://caaft.com/public-limited-company-registration">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -328,10 +328,10 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/public-limited-company-registration/#service",
+          "@id": "https://caaft.com/public-limited-company-registration#service",
           "name": "Public Limited Company Registration",
           "alternateName": "Public Limited Company Registration Services India",
-          "url": "https://caaft.com/public-limited-company-registration/",
+          "url": "https://caaft.com/public-limited-company-registration",
           "description": "End-to-end Public Limited Company registration services in India including documentation, compliance, incorporation, and advisory support for large-scale business growth.",
           "provider": { "@id": "https://caaft.com/#organization" },
           "areaServed": { "@type": "Country", "name": "India" },
@@ -349,7 +349,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/public-limited-company-registration/#faq",
+          "@id": "https://caaft.com/public-limited-company-registration#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -395,10 +395,10 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/public-limited-company-registration/#breadcrumb",
+          "@id": "https://caaft.com/public-limited-company-registration#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Public Limited Company Registration", "item": "https://caaft.com/public-limited-company-registration/" }
+            { "@type": "ListItem", "position": 2, "name": "Public Limited Company Registration", "item": "https://caaft.com/public-limited-company-registration" }
           ]
         }
       ]

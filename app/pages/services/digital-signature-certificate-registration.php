@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Digital Signature Certificate (DSC) Registration | Fast &amp; Secure Online</title>
     <meta name="description" content="Apply for a Digital Signature Certificate (DSC) quickly with expert assistance. Register your DSC for MCA, GST, IEC, and e-tendering with secure and reliable processing.">
     <meta name="keywords" content="digital signature certificate, register digital signature certificate, DSC registration, Class 3 DSC">
-    <link rel="canonical" href="https://caaft.com/digital-signature-certificate-registration/">
+    <link rel="canonical" href="https://caaft.com/digital-signature-certificate-registration">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Digital Signature Certificate (DSC) Registration | Fast &amp; Secure Online">
     <meta property="og:description" content="Apply for a Digital Signature Certificate (DSC) quickly with expert assistance. Register your DSC for MCA, GST, IEC, and e-tendering with secure and reliable processing.">
-    <meta property="og:url" content="https://caaft.com/digital-signature-certificate-registration/">
+    <meta property="og:url" content="https://caaft.com/digital-signature-certificate-registration">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -62,10 +62,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/digital-signature-certificate-registration/#service",
+          "@id": "https://caaft.com/digital-signature-certificate-registration#service",
           "name": "Digital Signature Certificate (DSC) Registration Services",
           "alternateName": "DSC Registration Services India",
-          "url": "https://caaft.com/digital-signature-certificate-registration/",
+          "url": "https://caaft.com/digital-signature-certificate-registration",
           "description": "Secure and compliant Digital Signature Certificate (DSC) registration services — Class 3 DSC issuance, application filing, identity verification, USB token setup, renewal, and reissue support for individuals, directors, and businesses across India for MCA, GST, DGFT, and e-tendering portals.",
           "provider": {
             "@type": "Organization",
@@ -77,7 +77,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/digital-signature-certificate-registration/#faq",
+          "@id": "https://caaft.com/digital-signature-certificate-registration#faq",
           "mainEntity": [
             { "@type": "Question", "name": "How long does it take to get a Digital Signature Certificate?", "acceptedAnswer": { "@type": "Answer", "text": "Most applicants receive their digital signature certificate within 1 to 3 working days after successful document verification and approval from the certifying authority." } },
             { "@type": "Question", "name": "Can I use one DSC on multiple government portals?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can use a single digital signature certificate across multiple government platforms such as MCA, GST, Income Tax, and DGFT, provided the certificate type supports those applications." } },
@@ -91,10 +91,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/digital-signature-certificate-registration/#breadcrumb",
+          "@id": "https://caaft.com/digital-signature-certificate-registration#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Digital Signature Certificate Registration Services", "item": "https://caaft.com/digital-signature-certificate-registration/" }
+            { "@type": "ListItem", "position": 2, "name": "Digital Signature Certificate Registration Services", "item": "https://caaft.com/digital-signature-certificate-registration" }
           ]
         }
       ]

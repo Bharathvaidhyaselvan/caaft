@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Director KYC (DIN KYC) Filing Online | DIR-3 KYC &amp; DIN Reactivation Service</title>
     <meta name="description" content="Complete your Director KYC (DIN KYC) filing online with expert assistance. We handle DIR-3 KYC, DIR-3 KYC Web filing, DIN activation, document verification, and MCA compliance support to keep your Director Identification Number active and penalty-free.">
     <meta name="keywords" content="din kyc, din 3, Director KYC, DIR-3 KYC filing, DIN reactivation">
-    <link rel="canonical" href="https://caaft.com/din-kyc-filing/">
+    <link rel="canonical" href="https://caaft.com/din-kyc-filing">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Director KYC (DIN KYC) Filing Online | DIR-3 KYC &amp; DIN Reactivation Service">
     <meta property="og:description" content="Expert DIR-3 KYC filing and DIN reactivation support to keep directors compliant and DINs active.">
-    <meta property="og:url" content="https://caaft.com/din-kyc-filing/">
+    <meta property="og:url" content="https://caaft.com/din-kyc-filing">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -45,10 +45,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/din-kyc-filing/#service",
+          "@id": "https://caaft.com/din-kyc-filing#service",
           "name": "Director KYC (DIN KYC) Filing and DIN Reactivation Services",
           "alternateName": "DIR-3 KYC Filing and Director KYC Services",
-          "url": "https://caaft.com/din-kyc-filing/",
+          "url": "https://caaft.com/din-kyc-filing",
           "description": "Complete Director KYC (DIN KYC) filing services including DIR-3 KYC form filing, DIR-3 KYC web filing, DIN reactivation, document verification, and MCA compliance support to keep your Director Identification Number active.",
           "serviceType": "DIN KYC Filing and MCA Compliance Services",
           "provider": {
@@ -60,7 +60,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/din-kyc-filing/#faq",
+          "@id": "https://caaft.com/din-kyc-filing#faq",
           "mainEntity": [
             { "@type": "Question", "name": "How can a director check whether their DIN KYC is already completed?", "acceptedAnswer": { "@type": "Answer", "text": "DIN status can be verified on the MCA portal using the Verify DIN Status feature. By entering the DIN number, the system displays whether the DIN is active, deactivated, or compliant with KYC requirements." } },
             { "@type": "Question", "name": "Can a director update personal details during the DIR-3 KYC process?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Details such as email address, mobile number, and residential address can be updated during the DIR-3 KYC filing. Major corrections like name changes require additional supporting documents and approval through specific MCA forms." } },
@@ -71,10 +71,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/din-kyc-filing/#breadcrumb",
+          "@id": "https://caaft.com/din-kyc-filing#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "DIN KYC", "item": "https://caaft.com/din-kyc-filing/" }
+            { "@type": "ListItem", "position": 2, "name": "DIN KYC", "item": "https://caaft.com/din-kyc-filing" }
           ]
         }
       ]

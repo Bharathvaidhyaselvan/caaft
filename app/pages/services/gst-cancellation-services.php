@@ -8,12 +8,12 @@
     <title>GST Cancellation Services in India | Fast Registration Cancellation</title>
     <meta name="description" content="Professional GST cancellation services for closed businesses, low turnover taxpayers, and inactive GST accounts. Expert assistance with fast and compliant GST cancellation.">
     <meta name="keywords" content="Gst cancellation, Cancellation of gst registration, Gst cancellation process, Gst cancellation status">
-    <link rel="canonical" href="https://caaft.com/gst-cancellation-services/">
+    <link rel="canonical" href="https://caaft.com/gst/gst-cancellation-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="GST Cancellation Services in India | Fast Registration Cancellation">
     <meta property="og:description" content="Professional GST cancellation services for closed businesses, low turnover taxpayers, and inactive GST accounts. Expert assistance with fast and compliant GST cancellation.">
-    <meta property="og:url" content="https://caaft.com/gst-cancellation-services/">
+    <meta property="og:url" content="https://caaft.com/gst/gst-cancellation-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/gst-cancellation-overview.jpg">
     <?php include "header-top.php"; ?>
@@ -352,9 +352,9 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/gst-cancellation-services/#service",
+          "@id": "https://caaft.com/gst/gst-cancellation-services#service",
           "name": "GST Cancellation Services",
-          "url": "https://caaft.com/gst-cancellation-services/",
+          "url": "https://caaft.com/gst/gst-cancellation-services",
           "description": "Professional GST cancellation services including cancellation of GST registration, GST cancellation process handling, and status tracking support for businesses.",
           "provider": { "@id": "https://caaft.com/#org" },
           "serviceType": "GST Registration Cancellation",
@@ -362,7 +362,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/gst-cancellation-services/#faq",
+          "@id": "https://caaft.com/gst/gst-cancellation-services#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -408,10 +408,10 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/gst-cancellation-services/#breadcrumb",
+          "@id": "https://caaft.com/gst/gst-cancellation-services#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "GST Cancellation Services", "item": "https://caaft.com/gst-cancellation-services/" }
+            { "@type": "ListItem", "position": 2, "name": "GST Cancellation Services", "item": "https://caaft.com/gst/gst-cancellation-services" }
           ]
         }
       ]

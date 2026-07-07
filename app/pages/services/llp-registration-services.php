@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Limited Liability Partnership Registration in India</title>
     <meta name="description" content="Register your Limited Liability Partnership in India with expert guidance. Get complete support for registration, compliance, and documentation with transparent pricing. Book a free consultation today.">
     <meta name="keywords" content="Limited Liability Partnership, LLP Registration, LLP registration process, LLP incorporation India, RUN-LLP, FiLLiP">
-    <link rel="canonical" href="https://caaft.com/llp-registration-services/">
+    <link rel="canonical" href="https://caaft.com/llp-registration-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Limited Liability Partnership Registration in India">
     <meta property="og:description" content="Register your Limited Liability Partnership in India with expert guidance. Get complete support for registration, compliance, and documentation with transparent pricing. Book a free consultation today.">
-    <meta property="og:url" content="https://caaft.com/llp-registration-services/">
+    <meta property="og:url" content="https://caaft.com/llp-registration-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/services-images/Business%20Set%20up%20%26%20REgistration/LLP-image.jpeg">
     <style>
@@ -470,10 +470,10 @@ declare(strict_types=1);
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/llp-registration-services/#service",
+          "@id": "https://caaft.com/llp-registration-services#service",
           "name": "Limited Liability Partnership Registration Services in India",
           "alternateName": "LLP Registration Services",
-          "url": "https://caaft.com/llp-registration-services/",
+          "url": "https://caaft.com/llp-registration-services",
           "description": "End-to-end LLP registration services in India including name reservation, DSC, DIN, FiLLiP filing, LLP Agreement drafting, and post-incorporation compliance.",
           "provider": { "@id": "https://caaft.com/#organization" },
           "areaServed": { "@type": "Country", "name": "India" },
@@ -493,7 +493,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/llp-registration-services/#faq",
+          "@id": "https://caaft.com/llp-registration-services#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -539,10 +539,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/llp-registration-services/#breadcrumb",
+          "@id": "https://caaft.com/llp-registration-services#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "LLP Registration Services", "item": "https://caaft.com/llp-registration-services/" }
+            { "@type": "ListItem", "position": 2, "name": "LLP Registration Services", "item": "https://caaft.com/llp-registration-services" }
           ]
         }
       ]

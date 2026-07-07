@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Professional Tax Return Filing Services in India | Professional Tax Return Compliance</title>
     <meta name="description" content="Professional tax return filing made simple. Ensure accurate professional tax return submission, avoid penalties, and maintain compliance with state regulations through timely filing.">
     <meta name="keywords" content="professional tax return filing, professional tax return, PTRC, PTEC, professional tax compliance India">
-    <link rel="canonical" href="https://caaft.com/professional-tax-return-filing/">
+    <link rel="canonical" href="https://caaft.com/professional-tax-return-filing">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Professional Tax Return Filing Services in India | Professional Tax Return Compliance">
     <meta property="og:description" content="Professional tax return filing made simple. Ensure accurate professional tax return submission, avoid penalties, and maintain compliance with state regulations through timely filing.">
-    <meta property="og:url" content="https://caaft.com/professional-tax-return-filing/">
+    <meta property="og:url" content="https://caaft.com/professional-tax-return-filing">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -67,10 +67,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/professional-tax-return-filing/#service",
+          "@id": "https://caaft.com/professional-tax-return-filing#service",
           "name": "Professional Tax Registration & Return Filing Services",
           "alternateName": "Professional Tax Return Filing Services India",
-          "url": "https://caaft.com/professional-tax-return-filing/",
+          "url": "https://caaft.com/professional-tax-return-filing",
           "description": "End-to-end professional tax registration and return filing — PTRC and PTEC registration, slab-based computation, periodic return filing, and compliance monitoring for employers, self-employed professionals, and businesses across India.",
           "provider": {
             "@type": "Organization",
@@ -82,7 +82,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/professional-tax-return-filing/#faq",
+          "@id": "https://caaft.com/professional-tax-return-filing#faq",
           "mainEntity": [
             { "@type": "Question", "name": "Can a business have both PTRC and PTEC registrations?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A business owner who employs staff and also earns professional income may require both PTRC (for employees) and PTEC (for personal liability)." } },
             { "@type": "Question", "name": "Is professional tax applicable in every Indian state?", "acceptedAnswer": { "@type": "Answer", "text": "No. Professional tax is applicable only in states that have enacted specific professional tax legislation." } },
@@ -94,10 +94,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/professional-tax-return-filing/#breadcrumb",
+          "@id": "https://caaft.com/professional-tax-return-filing#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Professional Tax Registration & Return Filing Services", "item": "https://caaft.com/professional-tax-return-filing/" }
+            { "@type": "ListItem", "position": 2, "name": "Professional Tax Registration & Return Filing Services", "item": "https://caaft.com/professional-tax-return-filing" }
           ]
         }
       ]

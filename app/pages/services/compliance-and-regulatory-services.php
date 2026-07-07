@@ -8,12 +8,12 @@
     <meta name="robots" content="all, index, follow">
     <title>Compliance &amp; Regulatory Services in India | CAAFT</title>
     <meta name="description" content="From annual ROC filings to director KYC and company changes, CAAFT manages every compliance obligation on time — so your business stays penalty-free and audit-ready">
-    <link rel="canonical" href="https://caaft.com/compliance-and-regulatory-services/">
+    <link rel="canonical" href="https://caaft.com/compliance-and-regulatory-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Compliance &amp; Regulatory Services in India | CAAFT">
     <meta property="og:description" content="From annual ROC filings to director KYC and company changes, CAAFT manages every compliance obligation on time — so your business stays penalty-free and audit-ready">
-    <meta property="og:url" content="https://caaft.com/compliance-and-regulatory-services/">
+    <meta property="og:url" content="https://caaft.com/compliance-and-regulatory-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/dir-3-director-kyc.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -95,10 +95,10 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/compliance-and-regulatory-services/#service-company-compliance",
+          "@id": "https://caaft.com/compliance-and-regulatory-services#service-company-compliance",
           "name": "Company Compliance Services",
           "alternateName": "Annual ROC Compliance Services Chennai",
-          "url": "https://caaft.com/compliance-and-regulatory-services/",
+          "url": "https://caaft.com/compliance-and-regulatory-services",
           "description": "Complete annual compliance calendar management for Private Limited, Public Limited, OPC, and LLP entities — every MCA filing accurate, on time, and without gaps.",
           "provider": {"@id": "https://caaft.com/#organization"},
           "areaServed": {"@type": "Country", "name": "India"},
@@ -116,10 +116,10 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/compliance-and-regulatory-services/#service-firm-compliance",
+          "@id": "https://caaft.com/compliance-and-regulatory-services#service-firm-compliance",
           "name": "Firm Compliance Services",
           "alternateName": "Partnership and Proprietorship Compliance Services Chennai",
-          "url": "https://caaft.com/compliance-and-regulatory-services/",
+          "url": "https://caaft.com/compliance-and-regulatory-services",
           "description": "Records, filings, and statutory requirements consistently maintained for Partnership Firms and Sole Proprietorships.",
           "provider": {"@id": "https://caaft.com/#organization"},
           "areaServed": {"@type": "Country", "name": "India"},
@@ -135,10 +135,10 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/compliance-and-regulatory-services/#service-roc-compliance",
+          "@id": "https://caaft.com/compliance-and-regulatory-services#service-roc-compliance",
           "name": "ROC Compliance Services",
           "alternateName": "MCA ROC Filing Services Chennai",
-          "url": "https://caaft.com/compliance-and-regulatory-services/",
+          "url": "https://caaft.com/compliance-and-regulatory-services",
           "description": "Every ROC transaction handled — director KYC, director changes, capital increases, office changes, routine MCA filings, and company closure — accurately and within prescribed timelines.",
           "provider": {"@id": "https://caaft.com/#organization"},
           "areaServed": {"@type": "Country", "name": "India"},
@@ -158,7 +158,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/compliance-and-regulatory-services/#faq",
+          "@id": "https://caaft.com/compliance-and-regulatory-services#faq",
           "mainEntity": [
             {"@type": "Question", "name": "Can CAAFT manage compliance for multiple companies under the same group?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We manage compliance across multiple entities for the same business group - with a consolidated calendar, unified communication, and a single point of contact for all filings. Many of our clients run 2–4 entities and prefer to consolidate their compliance under one firm."}},
             {"@type": "Question", "name": "Will I be reminded before every deadline - or do I need to track it myself?", "acceptedAnswer": {"@type": "Answer", "text": "You don't track anything. We maintain your compliance calendar and send you advance reminders before every due date - along with a clear list of what we need from you. Your only job is to respond to our checklist."}},
@@ -172,10 +172,10 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/compliance-and-regulatory-services/#breadcrumb",
+          "@id": "https://caaft.com/compliance-and-regulatory-services#breadcrumb",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com"},
-            {"@type": "ListItem", "position": 2, "name": "Compliance and Regulatory Services", "item": "https://caaft.com/compliance-and-regulatory-services/"}
+            {"@type": "ListItem", "position": 2, "name": "Compliance and Regulatory Services", "item": "https://caaft.com/compliance-and-regulatory-services"}
           ]
         }
       ]

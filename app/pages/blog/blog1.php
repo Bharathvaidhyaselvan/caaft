@@ -9,12 +9,12 @@
    <meta name="robots" content="all, index, follow" >
       <title>Expert Insights on Accounting, Taxation & Business Growth | CAAFT Blog</title>
       <meta name="Description" content="Explore expert insights on accounting, taxation, audits, and business consultancy with CAAFT Consultancy Services to drive growth and informed decisions." >
-      <link rel="canonical" href="<?php echo canonical_url('https://caaft.com/blog1.php'); ?>" >
+      <link rel="canonical" href="<?php echo canonical_url('https://caaft.com/blog'); ?>" >
       <meta property="og:locale" content="en_US">
       <meta property="og:type" content="article" >
       <meta property="og:title" content="Expert Insights on Accounting, Taxation & Business Growth | CAAFT Blog" >
       <meta property="og:description" content="Explore expert insights on accounting, taxation, audits, and business consultancy with CAAFT Consultancy Services to drive growth and informed decisions." >
-      <meta property="og:url" content="https://caaft.com/contact.php" >
+      <meta property="og:url" content="https://caaft.com/blog" >
       <meta property="og:site_name" content="CAAFT Consultancy Services" >
       <meta property="og:image" content="https://caaft.com/assets/img/contact-form.webp" >
       <!--<meta property="fb:app_id" content="kpwebtechcom" >-->
@@ -25,6 +25,19 @@
       <meta name="twitter:image" content="https://caaft.com/assets/img/contact-form.webp">
 
     <?php include "header-top.php"; ?>
+    <?php include dirname(__DIR__, 2) . '/includes/components/caaft-schema-organization.php'; ?>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "@id": "https://caaft.com/blog/#blog",
+      "url": "https://caaft.com/blog",
+      "name": "CAAFT Blog — Expert Insights on Accounting, Taxation & Business Growth",
+      "description": "Explore expert insights on accounting, taxation, audits, and business consultancy with CAAFT Consultancy Services to drive growth and informed decisions.",
+      "publisher": {"@id": "https://caaft.com/#organization"},
+      "inLanguage": "en-IN"
+    }
+    </script>
 </head>
 
 <body class="home-3">

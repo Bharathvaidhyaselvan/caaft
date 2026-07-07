@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Business Valuation Services | Share Valuation &amp; Valuation Report</title>
     <meta name="description" content="Professional business valuation services for startups and companies. Get accurate share valuation, valuation reports, and expert guidance from experienced valuation consultants.">
     <meta name="keywords" content="Business Valuation Services, Business Valuation Consultant, Share Valuation Services, Business Valuation, Business Valuation Report">
-    <link rel="canonical" href="https://caaft.com/business-valuation-services/">
+    <link rel="canonical" href="https://caaft.com/business-valuation-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Business Valuation Services | Share Valuation &amp; Valuation Report">
     <meta property="og:description" content="Accurate and compliance-ready business valuation services for fundraising, share transactions, M&A, and strategic planning.">
-    <meta property="og:url" content="https://caaft.com/business-valuation-services/">
+    <meta property="og:url" content="https://caaft.com/business-valuation-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -42,10 +42,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/business-valuation-services/#service",
+          "@id": "https://caaft.com/business-valuation-services#service",
           "name": "Business Valuation Services",
           "alternateName": "Company Valuation and Financial Advisory Services India",
-          "url": "https://caaft.com/business-valuation-services/",
+          "url": "https://caaft.com/business-valuation-services",
           "description": "End-to-end business valuation services - financial analysis, DCF modelling, share valuation, regulatory compliance, and detailed valuation reports to support fundraising, mergers and acquisitions, ESOPs, and strategic decision-making across India.",
           "provider": {
             "@type": "Organization",
@@ -57,7 +57,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/business-valuation-services/#faq",
+          "@id": "https://caaft.com/business-valuation-services#faq",
           "mainEntity": [
             { "@type": "Question", "name": "How is business valuation different from accounting-based book value?", "acceptedAnswer": { "@type": "Answer", "text": "Book value reflects historical asset costs, while business valuation considers earning potential, market comparables, intangible assets, and future growth to determine a realistic market value." } },
             { "@type": "Question", "name": "Is a business valuation report mandatory for private limited companies issuing shares?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A valuation report is required in specific cases such as issuing shares at a premium or transactions involving non-residents, as per Income Tax and FEMA regulations." } },
@@ -68,10 +68,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/business-valuation-services/#breadcrumb",
+          "@id": "https://caaft.com/business-valuation-services#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Business Valuation Services", "item": "https://caaft.com/business-valuation-services/" }
+            { "@type": "ListItem", "position": 2, "name": "Business Valuation Services", "item": "https://caaft.com/business-valuation-services" }
           ]
         }
       ]

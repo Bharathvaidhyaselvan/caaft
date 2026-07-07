@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>12A and 80G Registration Services for NGOs &amp; Trusts | Tax Exemption Support</title>
     <meta name="description" content="Get professional support for 12A and 80G registration for NGOs and trusts. Secure your 80G certificate, enable donor tax benefits, and obtain tax exemption with expert guidance.">
     <meta name="keywords" content="12A and 80G Registration, 12A registration for NGO, 80G certificate registration, 80G registration for trust">
-    <link rel="canonical" href="https://caaft.com/12a-80g-registration/">
+    <link rel="canonical" href="https://caaft.com/12a-80g-registration">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="12A and 80G Registration Services for NGOs &amp; Trusts | Tax Exemption Support">
     <meta property="og:description" content="Get professional support for 12A and 80G registration for NGOs and trusts. Secure your 80G certificate, enable donor tax benefits, and obtain tax exemption with expert guidance.">
-    <meta property="og:url" content="https://caaft.com/12a-80g-registration/">
+    <meta property="og:url" content="https://caaft.com/12a-80g-registration">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -66,10 +66,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/12a-80g-registration/#service",
+          "@id": "https://caaft.com/12a-80g-registration#service",
           "name": "12A and 80G Registration Services",
           "alternateName": "NGO Tax Exemption Registration Services India",
-          "url": "https://caaft.com/12a-80g-registration/",
+          "url": "https://caaft.com/12a-80g-registration",
           "description": "End-to-end 12A and 80G registration services for NGOs, trusts, and Section 8 companies - eligibility assessment, document preparation, Form 10A/10AB filing, Income Tax Department coordination, and post-registration compliance support to secure tax exemption and unlock donor funding across India.",
           "provider": {
             "@type": "Organization",
@@ -81,7 +81,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/12a-80g-registration/#faq",
+          "@id": "https://caaft.com/12a-80g-registration#faq",
           "mainEntity": [
             { "@type": "Question", "name": "Can a newly registered NGO apply for 12A and 80G simultaneously?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Newly registered organizations can apply for both 12A and 80G at the same time using Form 10A. In this case, provisional registration is granted for 3 years, after which you can apply for full (5-year) registration once your track record of charitable activity is established. Applying early is strongly advisable as it protects your organization's income and enables access to CSR and grant funding from the start." } },
             { "@type": "Question", "name": "What is the difference between provisional and regular 12A and 80G registration?", "acceptedAnswer": { "@type": "Answer", "text": "Provisional registration is issued to organizations with no operational history and is valid for 3 years. After completing at least one year of charitable activities, the organization can apply for regular registration valid for 5 years by filing Form 10AB. Both provisional and regular registrations provide the same tax exemption benefits." } },
@@ -92,10 +92,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/12a-80g-registration/#breadcrumb",
+          "@id": "https://caaft.com/12a-80g-registration#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "12A and 80G Registration Services", "item": "https://caaft.com/12a-80g-registration/" }
+            { "@type": "ListItem", "position": 2, "name": "12A and 80G Registration Services", "item": "https://caaft.com/12a-80g-registration" }
           ]
         }
       ]

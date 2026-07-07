@@ -8,12 +8,12 @@
     <title>Accounts Receivable &amp; Account Payable Service | Cash Flow Management</title>
     <meta name="description" content="Improve business cash flow with professional accounts receivable service and account payable service. Manage invoices, outstanding payments, and billing efficiently for SMEs, startups, and growing businesses.">
     <meta name="keywords" content="accounts receivable service, account payable service, account receivable outstanding service, accounts payable outstanding service">
-    <link rel="canonical" href="https://caaft.com/accounts-receivable-payable-service/">
+    <link rel="canonical" href="https://caaft.com/accounting-and-reporting/accounts-receivable-payable-service">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Accounts Receivable &amp; Account Payable Service | Cash Flow Management">
     <meta property="og:description" content="Improve business cash flow with professional accounts receivable service and account payable service. Manage invoices, outstanding payments, and billing efficiently for SMEs, startups, and growing businesses.">
-    <meta property="og:url" content="https://caaft.com/accounts-receivable-payable-service/">
+    <meta property="og:url" content="https://caaft.com/accounting-and-reporting/accounts-receivable-payable-service">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/recivable-payable-services.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -36,9 +36,9 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/accounts-receivable-payable-service/#service",
+          "@id": "https://caaft.com/accounting-and-reporting/accounts-receivable-payable-service#service",
           "name": "Accounts Receivable & Accounts Payable Services",
-          "url": "https://caaft.com/accounts-receivable-payable-service/",
+          "url": "https://caaft.com/accounting-and-reporting/accounts-receivable-payable-service",
           "description": "Professional accounts receivable and accounts payable services to manage invoices, outstanding payments, billing processes, and improve cash flow for businesses.",
           "provider": {
             "@id": "https://caaft.com/#org"
@@ -51,7 +51,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/accounts-receivable-payable-service/#faq",
+          "@id": "https://caaft.com/accounting-and-reporting/accounts-receivable-payable-service#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -121,7 +121,7 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/accounts-receivable-payable-service/#breadcrumb",
+          "@id": "https://caaft.com/accounting-and-reporting/accounts-receivable-payable-service#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -133,7 +133,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Accounts Receivable & Payable Services",
-              "item": "https://caaft.com/accounts-receivable-payable-service/"
+              "item": "https://caaft.com/accounting-and-reporting/accounts-receivable-payable-service"
             }
           ]
         }

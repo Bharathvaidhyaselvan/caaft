@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Expert MSME Registration Services - Quick Udyam Registration</title>
     <meta name="description" content="Get expert MSME / Udyam registration services with accurate online filing, faster certificate processing, and complete compliance guidance for Indian businesses.">
     <meta name="keywords" content="MSME registration, Udyam registration, Udyog Aadhaar registration, Aadhaar Udyog online registration">
-    <link rel="canonical" href="https://caaft.com/msme-udyam-registration/">
+    <link rel="canonical" href="https://caaft.com/msme-udyam-registration">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Expert MSME Registration Services - Quick Udyam Registration">
     <meta property="og:description" content="Professional support for MSME / Udyam registration online with end-to-end filing assistance and certificate delivery.">
-    <meta property="og:url" content="https://caaft.com/msme-udyam-registration/">
+    <meta property="og:url" content="https://caaft.com/msme-udyam-registration">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -40,10 +40,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/msme-udyam-registration/#service",
+          "@id": "https://caaft.com/msme-udyam-registration#service",
           "name": "MSME / Udyam Registration Services",
           "alternateName": "Udyog Aadhaar Online Registration Services",
-          "url": "https://caaft.com/msme-udyam-registration/",
+          "url": "https://caaft.com/msme-udyam-registration",
           "description": "End-to-end MSME / Udyam registration support including eligibility assessment, accurate application filing, verification guidance, and certificate processing support for businesses across India.",
           "provider": {
             "@type": "Organization",
@@ -55,7 +55,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/msme-udyam-registration/#faq",
+          "@id": "https://caaft.com/msme-udyam-registration#faq",
           "mainEntity": [
             { "@type": "Question", "name": "What is MSME registration?", "acceptedAnswer": { "@type": "Answer", "text": "MSME registration is the official process of registering micro, small, or medium enterprises in India, giving access to government incentives and schemes." } },
             { "@type": "Question", "name": "What is the difference between Udyam and Udyog Aadhaar registration?", "acceptedAnswer": { "@type": "Answer", "text": "Udyog Aadhaar was the earlier registration system. It has been replaced by Udyam Registration, which is fully online and simpler, using self-declared business information." } },
@@ -68,10 +68,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/msme-udyam-registration/#breadcrumb",
+          "@id": "https://caaft.com/msme-udyam-registration#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "MSME / Udyam Registration", "item": "https://caaft.com/msme-udyam-registration/" }
+            { "@type": "ListItem", "position": 2, "name": "MSME / Udyam Registration", "item": "https://caaft.com/msme-udyam-registration" }
           ]
         }
       ]

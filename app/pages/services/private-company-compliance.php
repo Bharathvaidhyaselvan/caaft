@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Annual Compliance for Private Limited Company | ROC &amp; Company Compliance Services</title>
     <meta name="description" content="Annual compliance for private limited companies including ROC filing, statutory records, and financial statements. Expert company compliance services in India.">
     <meta name="keywords" content="Annual Compliance for Private Limited Company, Private Limited Company Compliance, ROC Compliance for Private Limited Company, Company Compliance Services">
-    <link rel="canonical" href="https://caaft.com/private-company-compliance/">
+    <link rel="canonical" href="https://caaft.com/private-company-compliance">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Annual Compliance for Private Limited Company | ROC &amp; Company Compliance Services">
     <meta property="og:description" content="Annual compliance for private limited companies including ROC filing, statutory records, and financial statements. Expert company compliance services in India.">
-    <meta property="og:url" content="https://caaft.com/private-company-compliance/">
+    <meta property="og:url" content="https://caaft.com/private-company-compliance">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -94,10 +94,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/private-company-compliance/#service",
+          "@id": "https://caaft.com/private-company-compliance#service",
           "name": "Private Limited Company Annual Compliance Services",
           "alternateName": "ROC Filing and Annual Compliance Services India",
-          "url": "https://caaft.com/private-company-compliance/",
+          "url": "https://caaft.com/private-company-compliance",
           "description": "Comprehensive annual compliance services for Private Limited Companies - ROC filings (AOC-4, MGT-7/MGT-7A), board and AGM management, statutory audit coordination, DIR-3 KYC, and end-to-end regulatory compliance support to keep your company legally active, penalty-free, and investor-ready across India.",
           "provider": {
             "@type": "Organization",
@@ -109,7 +109,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/private-company-compliance/#faq",
+          "@id": "https://caaft.com/private-company-compliance#faq",
           "mainEntity": [
             { "@type": "Question", "name": "Is annual compliance mandatory even if my Private Limited Company had zero transactions during the year?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The Companies Act, 2013 does not provide any exemption based on turnover or activity. Even companies with no transactions must file AOC-4, MGT-7, conduct board meetings, and complete director KYC. Dormant company status under Section 455 can reduce compliance requirements but does not eliminate them." } },
             { "@type": "Question", "name": "What is the difference between AOC-4 and MGT-7? Which one matters more?", "acceptedAnswer": { "@type": "Answer", "text": "Both are mandatory filings. AOC-4 is used to file audited financial statements with the ROC, while MGT-7 or MGT-7A is the annual return detailing shareholders, directors, and company structure. AOC-4 must be filed within 30 days of the AGM, and MGT-7 within 60 days." } },
@@ -120,10 +120,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/private-company-compliance/#breadcrumb",
+          "@id": "https://caaft.com/private-company-compliance#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Private Limited Company Annual Compliance Services", "item": "https://caaft.com/private-company-compliance/" }
+            { "@type": "ListItem", "position": 2, "name": "Private Limited Company Annual Compliance Services", "item": "https://caaft.com/private-company-compliance" }
           ]
         }
       ]

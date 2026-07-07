@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>ROC Compliance & ROC Filing Means | List of Forms to be Filed with ROC</title>
     <meta name="description" content="Learn ROC compliance and ROC filing means, including what is ROC filing and the list of forms to be filed with ROC. Ensure timely filings, avoid penalties, and stay compliant with MCA regulations.">
     <meta name="keywords" content="roc compliance, roc filing means, what is roc filing, list of forms to be filed with roc">
-    <link rel="canonical" href="https://caaft.com/roc-compliance-filing/">
+    <link rel="canonical" href="https://caaft.com/roc-compliance-filing">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="ROC Compliance & ROC Filing Means | List of Forms to be Filed with ROC">
     <meta property="og:description" content="Professional ROC compliance support including DIR-3 KYC, ADT-1, INC-22, DIR-12, MGT-14, and correction filings.">
-    <meta property="og:url" content="https://caaft.com/roc-compliance-filing/">
+    <meta property="og:url" content="https://caaft.com/roc-compliance-filing">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -33,10 +33,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/roc-compliance-filing/#service",
+          "@id": "https://caaft.com/roc-compliance-filing#service",
           "name": "ROC Compliance & Miscellaneous Filings Services",
           "alternateName": "ROC Filing Services India",
-          "url": "https://caaft.com/roc-compliance-filing/",
+          "url": "https://caaft.com/roc-compliance-filing",
           "description": "Professional ROC compliance and filing services including DIR-3 KYC, ADT-1, INC-22, DIR-12, MGT-14, and corrections in AOC-4 and MGT-7. Ensure timely ROC filings, avoid penalties, and stay compliant with MCA regulations.",
           "serviceType": "ROC Compliance and MCA Filings",
           "provider": {
@@ -48,7 +48,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/roc-compliance-filing/#faq",
+          "@id": "https://caaft.com/roc-compliance-filing#faq",
           "mainEntity": [
             { "@type": "Question", "name": "How can a company track the status of its ROC filing after submission?", "acceptedAnswer": { "@type": "Answer", "text": "A company can track the status of its ROC filing through the MCA portal using the Service Request Number (SRN) generated at the time of submission." } },
             { "@type": "Question", "name": "Can a company revise a ROC form after it has been approved?", "acceptedAnswer": { "@type": "Answer", "text": "No, once a form is approved by the ROC, it cannot be directly edited. A revised form or correction filing must be submitted as per MCA guidelines." } },
@@ -59,10 +59,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/roc-compliance-filing/#breadcrumb",
+          "@id": "https://caaft.com/roc-compliance-filing#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "ROC Compliance & Filing", "item": "https://caaft.com/roc-compliance-filing/" }
+            { "@type": "ListItem", "position": 2, "name": "ROC Compliance & Filing", "item": "https://caaft.com/roc-compliance-filing" }
           ]
         }
       ]

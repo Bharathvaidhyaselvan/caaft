@@ -8,12 +8,12 @@
     <meta name="robots" content="all, index, follow">
     <title>Accounting & Reporting Services in India | CAAFT</title>
     <meta name="description" content="From bookkeeping to boardroom-ready MIS reports, CAAFT delivers accurate, audit-ready financials handled by qualified professionals — serving businesses across India">
-    <link rel="canonical" href="https://caaft.com/accounting-and-reporting-services/">
+    <link rel="canonical" href="https://caaft.com/accounting-and-reporting-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Accounting & Reporting Services in India | CAAFT">
     <meta property="og:description" content="From bookkeeping to boardroom-ready MIS reports, CAAFT delivers accurate, audit-ready financials handled by qualified professionals — serving businesses across India">
-    <meta property="og:url" content="https://caaft.com/accounting-and-reporting-services/">
+    <meta property="og:url" content="https://caaft.com/accounting-and-reporting-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/general-accounting-services.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -89,10 +89,10 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/accounting-and-reporting-services/#service",
+          "@id": "https://caaft.com/accounting-and-reporting-services#service",
           "name": "Accounting and Reporting Services",
           "alternateName": "Accounting & Bookkeeping Services Chennai",
-          "url": "https://caaft.com/accounting-and-reporting-services/",
+          "url": "https://caaft.com/accounting-and-reporting-services",
           "description": "End-to-end accounting and reporting — bookkeeping, financial analysis, MIS reporting, financial statements, and receivables & payables management — by qualified accountants supervised by CAs.",
           "provider": {"@id": "https://caaft.com/#organization"},
           "areaServed": {"@type": "Country", "name": "India"},
@@ -110,7 +110,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/accounting-and-reporting-services/#faq",
+          "@id": "https://caaft.com/accounting-and-reporting-services#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -131,10 +131,10 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/accounting-and-reporting-services/#breadcrumb",
+          "@id": "https://caaft.com/accounting-and-reporting-services#breadcrumb",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com"},
-            {"@type": "ListItem", "position": 2, "name": "Accounting and Reporting Services", "item": "https://caaft.com/accounting-and-reporting-services/"}
+            {"@type": "ListItem", "position": 2, "name": "Accounting and Reporting Services", "item": "https://caaft.com/accounting-and-reporting-services"}
           ]
         }
       ]

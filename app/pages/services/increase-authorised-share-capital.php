@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Increase Authorised Share Capital | Procedure, Steps &amp; ROC Filing</title>
     <meta name="description" content="Learn the procedure to increase authorised share capital in India. Get expert help with board resolution drafting, ROC filing, MOA amendment, and compliance support.">
     <meta name="keywords" content="Increase authorised share capital, Procedure for increase in authorised share capital, Steps to increase authorised share capital, Board resolution for increase in authorised capital">
-    <link rel="canonical" href="https://caaft.com/increase-authorised-share-capital/">
+    <link rel="canonical" href="https://caaft.com/increase-authorised-share-capital">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Increase Authorised Share Capital | Procedure, Steps &amp; ROC Filing">
     <meta property="og:description" content="Expert support for authorised share capital increase including MOA amendment, SH-7 filing, and ROC compliance.">
-    <meta property="og:url" content="https://caaft.com/increase-authorised-share-capital/">
+    <meta property="og:url" content="https://caaft.com/increase-authorised-share-capital">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -41,10 +41,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/increase-authorised-share-capital/#service",
+          "@id": "https://caaft.com/increase-authorised-share-capital#service",
           "name": "Authorised Share Capital Increase Services",
           "alternateName": "Increase Company Share Capital Services India",
-          "url": "https://caaft.com/increase-authorised-share-capital/",
+          "url": "https://caaft.com/increase-authorised-share-capital",
           "description": "End-to-end authorised share capital increase services - board and shareholder resolutions, MOA amendment, SH-7 and MGT-14 ROC filings, and compliance support to help companies raise capital, onboard investors, and scale without legal hurdles across India.",
           "provider": {
             "@type": "Organization",
@@ -56,7 +56,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/increase-authorised-share-capital/#faq",
+          "@id": "https://caaft.com/increase-authorised-share-capital#faq",
           "mainEntity": [
             { "@type": "Question", "name": "What is the minimum and maximum limit for authorised share capital in India?", "acceptedAnswer": { "@type": "Answer", "text": "There is no statutory minimum or maximum for authorised capital under the Companies Act, 2013. It is determined by the company's present and anticipated capital requirements." } },
             { "@type": "Question", "name": "Is a special resolution required for increasing authorised capital?", "acceptedAnswer": { "@type": "Answer", "text": "No. Under Section 61(1)(a), an ordinary resolution is generally sufficient unless the Articles of Association specifically require a special resolution." } },
@@ -67,10 +67,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/increase-authorised-share-capital/#breadcrumb",
+          "@id": "https://caaft.com/increase-authorised-share-capital#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Authorised Share Capital Increase Services", "item": "https://caaft.com/increase-authorised-share-capital/" }
+            { "@type": "ListItem", "position": 2, "name": "Authorised Share Capital Increase Services", "item": "https://caaft.com/increase-authorised-share-capital" }
           ]
         }
       ]

@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Payroll Management &amp; Compliance Services in India</title>
     <meta name="description" content="Expert payroll management services with full payroll compliance, processing, and automated payroll systems for businesses across India. Get started today.">
     <meta name="keywords" content="Payroll management, Payroll Compliance, Payroll Management Services, Payroll Processing, Payroll System">
-    <link rel="canonical" href="https://caaft.com/payroll-management-compliance/">
+    <link rel="canonical" href="https://caaft.com/payroll-management-compliance">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Payroll Management &amp; Compliance Services in India">
     <meta property="og:description" content="CA-led payroll processing and statutory compliance services for businesses across India.">
-    <meta property="og:url" content="https://caaft.com/payroll-management-compliance/">
+    <meta property="og:url" content="https://caaft.com/payroll-management-compliance">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -81,7 +81,7 @@ declare(strict_types=1);
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/payroll-management-compliance/#service",
+          "@id": "https://caaft.com/payroll-management-compliance#service",
           "name": "Payroll Management Services in India",
           "alternateName": [
             "Payroll Processing Services",
@@ -109,7 +109,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/payroll-management-compliance/#faq",
+          "@id": "https://caaft.com/payroll-management-compliance#faq",
           "mainEntity": [
             { "@type": "Question", "name": "What is payroll management in India?", "acceptedAnswer": { "@type": "Answer", "text": "Payroll management is the process of calculating salaries, deducting statutory contributions like PF, ESI, and TDS, and ensuring timely salary disbursement with full compliance." } },
             { "@type": "Question", "name": "What is payroll compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Payroll compliance refers to meeting statutory obligations such as EPF, ESI, TDS, Professional Tax, and other labour law requirements while processing payroll." } },
@@ -120,7 +120,7 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/payroll-management-compliance/#breadcrumb",
+          "@id": "https://caaft.com/payroll-management-compliance#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
             { "@type": "ListItem", "position": 2, "name": "Payroll Management Services in India", "item": "https://caaft.com/payroll-management-compliance" }

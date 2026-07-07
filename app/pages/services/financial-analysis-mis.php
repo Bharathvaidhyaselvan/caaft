@@ -8,12 +8,12 @@
     <title>Financial Analysis & MIS Reporting Services | Financial Performance Analysis</title>
     <meta name="description" content="Make better business decisions with expert financial analysis and MIS reporting services. Get accurate financial performance analysis, cash flow insights, and structured financial reports.">
     <meta name="keywords" content="Financial analysis, MIS report, Profitable analysis, Financial performance analysis, Cash flow analysis">
-    <link rel="canonical" href="https://caaft.com/financial-analysis-mis/">
+    <link rel="canonical" href="https://caaft.com/accounting-and-reporting/financial-analysis-mis">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Financial Analysis & MIS Reporting Services | Financial Performance Analysis">
     <meta property="og:description" content="Make better business decisions with expert financial analysis and MIS reporting services. Get accurate financial performance analysis, cash flow insights, and structured financial reports.">
-    <meta property="og:url" content="https://caaft.com/financial-analysis-mis/">
+    <meta property="og:url" content="https://caaft.com/accounting-and-reporting/financial-analysis-mis">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/general-accounting-services.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -366,9 +366,9 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/financial-analysis-mis/#service",
+          "@id": "https://caaft.com/accounting-and-reporting/financial-analysis-mis#service",
           "name": "Financial Analysis & MIS Reporting Services",
-          "url": "https://caaft.com/financial-analysis-mis/",
+          "url": "https://caaft.com/accounting-and-reporting/financial-analysis-mis",
           "description": "Expert financial analysis and MIS reporting services to evaluate financial performance, improve cash flow management, and support data-driven business decisions.",
           "provider": {
             "@id": "https://caaft.com/#org"
@@ -381,7 +381,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/financial-analysis-mis/#faq",
+          "@id": "https://caaft.com/accounting-and-reporting/financial-analysis-mis#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -443,7 +443,7 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/financial-analysis-mis/#breadcrumb",
+          "@id": "https://caaft.com/accounting-and-reporting/financial-analysis-mis#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -455,7 +455,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Financial Analysis & MIS Reporting Services",
-              "item": "https://caaft.com/financial-analysis-mis/"
+              "item": "https://caaft.com/accounting-and-reporting/financial-analysis-mis"
             }
           ]
         }

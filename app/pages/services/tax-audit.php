@@ -8,12 +8,12 @@
     <title>Tax Audit Under Section 44AB | Turnover Limit, Filing & CA Support</title>
     <meta name="description" content="Get expert tax audit assistance under Section 44AB. Understand tax audit turnover limits, filing due dates, and compliance support for businesses and professionals.">
     <meta name="keywords" content="Tax Audit, Tax audit under Section 44AB, Tax Audit Turnover Limit, Tax Audit Filing Due Date, Tax Audit for Professionals">
-    <link rel="canonical" href="https://caaft.com/tax-audit/">
+    <link rel="canonical" href="https://caaft.com/income-tax/tax-audit">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Tax Audit Under Section 44AB | Turnover Limit, Filing & CA Support">
     <meta property="og:description" content="Get expert tax audit assistance under Section 44AB. Understand tax audit turnover limits, filing due dates, and compliance support for businesses and professionals.">
-    <meta property="og:url" content="https://caaft.com/tax-audit/">
+    <meta property="og:url" content="https://caaft.com/income-tax/tax-audit">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/tax-planning-management.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -750,10 +750,10 @@
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/tax-audit/#service",
+          "@id": "https://caaft.com/income-tax/tax-audit#service",
           "name": "Tax Audit Under Section 44AB",
           "alternateName": "Tax Audit Services India",
-          "url": "https://caaft.com/tax-audit/",
+          "url": "https://caaft.com/income-tax/tax-audit",
       "description": "Expert tax audit services under Section 44AB for businesses, professionals, startups, and LLPs — covering Form 3CA, 3CB, and 3CD preparation, audit report filing, compliance advisory, and post-audit assessment support across India.",
       "provider": {
         "@type": "Organization",
@@ -768,7 +768,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/tax-audit/#faq",
+          "@id": "https://caaft.com/income-tax/tax-audit#faq",
           "mainEntity": [
         {
           "@type": "Question",
@@ -814,7 +814,7 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/tax-audit/#breadcrumb",
+          "@id": "https://caaft.com/income-tax/tax-audit#breadcrumb",
           "itemListElement": [
         {
           "@type": "ListItem",
@@ -826,7 +826,7 @@
           "@type": "ListItem",
           "position": 2,
           "name": "Tax Audit Under Section 44AB",
-          "item": "https://caaft.com/tax-audit/"
+          "item": "https://caaft.com/income-tax/tax-audit"
         }
           ]
         }

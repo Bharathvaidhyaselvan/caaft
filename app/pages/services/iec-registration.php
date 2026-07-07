@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>IEC Registration Online | Apply Import Export Code in India</title>
     <meta name="description" content="Apply for IEC registration online and obtain your Import Export Code quickly. Start importing and exporting legally with a simple and hassle-free registration process.">
     <meta name="keywords" content="iec registration, iec apply, import export code, DGFT IEC registration">
-    <link rel="canonical" href="https://caaft.com/iec-registration/">
+    <link rel="canonical" href="https://caaft.com/iec-registration">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="IEC Registration Online | Apply Import Export Code in India">
     <meta property="og:description" content="Apply for IEC registration online and obtain your Import Export Code quickly. Start importing and exporting legally with a simple and hassle-free registration process.">
-    <meta property="og:url" content="https://caaft.com/iec-registration/">
+    <meta property="og:url" content="https://caaft.com/iec-registration">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -60,10 +60,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/iec-registration/#service",
+          "@id": "https://caaft.com/iec-registration#service",
           "name": "Import Export Code (IEC) Registration Services",
           "alternateName": "IEC Registration Services India",
-          "url": "https://caaft.com/iec-registration/",
+          "url": "https://caaft.com/iec-registration",
           "description": "Hassle-free Import Export Code (IEC) registration and end-to-end support — DGFT application filing, document verification, compliance guidance, and certificate issuance for startups, SMEs, traders, and businesses planning to expand into global markets across India.",
           "provider": {
             "@type": "Organization",
@@ -75,7 +75,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/iec-registration/#faq",
+          "@id": "https://caaft.com/iec-registration#faq",
           "mainEntity": [
             { "@type": "Question", "name": "Can an individual apply for an Import Export Code without registering a company?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, an individual can apply for an Import Export Code without forming a company. Sole proprietors, freelancers, and independent traders can obtain an IEC using their PAN and bank details to conduct import or export activities." } },
             { "@type": "Question", "name": "Can a business operate multiple IEC numbers for different branches?", "acceptedAnswer": { "@type": "Answer", "text": "No, a business entity can hold only one IEC number linked to its PAN. However, the same IEC can be used for multiple branches, divisions, or export units under the same organization." } },
@@ -88,10 +88,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/iec-registration/#breadcrumb",
+          "@id": "https://caaft.com/iec-registration#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "IEC Registration Services", "item": "https://caaft.com/iec-registration/" }
+            { "@type": "ListItem", "position": 2, "name": "IEC Registration Services", "item": "https://caaft.com/iec-registration" }
           ]
         }
       ]

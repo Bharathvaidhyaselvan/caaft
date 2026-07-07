@@ -8,12 +8,12 @@
     <title>TDS Filing Services in India | TDS Return Filing Online</title>
     <meta name="description" content="Get reliable TDS filing services in India with accurate and timely online return filing for companies, firms, LLPs, and employers. Stay compliant and avoid penalties. Contact us today.">
     <meta name="keywords" content="TDS Filing, TDS Return Filing, File TDS Return Online, TDS Return Filing Online">
-    <link rel="canonical" href="https://caaft.com/tds-return-filing-services/">
+    <link rel="canonical" href="https://caaft.com/income-tax/tds-return-filing-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="TDS Filing Services in India | TDS Return Filing Online">
     <meta property="og:description" content="Get reliable TDS filing services in India with accurate and timely online return filing for companies, firms, LLPs, and employers. Stay compliant and avoid penalties. Contact us today.">
-    <meta property="og:url" content="https://caaft.com/tds-return-filing-services/">
+    <meta property="og:url" content="https://caaft.com/income-tax/tds-return-filing-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/tax-planning-management.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -449,10 +449,10 @@
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/tds-return-filing-services/#service",
+          "@id": "https://caaft.com/income-tax/tds-return-filing-services#service",
           "name": "Quarterly TDS Return Filing & Compliance Services",
           "alternateName": "TDS Filing Services India",
-          "url": "https://caaft.com/tds-return-filing-services/",
+          "url": "https://caaft.com/income-tax/tds-return-filing-services",
           "description": "End-to-end TDS return filing services for companies, LLPs, partnership firms, proprietorships, and employers — covering Form 24Q, 26Q, 27Q, 27EQ, challan reconciliation, Form 16 generation, and notice handling across India.",
           "provider": {
             "@type": "Organization",
@@ -467,7 +467,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/tds-return-filing-services/#faq",
+          "@id": "https://caaft.com/income-tax/tds-return-filing-services#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -513,10 +513,10 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/tds-return-filing-services/#breadcrumb",
+          "@id": "https://caaft.com/income-tax/tds-return-filing-services#breadcrumb",
           "itemListElement": [
             {"@type": "ListItem","position": 1,"name": "Home","item": "https://caaft.com"},
-            {"@type": "ListItem","position": 2,"name": "TDS Return Filing Services","item": "https://caaft.com/tds-return-filing-services/"}
+            {"@type": "ListItem","position": 2,"name": "TDS Return Filing Services","item": "https://caaft.com/income-tax/tds-return-filing-services"}
           ]
         }
       ]

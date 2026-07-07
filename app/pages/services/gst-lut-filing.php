@@ -8,12 +8,12 @@
     <title>GST LUT Filing & Renewal | Hassle-Free Support</title>
     <meta name="description" content="File your GST LUT with expert support. Hassle-free filing, quick approval, and renewal services for exporters. Avoid IGST and stay compliant.">
     <meta name="keywords" content="GST LUT Filing, LUT in GST, GST LUT, How to file LUT in GST">
-    <link rel="canonical" href="https://caaft.com/gst-lut-filing/">
+    <link rel="canonical" href="https://caaft.com/gst/gst-lut-filing">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="GST LUT Filing & Renewal | Hassle-Free Support">
     <meta property="og:description" content="File your GST LUT with expert support. Hassle-free filing, quick approval, and renewal services for exporters. Avoid IGST and stay compliant.">
-    <meta property="og:url" content="https://caaft.com/gst-lut-filing/">
+    <meta property="og:url" content="https://caaft.com/gst/gst-lut-filing">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <?php include "header-top.php"; ?>
     <style>
@@ -303,9 +303,9 @@
         },
       {
         "@type": "Service",
-        "@id": "https://caaft.com/gst-lut-filing/#service",
+        "@id": "https://caaft.com/gst/gst-lut-filing#service",
         "name": "GST LUT Filing Services",
-        "url": "https://caaft.com/gst-lut-filing/",
+        "url": "https://caaft.com/gst/gst-lut-filing",
         "description": "Professional GST LUT filing and renewal services for exporters. Avoid IGST, ensure compliance, and get fast approval with expert support.",
         "provider": {
           "@id": "https://caaft.com/#org"
@@ -318,7 +318,7 @@
       },
       {
         "@type": "FAQPage",
-        "@id": "https://caaft.com/gst-lut-filing/#faq",
+        "@id": "https://caaft.com/gst/gst-lut-filing#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -364,7 +364,7 @@
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://caaft.com/gst-lut-filing/#breadcrumb",
+        "@id": "https://caaft.com/gst/gst-lut-filing#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -376,7 +376,7 @@
             "@type": "ListItem",
             "position": 2,
             "name": "GST LUT Filing Services",
-            "item": "https://caaft.com/gst-lut-filing/"
+            "item": "https://caaft.com/gst/gst-lut-filing"
           }
         ]
       }

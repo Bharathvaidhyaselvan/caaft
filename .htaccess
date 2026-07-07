@@ -48,6 +48,22 @@ Redirect 301 /gst-consultants-services.php https://caaft.com/gst-return-filing-s
 Redirect 301 /business-management-consultancy-services.php https://caaft.com/business-advisory-services.php
 
 # Services-first clean URLs (old -> new)
+Redirect 301 /bookkeeping-and-accounting-services /accounting-and-reporting/bookkeeping-and-accounting
+Redirect 301 /financial-analysis-mis /accounting-and-reporting/financial-analysis-mis
+Redirect 301 /financial-statement-analysis /accounting-and-reporting/financial-statement-analysis
+Redirect 301 /accounts-receivable-payable-service /accounting-and-reporting/accounts-receivable-payable-service
+Redirect 301 /income-tax-filing-service /income-tax/income-tax-filing-service
+Redirect 301 /tds-return-filing-services /income-tax/tds-return-filing-services
+Redirect 301 /tax-audit /income-tax/tax-audit
+Redirect 301 /tax-planning-services /income-tax/tax-planning-services
+Redirect 301 /income-tax-appeal-services /income-tax/income-tax-appeal-services
+Redirect 301 /gst-registration-services /gst/gst-registration
+Redirect 301 /gst-return-filing-services /gst/gst-return-filing-services
+Redirect 301 /gst-lut-filing /gst/gst-lut-filing
+Redirect 301 /gst-advisory /gst/gst-advisory
+Redirect 301 /gst-cancellation-services /gst/gst-cancellation-services
+Redirect 301 /gst-assessment-appeal-services /gst/gst-assessment-appeal-services
+
 Redirect 301 /gst-registration-services.php /taxation/gst-registration
 Redirect 301 /gst-return-filing-services.php /taxation/gst-return-filing
 Redirect 301 /gst-filing-itr-filing-in-chennai.php /taxation/gst-income-tax-services

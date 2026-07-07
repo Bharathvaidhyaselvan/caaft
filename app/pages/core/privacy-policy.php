@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, follow">
+    <meta name="robots" content="all, index, follow">
     <title>Privacy Policy | CAAFT Consultancy Services Private Limited</title>
     <meta name="description" content="Read the Privacy Policy of CAAFT Consultancy Services Private Limited — covering how we collect, use, protect, and retain your personal and business data.">
     <link rel="canonical" href="https://caaft.com/privacy-policy">
@@ -21,6 +21,19 @@
     <meta name="twitter:site" content="@CaaftServices">
     <meta name="twitter:image" content="https://caaft.com/assets/img/contact-form.webp">
     <?php include "header-top.php"; ?>
+    <?php include dirname(__DIR__, 2) . '/includes/components/caaft-schema-organization.php'; ?>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://caaft.com/privacy-policy/#webpage",
+      "url": "https://caaft.com/privacy-policy",
+      "name": "Privacy Policy | CAAFT Consultancy Services Private Limited",
+      "description": "Read the Privacy Policy of CAAFT Consultancy Services Private Limited — covering how we collect, use, protect, and retain your personal and business data.",
+      "isPartOf": {"@id": "https://caaft.com/#organization"},
+      "publisher": {"@id": "https://caaft.com/#organization"}
+    }
+    </script>
     <style>
         .caaft-legal-wrap { padding: 70px 0 80px; }
         .caaft-legal-inner { max-width: 860px; margin: 0 auto; }

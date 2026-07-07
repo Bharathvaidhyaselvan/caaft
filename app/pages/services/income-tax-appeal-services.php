@@ -8,12 +8,12 @@
     <title>Income Tax Appeal Services & Tax Assessment Support</title>
     <meta name="description" content="Expert income tax appeal services with tax assessment support, property tax assessment, and appeal services. Resolve tax notices quickly in India.">
     <meta name="keywords" content="Income Tax Appeal, Property Tax Assessment, Property Tax Appeal Services, Tax Assessment Services">
-    <link rel="canonical" href="https://caaft.com/income-tax-appeal-services/">
+    <link rel="canonical" href="https://caaft.com/income-tax/income-tax-appeal-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Income Tax Appeal Services & Tax Assessment Support">
     <meta property="og:description" content="Expert income tax appeal services with tax assessment support, property tax assessment, and appeal services. Resolve tax notices quickly in India.">
-    <meta property="og:url" content="https://caaft.com/income-tax-appeal-services/">
+    <meta property="og:url" content="https://caaft.com/income-tax/income-tax-appeal-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/tax-planning-management.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -561,9 +561,9 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/income-tax-appeal-services/#service",
+          "@id": "https://caaft.com/income-tax/income-tax-appeal-services#service",
           "name": "Income Tax Appeal Services & Tax Assessment Support",
-          "url": "https://caaft.com/income-tax-appeal-services/",
+          "url": "https://caaft.com/income-tax/income-tax-appeal-services",
           "description": "Expert income tax appeal services, tax assessment support, property tax assessment, and appeal services to resolve tax notices and disputes efficiently across India.",
           "provider": { "@id": "https://caaft.com/#org" },
           "serviceType": "Income Tax Appeal and Tax Assessment Services",
@@ -571,7 +571,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/income-tax-appeal-services/#faq",
+          "@id": "https://caaft.com/income-tax/income-tax-appeal-services#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -617,10 +617,10 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/income-tax-appeal-services/#breadcrumb",
+          "@id": "https://caaft.com/income-tax/income-tax-appeal-services#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Income Tax Appeal Services", "item": "https://caaft.com/income-tax-appeal-services/" }
+            { "@type": "ListItem", "position": 2, "name": "Income Tax Appeal Services", "item": "https://caaft.com/income-tax/income-tax-appeal-services" }
           ]
         }
       ]

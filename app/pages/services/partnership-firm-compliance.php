@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Partnership Firm Compliance Services in India | Statutory Compliance Support</title>
     <meta name="description" content="Ensure smooth partnership firm compliance with expert support. Manage tax filings, GST returns, accounting, and statutory compliance for partnership firms in India efficiently.">
     <meta name="keywords" content="Partnership firm Compliance, Compliance for Partnership firm, Partnership Compliance, statutory Compliance for Partnership firm">
-    <link rel="canonical" href="https://caaft.com/partnership-firm-compliance/">
+    <link rel="canonical" href="https://caaft.com/partnership-firm-compliance">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Partnership Firm Compliance Services in India | Statutory Compliance Support">
     <meta property="og:description" content="Ensure smooth partnership firm compliance with expert support. Manage tax filings, GST returns, accounting, and statutory compliance for partnership firms in India efficiently.">
-    <meta property="og:url" content="https://caaft.com/partnership-firm-compliance/">
+    <meta property="og:url" content="https://caaft.com/partnership-firm-compliance">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -52,10 +52,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/partnership-firm-compliance/#service",
+          "@id": "https://caaft.com/partnership-firm-compliance#service",
           "name": "Partnership Firm Compliance Services in India",
           "alternateName": "Statutory Compliance for Partnership Firms",
-          "url": "https://caaft.com/partnership-firm-compliance/",
+          "url": "https://caaft.com/partnership-firm-compliance",
           "description": "Expert partnership firm compliance services including income tax filing, GST returns, accounting, bookkeeping, partnership deed management, and statutory compliance support for partnership firms in India.",
           "serviceType": "Partnership Firm Compliance and Tax Services",
           "provider": {
@@ -67,7 +67,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/partnership-firm-compliance/#faq",
+          "@id": "https://caaft.com/partnership-firm-compliance#faq",
           "mainEntity": [
             { "@type": "Question", "name": "What happens if a partnership firm does not maintain proper compliance records?", "acceptedAnswer": { "@type": "Answer", "text": "The firm may face penalties, legal notices, and complications during tax assessments. Incomplete documentation also creates significant problems during audits, financial reviews, and when approaching banks or institutional lenders for credit." } },
             { "@type": "Question", "name": "Can a partnership firm operate without registering under the Partnership Act?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — but an unregistered firm faces significant legal limitations. It cannot enforce contractual rights in court against third parties or partners, making registration a practical necessity for any firm that may face disputes or require legal protection." } },
@@ -78,10 +78,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/partnership-firm-compliance/#breadcrumb",
+          "@id": "https://caaft.com/partnership-firm-compliance#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Partnership Firm Compliance", "item": "https://caaft.com/partnership-firm-compliance/" }
+            { "@type": "ListItem", "position": 2, "name": "Partnership Firm Compliance", "item": "https://caaft.com/partnership-firm-compliance" }
           ]
         }
       ]

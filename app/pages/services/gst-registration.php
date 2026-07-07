@@ -8,12 +8,12 @@
     <title>GST Registration Services | Apply GSTIN Online Quickly</title>
     <meta name="description" content="Get hassle-free GST registration with expert support. Quick GSTIN approval, documentation, and compliance services for businesses.">
     <meta name="keywords" content="gst registration, gst registration procedure, gst registration certificate download">
-    <link rel="canonical" href="https://caaft.com/gst-registration-services/">
+    <link rel="canonical" href="https://caaft.com/gst/gst-registration">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="GST Registration Services | Apply GSTIN Online Quickly">
     <meta property="og:description" content="Get hassle-free GST registration with expert support. Quick GSTIN approval, documentation, and compliance services for businesses.">
-    <meta property="og:url" content="https://caaft.com/gst-registration-services/">
+    <meta property="og:url" content="https://caaft.com/gst/gst-registration">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <?php include "header-top.php"; ?>
     <style>
@@ -333,9 +333,9 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/gst-registration-services/#service",
+          "@id": "https://caaft.com/gst/gst-registration#service",
           "name": "GST Registration Services",
-          "url": "https://caaft.com/gst-registration-services/",
+          "url": "https://caaft.com/gst/gst-registration",
           "description": "Professional GST registration services including GSTIN application, documentation, compliance support, and fast approval for businesses across India.",
           "provider": {
             "@id": "https://caaft.com/#org"
@@ -348,7 +348,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/gst-registration-services/#faq",
+          "@id": "https://caaft.com/gst/gst-registration#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -394,7 +394,7 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/gst-registration-services/#breadcrumb",
+          "@id": "https://caaft.com/gst/gst-registration#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -406,7 +406,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "GST Registration Services",
-              "item": "https://caaft.com/gst-registration-services/"
+              "item": "https://caaft.com/gst/gst-registration"
             }
           ]
         }

@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Financial Assessment Services | Analyze &amp; Improve Your Financial Health</title>
     <meta name="description" content="Get expert financial assessment services to evaluate your financial health, analyze cash flow, and reduce risks. Make informed decisions and improve your financial status with professional insights.">
     <meta name="keywords" content="financial assessment, what is assessment year and financial year, financial status">
-    <link rel="canonical" href="https://caaft.com/financial-assessment-services/">
+    <link rel="canonical" href="https://caaft.com/financial-assessment-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Financial Assessment Services | Analyze &amp; Improve Your Financial Health">
     <meta property="og:description" content="CA-led financial assessment services to analyze financial health, improve cash flow, and deliver actionable, audit-ready insights.">
-    <meta property="og:url" content="https://caaft.com/financial-assessment-services/">
+    <meta property="og:url" content="https://caaft.com/financial-assessment-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>

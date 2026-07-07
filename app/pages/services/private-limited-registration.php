@@ -10,7 +10,7 @@ $plcLegacyPaths = [
 ];
 if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
     $plcQs = isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] !== '' ? '?' . $_SERVER['QUERY_STRING'] : '';
-    header('Location: /' . $plcCanonicalSlug . '/' . $plcQs, true, 301);
+    header('Location: /' . $plcCanonicalSlug . $plcQs, true, 301);
     exit;
 }
 ?>
@@ -24,12 +24,12 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
     <title>Private Limited Company Registration in India — Fast, Compliant, Expert-Led</title>
     <meta name="description" content="Private Limited Company registration in India — complete incorporation support covering documentation, ROC filing, compliance setup, and long-term statutory management.">
     <meta name="keywords" content="private limited company, private limited company registration, private limited company registration documents, Pvt Ltd registration India, ROC incorporation">
-    <link rel="canonical" href="https://caaft.com/private-limited-company-registration/">
+    <link rel="canonical" href="https://caaft.com/private-limited-company-registration">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Private Limited Company Registration in India — Fast, Compliant, Expert-Led">
     <meta property="og:description" content="Private Limited Company registration in India — complete incorporation support covering documentation, ROC filing, compliance setup, and long-term statutory management.">
-    <meta property="og:url" content="https://caaft.com/private-limited-company-registration/">
+    <meta property="og:url" content="https://caaft.com/private-limited-company-registration">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/services-images/Business%20Set%20up%20%26%20REgistration/Pvt%20ltd.jpg">
     <style>
@@ -330,10 +330,10 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/private-limited-company-registration/#service",
+          "@id": "https://caaft.com/private-limited-company-registration#service",
           "name": "Private Limited Company Registration",
           "alternateName": "Private Limited Company Registration Services India",
-          "url": "https://caaft.com/private-limited-company-registration/",
+          "url": "https://caaft.com/private-limited-company-registration",
           "description": "End-to-end Private Limited Company registration services in India including documentation, compliance, incorporation, and advisory support for startups and growing businesses.",
           "provider": { "@id": "https://caaft.com/#organization" },
           "areaServed": { "@type": "Country", "name": "India" },
@@ -351,7 +351,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/private-limited-company-registration/#faq",
+          "@id": "https://caaft.com/private-limited-company-registration#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -397,10 +397,10 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/private-limited-company-registration/#breadcrumb",
+          "@id": "https://caaft.com/private-limited-company-registration#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Private Limited Company Registration", "item": "https://caaft.com/private-limited-company-registration/" }
+            { "@type": "ListItem", "position": 2, "name": "Private Limited Company Registration", "item": "https://caaft.com/private-limited-company-registration" }
           ]
         }
       ]

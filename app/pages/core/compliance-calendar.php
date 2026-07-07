@@ -9,12 +9,12 @@
       <meta name="robots" content="all, index, follow" >
       <title>Compliance Calendar 2025 | GST, IT, PF/ESI Deadlines</title>
       <meta name="Description" content="Download the Compliance Calendar 2025 with important due dates for GST, Income Tax, PF/ESI, and FEMA. Stay updated with monthly regulatory deadlines." >
-      <link rel="canonical" href="https://caaft.com/compliance-calendar.php" >
+      <link rel="canonical" href="https://caaft.com/compliance-calendar" >
       <meta property="og:locale" content="en_US">
       <meta property="og:type" content="article" >
       <meta property="og:title" content="Compliance Calendar 2025 | GST, IT, PF/ESI Deadlines" >
       <meta property="og:description" content="Download the Compliance Calendar 2025 with important due dates for GST, Income Tax, PF/ESI, and FEMA. Stay updated with monthly regulatory deadlines." >
-      <meta property="og:url" content="https://caaft.com/compliance-calendar.php" >
+      <meta property="og:url" content="https://caaft.com/compliance-calendar" >
       <meta property="og:site_name" content="CAAFT Consultancy Services" >
       <meta property="og:image" content="https://caaft.com/assets/img/general-accounting-services.webp" >
       <!--<meta property="fb:app_id" content="kpwebtechcom" >-->
@@ -24,6 +24,19 @@
       <meta name="twitter:site" content="@CaaftServices">
       <meta name="twitter:image" content="https://caaft.com/assets/img/general-accounting-services.webp">
     <?php include "header-top.php"; ?>
+    <?php include dirname(__DIR__, 2) . '/includes/components/caaft-schema-organization.php'; ?>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://caaft.com/compliance-calendar/#webpage",
+      "url": "https://caaft.com/compliance-calendar",
+      "name": "Compliance Calendar 2025 | GST, IT, PF/ESI Deadlines",
+      "description": "Download the Compliance Calendar 2025 with important due dates for GST, Income Tax, PF/ESI, and FEMA. Stay updated with monthly regulatory deadlines.",
+      "isPartOf": {"@id": "https://caaft.com/#organization"},
+      "publisher": {"@id": "https://caaft.com/#organization"}
+    }
+    </script>
 
 </head>
 <body class="home-3">

@@ -8,7 +8,7 @@ $plcLegacyPaths = [
 ];
 if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
     $plcQs = isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] !== '' ? '?' . $_SERVER['QUERY_STRING'] : '';
-    header('Location: /' . $plcCanonicalSlug . '/' . $plcQs, true, 301);
+    header('Location: /' . $plcCanonicalSlug . $plcQs, true, 301);
     exit;
 }
 ?>
@@ -22,12 +22,12 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
     <title>One Person Company Registration | OPC Full Form, Benefits &amp; Process</title>
     <meta name="description" content="Apply for one person company registration with an easy step-by-step process. Learn OPC full form, eligibility, benefits, documents required, and registration procedure for starting your OPC in India.">
     <meta name="keywords" content="one person company registration, how to register one person company, opc registration process, OPC India, SPICe+ incorporation">
-    <link rel="canonical" href="https://caaft.com/one-person-company-registration/">
+    <link rel="canonical" href="https://caaft.com/one-person-company-registration">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="One Person Company Registration | OPC Full Form, Benefits &amp; Process">
     <meta property="og:description" content="Apply for one person company registration with an easy step-by-step process. Learn OPC full form, eligibility, benefits, documents required, and registration procedure for starting your OPC in India.">
-    <meta property="og:url" content="https://caaft.com/one-person-company-registration/">
+    <meta property="og:url" content="https://caaft.com/one-person-company-registration">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -637,10 +637,10 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/one-person-company-registration/#service",
+          "@id": "https://caaft.com/one-person-company-registration#service",
           "name": "One Person Company Registration",
           "alternateName": "OPC Registration Services India",
-          "url": "https://caaft.com/one-person-company-registration/",
+          "url": "https://caaft.com/one-person-company-registration",
           "description": "Complete one person company registration services including DSC, DIN, name approval, SPICe+ filing, MOA/AOA drafting, and compliance support for entrepreneurs, freelancers, and professionals across India.",
           "provider": { "@id": "https://caaft.com/#organization" },
           "areaServed": { "@type": "Country", "name": "India" },
@@ -648,7 +648,7 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/one-person-company-registration/#faq",
+          "@id": "https://caaft.com/one-person-company-registration#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -694,10 +694,10 @@ if (in_array($plcRequestPath, $plcLegacyPaths, true)) {
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/one-person-company-registration/#breadcrumb",
+          "@id": "https://caaft.com/one-person-company-registration#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "One Person Company Registration", "item": "https://caaft.com/one-person-company-registration/" }
+            { "@type": "ListItem", "position": 2, "name": "One Person Company Registration", "item": "https://caaft.com/one-person-company-registration" }
           ]
         }
       ]

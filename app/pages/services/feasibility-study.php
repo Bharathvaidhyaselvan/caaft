@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Feasibility Study | Business &amp; Financial Feasibility Analysis Services</title>
     <meta name="description" content="Expert feasibility study services for startups and businesses. Get detailed business feasibility study, financial feasibility analysis, and data-driven insights.">
     <meta name="keywords" content="Feasibility Study, Feasibility Study Services, Business Feasibility Study, Feasibility Analysis, Financial Feasibility Analysis">
-    <link rel="canonical" href="https://caaft.com/feasibility-study/">
+    <link rel="canonical" href="https://caaft.com/feasibility-study">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Feasibility Study | Business &amp; Financial Feasibility Analysis Services">
     <meta property="og:description" content="CA-led feasibility study services with market research, financial modelling, risk analysis, and decision-ready reports.">
-    <meta property="og:url" content="https://caaft.com/feasibility-study/">
+    <meta property="og:url" content="https://caaft.com/feasibility-study">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -65,7 +65,7 @@ declare(strict_types=1);
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/feasibility-study/#service",
+          "@id": "https://caaft.com/feasibility-study#service",
           "name": "Feasibility Study & Business Analysis Services",
           "alternateName": [
             "Business Feasibility Study",
@@ -95,7 +95,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/feasibility-study/#faq",
+          "@id": "https://caaft.com/feasibility-study#faq",
           "mainEntity": [
             { "@type": "Question", "name": "What is a feasibility study?", "acceptedAnswer": { "@type": "Answer", "text": "A feasibility study evaluates whether a business idea or project is viable by analyzing market demand, financial projections, operational requirements, and risks before investment." } },
             { "@type": "Question", "name": "What is included in a feasibility study?", "acceptedAnswer": { "@type": "Answer", "text": "A feasibility study includes market analysis, financial projections, competitor analysis, operational planning, risk assessment, and a final go/no-go recommendation." } },
@@ -106,7 +106,7 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/feasibility-study/#breadcrumb",
+          "@id": "https://caaft.com/feasibility-study#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
             { "@type": "ListItem", "position": 2, "name": "Feasibility Study Services", "item": "https://caaft.com/feasibility-study" }

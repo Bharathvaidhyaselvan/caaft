@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>OPC Compliance &amp; OPC Annual Compliance Services | ROC Compliance for OPC</title>
     <meta name="description" content="Understand OPC compliance requirements including ROC compliance for OPC, financial statement filing, ITR filing, and DIR-3 KYC. Ensure smooth OPC annual compliance and avoid penalties.">
     <meta name="keywords" content="OPC Compliance, OPC annual Compliance, ROC Compliance for opc, OPC pvt ltd Compliance">
-    <link rel="canonical" href="https://caaft.com/opc-annual-compliance/">
+    <link rel="canonical" href="https://caaft.com/opc-annual-compliance">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="OPC Compliance &amp; OPC Annual Compliance Services | ROC Compliance for OPC">
     <meta property="og:description" content="Understand OPC compliance requirements including ROC compliance for OPC, financial statement filing, ITR filing, and DIR-3 KYC. Ensure smooth OPC annual compliance and avoid penalties.">
-    <meta property="og:url" content="https://caaft.com/opc-annual-compliance/">
+    <meta property="og:url" content="https://caaft.com/opc-annual-compliance">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -53,10 +53,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/opc-annual-compliance/#service",
+          "@id": "https://caaft.com/opc-annual-compliance#service",
           "name": "OPC Annual Compliance Services in India",
           "alternateName": "ROC Compliance for OPC and OPC Pvt Ltd Compliance Services",
-          "url": "https://caaft.com/opc-annual-compliance/",
+          "url": "https://caaft.com/opc-annual-compliance",
           "description": "Comprehensive OPC compliance services including ROC compliance for OPC, AOC-4 and MGT-7A filing, income tax return filing, financial statement preparation, and DIR-3 KYC support for One Person Companies in India.",
           "serviceType": "OPC Compliance and Corporate Filing Services",
           "provider": {
@@ -68,7 +68,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/opc-annual-compliance/#faq",
+          "@id": "https://caaft.com/opc-annual-compliance#faq",
           "mainEntity": [
             { "@type": "Question", "name": "Can an OPC operate without completing annual compliance filings?", "acceptedAnswer": { "@type": "Answer", "text": "No. Every One Person Company must complete mandatory filings each financial year to remain legally active. Skipping annual compliance leads to penalties and affects the company's legal status with the Ministry of Corporate Affairs — regardless of whether the business had any transactions during the year." } },
             { "@type": "Question", "name": "Does an OPC need professional assistance for compliance filings?", "acceptedAnswer": { "@type": "Answer", "text": "While an OPC owner can technically manage compliance independently, professional support ensures accurate documentation, correct form selection, timely filing, and proper regulatory reporting — significantly reducing the risk of penalties, notices, and compliance gaps." } },
@@ -79,10 +79,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/opc-annual-compliance/#breadcrumb",
+          "@id": "https://caaft.com/opc-annual-compliance#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "OPC Annual Compliance", "item": "https://caaft.com/opc-annual-compliance/" }
+            { "@type": "ListItem", "position": 2, "name": "OPC Annual Compliance", "item": "https://caaft.com/opc-annual-compliance" }
           ]
         }
       ]

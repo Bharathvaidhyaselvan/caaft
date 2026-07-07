@@ -8,12 +8,12 @@
     <meta name="robots" content="all, index, follow">
     <title>Business Setup &amp; Registration Services in India | CAAFT</title>
     <meta name="description" content="From company incorporation to FSSAI, IEC &amp; MSME registrations, CAAFT handles every filing accurately and efficiently — so your business starts on solid legal ground">
-    <link rel="canonical" href="https://caaft.com/business-setup-and-registration/">
+    <link rel="canonical" href="https://caaft.com/business-setup-and-registration">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Business Setup &amp; Registration Services in India | CAAFT">
     <meta property="og:description" content="From company incorporation to FSSAI, IEC &amp; MSME registrations, CAAFT handles every filing accurately and efficiently — so your business starts on solid legal ground">
-    <meta property="og:url" content="https://caaft.com/business-setup-and-registration/">
+    <meta property="og:url" content="https://caaft.com/business-setup-and-registration">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/new-business-registration.webp">
     <meta name="twitter:card" content="summary_large_image">

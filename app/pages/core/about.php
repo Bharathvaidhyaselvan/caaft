@@ -7,12 +7,12 @@
  <meta name="robots" content="all, index, follow" >
       <title>About Us | CAAFT Consultancy Services</title>
       <meta name="Description" content="Learn about CAAFT Consultancy Services, your trusted partner for expert business consulting and tailored growth strategies in Chennai." >
-      <link rel="canonical" href="https://caaft.com/about.php" >
+      <link rel="canonical" href="https://caaft.com/about" >
       <meta property="og:locale" content="en_US">
       <meta property="og:type" content="article" >
       <meta property="og:title" content="About Us | CAAFT Consultancy Services" >
       <meta property="og:description" content="Learn about CAAFT Consultancy Services, your trusted partner for expert business consulting and tailored growth strategies in Chennai." >
-      <meta property="og:url" content="https://caaft.com/about.php" >
+      <meta property="og:url" content="https://caaft.com/about" >
       <meta property="og:site_name" content="CAAFT Consultancy Services" >
       <meta property="og:image" content="https://caaft.com/assets/img/busniess-img1.webp" >
       <!--<meta property="fb:app_id" content="kpwebtechcom" >-->
@@ -23,6 +23,20 @@
       <meta name="twitter:image" content="https://caaft.com/assets/img/busniess-img1.webp">
 
     <?php include "header-top.php"; ?>
+    <?php include dirname(__DIR__, 2) . '/includes/components/caaft-schema-organization.php'; ?>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "@id": "https://caaft.com/about/#webpage",
+      "url": "https://caaft.com/about",
+      "name": "About Us | CAAFT Consultancy Services",
+      "description": "Learn about CAAFT Consultancy Services, your trusted partner for expert business consulting and tailored growth strategies in Chennai.",
+      "isPartOf": {"@id": "https://caaft.com/#organization"},
+      "about": {"@id": "https://caaft.com/#organization"},
+      "primaryImageOfPage": "https://caaft.com/assets/img/busniess-img1.webp"
+    }
+    </script>
 </head>
 
 <body class="home-3">

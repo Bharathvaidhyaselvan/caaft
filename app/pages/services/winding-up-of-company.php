@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Winding Up of Company | Process, Strike Off &amp; Company Closure</title>
     <meta name="description" content="Complete guide to winding up of company. Learn the process, strike off company method, required documents, and ensure smooth company closure with expert support.">
     <meta name="keywords" content="Winding Up of Company, Strike Off Company, Process of Winding Up a Company, Company Closure">
-    <link rel="canonical" href="https://caaft.com/winding-up-of-company/">
+    <link rel="canonical" href="https://caaft.com/winding-up-of-company">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Winding Up of Company | Process, Strike Off &amp; Company Closure">
     <meta property="og:description" content="End-to-end support for company winding up, strike off, STK-2 filing, and legal closure compliance in India.">
-    <meta property="og:url" content="https://caaft.com/winding-up-of-company/">
+    <meta property="og:url" content="https://caaft.com/winding-up-of-company">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -46,10 +46,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/winding-up-of-company/#service",
+          "@id": "https://caaft.com/winding-up-of-company#service",
           "name": "Company Winding Up and Strike Off Services",
           "alternateName": "Company Closure Services India",
-          "url": "https://caaft.com/winding-up-of-company/",
+          "url": "https://caaft.com/winding-up-of-company",
           "description": "End-to-end company winding up and strike off services — compliance audit, liability clearance, STK-2 filing, ROC coordination, and dissolution support to close private limited companies legally, efficiently, and without future compliance risks across India.",
           "provider": {
             "@type": "Organization",
@@ -61,7 +61,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/winding-up-of-company/#faq",
+          "@id": "https://caaft.com/winding-up-of-company#faq",
           "mainEntity": [
             { "@type": "Question", "name": "Can I close a company that has pending income tax returns or GST dues?", "acceptedAnswer": { "@type": "Answer", "text": "No. All statutory dues including income tax, GST, TDS, and ROC filings must be cleared before filing for strike off. Pending compliances need to be completed before submitting Form STK-2." } },
             { "@type": "Question", "name": "What happens to a company's name after it is struck off?", "acceptedAnswer": { "@type": "Answer", "text": "Once a company is dissolved, its name is removed from the register and may become available for reuse after a certain period." } },
@@ -72,10 +72,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/winding-up-of-company/#breadcrumb",
+          "@id": "https://caaft.com/winding-up-of-company#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Company Winding Up and Strike Off Services", "item": "https://caaft.com/winding-up-of-company/" }
+            { "@type": "ListItem", "position": 2, "name": "Company Winding Up and Strike Off Services", "item": "https://caaft.com/winding-up-of-company" }
           ]
         }
       ]

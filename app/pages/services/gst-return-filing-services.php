@@ -8,12 +8,12 @@
     <title>GST Return Filing Services | Monthly GST Return Filing & Compliance Support</title>
     <meta name="description" content="Professional GST return filing services for businesses. Ensure accurate monthly GST return filing, avoid late GST return penalty, and maintain proper GST compliance with expert support.">
     <meta name="keywords" content="GST Return Filing Services, late GST return penalty, monthly GST return filing, GST return filing online">
-    <link rel="canonical" href="https://caaft.com/gst-return-filing-services/">
+    <link rel="canonical" href="https://caaft.com/gst/gst-return-filing-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="GST Return Filing Services | Monthly GST Return Filing & Compliance Support">
     <meta property="og:description" content="Professional GST return filing services for businesses. Ensure accurate monthly GST return filing, avoid late GST return penalty, and maintain proper GST compliance with expert support.">
-    <meta property="og:url" content="https://caaft.com/gst-return-filing-services/">
+    <meta property="og:url" content="https://caaft.com/gst/gst-return-filing-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <?php include "header-top.php"; ?>
     <style>
@@ -402,9 +402,9 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/gst-return-filing-services/#service",
+          "@id": "https://caaft.com/gst/gst-return-filing-services#service",
           "name": "GST Return Filing Services",
-          "url": "https://caaft.com/gst-return-filing-services/",
+          "url": "https://caaft.com/gst/gst-return-filing-services",
           "description": "Professional GST return filing services for businesses. Ensure accurate monthly GST return filing, avoid late GST return penalty, and maintain proper GST compliance with expert support.",
           "provider": {"@id": "https://caaft.com/#org"},
           "serviceType": "GST Compliance and Return Filing",
@@ -412,7 +412,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/gst-return-filing-services/#faq",
+          "@id": "https://caaft.com/gst/gst-return-filing-services#faq",
           "mainEntity": [
             {"@type": "Question","name": "Does a business with both B2B and B2C sales need to file different returns?","acceptedAnswer": {"@type": "Answer","text": "Not separate returns — but both must be reported correctly within the same filing. B2B supplies go into GSTR-1 with invoice-level details so buyers can claim ITC. B2C supplies are reported summary-wise. Mixing up the reporting format is one of the most common errors that creates ITC mismatches for buyers and reconciliation issues for the filing business."}},
             {"@type": "Question","name": "Why is ITC being blocked when a supplier has not filed their GSTR-1?","acceptedAnswer": {"@type": "Answer","text": "Input Tax Credit is directly linked to what the supplier reports in their GSTR-1. If the supplier has not filed or has filed incorrectly, that credit will not reflect in GSTR-2B — and cannot be claimed. This is both a cash flow and a compliance issue. CAAFT helps clients track, follow up, and manage ITC eligibility systematically to prevent working capital disruption."}},
@@ -423,10 +423,10 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/gst-return-filing-services/#breadcrumb",
+          "@id": "https://caaft.com/gst/gst-return-filing-services#breadcrumb",
           "itemListElement": [
             {"@type": "ListItem","position": 1,"name": "Home","item": "https://caaft.com"},
-            {"@type": "ListItem","position": 2,"name": "GST Return Filing Services","item": "https://caaft.com/gst-return-filing-services/"}
+            {"@type": "ListItem","position": 2,"name": "GST Return Filing Services","item": "https://caaft.com/gst/gst-return-filing-services"}
           ]
         }
       ]

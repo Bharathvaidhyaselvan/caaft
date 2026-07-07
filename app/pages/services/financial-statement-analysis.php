@@ -8,12 +8,12 @@
     <title>Financial Statement Analysis Services | Accurate Financial Statements</title>
     <meta name="description" content="Get professional financial statement analysis and accurate financial statements for better business decisions. Understand financial performance with expert reporting support.">
     <meta name="keywords" content="financial statement analysis, what is financial statement analysis, financial statement">
-    <link rel="canonical" href="https://caaft.com/financial-statement-analysis/">
+    <link rel="canonical" href="https://caaft.com/accounting-and-reporting/financial-statement-analysis">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Financial Statement Analysis Services | Accurate Financial Statements">
     <meta property="og:description" content="Get professional financial statement analysis and accurate financial statements for better business decisions. Understand financial performance with expert reporting support.">
-    <meta property="og:url" content="https://caaft.com/financial-statement-analysis/">
+    <meta property="og:url" content="https://caaft.com/accounting-and-reporting/financial-statement-analysis">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/general-accounting-services.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -36,9 +36,9 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/financial-statement-analysis/#service",
+          "@id": "https://caaft.com/accounting-and-reporting/financial-statement-analysis#service",
           "name": "Financial Statement Analysis Services",
-          "url": "https://caaft.com/financial-statement-analysis/",
+          "url": "https://caaft.com/accounting-and-reporting/financial-statement-analysis",
           "description": "Professional financial statement analysis and financial statement preparation services to evaluate financial performance, improve transparency, and support better business decisions.",
           "provider": {
             "@id": "https://caaft.com/#org"
@@ -51,7 +51,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/financial-statement-analysis/#faq",
+          "@id": "https://caaft.com/accounting-and-reporting/financial-statement-analysis#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -113,7 +113,7 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/financial-statement-analysis/#breadcrumb",
+          "@id": "https://caaft.com/accounting-and-reporting/financial-statement-analysis#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -125,7 +125,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Financial Statement Analysis Services",
-              "item": "https://caaft.com/financial-statement-analysis/"
+              "item": "https://caaft.com/accounting-and-reporting/financial-statement-analysis"
             }
           ]
         }

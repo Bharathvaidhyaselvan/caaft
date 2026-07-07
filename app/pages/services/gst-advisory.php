@@ -8,12 +8,12 @@
     <title>GST Advisory Services | Expert GST Consultancy Services in India</title>
     <meta name="description" content="Get expert GST advisory and GST consultancy services to ensure compliance with the framework of GST in India. Optimize ITC, avoid penalties, and manage filings efficiently.">
     <meta name="keywords" content="gst advisory, framework of gst in india, gst consultancy services">
-    <link rel="canonical" href="https://caaft.com/gst-advisory/">
+    <link rel="canonical" href="https://caaft.com/gst/gst-advisory">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="GST Advisory Services | Expert GST Consultancy Services in India">
     <meta property="og:description" content="Get expert GST advisory and GST consultancy services to ensure compliance with the framework of GST in India. Optimize ITC, avoid penalties, and manage filings efficiently.">
-    <meta property="og:url" content="https://caaft.com/gst-advisory/">
+    <meta property="og:url" content="https://caaft.com/gst/gst-advisory">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/gst-advisory-overview.jpg">
     <?php include "header-top.php"; ?>
@@ -110,9 +110,9 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/gst-advisory/#service",
+          "@id": "https://caaft.com/gst/gst-advisory#service",
           "name": "GST Advisory & Consultancy Services",
-          "url": "https://caaft.com/gst-advisory/",
+          "url": "https://caaft.com/gst/gst-advisory",
           "description": "Expert GST advisory and consultancy services to ensure compliance with the framework of GST in India. Optimize input tax credit, manage filings, and avoid penalties.",
           "provider": { "@id": "https://caaft.com/#org" },
           "serviceType": "GST Advisory and Compliance Services",
@@ -120,7 +120,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/gst-advisory/#faq",
+          "@id": "https://caaft.com/gst/gst-advisory#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -166,10 +166,10 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/gst-advisory/#breadcrumb",
+          "@id": "https://caaft.com/gst/gst-advisory#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "GST Advisory Services", "item": "https://caaft.com/gst-advisory/" }
+            { "@type": "ListItem", "position": 2, "name": "GST Advisory Services", "item": "https://caaft.com/gst/gst-advisory" }
           ]
         }
       ]

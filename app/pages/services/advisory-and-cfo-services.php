@@ -8,12 +8,12 @@
     <meta name="robots" content="all, index, follow">
     <title>Virtual CFO &amp; Advisory Services in India | CAAFT</title>
     <meta name="description" content="From virtual CFO support to valuations and feasibility studies, CAAFT delivers CA-led financial advisory on a flexible model — built around your business and budget">
-    <link rel="canonical" href="https://caaft.com/advisory-and-cfo-services/">
+    <link rel="canonical" href="https://caaft.com/advisory-and-cfo-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Virtual CFO &amp; Advisory Services in India | CAAFT">
     <meta property="og:description" content="From virtual CFO support to valuations and feasibility studies, CAAFT delivers CA-led financial advisory on a flexible model — built around your business and budget">
-    <meta property="og:url" content="https://caaft.com/advisory-and-cfo-services/">
+    <meta property="og:url" content="https://caaft.com/advisory-and-cfo-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/cfo-services.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -88,10 +88,10 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/advisory-and-cfo-services/#service",
+          "@id": "https://caaft.com/advisory-and-cfo-services#service",
           "name": "Advisory and CFO Services",
           "alternateName": "Virtual CFO & Financial Advisory Services India",
-          "url": "https://caaft.com/advisory-and-cfo-services/",
+          "url": "https://caaft.com/advisory-and-cfo-services",
           "description": "CA-led virtual CFO support, valuations, budgeting, financial assessments, and feasibility studies — delivered on a flexible engagement model built around your business and budget.",
           "provider": {"@id": "https://caaft.com/#organization"},
           "areaServed": {"@type": "Country", "name": "India"},
@@ -110,7 +110,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/advisory-and-cfo-services/#faq",
+          "@id": "https://caaft.com/advisory-and-cfo-services#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -156,10 +156,10 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/advisory-and-cfo-services/#breadcrumb",
+          "@id": "https://caaft.com/advisory-and-cfo-services#breadcrumb",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com"},
-            {"@type": "ListItem", "position": 2, "name": "Advisory and CFO Services", "item": "https://caaft.com/advisory-and-cfo-services/"}
+            {"@type": "ListItem", "position": 2, "name": "Advisory and CFO Services", "item": "https://caaft.com/advisory-and-cfo-services"}
           ]
         }
       ]

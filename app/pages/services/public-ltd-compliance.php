@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Annual Compliance for Public Limited Company | ROC Compliance Services</title>
     <meta name="description" content="Professional annual compliance for public limited companies including ROC compliance, financial filings, and governance advisory. Trusted company compliance services.">
     <meta name="keywords" content="Annual Compliance for public Limited Company, ROC Compliance for public Limited Company, Company Compliance Services">
-    <link rel="canonical" href="https://caaft.com/public-ltd-compliance/">
+    <link rel="canonical" href="https://caaft.com/public-ltd-compliance">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Annual Compliance for Public Limited Company | ROC Compliance Services">
     <meta property="og:description" content="Professional annual compliance for public limited companies including ROC compliance, financial filings, and governance advisory. Trusted company compliance services.">
-    <meta property="og:url" content="https://caaft.com/public-ltd-compliance/">
+    <meta property="og:url" content="https://caaft.com/public-ltd-compliance">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -72,10 +72,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/public-ltd-compliance/#service",
+          "@id": "https://caaft.com/public-ltd-compliance#service",
           "name": "Public Limited Company Annual Compliance Services",
           "alternateName": "ROC and SEBI Compliance Services for Public Companies India",
-          "url": "https://caaft.com/public-ltd-compliance/",
+          "url": "https://caaft.com/public-ltd-compliance",
           "description": "End-to-end annual compliance services for Public Limited Companies — ROC filings (AOC-4, MGT-7/MGT-7A, MGT-14), board and shareholder meeting management, XBRL financial statements, tax and regulatory filings, and SEBI/FEMA compliance support to keep your company legally compliant, investor-ready, and risk-free across India.",
           "provider": {
             "@type": "Organization",
@@ -87,7 +87,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/public-ltd-compliance/#faq",
+          "@id": "https://caaft.com/public-ltd-compliance#faq",
           "mainEntity": [
             { "@type": "Question", "name": "Is annual compliance mandatory for an unlisted Public Limited Company with no business activity?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The Companies Act, 2013 provides no exemption from annual compliance based on operational status for public limited companies. AGM, AOC-4, MGT-7, board meetings, and director KYC are mandatory regardless of turnover or activity. Dormant company status under Section 455 reduces — but does not eliminate — compliance obligations." } },
             { "@type": "Question", "name": "What is the difference between AOC-4 and AOC-4 XBRL?", "acceptedAnswer": { "@type": "Answer", "text": "AOC-4 is the standard form for filing financial statements with the ROC. AOC-4 XBRL is required for companies meeting specific criteria — including listed companies and those with paid-up capital or turnover above prescribed thresholds — where financial data must be tagged in XBRL format for machine-readable regulatory reporting. Incorrect format selection causes filing rejection." } },
@@ -98,10 +98,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/public-ltd-compliance/#breadcrumb",
+          "@id": "https://caaft.com/public-ltd-compliance#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Public Limited Company Annual Compliance Services", "item": "https://caaft.com/public-ltd-compliance/" }
+            { "@type": "ListItem", "position": 2, "name": "Public Limited Company Annual Compliance Services", "item": "https://caaft.com/public-ltd-compliance" }
           ]
         }
       ]

@@ -8,12 +8,12 @@
     <title>GST Assessment & GST Appeal Services | Expert Support</title>
     <meta name="description" content="Facing GST assessment or appeal? Get expert GST litigation and appellate tribunal support to resolve notices, reduce penalties, and ensure compliance.">
     <meta name="keywords" content="Gst assessment, Gst appellate tribunal, Gst litigation, Gst appeal">
-    <link rel="canonical" href="https://caaft.com/gst-assessment-appeal-services/">
+    <link rel="canonical" href="https://caaft.com/gst/gst-assessment-appeal-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="GST Assessment & GST Appeal Services | Expert Support">
     <meta property="og:description" content="Facing GST assessment or appeal? Get expert GST litigation and appellate tribunal support to resolve notices, reduce penalties, and ensure compliance.">
-    <meta property="og:url" content="https://caaft.com/gst-assessment-appeal-services/">
+    <meta property="og:url" content="https://caaft.com/gst/gst-assessment-appeal-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/gst-notice-supports.webp">
     <?php include "header-top.php"; ?>
@@ -213,23 +213,23 @@
         },
         {
           "@type": "Service",
-          "@id": "https://caaft.com/gst-assessment-appeal-services/#service",
+          "@id": "https://caaft.com/gst/gst-assessment-appeal-services#service",
           "name": "GST Assessment & Appeal Services",
           "description": "Expert GST assessment, GST appeal, and GST litigation support services in India. Get professional help for GST notices, demand orders, and appellate tribunal representation.",
-          "url": "https://caaft.com/gst-assessment-appeal-services/",
+          "url": "https://caaft.com/gst/gst-assessment-appeal-services",
           "provider": { "@id": "https://caaft.com/#org" },
           "serviceType": ["GST Assessment", "GST Appeal", "GST Litigation", "GST Appellate Tribunal Representation"],
           "areaServed": { "@type": "Country", "name": "India" },
           "offers": {
             "@type": "Offer",
-            "url": "https://caaft.com/gst-assessment-appeal-services/",
+            "url": "https://caaft.com/gst/gst-assessment-appeal-services",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock"
           }
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/gst-assessment-appeal-services/#faq",
+          "@id": "https://caaft.com/gst/gst-assessment-appeal-services#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -275,11 +275,11 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/gst-assessment-appeal-services/#breadcrumb",
+          "@id": "https://caaft.com/gst/gst-assessment-appeal-services#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
             { "@type": "ListItem", "position": 2, "name": "GST Services", "item": "https://caaft.com/gst-services" },
-            { "@type": "ListItem", "position": 3, "name": "GST Assessment & Appeal Services", "item": "https://caaft.com/gst-assessment-appeal-services/" }
+            { "@type": "ListItem", "position": 3, "name": "GST Assessment & Appeal Services", "item": "https://caaft.com/gst/gst-assessment-appeal-services" }
           ]
         }
       ]

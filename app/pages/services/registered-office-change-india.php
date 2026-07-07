@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Registered Office Change in India | Update Company Registered Address</title>
     <meta name="description" content="Easily change your company registered address with expert support. Complete the Registered Office Change process and update your registered office address board.">
     <meta name="keywords" content="Registered address, Registered Office address board, Change company address, registered office change India, INC-22 filing">
-    <link rel="canonical" href="https://caaft.com/registered-office-change-india/">
+    <link rel="canonical" href="https://caaft.com/registered-office-change-india">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Registered Office Change in India | Update Company Registered Address">
     <meta property="og:description" content="Expert assistance for registered office change in India including MCA filings, documentation, board resolution, and compliance updates.">
-    <meta property="og:url" content="https://caaft.com/registered-office-change-india/">
+    <meta property="og:url" content="https://caaft.com/registered-office-change-india">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -61,10 +61,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/registered-office-change-india/#service",
+          "@id": "https://caaft.com/registered-office-change-india#service",
           "name": "Registered Office Change Services in India",
           "alternateName": "Company Registered Address Change Service",
-          "url": "https://caaft.com/registered-office-change-india/",
+          "url": "https://caaft.com/registered-office-change-india",
           "description": "Expert assistance for registered office change in India including MCA filings, documentation, board resolution, and compliance updates. Easily change company address and update registered office address board without delays.",
           "serviceType": "Registered Office Address Change and ROC Compliance",
           "provider": {
@@ -76,7 +76,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/registered-office-change-india/#faq",
+          "@id": "https://caaft.com/registered-office-change-india#faq",
           "mainEntity": [
             { "@type": "Question", "name": "How long does the registered office change approval take from the ROC?", "acceptedAnswer": { "@type": "Answer", "text": "The approval timeline depends on the type of address change and the accuracy of documents submitted. For within-city changes, INC-22 is often processed in a few working days. Inter-state changes involving Regional Director approval take longer." } },
             { "@type": "Question", "name": "Can a company use a residential address as its registered office?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A company can use a residential property as its registered office with a valid No Objection Certificate and address proof." } },
@@ -87,10 +87,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/registered-office-change-india/#breadcrumb",
+          "@id": "https://caaft.com/registered-office-change-india#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Registered Office Change", "item": "https://caaft.com/registered-office-change-india/" }
+            { "@type": "ListItem", "position": 2, "name": "Registered Office Change", "item": "https://caaft.com/registered-office-change-india" }
           ]
         }
       ]

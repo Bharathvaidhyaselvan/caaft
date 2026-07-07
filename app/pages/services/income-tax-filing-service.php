@@ -7,12 +7,12 @@
     <meta name="robots" content="all, index, follow">
     <title>Income Tax Filing Service for Business | Expert ITR Support</title>
     <meta name="description" content="Trusted income tax filing service for business owners, startups and professionals. Accurate, compliant and strategically managed ITR filing support.">
-    <link rel="canonical" href="https://caaft.com/income-tax-filing-service/">
+    <link rel="canonical" href="https://caaft.com/income-tax/income-tax-filing-service">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Income Tax Filing Service for Business | Expert ITR Support">
     <meta property="og:description" content="Trusted income tax filing service for business owners, startups and professionals. Accurate, compliant and strategically managed ITR filing support.">
-    <meta property="og:url" content="https://caaft.com/income-tax-filing-service/">
+    <meta property="og:url" content="https://caaft.com/income-tax/income-tax-filing-service">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/tax-planning-management.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -274,10 +274,10 @@
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/income-tax-filing-service/#service",
+          "@id": "https://caaft.com/income-tax/income-tax-filing-service#service",
           "name": "Income Tax Filing Service for Business",
           "alternateName": "ITR Filing Services India",
-          "url": "https://caaft.com/income-tax-filing-service/",
+          "url": "https://caaft.com/income-tax/income-tax-filing-service",
           "description": "Professionally managed, end-to-end income tax filing services for startups, SMEs, freelancers, NRIs, and business owners — covering ITR form selection, tax computation, deduction planning, and post-filing support across India.",
           "provider": {
             "@type": "Organization",
@@ -292,7 +292,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/income-tax-filing-service/#faq",
+          "@id": "https://caaft.com/income-tax/income-tax-filing-service#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -338,7 +338,7 @@
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/income-tax-filing-service/#breadcrumb",
+          "@id": "https://caaft.com/income-tax/income-tax-filing-service#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -350,7 +350,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Income Tax Filing Service",
-              "item": "https://caaft.com/income-tax-filing-service/"
+              "item": "https://caaft.com/income-tax/income-tax-filing-service"
             }
           ]
         }

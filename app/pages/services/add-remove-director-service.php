@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Add /Remove Director Service | Director Appointment &amp; Removal</title>
     <meta name="description" content="Professional add remove director service including ROC filing, director appointment, resignation process, and compliance documentation for companies in India.">
     <meta name="keywords" content="add remove director service, Procedure to remove director, Document required for director appointment, Add director to company, Remove director to company, Director resignation process">
-    <link rel="canonical" href="https://caaft.com/add-remove-director-service/">
+    <link rel="canonical" href="https://caaft.com/add-remove-director-service">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Add /Remove Director Service | Director Appointment &amp; Removal">
     <meta property="og:description" content="Professional add remove director service including ROC filing, director appointment, resignation process, and compliance documentation for companies in India.">
-    <meta property="og:url" content="https://caaft.com/add-remove-director-service/">
+    <meta property="og:url" content="https://caaft.com/add-remove-director-service">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -47,10 +47,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/add-remove-director-service/#service",
+          "@id": "https://caaft.com/add-remove-director-service#service",
           "name": "Add or Remove Director Services",
           "alternateName": "Director Appointment and Resignation Services India",
-          "url": "https://caaft.com/add-remove-director-service/",
+          "url": "https://caaft.com/add-remove-director-service",
           "description": "End-to-end add or remove director services - DIN application, consent documentation (DIR-2, DIR-8), board and shareholder resolutions, DIR-11 and DIR-12 ROC filings, and post-change compliance updates to ensure accurate, timely, and legally compliant director transitions for companies across India.",
           "provider": {
             "@type": "Organization",
@@ -62,7 +62,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/add-remove-director-service/#faq",
+          "@id": "https://caaft.com/add-remove-director-service#faq",
           "mainEntity": [
             { "@type": "Question", "name": "What is the deadline for filing a director change with the ROC?", "acceptedAnswer": { "@type": "Answer", "text": "Form DIR-12 must be filed with the Registrar of Companies within 30 days of the board meeting approving the appointment or taking note of the resignation. For removal under Section 169, the 30-day window begins from the date of the EGM resolution. A late fee of Rs. 200 per day per form accrues from Day 31, with no upper cap." } },
             { "@type": "Question", "name": "Can a director resign without the company's consent?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A director can resign by submitting a written resignation to the company. The resignation becomes effective from the date mentioned in the letter or when the company receives it, whichever is earlier. The director must independently file DIR-11 within 30 days." } },
@@ -73,10 +73,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/add-remove-director-service/#breadcrumb",
+          "@id": "https://caaft.com/add-remove-director-service#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Add or Remove Director Services", "item": "https://caaft.com/add-remove-director-service/" }
+            { "@type": "ListItem", "position": 2, "name": "Add or Remove Director Services", "item": "https://caaft.com/add-remove-director-service" }
           ]
         }
       ]

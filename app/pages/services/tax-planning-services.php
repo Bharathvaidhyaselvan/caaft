@@ -8,12 +8,12 @@
     <title>Tax Planning Services | Reduce Taxes Legally & Maximize Savings</title>
     <meta name="description" content="Expert tax planning services to help individuals and businesses reduce tax liability, stay compliant, and maximize financial savings. Get personalized tax strategies from professionals today.">
     <meta name="keywords" content="Tax planning services, Business Tax planning services">
-    <link rel="canonical" href="https://caaft.com/tax-planning-services/">
+    <link rel="canonical" href="https://caaft.com/income-tax/tax-planning-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Tax Planning Services | Reduce Taxes Legally & Maximize Savings">
     <meta property="og:description" content="Expert tax planning services to help individuals and businesses reduce tax liability, stay compliant, and maximize financial savings. Get personalized tax strategies from professionals today.">
-    <meta property="og:url" content="https://caaft.com/tax-planning-services/">
+    <meta property="og:url" content="https://caaft.com/income-tax/tax-planning-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/tax-planning-management.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -437,9 +437,9 @@
     },
     {
       "@type": "Service",
-      "@id": "https://caaft.com/tax-planning-services/#service",
+      "@id": "https://caaft.com/income-tax/tax-planning-services#service",
       "name": "Tax Planning Services",
-      "url": "https://caaft.com/tax-planning-services/",
+      "url": "https://caaft.com/income-tax/tax-planning-services",
       "description": "Tax planning services for individuals and businesses to reduce tax liability and maximize savings.",
       "provider": {
         "@id": "https://caaft.com/#org"
@@ -452,7 +452,7 @@
     },
     {
       "@type": "FAQPage",
-      "@id": "https://caaft.com/tax-planning-services/#faq",
+      "@id": "https://caaft.com/income-tax/tax-planning-services#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -474,7 +474,7 @@
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://caaft.com/tax-planning-services/#breadcrumb",
+      "@id": "https://caaft.com/income-tax/tax-planning-services#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -486,7 +486,7 @@
           "@type": "ListItem",
           "position": 2,
           "name": "Tax Planning Services",
-          "item": "https://caaft.com/tax-planning-services/"
+          "item": "https://caaft.com/income-tax/tax-planning-services"
         }
       ]
     }

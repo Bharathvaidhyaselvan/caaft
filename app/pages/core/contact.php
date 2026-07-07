@@ -9,12 +9,12 @@
    <meta name="robots" content="all, index, follow" >
       <title>Contact Us | Business Consultancy Services in Chennai</title>
       <meta name="Description" content="Get in touch with CAAFT Consultancy Services for expert business consulting in Chennai. Drive growth with tailored solutions." >
-      <link rel="canonical" href="https://caaft.com/contact.php" >
+      <link rel="canonical" href="https://caaft.com/contact" >
       <meta property="og:locale" content="en_US">
       <meta property="og:type" content="article" >
       <meta property="og:title" content="Contact Us | Business Consultancy Services in Chennai" >
       <meta property="og:description" content="Get in touch with CAAFT Consultancy Services for expert business consulting in Chennai. Drive growth with tailored solutions." >
-      <meta property="og:url" content="https://caaft.com/contact.php" >
+      <meta property="og:url" content="https://caaft.com/contact" >
       <meta property="og:site_name" content="CAAFT Consultancy Services" >
       <meta property="og:image" content="https://caaft.com/assets/img/contact-form.webp" >
       <!--<meta property="fb:app_id" content="kpwebtechcom" >-->
@@ -25,6 +25,19 @@
       <meta name="twitter:image" content="https://caaft.com/assets/img/contact-form.webp">
 
     <?php include "header-top.php"; ?>
+    <?php include dirname(__DIR__, 2) . '/includes/components/caaft-schema-organization.php'; ?>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "@id": "https://caaft.com/contact/#webpage",
+      "url": "https://caaft.com/contact",
+      "name": "Contact Us | Business Consultancy Services in Chennai",
+      "description": "Get in touch with CAAFT Consultancy Services for expert business consulting in Chennai. Drive growth with tailored solutions.",
+      "isPartOf": {"@id": "https://caaft.com/#organization"},
+      "mainEntity": {"@id": "https://caaft.com/#localbusiness"}
+    }
+    </script>
 </head>
 
 <body class="home-3">

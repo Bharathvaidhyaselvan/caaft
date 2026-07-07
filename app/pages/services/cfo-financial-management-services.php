@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Expert CFO Services for Financial Management | Virtual &amp; Temporary CFO</title>
     <meta name="description" content="Looking to improve your financial strategy? Discover expert CFO services for budgeting, cash flow management, and business growth. Get virtual or temporary CFO support today.">
     <meta name="keywords" content="role of cfo in financial management, temporary cfo services, cfo services">
-    <link rel="canonical" href="https://caaft.com/cfo-financial-management-services/">
+    <link rel="canonical" href="https://caaft.com/cfo-financial-management-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Expert CFO Services for Financial Management | Virtual & Temporary CFO">
     <meta property="og:description" content="Expert CFO services for budgeting, forecasting, cash flow, reporting, and growth-ready financial management.">
-    <meta property="og:url" content="https://caaft.com/cfo-financial-management-services/">
+    <meta property="og:url" content="https://caaft.com/cfo-financial-management-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -29,10 +29,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/cfo-financial-management-services/#service",
+          "@id": "https://caaft.com/cfo-financial-management-services#service",
           "name": "CFO & Financial Management Services",
           "alternateName": "Virtual CFO and Temporary CFO Services",
-          "url": "https://caaft.com/cfo-financial-management-services/",
+          "url": "https://caaft.com/cfo-financial-management-services",
           "description": "Expert CFO services for financial management including budgeting, forecasting, cash flow management, financial reporting, and investor support. Available as virtual CFO or temporary CFO services for startups, SMEs, and growing businesses.",
           "serviceType": "Financial Management and CFO Services",
           "provider": {
@@ -44,7 +44,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/cfo-financial-management-services/#faq",
+          "@id": "https://caaft.com/cfo-financial-management-services#faq",
           "mainEntity": [
             { "@type": "Question", "name": "How do CFO services support day-to-day business decisions?", "acceptedAnswer": { "@type": "Answer", "text": "CFO services provide real-time financial insights that help businesses make informed operational and strategic decisions. By analyzing key metrics, a CFO guides pricing, spending, and investment choices." } },
             { "@type": "Question", "name": "When should a business consider hiring a virtual CFO?", "acceptedAnswer": { "@type": "Answer", "text": "A business should consider hiring a virtual CFO when it starts growing, faces cash flow challenges, or needs financial strategy support without the cost of a full-time CFO." } },
@@ -55,10 +55,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/cfo-financial-management-services/#breadcrumb",
+          "@id": "https://caaft.com/cfo-financial-management-services#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "CFO & Financial Management Services", "item": "https://caaft.com/cfo-financial-management-services/" }
+            { "@type": "ListItem", "position": 2, "name": "CFO & Financial Management Services", "item": "https://caaft.com/cfo-financial-management-services" }
           ]
         }
       ]

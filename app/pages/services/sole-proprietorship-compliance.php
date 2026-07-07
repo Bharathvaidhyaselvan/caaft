@@ -11,12 +11,12 @@ declare(strict_types=1);
     <title>Sole Proprietorship Compliance | GST Compliance &amp; Tax Filing</title>
     <meta name="description" content="Professional sole proprietorship compliance services including GST compliance for proprietorship, income tax filing for proprietorship, and regulatory support in India.">
     <meta name="keywords" content="Sole Proprietorship Compliance, Sole Proprietorship Tax Filing, Income Tax Filing for Proprietorship, GST Compliance for Proprietorship">
-    <link rel="canonical" href="https://caaft.com/sole-proprietorship-compliance/">
+    <link rel="canonical" href="https://caaft.com/sole-proprietorship-compliance">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Sole Proprietorship Compliance | GST Compliance &amp; Tax Filing">
     <meta property="og:description" content="Professional sole proprietorship compliance services including GST compliance for proprietorship, income tax filing for proprietorship, and regulatory support in India.">
-    <meta property="og:url" content="https://caaft.com/sole-proprietorship-compliance/">
+    <meta property="og:url" content="https://caaft.com/sole-proprietorship-compliance">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/static-logos.webp">
     <style>
@@ -78,10 +78,10 @@ declare(strict_types=1);
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://caaft.com/sole-proprietorship-compliance/#service",
+          "@id": "https://caaft.com/sole-proprietorship-compliance#service",
           "name": "Sole Proprietorship Compliance Services",
           "alternateName": "Freelancer and Small Business Tax Compliance Services India",
-          "url": "https://caaft.com/sole-proprietorship-compliance/",
+          "url": "https://caaft.com/sole-proprietorship-compliance",
           "description": "Comprehensive sole proprietorship compliance services — income tax filing (ITR-3 and ITR-4), GST registration and return filing, TDS compliance, bookkeeping, tax audit support, and business license management to keep freelancers, traders, and small businesses compliant, penalty-free, and financially organized across India.",
           "provider": {
             "@type": "Organization",
@@ -93,7 +93,7 @@ declare(strict_types=1);
         },
         {
           "@type": "FAQPage",
-          "@id": "https://caaft.com/sole-proprietorship-compliance/#faq",
+          "@id": "https://caaft.com/sole-proprietorship-compliance#faq",
           "mainEntity": [
             { "@type": "Question", "name": "Is GST registration mandatory for a sole proprietor with turnover below ₹40 lakh?", "acceptedAnswer": { "@type": "Answer", "text": "Not always. GST registration is mandatory only when annual turnover crosses ₹40 lakh for goods (₹20 lakh for services, ₹10 lakh in special category states). However, voluntary registration can be beneficial for claiming Input Tax Credit. E-commerce sellers and inter-state suppliers must register regardless of turnover." } },
             { "@type": "Question", "name": "What is the difference between ITR-3 and ITR-4 for sole proprietors?", "acceptedAnswer": { "@type": "Answer", "text": "ITR-4 (Sugam) is for proprietors opting for the Presumptive Taxation Scheme under Section 44AD (business, turnover up to ₹3 crore) or 44ADA (professionals, gross receipts up to ₹75 lakh). ITR-3 is for those maintaining full books of accounts and reporting actual income and expenses. Choosing the correct form depends on turnover, business nature, and audit applicability." } },
@@ -104,10 +104,10 @@ declare(strict_types=1);
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://caaft.com/sole-proprietorship-compliance/#breadcrumb",
+          "@id": "https://caaft.com/sole-proprietorship-compliance#breadcrumb",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caaft.com" },
-            { "@type": "ListItem", "position": 2, "name": "Sole Proprietorship Compliance Services", "item": "https://caaft.com/sole-proprietorship-compliance/" }
+            { "@type": "ListItem", "position": 2, "name": "Sole Proprietorship Compliance Services", "item": "https://caaft.com/sole-proprietorship-compliance" }
           ]
         }
       ]
