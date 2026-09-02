@@ -827,6 +827,29 @@ a.footer-logo {
     color: var(--theme-color)
 }
 
+.header-top-right-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: auto
+}
+
+.header-top-hr {
+    color: var(--color-white);
+    font-weight: 500;
+    white-space: nowrap
+}
+
+.header-top-hr a {
+    color: var(--color-white);
+    font-weight: 500
+}
+
+.header-top-hr a i {
+    color: var(--theme-color)
+}
+
 .header-top-right {
     display: flex;
     align-items: center;
@@ -915,8 +938,17 @@ a.footer-logo {
         margin-right: 10px
     }
 
-    .header-top-contact ul li:last-child {
+    .header-top-contact ul li.header-top-phones {
         display: none
+    }
+
+    .header-top-right-group {
+        gap: 10px
+    }
+
+    .header-top-hr {
+        font-size: 13px;
+        white-space: normal
     }
 
     .header-top-lang .dropdown-toggle::after {
