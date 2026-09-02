@@ -51,8 +51,6 @@ $company_ltd_plans = [
             'ADT-1',
             'GST Registration',
             'Commencement of Business (INC 20A)',
-            'ROC Annual Filing (MGT-7 & AOC-4)',
-            'ITR-6 Return Filing',
         ],
     ],
     [
