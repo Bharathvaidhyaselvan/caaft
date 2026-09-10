@@ -6,6 +6,7 @@ return [
      * Lead capture only — notify your team. Customers do not receive email.
      */
     'form_recipient' => 'services@caaft.com',
+    'careers_recipient' => 'hr@caaft.com',
     'form_sender' => 'enquiry@caaft.com',
     'form_sender_name' => 'CAAFT Website',
     'form_cc' => [],

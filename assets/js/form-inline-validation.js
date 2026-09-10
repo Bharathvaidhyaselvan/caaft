@@ -123,6 +123,16 @@
       addError(name, "Please enter your name.");
     }
 
+    var firstName = getField(form, ["first_name"]);
+    if (firstName && firstName.value.trim() === "") {
+      addError(firstName, "Please enter your first name.");
+    }
+
+    var lastName = getField(form, ["last_name"]);
+    if (lastName && lastName.value.trim() === "") {
+      addError(lastName, "Please enter your last name.");
+    }
+
     var email = getField(form, ["email"]);
     if (email) {
       var emailValue = email.value.trim();
@@ -179,6 +189,16 @@
       !/^[\x00-\x7F]+$/.test(message.value)
     ) {
       addError(message, "Please enter a valid message.");
+    }
+
+    var resume = getField(form, ["resume"]);
+    if (resume && resume.hasAttribute("required") && (!resume.files || !resume.files.length)) {
+      addError(resume, "Please attach your resume.");
+    }
+
+    var agreeTerms = getField(form, ["agree_terms"]);
+    if (agreeTerms && agreeTerms.hasAttribute("required") && !agreeTerms.checked) {
+      addError(agreeTerms, "Please agree to the terms and conditions and privacy policy.");
     }
 
     if (
@@ -264,6 +284,11 @@
       event.stopPropagation();
 
       if (!validateAndShow(form)) {
+        return;
+      }
+
+      if (form.getAttribute("data-caaft-ajax-submit") === "1") {
+        form.dispatchEvent(new CustomEvent("caaft:ajax-submit"));
         return;
       }
 

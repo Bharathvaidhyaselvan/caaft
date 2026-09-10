@@ -146,7 +146,7 @@
             </div>
         </div>
     </div>-->
-  
+
     <?php include "header.php"; ?>
 
 
@@ -232,7 +232,7 @@
             ['icon_class' => 'fas fa-building', 'title' => '200+', 'description' => 'Businesses Served'],
             ['icon_class' => 'fas fa-smile', 'title' => '98%', 'description' => 'Client Satisfaction Rate'],
             ['icon_class' => 'fas fa-award', 'title' => '5+', 'description' => 'Years of Expertise'],
-            ['icon_class' => 'fas fa-star', 'title' => '4.9/5', 'description' => 'Google rating on Google'],
+            ['icon_class' => 'fas fa-star', 'title' => '4.9/5', 'description' => 'Rating on Google'],
         ];
         include APP_ROOT . '/includes/components/home-hero-trust-indicators.php';
         ?>
@@ -510,7 +510,7 @@
                             <div class="process-item">
                                 <div class="icon">
                                     <span>01</span>
-                                    <img src="assets/img/process/01.jpg" alt="Choose Your Service" title="Choose Your Service"> 
+                                    <img src="assets/img/process/01.jpg" alt="Choose Your Service" title="Choose Your Service">
                                 </div>
                                 <h4>Choose Your Service</h4>
                                 <p>Select from our range of services in Accounting & Reporting, Income Tax, Business
@@ -863,7 +863,7 @@
             </div>
         </div>
 
-        
+
     </main>
 
     <?php include "footer.php";?>

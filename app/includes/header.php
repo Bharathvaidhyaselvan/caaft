@@ -289,7 +289,8 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         color: rgba(245, 250, 255, 0.82);
         padding: 6px 0 6px 12px;
         border-left: 2px solid transparent;
-        transition: color 0.15s, border-color 0.15s, padding-left 0.15s;
+        border-radius: 0 4px 4px 0;
+        transition: color 0.15s, border-color 0.15s, padding-left 0.15s, background 0.15s;
         text-decoration: none;
         line-height: 1.45;
     }
@@ -298,6 +299,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
     .mm-links li a:focus-visible {
         color: #fff;
         border-left-color: var(--theme-color, #33b6ff);
+        background: rgba(51, 182, 255, 0.08);
         padding-left: 16px;
     }
 
@@ -380,7 +382,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
             <div class="container position-relative">
 
                     <a class="navbar-brand static-logo" id="manimaenu" href="/">
-                    <img src="assets/img/caaft-logo-header.webp" alt="CAAFT Consultancy Services" class="img-fluid" width="150" height="132" decoding="async">
+                    <img src="assets/img/caaft-logo-plain.png" alt="CAAFT Consultancy Services" class="img-fluid" width="150" height="132" decoding="async">
                 </a>
                 <a class="navbar-brand reaming-logo" id="submenu" href="/">
                     <img src="assets/img/caaft-static-logo.webp" alt="CAAFT Consultancy Services" class="img-fluid" width="150" height="132" decoding="async">
@@ -749,7 +751,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
 
                         <!-- Resources -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle <?php echo (basename($_SERVER['PHP_SELF']) == 'compliance-calendar.php') ? 'active' : ''; ?>"
+                            <a class="nav-link dropdown-toggle <?php echo $activePage === 'compliance-calendar' || basename($_SERVER['PHP_SELF'] ?? '') === 'compliance-calendar.php' ? 'active' : ''; ?>"
                                 href="#" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
                             <ul class="dropdown-menu fade-down">
                                 <li><a class="dropdown-item" href="compliance-calendar.php">Compliance Calendar</a></li>
@@ -758,6 +760,10 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
 
                         <li class="nav-item">
                             <a class="nav-link <?= ($activePage == 'blog') ? 'active' : ''; ?>" href="blog">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link <?= ($activePage == 'careers') ? 'active' : ''; ?>" href="/careers">Careers</a>
                         </li>
 
                         <li class="nav-item">

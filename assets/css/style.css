@@ -1056,14 +1056,29 @@ a.footer-logo {
     }
 }
 
-@media all and (min-width:992px) {
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar .container,
+    .navbar-expand-lg .navbar-collapse,
+    .navbar-expand-lg .navbar-nav {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .navbar .nav-item {
+        flex-shrink: 0;
+    }
+
     .navbar .nav-item .nav-link {
         margin-right: 2px;
         padding: 18px 0;
         font-size: 17px;
         font-weight: 600;
         color: var(--color-dark);
-        text-transform: capitalize
+        text-transform: capitalize;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        line-height: 1.2;
     }
 
     .navbar .nav-item:last-child .nav-link {
@@ -1167,12 +1182,17 @@ a.footer-logo {
         margin-left: 35px
     }
 
-    .right_navs {
+    .nav-right:not(.right_navs) {
+        margin-left: 91px;
+    }
+
+    .nav-right.right_navs {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2px;
+        gap: 8px;
         margin-left: 18px;
+        flex-shrink: 0;
     }
 
     .nav-right-link {
@@ -1232,6 +1252,34 @@ a.footer-logo {
     }
 }
 
+@media (min-width: 992px) and (max-width: 1399px) {
+    .navbar .nav-item .nav-link {
+        font-size: 15px;
+        margin-right: 0;
+        padding: 18px 6px;
+    }
+
+    .nav-right {
+        margin-left: 14px;
+        gap: 10px;
+    }
+
+    .nav-right:not(.right_navs) {
+        margin-left: 70px;
+    }
+
+    .nav-right.right_navs {
+        margin-left: 8px;
+        gap: 8px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-right:not(.right_navs) {
+        display: none;
+    }
+}
+
 .mobile-menu-right {
     display: none
 }
@@ -1282,6 +1330,10 @@ a.footer-logo {
         display: flex;
         align-items: center;
         gap: 20px
+    }
+
+    .mobile-menu-right > a + a {
+        margin-left: -12px;
     }
 
     .mobile-menu-right .nav-right-link {
@@ -1369,6 +1421,11 @@ a.footer-logo {
 
     .navbar .nav-item .dropdown-submenu a:hover {
         color: var(--theme-color)
+    }
+
+    .navbar .nav-item .dropdown-submenu .dropdown-menu .dropdown-item:hover {
+        background: var(--theme-color);
+        color: var(--color-white);
     }
 
     .about-bg-two .service-sidebar .widget.category {
@@ -1996,6 +2053,37 @@ a.footer-logo {
 .hs-3 .hero-img img {
     border-radius: 50px;
     clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%)
+}
+
+.home-3 .hero-slider.hs-3 .hero-img {
+    overflow: hidden;
+    padding-right: 0;
+    border: 5px solid var(--theme-color);
+    border-radius: 80px;
+    background: #0a1020;
+}
+
+.home-3 .hero-slider.hs-3 .hero-img::before,
+.home-3 .hero-slider.hs-3 .hero-single .hero-img::before {
+    display: none;
+}
+
+.home-3 .hero-slider.hs-3 .hero-img picture,
+.home-3 .hero-slider.hs-3 .hero-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 600 / 500;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+    clip-path: none;
+}
+
+@media all and (max-width:991px) {
+    .home-3 .hero-slider.hs-3 .hero-img {
+        border-radius: 50px;
+    }
 }
 
 .hs-3 .hero-social h6 {
@@ -7481,8 +7569,19 @@ a.slide_btn {
     display: contents;
 }
 
-.nav-right .nav-right-btn a img {
-    width: 40%;
+.nav-right.right_navs .nav-right-btn a {
+    display: flex;
+    align-items: center;
+    width: auto;
+    flex: 0 0 auto;
+    line-height: 0;
+}
+
+.nav-right .nav-right-btn a img,
+.nav-right.right_navs .nav-right-btn a img {
+    width: 40px;
+    height: 40px;
+    max-width: none;
 }
 
 .widget .category-list a span.fillins {
@@ -7727,6 +7826,7 @@ li.sections_wights.resp-tab-item.hor_1.resp-tab-active h4.widget-title.title_sec
 
 .nav-right .nav-right-btn a.theme-btn {
     padding: 10px 12px;
+    white-space: nowrap;
 }
 
 .main_mesnus_colors {
@@ -13560,4 +13660,442 @@ body.home-3 .copyright .brevia-credit {
     align-items: center;
     justify-content: center;
     line-height: 1;
+}
+/* ----- Careers job detail (Airbnb / DataRobot inspired) ----- */
+.page-careers-job .caaft-job-hero {
+    background: linear-gradient(180deg, #eaf8ff 0%, #f7fafc 100%);
+    padding: 48px 0 36px;
+}
+
+.page-careers-job .caaft-job-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 22px;
+    color: #64748b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.page-careers-job .caaft-job-back:hover {
+    color: var(--theme-color);
+}
+
+.page-careers-job .caaft-job-hero-dept {
+    margin: 0 0 10px;
+    color: var(--theme-color);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.page-careers-job .caaft-job-hero-title {
+    margin: 0 0 12px;
+    max-width: 820px;
+    color: #0f172a;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.page-careers-job .caaft-job-hero-loc {
+    margin: 0;
+    color: #64748b;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.page-careers-job .caaft-job-tabs-bar {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 72px;
+    z-index: 20;
+}
+
+.page-careers-job .caaft-job-tabs {
+    display: flex;
+    gap: 28px;
+}
+
+.page-careers-job .caaft-job-tab {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    padding: 16px 0;
+    color: #64748b;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+
+.page-careers-job .caaft-job-tab.is-active {
+    color: #0f172a;
+    border-bottom-color: var(--theme-color);
+}
+
+.page-careers-job .caaft-job-body {
+    background: #ffffff;
+    padding: 48px 0 64px;
+}
+
+.page-careers-job .caaft-job-panel[hidden] {
+    display: none !important;
+}
+
+.page-careers-job .caaft-job-apply-top {
+    margin-bottom: 28px;
+}
+
+.page-careers-job .theme-btn.caaft-job-closed,
+.page-careers-job .caaft-job-closed {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #64748b;
+    color: #fff;
+    box-shadow: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+.page-careers-job .theme-btn.caaft-job-closed::before,
+.page-careers-job .caaft-job-closed::before {
+    display: none;
+}
+
+.page-careers-job .caaft-job-prose h2 {
+    margin: 34px 0 12px;
+    color: #0f172a;
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.page-careers-job .caaft-job-prose h2:first-child {
+    margin-top: 0;
+}
+
+.page-careers-job .caaft-job-prose p,
+.page-careers-job .caaft-job-prose li {
+    color: #475569;
+    font-size: 1.02rem;
+    line-height: 1.75;
+    font-weight: 500;
+}
+
+.page-careers-job .caaft-job-prose p {
+    margin: 0 0 12px;
+}
+
+.page-careers-job .caaft-job-prose ul {
+    margin: 0 0 8px;
+    padding-left: 1.15rem;
+}
+
+.page-careers-job .caaft-job-prose li {
+    margin-bottom: 8px;
+}
+
+.page-careers-job .caaft-job-prose li::marker {
+    color: var(--theme-color);
+}
+
+.page-careers-job .caaft-job-prose strong {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.page-careers-job .caaft-job-apply-footer {
+    margin-top: 40px;
+    padding-top: 28px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.page-careers-job .caaft-job-sidebar {
+    display: grid;
+    gap: 16px;
+    position: sticky;
+    top: 140px;
+}
+
+.page-careers-job .caaft-job-side-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 22px 22px 20px;
+}
+
+.page-careers-job .caaft-job-side-card h3 {
+    margin: 0 0 14px;
+    color: #0f172a;
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+.page-careers-job .caaft-job-side-card p {
+    margin: 0 0 14px;
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.page-careers-job .caaft-job-side-list {
+    margin: 0 0 18px;
+}
+
+.page-careers-job .caaft-job-side-list > div {
+    padding: 12px 0;
+}
+
+.page-careers-job .caaft-job-side-list > div + div {
+    border-top: 1px solid #e2e8f0;
+}
+
+.page-careers-job .caaft-job-side-list dt {
+    margin: 0 0 4px;
+    color: #64748b;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.page-careers-job .caaft-job-side-list dd {
+    margin: 0;
+    color: #0f172a;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.page-careers-job .caaft-job-side-btn {
+    width: 100%;
+    justify-content: center;
+}
+
+.page-careers-job .caaft-job-side-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--theme-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.page-careers-job .caaft-job-side-link:hover {
+    text-decoration: underline;
+}
+
+.page-careers-job .caaft-job-apply-panel {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.page-careers-job .caaft-careers-quote {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.page-careers-job .caaft-careers-quote .quote-head h3 {
+    margin: 0 0 6px;
+    color: var(--color-dark);
+    font-size: 1.45rem;
+    font-weight: 800;
+}
+
+.page-careers-job .caaft-careers-quote .quote-head p {
+    margin: 0 0 16px;
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.page-careers-job .caaft-careers-resume {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin: 4px 0 6px;
+    padding: 14px 16px;
+    background: #ffffff;
+    border-radius: 16px;
+}
+
+.page-careers-job .caaft-careers-resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 0;
+    background: var(--theme-color);
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.page-careers-job .caaft-careers-resume-name {
+    color: #64748b;
+    font-size: 0.92rem;
+    font-weight: 500;
+}
+
+.page-careers-job .caaft-careers-resume-hint {
+    display: block;
+    margin: 0 0 12px;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.page-careers-job .caaft-careers-terms {
+    margin: 8px 0 14px;
+}
+
+.page-careers-job .caaft-careers-terms .form-check-label {
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.page-careers-job .caaft-careers-terms a {
+    color: var(--theme-color);
+    font-weight: 600;
+}
+
+.page-careers-job .caaft-careers-apply-form .theme-btn {
+    width: 100%;
+    justify-content: center;
+}
+
+.page-careers-job .caaft-careers-apply-form .theme-btn.is-submitted,
+.page-careers-job .caaft-careers-apply-form .theme-btn.is-submitted:disabled,
+.page-careers-job .caaft-careers-apply-form .theme-btn.is-submitted:hover {
+    cursor: not-allowed;
+    pointer-events: auto;
+    opacity: 0.85;
+}
+
+.page-careers-job .caaft-careers-success {
+    display: none;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 0 16px;
+    padding: 12px 14px 12px 16px;
+    background: #f0fdf4;
+    border-left: 4px solid #22c55e;
+    border-radius: 0 8px 8px 0;
+    color: #166534;
+}
+
+.page-careers-job .caaft-careers-success[hidden] {
+    display: none !important;
+}
+
+.page-careers-job .caaft-careers-success.is-visible {
+    display: flex !important;
+}
+
+.page-careers-job .caaft-careers-success i {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #22c55e;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.page-careers-job .caaft-careers-success p {
+    margin: 0;
+    color: #166534;
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.page-careers-job .caaft-job-more {
+    background: #f8fafc;
+    padding: 56px 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.page-careers-job .caaft-job-more-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.page-careers-job .caaft-job-more-head h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    font-weight: 800;
+}
+
+.page-careers-job .caaft-job-more-all {
+    color: var(--theme-color);
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.page-careers-job .caaft-job-more-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.page-careers-job .caaft-job-more-card {
+    display: block;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 20px;
+    text-decoration: none;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.page-careers-job .caaft-job-more-card:hover {
+    border-color: rgba(51, 182, 255, 0.55);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.page-careers-job .caaft-job-more-dept {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--theme-color);
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.page-careers-job .caaft-job-more-card strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #0f172a;
+    font-size: 1.08rem;
+    line-height: 1.35;
+}
+
+.page-careers-job .caaft-job-more-loc {
+    color: #64748b;
+    font-size: 0.92rem;
+    font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    .page-careers-job .caaft-job-tabs-bar {
+        top: 64px;
+    }
+
+    .page-careers-job .caaft-job-sidebar {
+        position: static;
+        top: auto;
+        margin-top: 12px;
+    }
+
+    .page-careers-job .caaft-job-more-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

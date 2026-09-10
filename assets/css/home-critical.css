@@ -27,7 +27,8 @@ img{max-width:100%;height:auto}
 .hero-single .hero-content .hero-title span{color:var(--theme-color)}
 .hero-single .hero-content .hero-btn{display:flex;margin-top:35px;gap:1rem}
 .hs-3 .hero-single{background-color:#0a1020}
-.hs-3 .hero-img img{border-radius:50px}
+.hs-3 .hero-img img{border-radius:50px;clip-path:none;object-fit:cover}
+.home-3 .hero-slider.hs-3 .hero-img{overflow:hidden;border:5px solid var(--theme-color);border-radius:80px;padding-right:0}
 @media (max-width:991px){
   .hero-single .hero-content .hero-title{font-size:22px}
   .hs-3 .hero-img-wrap{margin-top:80px}
