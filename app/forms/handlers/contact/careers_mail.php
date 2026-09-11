@@ -22,8 +22,8 @@ if (empty($captchaSuccess->success)) {
 $jobs = require APP_ROOT . '/includes/data/caaft-careers.php';
 $jobSlug = preg_replace('/[^a-z0-9-]/', '', strtolower(trim((string) ($_POST['job_slug'] ?? '')))) ?: '';
 $job = $jobs[$jobSlug] ?? null;
-if ($job === null) {
-    caaft_form_abort('Invalid job application.');
+if ($job === null || empty($job['open'])) {
+    caaft_form_abort('This position is closed and no longer accepting applications.');
 }
 
 $firstName = post_clean('first_name');

@@ -13,10 +13,9 @@ if (preg_match('#^careers/([a-z0-9-]+)$#', $requestedPath, $matches)) {
 }
 
 $job = $caaft_careers[$jobSlug] ?? null;
-if ($job === null) {
-    http_response_code(404);
-    include APP_ROOT . '/pages/utility/default.php';
-    return;
+if ($job === null || empty($job['open'])) {
+    header('Location: /careers', true, 302);
+    exit;
 }
 
 $jobTitle = $job['title'];
