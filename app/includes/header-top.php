@@ -79,6 +79,33 @@ if ($features['tabs']) {
 .home-3 .hero-slider .hero-img-wrap.wow {
   visibility: visible !important;
 }
+.home-3 .hero-slider.hs-3 .hero-img {
+  overflow: hidden;
+  padding-right: 0;
+  border: 5px solid var(--theme-color);
+  border-radius: 80px;
+  background: #0a1020;
+}
+.home-3 .hero-slider.hs-3 .hero-img::before,
+.home-3 .hero-slider.hs-3 .hero-single .hero-img::before {
+  display: none;
+}
+.home-3 .hero-slider.hs-3 .hero-img picture,
+.home-3 .hero-slider.hs-3 .hero-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 600 / 500;
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+  clip-path: none;
+}
+@media (max-width: 991px) {
+  .home-3 .hero-slider.hs-3 .hero-img {
+    border-radius: 50px;
+  }
+}
 /* Pull hero under header (style.css default -6rem); margin-top:0 left a white body gap */
 .home-3 .main {
   margin-top: 0;
@@ -144,18 +171,30 @@ form.contact .g-recaptcha.caaft-is-invalid {
   display: block !important;
 }
 
-/* Homepage: compact horizontal logo (same as inner pages) — not the tall white header mark */
-body.home-3:not(:has(.header-sections)) .navbar a#manimaenu,
-body.home-3:not(:has(.header-sections)) .navbar a.navbar-brand.static-logo,
+/* Homepage: plain white logo until sticky; default compact logo when .fixed-top */
 body.home-3:not(:has(.header-sections)) .navbar a#submenu {
   display: none !important;
 }
 
-body.home-3:not(:has(.header-sections)) .navbar a.navbar-brand.fixed_logo,
+body.home-3:not(:has(.header-sections)) .navbar a#manimaenu,
+body.home-3:not(:has(.header-sections)) .navbar a.navbar-brand.static-logo {
+  display: block !important;
+}
+
+body.home-3:not(:has(.header-sections)) .navbar.fixed-top a#manimaenu,
+body.home-3:not(:has(.header-sections)) .navbar.fixed-top a.navbar-brand.static-logo {
+  display: none !important;
+}
+
+body.home-3:not(:has(.header-sections)) .navbar a.navbar-brand.fixed_logo {
+  display: none !important;
+}
+
 body.home-3:not(:has(.header-sections)) .navbar.fixed-top a.navbar-brand.fixed_logo {
   display: block !important;
 }
 
+body.home-3:not(:has(.header-sections)) .navbar a.navbar-brand.static-logo img,
 body.home-3:not(:has(.header-sections)) .navbar a.navbar-brand.fixed_logo img {
   max-width: 148px;
   max-height: 48px;

@@ -77,13 +77,13 @@
             <div class="container">
 
             <center>
-            <img src="assets/img/thank.webp" />
-            
-            <h3 class="title tg-element-title">Our team will review your submission and get in touch within one business day.</h3></center>
-               
+            <img src="assets/img/thankyou.jpeg" />
+
+            <!-- <h3 class="title tg-element-title">Thank you for your interest in joining our team! Our HR team will review your application and contact you if your profile matches our requirement.</h3></center> -->
+
             </div>
         </section>
-       
+
 
 
 

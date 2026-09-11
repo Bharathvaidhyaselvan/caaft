@@ -38,6 +38,7 @@
                                 <h4 class="footer-widget-title">Quick Links</h4>
                                 <ul class="footer-list">
                                     <li><a href="about.php"><i class="far fa-arrow-right"></i>About Us</a></li>
+                                    <li><a href="/careers"><i class="far fa-arrow-right"></i>Careers</a></li>
 
                                     <li><a href="contact.php"><i class="far fa-arrow-right"></i>Contact Us</a>
                                     </li>
@@ -57,7 +58,7 @@
                                             <i class="far fa-location-dot text-white"></i>
                                         </div>
                                     </a>
-                                       
+
                                         <div class="content">
                                             <h6>Our Address</h6>
                                             <p>Office No : C304, 3<sup>rd</sup> Floor, Apeejay House,
@@ -71,7 +72,8 @@
                                         <div class="content">
                                             <h6>Call Us</h6>
                                             <a href="tel:+918870078870">+91 8870 07 8870</a> <br> <a
-                                                href="tel:+919944617891">+91 9944 61 7891</a>
+                                                href="tel:+919944617891">+91 9944 61 7891</a> <br> <a
+                                                href="tel:+918807943270">+91 88079 43270</a> <span style="font-size: 12px;">(HR)</span>
                                         </div>
                                     </li>
                                     <li>
@@ -81,7 +83,8 @@
                                         <div class="content">
                                             <h6>Mail Us</h6>
                                             <a href="mailto:info@caaft.com"><span class="__cf_email__">info@caaft.com
-                                                </span></a>
+                                                </span></a> <br>
+                                            <a href="mailto:hr@caaft.com"><span class="__cf_email__">hr@caaft.com</span></a>
                                         </div>
                                     </li>
                                 </ul>

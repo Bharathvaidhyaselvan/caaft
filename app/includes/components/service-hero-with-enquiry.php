@@ -19,6 +19,9 @@
  *   $caaft_hero_primary_cta_icon (string)        // default fas fa-arrow-right
  *   $caaft_hero_secondary_extra_class (string)
  *
+ * Optional:
+ *   $caaft_hero_form_partial (string) — absolute path to alternate form partial (e.g. careers apply form)
+ *
  * Enquiry form options (passed through):
  *   $caaft_enquiry_* variables from enquiry-hero-form.php
  *
@@ -148,7 +151,14 @@ if ($caaft_hero_pricing_suffix === '') {
                 </div>
                 <div class="col-md-12 col-lg-6">
                     <div class="hero-img-wrap caaft-ar-hero-img-wrap">
-                        <?php include __DIR__ . '/enquiry-hero-form.php'; ?>
+                        <?php
+                        $caaft_hero_form_partial = isset($caaft_hero_form_partial) ? (string) $caaft_hero_form_partial : '';
+                        if ($caaft_hero_form_partial !== '' && is_file($caaft_hero_form_partial)) {
+                            include $caaft_hero_form_partial;
+                        } else {
+                            include __DIR__ . '/enquiry-hero-form.php';
+                        }
+                        ?>
                     </div>
                 </div>
             </div>

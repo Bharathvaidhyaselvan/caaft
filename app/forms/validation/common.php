@@ -68,6 +68,18 @@ if (!function_exists('caaft_form_recipient_email')) {
     }
 }
 
+if (!function_exists('caaft_careers_recipient_email')) {
+    function caaft_careers_recipient_email(): string
+    {
+        $configured = filter_var(
+            (string) (caaft_mail_config()['careers_recipient'] ?? 'hr@caaft.com'),
+            FILTER_VALIDATE_EMAIL,
+        );
+
+        return is_string($configured) ? $configured : 'hr@caaft.com';
+    }
+}
+
 if (!function_exists('caaft_form_cc_emails')) {
     function caaft_form_cc_emails(): array
     {
@@ -260,12 +272,16 @@ if (!function_exists('caaft_try_send_mail')) {
     /**
      * Prefer Microsoft 365 SMTP when configured; otherwise fall back to Hostinger PHP mail().
      */
+    /**
+     * @param list<array{path:string,name?:string,type?:string}> $attachments
+     */
     function caaft_try_send_mail(
         string $to,
         string $subject,
         string $htmlBody,
         string $fromName,
-        string $fromEmail
+        string $fromEmail,
+        array $attachments = []
     ): bool {
         $to = caaft_sanitize_mail_address($to);
         $fromEmail = caaft_sanitize_mail_address($fromEmail);
@@ -287,8 +303,15 @@ if (!function_exists('caaft_try_send_mail')) {
                 $fromEmail,
                 $fromName,
                 caaft_form_cc_emails(),
+                $attachments,
             );
         }
+
+        if ($attachments !== []) {
+            // Attachment support requires SMTP; do not silently drop resumes via mail().
+            return false;
+        }
+
         $ccHeader = caaft_form_cc_header();
         $contentHeaders = "MIME-Version: 1.0\r\nContent-Type: text/html; charset=UTF-8\r\n";
 
@@ -420,12 +443,54 @@ if (!function_exists('caaft_form_build_lead_data')) {
     }
 }
 
+if (!function_exists('caaft_form_is_ajax_request')) {
+    function caaft_form_is_ajax_request(): bool
+    {
+        $requestedWith = strtolower((string) ($_SERVER['HTTP_X_REQUESTED_WITH'] ?? ''));
+        if ($requestedWith === 'xmlhttprequest') {
+            return true;
+        }
+
+        $accept = strtolower((string) ($_SERVER['HTTP_ACCEPT'] ?? ''));
+
+        return str_contains($accept, 'application/json');
+    }
+}
+
+if (!function_exists('caaft_form_json_response')) {
+    function caaft_form_json_response(bool $ok, string $message, int $status = 200): void
+    {
+        http_response_code($status);
+        header('Content-Type: application/json; charset=UTF-8');
+        echo json_encode(
+            ['ok' => $ok, 'message' => $message],
+            JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
+        );
+        exit;
+    }
+}
+
+if (!function_exists('caaft_form_abort')) {
+    function caaft_form_abort(string $message, int $status = 400): void
+    {
+        if (caaft_form_is_ajax_request()) {
+            caaft_form_json_response(false, $message, $status);
+        }
+
+        exit($message);
+    }
+}
+
 if (!function_exists('caaft_form_redirect_thankyou')) {
     function caaft_form_redirect_thankyou(
         ?string $message = null,
         bool $useHistoryBackOnFailure = false
     ): void {
         $defaultMessage = 'Thanks for reaching us. You will get notified by our advisory team shortly.';
+        if (caaft_form_is_ajax_request()) {
+            caaft_form_json_response(true, $message ?? $defaultMessage);
+        }
+
         $alertMessage = json_encode(
             $message ?? $defaultMessage,
             JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE,
@@ -446,6 +511,10 @@ if (!function_exists('caaft_form_complete_submission')) {
      *
      * @param array<string, string> $leadData
      */
+    /**
+     * @param array<string, string> $leadData
+     * @param list<array{path:string,name?:string,type?:string}> $attachments
+     */
     function caaft_form_complete_submission(
         array $leadData,
         string $to,
@@ -454,7 +523,8 @@ if (!function_exists('caaft_form_complete_submission')) {
         string $fromName,
         string $fromEmail,
         ?string $successMessage = null,
-        bool $useHistoryBackOnFailure = false
+        bool $useHistoryBackOnFailure = false,
+        array $attachments = []
     ): void {
         $zohoConfigured = false;
         $zohoOk = false;
@@ -476,24 +546,29 @@ if (!function_exists('caaft_form_complete_submission')) {
             }
         }
 
-        $mailOk = caaft_try_send_mail($to, $subject, $body, $fromName, $fromEmail);
+        $mailOk = caaft_try_send_mail($to, $subject, $body, $fromName, $fromEmail, $attachments);
 
         if ($zohoConfigured && !$zohoOk && $mailOk && function_exists('caaft_zoho_log')) {
             caaft_zoho_log('Form saved via email only; Zoho push failed for ' . ($leadData['email'] ?? 'unknown'));
         }
 
         $success = $zohoConfigured ? ($zohoOk || $mailOk) : $mailOk;
+        $errorMessage = 'There was an error sending your message. Please try again later.';
 
         if ($success) {
             caaft_form_redirect_thankyou($successMessage, $useHistoryBackOnFailure);
         }
 
+        if (caaft_form_is_ajax_request()) {
+            caaft_form_json_response(false, $errorMessage, 500);
+        }
+
         if ($useHistoryBackOnFailure) {
-            $errorMessage = json_encode(
-                'There was an error sending your message. Please try again later.',
+            $encodedError = json_encode(
+                $errorMessage,
                 JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE,
             );
-            echo "<script>alert({$errorMessage}); history.back();</script>";
+            echo "<script>alert({$encodedError}); history.back();</script>";
             exit;
         }
 

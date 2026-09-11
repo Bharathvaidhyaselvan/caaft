@@ -111,6 +111,9 @@ if (!function_exists('caaft_form_sender_email')) {
 }
 
 if (!function_exists('caaft_smtp_send_mail')) {
+    /**
+     * @param list<array{path:string,name?:string,type?:string}> $attachments
+     */
     function caaft_smtp_send_mail(
         string $to,
         string $subject,
@@ -118,6 +121,7 @@ if (!function_exists('caaft_smtp_send_mail')) {
         string $replyToEmail,
         string $replyToName = '',
         array $cc = [],
+        array $attachments = [],
     ): bool {
         $config = caaft_mail_config();
         $host = trim((string) ($config['smtp_host'] ?? ''));
@@ -223,15 +227,59 @@ if (!function_exists('caaft_smtp_send_mail')) {
 
         $message = 'From: ' . $fromHeader . "\r\n";
         $message .= 'To: ' . $to . "\r\n";
+        if ($replyHeader !== '') {
+            $message .= 'Reply-To: ' . $replyHeader . "\r\n";
+        }
         if ($cc !== []) {
             $message .= 'Cc: ' . implode(', ', $cc) . "\r\n";
         }
         $message .= 'MIME-Version: 1.0' . "\r\n";
-        $message .= 'Content-Type: text/html; charset=UTF-8' . "\r\n";
         $message .= 'Subject: ' . $encodedSubject . "\r\n";
-        $message .= "\r\n";
-        $message .= preg_replace('/\r\n\./', "\r\n..", str_replace(["\r\n", "\r"], "\n", $htmlBody));
-        $message = str_replace("\n.", "\n..", $message);
+
+        $safeAttachments = [];
+        foreach ($attachments as $attachment) {
+            $path = (string) ($attachment['path'] ?? '');
+            if ($path === '' || !is_file($path) || !is_readable($path)) {
+                continue;
+            }
+            $safeAttachments[] = $attachment;
+        }
+
+        if ($safeAttachments === []) {
+            $message .= 'Content-Type: text/html; charset=UTF-8' . "\r\n";
+            $message .= "\r\n";
+            $message .= str_replace(["\r\n", "\r"], "\n", $htmlBody);
+        } else {
+            $boundary = 'caaft_' . bin2hex(random_bytes(12));
+            $message .= 'Content-Type: multipart/mixed; boundary="' . $boundary . '"' . "\r\n";
+            $message .= "\r\n";
+            $message .= '--' . $boundary . "\r\n";
+            $message .= 'Content-Type: text/html; charset=UTF-8' . "\r\n";
+            $message .= 'Content-Transfer-Encoding: 8bit' . "\r\n\r\n";
+            $message .= str_replace(["\r\n", "\r"], "\n", $htmlBody) . "\r\n";
+
+            foreach ($safeAttachments as $attachment) {
+                $path = (string) $attachment['path'];
+                $filename = (string) ($attachment['name'] ?? basename($path));
+                $filename = preg_replace('/[\r\n"]+/', '', $filename) ?: 'resume';
+                $mime = (string) ($attachment['type'] ?? 'application/octet-stream');
+                $mime = preg_replace('/[\r\n]+/', '', $mime) ?: 'application/octet-stream';
+                $binary = file_get_contents($path);
+                if ($binary === false) {
+                    continue;
+                }
+
+                $message .= '--' . $boundary . "\r\n";
+                $message .= 'Content-Type: ' . $mime . '; name="' . $filename . '"' . "\r\n";
+                $message .= 'Content-Transfer-Encoding: base64' . "\r\n";
+                $message .= 'Content-Disposition: attachment; filename="' . $filename . '"' . "\r\n\r\n";
+                $message .= chunk_split(base64_encode($binary)) . "\r\n";
+            }
+
+            $message .= '--' . $boundary . '--';
+        }
+
+        $message = str_replace("\n.", "\n..", str_replace(["\r\n", "\r"], "\n", $message));
         $message = str_replace("\n", "\r\n", $message);
         $message .= "\r\n.\r\n";
 
