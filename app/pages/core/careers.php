@@ -13,12 +13,12 @@ $caaft_careers = require dirname(__DIR__, 2) . '/includes/data/caaft-careers.php
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="all, index, follow">
     <title>Careers at CAAFT | Open Positions in Chennai</title>
-    <meta name="Description" content="Explore open positions at CAAFT Consultancy Services in Chennai. Join our accounting, taxation, and business advisory teams.">
+    <meta name="Description" content="Explore open positions at CAAFT Consultancy Services in Chennai — digital marketing internship and Zoho product marketing roles.">
     <link rel="canonical" href="https://caaft.com/careers">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Careers at CAAFT | Open Positions in Chennai">
-    <meta property="og:description" content="Explore open positions at CAAFT Consultancy Services in Chennai. Join our accounting, taxation, and business advisory teams.">
+    <meta property="og:description" content="Explore open positions at CAAFT Consultancy Services in Chennai — digital marketing internship and Zoho product marketing roles.">
     <meta property="og:url" content="https://caaft.com/careers">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/about-caaft-banner.webp">
@@ -102,8 +102,19 @@ $caaft_careers = require dirname(__DIR__, 2) . '/includes/data/caaft-careers.php
             margin-left: 6px;
             color: var(--theme-color, #33b6ff);
         }
-        .caaft-careers-item:hover .caaft-careers-more {
+        .caaft-careers-item:hover .caaft-careers-more:not(.caaft-careers-more--closed) {
             color: var(--theme-color, #33b6ff);
+        }
+        .caaft-careers-more--closed {
+            color: #94a3b8;
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 999px;
+            padding: 8px 14px;
+            font-weight: 700;
+        }
+        .caaft-careers-item.is-closed:hover .caaft-careers-more--closed {
+            color: #94a3b8;
         }
         @media (max-width: 767px) {
             .caaft-careers-item {
@@ -149,7 +160,11 @@ $caaft_careers = require dirname(__DIR__, 2) . '/includes/data/caaft-careers.php
 
                 <div class="caaft-careers-list">
                     <?php foreach ($caaft_careers as $job) : ?>
-                        <a class="caaft-careers-item" href="/careers/<?php echo htmlspecialchars($job['slug'], ENT_QUOTES, 'UTF-8'); ?>">
+                        <?php
+                        $jobIsOpen = !empty($job['open']);
+                        $jobHref = '/careers/' . htmlspecialchars($job['slug'], ENT_QUOTES, 'UTF-8');
+                        ?>
+                        <a class="caaft-careers-item<?php echo $jobIsOpen ? '' : ' is-closed'; ?>" href="<?php echo $jobHref; ?>">
                             <div>
                                 <span class="caaft-careers-dept"><?php echo htmlspecialchars($job['department'], ENT_QUOTES, 'UTF-8'); ?></span>
                                 <h3 class="caaft-careers-title"><?php echo htmlspecialchars($job['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
@@ -158,7 +173,11 @@ $caaft_careers = require dirname(__DIR__, 2) . '/includes/data/caaft-careers.php
                                 <span class="caaft-careers-loc-label">Location</span>
                                 <p class="caaft-careers-loc-value"><?php echo htmlspecialchars($job['location'], ENT_QUOTES, 'UTF-8'); ?></p>
                             </div>
-                            <span class="caaft-careers-more">Know More <i class="far fa-arrow-right" aria-hidden="true"></i></span>
+                            <?php if ($jobIsOpen) : ?>
+                                <span class="caaft-careers-more">Know More <i class="far fa-arrow-right" aria-hidden="true"></i></span>
+                            <?php else : ?>
+                                <span class="caaft-careers-more caaft-careers-more--closed">Closed</span>
+                            <?php endif; ?>
                         </a>
                     <?php endforeach; ?>
                 </div>
