@@ -7,7 +7,7 @@ declare(strict_types=1);
 return [
     'digital-marketing-intern' => [
         'slug' => 'digital-marketing-intern',
-        'open' => false,
+        'open' => true,
         'title' => 'Digital Marketing Intern',
         'department' => 'Business Development/Marketing',
         'location' => 'Nungambakkam, Chennai (Onsite)',
@@ -47,7 +47,7 @@ return [
     ],
     'marketing-executive-zoho-product' => [
         'slug' => 'marketing-executive-zoho-product',
-        'open' => false,
+        'open' => true,
         'title' => 'Marketing Executive – Zoho Product',
         'department' => 'Marketing',
         'location' => 'Nungambakkam, Chennai',

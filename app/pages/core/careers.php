@@ -59,13 +59,17 @@ $caaft_careers = require dirname(__DIR__, 2) . '/includes/data/caaft-careers.php
             border-bottom: 1px solid #e8edf2;
             text-decoration: none;
             color: inherit;
-            cursor: default;
-            pointer-events: none;
+            transition: background-color .2s ease;
         }
         .caaft-careers-item:last-child {
             border-bottom: 0;
         }
+        .caaft-careers-item:hover {
+            background: #f8fafc;
+        }
         .caaft-careers-item.is-closed {
+            cursor: default;
+            pointer-events: none;
             opacity: 0.92;
         }
         .caaft-careers-dept {
@@ -158,17 +162,35 @@ $caaft_careers = require dirname(__DIR__, 2) . '/includes/data/caaft-careers.php
 
                 <div class="caaft-careers-list">
                     <?php foreach ($caaft_careers as $job) : ?>
-                        <div class="caaft-careers-item is-closed">
-                            <div>
-                                <span class="caaft-careers-dept"><?php echo htmlspecialchars($job['department'], ENT_QUOTES, 'UTF-8'); ?></span>
-                                <h3 class="caaft-careers-title"><?php echo htmlspecialchars($job['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
+                        <?php
+                        $jobIsOpen = !empty($job['open']);
+                        $jobHref = '/careers/' . htmlspecialchars($job['slug'], ENT_QUOTES, 'UTF-8');
+                        ?>
+                        <?php if ($jobIsOpen) : ?>
+                            <a class="caaft-careers-item" href="<?php echo $jobHref; ?>">
+                                <div>
+                                    <span class="caaft-careers-dept"><?php echo htmlspecialchars($job['department'], ENT_QUOTES, 'UTF-8'); ?></span>
+                                    <h3 class="caaft-careers-title"><?php echo htmlspecialchars($job['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
+                                </div>
+                                <div>
+                                    <span class="caaft-careers-loc-label">Location</span>
+                                    <p class="caaft-careers-loc-value"><?php echo htmlspecialchars($job['location'], ENT_QUOTES, 'UTF-8'); ?></p>
+                                </div>
+                                <span class="caaft-careers-more">Know More <i class="far fa-arrow-right" aria-hidden="true"></i></span>
+                            </a>
+                        <?php else : ?>
+                            <div class="caaft-careers-item is-closed">
+                                <div>
+                                    <span class="caaft-careers-dept"><?php echo htmlspecialchars($job['department'], ENT_QUOTES, 'UTF-8'); ?></span>
+                                    <h3 class="caaft-careers-title"><?php echo htmlspecialchars($job['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
+                                </div>
+                                <div>
+                                    <span class="caaft-careers-loc-label">Location</span>
+                                    <p class="caaft-careers-loc-value"><?php echo htmlspecialchars($job['location'], ENT_QUOTES, 'UTF-8'); ?></p>
+                                </div>
+                                <span class="caaft-careers-more caaft-careers-more--closed">Closed</span>
                             </div>
-                            <div>
-                                <span class="caaft-careers-loc-label">Location</span>
-                                <p class="caaft-careers-loc-value"><?php echo htmlspecialchars($job['location'], ENT_QUOTES, 'UTF-8'); ?></p>
-                            </div>
-                            <span class="caaft-careers-more caaft-careers-more--closed">Closed</span>
-                        </div>
+                        <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
             </div>

@@ -111,27 +111,18 @@ $body = '
 <p><strong>Resume:</strong> ' . htmlspecialchars($originalName, ENT_QUOTES, 'UTF-8') . '</p>';
 $body .= caaft_form_source_url_html();
 
-$leadData = caaft_form_build_lead_data('careers', 'Careers');
-$leadData['name'] = $fullName;
-$leadData['email'] = $email;
-$leadData['phone'] = $phone;
-$leadData['service'] = 'Careers - ' . $job['title'];
-$leadData['message'] = 'Applied for ' . $job['title'];
-
 $attachments = [[
     'path' => $tmpPath,
     'name' => $originalName,
     'type' => $attachmentMime,
 ]];
 
-caaft_form_complete_submission(
-    $leadData,
-    $to,
-    $subject,
-    $body,
-    $fullName,
-    $email,
-    'Thank you for your interest in joining our team! Our HR team will review your application and contact you if your profile matches our requirement.',
-    true,
-    $attachments,
-);
+// Careers applications: email HR only — do not push to Zoho CRM.
+$mailOk = caaft_try_send_mail($to, $subject, $body, $fullName, $email, $attachments);
+$successMessage = 'Thank you for your interest in joining our team! Our HR team will review your application and contact you if your profile matches our requirement.';
+
+if ($mailOk) {
+    caaft_form_redirect_thankyou($successMessage, true);
+}
+
+caaft_form_abort('There was an error sending your application. Please try again later.', 500);
