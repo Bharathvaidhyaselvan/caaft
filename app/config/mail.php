@@ -13,7 +13,8 @@ return [
 
     /**
      * ZeptoMail SMTP (https://zeptomail.zoho.in/)
-     * Put the Send Mail token in app/config/mail.local.php on the server.
+     * Put the Send Mail Token in app/config/mail.local.php on the server.
+     * Optional: also set zeptomail_api_key (Send API key) for HTTP fallback.
      * From address (enquiry@caaft.com) must be verified in your ZeptoMail Mail Agent.
      *
      * @see https://www.zoho.com/zeptomail/help/smtp-home.html
