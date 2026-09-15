@@ -13,6 +13,8 @@ deploy-check.php
 # Runtime cache (folder kept via storage/.gitkeep)
 storage/*
 !storage/.gitkeep
+!storage/careers/
+!storage/careers/.htaccess
 
 # OS
 Thumbs.db

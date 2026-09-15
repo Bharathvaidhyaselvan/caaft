@@ -74,31 +74,59 @@ if (!in_array($extension, $allowedExtensions, true)) {
     caaft_form_abort('Supported resume formats: .doc, .docx, .pdf, .rtf');
 }
 
-$finfo = new finfo(FILEINFO_MIME_TYPE);
-$detectedMime = (string) $finfo->file($tmpPath);
-$allowedMimes = [
-    'application/pdf',
-    'application/msword',
-    'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-    'application/rtf',
-    'text/rtf',
-    'text/plain',
-    'application/octet-stream',
-];
-if (!in_array($detectedMime, $allowedMimes, true)) {
-    caaft_form_abort('Unsupported resume file type.');
+if (class_exists('finfo')) {
+    $finfo = new finfo(FILEINFO_MIME_TYPE);
+    $detectedMime = (string) $finfo->file($tmpPath);
+    $allowedMimes = [
+        'application/pdf',
+        'application/msword',
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        'application/rtf',
+        'text/rtf',
+        'text/plain',
+        'application/octet-stream',
+        'application/zip',
+        'application/x-zip-compressed',
+    ];
+    if ($detectedMime !== '' && !in_array($detectedMime, $allowedMimes, true)) {
+        caaft_form_abort('Unsupported resume file type.');
+    }
 }
 
-$mimeByExtension = [
-    'pdf' => 'application/pdf',
-    'doc' => 'application/msword',
-    'docx' => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-    'rtf' => 'application/rtf',
-];
-$attachmentMime = $mimeByExtension[$extension] ?? 'application/octet-stream';
+/** @return array{path:string,name:string}|null */
+$storeResume = static function (string $sourcePath, string $displayName, string $ext): ?array {
+    $root = defined('PROJECT_ROOT') ? PROJECT_ROOT : dirname(APP_ROOT);
+    $dir = $root . '/storage/careers';
+    if (!is_dir($dir) && !@mkdir($dir, 0755, true) && !is_dir($dir)) {
+        return null;
+    }
 
-$to = caaft_careers_recipient_email();
+    $htaccess = $dir . '/.htaccess';
+    if (!is_file($htaccess)) {
+        @file_put_contents($htaccess, "Require all denied\nDeny from all\n");
+    }
 
+    $safeBase = preg_replace('/[^a-zA-Z0-9._-]+/', '-', pathinfo($displayName, PATHINFO_FILENAME)) ?: 'resume';
+    $safeBase = trim($safeBase, '-') ?: 'resume';
+    $storedName = date('Ymd-His') . '-' . $safeBase . '.' . $ext;
+    $dest = $dir . '/' . $storedName;
+
+    if (!@move_uploaded_file($sourcePath, $dest) && !@copy($sourcePath, $dest)) {
+        return null;
+    }
+
+    @chmod($dest, 0644);
+
+    return ['path' => $dest, 'name' => $storedName];
+};
+
+$storedResume = $storeResume($tmpPath, $originalName, $extension);
+if ($storedResume === null) {
+    caaft_form_abort('Resume upload failed. Please try again.');
+}
+
+$hrTo = caaft_careers_recipient_email();
+$fallbackTo = caaft_form_recipient_email();
 $subject = 'Career Application - ' . $job['title'] . ' - ' . $fullName;
 $body = '
 <h2>New Career Application</h2>
@@ -108,21 +136,41 @@ $body = '
 <p><strong>Last Name:</strong> ' . $lastName . '</p>
 <p><strong>Email:</strong> ' . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . '</p>
 <p><strong>Mobile:</strong> ' . $phone . '</p>
-<p><strong>Resume:</strong> ' . htmlspecialchars($originalName, ENT_QUOTES, 'UTF-8') . '</p>';
+<p><strong>Resume file:</strong> ' . htmlspecialchars($originalName, ENT_QUOTES, 'UTF-8') . '</p>
+<p><strong>Resume stored on server:</strong> storage/careers/'
+    . htmlspecialchars($storedResume['name'], ENT_QUOTES, 'UTF-8')
+    . ' (download via hosting File Manager / FTP)</p>';
 $body .= caaft_form_source_url_html();
 
-$attachments = [[
-    'path' => $tmpPath,
-    'name' => $originalName,
-    'type' => $attachmentMime,
-]];
-
-// Careers applications: email HR only — do not push to Zoho CRM.
-$mailOk = caaft_try_send_mail($to, $subject, $body, $fullName, $email, $attachments);
 $successMessage = 'Thank you for your interest in joining our team! Our HR team will review your application and contact you if your profile matches our requirement.';
+
+// Same plain SMTP path as working enquiry forms (no attachment). ZeptoMail often rejects
+// resume attachments (size/virus policy); the file is already saved under storage/careers/.
+$mailOk = caaft_try_send_mail($hrTo, $subject, $body, $fullName, $email, []);
+if (!$mailOk && strcasecmp($hrTo, $fallbackTo) !== 0) {
+    if (function_exists('caaft_mail_log')) {
+        caaft_mail_log('Careers mail to ' . $hrTo . ' failed; retrying ' . $fallbackTo);
+    }
+    $fallbackBody = $body . '<p><em>Note: Delivered to services inbox because HR mail delivery failed. Please forward to HR.</em></p>';
+    $mailOk = caaft_try_send_mail(
+        $fallbackTo,
+        '[Careers/HR] ' . $subject,
+        $fallbackBody,
+        $fullName,
+        $email,
+        []
+    );
+}
 
 if ($mailOk) {
     caaft_form_redirect_thankyou($successMessage, true);
 }
 
-caaft_form_abort('There was an error sending your application. Please try again later.', 500);
+if (function_exists('caaft_mail_log')) {
+    caaft_mail_log('Careers application mail failed for ' . $email . ' job=' . $jobSlug . ' hr=' . $hrTo);
+}
+
+caaft_form_abort(
+    'There was an error sending your application to HR. Please try again later.',
+    500
+);

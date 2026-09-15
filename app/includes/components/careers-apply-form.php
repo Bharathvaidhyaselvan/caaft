@@ -21,7 +21,7 @@ $jobSlug = (string) ($job['slug'] ?? '');
         <p>Share your details and resume. Our HR team will get back to you.</p>
     </div>
     <div class="quote-form">
-        <form method="post" action="/careers_mail.php" class="contact caaft-careers-apply-form" id="careers-form" enctype="multipart/form-data" data-caaft-ajax-submit="1">
+        <form method="post" action="/careers-apply.php" class="contact caaft-careers-apply-form" id="careers-form" enctype="multipart/form-data" data-caaft-ajax-submit="1" novalidate>
             <?php include __DIR__ . '/caaft-form-page-url-field.php'; ?>
             <input type="hidden" name="job_slug" value="<?php echo htmlspecialchars($jobSlug, ENT_QUOTES, 'UTF-8'); ?>">
             <input type="hidden" name="job_title" value="<?php echo htmlspecialchars($jobTitle, ENT_QUOTES, 'UTF-8'); ?>">
@@ -56,13 +56,13 @@ $jobSlug = (string) ($job['slug'] ?? '');
                 </div>
                 <div class="col-lg-12">
                     <div class="caaft-careers-resume">
-                        <label class="caaft-careers-resume-btn" for="resume">
+                        <label class="caaft-careers-resume-btn" for="resume" tabindex="0">
                             <i class="far fa-paperclip" aria-hidden="true"></i> Attach Your Resume
                         </label>
-                        <input type="file" name="resume" id="resume" accept=".doc,.docx,.pdf,.rtf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,application/rtf,text/rtf" required hidden>
+                        <input type="file" name="resume" id="resume" class="caaft-careers-resume-input" accept=".doc,.docx,.pdf,.rtf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,application/rtf,text/rtf" required>
                         <span class="caaft-careers-resume-name" id="resume-file-name">No File Chosen</span>
                     </div>
-                    <span class="caaft-careers-resume-hint">Supported formats: .doc, .docx, .pdf, .rtf. Max file size: 5 MB.</span>
+                    <span class="caaft-careers-resume-hint">Supported formats: .doc, .docx, .pdf, .rtf. Max file size: 5 MB. Use a simple filename (no apostrophes or special characters).</span>
                 </div>
                 <div class="col-lg-12">
                     <div class="form-check caaft-careers-terms">
@@ -133,6 +133,36 @@ $jobSlug = (string) ($job['slug'] ?? '');
         }
     }
 
+    function friendlyError(text, status) {
+        var raw = (text || '').toString();
+        if (status === 403 || /403\s*Forbidden|Access to this resource on the server is denied/i.test(raw)) {
+            return 'Upload was blocked by the server firewall. Please rename your resume to a simple name (letters/numbers only, e.g. resume.pdf) and try again.';
+        }
+        if (status === 413 || /request entity too large/i.test(raw)) {
+            return 'Resume file is too large. Please upload a file under 5 MB.';
+        }
+        if (/<html[\s>]/i.test(raw) || /<!DOCTYPE/i.test(raw)) {
+            return 'There was an error sending your application. Please try again later.';
+        }
+        var trimmed = raw.replace(/\s+/g, ' ').trim();
+        if (trimmed.length > 220) {
+            return 'There was an error sending your application. Please try again later.';
+        }
+        return trimmed || 'There was an error sending your application. Please try again later.';
+    }
+
+    function buildSafeFormData(sourceForm) {
+        var data = new FormData(sourceForm);
+        var fileInput = sourceForm.querySelector('input[type="file"][name="resume"]');
+        if (fileInput && fileInput.files && fileInput.files[0]) {
+            var file = fileInput.files[0];
+            var ext = (file.name.split('.').pop() || 'pdf').toLowerCase().replace(/[^a-z0-9]/g, '') || 'pdf';
+            var safeName = 'resume-' + Date.now() + '.' + ext;
+            data.set('resume', file, safeName);
+        }
+        return data;
+    }
+
     form.addEventListener('caaft:ajax-submit', function () {
         if (form.dataset.busy === '1') {
             return;
@@ -142,9 +172,9 @@ $jobSlug = (string) ($job['slug'] ?? '');
             submitBtn.disabled = true;
         }
 
-        fetch(form.getAttribute('action') || '/careers_mail.php', {
+        fetch(form.getAttribute('action') || '/careers-apply.php', {
             method: 'POST',
-            body: new FormData(form),
+            body: buildSafeFormData(form),
             credentials: 'same-origin',
             headers: {
                 'X-Requested-With': 'XMLHttpRequest',
@@ -159,12 +189,15 @@ $jobSlug = (string) ($job['slug'] ?? '');
                     }
                 });
             }
-            if (!res.ok) {
-                return res.text().then(function (text) {
-                    throw new Error(text || 'There was an error sending your application. Please try again later.');
-                });
-            }
-            throw new Error('There was an error sending your application. Please try again later.');
+            return res.text().then(function (text) {
+                if (!res.ok) {
+                    throw new Error(friendlyError(text, res.status));
+                }
+                // Non-JSON success (legacy redirect/script) — treat as ok if not an error page.
+                if (/403\s*Forbidden|Access to this resource on the server is denied/i.test(text || '')) {
+                    throw new Error(friendlyError(text, 403));
+                }
+            });
         }).then(showSuccess).catch(function (err) {
             resetBusy();
             alert(err && err.message ? err.message : 'There was an error sending your application. Please try again later.');

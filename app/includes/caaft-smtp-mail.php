@@ -8,7 +8,26 @@ if (!function_exists('caaft_smtp_is_configured')) {
 
         return trim((string) ($config['smtp_host'] ?? '')) !== ''
             && trim((string) ($config['smtp_user'] ?? '')) !== ''
-            && (string) ($config['smtp_password'] ?? '') !== '';
+            && trim((string) ($config['smtp_password'] ?? '')) !== '';
+    }
+}
+
+if (!function_exists('caaft_mail_log')) {
+    function caaft_mail_log(string $message): void
+    {
+        $dir = (defined('PROJECT_ROOT') ? PROJECT_ROOT : dirname(__DIR__, 2)) . '/storage';
+        if (!is_dir($dir)) {
+            @mkdir($dir, 0755, true);
+        }
+        if (!is_dir($dir) || !is_writable($dir)) {
+            return;
+        }
+
+        @file_put_contents(
+            $dir . '/mail.log',
+            '[' . date('c') . '] ' . $message . "\n",
+            FILE_APPEND
+        );
     }
 }
 
@@ -38,16 +57,25 @@ if (!function_exists('caaft_smtp_read_response')) {
 }
 
 if (!function_exists('caaft_smtp_expect')) {
-    function caaft_smtp_expect($socket, array $codes): bool
+    function caaft_smtp_expect($socket, array $codes, string $context = ''): bool
     {
-        [$code] = caaft_smtp_read_response($socket);
+        [$code, $text] = caaft_smtp_read_response($socket);
+        if (in_array($code, $codes, true)) {
+            return true;
+        }
 
-        return in_array($code, $codes, true);
+        caaft_mail_log(
+            'SMTP unexpected ' . $code
+            . ($context !== '' ? ' at ' . $context : '')
+            . ($text !== '' ? ': ' . $text : '')
+        );
+
+        return false;
     }
 }
 
 if (!function_exists('caaft_smtp_command')) {
-    function caaft_smtp_command($socket, string $command, array $codes): bool
+    function caaft_smtp_command($socket, string $command, array $codes, string $context = ''): bool
     {
         if (!is_resource($socket)) {
             return false;
@@ -55,7 +83,7 @@ if (!function_exists('caaft_smtp_command')) {
 
         fwrite($socket, $command . "\r\n");
 
-        return caaft_smtp_expect($socket, $codes);
+        return caaft_smtp_expect($socket, $codes, $context !== '' ? $context : strtok($command, ' '));
     }
 }
 
@@ -128,9 +156,10 @@ if (!function_exists('caaft_smtp_send_mail')) {
         $port = (int) ($config['smtp_port'] ?? 587);
         $encryption = strtolower(trim((string) ($config['smtp_encryption'] ?? 'tls')));
         $user = trim((string) ($config['smtp_user'] ?? ''));
-        $password = (string) ($config['smtp_password'] ?? '');
+        $password = trim((string) ($config['smtp_password'] ?? ''));
 
         if ($host === '' || $user === '' || $password === '') {
+            caaft_mail_log('SMTP skipped: missing host/user/password');
             return false;
         }
 
@@ -148,21 +177,21 @@ if (!function_exists('caaft_smtp_send_mail')) {
 
         stream_set_timeout($socket, 25);
 
-        if (!caaft_smtp_expect($socket, [220])) {
+        if (!caaft_smtp_expect($socket, [220], 'banner')) {
             fclose($socket);
 
             return false;
         }
 
         $ehloDomain = caaft_smtp_ehlo_domain();
-        if (!caaft_smtp_command($socket, 'EHLO ' . $ehloDomain, [250])) {
+        if (!caaft_smtp_command($socket, 'EHLO ' . $ehloDomain, [250], 'EHLO')) {
             fclose($socket);
 
             return false;
         }
 
         if ($encryption === 'tls') {
-            if (!caaft_smtp_command($socket, 'STARTTLS', [220])) {
+            if (!caaft_smtp_command($socket, 'STARTTLS', [220], 'STARTTLS')) {
                 fclose($socket);
 
                 return false;
@@ -174,27 +203,53 @@ if (!function_exists('caaft_smtp_send_mail')) {
             }
 
             if (!@stream_socket_enable_crypto($socket, true, $cryptoMethod)) {
+                caaft_mail_log('SMTP TLS handshake failed for ' . $host);
                 fclose($socket);
 
                 return false;
             }
 
-            if (!caaft_smtp_command($socket, 'EHLO ' . $ehloDomain, [250])) {
+            if (!caaft_smtp_command($socket, 'EHLO ' . $ehloDomain, [250], 'EHLO-TLS')) {
                 fclose($socket);
 
                 return false;
             }
         }
 
-        if (!caaft_smtp_command($socket, 'AUTH LOGIN', [334])
-            || !caaft_smtp_command($socket, base64_encode($user), [334])
-            || !caaft_smtp_command($socket, base64_encode($password), [235])) {
+        if (!caaft_smtp_command($socket, 'AUTH LOGIN', [334], 'AUTH LOGIN')
+            || !caaft_smtp_command($socket, base64_encode($user), [334], 'AUTH user')
+            || !caaft_smtp_command($socket, base64_encode($password), [235], 'AUTH pass')) {
+            // Reconnect for AUTH PLAIN — connection is often unusable after a failed LOGIN.
             fclose($socket);
+            $socket = @stream_socket_client($remote, $errno, $errstr, 25, STREAM_CLIENT_CONNECT);
+            if (!is_resource($socket)) {
+                caaft_mail_log('SMTP auth failed for ' . $host . ' as ' . $user);
+                return false;
+            }
+            stream_set_timeout($socket, 25);
+            if (!caaft_smtp_expect($socket, [220], 'banner-plain')
+                || !caaft_smtp_command($socket, 'EHLO ' . $ehloDomain, [250], 'EHLO-plain')) {
+                fclose($socket);
+                return false;
+            }
+            if ($encryption === 'tls') {
+                if (!caaft_smtp_command($socket, 'STARTTLS', [220], 'STARTTLS-plain')
+                    || !@stream_socket_enable_crypto($socket, true, $cryptoMethod)
+                    || !caaft_smtp_command($socket, 'EHLO ' . $ehloDomain, [250], 'EHLO-TLS-plain')) {
+                    fclose($socket);
+                    return false;
+                }
+            }
+            $plain = base64_encode("\0" . $user . "\0" . $password);
+            if (!caaft_smtp_command($socket, 'AUTH PLAIN ' . $plain, [235], 'AUTH PLAIN')) {
+                caaft_mail_log('SMTP auth failed for ' . $host . ' as ' . $user);
+                fclose($socket);
 
-            return false;
+                return false;
+            }
         }
 
-        if (!caaft_smtp_command($socket, 'MAIL FROM:<' . $fromEmail . '>', [250])) {
+        if (!caaft_smtp_command($socket, 'MAIL FROM:<' . $fromEmail . '>', [250], 'MAIL FROM')) {
             fclose($socket);
 
             return false;
@@ -207,14 +262,14 @@ if (!function_exists('caaft_smtp_send_mail')) {
                 continue;
             }
 
-            if (!caaft_smtp_command($socket, 'RCPT TO:<' . $recipient . '>', [250, 251])) {
+            if (!caaft_smtp_command($socket, 'RCPT TO:<' . $recipient . '>', [250, 251], 'RCPT ' . $recipient)) {
                 fclose($socket);
 
                 return false;
             }
         }
 
-        if (!caaft_smtp_command($socket, 'DATA', [354])) {
+        if (!caaft_smtp_command($socket, 'DATA', [354], 'DATA')) {
             fclose($socket);
 
             return false;
@@ -283,9 +338,15 @@ if (!function_exists('caaft_smtp_send_mail')) {
         $message = str_replace("\n", "\r\n", $message);
         $message .= "\r\n.\r\n";
 
-        fwrite($socket, $message);
+        if (!caaft_smtp_write_all($socket, $message)) {
+            caaft_mail_log('SMTP write failed for subject: ' . $subject);
+            fclose($socket);
 
-        if (!caaft_smtp_expect($socket, [250])) {
+            return false;
+        }
+
+        if (!caaft_smtp_expect($socket, [250], 'DATA body')) {
+            caaft_mail_log('SMTP DATA rejected for subject: ' . $subject);
             fclose($socket);
 
             return false;
@@ -295,5 +356,99 @@ if (!function_exists('caaft_smtp_send_mail')) {
         fclose($socket);
 
         return true;
+    }
+}
+
+if (!function_exists('caaft_smtp_write_all')) {
+    /**
+     * @param resource $socket
+     */
+    function caaft_smtp_write_all($socket, string $message): bool
+    {
+        $length = strlen($message);
+        $written = 0;
+
+        while ($written < $length) {
+            $chunk = fwrite($socket, substr($message, $written));
+            if ($chunk === false || $chunk === 0) {
+                return false;
+            }
+            $written += $chunk;
+        }
+
+        return true;
+    }
+}
+
+if (!function_exists('caaft_build_multipart_mail')) {
+    /**
+     * Build a multipart/mixed MIME body for PHP mail() with optional attachments.
+     *
+     * @param list<array{path:string,name?:string,type?:string}> $attachments
+     * @return array{0:string,1:string} [headersWithoutTo, body]
+     */
+    function caaft_build_multipart_mail(
+        string $htmlBody,
+        string $fromEmail,
+        string $fromName,
+        string $replyToEmail = '',
+        string $replyToName = '',
+        array $attachments = []
+    ): array {
+        $fromHeader = function_exists('caaft_format_mail_address')
+            ? caaft_format_mail_address($fromEmail, $fromName)
+            : $fromEmail;
+        $replyHeader = ($replyToEmail !== '' && function_exists('caaft_format_mail_address'))
+            ? caaft_format_mail_address($replyToEmail, $replyToName)
+            : $replyToEmail;
+
+        $headers = 'From: ' . $fromHeader . "\r\n";
+        if ($replyHeader !== '') {
+            $headers .= 'Reply-To: ' . $replyHeader . "\r\n";
+        }
+        $headers .= "MIME-Version: 1.0\r\n";
+
+        $safeAttachments = [];
+        foreach ($attachments as $attachment) {
+            $path = (string) ($attachment['path'] ?? '');
+            if ($path === '' || !is_file($path) || !is_readable($path)) {
+                continue;
+            }
+            $safeAttachments[] = $attachment;
+        }
+
+        if ($safeAttachments === []) {
+            $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+
+            return [$headers, $htmlBody];
+        }
+
+        $boundary = 'caaft_' . bin2hex(random_bytes(12));
+        $headers .= 'Content-Type: multipart/mixed; boundary="' . $boundary . '"' . "\r\n";
+
+        $body = '--' . $boundary . "\r\n";
+        $body .= "Content-Type: text/html; charset=UTF-8\r\n";
+        $body .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
+        $body .= $htmlBody . "\r\n";
+
+        foreach ($safeAttachments as $attachment) {
+            $path = (string) $attachment['path'];
+            $filename = preg_replace('/[\r\n"]+/', '', (string) ($attachment['name'] ?? basename($path))) ?: 'resume';
+            $mime = preg_replace('/[\r\n]+/', '', (string) ($attachment['type'] ?? 'application/octet-stream')) ?: 'application/octet-stream';
+            $binary = file_get_contents($path);
+            if ($binary === false) {
+                continue;
+            }
+
+            $body .= '--' . $boundary . "\r\n";
+            $body .= 'Content-Type: ' . $mime . '; name="' . $filename . '"' . "\r\n";
+            $body .= "Content-Transfer-Encoding: base64\r\n";
+            $body .= 'Content-Disposition: attachment; filename="' . $filename . '"' . "\r\n\r\n";
+            $body .= chunk_split(base64_encode($binary)) . "\r\n";
+        }
+
+        $body .= '--' . $boundary . "--\r\n";
+
+        return [$headers, $body];
     }
 }

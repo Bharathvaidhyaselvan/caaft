@@ -127,7 +127,7 @@ if (!function_exists('caaft_form_sanitize_source_url')) {
             return '';
         }
 
-        if (preg_match('~/(?:contact_mail|homecontact_mail|[a-z0-9-]+-mail)\.php(?:\?|$)~i', $url)) {
+        if (preg_match('~/(?:contact_mail|homecontact_mail|careers_mail|careers-apply|[a-z0-9-]+-mail)\.php(?:\?|$)~i', $url)) {
             return '';
         }
 
@@ -296,7 +296,7 @@ if (!function_exists('caaft_try_send_mail')) {
         }
 
         if (caaft_smtp_is_configured()) {
-            return caaft_smtp_send_mail(
+            $smtpOk = caaft_smtp_send_mail(
                 $to,
                 $subject,
                 $htmlBody,
@@ -305,36 +305,37 @@ if (!function_exists('caaft_try_send_mail')) {
                 caaft_form_cc_emails(),
                 $attachments,
             );
-        }
-
-        if ($attachments !== []) {
-            // Attachment support requires SMTP; do not silently drop resumes via mail().
-            return false;
-        }
-
-        $ccHeader = caaft_form_cc_header();
-        $contentHeaders = "MIME-Version: 1.0\r\nContent-Type: text/html; charset=UTF-8\r\n";
-
-        // Try without CC first — Hostinger often rejects Cc to external Gmail.
-        $headerSets = [
-            "From: {$fromName} <{$fromEmail}>\r\n{$contentHeaders}",
-            "From: {$fromEmail}\r\n{$contentHeaders}",
-            "From: {$fromName} <{$fromEmail}>\r\n{$ccHeader}{$contentHeaders}",
-            "From: {$fromEmail}\r\n{$ccHeader}{$contentHeaders}",
-        ];
-
-        foreach ($headerSets as $headers) {
-            if (@mail($to, $subject, $htmlBody, $headers)) {
-                caaft_send_cc_copy_if_needed($to, $subject, $htmlBody, $fromName, $fromEmail, $headers);
-
+            if ($smtpOk) {
                 return true;
             }
-
-            if (@mail($to, $subject, $htmlBody, $headers, '-f' . $fromEmail)) {
-                caaft_send_cc_copy_if_needed($to, $subject, $htmlBody, $fromName, $fromEmail, $headers);
-
-                return true;
+            if (function_exists('caaft_mail_log')) {
+                caaft_mail_log('SMTP send failed; trying PHP mail() fallback for ' . $to);
             }
+        }
+
+        if (!function_exists('caaft_build_multipart_mail')) {
+            require_once (defined('APP_ROOT') ? APP_ROOT : dirname(__DIR__, 2)) . '/includes/caaft-smtp-mail.php';
+        }
+
+        [$headers, $body] = caaft_build_multipart_mail(
+            $htmlBody,
+            caaft_form_sender_email(),
+            trim((string) (caaft_mail_config()['form_sender_name'] ?? 'CAAFT Website')),
+            $fromEmail,
+            $fromName,
+            $attachments,
+        );
+
+        $sender = caaft_form_sender_email();
+        if (@mail($to, $subject, $body, $headers)) {
+            return true;
+        }
+        if ($sender !== '' && @mail($to, $subject, $body, $headers, '-f' . $sender)) {
+            return true;
+        }
+
+        if (function_exists('caaft_mail_log')) {
+            caaft_mail_log('PHP mail() fallback failed for ' . $to . ' subject=' . $subject);
         }
 
         return false;
