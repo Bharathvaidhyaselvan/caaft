@@ -45,6 +45,16 @@ if (empty($_POST['agree_terms'])) {
     caaft_form_abort('Please agree to the terms and conditions and privacy policy.');
 }
 
+$root = defined('PROJECT_ROOT') ? PROJECT_ROOT : dirname(APP_ROOT);
+$careersDir = $root . '/storage/careers';
+if (!is_dir($careersDir) && !@mkdir($careersDir, 0755, true) && !is_dir($careersDir)) {
+    caaft_form_abort('Unable to save your application. Please try again later.', 500);
+}
+$htaccess = $careersDir . '/.htaccess';
+if (!is_file($htaccess)) {
+    @file_put_contents($htaccess, "Require all denied\nDeny from all\n");
+}
+
 $attachments = [];
 $storedResumeName = '';
 $hasResume = isset($_FILES['resume'])
@@ -104,20 +114,10 @@ if ($hasResume) {
     ];
     $attachmentMime = $mimeByExtension[$extension] ?? 'application/octet-stream';
 
-    $root = defined('PROJECT_ROOT') ? PROJECT_ROOT : dirname(APP_ROOT);
-    $dir = $root . '/storage/careers';
-    if (!is_dir($dir) && !@mkdir($dir, 0755, true) && !is_dir($dir)) {
-        caaft_form_abort('Resume upload failed. Please try again.');
-    }
-    $htaccess = $dir . '/.htaccess';
-    if (!is_file($htaccess)) {
-        @file_put_contents($htaccess, "Require all denied\nDeny from all\n");
-    }
-
     $safeBase = preg_replace('/[^a-zA-Z0-9._-]+/', '-', pathinfo($originalName, PATHINFO_FILENAME)) ?: 'resume';
     $safeBase = trim($safeBase, '-') ?: 'resume';
     $storedName = date('Ymd-His') . '-' . $safeBase . '.' . $extension;
-    $dest = $dir . '/' . $storedName;
+    $dest = $careersDir . '/' . $storedName;
     if (!@move_uploaded_file($tmpPath, $dest) && !@copy($tmpPath, $dest)) {
         caaft_form_abort('Resume upload failed. Please try again.');
     }
@@ -130,6 +130,25 @@ if ($hasResume) {
         'type' => $attachmentMime,
     ];
 }
+
+$applicationId = date('Ymd-His') . '-' . substr(bin2hex(random_bytes(4)), 0, 8);
+$applicationMeta = [
+    'id' => $applicationId,
+    'submitted_at' => date('c'),
+    'job_slug' => $jobSlug,
+    'job_title' => (string) $job['title'],
+    'department' => (string) $job['department'],
+    'first_name' => html_entity_decode(strip_tags($firstName), ENT_QUOTES, 'UTF-8'),
+    'last_name' => html_entity_decode(strip_tags($lastName), ENT_QUOTES, 'UTF-8'),
+    'email' => $email,
+    'phone' => $phone,
+    'resume' => $storedResumeName !== '' ? $storedResumeName : null,
+    'page_url' => caaft_form_source_url(),
+];
+@file_put_contents(
+    $careersDir . '/' . $applicationId . '.json',
+    json_encode($applicationMeta, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . "\n"
+);
 
 $to = caaft_careers_recipient_email();
 $subject = 'Career Application - ' . $job['title'] . ' - ' . $fullName;
@@ -146,6 +165,7 @@ if ($storedResumeName !== '') {
 } else {
     $body .= '<p><strong>Resume:</strong> not attached</p>';
 }
+$body .= '<p><strong>Application ID:</strong> ' . htmlspecialchars($applicationId, ENT_QUOTES, 'UTF-8') . '</p>';
 $body .= caaft_form_source_url_html();
 
 $successMessage = 'Thank you for your interest in joining our team! Our HR team will review your application and contact you if your profile matches our requirement.';
@@ -155,11 +175,16 @@ if ($mailOk) {
     caaft_form_redirect_thankyou($successMessage, true);
 }
 
+// Application is already saved under storage/careers/. When ZeptoMail credits are exhausted,
+// still thank the applicant so the form is not blocked.
 if (function_exists('caaft_mail_log')) {
-    caaft_mail_log('Careers application mail failed for ' . $email . ' job=' . $jobSlug . ' to=' . $to);
+    caaft_mail_log(
+        'Careers application saved without email notify for ' . $email
+        . ' job=' . $jobSlug
+        . ' id=' . $applicationId
+        . ' to=' . $to
+        . ' (check ZeptoMail credits if API returned Credit exhausted)'
+    );
 }
 
-caaft_form_abort(
-    'There was an error sending your application to HR. Please try again later.',
-    500
-);
+caaft_form_redirect_thankyou($successMessage, true);

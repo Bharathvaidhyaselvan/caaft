@@ -538,11 +538,15 @@ if (!function_exists('caaft_zeptomail_api_send_mail')) {
 
         if ($response === false || $httpCode < 200 || $httpCode >= 300) {
             $snippet = is_string($response) ? substr(preg_replace('/\s+/', ' ', $response) ?? '', 0, 240) : '';
-            caaft_mail_log(
-                'ZeptoMail API failed HTTP ' . $httpCode
-                . ($curlError !== '' ? ' curl=' . $curlError : '')
-                . ($snippet !== '' ? ' body=' . $snippet : '')
-            );
+            if ($httpCode === 429 || stripos($snippet, 'Credit exhausted') !== false || stripos($snippet, 'LE_102') !== false) {
+                caaft_mail_log('ZeptoMail credits exhausted (HTTP 429). Top up credits in ZeptoMail dashboard.');
+            } else {
+                caaft_mail_log(
+                    'ZeptoMail API failed HTTP ' . $httpCode
+                    . ($curlError !== '' ? ' curl=' . $curlError : '')
+                    . ($snippet !== '' ? ' body=' . $snippet : '')
+                );
+            }
 
             return false;
         }

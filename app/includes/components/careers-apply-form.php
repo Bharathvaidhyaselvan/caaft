@@ -170,6 +170,8 @@ $jobSlug = (string) ($job['slug'] ?? '');
         form.dataset.busy = '1';
         if (submitBtn) {
             submitBtn.disabled = true;
+            submitBtn.classList.add('is-sending');
+            submitBtn.innerHTML = 'Sending...';
         }
 
         fetch(form.getAttribute('action') || '/careers-apply.php', {
