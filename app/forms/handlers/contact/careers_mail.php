@@ -45,88 +45,93 @@ if (empty($_POST['agree_terms'])) {
     caaft_form_abort('Please agree to the terms and conditions and privacy policy.');
 }
 
-if (!isset($_FILES['resume']) || !is_array($_FILES['resume'])) {
-    caaft_form_abort('Please attach your resume.');
-}
+$attachments = [];
+$storedResumeName = '';
+$hasResume = isset($_FILES['resume'])
+    && is_array($_FILES['resume'])
+    && (int) ($_FILES['resume']['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_NO_FILE;
 
-$resume = $_FILES['resume'];
-if (($resume['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_OK) {
-    caaft_form_abort('Resume upload failed. Please try again.');
-}
-
-$maxBytes = 5 * 1024 * 1024;
-$size = (int) ($resume['size'] ?? 0);
-$tmpPath = (string) ($resume['tmp_name'] ?? '');
-$originalName = (string) ($resume['name'] ?? 'resume');
-$originalName = preg_replace('/[^\w.\- ()]+/u', '_', $originalName) ?: 'resume';
-
-if ($tmpPath === '' || !is_uploaded_file($tmpPath)) {
-    caaft_form_abort('Resume upload failed. Please try again.');
-}
-
-if ($size <= 0 || $size > $maxBytes) {
-    caaft_form_abort('Resume must be 5 MB or smaller.');
-}
-
-$extension = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
-$allowedExtensions = ['doc', 'docx', 'pdf', 'rtf'];
-if (!in_array($extension, $allowedExtensions, true)) {
-    caaft_form_abort('Supported resume formats: .doc, .docx, .pdf, .rtf');
-}
-
-if (class_exists('finfo')) {
-    $finfo = new finfo(FILEINFO_MIME_TYPE);
-    $detectedMime = (string) $finfo->file($tmpPath);
-    $allowedMimes = [
-        'application/pdf',
-        'application/msword',
-        'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-        'application/rtf',
-        'text/rtf',
-        'text/plain',
-        'application/octet-stream',
-        'application/zip',
-        'application/x-zip-compressed',
-    ];
-    if ($detectedMime !== '' && !in_array($detectedMime, $allowedMimes, true)) {
-        caaft_form_abort('Unsupported resume file type.');
+if ($hasResume) {
+    $resume = $_FILES['resume'];
+    if (($resume['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_OK) {
+        caaft_form_abort('Resume upload failed. Please try again.');
     }
-}
 
-/** @return array{path:string,name:string}|null */
-$storeResume = static function (string $sourcePath, string $displayName, string $ext): ?array {
+    $maxBytes = 5 * 1024 * 1024;
+    $size = (int) ($resume['size'] ?? 0);
+    $tmpPath = (string) ($resume['tmp_name'] ?? '');
+    $originalName = (string) ($resume['name'] ?? 'resume');
+    $originalName = preg_replace('/[^\w.\- ()]+/u', '_', $originalName) ?: 'resume';
+
+    if ($tmpPath === '' || !is_uploaded_file($tmpPath)) {
+        caaft_form_abort('Resume upload failed. Please try again.');
+    }
+
+    if ($size <= 0 || $size > $maxBytes) {
+        caaft_form_abort('Resume must be 5 MB or smaller.');
+    }
+
+    $extension = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
+    $allowedExtensions = ['doc', 'docx', 'pdf', 'rtf'];
+    if (!in_array($extension, $allowedExtensions, true)) {
+        caaft_form_abort('Supported resume formats: .doc, .docx, .pdf, .rtf');
+    }
+
+    if (class_exists('finfo')) {
+        $finfo = new finfo(FILEINFO_MIME_TYPE);
+        $detectedMime = (string) $finfo->file($tmpPath);
+        $allowedMimes = [
+            'application/pdf',
+            'application/msword',
+            'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            'application/rtf',
+            'text/rtf',
+            'text/plain',
+            'application/octet-stream',
+            'application/zip',
+            'application/x-zip-compressed',
+        ];
+        if ($detectedMime !== '' && !in_array($detectedMime, $allowedMimes, true)) {
+            caaft_form_abort('Unsupported resume file type.');
+        }
+    }
+
+    $mimeByExtension = [
+        'pdf' => 'application/pdf',
+        'doc' => 'application/msword',
+        'docx' => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        'rtf' => 'application/rtf',
+    ];
+    $attachmentMime = $mimeByExtension[$extension] ?? 'application/octet-stream';
+
     $root = defined('PROJECT_ROOT') ? PROJECT_ROOT : dirname(APP_ROOT);
     $dir = $root . '/storage/careers';
     if (!is_dir($dir) && !@mkdir($dir, 0755, true) && !is_dir($dir)) {
-        return null;
+        caaft_form_abort('Resume upload failed. Please try again.');
     }
-
     $htaccess = $dir . '/.htaccess';
     if (!is_file($htaccess)) {
         @file_put_contents($htaccess, "Require all denied\nDeny from all\n");
     }
 
-    $safeBase = preg_replace('/[^a-zA-Z0-9._-]+/', '-', pathinfo($displayName, PATHINFO_FILENAME)) ?: 'resume';
+    $safeBase = preg_replace('/[^a-zA-Z0-9._-]+/', '-', pathinfo($originalName, PATHINFO_FILENAME)) ?: 'resume';
     $safeBase = trim($safeBase, '-') ?: 'resume';
-    $storedName = date('Ymd-His') . '-' . $safeBase . '.' . $ext;
+    $storedName = date('Ymd-His') . '-' . $safeBase . '.' . $extension;
     $dest = $dir . '/' . $storedName;
-
-    if (!@move_uploaded_file($sourcePath, $dest) && !@copy($sourcePath, $dest)) {
-        return null;
+    if (!@move_uploaded_file($tmpPath, $dest) && !@copy($tmpPath, $dest)) {
+        caaft_form_abort('Resume upload failed. Please try again.');
     }
-
     @chmod($dest, 0644);
+    $storedResumeName = $storedName;
 
-    return ['path' => $dest, 'name' => $storedName];
-};
-
-$storedResume = $storeResume($tmpPath, $originalName, $extension);
-if ($storedResume === null) {
-    caaft_form_abort('Resume upload failed. Please try again.');
+    $attachments[] = [
+        'path' => $dest,
+        'name' => $originalName,
+        'type' => $attachmentMime,
+    ];
 }
 
-$hrTo = caaft_careers_recipient_email();
-$fallbackTo = caaft_form_recipient_email();
+$to = caaft_careers_recipient_email();
 $subject = 'Career Application - ' . $job['title'] . ' - ' . $fullName;
 $body = '
 <h2>New Career Application</h2>
@@ -135,39 +140,23 @@ $body = '
 <p><strong>First Name:</strong> ' . $firstName . '</p>
 <p><strong>Last Name:</strong> ' . $lastName . '</p>
 <p><strong>Email:</strong> ' . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . '</p>
-<p><strong>Mobile:</strong> ' . $phone . '</p>
-<p><strong>Resume file:</strong> ' . htmlspecialchars($originalName, ENT_QUOTES, 'UTF-8') . '</p>
-<p><strong>Resume stored on server:</strong> storage/careers/'
-    . htmlspecialchars($storedResume['name'], ENT_QUOTES, 'UTF-8')
-    . ' (download via hosting File Manager / FTP)</p>';
+<p><strong>Mobile:</strong> ' . $phone . '</p>';
+if ($storedResumeName !== '') {
+    $body .= '<p><strong>Resume:</strong> attached (' . htmlspecialchars($storedResumeName, ENT_QUOTES, 'UTF-8') . ')</p>';
+} else {
+    $body .= '<p><strong>Resume:</strong> not attached</p>';
+}
 $body .= caaft_form_source_url_html();
 
 $successMessage = 'Thank you for your interest in joining our team! Our HR team will review your application and contact you if your profile matches our requirement.';
 
-// Same plain SMTP path as working enquiry forms (no attachment). ZeptoMail often rejects
-// resume attachments (size/virus policy); the file is already saved under storage/careers/.
-$mailOk = caaft_try_send_mail($hrTo, $subject, $body, $fullName, $email, []);
-if (!$mailOk && strcasecmp($hrTo, $fallbackTo) !== 0) {
-    if (function_exists('caaft_mail_log')) {
-        caaft_mail_log('Careers mail to ' . $hrTo . ' failed; retrying ' . $fallbackTo);
-    }
-    $fallbackBody = $body . '<p><em>Note: Delivered to services inbox because HR mail delivery failed. Please forward to HR.</em></p>';
-    $mailOk = caaft_try_send_mail(
-        $fallbackTo,
-        '[Careers/HR] ' . $subject,
-        $fallbackBody,
-        $fullName,
-        $email,
-        []
-    );
-}
-
+$mailOk = caaft_try_send_mail($to, $subject, $body, $fullName, $email, $attachments);
 if ($mailOk) {
     caaft_form_redirect_thankyou($successMessage, true);
 }
 
 if (function_exists('caaft_mail_log')) {
-    caaft_mail_log('Careers application mail failed for ' . $email . ' job=' . $jobSlug . ' hr=' . $hrTo);
+    caaft_mail_log('Careers application mail failed for ' . $email . ' job=' . $jobSlug . ' to=' . $to);
 }
 
 caaft_form_abort(

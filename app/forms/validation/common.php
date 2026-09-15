@@ -309,7 +309,26 @@ if (!function_exists('caaft_try_send_mail')) {
                 return true;
             }
             if (function_exists('caaft_mail_log')) {
-                caaft_mail_log('SMTP send failed; trying PHP mail() fallback for ' . $to);
+                caaft_mail_log('SMTP send failed; trying ZeptoMail HTTP API for ' . $to);
+            }
+
+            if (function_exists('caaft_zeptomail_api_send_mail')) {
+                $apiOk = caaft_zeptomail_api_send_mail(
+                    $to,
+                    $subject,
+                    $htmlBody,
+                    $fromEmail,
+                    $fromName,
+                    caaft_form_cc_emails(),
+                    $attachments,
+                );
+                if ($apiOk) {
+                    return true;
+                }
+            }
+
+            if (function_exists('caaft_mail_log')) {
+                caaft_mail_log('ZeptoMail API failed; trying PHP mail() fallback for ' . $to);
             }
         }
 

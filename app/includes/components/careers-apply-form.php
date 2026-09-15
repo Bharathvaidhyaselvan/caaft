@@ -59,10 +59,10 @@ $jobSlug = (string) ($job['slug'] ?? '');
                         <label class="caaft-careers-resume-btn" for="resume" tabindex="0">
                             <i class="far fa-paperclip" aria-hidden="true"></i> Attach Your Resume
                         </label>
-                        <input type="file" name="resume" id="resume" class="caaft-careers-resume-input" accept=".doc,.docx,.pdf,.rtf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,application/rtf,text/rtf" required>
-                        <span class="caaft-careers-resume-name" id="resume-file-name">No File Chosen</span>
+                        <input type="file" name="resume" id="resume" class="caaft-careers-resume-input" accept=".doc,.docx,.pdf,.rtf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,application/rtf,text/rtf">
+                        <span class="caaft-careers-resume-name" id="resume-file-name">No File Chosen (optional)</span>
                     </div>
-                    <span class="caaft-careers-resume-hint">Supported formats: .doc, .docx, .pdf, .rtf. Max file size: 5 MB. Use a simple filename (no apostrophes or special characters).</span>
+                    <span class="caaft-careers-resume-hint">Optional. Supported formats: .doc, .docx, .pdf, .rtf. Max file size: 5 MB.</span>
                 </div>
                 <div class="col-lg-12">
                     <div class="form-check caaft-careers-terms">
@@ -99,7 +99,7 @@ $jobSlug = (string) ($job['slug'] ?? '');
 
     if (input && label) {
         input.addEventListener('change', function () {
-            label.textContent = input.files && input.files[0] ? input.files[0].name : 'No File Chosen';
+            label.textContent = input.files && input.files[0] ? input.files[0].name : 'No File Chosen (optional)';
         });
     }
 

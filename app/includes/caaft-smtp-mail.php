@@ -4,11 +4,74 @@ declare(strict_types=1);
 if (!function_exists('caaft_smtp_is_configured')) {
     function caaft_smtp_is_configured(): bool
     {
-        $config = caaft_mail_config();
+        return caaft_zeptomail_raw_token() !== '';
+    }
+}
 
-        return trim((string) ($config['smtp_host'] ?? '')) !== ''
-            && trim((string) ($config['smtp_user'] ?? '')) !== ''
-            && trim((string) ($config['smtp_password'] ?? '')) !== '';
+if (!function_exists('caaft_zeptomail_raw_token')) {
+    /**
+     * Send Mail Token / API key from mail.local.php (never logged in full).
+     */
+    function caaft_zeptomail_raw_token(): string
+    {
+        $config = caaft_mail_config();
+        $token = trim((string) ($config['smtp_password'] ?? ''));
+        if ($token === '') {
+            $token = trim((string) ($config['zeptomail_api_key'] ?? ''));
+        }
+
+        // Strip accidental wrapping quotes from pasted .php values.
+        if (strlen($token) >= 2) {
+            $first = $token[0];
+            $last = $token[strlen($token) - 1];
+            if (($first === '"' && $last === '"') || ($first === "'" && $last === "'")) {
+                $token = trim(substr($token, 1, -1));
+            }
+        }
+
+        return $token;
+    }
+}
+
+if (!function_exists('caaft_zeptomail_smtp_password')) {
+    /**
+     * SMTP AUTH password is the raw token without the HTTP "Zoho-enczapikey" prefix.
+     */
+    function caaft_zeptomail_smtp_password(): string
+    {
+        $token = caaft_zeptomail_raw_token();
+        if (preg_match('/^Zoho-enczapikey\s+/i', $token)) {
+            $token = trim((string) preg_replace('/^Zoho-enczapikey\s+/i', '', $token));
+        }
+
+        return $token;
+    }
+}
+
+if (!function_exists('caaft_zeptomail_api_authorization')) {
+    function caaft_zeptomail_api_authorization(): string
+    {
+        $token = caaft_zeptomail_raw_token();
+        if ($token === '') {
+            return '';
+        }
+        if (preg_match('/^Zoho-enczapikey\s+/i', $token)) {
+            return $token;
+        }
+
+        return 'Zoho-enczapikey ' . $token;
+    }
+}
+
+if (!function_exists('caaft_zeptomail_api_endpoint')) {
+    function caaft_zeptomail_api_endpoint(): string
+    {
+        $host = strtolower(trim((string) (caaft_mail_config()['smtp_host'] ?? '')));
+        if (strpos($host, 'zeptomail.in') !== false || strpos($host, 'zoho.in') !== false) {
+            return 'https://api.zeptomail.in/v1.1/email';
+        }
+
+        return 'https://api.zeptomail.com/v1.1/email';
     }
 }
 
@@ -155,8 +218,8 @@ if (!function_exists('caaft_smtp_send_mail')) {
         $host = trim((string) ($config['smtp_host'] ?? ''));
         $port = (int) ($config['smtp_port'] ?? 587);
         $encryption = strtolower(trim((string) ($config['smtp_encryption'] ?? 'tls')));
-        $user = trim((string) ($config['smtp_user'] ?? ''));
-        $password = trim((string) ($config['smtp_password'] ?? ''));
+        $user = trim((string) ($config['smtp_user'] ?? 'emailapikey'));
+        $password = caaft_zeptomail_smtp_password();
 
         if ($host === '' || $user === '' || $password === '') {
             caaft_mail_log('SMTP skipped: missing host/user/password');
@@ -354,6 +417,135 @@ if (!function_exists('caaft_smtp_send_mail')) {
 
         caaft_smtp_command($socket, 'QUIT', [221]);
         fclose($socket);
+
+        return true;
+    }
+}
+
+if (!function_exists('caaft_zeptomail_api_send_mail')) {
+    /**
+     * HTTP API fallback (same Send Mail Token). Supports attachments.
+     *
+     * @param list<array{path:string,name?:string,type?:string}> $attachments
+     */
+    function caaft_zeptomail_api_send_mail(
+        string $to,
+        string $subject,
+        string $htmlBody,
+        string $replyToEmail,
+        string $replyToName = '',
+        array $cc = [],
+        array $attachments = [],
+    ): bool {
+        $auth = caaft_zeptomail_api_authorization();
+        if ($auth === '' || !function_exists('curl_init')) {
+            return false;
+        }
+
+        $fromEmail = caaft_form_sender_email();
+        $fromName = trim((string) (caaft_mail_config()['form_sender_name'] ?? 'CAAFT Website'));
+        $to = caaft_sanitize_mail_address($to);
+        $replyToEmail = caaft_sanitize_mail_address($replyToEmail);
+        if ($fromEmail === '' || $to === '') {
+            return false;
+        }
+
+        $payload = [
+            'from' => [
+                'address' => $fromEmail,
+                'name' => $fromName,
+            ],
+            'to' => [
+                [
+                    'email_address' => [
+                        'address' => $to,
+                    ],
+                ],
+            ],
+            'subject' => $subject,
+            'htmlbody' => $htmlBody,
+        ];
+
+        if ($replyToEmail !== '') {
+            $payload['reply_to'] = [
+                [
+                    'address' => $replyToEmail,
+                    'name' => caaft_sanitize_mail_name($replyToName),
+                ],
+            ];
+        }
+
+        $ccList = [];
+        foreach ($cc as $ccEmail) {
+            $ccEmail = caaft_sanitize_mail_address((string) $ccEmail);
+            if ($ccEmail === '' || strcasecmp($ccEmail, $to) === 0) {
+                continue;
+            }
+            $ccList[] = ['email_address' => ['address' => $ccEmail]];
+        }
+        if ($ccList !== []) {
+            $payload['cc'] = $ccList;
+        }
+
+        $apiAttachments = [];
+        foreach ($attachments as $attachment) {
+            $path = (string) ($attachment['path'] ?? '');
+            if ($path === '' || !is_file($path) || !is_readable($path)) {
+                continue;
+            }
+            $binary = file_get_contents($path);
+            if ($binary === false) {
+                continue;
+            }
+            $filename = preg_replace('/[\r\n"]+/', '', (string) ($attachment['name'] ?? basename($path))) ?: 'resume';
+            $mime = preg_replace('/[\r\n]+/', '', (string) ($attachment['type'] ?? 'application/octet-stream')) ?: 'application/octet-stream';
+            $apiAttachments[] = [
+                'name' => $filename,
+                'mime_type' => $mime,
+                'content' => base64_encode($binary),
+            ];
+        }
+        if ($apiAttachments !== []) {
+            $payload['attachments'] = $apiAttachments;
+        }
+
+        $json = json_encode($payload, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+        if (!is_string($json)) {
+            return false;
+        }
+
+        $curl = curl_init(caaft_zeptomail_api_endpoint());
+        if ($curl === false) {
+            return false;
+        }
+
+        curl_setopt_array($curl, [
+            CURLOPT_POST => true,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_TIMEOUT => 45,
+            CURLOPT_HTTPHEADER => [
+                'Accept: application/json',
+                'Content-Type: application/json',
+                'Authorization: ' . $auth,
+            ],
+            CURLOPT_POSTFIELDS => $json,
+        ]);
+
+        $response = curl_exec($curl);
+        $httpCode = (int) curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        $curlError = curl_error($curl);
+        curl_close($curl);
+
+        if ($response === false || $httpCode < 200 || $httpCode >= 300) {
+            $snippet = is_string($response) ? substr(preg_replace('/\s+/', ' ', $response) ?? '', 0, 240) : '';
+            caaft_mail_log(
+                'ZeptoMail API failed HTTP ' . $httpCode
+                . ($curlError !== '' ? ' curl=' . $curlError : '')
+                . ($snippet !== '' ? ' body=' . $snippet : '')
+            );
+
+            return false;
+        }
 
         return true;
     }
