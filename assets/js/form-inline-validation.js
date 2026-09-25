@@ -192,13 +192,24 @@
     }
 
     var resume = getField(form, ["resume"]);
-    if (resume && resume.hasAttribute("required") && (!resume.files || !resume.files.length)) {
+    if (
+      resume &&
+      resume.hasAttribute("required") &&
+      (!resume.files || !resume.files.length)
+    ) {
       addError(resume, "Please attach your resume.");
     }
 
     var agreeTerms = getField(form, ["agree_terms"]);
-    if (agreeTerms && agreeTerms.hasAttribute("required") && !agreeTerms.checked) {
-      addError(agreeTerms, "Please agree to the terms and conditions and privacy policy.");
+    if (
+      agreeTerms &&
+      agreeTerms.hasAttribute("required") &&
+      !agreeTerms.checked
+    ) {
+      addError(
+        agreeTerms,
+        "Please agree to the terms and conditions and privacy policy.",
+      );
     }
 
     if (
@@ -230,8 +241,18 @@
     if (errors.length > 0) {
       var first = errors[0].field;
       if (first) {
-        first.focus({ preventScroll: true });
-        first.scrollIntoView({ behavior: "smooth", block: "center" });
+        var focusTarget = first;
+        if (first.type === "file") {
+          var resumeWrap = first.closest(".caaft-careers-resume");
+          var resumeBtn = resumeWrap
+            ? resumeWrap.querySelector(".caaft-careers-resume-btn")
+            : null;
+          focusTarget = resumeBtn || first;
+        }
+        try {
+          focusTarget.focus({ preventScroll: true });
+        } catch (e) {}
+        focusTarget.scrollIntoView({ behavior: "smooth", block: "center" });
       } else if (errors[0].recaptcha) {
         var widget = form.querySelector(".g-recaptcha");
         if (widget) {

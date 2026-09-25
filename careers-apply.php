@@ -1,6 +1,3 @@
 <?php
-/**
- * Backward-compatible entry point. Prefer /careers-apply.php (less likely blocked by WAF).
- */
 require_once __DIR__ . '/app/bootstrap.php';
 include APP_ROOT . '/forms/handlers/contact/careers_mail.php';

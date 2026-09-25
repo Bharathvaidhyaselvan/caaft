@@ -22,8 +22,8 @@ if (empty($captchaSuccess->success)) {
 $jobs = require APP_ROOT . '/includes/data/caaft-careers.php';
 $jobSlug = preg_replace('/[^a-z0-9-]/', '', strtolower(trim((string) ($_POST['job_slug'] ?? '')))) ?: '';
 $job = $jobs[$jobSlug] ?? null;
-if ($job === null) {
-    caaft_form_abort('Invalid job application.');
+if ($job === null || empty($job['open'])) {
+    caaft_form_abort('This position is closed and no longer accepting applications.');
 }
 
 $firstName = post_clean('first_name');
@@ -45,60 +45,112 @@ if (empty($_POST['agree_terms'])) {
     caaft_form_abort('Please agree to the terms and conditions and privacy policy.');
 }
 
-if (!isset($_FILES['resume']) || !is_array($_FILES['resume'])) {
-    caaft_form_abort('Please attach your resume.');
+$root = defined('PROJECT_ROOT') ? PROJECT_ROOT : dirname(APP_ROOT);
+$careersDir = $root . '/storage/careers';
+if (!is_dir($careersDir) && !@mkdir($careersDir, 0755, true) && !is_dir($careersDir)) {
+    caaft_form_abort('Unable to save your application. Please try again later.', 500);
+}
+$htaccess = $careersDir . '/.htaccess';
+if (!is_file($htaccess)) {
+    @file_put_contents($htaccess, "Require all denied\nDeny from all\n");
 }
 
-$resume = $_FILES['resume'];
-if (($resume['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_OK) {
-    caaft_form_abort('Resume upload failed. Please try again.');
+$attachments = [];
+$storedResumeName = '';
+$hasResume = isset($_FILES['resume'])
+    && is_array($_FILES['resume'])
+    && (int) ($_FILES['resume']['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_NO_FILE;
+
+if ($hasResume) {
+    $resume = $_FILES['resume'];
+    if (($resume['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_OK) {
+        caaft_form_abort('Resume upload failed. Please try again.');
+    }
+
+    $maxBytes = 5 * 1024 * 1024;
+    $size = (int) ($resume['size'] ?? 0);
+    $tmpPath = (string) ($resume['tmp_name'] ?? '');
+    $originalName = (string) ($resume['name'] ?? 'resume');
+    $originalName = preg_replace('/[^\w.\- ()]+/u', '_', $originalName) ?: 'resume';
+
+    if ($tmpPath === '' || !is_uploaded_file($tmpPath)) {
+        caaft_form_abort('Resume upload failed. Please try again.');
+    }
+
+    if ($size <= 0 || $size > $maxBytes) {
+        caaft_form_abort('Resume must be 5 MB or smaller.');
+    }
+
+    $extension = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
+    $allowedExtensions = ['doc', 'docx', 'pdf', 'rtf'];
+    if (!in_array($extension, $allowedExtensions, true)) {
+        caaft_form_abort('Supported resume formats: .doc, .docx, .pdf, .rtf');
+    }
+
+    if (class_exists('finfo')) {
+        $finfo = new finfo(FILEINFO_MIME_TYPE);
+        $detectedMime = (string) $finfo->file($tmpPath);
+        $allowedMimes = [
+            'application/pdf',
+            'application/msword',
+            'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            'application/rtf',
+            'text/rtf',
+            'text/plain',
+            'application/octet-stream',
+            'application/zip',
+            'application/x-zip-compressed',
+        ];
+        if ($detectedMime !== '' && !in_array($detectedMime, $allowedMimes, true)) {
+            caaft_form_abort('Unsupported resume file type.');
+        }
+    }
+
+    $mimeByExtension = [
+        'pdf' => 'application/pdf',
+        'doc' => 'application/msword',
+        'docx' => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        'rtf' => 'application/rtf',
+    ];
+    $attachmentMime = $mimeByExtension[$extension] ?? 'application/octet-stream';
+
+    $safeBase = preg_replace('/[^a-zA-Z0-9._-]+/', '-', pathinfo($originalName, PATHINFO_FILENAME)) ?: 'resume';
+    $safeBase = trim($safeBase, '-') ?: 'resume';
+    $storedName = date('Ymd-His') . '-' . $safeBase . '.' . $extension;
+    $dest = $careersDir . '/' . $storedName;
+    if (!@move_uploaded_file($tmpPath, $dest) && !@copy($tmpPath, $dest)) {
+        caaft_form_abort('Resume upload failed. Please try again.');
+    }
+    @chmod($dest, 0644);
+    $storedResumeName = $storedName;
+
+    $attachments[] = [
+        'path' => $dest,
+        'name' => $originalName,
+        'type' => $attachmentMime,
+    ];
 }
 
-$maxBytes = 5 * 1024 * 1024;
-$size = (int) ($resume['size'] ?? 0);
-$tmpPath = (string) ($resume['tmp_name'] ?? '');
-$originalName = (string) ($resume['name'] ?? 'resume');
-$originalName = preg_replace('/[^\w.\- ()]+/u', '_', $originalName) ?: 'resume';
-
-if ($tmpPath === '' || !is_uploaded_file($tmpPath)) {
-    caaft_form_abort('Resume upload failed. Please try again.');
-}
-
-if ($size <= 0 || $size > $maxBytes) {
-    caaft_form_abort('Resume must be 5 MB or smaller.');
-}
-
-$extension = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
-$allowedExtensions = ['doc', 'docx', 'pdf', 'rtf'];
-if (!in_array($extension, $allowedExtensions, true)) {
-    caaft_form_abort('Supported resume formats: .doc, .docx, .pdf, .rtf');
-}
-
-$finfo = new finfo(FILEINFO_MIME_TYPE);
-$detectedMime = (string) $finfo->file($tmpPath);
-$allowedMimes = [
-    'application/pdf',
-    'application/msword',
-    'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-    'application/rtf',
-    'text/rtf',
-    'text/plain',
-    'application/octet-stream',
+$applicationId = date('Ymd-His') . '-' . substr(bin2hex(random_bytes(4)), 0, 8);
+$applicationMeta = [
+    'id' => $applicationId,
+    'submitted_at' => date('c'),
+    'job_slug' => $jobSlug,
+    'job_title' => (string) $job['title'],
+    'department' => (string) $job['department'],
+    'first_name' => html_entity_decode(strip_tags($firstName), ENT_QUOTES, 'UTF-8'),
+    'last_name' => html_entity_decode(strip_tags($lastName), ENT_QUOTES, 'UTF-8'),
+    'email' => $email,
+    'phone' => $phone,
+    'resume' => $storedResumeName !== '' ? $storedResumeName : null,
+    'page_url' => caaft_form_source_url(),
 ];
-if (!in_array($detectedMime, $allowedMimes, true)) {
-    caaft_form_abort('Unsupported resume file type.');
-}
-
-$mimeByExtension = [
-    'pdf' => 'application/pdf',
-    'doc' => 'application/msword',
-    'docx' => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-    'rtf' => 'application/rtf',
-];
-$attachmentMime = $mimeByExtension[$extension] ?? 'application/octet-stream';
+@file_put_contents(
+    $careersDir . '/' . $applicationId . '.json',
+    json_encode($applicationMeta, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . "\n"
+);
 
 $to = caaft_careers_recipient_email();
-
 $subject = 'Career Application - ' . $job['title'] . ' - ' . $fullName;
 $body = '
 <h2>New Career Application</h2>
@@ -107,31 +159,32 @@ $body = '
 <p><strong>First Name:</strong> ' . $firstName . '</p>
 <p><strong>Last Name:</strong> ' . $lastName . '</p>
 <p><strong>Email:</strong> ' . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . '</p>
-<p><strong>Mobile:</strong> ' . $phone . '</p>
-<p><strong>Resume:</strong> ' . htmlspecialchars($originalName, ENT_QUOTES, 'UTF-8') . '</p>';
+<p><strong>Mobile:</strong> ' . $phone . '</p>';
+if ($storedResumeName !== '') {
+    $body .= '<p><strong>Resume:</strong> attached (' . htmlspecialchars($storedResumeName, ENT_QUOTES, 'UTF-8') . ')</p>';
+} else {
+    $body .= '<p><strong>Resume:</strong> not attached</p>';
+}
+$body .= '<p><strong>Application ID:</strong> ' . htmlspecialchars($applicationId, ENT_QUOTES, 'UTF-8') . '</p>';
 $body .= caaft_form_source_url_html();
 
-$leadData = caaft_form_build_lead_data('careers', 'Careers');
-$leadData['name'] = $fullName;
-$leadData['email'] = $email;
-$leadData['phone'] = $phone;
-$leadData['service'] = 'Careers - ' . $job['title'];
-$leadData['message'] = 'Applied for ' . $job['title'];
+$successMessage = 'Thank you for your interest in joining our team! Our HR team will review your application and contact you if your profile matches our requirement.';
 
-$attachments = [[
-    'path' => $tmpPath,
-    'name' => $originalName,
-    'type' => $attachmentMime,
-]];
+$mailOk = caaft_try_send_mail($to, $subject, $body, $fullName, $email, $attachments);
+if ($mailOk) {
+    caaft_form_redirect_thankyou($successMessage, true);
+}
 
-caaft_form_complete_submission(
-    $leadData,
-    $to,
-    $subject,
-    $body,
-    $fullName,
-    $email,
-    'Thank you for your interest in joining our team! Our HR team will review your application and contact you if your profile matches our requirement.',
-    true,
-    $attachments,
-);
+// Application is already saved under storage/careers/. When ZeptoMail credits are exhausted,
+// still thank the applicant so the form is not blocked.
+if (function_exists('caaft_mail_log')) {
+    caaft_mail_log(
+        'Careers application saved without email notify for ' . $email
+        . ' job=' . $jobSlug
+        . ' id=' . $applicationId
+        . ' to=' . $to
+        . ' (check ZeptoMail credits if API returned Credit exhausted)'
+    );
+}
+
+caaft_form_redirect_thankyou($successMessage, true);

@@ -13,10 +13,9 @@ if (preg_match('#^careers/([a-z0-9-]+)$#', $requestedPath, $matches)) {
 }
 
 $job = $caaft_careers[$jobSlug] ?? null;
-if ($job === null) {
-    http_response_code(404);
-    include APP_ROOT . '/pages/utility/default.php';
-    return;
+if ($job === null || empty($job['open'])) {
+    header('Location: /careers', true, 302);
+    exit;
 }
 
 $jobTitle = $job['title'];
@@ -151,7 +150,9 @@ $otherJobs = array_filter(
                                     <ul>
                                         <li><strong>Qualification(s):</strong> <?php echo htmlspecialchars($job['qualification'], ENT_QUOTES, 'UTF-8'); ?></li>
                                         <li><strong>Nature of Experience:</strong> <?php echo htmlspecialchars($job['experience_nature'], ENT_QUOTES, 'UTF-8'); ?></li>
-                                        <li><strong>Length of Experience:</strong> <?php echo htmlspecialchars($job['experience_length'], ENT_QUOTES, 'UTF-8'); ?></li>
+                                        <?php if (!empty($job['experience_length'])) : ?>
+                                            <li><strong>Length of Experience:</strong> <?php echo htmlspecialchars($job['experience_length'], ENT_QUOTES, 'UTF-8'); ?></li>
+                                        <?php endif; ?>
                                     </ul>
 
                                     <h2>Skill Set &amp; Personality Traits</h2>
@@ -176,22 +177,26 @@ $otherJobs = array_filter(
                                     <div class="caaft-job-side-card">
                                         <h3>Role details</h3>
                                         <dl class="caaft-job-side-list">
+                                            <?php
+                                            $jobDetails = $job['details'] ?? [
+                                                'Department' => (string) ($job['department'] ?? ''),
+                                                'Location' => (string) ($job['location'] ?? ''),
+                                                'Experience' => (string) ($job['experience_length'] ?? ''),
+                                            ];
+                                            if (!empty($job['age_group']) && !isset($jobDetails['Age group'])) {
+                                                $jobDetails['Age group'] = (string) $job['age_group'];
+                                            }
+                                            foreach ($jobDetails as $detailLabel => $detailValue) :
+                                                $detailValue = trim((string) $detailValue);
+                                                if ($detailValue === '') {
+                                                    continue;
+                                                }
+                                                ?>
                                             <div>
-                                                <dt>Department</dt>
-                                                <dd><?php echo htmlspecialchars($job['department'], ENT_QUOTES, 'UTF-8'); ?></dd>
+                                                <dt><?php echo htmlspecialchars((string) $detailLabel, ENT_QUOTES, 'UTF-8'); ?></dt>
+                                                <dd><?php echo htmlspecialchars($detailValue, ENT_QUOTES, 'UTF-8'); ?></dd>
                                             </div>
-                                            <div>
-                                                <dt>Location</dt>
-                                                <dd><?php echo htmlspecialchars($job['location'], ENT_QUOTES, 'UTF-8'); ?></dd>
-                                            </div>
-                                            <div>
-                                                <dt>Experience</dt>
-                                                <dd><?php echo htmlspecialchars($job['experience_length'], ENT_QUOTES, 'UTF-8'); ?></dd>
-                                            </div>
-                                            <div>
-                                                <dt>Age group</dt>
-                                                <dd><?php echo htmlspecialchars($job['age_group'], ENT_QUOTES, 'UTF-8'); ?></dd>
-                                            </div>
+                                            <?php endforeach; ?>
                                         </dl>
                                         <?php if ($jobOpen) : ?>
                                             <button type="button" class="theme-btn caaft-job-side-btn" data-caaft-job-tab-trigger="application">Apply Now</button>

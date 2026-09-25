@@ -3,8 +3,19 @@ declare(strict_types=1);
 
 /**
  * Copy to mail.local.php on the server (not committed to git).
- * ZeptoMail → Mail Agent → SMTP → Send Mail token.
+ *
+ * ZeptoMail → Mail Agent → SMTP/API:
+ * 1) SMTP tab → copy Send Mail Token into smtp_password
+ * 2) Optional: API tab → copy Send API key into zeptomail_api_key
+ *
+ * 535 Authentication Failed = token expired/wrong. Regenerate the token and update this file.
+ * From address in mail.php (enquiry@caaft.com) must be verified on the same Mail Agent.
  */
 return [
-    'smtp_password' => 'your-zeptomail-send-mail-token',
+    // Prefer the SMTP "Send Mail Token" (long string). Do not wrap in Zoho-enczapikey unless
+    // that is exactly how ZeptoMail displayed it.
+    'smtp_password' => 'paste-smtp-send-mail-token-here',
+
+    // Optional override if SMTP token differs from API key:
+    // 'zeptomail_api_key' => 'paste-send-api-key-here',
 ];
