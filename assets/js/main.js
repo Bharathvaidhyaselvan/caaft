@@ -147,6 +147,104 @@
           a(e.target).trigger("refreshed.owl.carousel");
         },
       }),
+    (function () {
+      var slider = document.querySelector(".home3-reviews-slider");
+      if (!slider) return;
+      var defaultCardHeight = 451;
+
+      function quoteExceedsSevenLines(quote) {
+        var width = quote.clientWidth;
+        if (!width) return false;
+        var probe = quote.cloneNode(true);
+        probe.style.cssText = "position:absolute;visibility:hidden;pointer-events:none;height:auto;max-height:none;display:block;-webkit-line-clamp:unset;overflow:visible;width:" + width + "px;";
+        quote.parentNode.appendChild(probe);
+        var fullHeight = probe.offsetHeight;
+        probe.remove();
+        var lineHeight = parseFloat(window.getComputedStyle(quote).lineHeight) || 26;
+        return fullHeight > lineHeight * 7 + 1;
+      }
+
+      function markLongReviews() {
+        slider.querySelectorAll(".home3-review-quote").forEach(function (quote) {
+          var card = quote.closest(".home3-review-card");
+          var toggle = card && card.querySelector(".home3-review-toggle");
+          if (!card || !toggle || card.classList.contains("is-expanded")) return;
+          var exceeds = quoteExceedsSevenLines(quote);
+          card.classList.toggle("has-more", exceeds);
+          toggle.hidden = !exceeds;
+        });
+      }
+
+      function fitReviewStage() {
+        var stage = slider.querySelector(".owl-stage");
+        if (!stage) return;
+        var activeItems = slider.querySelectorAll(".owl-item.active");
+        if (!activeItems.length) return;
+        var measured = [];
+        var tallest = defaultCardHeight;
+        activeItems.forEach(function (item) {
+          var slide = item.querySelector(".home3-reviews-slide");
+          var card = item.querySelector(".home3-review-card");
+          if (!card) return;
+          item.style.height = "auto";
+          item.style.alignItems = "flex-start";
+          if (slide) {
+            slide.style.height = "auto";
+            slide.style.alignItems = "flex-start";
+          }
+          card.style.height = "auto";
+          card.style.minHeight = "0";
+          measured.push(card);
+          tallest = Math.max(tallest, Math.ceil(card.getBoundingClientRect().height));
+        });
+        slider.querySelectorAll(".home3-review-card").forEach(function (card) {
+          card.style.height = tallest + "px";
+          card.style.minHeight = "";
+        });
+        stage.style.height = "auto";
+        slider.querySelectorAll(".owl-item").forEach(function (item) {
+          var slide = item.querySelector(".home3-reviews-slide");
+          item.style.height = "auto";
+          item.style.alignItems = "";
+          if (slide) {
+            slide.style.height = "";
+            slide.style.alignItems = "";
+          }
+        });
+        var stageHeight = 0;
+        activeItems.forEach(function (item) {
+          stageHeight = Math.max(stageHeight, Math.ceil(item.getBoundingClientRect().height));
+        });
+        stage.style.height = stageHeight + "px";
+        slider.querySelectorAll(".owl-item").forEach(function (item) {
+          item.style.height = stageHeight + "px";
+        });
+      }
+
+      slider.addEventListener("click", function (event) {
+        var toggle = event.target.closest(".home3-review-toggle");
+        if (!toggle || !slider.contains(toggle)) return;
+        var card = toggle.closest(".home3-review-card");
+        if (!card) return;
+        var expanded = card.classList.toggle("is-expanded");
+        toggle.textContent = expanded ? "Show less" : "Show more";
+        toggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+        fitReviewStage();
+      });
+
+      window.addEventListener("load", function () {
+        markLongReviews();
+        fitReviewStage();
+      });
+      a(slider).on("initialized.owl.carousel translated.owl.carousel refreshed.owl.carousel", function () {
+        markLongReviews();
+        fitReviewStage();
+      });
+      window.addEventListener("resize", function () {
+        markLongReviews();
+        fitReviewStage();
+      });
+    })(),
     a.fn.owlCarousel &&
       a(".partner-slider").length &&
       a(".partner-slider").owlCarousel({

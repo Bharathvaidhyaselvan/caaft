@@ -18,7 +18,7 @@ $allServiceSlugs = [
     'bookkeeping-and-accounting','financial-analysis-mis','financial-statement-analysis',
     'accounts-receivable-payable-service',
     // Taxation - Income Tax
-    'income-tax','income-tax-filing-service','tds-return-filing-services','tax-audit',
+    'income-tax','income-tax-filing-service','income-tax-filing-service-in-chennai','tds-return-filing-services','tax-audit',
     'tax-planning-services','income-tax-appeal-services',
     // Taxation - GST
     'gst-registration','gst-return-filing-services','gst-lut-filing',
@@ -510,6 +510,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                             <ul class="mm-links">
                                                 <li><a href="/income-tax/tax-planning-services">Tax Planning &amp; Advisory</a></li>
                                                 <li><a href="/income-tax/income-tax-filing-service">Income Tax Return (ITR) Filing</a></li>
+                                                <li><a href="/income-tax/income-tax-filing-service-in-chennai">Income Tax Filing in Chennai</a></li>
                                                 <li><a href="/income-tax/tds-return-filing-services">TDS Return Filing</a></li>
                                                 <li><a href="/income-tax/tax-audit">Tax Audit Assistance</a></li>
                                                 <li><a href="/income-tax/income-tax-appeal-services">Tax Assessment &amp; Appeal Support</a></li>
@@ -685,6 +686,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                         <li><a class="dropdown-item link-extend" href="/taxation">Taxation</a></li>
                                         <li><a class="dropdown-item" href="/income-tax/tax-planning-services">Tax Planning &amp; Advisory</a></li>
                                         <li><a class="dropdown-item" href="/income-tax/income-tax-filing-service">Income Tax Return (ITR) Filing</a></li>
+                                        <li><a class="dropdown-item" href="/income-tax/income-tax-filing-service-in-chennai">Income Tax Filing in Chennai</a></li>
                                         <li><a class="dropdown-item" href="/income-tax/tds-return-filing-services">TDS Return Filing</a></li>
                                         <li><a class="dropdown-item" href="/income-tax/tax-audit">Tax Audit Assistance</a></li>
                                         <li><a class="dropdown-item" href="/income-tax/income-tax-appeal-services">Tax Assessment &amp; Appeal Support</a></li>

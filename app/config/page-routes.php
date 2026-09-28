@@ -64,6 +64,7 @@ return [
     'income-tax' => 'pages/services/taxation-services.php',
     'income-tax/tax-planning-services' => 'pages/services/tax-planning-services.php',
     'income-tax/income-tax-filing-service' => 'pages/services/income-tax-filing-service.php',
+    'income-tax/income-tax-filing-service-in-chennai' => 'pages/services/income-tax-filing-service-in-chennai.php',
     'income-tax/tds-return-filing-services' => 'pages/services/tds-return-filing-services.php',
     'income-tax/tax-audit' => 'pages/services/tax-audit.php',
     'income-tax-appeal-services' => 'pages/services/income-tax-appeal-services.php',

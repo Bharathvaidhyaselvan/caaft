@@ -22,7 +22,9 @@ $home3_review_quote = htmlspecialchars((string) ($home3_review['quote'] ?? ''), 
                 <div class="home3-review-stars" aria-label="5 out of 5 stars">
                     <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
                 </div>
+                <?php if ($home3_review_role !== '') : ?>
                 <p class="home3-review-role"><?php echo $home3_review_role; ?></p>
+                <?php endif; ?>
             </div>
         </div>
         <div class="home3-review-google" title="Google review" aria-label="Google review">
@@ -30,4 +32,5 @@ $home3_review_quote = htmlspecialchars((string) ($home3_review['quote'] ?? ''), 
         </div>
     </header>
     <p class="home3-review-quote"><?php echo $home3_review_quote; ?></p>
+    <button type="button" class="home3-review-toggle" hidden aria-expanded="false">Show more</button>
 </article>
