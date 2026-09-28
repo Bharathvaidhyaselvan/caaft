@@ -101,6 +101,13 @@ declare(strict_types=1);
                             <h1 id="itr-chn-hero-h1" class="caaft-ar-hero-h1">Income Tax Filing Services in Chennai</h1>
                             <h2 class="caaft-ar-hero-h2">File Your Income Tax Return with <em>Professional Support in Chennai</em></h2>
                             <p class="caaft-ar-hero-lead">File your ITR accurately, on time, and stress-free with CAAFT — professional tax support for individuals, professionals, startups, MSMEs, and businesses across Chennai.</p>
+                            <ul class="caaft-ar-hero-bullets">
+                                <li>Expert guidance for selecting the right ITR form based on your income sources</li>
+                                <li>Accurate tax computation with review of eligible deductions and tax details</li>
+                                <li>ITR filing support for salaried employees, professionals, freelancers, and businesses</li>
+                                <li>Complete review of income, TDS, AIS, Form 26AS, investments, and tax documents</li>
+                                <li>Hassle-free ITR preparation, e-filing, acknowledgement, and post-filing support</li>
+                            </ul>
                             <div class="caaft-ar-hero-ctas">
                                 <a href="/contact#contact_us" class="theme-btn caaft-ar-hero-btn-primary">Talk to a Tax Expert <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                             </div>
@@ -309,6 +316,15 @@ declare(strict_types=1);
         $why_choose_caaft_heading_id = 'itr-chn-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT for Income Tax Filing Services in Chennai';
         $why_choose_caaft_intro = 'Choosing an income tax filing service provider in Chennai is about more than submitting your ITR. You need a team that understands your income sources, business structure, and filing requirements, helping you manage tax information, documentation, return preparation, and applicable compliance requirements through a structured process.';
+        $why_choose_caaft_points = [
+            ['title' => 'Accurate Tax Reporting', 'text' => 'Report relevant income and tax information correctly.'],
+            ['title' => 'Applicable ITR Filing', 'text' => 'Identify and file the appropriate return based on your requirements.'],
+            ['title' => 'Organised Documentation', 'text' => 'Keep relevant financial and tax documents ready.'],
+            ['title' => 'Tax Information Review', 'text' => 'Review TDS, AIS, Form 26AS, and other available records.'],
+            ['title' => 'Filing Compliance', 'text' => 'Complete applicable filing requirements in an organised manner.'],
+            ['title' => 'Business & Individual Support', 'text' => 'Get filing assistance suited to your taxpayer category.'],
+            ['title' => 'Post-Filing Assistance', 'text' => 'Receive support for relevant filing-related queries and requirements.'],
+        ];
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             ['icon_class' => 'fas fa-briefcase', 'title' => 'Business-Focused Tax Filing Support', 'text' => 'CAAFT provides income tax filing assistance based on your business structure, income sources, and financial information, helping you manage relevant filing requirements with a structured approach.'],

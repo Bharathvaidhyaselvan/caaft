@@ -9623,6 +9623,32 @@ body.home-3.page-accounting-reporting li {
     text-align: justify;
 }
 
+.page-accounting-reporting .caaft-ar-hero-lead:has(+ .caaft-ar-hero-bullets) {
+    margin-bottom: 22px;
+}
+
+.page-accounting-reporting .caaft-ar-hero-bullets {
+    margin: 0 0 32px;
+    padding-left: 1.25rem;
+    max-width: 720px;
+    list-style: disc;
+    display: grid;
+    gap: 6px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.page-accounting-reporting .caaft-ar-hero-bullets li {
+    list-style: disc;
+}
+
+.page-accounting-reporting .caaft-ar-hero-bullets li::marker {
+    color: #ffffff;
+    font-size: 1.35em;
+}
+
 .page-accounting-reporting .caaft-ar-hero-ctas {
     display: flex;
     flex-wrap: wrap;
@@ -12009,6 +12035,32 @@ body.home-3.page-accounting-reporting li {
     font-size: 0.98rem;
     line-height: 1.7;
     text-align: left !important;
+}
+
+.why-choose-caaft-points {
+    margin: 4px 0 0;
+    padding-left: 1.25rem;
+    list-style: disc;
+    display: grid;
+    gap: 8px;
+    color: rgba(232, 241, 255, 0.9);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.why-choose-caaft-points li {
+    list-style: disc;
+}
+
+.why-choose-caaft-points li::marker {
+    color: #ffffff;
+    font-size: 1.35em;
+}
+
+.why-choose-caaft-points strong {
+    color: #ffffff;
+    font-weight: 700;
 }
 
 .why-choose-caaft-image-wrap img {

@@ -211,6 +211,13 @@
         $caaft_hero_lead_paragraphs = [
             'Start your business with the right legal structure, complete the required registrations, and move forward with professional support from CAAFT.',
         ];
+        $caaft_hero_bullets = [
+            'Guidance to choose the appropriate business structure for your ownership, activities and future plans',
+            'Company incorporation support for Private Limited, LLP, OPC, Partnership and Sole Proprietorship businesses',
+            'Registration and licence assistance for MSME/Udyam, FSSAI, IEC, Professional Tax, EPF & ESI and DSC',
+            'Complete documentation and filing support from application preparation through government submission',
+            'Application tracking and query assistance to help manage the registration process through completion',
+        ];
         $caaft_hero_primary_cta_label = 'Get Expert Business Registration Support';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
@@ -272,6 +279,14 @@
         $why_choose_caaft_heading_id = 'bsr-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT for Registration Services';
         $why_choose_caaft_intro = 'Starting a business involves more than choosing a legal structure and submitting an application. The right registrations, licences, documentation, and statutory requirements depend on how your business is structured and operates.';
+        $why_choose_caaft_points = [
+            ['title' => 'Right Business Structure', 'text' => 'Choose the right structure.'],
+            ['title' => 'Complete Registration', 'text' => 'Cover applicable registrations.'],
+            ['title' => 'Organised Documentation', 'text' => 'Keep documents ready.'],
+            ['title' => 'Fewer Delays', 'text' => 'Reduce errors and follow-ups.'],
+            ['title' => 'Regulatory Readiness', 'text' => 'Meet applicable requirements.'],
+            ['title' => 'Simplified Setup', 'text' => 'Manage registrations easily.'],
+        ];
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             ['icon_class' => 'fas fa-layer-group', 'title' => 'One Partner for Multiple Registrations', 'text' => 'From company incorporation to MSME, FSSAI, IEC, EPF & ESI and other registrations — everything is managed in one place.'],

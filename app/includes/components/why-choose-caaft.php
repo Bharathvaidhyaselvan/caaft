@@ -12,6 +12,8 @@
  *
  * Optional:
  *   $why_choose_caaft_intro (string)
+ *   $why_choose_caaft_points (array) optional left-column bullets under the intro.
+ *     Each item is a string, or ['title' => string, 'text' => string].
  *   $why_choose_caaft_section_class (string)
  *   $why_choose_caaft_section_style (string)
  *   $why_choose_caaft_sticky_main (bool) default true
@@ -40,6 +42,7 @@ $why_choose_caaft_section_style = isset($why_choose_caaft_section_style) && $why
     : 'background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/img/caaft-why-choose-us.webp") !important;';
 $why_choose_caaft_sticky_main = isset($why_choose_caaft_sticky_main) ? (bool) $why_choose_caaft_sticky_main : true;
 $why_choose_caaft_desc_id = $why_choose_caaft_heading_id . '-desc';
+$why_choose_caaft_points = isset($why_choose_caaft_points) && is_array($why_choose_caaft_points) ? $why_choose_caaft_points : [];
 ?>
 <section class="<?php echo htmlspecialchars($why_choose_caaft_section_class, ENT_QUOTES, 'UTF-8'); ?>" style="<?php echo htmlspecialchars($why_choose_caaft_section_style, ENT_QUOTES, 'UTF-8'); ?>" aria-labelledby="<?php echo htmlspecialchars($why_choose_caaft_heading_id, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="container">
@@ -52,6 +55,20 @@ $why_choose_caaft_desc_id = $why_choose_caaft_heading_id . '-desc';
                 ?>><?php echo htmlspecialchars($why_choose_caaft_title, ENT_QUOTES, 'UTF-8'); ?></h2>
                 <?php if ($why_choose_caaft_show_intro && $why_choose_caaft_intro !== '') : ?>
                     <p id="<?php echo htmlspecialchars($why_choose_caaft_desc_id, ENT_QUOTES, 'UTF-8'); ?>" class="why-choose-caaft-intro"><?php echo htmlspecialchars($why_choose_caaft_intro, ENT_QUOTES, 'UTF-8'); ?></p>
+                <?php endif; ?>
+                <?php if ($why_choose_caaft_points !== []) : ?>
+                    <ul class="why-choose-caaft-points">
+                        <?php foreach ($why_choose_caaft_points as $why_choose_caaft_point) : ?>
+                            <li>
+                                <?php if (is_array($why_choose_caaft_point)) : ?>
+                                    <strong><?php echo htmlspecialchars((string) ($why_choose_caaft_point['title'] ?? ''), ENT_QUOTES, 'UTF-8'); ?></strong>
+                                    <?php echo htmlspecialchars(' - ' . (string) ($why_choose_caaft_point['text'] ?? ''), ENT_QUOTES, 'UTF-8'); ?>
+                                <?php else : ?>
+                                    <?php echo htmlspecialchars((string) $why_choose_caaft_point, ENT_QUOTES, 'UTF-8'); ?>
+                                <?php endif; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
                 <?php endif; ?>
             </div>
             <div class="why-choose-caaft-cards" role="list">

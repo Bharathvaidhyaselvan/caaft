@@ -9,6 +9,7 @@
  *   $caaft_hero_h2_highlight (string)            // highlighted heading text
  *   $caaft_hero_h2_after (string)                // heading text after highlight
  *   $caaft_hero_lead_paragraphs (string[])       // one or more lead paragraphs
+ *   $caaft_hero_bullets (string[])               // optional list under the lead copy
  *   $caaft_hero_primary_cta_label (string)
  *   $caaft_hero_primary_cta_href (string)
  *
@@ -46,6 +47,7 @@ $caaft_hero_h2_before = isset($caaft_hero_h2_before) ? (string) $caaft_hero_h2_b
 $caaft_hero_h2_highlight = isset($caaft_hero_h2_highlight) ? (string) $caaft_hero_h2_highlight : '';
 $caaft_hero_h2_after = isset($caaft_hero_h2_after) ? (string) $caaft_hero_h2_after : '';
 $caaft_hero_lead_paragraphs = isset($caaft_hero_lead_paragraphs) && is_array($caaft_hero_lead_paragraphs) ? $caaft_hero_lead_paragraphs : [];
+$caaft_hero_bullets = isset($caaft_hero_bullets) && is_array($caaft_hero_bullets) ? $caaft_hero_bullets : [];
 $caaft_hero_primary_cta_label = isset($caaft_hero_primary_cta_label) ? (string) $caaft_hero_primary_cta_label : '';
 $caaft_hero_primary_cta_href = caaft_normalize_hero_contact_href(
     isset($caaft_hero_primary_cta_href) ? (string) $caaft_hero_primary_cta_href : ''
@@ -135,6 +137,13 @@ if ($caaft_hero_pricing_suffix === '') {
                     <?php foreach ($caaft_hero_lead_paragraphs as $caaft_hero_lead_paragraph) : ?>
                         <p class="caaft-ar-hero-lead"><?php echo htmlspecialchars((string) $caaft_hero_lead_paragraph, ENT_QUOTES, 'UTF-8'); ?></p>
                     <?php endforeach; ?>
+                    <?php if ($caaft_hero_bullets !== []) : ?>
+                        <ul class="caaft-ar-hero-bullets">
+                            <?php foreach ($caaft_hero_bullets as $caaft_hero_bullet) : ?>
+                                <li><?php echo htmlspecialchars((string) $caaft_hero_bullet, ENT_QUOTES, 'UTF-8'); ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
                     <div class="caaft-ar-hero-ctas">
                         <a href="<?php echo htmlspecialchars($caaft_hero_primary_cta_href, ENT_QUOTES, 'UTF-8'); ?>" class="theme-btn caaft-ar-hero-btn-primary">
                             <?php echo htmlspecialchars($caaft_hero_primary_cta_label, ENT_QUOTES, 'UTF-8'); ?> <i class="<?php echo htmlspecialchars($caaft_hero_primary_cta_icon, ENT_QUOTES, 'UTF-8'); ?>" aria-hidden="true"></i>

@@ -198,6 +198,13 @@
         $caaft_hero_lead_paragraphs = [
             'Stay on top of recurring filings, statutory requirements, corporate changes, and regulatory obligations with structured compliance support.',
         ];
+        $caaft_hero_bullets = [
+            'Support for company, LLP, partnership and proprietorship compliance requirements',
+            'Annual ROC, MCA and statutory filing assistance',
+            'Support for director changes, registered office changes and authorised capital changes',
+            'Documentation, filing, tracking and query assistance',
+            'Ongoing support for recurring and event-based compliance requirements',
+        ];
         $caaft_hero_primary_cta_label = 'Get Expert Compliance Support';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
@@ -268,6 +275,14 @@
         $why_choose_caaft_heading_id = 'cr-why-heading';
         $why_choose_caaft_title = 'Why Choose CAAFT for Compliance Services';
         $why_choose_caaft_intro = 'Choosing a compliance service provider is about more than completing individual filings. You need a team that understands your business structure and helps you manage recurring and event-based compliance requirements correctly.';
+        $why_choose_caaft_points = [
+            ['title' => 'Stay Compliant', 'text' => 'Keep recurring requirements on track.'],
+            ['title' => 'Timely Filings', 'text' => 'Manage filings within applicable timelines.'],
+            ['title' => 'Fewer Errors', 'text' => 'Reduce filing mistakes and omissions.'],
+            ['title' => 'Complete Records', 'text' => 'Keep compliance documents organised.'],
+            ['title' => 'Corporate Changes', 'text' => 'Manage required updates and filings.'],
+            ['title' => 'Ongoing Compliance', 'text' => 'Stay prepared for regulatory requirements.'],
+        ];
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
             ['icon_class' => 'fas fa-layer-group', 'title' => 'Structured Compliance Support', 'text' => 'From compliance requirements to documentation, filing, tracking, and follow-up — everything is managed through a structured process.'],
