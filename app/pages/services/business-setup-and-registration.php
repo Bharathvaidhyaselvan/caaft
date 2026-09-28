@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="all, index, follow">
     <title>Business Setup &amp; Registration Services in India | CAAFT</title>
-    <meta name="description" content="From company incorporation to FSSAI, IEC &amp; MSME registrations, CAAFT handles every filing accurately and efficiently — so your business starts on solid legal ground">
+    <meta name="description" content="Start your business with the right legal structure, complete the required registrations, and move forward with professional support from CAAFT.">
     <link rel="canonical" href="https://caaft.com/business-setup-and-registration">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Business Setup &amp; Registration Services in India | CAAFT">
-    <meta property="og:description" content="From company incorporation to FSSAI, IEC &amp; MSME registrations, CAAFT handles every filing accurately and efficiently — so your business starts on solid legal ground">
+    <meta property="og:description" content="Start your business with the right legal structure, complete the required registrations, and move forward with professional support from CAAFT.">
     <meta property="og:url" content="https://caaft.com/business-setup-and-registration">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/new-business-registration.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Business Setup &amp; Registration Services in India | CAAFT">
-    <meta name="twitter:description" content="From company incorporation to FSSAI, IEC &amp; MSME registrations, CAAFT handles every filing accurately and efficiently — so your business starts on solid legal ground">
+    <meta name="twitter:description" content="Start your business with the right legal structure, complete the required registrations, and move forward with professional support from CAAFT.">
     <meta name="twitter:creator" content="@CaaftServices">
     <meta name="twitter:site" content="@CaaftServices">
     <meta name="twitter:image" content="https://caaft.com/assets/img/new-business-registration.webp">
@@ -145,18 +145,43 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "How do I decide which business structure is right for me?",
-              "acceptedAnswer": {"@type": "Answer", "text": "It depends on the number of founders, funding plans, nature of business, and compliance appetite. CAAFT assesses your situation during a free consultation and provides a clear recommendation."}
+              "name": "What are the main steps involved in setting up a business in India?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Setting up a business typically involves choosing an appropriate legal structure, selecting a business name, preparing the required documents and completing the relevant registration or incorporation process. Depending on the business activity, additional registrations, licences and tax-related requirements may also apply."}
             },
             {
               "@type": "Question",
-              "name": "How long does company registration typically take?",
-              "acceptedAnswer": {"@type": "Answer", "text": "A Private Limited Company or LLP typically registers in 7–15 working days. FSSAI and IEC registrations usually take 5–10 working days. A realistic timeline is provided upfront."}
+              "name": "Which business structure is suitable for a new business?",
+              "acceptedAnswer": {"@type": "Answer", "text": "The right structure depends on factors such as the number of owners, business activity, liability preferences, funding plans, compliance requirements and future growth. Common options include Private Limited Company, LLP, OPC, Partnership Firm and Sole Proprietorship, each with different legal and operational characteristics."}
             },
             {
               "@type": "Question",
-              "name": "What are my immediate obligations after registration?",
-              "acceptedAnswer": {"@type": "Answer", "text": "Open a business bank account, apply for PAN and TAN, register for GST if applicable, and maintain statutory records. Private Limited Companies must file a commencement of business declaration within 30 days. CAAFT walks you through all post-registration steps."}
+              "name": "What registrations does a new business need after incorporation?",
+              "acceptedAnswer": {"@type": "Answer", "text": "The registrations required depend on the nature and location of the business, its employees, turnover, industry and activities. Depending on the circumstances, a business may require GST, MSME/Udyam, FSSAI, IEC, Professional Tax, EPF, ESI or other registrations and licences."}
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between company incorporation and business registration?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Company incorporation creates a legally recognised company such as a Private Limited Company, OPC or Public Limited Company. Business registration is a broader term that can include incorporation as well as registrations such as MSME, FSSAI, IEC, Professional Tax and other regulatory registrations applicable to different types of businesses."}
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take to register a business in India?",
+              "acceptedAnswer": {"@type": "Answer", "text": "The registration timeline varies depending on the type of business structure, completeness of documentation and processing by the relevant government authority. Straightforward applications may be completed relatively quickly, while applications requiring clarification, additional documents or approvals can take longer."}
+            },
+            {
+              "@type": "Question",
+              "name": "What documents are generally required to register a business?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Requirements vary according to the business structure and registration being applied for. Common documents may include identity and address proofs of owners or directors, photographs, business address proof, registered office documents and constitutional or partnership documents where applicable."}
+            },
+            {
+              "@type": "Question",
+              "name": "Can an existing business obtain additional registrations or licences later?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Yes. Businesses can generally obtain additional registrations or licences when their activities, workforce, turnover, location or operational requirements change. For example, a business may later need GST, FSSAI, IEC, MSME, EPF & ESI or other registrations based on its evolving requirements."}
+            },
+            {
+              "@type": "Question",
+              "name": "What should a business do after completing its registration?",
+              "acceptedAnswer": {"@type": "Answer", "text": "After registration, a business should identify its applicable tax, accounting, statutory and regulatory obligations and maintain the required records and filings. Depending on the structure and activities, this may include GST, income tax, TDS, ROC/MCA, payroll and other ongoing compliance requirements."}
             }
           ]
         },
@@ -180,13 +205,13 @@
                                 <?php
         $caaft_hero_id = 'bsr-hero-h1';
         $caaft_hero_h1 = 'BUSINESS SETUP & REGISTRATION SERVICES';
-        $caaft_hero_h2_before = 'Start Right. Register Smart. Build on Solid Ground.';
-        $caaft_hero_h2_highlight = '';
+        $caaft_hero_h2_before = 'Start, Register, and Establish Your Business with the ';
+        $caaft_hero_h2_highlight = 'Right Legal Structure';
         $caaft_hero_h2_after = '';
         $caaft_hero_lead_paragraphs = [
-            'From company incorporation to essential business licences, CAAFT handles every registration your business needs — accurately, efficiently, and without the back-and-forth. Every business deserves a strong legal foundation from day one. We handle the paperwork, portal filings, and follow-ups so you can focus on building.',
+            'Start your business with the right legal structure, complete the required registrations, and move forward with professional support from CAAFT.',
         ];
-        $caaft_hero_primary_cta_label = 'Get a Free Registration Consultation';
+        $caaft_hero_primary_cta_label = 'Get Expert Business Registration Support';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
         $caaft_hero_secondary_cta_href = '/business-setup-and-registration#bsr-company-heading';
@@ -202,74 +227,76 @@
 
         <?php
         $caaft_trust_items = [
-            ['icon_class' => 'far fa-check-circle', 'title' => 'Rated 4.8/5 ⭐', 'description' => 'on Google'],
-            ['icon_class' => 'fas fa-building', 'title' => '200+', 'description' => 'Businesses Registered'],
-            ['icon_class' => 'fas fa-tasks', 'title' => 'End-to-End', 'description' => 'Filing Support'],
-            ['icon_class' => 'fas fa-id-badge', 'title' => 'MCA, FSSAI, DGFT', 'description' => '& More'],
+            ['icon_class' => 'fas fa-compass', 'title' => 'Right Structure', 'description' => 'Guidance for your ownership, activities, and future plans'],
+            ['icon_class' => 'fas fa-building', 'title' => 'Incorporation', 'description' => 'Private Limited, LLP, OPC, Partnership, and Sole Proprietorship'],
+            ['icon_class' => 'fas fa-id-badge', 'title' => 'Licences', 'description' => 'MSME, FSSAI, IEC, Professional Tax, EPF & ESI, and DSC'],
+            ['icon_class' => 'fas fa-tasks', 'title' => 'Filing Support', 'description' => 'Documentation, submission, tracking, and query handling'],
         ];
         include __DIR__ . '/../../includes/components/service-trust-indicators.php';
         ?>
 
         <?php
         $caaft_card_section_heading_id = 'bsr-company-heading';
-        $caaft_card_section_title = 'COMPANY REGISTRATION SERVICES';
-        $caaft_card_section_intro = 'Choosing the right business structure is one of the most important decisions you will make. CAAFT advises on the best fit for your goals - and handles the complete incorporation process from document preparation to certificate of registration.';
+        $caaft_card_section_title = 'Company Incorporation Services';
+        $caaft_card_section_intro = 'Choosing the right legal structure can affect your business\'s ownership, liability, compliance requirements, taxation and future growth plans. CAAFT helps entrepreneurs and business owners choose the appropriate business structure and complete the incorporation and registration process with professional support.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-rocket', 'title' => 'Private Limited Company', 'text' => 'The most preferred structure for funded startups and growing businesses - incorporated under the Companies Act with limited liability and separate legal identity.', 'href' => '/private-limited-company-registration'],
-            ['icon_class' => 'fas fa-landmark', 'title' => 'Public Limited Company', 'text' => 'For businesses planning to raise capital from the public - incorporated with the governance and compliance framework required for larger-scale operations.', 'href' => '/public-limited-company-registration'],
-            ['icon_class' => 'fas fa-user', 'title' => 'One Person Company (OPC)', 'text' => 'The ideal structure for solo entrepreneurs who want the credibility and limited liability of a company without the need for co-founders or partners.', 'href' => '/one-person-company-registration'],
-            ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Registration', 'text' => 'A flexible structure that combines the benefits of a partnership with limited liability protection - suited for professionals, consultants, and service businesses.', 'href' => '/llp-registration-services'],
-            ['icon_class' => 'fas fa-users', 'title' => 'Partnership Firm Registration', 'text' => 'A straightforward structure for two or more individuals running a business together - registered under the Indian Partnership Act with a defined partnership deed.', 'href' => '/register-partnership-firm'],
-            ['icon_class' => 'fas fa-store', 'title' => 'Sole Proprietorship Registration', 'text' => 'The simplest business structure for individual operators - quick to set up, easy to manage, and ideal for freelancers and small business owners starting out.', 'href' => '/register-sole-proprietorship'],
+            ['icon_class' => 'fas fa-rocket', 'title' => 'Private Limited Company Registration', 'text' => 'Register your Private Limited Company with support for incorporation, documentation, statutory registrations, and the legal formalities required to establish your business.', 'href' => '/private-limited-company-registration'],
+            ['icon_class' => 'fas fa-landmark', 'title' => 'Public Limited Company Registration', 'text' => 'Establish your Public Limited Company with assistance for incorporation, documentation, statutory requirements, and formalities applicable to larger business structures.', 'href' => '/public-limited-company-registration'],
+            ['icon_class' => 'fas fa-user', 'title' => 'One Person Company Registration', 'text' => 'Register your One Person Company with assistance for incorporation, documentation, statutory requirements, and establishing a separate legal entity for your business.', 'href' => '/one-person-company-registration'],
+            ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Registration', 'text' => 'Register your Limited Liability Partnership with support for incorporation, partner documentation, LLP agreement, statutory requirements, and applicable registration formalities.', 'href' => '/llp-registration-services'],
+            ['icon_class' => 'fas fa-users', 'title' => 'Partnership Firm Registration', 'text' => 'Establish your Partnership Firm with assistance for partnership documentation, registration formalities, business setup requirements, and legally structuring your partnership operations.', 'href' => '/register-partnership-firm'],
+            ['icon_class' => 'fas fa-store', 'title' => 'Sole Proprietorship Registration', 'text' => 'Set up your Sole Proprietorship with assistance for applicable registrations, business documentation, and formalities required to establish and operate your business.', 'href' => '/register-sole-proprietorship'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
 
         <?php
         $caaft_card_section_heading_id = 'bsr-other-heading';
-        $caaft_card_section_title = 'OTHER REGISTRATIONS';
-        $caaft_card_section_intro = 'Beyond incorporation, every business needs the right licences and registrations to operate legally, access government benefits, and build credibility with customers and partners.';
+        $caaft_card_section_title = 'Other Business Registrations & Licences';
+        $caaft_card_section_intro = 'Company incorporation is only the beginning of setting up a compliant business. Depending on your activities, industry and workforce, you may need additional registrations and licences to operate smoothly. CAAFT provides professional support for obtaining the registrations your business requires.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
         $caaft_card_section_cards = [
             ['icon_class' => 'fas fa-certificate', 'title' => 'MSME / Udyam Registration', 'text' => 'Register your business as a Micro, Small, or Medium Enterprise to access government schemes, priority lending, and statutory protections available to MSMEs.', 'href' => '/msme-udyam-registration'],
-            ['icon_class' => 'fas fa-utensils', 'title' => 'FSSAI Registration', 'text' => 'Mandatory food business licence for anyone involved in the manufacture, storage, distribution, or sale of food products - issued by the Food Safety and Standards Authority of India.', 'href' => '/fssai-food-licence-india'],
-            ['icon_class' => 'fas fa-file-signature', 'title' => 'Professional Tax Registration', 'text' => 'State-level registration required for employers and self-employed professionals to comply with professional tax deduction and payment obligations.', 'href' => '/professional-tax-return-filing'],
-            ['icon_class' => 'fas fa-user-shield', 'title' => 'EPF & ESI Registration & Compliance', 'text' => 'End-to-end support for Provident Fund and Employee State Insurance registration, monthly contribution filings, and ongoing compliance - ensuring your business meets all statutory employer obligations under labour law.', 'href' => '/epf-esi-registration-compliance'],
-            ['icon_class' => 'fas fa-globe', 'title' => 'Import Export Code (IEC)', 'text' => 'The 10-digit code issued by DGFT that is mandatory for any business engaged in importing or exporting goods and services from India.', 'href' => '/iec-registration'],
-            ['icon_class' => 'fas fa-key', 'title' => 'Digital Signature Certificate (DSC)', 'text' => 'An electronically issued certificate used for secure online filings with MCA, Income Tax, GST, and other government portals - required for authorised signatories.', 'href' => '/digital-signature-certificate-registration'],
-            ['icon_class' => 'fas fa-hand-holding-heart', 'title' => '12A & 80G Registration', 'text' => 'For non-profit organisations and NGOs - 12A grants income tax exemption to the trust or society, while 80G enables donors to claim deductions on their contributions.', 'href' => '/12a-80g-registration'],
+            ['icon_class' => 'fas fa-utensils', 'title' => 'FSSAI Registration', 'text' => 'Obtain the appropriate FSSAI registration or licence for your food business with assistance for documentation, application filing, and applicable regulatory requirements.', 'href' => '/fssai-food-licence-india'],
+            ['icon_class' => 'fas fa-file-signature', 'title' => 'Professional Tax Registration', 'text' => 'Complete Professional Tax registration for your business and employees with assistance for applicable documentation, registration formalities, and ongoing statutory requirements.', 'href' => '/professional-tax-return-filing'],
+            ['icon_class' => 'fas fa-user-shield', 'title' => 'EPF & ESI Registration', 'text' => 'Register your business for EPF and ESI where applicable, with assistance for employer documentation, statutory registration, and employee compliance requirements.', 'href' => '/epf-esi-registration-compliance'],
+            ['icon_class' => 'fas fa-globe', 'title' => 'Import Export Code (IEC)', 'text' => 'Obtain your Import Export Code to undertake international trade, with assistance for documentation, application filing, and DGFT registration formalities.', 'href' => '/iec-registration'],
+            ['icon_class' => 'fas fa-key', 'title' => 'Digital Signature Certificate (DSC)', 'text' => 'Obtain a Digital Signature Certificate for secure online government filings, including applicable MCA, GST, Income Tax, and other regulatory submissions.', 'href' => '/digital-signature-certificate-registration'],
+            ['icon_class' => 'fas fa-hand-holding-heart', 'title' => '12A & 80G Registration', 'text' => 'Obtain 12A and 80G registration for eligible non-profit organisations with assistance for documentation, application preparation, filing, and applicable regulatory requirements.', 'href' => '/12a-80g-registration'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
 
         <?php
         $why_choose_caaft_heading_id = 'bsr-why-heading';
-        $why_choose_caaft_title = 'WHY CHOOSE CAAFT';
-        $why_choose_caaft_intro = 'Founders and growing businesses rely on CAAFT for Pvt Ltd incorporation that is filing-accurate, timeline-clear, and backed by ongoing statutory support.';
+        $why_choose_caaft_title = 'Why Choose CAAFT for Registration Services';
+        $why_choose_caaft_intro = 'Starting a business involves more than choosing a legal structure and submitting an application. The right registrations, licences, documentation, and statutory requirements depend on how your business is structured and operates.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
-            ['icon_class' => 'fas fa-layer-group', 'title' => 'End-to-End Support', 'text' => 'From structure advice to document preparation, query handling, and certificate delivery — everything is managed in one place.'],
-            ['icon_class' => 'fas fa-compass', 'title' => 'No Guesswork on Structure', 'text' => "A clear, unbiased recommendation is provided between Pvt Ltd, LLP, OPC, or Partnership — based on the client's business model, funding plans, and compliance appetite."],
-            ['icon_class' => 'fas fa-bolt', 'title' => 'Fast, Accurate Filings', 'text' => 'Every application is thoroughly checked before submission — minimising rejections, resubmissions, and delays.'],
-            ['icon_class' => 'fas fa-user-check', 'title' => 'Single Point of Contact', 'text' => 'One dedicated expert handles the registration from start to finish — no handoffs, no chasing updates.'],
-            ['icon_class' => 'fas fa-clipboard-list', 'title' => 'Post-Registration Guidance', 'text' => 'Clients are briefed on immediate compliance obligations post-registration — so the business starts right and avoids first-year penalties.'],
-            ['icon_class' => 'fas fa-file-invoice-dollar', 'title' => 'Transparent Fixed Fees', 'text' => 'All government, professional, and additional fees are laid out upfront — no hidden costs, no surprises.'],
+            ['icon_class' => 'fas fa-layer-group', 'title' => 'One Partner for Multiple Registrations', 'text' => 'From company incorporation to MSME, FSSAI, IEC, EPF & ESI and other registrations — everything is managed in one place.'],
+            ['icon_class' => 'fas fa-compass', 'title' => 'Business-Focused Guidance', 'text' => 'From business structure to registration options, guidance is based on your activities, ownership, and business requirements.'],
+            ['icon_class' => 'fas fa-folder-open', 'title' => 'Complete Documentation Support', 'text' => 'From document checklists to supporting papers, everything is prepared and organised for a smooth registration process.'],
+            ['icon_class' => 'fas fa-bolt', 'title' => 'Filing & Follow-Up Support', 'text' => 'From application filing to government queries and additional requirements — registration follow-ups are handled throughout the process.'],
+            ['icon_class' => 'fas fa-user-check', 'title' => 'Dedicated Support', 'text' => 'From initial consultation to registration completion, a dedicated point of contact keeps you informed at every stage.'],
+            ['icon_class' => 'fas fa-clipboard-list', 'title' => 'Post-Registration Guidance', 'text' => 'From certificate issuance to next-step registrations and compliance requirements, you receive guidance beyond the initial registration.'],
+            ['icon_class' => 'fas fa-file-invoice-dollar', 'title' => 'Transparent Communication', 'text' => 'From professional fees to government charges and service scope, all applicable costs are explained before proceeding.'],
         ];
         include __DIR__ . '/../../includes/components/why-choose-caaft.php';
         ?>
 
         <?php
         $caaft_steps_heading_id = 'bsr-how-heading';
-        $caaft_steps_title = 'HOW CAAFT WORKS';
+        $caaft_steps_title = 'Our Business Setup & Registration Process';
         $caaft_steps_numbered = true;
         $caaft_steps_items = [
-            ['title' => 'Free Consultation', 'text' => "The client's business, goals, and ownership structure are assessed — and the most suitable registration type is recommended."],
-            ['title' => 'Document Checklist', 'text' => 'A tailored document list is shared based on the chosen registration and relevant authority.'],
-            ['title' => 'Application Preparation', 'text' => 'The complete application is prepared, agreements drafted, and all documents verified before submission.'],
-            ['title' => 'Filing & Submission', 'text' => 'The application is filed on the relevant portal — MCA, DGFT, FSSAI, or others — and tracked at every stage.'],
-            ['title' => 'Query Handling', 'text' => "Any queries raised by the authority are responded to promptly on the client's behalf."],
-            ['title' => 'Certificate Delivery', 'text' => 'The registration certificate is delivered along with a briefing on compliance obligations and next steps.'],
+            ['title' => 'Understand Your Business', 'text' => 'We discuss your business activity, ownership, number of founders, location and immediate registration requirements.'],
+            ['title' => 'Identify the Required Registrations', 'text' => 'Based on your requirements, we identify the relevant business structure, registrations and licences.'],
+            ['title' => 'Prepare Your Documents', 'text' => 'We provide a personalised checklist and review the required documents before filing.'],
+            ['title' => 'Prepare & Submit Applications', 'text' => 'Our team prepares the application and completes the relevant government filing.'],
+            ['title' => 'Track & Handle Queries', 'text' => 'We monitor the application and assist with any clarification or additional documentation requested by the authority.'],
+            ['title' => 'Receive Your Registration', 'text' => 'Once approved, we provide the registration certificate and explain the important next steps for your business.'],
+            ['title' => 'Continue with Compliance', 'text' => 'Where required, CAAFT can also support your business with ongoing tax, accounting, GST, ROC and regulatory compliance.'],
         ];
         include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
         ?>
@@ -277,14 +304,14 @@
         <?php
         $caaft_git_section_id = 'get-in-touch';
         $caaft_git_heading_id = 'bsr-git-heading';
-        $caaft_git_title = 'Your Business, Officially and Correctly Registered.';
-        $caaft_git_lead = 'Whether you are starting fresh, formalising an existing setup, or adding a licence your business needs - CAAFT handles the entire process from consultation to certificate. We respond within one business day.';
+        $caaft_git_title = 'Ready to Set Up Your Business With CAAFT?';
+        $caaft_git_lead = 'Whether you are starting a new business, formalising an existing business or adding registrations required for your operations, CAAFT can help you understand the requirements and manage the registration process.';
         $caaft_git_eyebrow = 'Get in touch';
-        $caaft_git_note = 'No commitment required. Just a conversation with a dedicated expert who understands your registration requirements.';
+        $caaft_git_note = 'No complicated process. No unnecessary paperwork. Just clear guidance and professional support from registration through the next stage of your business.';
         $caaft_git_actions = [
             ['href' => 'tel:+918870078870', 'class' => 'theme-btn caaft-ar-git-btn-call', 'label' => 'Call Us: +91 88700 78870'],
             ['href' => 'https://api.whatsapp.com/send?phone=918870078870', 'class' => 'caaft-ar-git-btn-outline', 'label' => '<i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us', 'target' => '_blank', 'rel' => 'noopener noreferrer'],
-            ['href' => '#quote-content', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Tell Us Your Business Plan'],
+            ['href' => '#quote-content', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Get Professional Business Setup & Registration Support'],
         ];
         $caaft_git_cards = [
             ['icon_class' => 'fas fa-phone', 'label' => 'Call us', 'values' => [['href' => 'tel:+918870078870', 'text' => '+91 88700 78870'], ['href' => 'tel:+919944617891', 'text' => '+91 88700 02354']]],
@@ -302,14 +329,14 @@
         $caaft_faq_prefix = 'bsrFaq';
         $caaft_faq_pad_numbers = true;
         $caaft_faq_items = [
-            ['question' => 'How do I decide which business structure is right for me?', 'answer' => 'It depends on factors like the number of founders, your funding plans, the nature of the business, and how much compliance you are comfortable with. A sole proprietorship offers simplicity; a Pvt Ltd offers credibility and limited liability; an LLP offers flexibility. During your free consultation, we assess your situation and give you a clear, unbiased recommendation - not a generic answer.'],
-            ['question' => 'How long does company registration typically take?', 'answer' => 'A Private Limited Company or LLP is typically registered within 7–15 working days, depending on the availability of your chosen name and the speed of document submission. FSSAI and IEC registrations usually take 5–10 working days. We give you a realistic timeline upfront for your specific registration.'],
-            ['question' => 'Can I register a company if I am the only founder?', 'answer' => 'Yes. A One Person Company (OPC) is specifically designed for solo founders who want the legal and liability benefits of a registered company without requiring a co-founder or partner. You will need to nominate one person as a nominee director, but operational control remains entirely with you.'],
-            ['question' => 'What documents are generally required for company registration?', 'answer' => 'The core documents include PAN and Aadhaar of all directors/partners, address proof, passport-size photographs, and proof of the registered office address. Additional documents vary by structure. We send you a complete, tailored checklist as soon as we understand your requirements.'],
-            ['question' => 'Is MSME / Udyam Registration mandatory?', 'answer' => 'It is not mandatory, but strongly recommended. MSME registration gives your business access to collateral-free loans, priority sector lending, government tender preferences, protection against delayed payments, and a range of central and state government subsidies. Registration is free and can be completed quickly.'],
-            ['question' => 'Can a registered NGO or trust really get tax exemption through 12A & 80G?', 'answer' => 'Yes. 12A registration grants the organisation exemption from income tax on its surplus income, provided it is applied to charitable purposes. 80G registration allows your donors to claim a deduction on their contributions - making your organisation more attractive to donors and institutional funders. Both registrations are applied for with the Income Tax Department.'],
-            ['question' => 'Do I need a Digital Signature Certificate (DSC) for registration?', 'answer' => 'DSC is required for MCA filings (company and LLP registration), GST-related processes, and several other government portal submissions. If you are a director or designated partner, you will need a Class 3 DSC. CAAFT can arrange and process your DSC as part of the overall registration engagement.'],
-            ['question' => 'What happens after my company is registered - what are my immediate obligations?', 'answer' => "After incorporation, you need to open a business bank account, apply for PAN and TAN in the company's name, register for GST if applicable, and begin maintaining statutory records. Within 30 days, you must file a declaration of commencement of business if you are a Private Limited Company. CAAFT walks you through all of this immediately after your registration is complete."],
+            ['question' => 'What are the main steps involved in setting up a business in India?', 'answer' => 'Setting up a business typically involves choosing an appropriate legal structure, selecting a business name, preparing the required documents and completing the relevant registration or incorporation process. Depending on the business activity, additional registrations, licences and tax-related requirements may also apply.'],
+            ['question' => 'Which business structure is suitable for a new business?', 'answer' => 'The right structure depends on factors such as the number of owners, business activity, liability preferences, funding plans, compliance requirements and future growth. Common options include Private Limited Company, LLP, OPC, Partnership Firm and Sole Proprietorship, each with different legal and operational characteristics.'],
+            ['question' => 'What registrations does a new business need after incorporation?', 'answer' => 'The registrations required depend on the nature and location of the business, its employees, turnover, industry and activities. Depending on the circumstances, a business may require GST, MSME/Udyam, FSSAI, IEC, Professional Tax, EPF, ESI or other registrations and licences.'],
+            ['question' => 'What is the difference between company incorporation and business registration?', 'answer' => 'Company incorporation creates a legally recognised company such as a Private Limited Company, OPC or Public Limited Company. Business registration is a broader term that can include incorporation as well as registrations such as MSME, FSSAI, IEC, Professional Tax and other regulatory registrations applicable to different types of businesses.'],
+            ['question' => 'How long does it take to register a business in India?', 'answer' => 'The registration timeline varies depending on the type of business structure, completeness of documentation and processing by the relevant government authority. Straightforward applications may be completed relatively quickly, while applications requiring clarification, additional documents or approvals can take longer.'],
+            ['question' => 'What documents are generally required to register a business?', 'answer' => 'Requirements vary according to the business structure and registration being applied for. Common documents may include identity and address proofs of owners or directors, photographs, business address proof, registered office documents and constitutional or partnership documents where applicable.'],
+            ['question' => 'Can an existing business obtain additional registrations or licences later?', 'answer' => 'Yes. Businesses can generally obtain additional registrations or licences when their activities, workforce, turnover, location or operational requirements change. For example, a business may later need GST, FSSAI, IEC, MSME, EPF & ESI or other registrations based on its evolving requirements.'],
+            ['question' => 'What should a business do after completing its registration?', 'answer' => 'After registration, a business should identify its applicable tax, accounting, statutory and regulatory obligations and maintain the required records and filings. Depending on the structure and activities, this may include GST, income tax, TDS, ROC/MCA, payroll and other ongoing compliance requirements.'],
         ];
         include __DIR__ . '/../../includes/components/caaft-faq.php';
         ?>

@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="all, index, follow">
     <title>Compliance &amp; Regulatory Services in India | CAAFT</title>
-    <meta name="description" content="From annual ROC filings to director KYC and company changes, CAAFT manages every compliance obligation on time — so your business stays penalty-free and audit-ready">
+    <meta name="description" content="Stay on top of recurring filings, statutory requirements, corporate changes, and regulatory obligations with structured compliance support from CAAFT.">
     <link rel="canonical" href="https://caaft.com/compliance-and-regulatory-services">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Compliance &amp; Regulatory Services in India | CAAFT">
-    <meta property="og:description" content="From annual ROC filings to director KYC and company changes, CAAFT manages every compliance obligation on time — so your business stays penalty-free and audit-ready">
+    <meta property="og:description" content="Stay on top of recurring filings, statutory requirements, corporate changes, and regulatory obligations with structured compliance support from CAAFT.">
     <meta property="og:url" content="https://caaft.com/compliance-and-regulatory-services">
     <meta property="og:site_name" content="CAAFT Consultancy Services">
     <meta property="og:image" content="https://caaft.com/assets/img/dir-3-director-kyc.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Compliance &amp; Regulatory Services in India | CAAFT">
-    <meta name="twitter:description" content="From annual ROC filings to director KYC and company changes, CAAFT manages every compliance obligation on time — so your business stays penalty-free and audit-ready">
+    <meta name="twitter:description" content="Stay on top of recurring filings, statutory requirements, corporate changes, and regulatory obligations with structured compliance support from CAAFT.">
     <meta name="twitter:creator" content="@CaaftServices">
     <meta name="twitter:site" content="@CaaftServices">
     <meta name="twitter:image" content="https://caaft.com/assets/img/dir-3-director-kyc.webp">
@@ -99,7 +99,7 @@
           "name": "Company Compliance Services",
           "alternateName": "Annual ROC Compliance Services Chennai",
           "url": "https://caaft.com/compliance-and-regulatory-services",
-          "description": "Complete annual compliance calendar management for Private Limited, Public Limited, OPC, and LLP entities — every MCA filing accurate, on time, and without gaps.",
+          "description": "Businesses must manage different compliance requirements based on their legal structure, activities, directors, financial year, and regulatory obligations. CAAFT helps organise these requirements and manage applicable filings through a structured process.",
           "provider": {"@id": "https://caaft.com/#organization"},
           "areaServed": {"@type": "Country", "name": "India"},
           "serviceType": "Company Annual Compliance and ROC Filings",
@@ -107,10 +107,10 @@
             "@type": "OfferCatalog",
             "name": "Company Compliance Services",
             "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Private Limited Compliance", "description": "Complete annual compliance for Pvt Ltd companies — board meetings, annual returns, financial statements, and all MCA obligations managed without gaps."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Public Limited Compliance", "description": "End-to-end statutory compliance for Public Limited Companies — including AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "One Person Company (OPC) Compliance", "description": "Annual compliance for OPCs — board resolutions, financial statements, and ROC filings, kept lean for single-director structures."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Limited Liability Partnership (LLP) Compliance", "description": "Annual filing and compliance for LLPs — Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end."}}
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Private Limited Company Compliance", "description": "Manage annual MCA and ROC compliance, including financial statements, annual returns, board requirements, and applicable statutory filings."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Public Limited Company Compliance", "description": "Handle statutory and ROC compliance requirements for public companies, including annual filings, AGM-related requirements, disclosures, and applicable regulatory obligations."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "One Person Company Compliance", "description": "Manage annual compliance requirements for OPCs, including financial statements, ROC filings, resolutions, and applicable statutory requirements."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LLP Compliance", "description": "Complete LLP annual filings and statutory requirements, including Form 11, Form 8, statement of accounts, and applicable LLP compliance obligations."}}
             ]
           }
         },
@@ -120,7 +120,7 @@
           "name": "Firm Compliance Services",
           "alternateName": "Partnership and Proprietorship Compliance Services Chennai",
           "url": "https://caaft.com/compliance-and-regulatory-services",
-          "description": "Records, filings, and statutory requirements consistently maintained for Partnership Firms and Sole Proprietorships.",
+          "description": "Partnership firms and sole proprietorships have different compliance requirements based on their structure, activities, registrations, and regulatory obligations. CAAFT helps manage applicable filings, renewals, and compliance formalities through a structured process.",
           "provider": {"@id": "https://caaft.com/#organization"},
           "areaServed": {"@type": "Country", "name": "India"},
           "serviceType": "Firm Compliance Services",
@@ -128,8 +128,8 @@
             "@type": "OfferCatalog",
             "name": "Firm Compliance Services",
             "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Partnership Firm Compliance", "description": "Ongoing compliance for registered partnerships — books maintenance, registration renewals, and regulatory filings under the Partnership Act."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sole Proprietorship Compliance", "description": "Licence renewals, professional tax filings, and regulatory compliance for sole proprietorships — keeping the business active and in good standing."}}
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Partnership Firm Compliance", "description": "Manage applicable registrations, renewals, records, filings, and other regulatory requirements for registered partnership firms."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sole Proprietorship Compliance", "description": "Stay current with applicable licences, professional tax requirements, renewals, and other regulatory obligations for your proprietorship business."}}
             ]
           }
         },
@@ -139,7 +139,7 @@
           "name": "ROC Compliance Services",
           "alternateName": "MCA ROC Filing Services Chennai",
           "url": "https://caaft.com/compliance-and-regulatory-services",
-          "description": "Every ROC transaction handled — director KYC, director changes, capital increases, office changes, routine MCA filings, and company closure — accurately and within prescribed timelines.",
+          "description": "Corporate changes often require formal documentation and ROC filings. CAAFT assists with preparing documents, completing applicable forms, submitting filings, and tracking the process.",
           "provider": {"@id": "https://caaft.com/#organization"},
           "areaServed": {"@type": "Country", "name": "India"},
           "serviceType": "ROC and MCA Filings",
@@ -147,12 +147,12 @@
             "@type": "OfferCatalog",
             "name": "ROC Compliance Services",
             "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Director KYC (DIR-3 KYC Filing)", "description": "Annual KYC filing for every DIN holder — mandatory to keep the DIN active and avoid filing blockages."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Add / Remove Director", "description": "Formal director appointment or resignation filed with the ROC — including resolution drafting, Form DIR-12, and MCA submission."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Increase in Authorized Capital", "description": "Filing for increased authorised share capital — board and shareholder resolutions, Form SH-7, and Form MGT-14 within prescribed timelines."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Registered Office Change", "description": "Address change filed correctly with the ROC — within the same city, state, or across states — with all resolutions and Form INC-22 or INC-23."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Miscellaneous ROC Filings", "description": "Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — prepared accurately and submitted before due dates."}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Company Closure / Winding Up", "description": "Managed strike-off or voluntary winding up — resolutions, indemnity bonds, compliance clearances, and STK-2 filing handled completely."}}
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Director KYC (DIR-3 KYC)", "description": "Complete annual KYC requirements for DIN holders and maintain the required director records with the MCA."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Add / Remove Director", "description": "Manage director appointment or resignation requirements, including resolutions, documentation, applicable forms, and ROC filing."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Increase in Authorised Capital", "description": "Complete the required corporate resolutions and ROC filings when increasing the authorised share capital of your company."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Registered Office Change", "description": "Manage the documentation and ROC filings required when changing your company's registered office address."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Miscellaneous ROC Filings", "description": "Get assistance with routine and event-based MCA filings, including applicable annual returns, financial statements, auditor-related filings, and other ROC requirements."}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Company Closure / Winding Up", "description": "Complete the applicable documentation, resolutions, filings, and regulatory formalities required for company closure or strike-off."}}
             ]
           }
         },
@@ -160,14 +160,14 @@
           "@type": "FAQPage",
           "@id": "https://caaft.com/compliance-and-regulatory-services#faq",
           "mainEntity": [
-            {"@type": "Question", "name": "Can CAAFT manage compliance for multiple companies under the same group?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We manage compliance across multiple entities for the same business group - with a consolidated calendar, unified communication, and a single point of contact for all filings. Many of our clients run 2–4 entities and prefer to consolidate their compliance under one firm."}},
-            {"@type": "Question", "name": "Will I be reminded before every deadline - or do I need to track it myself?", "acceptedAnswer": {"@type": "Answer", "text": "You don't track anything. We maintain your compliance calendar and send you advance reminders before every due date - along with a clear list of what we need from you. Your only job is to respond to our checklist."}},
-            {"@type": "Question", "name": "What if I'm not sure which filings my company has missed?", "acceptedAnswer": {"@type": "Answer", "text": "That's exactly what our free compliance review is for. We check your MCA records, identify what has been filed, what is overdue, and what penalties have accumulated - and give you a clear action plan before any commitment is made."}},
-            {"@type": "Question", "name": "Do I need to be physically present for any of the filings?", "acceptedAnswer": {"@type": "Answer", "text": "No. All ROC and MCA filings are done digitally. Where physical signatures are required - such as on resolutions or indemnity bonds - we courier the documents to you, get them signed, and handle everything else remotely."}},
-            {"@type": "Question", "name": "How quickly can CAAFT start managing our compliance?", "acceptedAnswer": {"@type": "Answer", "text": "We can onboard your entity within 2–3 working days. After the initial compliance review, we set up your calendar, assign a dedicated manager, and begin handling upcoming obligations immediately."}},
-            {"@type": "Question", "name": "We recently changed our CA. Will CAAFT need access to our past filings?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - we will need access to your past MCA filings and company records to build an accurate compliance picture. We guide you through exactly what to share and handle the transition smoothly, without interrupting any ongoing obligations."}},
-            {"@type": "Question", "name": "Is there a minimum company size or turnover to engage CAAFT for compliance?", "acceptedAnswer": {"@type": "Answer", "text": "No. We work with companies of all sizes - from newly incorporated entities with no turnover to established businesses with complex compliance requirements. Our engagement is scoped to your entity type and volume of filings, not your size."}},
-            {"@type": "Question", "name": "What happens if the ROC rejects or returns a filing we submitted?", "acceptedAnswer": {"@type": "Answer", "text": "We handle it. If any filing is returned, queried, or requires resubmission, we address it as part of the engagement - at no additional charge for standard corrections. You will not receive a rejection notice and be left to figure it out yourself."}}
+            {"@type": "Question", "name": "What does business compliance include in India?", "acceptedAnswer": {"@type": "Answer", "text": "Business compliance includes the statutory filings, regulatory registrations, financial records, corporate requirements, tax-related obligations, and periodic submissions applicable to a business. Requirements vary based on the entity structure, business activities, directors, employees, financial position, and registrations held by the organisation."}},
+            {"@type": "Question", "name": "What annual compliance is required for a Private Limited Company?", "acceptedAnswer": {"@type": "Answer", "text": "A Private Limited Company generally needs to complete annual ROC and MCA filings, maintain financial statements, conduct applicable board and shareholder processes, and meet other statutory requirements. Specific obligations can vary depending on the company's activities, financial position, directors, and applicable regulatory requirements."}},
+            {"@type": "Question", "name": "What is ROC compliance and why is it required?", "acceptedAnswer": {"@type": "Answer", "text": "ROC compliance refers to statutory filings and corporate requirements submitted to the Registrar of Companies under the applicable company law framework. It helps maintain updated corporate records and meet prescribed reporting obligations, including annual filings, director-related changes, financial information, and other required corporate submissions."}},
+            {"@type": "Question", "name": "What is the difference between annual compliance and event-based compliance?", "acceptedAnswer": {"@type": "Answer", "text": "Annual compliance involves recurring requirements that businesses generally complete during each financial or reporting year. Event-based compliance arises when a specific corporate change occurs, such as appointing a director, changing the registered office, increasing authorised capital, or undertaking another reportable corporate action."}},
+            {"@type": "Question", "name": "What compliance is required for an LLP?", "acceptedAnswer": {"@type": "Answer", "text": "An LLP may have recurring statutory requirements such as annual returns, statements of accounts and other applicable filings. The exact requirements depend on the LLP's structure, activities, financial position and applicable regulations. Maintaining proper records and completing required filings helps keep the LLP's compliance status updated."}},
+            {"@type": "Question", "name": "What happens if a business has pending ROC or statutory filings?", "acceptedAnswer": {"@type": "Answer", "text": "Pending filings should be reviewed to identify the outstanding requirements, applicable forms, documents, fees, and consequences under the relevant rules. The appropriate process depends on the type and period of default. Businesses should assess pending compliance and complete applicable filings or corrective actions."}},
+            {"@type": "Question", "name": "What corporate changes require ROC filing?", "acceptedAnswer": {"@type": "Answer", "text": "Several corporate changes may require formal documentation and ROC filing, including appointment or resignation of directors, registered office changes, increases in authorised capital, changes in company particulars, and other reportable events. The specific filing depends on the nature of the change and applicable corporate requirements."}},
+            {"@type": "Question", "name": "How can a business manage ongoing compliance requirements?", "acceptedAnswer": {"@type": "Answer", "text": "Businesses can manage ongoing compliance by identifying applicable obligations, maintaining accurate records, tracking recurring deadlines, preparing required documents, completing statutory filings, and monitoring corporate changes that trigger additional requirements. A structured compliance calendar can help organise annual, periodic, and event-based regulatory obligations."}}
           ]
         },
         {
@@ -192,13 +192,13 @@
                                 <?php
         $caaft_hero_id = 'cr-hero-h1';
         $caaft_hero_h1 = 'COMPLIANCE AND REGULATORY SERVICES';
-        $caaft_hero_h2_before = 'Stay Compliant. Stay Protected. Stay in Business.';
-        $caaft_hero_h2_highlight = '';
+        $caaft_hero_h2_before = 'Manage Your Business Compliance with ';
+        $caaft_hero_h2_highlight = 'Structured Regulatory Support';
         $caaft_hero_h2_after = '';
         $caaft_hero_lead_paragraphs = [
-            "From annual filings to ROC changes, CAAFT manages every compliance obligation your company carries — so nothing lapses, penalties don't build up, and your business always stands on solid legal ground. Missing a deadline can mean late fees or director disqualification. We track every obligation, file on time, and handle every change so compliance is never a problem.",
+            'Stay on top of recurring filings, statutory requirements, corporate changes, and regulatory obligations with structured compliance support.',
         ];
-        $caaft_hero_primary_cta_label = 'Get a Free Compliance Review';
+        $caaft_hero_primary_cta_label = 'Get Expert Compliance Support';
         $caaft_hero_primary_cta_href = '/contact#contact_us';
         $caaft_hero_secondary_cta_label = 'Explore Our Services';
         $caaft_hero_secondary_cta_href = '#parentVerticalTab1';
@@ -224,73 +224,74 @@
 
         <?php
         $caaft_card_section_heading_id = 'parentVerticalTab1';
-        $caaft_card_section_title = 'COMPANY COMPLIANCE SERVICES';
-        $caaft_card_section_intro = 'Every registered company carries a mandatory annual compliance calendar. CAAFT manages the entire calendar — ensuring every filing is accurate and on time.';
+        $caaft_card_section_title = 'Compliance Services at a Glance';
+        $caaft_card_section_intro = 'Businesses must manage different compliance requirements based on their legal structure, activities, directors, financial year, and regulatory obligations. Our compliance services help organise these requirements and manage applicable filings through a structured process.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-building', 'title' => 'Private Limited Compliance', 'text' => 'Complete annual compliance for Pvt Ltd companies — board meetings, annual returns, financial statements, and all MCA obligations managed without gaps.', 'href' => '/private-company-compliance'],
-            ['icon_class' => 'fas fa-city', 'title' => 'Public Limited Compliance', 'text' => 'End-to-end statutory compliance for Public Limited Companies — including AGM compliance, enhanced disclosures, and all ROC filings under the Companies Act.', 'href' => '/public-ltd-compliance'],
-            ['icon_class' => 'fas fa-user-tie', 'title' => 'One Person Company (OPC) Compliance', 'text' => 'Annual compliance for OPCs — board resolutions, financial statements, and ROC filings, kept lean for single-director structures.', 'href' => '/opc-annual-compliance'],
-            ['icon_class' => 'fas fa-handshake', 'title' => 'Limited Liability Partnership (LLP) Compliance', 'text' => 'Annual filing and compliance for LLPs — Form 11, Form 8, Statement of Accounts, and all LLP Agreement obligations managed end-to-end.', 'href' => '/llp-annual-compliance'],
+            ['icon_class' => 'fas fa-building', 'title' => 'Private Limited Company Compliance', 'text' => 'Manage annual MCA and ROC compliance, including financial statements, annual returns, board requirements, and applicable statutory filings.', 'href' => '/private-company-compliance'],
+            ['icon_class' => 'fas fa-city', 'title' => 'Public Limited Company Compliance', 'text' => 'Handle statutory and ROC compliance requirements for public companies, including annual filings, AGM-related requirements, disclosures, and applicable regulatory obligations.', 'href' => '/public-ltd-compliance'],
+            ['icon_class' => 'fas fa-user-tie', 'title' => 'One Person Company Compliance', 'text' => 'Manage annual compliance requirements for OPCs, including financial statements, ROC filings, resolutions, and applicable statutory requirements.', 'href' => '/opc-annual-compliance'],
+            ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Compliance', 'text' => 'Complete LLP annual filings and statutory requirements, including Form 11, Form 8, statement of accounts, and applicable LLP compliance obligations.', 'href' => '/llp-annual-compliance'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
 
         <?php
         $caaft_card_section_heading_id = 'cr-firm-heading';
-        $caaft_card_section_title = 'FIRM COMPLIANCE SERVICES';
-        $caaft_card_section_intro = 'Registered firms carry their own compliance obligations — often overlooked, but no less important. CAAFT ensures records, filings, and statutory requirements are consistently maintained.';
+        $caaft_card_section_title = 'Firm Compliance Services';
+        $caaft_card_section_intro = 'Partnership firms and sole proprietorships have different compliance requirements based on their structure, activities, registrations, and regulatory obligations. Our services help manage applicable filings, renewals, and compliance formalities through a structured process.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-6';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-users', 'title' => 'Partnership Firm Compliance', 'text' => 'Ongoing compliance for registered partnerships — books maintenance, registration renewals, and regulatory filings under the Partnership Act.', 'href' => '/partnership-firm-compliance'],
-            ['icon_class' => 'fas fa-store', 'title' => 'Sole Proprietorship Compliance', 'text' => 'Licence renewals, professional tax filings, and regulatory compliance for sole proprietorships — keeping the business active and in good standing.', 'href' => '/sole-proprietorship-compliance'],
+            ['icon_class' => 'fas fa-users', 'title' => 'Partnership Firm Compliance', 'text' => 'Manage applicable registrations, renewals, records, filings, and other regulatory requirements for registered partnership firms.', 'href' => '/partnership-firm-compliance'],
+            ['icon_class' => 'fas fa-store', 'title' => 'Sole Proprietorship Compliance', 'text' => 'Stay current with applicable licences, professional tax requirements, renewals, and other regulatory obligations for your proprietorship business.', 'href' => '/sole-proprietorship-compliance'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
 
         <?php
         $caaft_card_section_heading_id = 'cr-roc-heading';
-        $caaft_card_section_title = 'ROC COMPLIANCE SERVICES';
-        $caaft_card_section_intro = 'Changes within a company require formal filings with the Registrar of Companies. CAAFT handles every ROC transaction accurately and within prescribed timelines.';
+        $caaft_card_section_title = 'ROC Compliance & Corporate Changes';
+        $caaft_card_section_intro = 'Corporate changes often require formal documentation and ROC filings. Get assistance with preparing documents, completing applicable forms, submitting filings, and tracking the process.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-4';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-id-card-alt', 'title' => 'Director KYC (DIR-3 KYC Filing)', 'text' => 'Annual KYC filing for every DIN holder — mandatory to keep the DIN active and avoid filing blockages.', 'href' => '/din-kyc-filing'],
-            ['icon_class' => 'fas fa-user-plus', 'title' => 'Add / Remove Director', 'text' => 'Formal director appointment or resignation filed with the ROC — including resolution drafting, Form DIR-12, and MCA submission.', 'href' => '/add-remove-director-service'],
-            ['icon_class' => 'fas fa-chart-line', 'title' => 'Increase in Authorized Capital', 'text' => 'Filing for increased authorised share capital — board and shareholder resolutions, Form SH-7, and Form MGT-14 within prescribed timelines.', 'href' => '/increase-authorised-share-capital'],
-            ['icon_class' => 'fas fa-map-marker-alt', 'title' => 'Registered Office Change', 'text' => 'Address change filed correctly with the ROC — within the same city, state, or across states — with all resolutions and Form INC-22 or INC-23.', 'href' => '/registered-office-change-india'],
-            ['icon_class' => 'fas fa-file-alt', 'title' => 'Miscellaneous ROC Filings', 'text' => 'Routine and event-based MCA filings — AOC-4, MGT-7, ADT-1, and others — prepared accurately and submitted before due dates.', 'href' => '/roc-compliance-filing'],
-            ['icon_class' => 'fas fa-times-circle', 'title' => 'Company Closure / Winding Up', 'text' => 'Managed strike-off or voluntary winding up — resolutions, indemnity bonds, compliance clearances, and STK-2 filing handled completely.', 'href' => '/winding-up-of-company'],
+            ['icon_class' => 'fas fa-id-card', 'title' => 'Director KYC (DIR-3 KYC)', 'text' => 'Complete annual KYC requirements for DIN holders and maintain the required director records with the MCA.', 'href' => '/din-kyc-filing'],
+            ['icon_class' => 'fas fa-user-edit', 'title' => 'Add / Remove Director', 'text' => 'Manage director appointment or resignation requirements, including resolutions, documentation, applicable forms, and ROC filing.', 'href' => '/add-remove-director-service'],
+            ['icon_class' => 'fas fa-chart-line', 'title' => 'Increase in Authorised Capital', 'text' => 'Complete the required corporate resolutions and ROC filings when increasing the authorised share capital of your company.', 'href' => '/increase-authorised-share-capital'],
+            ['icon_class' => 'fas fa-map-marker-alt', 'title' => 'Registered Office Change', 'text' => 'Manage the documentation and ROC filings required when changing your company\'s registered office address.', 'href' => '/registered-office-change-india'],
+            ['icon_class' => 'fas fa-file-signature', 'title' => 'Miscellaneous ROC Filings', 'text' => 'Get assistance with routine and event-based MCA filings, including applicable annual returns, financial statements, auditor-related filings, and other ROC requirements.', 'href' => '/roc-compliance-filing'],
+            ['icon_class' => 'fas fa-archive', 'title' => 'Company Closure / Winding Up', 'text' => 'Complete the applicable documentation, resolutions, filings, and regulatory formalities required for company closure or strike-off.', 'href' => '/winding-up-of-company'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
 
         <?php
         $why_choose_caaft_heading_id = 'cr-why-heading';
-        $why_choose_caaft_title = 'WHY CHOOSE CAAFT';
-        $why_choose_caaft_intro = 'Businesses trust CAAFT for accurate ROC compliance, timely statutory filings, and dependable secretarial support that grows with their business needs';
+        $why_choose_caaft_title = 'Why Choose CAAFT for Compliance Services';
+        $why_choose_caaft_intro = 'Choosing a compliance service provider is about more than completing individual filings. You need a team that understands your business structure and helps you manage recurring and event-based compliance requirements correctly.';
         $why_choose_caaft_section_class = 'why-choose-caaft py-90';
         $why_choose_caaft_items = [
-            ['icon_class' => 'fas fa-clock', 'title' => 'Never Miss a Deadline', 'text' => 'A compliance calendar is maintained for every client entity — with proactive preparation well before due dates.'],
-            ['icon_class' => 'fas fa-layer-group', 'title' => 'All Entity Types, One Firm', 'text' => 'Compliance across every structure — Private Limited, LLP, OPC, Partnership, and Sole Proprietorship — is managed under one roof.'],
-            ['icon_class' => 'fas fa-landmark', 'title' => 'Experts Who Know the ROC', 'text' => 'Hands-on experience with MCA filings and ROC procedures ensures every filing is done right the first time.'],
-            ['icon_class' => 'fas fa-shield-alt', 'title' => 'Penalties Avoided, Not Just Managed', 'text' => 'A proactive approach prevents late fees and director liability — not just helps clients pay them after the fact.'],
-            ['icon_class' => 'fas fa-folder-open', 'title' => 'Complete Documentation Trail', 'text' => 'Every resolution, filing, and compliance record is maintained and accessible — always ready for audits or due diligence.'],
-            ['icon_class' => 'fas fa-life-ring', 'title' => 'Post-Filing Support', 'text' => 'ROC queries, returned filings, and clarifications are handled as part of the engagement — not treated as extras.'],
+            ['icon_class' => 'fas fa-layer-group', 'title' => 'Structured Compliance Support', 'text' => 'From compliance requirements to documentation, filing, tracking, and follow-up — everything is managed through a structured process.'],
+            ['icon_class' => 'fas fa-compass', 'title' => 'Business-Specific Compliance Guidance', 'text' => 'From entity type to business activities and regulatory obligations, compliance support is aligned with your specific requirements.'],
+            ['icon_class' => 'fas fa-folder-open', 'title' => 'Complete Documentation Support', 'text' => 'From document checklists to forms, resolutions, and supporting papers — everything is prepared and organised for applicable filings.'],
+            ['icon_class' => 'fas fa-file-signature', 'title' => 'Filing & Follow-Up Support', 'text' => 'From ROC and MCA filings to government queries and additional requirements — compliance follow-ups are managed throughout the process.'],
+            ['icon_class' => 'fas fa-calendar-check', 'title' => 'Recurring Compliance Management', 'text' => 'From annual filings to periodic requirements and event-based compliance — stay organised with ongoing compliance support.'],
+            ['icon_class' => 'fas fa-user-cog', 'title' => 'Corporate Change Support', 'text' => 'From director changes to authorised capital and registered office updates — get assistance with applicable documentation and filings.'],
+            ['icon_class' => 'fas fa-comments', 'title' => 'Clear Compliance Communication', 'text' => 'From filing requirements to applicable professional fees and government charges, key details are explained clearly before proceeding.'],
         ];
         include __DIR__ . '/../../includes/components/why-choose-caaft.php';
         ?>
 
         <?php
         $caaft_steps_heading_id = 'cr-how-heading';
-        $caaft_steps_title = 'HOW CAAFT WORKS';
+        $caaft_steps_title = 'Our Compliance Process';
         $caaft_steps_numbered = true;
         $caaft_steps_items = [
-            ['title' => 'Compliance Audit', 'text' => "The entity's filed returns, pending obligations, lapsed deadlines, and existing notices are reviewed to establish a clear baseline."],
-            ['title' => 'Calendar Setup', 'text' => 'A dedicated compliance calendar is built, mapping every due date — annual returns, board meetings, KYC filings, and event-based requirements.'],
-            ['title' => 'Document Collection', 'text' => 'A focused checklist of required documents — financials, resolutions, or updated details — is sent well ahead of each deadline.'],
-            ['title' => 'Preparation & Review', 'text' => 'The filing is prepared, resolutions drafted, and an internal review completed before anything is submitted.'],
-            ['title' => 'Filing & Acknowledgement', 'text' => 'The filing is submitted on the MCA or ROC portal and the acknowledgement or SRN is shared with the client immediately.'],
-            ['title' => 'Ongoing Monitoring', 'text' => 'The compliance calendar is monitored year-round — with proactive alerts and handling of any ROC correspondence as it arises.'],
+            ['title' => 'Compliance Review', 'text' => 'Review existing records, completed filings, pending requirements, and applicable compliance obligations.'],
+            ['title' => 'Requirement Mapping', 'text' => 'Identify recurring and event-based filings based on your entity type and current requirements.'],
+            ['title' => 'Document Collection', 'text' => 'Provide a clear checklist of documents and information required for each compliance activity.'],
+            ['title' => 'Preparation & Review', 'text' => 'Prepare applicable forms, resolutions, statements, and supporting documents before submission.'],
+            ['title' => 'Filing & Acknowledgement', 'text' => 'Submit the required filings through the applicable MCA, ROC, or regulatory portal and track acknowledgements.'],
+            ['title' => 'Ongoing Monitoring', 'text' => 'Monitor upcoming requirements and provide support for future filings, changes, queries, and compliance activities.'],
         ];
         include __DIR__ . '/../../includes/components/caaft-step-by-step.php';
         ?>
@@ -298,14 +299,14 @@
         <?php
         $caaft_git_section_id = 'get-in-touch';
         $caaft_git_heading_id = 'cr-git-heading';
-        $caaft_git_title = 'Compliance Off Your Plate. Penalties Off Your Record.';
-        $caaft_git_lead = 'Whether you need to clear a backlog, stay on top of your annual filings, or handle a specific ROC change - CAAFT manages it all with precision and accountability. We respond within one business day.';
+        $caaft_git_title = 'Ready to Manage Your Business Compliance With CAAFT?';
+        $caaft_git_lead = 'Whether you need to complete pending filings, manage annual compliance, handle a corporate change or stay on top of ongoing regulatory requirements, CAAFT can help you understand and manage the applicable compliance process.';
         $caaft_git_eyebrow = 'Get in touch';
-        $caaft_git_note = 'No commitment required. Just a focused compliance review with an experienced CA team.';
+        $caaft_git_note = 'No complicated process. No unnecessary paperwork. Just clear guidance and structured support to keep your business compliance organised.';
         $caaft_git_actions = [
             ['href' => 'tel:+918870078870', 'class' => 'theme-btn caaft-ar-git-btn-call', 'label' => 'Call Us: +91 88700 78870'],
             ['href' => 'https://api.whatsapp.com/send?phone=918870078870', 'class' => 'caaft-ar-git-btn-outline', 'label' => '<i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us', 'target' => '_blank', 'rel' => 'noopener noreferrer'],
-            ['href' => '#quote-content', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Clear Your Pending Filings'],
+            ['href' => '#quote-content', 'class' => 'theme-btn theme-btn2 caaft-ar-git-btn-simplify', 'label' => 'Get Professional Compliance & Regulatory Support'],
         ];
         $caaft_git_cards = [
             ['icon_class' => 'fas fa-phone', 'label' => 'Call us', 'values' => [['href' => 'tel:+918870078870', 'text' => '+91 88700 78870'], ['href' => 'tel:+919944617891', 'text' => '+91 88700 02354']]],
@@ -323,14 +324,14 @@
         $caaft_faq_prefix = 'crFaq';
         $caaft_faq_pad_numbers = true;
         $caaft_faq_items = [
-            ['question' => 'Can CAAFT manage compliance for multiple companies under the same group?', 'answer' => 'Yes. We manage compliance across multiple entities for the same business group - with a consolidated calendar, unified communication, and a single point of contact for all filings. Many of our clients run 2–4 entities and prefer to consolidate their compliance under one firm.'],
-            ['question' => "Will I be reminded before every deadline - or do I need to track it myself?", 'answer' => "You don't track anything. We maintain your compliance calendar and send you advance reminders before every due date - along with a clear list of what we need from you. Your only job is to respond to our checklist."],
-            ['question' => "What if I'm not sure which filings my company has missed?", 'answer' => "That's exactly what our free compliance review is for. We check your MCA records, identify what has been filed, what is overdue, and what penalties have accumulated - and give you a clear action plan before any commitment is made."],
-            ['question' => 'Do I need to be physically present for any of the filings?', 'answer' => 'No. All ROC and MCA filings are done digitally. Where physical signatures are required - such as on resolutions or indemnity bonds - we courier the documents to you, get them signed, and handle everything else remotely.'],
-            ['question' => 'How quickly can CAAFT start managing our compliance?', 'answer' => 'We can onboard your entity within 2–3 working days. After the initial compliance review, we set up your calendar, assign a dedicated manager, and begin handling upcoming obligations immediately.'],
-            ['question' => 'We recently changed our CA. Will CAAFT need access to our past filings?', 'answer' => 'Yes - we will need access to your past MCA filings and company records to build an accurate compliance picture. We guide you through exactly what to share and handle the transition smoothly, without interrupting any ongoing obligations.'],
-            ['question' => 'Is there a minimum company size or turnover to engage CAAFT for compliance?', 'answer' => 'No. We work with companies of all sizes - from newly incorporated entities with no turnover to established businesses with complex compliance requirements. Our engagement is scoped to your entity type and volume of filings, not your size.'],
-            ['question' => 'What happens if the ROC rejects or returns a filing we submitted?', 'answer' => 'We handle it. If any filing is returned, queried, or requires resubmission, we address it as part of the engagement - at no additional charge for standard corrections. You will not receive a rejection notice and be left to figure it out yourself.'],
+            ['question' => 'What does business compliance include in India?', 'answer' => 'Business compliance includes the statutory filings, regulatory registrations, financial records, corporate requirements, tax-related obligations, and periodic submissions applicable to a business. Requirements vary based on the entity structure, business activities, directors, employees, financial position, and registrations held by the organisation.'],
+            ['question' => 'What annual compliance is required for a Private Limited Company?', 'answer' => 'A Private Limited Company generally needs to complete annual ROC and MCA filings, maintain financial statements, conduct applicable board and shareholder processes, and meet other statutory requirements. Specific obligations can vary depending on the company\'s activities, financial position, directors, and applicable regulatory requirements.'],
+            ['question' => 'What is ROC compliance and why is it required?', 'answer' => 'ROC compliance refers to statutory filings and corporate requirements submitted to the Registrar of Companies under the applicable company law framework. It helps maintain updated corporate records and meet prescribed reporting obligations, including annual filings, director-related changes, financial information, and other required corporate submissions.'],
+            ['question' => 'What is the difference between annual compliance and event-based compliance?', 'answer' => 'Annual compliance involves recurring requirements that businesses generally complete during each financial or reporting year. Event-based compliance arises when a specific corporate change occurs, such as appointing a director, changing the registered office, increasing authorised capital, or undertaking another reportable corporate action.'],
+            ['question' => 'What compliance is required for an LLP?', 'answer' => 'An LLP may have recurring statutory requirements such as annual returns, statements of accounts and other applicable filings. The exact requirements depend on the LLP\'s structure, activities, financial position and applicable regulations. Maintaining proper records and completing required filings helps keep the LLP\'s compliance status updated.'],
+            ['question' => 'What happens if a business has pending ROC or statutory filings?', 'answer' => 'Pending filings should be reviewed to identify the outstanding requirements, applicable forms, documents, fees, and consequences under the relevant rules. The appropriate process depends on the type and period of default. Businesses should assess pending compliance and complete applicable filings or corrective actions.'],
+            ['question' => 'What corporate changes require ROC filing?', 'answer' => 'Several corporate changes may require formal documentation and ROC filing, including appointment or resignation of directors, registered office changes, increases in authorised capital, changes in company particulars, and other reportable events. The specific filing depends on the nature of the change and applicable corporate requirements.'],
+            ['question' => 'How can a business manage ongoing compliance requirements?', 'answer' => 'Businesses can manage ongoing compliance by identifying applicable obligations, maintaining accurate records, tracking recurring deadlines, preparing required documents, completing statutory filings, and monitoring corporate changes that trigger additional requirements. A structured compliance calendar can help organise annual, periodic, and event-based regulatory obligations.'],
         ];
         include __DIR__ . '/../../includes/components/caaft-faq.php';
         ?>

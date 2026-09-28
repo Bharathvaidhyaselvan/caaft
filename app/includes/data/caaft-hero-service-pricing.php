@@ -47,6 +47,7 @@ return [
     'tax-planning-services.php' => ['amount' => '999', 'govt_fee' => false],
     // Business ITR; individual ₹1,499 shown as second strip on income-tax-filing-service.php hero.
     'income-tax-filing-service.php' => ['amount' => '4,999', 'govt_fee' => false],
+    'income-tax-filing-service-in-chennai.php' => ['amount' => '4,999', 'govt_fee' => false],
     'tds-return-filing-services.php' => ['amount' => '2,499', 'govt_fee' => false],
     'tax-audit.php' => ['amount' => '4,999', 'govt_fee' => false],
     'income-tax-appeal-services.php' => ['amount' => '4,999', 'govt_fee' => false],
