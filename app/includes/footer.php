@@ -99,8 +99,8 @@
                 <div class="row align-items-center gy-2">
                     <div class="col-12 col-md-7 col-lg-8 align-self-center">
                         <p class="copyright-text mb-0">
-                            &copy; Copyright 2026 - <a href="/">CAAFT Consultancy Services Private Limited.</a>
-                            All Rights Reserved.
+                            <span class="copyright-line">&copy; 2026 - <a href="/">CAAFT Consultancy Services Private Limited.</a></span>
+                            <span class="copyright-reserved">All Rights Reserved.</span>
                         </p>
                     </div>
                     <div class="col-12 col-md-5 col-lg-4 align-self-center text-md-end text-center">
