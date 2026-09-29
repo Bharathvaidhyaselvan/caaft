@@ -5521,7 +5521,16 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
 .copyright .copyright-text {
     color: var(--footer-text-color);
     margin-bottom: 0;
-    font-size: 16px
+    font-size: 16px;
+    text-align: center;
+    text-justify: none;
+    line-height: 1.35;
+    word-spacing: normal;
+    letter-spacing: normal
+}
+
+.copyright .copyright-reserved {
+    white-space: nowrap
 }
 
 .copyright .copyright-text a {
@@ -5557,6 +5566,44 @@ body.home-3 .home3-plans-area .home3-plan-features li > i.fa-times {
 }
 
 @media all and (max-width:767px) {
+    .copyright {
+        padding: 8px 0 10px;
+    }
+
+    .copyright .row {
+        --bs-gutter-y: 0;
+        row-gap: 0;
+    }
+
+    .copyright .text-center {
+        text-align: center !important;
+    }
+
+    .copyright .copyright-text,
+    body.home-3.page-accounting-reporting .copyright p,
+    body.home-3.page-accounting-reporting .copyright .copyright-text {
+        margin: 0;
+        line-height: 1.35;
+        text-align: center !important;
+        text-justify: none !important;
+        word-spacing: normal !important;
+        letter-spacing: normal !important;
+    }
+
+    .copyright .copyright-text {
+        margin-bottom: 14px !important;
+    }
+
+    .copyright .brevia-credit {
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .tawk-min-container,
+    #tawkchat-container .tawk-min-container {
+        bottom: 6px !important;
+    }
+
     .footer-widget-wrapper {
         padding-bottom: 0
     }
@@ -7252,9 +7299,12 @@ a.slide_btn {
         font-size: 14px;
     }
 
-    .copyright .copyright-text {
+    .copyright .copyright-text,
+    body.home-3.page-accounting-reporting .copyright p,
+    body.home-3.page-accounting-reporting .copyright .copyright-text {
         font-size: 14px;
-        text-align: center;
+        text-align: center !important;
+        text-justify: none !important;
     }
 
     .hides {
@@ -7552,8 +7602,39 @@ a.slide_btn {
 }
 
 @media(max-width:767px) {
+    .header-top-wrap {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: start;
+        column-gap: 8px;
+        row-gap: 0;
+    }
+
+    .header-top-right-group {
+        display: contents;
+    }
+
+    .header-top-left {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        margin-right: 0;
+    }
+
+    .header-top-hr {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        flex: none;
+        width: auto;
+        margin: 0;
+    }
+
     .header-top-right {
-        padding: 10px 15px;
+        grid-column: 2;
+        grid-row: 1;
+        align-self: center;
+        margin: 0;
+        padding: 4px 12px;
     }
 
     .navbar .nav-item .dropdown-menu .dropdown-item {
@@ -9495,6 +9576,12 @@ body.home-3.page-accounting-reporting ol,
 body.home-3.page-accounting-reporting li {
     text-align: justify !important;
     text-justify: inter-word !important;
+}
+
+body.home-3.page-accounting-reporting .copyright p,
+body.home-3.page-accounting-reporting .copyright .copyright-text {
+    text-align: center !important;
+    text-justify: none !important;
 }
 
 .page-accounting-reporting .caaft-ar-hero {

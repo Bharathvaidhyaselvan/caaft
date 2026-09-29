@@ -235,10 +235,10 @@
         $caaft_card_section_intro = 'Businesses must manage different compliance requirements based on their legal structure, activities, directors, financial year, and regulatory obligations. Our compliance services help organise these requirements and manage applicable filings through a structured process.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-3';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-building', 'title' => 'Private Limited Company Compliance', 'text' => 'Manage annual MCA and ROC compliance, including financial statements, annual returns, board requirements, and applicable statutory filings.', 'href' => '/private-company-compliance'],
-            ['icon_class' => 'fas fa-city', 'title' => 'Public Limited Company Compliance', 'text' => 'Handle statutory and ROC compliance requirements for public companies, including annual filings, AGM-related requirements, disclosures, and applicable regulatory obligations.', 'href' => '/public-ltd-compliance'],
-            ['icon_class' => 'fas fa-user-tie', 'title' => 'One Person Company Compliance', 'text' => 'Manage annual compliance requirements for OPCs, including financial statements, ROC filings, resolutions, and applicable statutory requirements.', 'href' => '/opc-annual-compliance'],
-            ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Compliance', 'text' => 'Complete LLP annual filings and statutory requirements, including Form 11, Form 8, statement of accounts, and applicable LLP compliance obligations.', 'href' => '/llp-annual-compliance'],
+            ['icon_class' => 'fas fa-building', 'title' => 'Private Limited Company Compliance', 'text' => 'Manage annual MCA and ROC compliance, including financial statements, annual returns, board requirements, and applicable statutory filings.', 'href' => '/private-company-compliance', 'cta_label' => 'Get Private Limited Company Compliance'],
+            ['icon_class' => 'fas fa-city', 'title' => 'Public Limited Company Compliance', 'text' => 'Handle statutory and ROC compliance requirements for public companies, including annual filings, AGM-related requirements, disclosures, and applicable regulatory obligations.', 'href' => '/public-ltd-compliance', 'cta_label' => 'Get Public Limited Company Compliance'],
+            ['icon_class' => 'fas fa-user-tie', 'title' => 'One Person Company Compliance', 'text' => 'Manage annual compliance requirements for OPCs, including financial statements, ROC filings, resolutions, and applicable statutory requirements.', 'href' => '/opc-annual-compliance', 'cta_label' => 'Get One Person Company Compliance'],
+            ['icon_class' => 'fas fa-handshake', 'title' => 'LLP Compliance', 'text' => 'Complete LLP annual filings and statutory requirements, including Form 11, Form 8, statement of accounts, and applicable LLP compliance obligations.', 'href' => '/llp-annual-compliance', 'cta_label' => 'Get LLP Compliance'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
@@ -249,8 +249,8 @@
         $caaft_card_section_intro = 'Partnership firms and sole proprietorships have different compliance requirements based on their structure, activities, registrations, and regulatory obligations. Our services help manage applicable filings, renewals, and compliance formalities through a structured process.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-6';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-users', 'title' => 'Partnership Firm Compliance', 'text' => 'Manage applicable registrations, renewals, records, filings, and other regulatory requirements for registered partnership firms.', 'href' => '/partnership-firm-compliance'],
-            ['icon_class' => 'fas fa-store', 'title' => 'Sole Proprietorship Compliance', 'text' => 'Stay current with applicable licences, professional tax requirements, renewals, and other regulatory obligations for your proprietorship business.', 'href' => '/sole-proprietorship-compliance'],
+            ['icon_class' => 'fas fa-users', 'title' => 'Partnership Firm Compliance', 'text' => 'Manage applicable registrations, renewals, records, filings, and other regulatory requirements for registered partnership firms.', 'href' => '/partnership-firm-compliance', 'cta_label' => 'Get Partnership Firm Compliance'],
+            ['icon_class' => 'fas fa-store', 'title' => 'Sole Proprietorship Compliance', 'text' => 'Stay current with applicable licences, professional tax requirements, renewals, and other regulatory obligations for your proprietorship business.', 'href' => '/sole-proprietorship-compliance', 'cta_label' => 'Get Sole Proprietorship Compliance'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>
@@ -261,12 +261,12 @@
         $caaft_card_section_intro = 'Corporate changes often require formal documentation and ROC filings. Get assistance with preparing documents, completing applicable forms, submitting filings, and tracking the process.';
         $caaft_card_grid_col_class = 'col-md-6 col-lg-4';
         $caaft_card_section_cards = [
-            ['icon_class' => 'fas fa-id-card', 'title' => 'Director KYC (DIR-3 KYC)', 'text' => 'Complete annual KYC requirements for DIN holders and maintain the required director records with the MCA.', 'href' => '/din-kyc-filing'],
-            ['icon_class' => 'fas fa-user-edit', 'title' => 'Add / Remove Director', 'text' => 'Manage director appointment or resignation requirements, including resolutions, documentation, applicable forms, and ROC filing.', 'href' => '/add-remove-director-service'],
-            ['icon_class' => 'fas fa-chart-line', 'title' => 'Increase in Authorised Capital', 'text' => 'Complete the required corporate resolutions and ROC filings when increasing the authorised share capital of your company.', 'href' => '/increase-authorised-share-capital'],
-            ['icon_class' => 'fas fa-map-marker-alt', 'title' => 'Registered Office Change', 'text' => 'Manage the documentation and ROC filings required when changing your company\'s registered office address.', 'href' => '/registered-office-change-india'],
-            ['icon_class' => 'fas fa-file-signature', 'title' => 'Miscellaneous ROC Filings', 'text' => 'Get assistance with routine and event-based MCA filings, including applicable annual returns, financial statements, auditor-related filings, and other ROC requirements.', 'href' => '/roc-compliance-filing'],
-            ['icon_class' => 'fas fa-archive', 'title' => 'Company Closure / Winding Up', 'text' => 'Complete the applicable documentation, resolutions, filings, and regulatory formalities required for company closure or strike-off.', 'href' => '/winding-up-of-company'],
+            ['icon_class' => 'fas fa-id-card', 'title' => 'Director KYC (DIR-3 KYC)', 'text' => 'Complete annual KYC requirements for DIN holders and maintain the required director records with the MCA.', 'href' => '/din-kyc-filing', 'cta_label' => 'Get Director KYC (DIR-3 KYC)'],
+            ['icon_class' => 'fas fa-user-edit', 'title' => 'Add / Remove Director', 'text' => 'Manage director appointment or resignation requirements, including resolutions, documentation, applicable forms, and ROC filing.', 'href' => '/add-remove-director-service', 'cta_label' => 'Get Add / Remove Director'],
+            ['icon_class' => 'fas fa-chart-line', 'title' => 'Increase in Authorised Capital', 'text' => 'Complete the required corporate resolutions and ROC filings when increasing the authorised share capital of your company.', 'href' => '/increase-authorised-share-capital', 'cta_label' => 'Get Increase in Authorised Capital'],
+            ['icon_class' => 'fas fa-map-marker-alt', 'title' => 'Registered Office Change', 'text' => 'Manage the documentation and ROC filings required when changing your company\'s registered office address.', 'href' => '/registered-office-change-india', 'cta_label' => 'Get Registered Office Change'],
+            ['icon_class' => 'fas fa-file-signature', 'title' => 'Miscellaneous ROC Filings', 'text' => 'Get assistance with routine and event-based MCA filings, including applicable annual returns, financial statements, auditor-related filings, and other ROC requirements.', 'href' => '/roc-compliance-filing', 'cta_label' => 'Get Miscellaneous ROC Filings'],
+            ['icon_class' => 'fas fa-archive', 'title' => 'Company Closure / Winding Up', 'text' => 'Complete the applicable documentation, resolutions, filings, and regulatory formalities required for company closure or strike-off.', 'href' => '/winding-up-of-company', 'cta_label' => 'Get Company Closure / Winding Up'],
         ];
         include __DIR__ . '/../../includes/components/caaft-card-section.php';
         ?>

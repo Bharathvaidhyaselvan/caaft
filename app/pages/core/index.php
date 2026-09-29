@@ -852,14 +852,14 @@
                         'initial' => 'K',
                         'avatar' => 'a',
                         'name' => 'Kamatchi Karthiga',
-                        'role' => '',
+                        'role' => 'Proprietor - Kumon Amanora Centre',
                         'quote' => 'I had a very stressful experience with my previous consultant while trying to get my GST registration. My shop opening date was getting closer, but despite waiting, I still hadn’t received my GST. At that point, I decided to change my consultant, and thankfully, a friend recommended CAAft Consultancy. They were truly a saviour at a very critical time. From the moment I approached them, they handled the process very efficiently and professionally. Most importantly, they got my GST registration completed within just two days of the application! I’m extremely grateful for their prompt response, professionalism, and commitment to getting the work done on time. After my previous experience, finding CAAft Consultancy was a huge relief. Highly recommended for anyone looking for reliable, efficient, and timely professional services!',
                     ],
                     [
                         'initial' => 'D',
                         'avatar' => 'b',
                         'name' => 'Dhilip Kumar',
-                        'role' => '',
+                        'role' => 'Director - DXP Analytics',
                         'quote' => 'Very professional and reliable audit firm. Their work is always timely and well organized, and their responsiveness gives us complete peace of mind. We no longer have to worry about deadlines or follow ups. Highly recommended for anyone looking for reliable, efficient, and timely professional services!',
                     ],
                 ];

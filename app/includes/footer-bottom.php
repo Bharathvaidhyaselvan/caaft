@@ -55,6 +55,12 @@ window.addEventListener('load', function () {
       return;
     }
     window.Tawk_API = window.Tawk_API || {};
+    window.Tawk_API.customStyle = {
+      visibility: {
+        desktop: { position: 'br', xOffset: 16, yOffset: 12 },
+        mobile: { position: 'br', xOffset: 8, yOffset: 4 }
+      }
+    };
     window.Tawk_LoadStart = new Date();
     var s1 = document.createElement('script');
     var s0 = document.getElementsByTagName('script')[0];
