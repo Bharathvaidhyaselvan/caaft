@@ -356,21 +356,20 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
                                 <a href="tel:+918870078870"><i class="far fa-phone-volume"></i> +91 8870 07 8870</a>
                                 / <a href="tel:+919944617891">+91 9944 61 7891</a>
                             </li>
+                            <li class="header-top-hr">
+                                <a href="tel:+918807943270"><i class="far fa-phone-volume"></i> HR - 88079 43270</a>
+                                <span class="header-top-hr-sep">/</span>
+                                <a href="mailto:hr@caaft.com"><i class="far fa-envelopes"></i> hr@caaft.com</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="header-top-right-group">
-                    <div class="header-top-hr">
-                        <a href="tel:+918807943270"><i class="far fa-phone-volume"></i> HR - 88079 43270</a>
-                        / <a href="mailto:hr@caaft.com"><i class="far fa-envelopes"></i> hr@caaft.com</a>
-                    </div>
-                    <div class="header-top-right">
-                        <div class="header-top-social">
+                <div class="header-top-right">
+                    <div class="header-top-social">
                         <a href="https://www.facebook.com/profile.php?id=61564521313943" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a>
                         <a href="https://x.com/CaaftServices" target="_blank" title="twitter"><i class="fab fa-x-twitter"></i></a>
                         <a href="https://www.instagram.com/caaftconsultancyservices/" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/company/caaft-consultancy-services-private-limited/" target="_blank" title="linkedin"><i class="fab fa-linkedin"></i></a>
-                    </div>
                     </div>
                 </div>
             </div>
