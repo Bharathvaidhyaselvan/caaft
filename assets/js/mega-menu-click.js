@@ -50,7 +50,19 @@
 
 
 
+  var closeTimer = 0;
+
+
+
   function closeAll() {
+
+    if (closeTimer) {
+
+      window.clearTimeout(closeTimer);
+
+      closeTimer = 0;
+
+    }
 
     getOpenTargets().forEach(function (item) {
 
@@ -216,6 +228,94 @@
 
 
 
+    function openMenu() {
+
+      if (!isDesktop()) return;
+
+      if (closeTimer) {
+
+        window.clearTimeout(closeTimer);
+
+        closeTimer = 0;
+
+      }
+
+      updateMegaMenuPosition();
+
+      wrap.classList.add("is-open");
+
+      trigger.setAttribute("aria-expanded", "true");
+
+      setMegaMenuOpenState(true);
+
+    }
+
+
+
+    function scheduleClose() {
+
+      if (!isDesktop() || closeTimer) return;
+
+      closeTimer = window.setTimeout(function () {
+
+        closeTimer = 0;
+
+        closeAll();
+
+      }, 180);
+
+    }
+
+
+
+    function pointerOnMenuPath(event) {
+
+      var x = event.clientX;
+
+      var y = event.clientY;
+
+      var triggerRect = trigger.getBoundingClientRect();
+
+      var overTrigger = x >= triggerRect.left - 28 && x <= triggerRect.right + 28 && y >= triggerRect.top - 8 && y <= triggerRect.bottom + 8;
+
+      if (!menu) return overTrigger;
+
+      var menuRect = menu.getBoundingClientRect();
+
+      var overMenu = x >= menuRect.left && x <= menuRect.right && y >= menuRect.top - 6 && y <= menuRect.bottom;
+
+      var overBridge = x >= triggerRect.left - 48 && x <= triggerRect.right + 48 && y >= triggerRect.bottom && y <= menuRect.top + 8;
+
+      return overTrigger || overMenu || overBridge;
+
+    }
+
+
+
+    document.addEventListener("mousemove", function (event) {
+
+      if (!isDesktop() || !wrap.classList.contains("is-open")) return;
+
+      if (pointerOnMenuPath(event)) {
+
+        if (closeTimer) {
+
+          window.clearTimeout(closeTimer);
+
+          closeTimer = 0;
+
+        }
+
+        return;
+
+      }
+
+      scheduleClose();
+
+    });
+
+
+
     if (menu) {
 
       menu.addEventListener("click", function (event) {
@@ -224,7 +324,17 @@
 
       });
 
+      menu.addEventListener("mouseenter", openMenu);
+
+      menu.addEventListener("mouseleave", scheduleClose);
+
     }
+
+
+
+    wrap.addEventListener("mouseenter", openMenu);
+
+    wrap.addEventListener("mouseleave", scheduleClose);
 
 
 
@@ -232,29 +342,7 @@
 
       if (!isDesktop()) return;
 
-
-
       event.preventDefault();
-
-      event.stopPropagation();
-
-
-
-      var willOpen = !wrap.classList.contains("is-open");
-
-      closeAll();
-
-      if (willOpen) {
-
-        updateMegaMenuPosition();
-
-        wrap.classList.add("is-open");
-
-        trigger.setAttribute("aria-expanded", "true");
-
-        setMegaMenuOpenState(true);
-
-      }
 
     });
 

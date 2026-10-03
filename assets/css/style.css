@@ -9642,6 +9642,23 @@ body.home-3.page-accounting-reporting .copyright .copyright-text {
     text-justify: none !important;
 }
 
+@media (min-width: 992px) {
+    .copyright .row {
+        --bs-gutter-x: 3rem;
+    }
+
+    .copyright .row > [class*="col-"]:first-child {
+        padding-left: 0;
+    }
+
+    .copyright .copyright-text,
+    body.home-3.page-accounting-reporting .copyright p,
+    body.home-3.page-accounting-reporting .copyright .copyright-text {
+        text-align: left !important;
+        text-justify: none !important;
+    }
+}
+
 .page-accounting-reporting .caaft-ar-hero {
     background: transparent;
     padding: 0;

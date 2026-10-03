@@ -94,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container footer_container">
             <div class="copyright">
                 <div class="row align-items-center gy-2">
                     <div class="col-12 col-md-7 col-lg-8 align-self-center">

@@ -287,7 +287,7 @@ $servicesActive = isServiceActive($activePage, $allServiceSlugs);
         font-size: 13px;
         font-weight: 500;
         color: rgba(245, 250, 255, 0.82);
-        padding: 6px 0 6px 12px;
+        padding: 8px 0 8px 12px;
         border-left: 2px solid transparent;
         border-radius: 0 4px 4px 0;
         transition: color 0.15s, border-color 0.15s, padding-left 0.15s, background 0.15s;
