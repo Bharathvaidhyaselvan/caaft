@@ -40,7 +40,7 @@ $caaft_git_note = isset($caaft_git_note) ? (string) $caaft_git_note : '';
                     <p class="caaft-ar-git-eyebrow"><?php echo htmlspecialchars($caaft_git_eyebrow, ENT_QUOTES, 'UTF-8'); ?></p>
                 <?php endif; ?>
                 <h2 id="<?php echo htmlspecialchars((string) $caaft_git_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="caaft-ar-git-h2"><?php echo strip_tags((string) $caaft_git_title, '<em><strong><br>'); ?></h2>
-                <p class="caaft-ar-git-lead"><?php echo htmlspecialchars((string) $caaft_git_lead, ENT_QUOTES, 'UTF-8'); ?></p>
+                <p class="caaft-ar-git-lead"><?php echo caaft_rich_copy((string) $caaft_git_lead); ?></p>
                 <div class="caaft-ar-git-ctas">
                     <?php foreach ($caaft_git_actions as $caaft_git_action) :
                         $caaft_git_action_href = caaft_resolve_page_anchor_href((string) ($caaft_git_action['href'] ?? '#'));
@@ -49,7 +49,7 @@ $caaft_git_note = isset($caaft_git_note) ? (string) $caaft_git_note : '';
                     <?php endforeach; ?>
                 </div>
                 <?php if ($caaft_git_note !== '') : ?>
-                    <p class="caaft-ar-git-note"><?php echo htmlspecialchars($caaft_git_note, ENT_QUOTES, 'UTF-8'); ?></p>
+                    <p class="caaft-ar-git-note"><?php echo caaft_rich_copy($caaft_git_note); ?></p>
                 <?php endif; ?>
             </div>
             <div class="col-lg-6">

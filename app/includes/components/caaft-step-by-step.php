@@ -43,7 +43,7 @@ if ($caaft_steps_numbered) {
                     <span class="caaft-ar-how-marker <?php echo $caaft_steps_numbered ? 'caaft-ar-how-marker--num' : 'caaft-ar-how-marker--dot'; ?>" aria-hidden="true"><?php echo $caaft_steps_numbered ? (int) $caaft_steps_index + 1 : ''; ?></span>
                     <div class="caaft-ar-how-body">
                         <h3 class="caaft-ar-how-step-title"><?php echo htmlspecialchars((string) ($caaft_steps_item['title'] ?? ''), ENT_QUOTES, 'UTF-8'); ?></h3>
-                        <p class="caaft-ar-how-step-text"><?php echo htmlspecialchars((string) ($caaft_steps_item['text'] ?? ''), ENT_QUOTES, 'UTF-8'); ?></p>
+                        <p class="caaft-ar-how-step-text"><?php echo caaft_rich_copy((string) ($caaft_steps_item['text'] ?? '')); ?></p>
                     </div>
                 </li>
             <?php endforeach; ?>

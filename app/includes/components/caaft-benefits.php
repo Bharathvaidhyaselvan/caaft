@@ -43,7 +43,7 @@ $caaft_benefits_tone_cycle = ['green', 'violet', 'amber', 'blue', 'pink', 'teal'
     <div class="container">
         <h2 id="<?php echo htmlspecialchars($caaft_benefits_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="caaft-benefits-title"><?php echo htmlspecialchars($caaft_benefits_title, ENT_QUOTES, 'UTF-8'); ?></h2>
         <?php if ($caaft_benefits_intro !== '') : ?>
-            <p class="caaft-benefits-intro"><?php echo htmlspecialchars($caaft_benefits_intro, ENT_QUOTES, 'UTF-8'); ?></p>
+            <p class="caaft-benefits-intro"><?php echo caaft_rich_copy($caaft_benefits_intro); ?></p>
         <?php endif; ?>
         <div class="caaft-benefits-grid" role="list">
             <?php foreach ($caaft_benefits_items as $caaft_benefits_index => $caaft_benefits_item) : ?>
@@ -61,7 +61,7 @@ $caaft_benefits_tone_cycle = ['green', 'violet', 'amber', 'blue', 'pink', 'teal'
                 <article class="caaft-benefit-card" role="listitem">
                     <span class="caaft-benefit-icon caaft-benefit-icon--<?php echo htmlspecialchars($caaft_benefits_tone, ENT_QUOTES, 'UTF-8'); ?>" aria-hidden="true"><i class="<?php echo htmlspecialchars($caaft_benefits_icon, ENT_QUOTES, 'UTF-8'); ?>"></i></span>
                     <p class="caaft-benefit-body">
-                        <strong class="caaft-benefit-lead"><?php echo htmlspecialchars($caaft_benefits_lead, ENT_QUOTES, 'UTF-8'); ?></strong><span class="caaft-benefit-sep"> — </span><span class="caaft-benefit-desc"><?php echo htmlspecialchars($caaft_benefits_text, ENT_QUOTES, 'UTF-8'); ?></span>
+                        <strong class="caaft-benefit-lead"><?php echo htmlspecialchars($caaft_benefits_lead, ENT_QUOTES, 'UTF-8'); ?></strong><span class="caaft-benefit-sep"> — </span><span class="caaft-benefit-desc"><?php echo caaft_rich_copy($caaft_benefits_text); ?></span>
                     </p>
                 </article>
             <?php endforeach; ?>

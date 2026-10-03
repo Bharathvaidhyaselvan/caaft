@@ -30,19 +30,19 @@ $caaft_delivered_outro = isset($caaft_delivered_outro) ? (string) $caaft_deliver
     <div class="container">
         <h2 id="<?php echo htmlspecialchars($caaft_delivered_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="bk-section-title"><?php echo htmlspecialchars($caaft_delivered_title, ENT_QUOTES, 'UTF-8'); ?></h2>
         <?php if ($caaft_delivered_intro !== '') : ?>
-            <p class="bk-overview-text"><?php echo htmlspecialchars($caaft_delivered_intro, ENT_QUOTES, 'UTF-8'); ?></p>
+            <p class="bk-overview-text"><?php echo caaft_rich_copy($caaft_delivered_intro); ?></p>
         <?php endif; ?>
         <div class="bk-delivered-table" role="list">
             <?php foreach ($caaft_delivered_items as $caaft_delivered_index => $caaft_delivered_item) : ?>
                 <article class="bk-delivered-row" role="listitem">
                     <span class="bk-delivered-num"><?php echo (int) $caaft_delivered_index + 1; ?>.</span>
                     <h3 class="bk-delivered-name"><?php echo htmlspecialchars((string) ($caaft_delivered_item['name'] ?? ''), ENT_QUOTES, 'UTF-8'); ?></h3>
-                    <p class="bk-delivered-text"><?php echo htmlspecialchars((string) ($caaft_delivered_item['text'] ?? ''), ENT_QUOTES, 'UTF-8'); ?></p>
+                    <p class="bk-delivered-text"><?php echo caaft_rich_copy((string) ($caaft_delivered_item['text'] ?? '')); ?></p>
                 </article>
             <?php endforeach; ?>
         </div>
         <?php if ($caaft_delivered_outro !== '') : ?>
-            <p class="bk-overview-text mt-3"><?php echo htmlspecialchars($caaft_delivered_outro, ENT_QUOTES, 'UTF-8'); ?></p>
+            <p class="bk-overview-text mt-3"><?php echo caaft_rich_copy($caaft_delivered_outro); ?></p>
         <?php endif; ?>
     </div>
 </section>

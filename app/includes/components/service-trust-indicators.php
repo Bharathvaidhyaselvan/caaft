@@ -29,7 +29,7 @@ $caaft_trust_grid_class = isset($caaft_trust_grid_class) ? (string) $caaft_trust
                     </span>
                     <div class="caaft-ar-trust-content">
                         <h3><?php echo htmlspecialchars((string) ($caaft_trust_item['title'] ?? ''), ENT_QUOTES, 'UTF-8'); ?></h3>
-                        <p><?php echo htmlspecialchars((string) ($caaft_trust_item['description'] ?? ''), ENT_QUOTES, 'UTF-8'); ?></p>
+                        <p><?php echo caaft_rich_copy((string) ($caaft_trust_item['description'] ?? '')); ?></p>
                     </div>
                 </article>
             <?php endforeach; ?>

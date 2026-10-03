@@ -74,7 +74,7 @@ $caaft_key_facts_card_class = isset($caaft_key_facts_card_class) && $caaft_key_f
                     <?php
                     $caaft_key_facts_body = $caaft_key_facts_desc !== '' ? $caaft_key_facts_desc : $caaft_key_facts_text;
                     ?>
-                    <p class="bk-facts-stat-text"><?php echo htmlspecialchars($caaft_key_facts_body, ENT_QUOTES, 'UTF-8'); ?></p>
+                    <p class="bk-facts-stat-text"><?php echo caaft_rich_copy($caaft_key_facts_body); ?></p>
                 </article>
             <?php endforeach; ?>
         </div>

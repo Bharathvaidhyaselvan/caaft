@@ -42,17 +42,17 @@ $caaft_overview_image_href = caaft_versioned_asset_url($caaft_overview_image_src
                 <div class="bk-overview-content caaft-overview-content">
                     <h2 id="<?php echo htmlspecialchars($caaft_overview_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="bk-section-title"><?php echo htmlspecialchars($caaft_overview_title, ENT_QUOTES, 'UTF-8'); ?></h2>
                     <?php foreach ($caaft_overview_paragraphs as $caaft_overview_paragraph) : ?>
-                        <p class="bk-overview-text"><?php echo strip_tags((string) $caaft_overview_paragraph, '<strong><em><br>'); ?></p>
+                        <p class="bk-overview-text"><?php echo caaft_rich_copy((string) $caaft_overview_paragraph); ?></p>
                     <?php endforeach; ?>
                     <?php if ($caaft_overview_bullets !== []) : ?>
                         <ul class="bk-overview-bullets">
                             <?php foreach ($caaft_overview_bullets as $caaft_overview_bullet) : ?>
-                                <li><?php echo strip_tags((string) $caaft_overview_bullet, '<strong><em><br>'); ?></li>
+                                <li><?php echo caaft_rich_copy((string) $caaft_overview_bullet); ?></li>
                             <?php endforeach; ?>
                         </ul>
                     <?php endif; ?>
                     <?php if ($caaft_overview_closing !== '') : ?>
-                        <p class="bk-overview-text"><?php echo strip_tags($caaft_overview_closing, '<strong><em><br>'); ?></p>
+                        <p class="bk-overview-text"><?php echo caaft_rich_copy($caaft_overview_closing); ?></p>
                     <?php endif; ?>
                 </div>
                 <div class="bk-overview-image-wrap caaft-overview-image-wrap">

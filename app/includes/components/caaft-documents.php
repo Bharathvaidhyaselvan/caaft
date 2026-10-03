@@ -34,18 +34,18 @@ if ($caaft_docs_tint) {
     <div class="container">
         <h2 id="<?php echo htmlspecialchars($caaft_docs_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="caaft-documents-title"><?php echo htmlspecialchars($caaft_docs_title, ENT_QUOTES, 'UTF-8'); ?></h2>
         <?php if ($caaft_docs_intro !== '') : ?>
-            <p class="caaft-documents-intro"><?php echo htmlspecialchars($caaft_docs_intro, ENT_QUOTES, 'UTF-8'); ?></p>
+            <p class="caaft-documents-intro"><?php echo caaft_rich_copy($caaft_docs_intro); ?></p>
         <?php endif; ?>
         <div class="caaft-documents-grid" role="list">
             <?php foreach ($caaft_docs_items as $caaft_docs_item) : ?>
                 <div class="caaft-documents-item" role="listitem">
                     <span class="caaft-documents-checkbox" aria-hidden="true"></span>
-                    <span><?php echo htmlspecialchars((string) $caaft_docs_item, ENT_QUOTES, 'UTF-8'); ?></span>
+                    <span><?php echo caaft_rich_copy((string) $caaft_docs_item); ?></span>
                 </div>
             <?php endforeach; ?>
         </div>
         <?php if ($caaft_docs_outro !== '') : ?>
-            <p class="caaft-documents-outro"><?php echo htmlspecialchars($caaft_docs_outro, ENT_QUOTES, 'UTF-8'); ?></p>
+            <p class="caaft-documents-outro"><?php echo caaft_rich_copy($caaft_docs_outro); ?></p>
         <?php endif; ?>
     </div>
 </section>

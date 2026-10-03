@@ -30,15 +30,15 @@ $caaft_wnl_section_class = isset($caaft_wnl_section_class) && $caaft_wnl_section
         <div class="caaft-who-needs-list-card">
             <h2 id="<?php echo htmlspecialchars($caaft_wnl_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="caaft-who-needs-list-title"><?php echo htmlspecialchars($caaft_wnl_title, ENT_QUOTES, 'UTF-8'); ?></h2>
             <?php if ($caaft_wnl_intro !== '') : ?>
-                <p class="caaft-who-needs-list-intro"><?php echo htmlspecialchars($caaft_wnl_intro, ENT_QUOTES, 'UTF-8'); ?></p>
+                <p class="caaft-who-needs-list-intro"><?php echo caaft_rich_copy($caaft_wnl_intro); ?></p>
             <?php endif; ?>
             <ul class="caaft-who-needs-list-items">
                 <?php foreach ($caaft_wnl_items as $caaft_wnl_item) : ?>
-                    <li><?php echo htmlspecialchars((string) $caaft_wnl_item, ENT_QUOTES, 'UTF-8'); ?></li>
+                    <li><?php echo caaft_rich_copy((string) $caaft_wnl_item); ?></li>
                 <?php endforeach; ?>
             </ul>
             <?php if ($caaft_wnl_closing !== '') : ?>
-                <p class="caaft-who-needs-list-closing"><?php echo htmlspecialchars($caaft_wnl_closing, ENT_QUOTES, 'UTF-8'); ?></p>
+                <p class="caaft-who-needs-list-closing"><?php echo caaft_rich_copy($caaft_wnl_closing); ?></p>
             <?php endif; ?>
         </div>
     </div>

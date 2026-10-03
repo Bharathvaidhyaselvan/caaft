@@ -54,7 +54,7 @@ $why_choose_caaft_points = isset($why_choose_caaft_points) && is_array($why_choo
                 endif;
                 ?>><?php echo htmlspecialchars($why_choose_caaft_title, ENT_QUOTES, 'UTF-8'); ?></h2>
                 <?php if ($why_choose_caaft_show_intro && $why_choose_caaft_intro !== '') : ?>
-                    <p id="<?php echo htmlspecialchars($why_choose_caaft_desc_id, ENT_QUOTES, 'UTF-8'); ?>" class="why-choose-caaft-intro"><?php echo htmlspecialchars($why_choose_caaft_intro, ENT_QUOTES, 'UTF-8'); ?></p>
+                    <p id="<?php echo htmlspecialchars($why_choose_caaft_desc_id, ENT_QUOTES, 'UTF-8'); ?>" class="why-choose-caaft-intro"><?php echo caaft_rich_copy($why_choose_caaft_intro); ?></p>
                 <?php endif; ?>
                 <?php if ($why_choose_caaft_points !== []) : ?>
                     <ul class="why-choose-caaft-points">
@@ -62,9 +62,9 @@ $why_choose_caaft_points = isset($why_choose_caaft_points) && is_array($why_choo
                             <li>
                                 <?php if (is_array($why_choose_caaft_point)) : ?>
                                     <strong><?php echo htmlspecialchars((string) ($why_choose_caaft_point['title'] ?? ''), ENT_QUOTES, 'UTF-8'); ?></strong>
-                                    <?php echo htmlspecialchars(' - ' . (string) ($why_choose_caaft_point['text'] ?? ''), ENT_QUOTES, 'UTF-8'); ?>
+                                    <?php echo ' - ' . caaft_rich_copy((string) ($why_choose_caaft_point['text'] ?? '')); ?>
                                 <?php else : ?>
-                                    <?php echo htmlspecialchars((string) $why_choose_caaft_point, ENT_QUOTES, 'UTF-8'); ?>
+                                    <?php echo caaft_rich_copy((string) $why_choose_caaft_point); ?>
                                 <?php endif; ?>
                             </li>
                         <?php endforeach; ?>
@@ -76,7 +76,7 @@ $why_choose_caaft_points = isset($why_choose_caaft_points) && is_array($why_choo
                     <article class="why-choose-caaft-card" role="listitem">
                         <span class="why-choose-caaft-card-icon" aria-hidden="true"><i class="<?php echo htmlspecialchars((string) ($why_choose_caaft_item['icon_class'] ?? 'far fa-check-circle'), ENT_QUOTES, 'UTF-8'); ?>"></i></span>
                         <h3><?php echo htmlspecialchars((string) ($why_choose_caaft_item['title'] ?? ''), ENT_QUOTES, 'UTF-8'); ?></h3>
-                        <p><?php echo htmlspecialchars((string) ($why_choose_caaft_item['text'] ?? ''), ENT_QUOTES, 'UTF-8'); ?></p>
+                        <p><?php echo caaft_rich_copy((string) ($why_choose_caaft_item['text'] ?? '')); ?></p>
                     </article>
                 <?php endforeach; ?>
             </div>

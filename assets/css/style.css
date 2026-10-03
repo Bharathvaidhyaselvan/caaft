@@ -71,6 +71,15 @@ a:hover {
     color: var(--color-blue)
 }
 
+a.internal-link,
+a.internal-link:hover,
+a.internal-link:focus,
+a.internal-link:active {
+    color: var(--theme-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 ul {
     margin: 0;
     padding: 0

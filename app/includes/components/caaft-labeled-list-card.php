@@ -30,7 +30,7 @@ $caaft_llc_section_class = isset($caaft_llc_section_class) && $caaft_llc_section
     <div class="container">
         <h2 id="<?php echo htmlspecialchars($caaft_llc_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="caaft-labeled-list-card-title"><?php echo htmlspecialchars($caaft_llc_title, ENT_QUOTES, 'UTF-8'); ?></h2>
         <?php if ($caaft_llc_lead !== '') : ?>
-            <p class="caaft-labeled-list-card-lead"><?php echo htmlspecialchars($caaft_llc_lead, ENT_QUOTES, 'UTF-8'); ?></p>
+            <p class="caaft-labeled-list-card-lead"><?php echo caaft_rich_copy($caaft_llc_lead); ?></p>
         <?php endif; ?>
         <div class="caaft-labeled-list-card">
             <ul class="caaft-labeled-list-card-items">
@@ -42,7 +42,7 @@ $caaft_llc_section_class = isset($caaft_llc_section_class) && $caaft_llc_section
                     <li>
                         <span class="caaft-labeled-list-card-bullet" aria-hidden="true"></span>
                         <p class="caaft-labeled-list-card-row">
-                            <strong class="caaft-labeled-list-card-label"><?php echo htmlspecialchars($caaft_llc_label, ENT_QUOTES, 'UTF-8'); ?>:</strong><span class="caaft-labeled-list-card-text"> <?php echo htmlspecialchars($caaft_llc_text, ENT_QUOTES, 'UTF-8'); ?></span>
+                            <strong class="caaft-labeled-list-card-label"><?php echo htmlspecialchars($caaft_llc_label, ENT_QUOTES, 'UTF-8'); ?>:</strong><span class="caaft-labeled-list-card-text"> <?php echo caaft_rich_copy($caaft_llc_text); ?></span>
                         </p>
                     </li>
                 <?php endforeach; ?>

@@ -25,6 +25,15 @@ if ($requestedPath === '/index.php' && $requestedRoute === '') {
     exit;
 }
 
+$caaftLegacyRedirects = [
+    'taxation' => '/taxation-services',
+    'income-tax' => '/taxation-services',
+];
+if (isset($caaftLegacyRedirects[$requestedRoute])) {
+    header('Location: ' . $caaftLegacyRedirects[$requestedRoute], true, 301);
+    exit;
+}
+
 $serviceRoutes = require APP_ROOT . '/config/service-routes.php';
 $pageRoutes = require APP_ROOT . '/config/page-routes.php';
 // Page routes win over legacy service hub routes when keys overlap.

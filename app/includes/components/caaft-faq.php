@@ -51,7 +51,7 @@ $caaft_faq_pad_numbers = isset($caaft_faq_pad_numbers) ? (bool) $caaft_faq_pad_n
                             </button>
                         </p>
                         <div id="<?php echo htmlspecialchars($caaft_faq_collapse_item_id, ENT_QUOTES, 'UTF-8'); ?>" class="accordion-collapse collapse<?php echo $caaft_faq_is_open ? ' show' : ''; ?>" aria-labelledby="<?php echo htmlspecialchars($caaft_faq_heading_item_id, ENT_QUOTES, 'UTF-8'); ?>" data-bs-parent="#<?php echo htmlspecialchars($caaft_faq_accordion_id, ENT_QUOTES, 'UTF-8'); ?>">
-                            <div class="accordion-body"><?php echo htmlspecialchars((string) ($caaft_faq_item['answer'] ?? ''), ENT_QUOTES, 'UTF-8'); ?></div>
+                            <div class="accordion-body"><?php echo caaft_rich_copy((string) ($caaft_faq_item['answer'] ?? '')); ?></div>
                         </div>
                     </div>
                 <?php endforeach; ?>

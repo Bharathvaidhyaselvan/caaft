@@ -76,7 +76,7 @@ $caaft_cta_secondary_button_icon_class = isset($caaft_cta_secondary_button_icon_
                 <?php endif; ?>
             </h2>
             <?php if ($caaft_cta_text !== '') : ?>
-                <p class="bk-cta-text"><?php echo htmlspecialchars($caaft_cta_text, ENT_QUOTES, 'UTF-8'); ?></p>
+                <p class="bk-cta-text"><?php echo caaft_rich_copy($caaft_cta_text); ?></p>
             <?php endif; ?>
             <?php if ($caaft_cta_show_button) : ?>
                 <div class="bk-cta-actions">

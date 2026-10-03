@@ -30,18 +30,18 @@ $caaft_who_needs_section_class = isset($caaft_who_needs_section_class) && $caaft
         <header class="caaft-who-needs-header">
             <h2 id="<?php echo htmlspecialchars($caaft_who_needs_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="bk-section-title"><?php echo htmlspecialchars($caaft_who_needs_title, ENT_QUOTES, 'UTF-8'); ?></h2>
             <?php if ($caaft_who_needs_intro !== '') : ?>
-                <p class="caaft-who-needs-intro"><?php echo htmlspecialchars($caaft_who_needs_intro, ENT_QUOTES, 'UTF-8'); ?></p>
+                <p class="caaft-who-needs-intro"><?php echo caaft_rich_copy($caaft_who_needs_intro); ?></p>
             <?php endif; ?>
         </header>
         <div class="caaft-who-needs-grid">
             <?php foreach ($caaft_who_needs_items as $caaft_who_needs_item) : ?>
                 <article class="caaft-who-needs-card">
-                    <p><?php echo htmlspecialchars((string) $caaft_who_needs_item, ENT_QUOTES, 'UTF-8'); ?></p>
+                    <p><?php echo caaft_rich_copy((string) $caaft_who_needs_item); ?></p>
                 </article>
             <?php endforeach; ?>
         </div>
         <?php if ($caaft_who_needs_closing !== '') : ?>
-            <p class="caaft-who-needs-closing"><?php echo htmlspecialchars($caaft_who_needs_closing, ENT_QUOTES, 'UTF-8'); ?></p>
+            <p class="caaft-who-needs-closing"><?php echo caaft_rich_copy($caaft_who_needs_closing); ?></p>
         <?php endif; ?>
     </div>
 </section>

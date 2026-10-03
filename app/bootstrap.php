@@ -14,6 +14,7 @@ if (!isset($GLOBALS['appSeoConfig'])) {
 }
 
 require_once APP_ROOT . '/includes/perf-assets.php';
+require_once APP_ROOT . '/includes/caaft-rich-copy.php';
 
 if (!function_exists('canonical_url')) {
     function canonical_url(string $fallback): string

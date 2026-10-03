@@ -28,19 +28,19 @@ $caaft_challenges_section_class = isset($caaft_challenges_section_class) && $caa
     <div class="container">
         <header class="bk-challenges-header">
             <h2 id="<?php echo htmlspecialchars((string) $caaft_challenges_heading_id, ENT_QUOTES, 'UTF-8'); ?>" class="bk-section-title"><?php echo htmlspecialchars((string) $caaft_challenges_title, ENT_QUOTES, 'UTF-8'); ?></h2>
-            <p class="bk-challenges-intro"><?php echo htmlspecialchars((string) $caaft_challenges_intro, ENT_QUOTES, 'UTF-8'); ?></p>
+            <p class="bk-challenges-intro"><?php echo caaft_rich_copy((string) $caaft_challenges_intro); ?></p>
 <?php if ($caaft_challenges_subtext !== '') : ?>
-    <p class="bk-challenges-intro"><?php echo htmlspecialchars($caaft_challenges_subtext, ENT_QUOTES, 'UTF-8'); ?></p>
+    <p class="bk-challenges-intro"><?php echo caaft_rich_copy($caaft_challenges_subtext); ?></p>
 <?php endif; ?>
         </header>
         <div class="bk-challenges-box">
             <ul class="bk-challenges-list">
                 <?php foreach ($caaft_challenges_items as $caaft_challenges_item) : ?>
-    <li><?php echo $caaft_challenges_item; ?></li>
+    <li><?php echo caaft_rich_copy((string) $caaft_challenges_item); ?></li>
                 <?php endforeach; ?>
             </ul>
             <?php if ($caaft_challenges_outro !== '') : ?>
-                <p class="bk-challenges-outro"><?php echo htmlspecialchars($caaft_challenges_outro, ENT_QUOTES, 'UTF-8'); ?></p>
+                <p class="bk-challenges-outro"><?php echo caaft_rich_copy($caaft_challenges_outro); ?></p>
             <?php endif; ?>
         </div>
     </div>

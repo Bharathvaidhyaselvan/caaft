@@ -135,12 +135,12 @@ if ($caaft_hero_pricing_suffix === '') {
                         <?php echo htmlspecialchars($caaft_hero_h2_after, ENT_QUOTES, 'UTF-8'); ?>
                     </h2>
                     <?php foreach ($caaft_hero_lead_paragraphs as $caaft_hero_lead_paragraph) : ?>
-                        <p class="caaft-ar-hero-lead"><?php echo htmlspecialchars((string) $caaft_hero_lead_paragraph, ENT_QUOTES, 'UTF-8'); ?></p>
+                        <p class="caaft-ar-hero-lead"><?php echo caaft_rich_copy((string) $caaft_hero_lead_paragraph); ?></p>
                     <?php endforeach; ?>
                     <?php if ($caaft_hero_bullets !== []) : ?>
                         <ul class="caaft-ar-hero-bullets">
                             <?php foreach ($caaft_hero_bullets as $caaft_hero_bullet) : ?>
-                                <li><?php echo htmlspecialchars((string) $caaft_hero_bullet, ENT_QUOTES, 'UTF-8'); ?></li>
+                                <li><?php echo caaft_rich_copy((string) $caaft_hero_bullet); ?></li>
                             <?php endforeach; ?>
                         </ul>
                     <?php endif; ?>
