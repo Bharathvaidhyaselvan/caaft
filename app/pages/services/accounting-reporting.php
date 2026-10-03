@@ -259,7 +259,7 @@
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-book"></i></span>
                             <h3 class="caaft-ar-offer-card-title">General Accounting &amp; Bookkeeping</h3>
                             <p class="caaft-ar-offer-card-text">Record and maintain sales, purchases, expenses, receipts, payments, journal entries, and other day-to-day business transactions.</p>
-                            <a href="/accounting-reporting/bookkeeping-services" class="caaft-ar-offer-cta">Get Accounting Services <i class="fas fa-arrow-right"></i></a>
+                            <a href="/accounting-and-reporting/bookkeeping-and-accounting" class="caaft-ar-offer-cta">Get Accounting Services <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
                     <div class="col-md-6 col-lg-3">
@@ -268,7 +268,7 @@
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-chart-line"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Financial Analysis &amp; MIS Reporting</h3>
                             <p class="caaft-ar-offer-card-text">Convert accounting information into management reports covering revenue, expenses, profitability, cash flow, trends, and other business performance indicators.</p>
-                            <a href="/management-consultancy/services#parentVerticalTab2" class="caaft-ar-offer-cta">Get MIS Services <i class="fas fa-arrow-right"></i></a>
+                            <a href="/accounting-and-reporting/financial-analysis-mis" class="caaft-ar-offer-cta">Get MIS Services <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
                     <div class="col-md-6 col-lg-3">
@@ -277,7 +277,7 @@
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-file-invoice-dollar"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Financial Statements</h3>
                             <p class="caaft-ar-offer-card-text">Prepare Balance Sheets, Profit &amp; Loss Accounts, Cash Flow Statements, and other financial reports for management, taxation, audit, and business reporting.</p>
-                            <a href="/accounting-reporting/accounting-firms" class="caaft-ar-offer-cta">Get Financial Services <i class="fas fa-arrow-right"></i></a>
+                            <a href="/accounting-and-reporting/financial-statement-analysis" class="caaft-ar-offer-cta">Get Financial Services <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
                     <div class="col-md-6 col-lg-3">
@@ -286,7 +286,7 @@
                             <span class="caaft-ar-offer-icon" aria-hidden="true"><i class="fas fa-exchange-alt"></i></span>
                             <h3 class="caaft-ar-offer-card-title">Receivable &amp; Payable Management</h3>
                             <p class="caaft-ar-offer-card-text">Monitor customer outstanding balances and supplier dues to help businesses track collections, payment obligations, and working capital requirements.</p>
-                            <a href="/management-consultancy/services#parentVerticalTab2" class="caaft-ar-offer-cta">Get Receivable Services <i class="fas fa-arrow-right"></i></a>
+                            <a href="/accounting-and-reporting/accounts-receivable-payable-service" class="caaft-ar-offer-cta">Get Receivable Services <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
                 </div>
